@@ -2,8 +2,6 @@
 
 Here's the documentation of comwork cloud console and API.
 
-* The console is here: https://cloud.comwork.io
-
 It allows to provide cloud SaaS services like [code](https://code.comwork.io) or [wordpress](https://wpaas.comwork.io) in a "IaC" (infrastructure as code) way: you'll get access to a private [comwork gitlab](https://gitlab.comwork.io) repository that contains ansible roles and playbooks you'll be able to maintain. The modification on this repositories will automatically be applied in your instances.
 
 ## Table of content
@@ -11,6 +9,8 @@ It allows to provide cloud SaaS services like [code](https://code.comwork.io) or
 [[_TOC_]]
 
 ## Console
+
+The console is here: https://cloud.comwork.io
 
 First you can register and ask to the comwork team to enable your account with a conf meeting you can setup here: https://calendly.com/idriss-neumann/intro-comwork-code
 
