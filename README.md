@@ -24,6 +24,16 @@ Then your instances:
 
 ![created_instance](./img/create_instance.png)
 
+### Administrators
+
+You can manage the environments which are a set of ansible roles and templates.
+
+![environments](./img/environments.png)
+
+Keeping environment private will make the environment not accessible for non-admin users.
+
+![create_environment](./img/create_environment.png)
+
 ## Api
 
 There is a Restful API you can directly use here: https://cloud-api.comwork.io
