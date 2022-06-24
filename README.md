@@ -14,7 +14,7 @@ The instance are hosted on Scaleway for now (but we intend to propose multiple c
 
 The console is here: https://cloud.comwork.io
 
-First you can register and ask to the comwork team to enable your account with a conf meeting you can setup here: https://calendly.com/idriss-neumann/intro-comwork-code
+First you can register and ask to the comwork team to enable your account with a conf meeting you can setup here: https://calendly.com/idriss-neumann/intro-comwork-cloud
 
 Then you'll be able to create your gitlab projects:
 
