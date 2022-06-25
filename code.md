@@ -10,6 +10,10 @@ You've also got a fully access to the compute instance that are hosting this web
 
 ![code](./img/code.png)
 
+## Table of content
+
+[[_TOC_]]
+
 ## The differences with gitpod?
 
 Of course [gitpod](https://www.gitpod.io), [coder](https://coder.com), [google cloud shell](https://cloud.google.com/shell), github codespaces are great and bring lots of value for a very large amount of users. But there's value we can bring comparing to those two :
@@ -29,6 +33,12 @@ Of course [gitpod](https://www.gitpod.io), [coder](https://coder.com), [google c
 
 Want a meeting or a quote ? [Contact us](https://calendly.com/idriss-neumann/intro-comwork-cloud)
 
+![ipad](./img/ipad-code.jpeg)
+
+*Yeah you can use a dummy IPad to work as if you were on a powerfull laptop!*
+
 ## Sizing and pricing
 
-You can also choose to do it by yourself, it's completely free, enjoy our repository with the docker image and ansible role in order to install it by yourself.
+The instances sizing and pricing are kept up to date in this [spreadsheet](https://docs.google.com/spreadsheets/d/1rfAaCrcGInxsGCkSZyrdo2W6gZDlLQCIqnz_5qF8gBY).
+
+You can also choose to do it by yourself, it's completely free, enjoy [our repository](https://gitlab.comwork.io/oss/ansible-iac/code-server) with the docker image and ansible role in order to install it by yourself.
