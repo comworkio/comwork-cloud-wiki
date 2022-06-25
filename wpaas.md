@@ -16,6 +16,10 @@ Yet another "Wordpress as a Service" (WPaaS) with some benefits :
 
 Want a meeting or a quote ? [Contact us](https://calendly.com/idriss-neumann/intro-comwork-cloud)
 
+![sidiamor](./img/sidiamor.png)
+
+*One of our most valuable partner, the [GDA Sidi Amor](https://sidiamor.org) which was struggling with multiple low cost shared hosting with lots of down time, TLS certificates, very old versions of PHP or MySQL and no security and backups. They almost lost everything!*
+
 ## Table of content
 
 [[_TOC_]]
