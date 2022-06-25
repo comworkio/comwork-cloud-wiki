@@ -39,6 +39,6 @@ _Yeah you can use a dummy IPad to work as if you were on a powerfull laptop!_
 
 ## Sizing and pricing
 
-The instances sizing and pricing are kept up to date in this [spreadsheet](https://docs.google.com/spreadsheets/d/1rfAaCrcGInxsGCkSZyrdo2W6gZDlLQCIqnz_5qF8gBY).
+Check it out [here](./sizing_pricing.md).
 
 You can also choose to do it by yourself, it's completely free, enjoy [our repository](https://gitlab.comwork.io/oss/ansible-iac/code-server) with the docker image and ansible role in order to install it by yourself.

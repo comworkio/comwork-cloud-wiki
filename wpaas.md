@@ -38,6 +38,6 @@ _Logs and metrics using our Kibana shared instance with 15 days of retention_
 
 ## Sizing and pricing
 
-The instances sizing and pricing are kept up to date in this [spreadsheet](https://docs.google.com/spreadsheets/d/1rfAaCrcGInxsGCkSZyrdo2W6gZDlLQCIqnz_5qF8gBY).
+Check it out [here](./sizing_pricing.md).
 
 You can also choose to do it by yourself, it's completely free, enjoy [our repository](https://gitlab.comwork.io/oss/ansible-iac/ansible-wordpress) with the docker image and ansible role in order to install it by yourself.
