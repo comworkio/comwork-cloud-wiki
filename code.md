@@ -25,11 +25,11 @@ Of course [gitpod](https://www.gitpod.io), [coder](https://coder.com), [google c
 * You'll be able to install and keep vscode extensions
 * You'll have a dedicated link with our own tunnel server
 * Lots of improvements are coming:  
-** a dedicated tunnel server with TLS and firewall you'll be able to associate your own DNS zone like any cloud provider
-** we'll provide an [API](https://cloud-api.comwork.io), a [web console](https://cloud.comwork.io) and a terraform module in order to give you : 
-** the ability to shutdown and restart your instances when your not using it in order to reduce the cost
-** the persistence of git repositories and docker registries from anywhere even after the destruction/recreation of your instance (based on top of a stored states/events architecture)
-** the rolling upgrades
+  * a dedicated tunnel server with TLS and firewall you'll be able to associate your own DNS zone like any cloud provider
+  * we'll provide an [API](https://cloud-api.comwork.io), a [web console](https://cloud.comwork.io) and a terraform module in order to give you : 
+  * the ability to shutdown and restart your instances when your not using it in order to reduce the cost
+  * the persistence of git repositories and docker registries from anywhere even after the destruction/recreation of your instance (based on top of a stored states/events architecture)
+  * the rolling upgrades
 
 Want a meeting or a quote ? [Contact us](https://calendly.com/idriss-neumann/intro-comwork-cloud)
 
