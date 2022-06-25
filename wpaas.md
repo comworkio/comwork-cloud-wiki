@@ -4,21 +4,21 @@ A secured and dedicated Wordpress instance a service.
 
 Yet another "Wordpress as a Service" (WPaaS) with some benefits :
 
-* It's hosted in _France_ 🇫🇷 (with [Scaleway](https://www.scaleway.com), a really beautiful French cloud provider)
+* It's hosted in __France__ 🇫🇷 (with [Scaleway](https://www.scaleway.com), a really beautiful French cloud provider)
 * You choose the sizing of your instance as you'll pick your own VPS
-* _Backups_ everyday on S3 like buckets / object storages with 3 days retention
-* _Free emails_ and _SMTP_ integration with sendgrid
+* __Backups__ everyday on S3 like buckets / object storages with 3 days retention
+* __Free emails__ and _SMTP_ integration with sendgrid
 * Rolling upgrades of Wordpress / PHP / MySQL
-* _Very strong security_: https/TLS encryption, firewalling, DDoS protection and wp-admin double authentication
+* __Very strong security__: https/TLS encryption, firewalling, DDoS protection and wp-admin double authentication
 * An expert _engineering team_ which is available on Slack
-* SEO insights with our _Matomo_ instance for free (GPDR compliant)
-* _Observability / monitoring_ of your platform with our _Elasticstack_ instance
+* SEO insights with our __Matomo__ instance for free (GPDR compliant)
+* __Observability / monitoring__ of your platform with our __Elasticstack__ instance
 
 Want a meeting or a quote ? [Contact us](https://calendly.com/idriss-neumann/intro-comwork-cloud)
 
 ![sidiamor](./img/sidiamor.png)
 
-*One of our most valuable partner, the [GDA Sidi Amor](https://sidiamor.org) which was struggling with multiple low cost shared hosting with lots of down time, TLS certificates, very old versions of PHP or MySQL and no security and backups. They almost lost everything!*
+_One of our most valuable partner, the [GDA Sidi Amor](https://sidiamor.org) which was struggling with multiple low cost shared hosting with lots of down time, TLS certificates, very old versions of PHP or MySQL and no security and backups. They almost lost everything!_
 
 ## Table of content
 
@@ -28,13 +28,13 @@ Want a meeting or a quote ? [Contact us](https://calendly.com/idriss-neumann/int
 
 ![matomo](./img/matomo.png)
 
-*_SEO_ insights with our _Matomo_ shared instance*
+*__SEO__ insights with our _Matomo_ shared instance*
 
 ## Platform observability
 
 ![Kibana](./img/kibana.png)
 
-*Logs and metrics using our Kibana shared instance with 15 days of retention*
+_Logs and metrics using our Kibana shared instance with 15 days of retention_
 
 ## Sizing and pricing
 

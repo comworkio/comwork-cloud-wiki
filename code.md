@@ -2,7 +2,7 @@
 
 A full dev|ops local environment on the cloud.
 
-Yet another "gitpod like environment" with the real tools you're using locally everyday. 
+Yet another "_gitpod like environment_" with the real tools you're using locally everyday. 
 
 It embed our every day tools and CLI like docker, docker-compose, k3d, k9s, kubectl, kubeseal, terraform, terragrunt, node, python, ansible, lt, gcloud, jq, yq and you'll be able to add more tools in your instance using the apt command directly on the terminal.
 
@@ -26,7 +26,7 @@ Of course [gitpod](https://www.gitpod.io), [coder](https://coder.com), [google c
 * You'll have a dedicated link with our own tunnel server
 * Lots of improvements are coming:  
 ** a dedicated tunnel server with TLS and firewall you'll be able to associate your own DNS zone like any cloud provider
-** we'll provide an API, a web console and a terraform module in order to give you : 
+** we'll provide an [API](https://cloud-api.comwork.io), a [web console](https://cloud.comwork.io) and a terraform module in order to give you : 
 ** the ability to shutdown and restart your instances when your not using it in order to reduce the cost
 ** the persistence of git repositories and docker registries from anywhere even after the destruction/recreation of your instance (based on top of a stored states/events architecture)
 ** the rolling upgrades
@@ -35,7 +35,7 @@ Want a meeting or a quote ? [Contact us](https://calendly.com/idriss-neumann/int
 
 ![ipad](./img/ipad-code.jpeg)
 
-*Yeah you can use a dummy IPad to work as if you were on a powerfull laptop!*
+_Yeah you can use a dummy IPad to work as if you were on a powerfull laptop!_
 
 ## Sizing and pricing
 
