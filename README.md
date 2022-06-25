@@ -14,8 +14,13 @@ The instance are hosted on Scaleway for now (but we intend to propose multiple c
 
 * [code](./code.md)
 * [Wordpress as a service](./wpaas.md)
+## Sizing and pricing
+
+The instances sizing and pricing are kept up to date in this [spreadsheet](https://docs.google.com/spreadsheets/d/1rfAaCrcGInxsGCkSZyrdo2W6gZDlLQCIqnz_5qF8gBY).
 
 ## Console
+
+### Public console
 
 The console is here: https://cloud.comwork.io
 
