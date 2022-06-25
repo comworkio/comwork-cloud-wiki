@@ -33,4 +33,3 @@ Theses prices are for the region `fr-par-1`, it can be a little bit different in
 |Additional costs|Network, comwork api cost...|1,7    |
 |Max number hours per months|24 hours * 31 days (max)|744    |
 |VAT   |20% French VAT|1,2    |
-|Delivery estimated time|Delivery of a fully fonctional instance|6h     |
