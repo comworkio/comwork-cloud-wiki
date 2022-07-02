@@ -14,6 +14,10 @@ You've also got a fully access to the compute instance that are hosting this web
 
 [[_TOC_]]
 
+## Demo
+
+[![code_demo](https://img.youtube.com/vi/sHFtiUmpYLI/0.jpg)](https://youtu.be/sHFtiUmpYLI)
+
 ## The differences with gitpod?
 
 Of course [gitpod](https://www.gitpod.io), [coder](https://coder.com), [google cloud shell](https://cloud.google.com/shell), github codespaces are great and bring lots of value for a very large amount of users. But there's value we can bring comparing to those two :
