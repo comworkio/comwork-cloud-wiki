@@ -16,7 +16,7 @@ You've also got a fully access to the compute instance that are hosting this web
 
 ## Demo
 
-[![code_demo](https://img.youtube.com/vi/sHFtiUmpYLI/0.jpg)](https://youtu.be/sHFtiUmpYLI)
+[![code_demo](./img/demo.png)](https://youtu.be/sHFtiUmpYLI)
 
 ## The differences with gitpod?
 
