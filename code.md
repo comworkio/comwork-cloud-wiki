@@ -16,7 +16,13 @@ You've also got a fully access to the compute instance that are hosting this web
 
 ## Demo
 
-[![code_demo](./img/demo.png)](https://youtu.be/sHFtiUmpYLI)
+Part1 (docker, docker-compose):
+
+[![code_demo_1](./img/demo_1.png)](https://youtu.be/sHFtiUmpYLI)
+
+Part2 (k3d, kubernetes, helm):
+
+[![code_demo_2](./img/demo_2.png)](https://youtu.be/9NVV1wbv4ZI)
 
 ## The differences with gitpod?
 
