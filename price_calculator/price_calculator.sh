@@ -18,8 +18,10 @@ $AWK_BIN '{if ($0 ~ "V_ARRAY_PRICING"){system("mdtable '"${DATA_FILE}.tmp2"' 2>/
 declare -a SIZES
 SIZES=("S" "L" "M" "XL")
 echo "#!/usr/bin/env bash" > prices_env.sh
+echo "" >> prices_env.sh
 for letter in "${SIZES[@]}"; do
-  echo "export PRICE_DEV1_${letter}=$(cat ${DATA_FILE}.tmp2|$AWK_BIN '($1 == "DEV-'"${letter}"'"){print $4}')" >> prices_env.sh
+  price=$($AWK_BIN -F ',' '($1 == DEV-"'"${letter}"'"){print $4}' "${DATA_FILE}.tmp2")
+  echo "export PRICE_DEV1_${letter}=\"${price}\"" >> prices_env.sh
 done
 
 rm -rf "${DATA_FILE}".tmp*
