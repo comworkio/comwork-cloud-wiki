@@ -22,7 +22,7 @@ echo "" >> prices_env.sh
 echo "## This script is generated, do not update it manually! See: https://gitlab.comwork.io/comwork_public/comwork_cloud/-/blob/main/price_calculator/README.md" >> prices_env.sh
 echo "" >> prices_env.sh
 for letter in "${SIZES[@]}"; do
-  price=$($AWK_BIN -F ',' '($1 == "DEV-'"${letter}"'"){print $4}' "${DATA_FILE}.tmp2")
+  price=$($AWK_BIN -F ',' '($1 == "DEV-'"${letter}"'"){print $4}' "${DATA_FILE}.tmp2"|grep -Eo "[0-9\.]*")
   echo "export PRICE_DEV1_${letter}=\"${price}\"" >> prices_env.sh
 done
 
