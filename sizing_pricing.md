@@ -21,13 +21,6 @@ This markdown file is automatically generated from [price_calculator](./price_ca
 
 Theses prices are for the region `fr-par-1`, it can be a little bit different in other regions.
 
-| Instance | Scaleway cost | Per hour | Per hour (TTC) | Per month (TTC) |
-| -------- | ------------- | -------- | -------------- | --------------- |
-| DEV-S    | 0.011 €       | 0.019 €  | 0.022 €        | 16.695 €        |
-| DEV-M    | 0.022 €       | 0.037 €  | 0.045 €        | 33.391 €        |
-| DEV-L    | 0.043 €       | 0.073 €  | 0.088 €        | 65.264 €        |
-| DEV-XL   | 0.065 €       | 0.111 €  | 0.133 €        | 98.654 €        |
-
 
 ### Details
 
