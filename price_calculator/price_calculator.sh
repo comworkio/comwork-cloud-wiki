@@ -16,10 +16,10 @@ $AWK_BIN -F ',' 'BEGIN {sep=","} {print $1""sep""$2""sep""$3""sep""$4""sep""$5}'
 $AWK_BIN '{if ($0 ~ "V_ARRAY_PRICING"){system("mdtable '"${DATA_FILE}.tmp2"' 2>/dev/null || :")} else {print $0}}' "${ROOT_DIR}/sizing_pricing.tpl" > "sizing_pricing.md"
 
 declare -a SIZES
-SIZES=("S", "L", "M", "XL")
-echo "#!/usr/bin/env bash" > prices.env
+SIZES=("S" "L" "M" "XL")
+echo "#!/usr/bin/env bash" > prices_env.sh
 for letter in "${SIZES[@]}"; do
-  echo "export PRICE_DEV1_${letter}=$(cat ${DATA_FILE}.tmp2|$AWK_BIN '($1 == "DEV-'"${letter}"'"){print $4}')" >> prices.env
+  echo "export PRICE_DEV1_${letter}=$(cat ${DATA_FILE}.tmp2|$AWK_BIN '($1 == "DEV-'"${letter}"'"){print $4}')" >> prices_env.sh
 done
 
 rm -rf "${DATA_FILE}".tmp*
