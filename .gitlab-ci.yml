@@ -1,0 +1,14 @@
+stages:
+  - generate
+
+pricing:
+  stage: generate
+  script:
+    - setsid ./push.sh
+  only:
+    refs:
+      - /^(main).*$/
+    changes:
+      - price_calculator/*
+  tags:
+    - cloud_doc
