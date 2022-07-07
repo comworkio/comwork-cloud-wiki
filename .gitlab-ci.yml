@@ -4,7 +4,7 @@ stages:
 pricing:
   stage: generate
   script:
-    - setsid ./push.sh
+    - setsid ./price_calculator/push.sh
   only:
     refs:
       - /^(main).*$/
