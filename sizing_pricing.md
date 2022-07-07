@@ -4,6 +4,8 @@ The sizing and pricing model is following the [Scaleway's one](https://www.scale
 
 So those pricing can be readjusted following the Scaleway's pricing evolutions.
 
+This markdown file is automatically generated from [price_calculator](./price_calculator/README.md)
+
 ## Sizing
 
 |Instance|CPU   |RAM    |DISK       |BANDWITH|
@@ -19,12 +21,13 @@ So those pricing can be readjusted following the Scaleway's pricing evolutions.
 
 Theses prices are for the region `fr-par-1`, it can be a little bit different in other regions.
 
-|Instance|Scaleway cost|Per hour|Per hour (TTC)|Per month (TTC)|
-|--------|-------------|--------|--------------|---------------|
-|DEV-S   |0,011 €       |0,017 € |0,020 €       |16,695 €       |
-|DEV-M   |0,022 €       |0,034 € |0,041 €       |33,391 €       |
-|DEV-L   |0,043 €       |0,051 € |0,061 €       |65,264 €       |
-|DEV-XL  |0,065 €       |0,068 € |0,082 €       |98,654 €       |
+| Instance | Scaleway cost | Per hour | Per hour (TTC) | Per month (TTC) |
+| -------- | ------------- | -------- | -------------- | --------------- |
+| DEV-S    | 0.011 €       | 0.019 €  | 0.022 €        | 16.695 €        |
+| DEV-M    | 0.022 €       | 0.037 €  | 0.045 €        | 33.391 €        |
+| DEV-L    | 0.043 €       | 0.073 €  | 0.088 €        | 65.264 €        |
+| DEV-XL   | 0.065 €       | 0.111 €  | 0.133 €        | 98.654 €        |
+
 
 ### Details
 
