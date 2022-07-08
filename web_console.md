@@ -57,3 +57,6 @@ git clone https://gitlab.comwork.io/comwork/infrastructure/dynamic/YOUR_PROJECT.
 cd YOUR_PROJECT
 ./install.sh -e instance-YOUR_INSTANCE -p
 ```
+
+Then recreate the environment with the fixed role, order, template, whatever and retry again.
+Do not forger to remove your debug compute instance.
