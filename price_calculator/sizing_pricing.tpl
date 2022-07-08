@@ -23,7 +23,7 @@ Theses prices are for the region `fr-par-1`, it can be a little bit different in
 
 V_ARRAY_PRICING
 
-_Updated the V_DATE _
+*Updated the V_DATE*
 
 ### Details
 
