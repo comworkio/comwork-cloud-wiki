@@ -47,7 +47,7 @@ You'll probably have to complete the jinja template `comwork-cloud-api/ansible/e
 You'll also have to complete the package images inventory `/Users/ineumann/`comwork-cloud-api/packer_images.yml` to add your environment and images:
 
 ```yaml
-- environment: portainer
+- environment: YOUR_ENVIRONMENT
   images:
     - fr-par-1: 874c09fa-15e6-45eb-af3a-013f3318d220
     - fr-par-2: c0180f91-1ea8-4ee0-8df7-47183b8c36fc
