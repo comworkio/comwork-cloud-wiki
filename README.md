@@ -14,4 +14,5 @@ The instance are hosted on Scaleway for now (but we intend to propose multiple c
 * [Restful api and terraform provider](./api.md)
 * [Sizing and pricing](./sizing_pricing.md)
 * [VSCode web as a service](./code.md)
+* [Portainer as a service](./portainer.md)
 * [Wordpress as a service](./wpaas.md)
