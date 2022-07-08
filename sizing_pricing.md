@@ -29,7 +29,7 @@ Theses prices are for the region `fr-par-1`, it can be a little bit different in
 | DEV-XL   | 0.065 €       | 0.111 €  | 0.133 €        | 98.654 €        |
 
 
-_Updated the 2022-07-08 _
+*Updated the 2022-07-08*
 
 ### Details
 
