@@ -48,11 +48,11 @@ You'll also have to complete the package images inventory `/Users/ineumann/`comw
 
 ```yaml
 - environment: portainer
-    images:
-     - fr-par-1: 874c09fa-15e6-45eb-af3a-013f3318d220
-     - fr-par-2: c0180f91-1ea8-4ee0-8df7-47183b8c36fc
-     - nl-ams-1: 7afea3b7-d6cc-46b1-a1d9-8e60eba2c982
-     - pl-waw-1: 296d036c-c0cd-478e-aad1-551d5ab95ede
+  images:
+    - fr-par-1: 874c09fa-15e6-45eb-af3a-013f3318d220
+    - fr-par-2: c0180f91-1ea8-4ee0-8df7-47183b8c36fc
+    - nl-ams-1: 7afea3b7-d6cc-46b1-a1d9-8e60eba2c982
+    - pl-waw-1: 296d036c-c0cd-478e-aad1-551d5ab95ede
 ```
 
 You can re-use the `code` or `portainer` references in most of the cases.
