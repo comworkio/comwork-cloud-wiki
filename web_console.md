@@ -42,7 +42,20 @@ Beware of the roles order :
 
 If the `playbook-xxxx.yml` isn't in the right order, then you have to re-order all the roles one by one using the screen above.
 
-Also you'll probably have to complete the jinja template `comwork-cloud-api/ansible/env/instance_name.yml.j2` to add the required values for your environment.
+You'll probably have to complete the jinja template `comwork-cloud-api/ansible/env/instance_name.yml.j2` to add the required values for your environment.
+
+You'll also have to complete the package images inventory `/Users/ineumann/`comwork-cloud-api/packer_images.yml` to add your environment and images:
+
+```yaml
+- environment: portainer
+    images:
+     - fr-par-1: 874c09fa-15e6-45eb-af3a-013f3318d220
+     - fr-par-2: c0180f91-1ea8-4ee0-8df7-47183b8c36fc
+     - nl-ams-1: 7afea3b7-d6cc-46b1-a1d9-8e60eba2c982
+     - pl-waw-1: 296d036c-c0cd-478e-aad1-551d5ab95ede
+```
+
+You can re-use the `code` or `portainer` references in most of the cases.
 
 Then, if you need to see the ansible errors for the first time:
 * Create a simple VM instance (on Almalinux, last version available)
