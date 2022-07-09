@@ -39,6 +39,6 @@ Theses prices are for the region `fr-par-1`, it can be a little bit different in
 |Max number hours per months|24 hours * 31 days (max)|744    |
 |VAT   |20% French VAT|1,2    |
 
-## Contact/subscription
+## Contact / subscription
 
-Do you want a quote or subscribe? You can setup an appointment [here](https://calendly.com/idriss-neumann/intro-comwork-cloud) or email us at: cloud@comwork.io
+Do you want a quote or subscribe? You can setup an appointment [here](https://calendly.com/idriss-neumann/intro-comwork-cloud) or email us at cloud@comwork.io
