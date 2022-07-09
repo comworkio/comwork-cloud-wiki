@@ -29,7 +29,7 @@ Theses prices are for the region `fr-par-1`, it can be a little bit different in
 | DEV-XL   | 0.065 €       | 0.111 €  | 0.133 €        | 98.654 €        |
 
 
-*Updated the 2022-07-08*
+*Updated the 2022-07-09*
 
 ### Details
 
@@ -38,3 +38,7 @@ Theses prices are for the region `fr-par-1`, it can be a little bit different in
 |Additional costs|Network, comwork api cost...|1,7    |
 |Max number hours per months|24 hours * 31 days (max)|744    |
 |VAT   |20% French VAT|1,2    |
+
+## Contact/subscription
+
+Do you want a quote or subscribe? You can setup an appointment [here](https://calendly.com/idriss-neumann/intro-comwork-cloud) or email us at: cloud@comwork.io
