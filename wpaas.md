@@ -11,8 +11,7 @@ Yet another "Wordpress as a Service" (WPaaS) with some benefits :
 * Rolling upgrades of Wordpress / PHP / MySQL
 * __Very strong security__: https/TLS encryption, firewalling, DDoS protection and wp-admin double authentication
 * An expert _engineering team_ which is available on Slack
-* SEO insights with our __Matomo__ instance for free (GPDR compliant)
-* __Observability / monitoring__ of your platform with our __Elasticstack__ instance
+* SEO insights with your __Matomo__ instance (see [here](./matomo.md))
 
 Want a meeting or a quote ? [Contact us](https://calendly.com/idriss-neumann/intro-comwork-cloud)
 
@@ -23,18 +22,6 @@ _One of our most valuable partner, the [GDA Sidi Amor](https://sidiamor.org) whi
 ## Table of content
 
 [[_TOC_]]
-
-## SEO insights
-
-![matomo](./img/matomo.png)
-
-*__SEO__ insights with our _Matomo_ shared instance*
-
-## Platform observability
-
-![Kibana](./img/kibana.png)
-
-_Logs and metrics using our Kibana shared instance with 15 days of retention_
 
 ## Sizing and pricing
 
