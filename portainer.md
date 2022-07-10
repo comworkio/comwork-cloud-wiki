@@ -36,6 +36,10 @@ Multiple other actions:
 
 Beware: you have to set an admin password to the first connection and there is a portainer timeout, so do not wait to connect to your instance after creating it.
 
+## Minimal requirements
+
+We advise to start with an instance >= [DEV-M](./sizing_pricing.md)
+
 ## Sizing and pricing
 
 Check it out [here](./sizing_pricing.md).

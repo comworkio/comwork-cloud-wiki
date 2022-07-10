@@ -47,6 +47,10 @@ Want a meeting or a quote ? [Contact us](https://calendly.com/idriss-neumann/int
 
 _Yeah you can use a dummy IPad to work as if you were on a powerfull laptop!_
 
+## Minimal requirements
+
+We advise to start with an instance >= [DEV-M](./sizing_pricing.md)
+
 ## Sizing and pricing
 
 Check it out [here](./sizing_pricing.md).

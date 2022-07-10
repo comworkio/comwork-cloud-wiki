@@ -23,6 +23,10 @@ _One of our most valuable partner, the [GDA Sidi Amor](https://sidiamor.org) whi
 
 [[_TOC_]]
 
+## Minimal requirements
+
+We advise to start with an instance >= [DEV-M](./sizing_pricing.md)
+
 ## Sizing and pricing
 
 Check it out [here](./sizing_pricing.md).
