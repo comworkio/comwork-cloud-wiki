@@ -6,6 +6,10 @@ So those pricing can be readjusted following the Scaleway's pricing evolutions.
 
 This markdown file is automatically generated from [price_calculator](./price_calculator/README.md)
 
+## Table of contents
+
+[[_TOC_]]
+
 ## Sizing
 
 |Instance|CPU   |RAM    |DISK       |BANDWITH|
@@ -29,7 +33,7 @@ Theses prices are for the region `fr-par-1`, it can be a little bit different in
 | DEV-XL   | 0.065 €       | 0.111 €  | 0.133 €        | 98.654 €        |
 
 
-*Updated the 2022-07-09*
+*Updated the 2022-07-10*
 
 ### Details
 
