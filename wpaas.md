@@ -6,8 +6,6 @@ Yet another "Wordpress as a Service" (WPaaS) with some benefits :
 
 * It's hosted in __France__ 🇫🇷 (with [Scaleway](https://www.scaleway.com), a really beautiful French cloud provider)
 * You choose the sizing of your instance as you'll pick your own VPS
-* __Backups__ everyday on S3 like buckets / object storages with 3 days retention
-* __Free emails__ and _SMTP_ integration with sendgrid
 * Rolling upgrades of Wordpress / PHP / MySQL
 * __Very strong security__: https/TLS encryption, firewalling, DDoS protection and wp-admin double authentication
 * An expert _engineering team_ which is available on Slack
