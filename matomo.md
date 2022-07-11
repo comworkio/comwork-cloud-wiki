@@ -4,6 +4,10 @@ Get your own insite with an opensource GDPR analytics compliant tool : __Matomo_
 
 ![matomo](./img/matomo.png)
 
+## Demo
+
+[![demo_wordpress_matomo](./img/demo_wordpress_matomo.png)](https://youtu.be/klVgXyELu10)
+
 ## Minimal requirements
 
 We advise to start with an instance >= [DEV-S](./sizing_pricing.md)

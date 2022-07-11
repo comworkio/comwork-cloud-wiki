@@ -11,6 +11,8 @@ Yet another "Wordpress as a Service" (WPaaS) with some benefits :
 * An expert _engineering team_ which is available on Slack
 * SEO insights with your __Matomo__ instance (see [here](./matomo.md))
 
+Especially, this WPaaS is the right for you if you want to deploy and manage your reverse proxy and certificate like a real ops who work with ansible in a gitops way ;-p
+
 Want a meeting or a quote ? [Contact us](https://calendly.com/idriss-neumann/intro-comwork-cloud)
 
 ![sidiamor](./img/sidiamor.png)
@@ -20,6 +22,10 @@ _One of our most valuable partner, the [GDA Sidi Amor](https://sidiamor.org) whi
 ## Table of content
 
 [[_TOC_]]
+
+## Demo
+
+[![demo_wordpress_matomo](./img/demo_wordpress_matomo.png)](https://youtu.be/klVgXyELu10)
 
 ## Minimal requirements
 
