@@ -44,7 +44,7 @@ If the `playbook-xxxx.yml` isn't in the right order, then you have to re-order a
 
 You'll probably have to complete the jinja template `comwork-cloud-api/ansible/env/instance_name.yml.j2` to add the required values for your environment.
 
-You'll also have to complete the package images inventory `/Users/ineumann/`comwork-cloud-api/packer_images.yml` to add your environment and images:
+You'll also have to complete the package images inventory `/Users/ineumann/comwork-cloud-api/cloud_environments.yml` to add your environment and images:
 
 ```yaml
 - environment: YOUR_ENVIRONMENT
