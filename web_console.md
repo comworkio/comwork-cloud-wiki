@@ -64,7 +64,7 @@ Then, if you need to see the ansible errors for the first time:
 * Then try your playbook manually and fix all the errors you'll see in the role or jinja template:
 
 ```shell
-dnf update
+dnf update -y
 dnf install -y git epel-release
 dnf install -y ansible
 git clone https://gitlab.comwork.io/comwork/infrastructure/dynamic/YOUR_PROJECT.git
