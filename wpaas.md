@@ -13,7 +13,7 @@ Yet another "Wordpress as a Service" (WPaaS) with some benefits :
 
 Especially, this WPaaS is the right for you if you want to deploy and manage your reverse proxy and certificate like a real ops who work with ansible in a gitops way ;-p
 
-Want a meeting or a quote ? [Contact us](https://calendly.com/idriss-neumann/intro-comwork-cloud)
+Want a meeting or a quote ? [Contact us](./subscription.md)
 
 ![sidiamor](./img/sidiamor.png)
 

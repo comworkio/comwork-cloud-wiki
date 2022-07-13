@@ -45,4 +45,4 @@ Theses prices are for the region `fr-par-1`, it can be a little bit different in
 
 ## Contact / subscription
 
-Do you want a quote or subscribe? You can setup an appointment [here](https://calendly.com/idriss-neumann/intro-comwork-cloud) or email us at cloud@comwork.io
+See [here](./subscription.md)

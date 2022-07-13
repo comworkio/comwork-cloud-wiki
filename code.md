@@ -41,7 +41,7 @@ Of course [gitpod](https://www.gitpod.io), [coder](https://coder.com), [google c
   * the persistence of git repositories and docker registries from anywhere even after the destruction/recreation of your instance (based on top of a stored states/events architecture)
   * the rolling upgrades
 
-Want a meeting or a quote ? [Contact us](https://calendly.com/idriss-neumann/intro-comwork-cloud)
+Want a meeting or a quote? [Contact us](./subscription.md)
 
 ![ipad](./img/ipad-code.jpeg)
 
