@@ -48,6 +48,7 @@ You'll also have to complete the package images inventory `/Users/ineumann/comwo
 
 ```yaml
 - environment: YOUR_ENVIRONMENT
+  extra_subdomains: []
   images:
     - fr-par-1: 874c09fa-15e6-45eb-af3a-013f3318d220
     - fr-par-2: c0180f91-1ea8-4ee0-8df7-47183b8c36fc
