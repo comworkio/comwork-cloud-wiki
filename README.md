@@ -16,5 +16,6 @@ The instance are hosted on Scaleway for now (but we intend to propose multiple c
 * [Portainer as a service](./portainer.md)
 * [Wordpress as a service](./wpaas.md)
 * [Matomo as a service](./matomo.md)
+* [VPS as a service](./matomo.md)
 * [Sizing and pricing](./sizing_pricing.md)
 * [Subscription procedure](./subscription.md)
