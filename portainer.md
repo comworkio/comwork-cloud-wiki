@@ -8,7 +8,13 @@ Get your infrastructure to the next level using [portainer](https://www.portaine
 
 ## Demo
 
+Install a simple portainer server:
+
 [![portainer_demo](./img/portainer_demo.png)](https://youtu.be/M29YE3w6NxA)
+
+Install portainer with agents:
+
+[![portainer_agent_demo](./img/portainer_agent_demo.png)](https://youtu.be/iYK2cwHQh1A)
 
 ## Usecases
 
