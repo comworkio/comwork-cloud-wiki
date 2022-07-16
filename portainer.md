@@ -22,11 +22,28 @@ Here is a non exhaustive list of portainer usecases we're enjoying the most:
 
 ![portainer_containers](./img/portainer_containers.png)
 
-You can install the edge agent in a [vps](./vps.md) using our [ansible role](https://gitlab.comwork.io/oss/ansible-iac/portainer/ansible-portainer-agent)
-
 3. You can manage a container: see it's stdout/stderr output or connect directly with a shell session:
 
 ![portainer_shell_session](./img/portainer_shell_session.png)
+
+4. You can install portainer edge agent this way:
+
+a/ Create "environment on your ansible role":
+
+![portainer_edge_agent_1](./img/portainer_edge_agent_1.png)
+
+b/ Keep the id and key values:
+
+![portainer_edge_agent_2](./img/portainer_edge_agent_2.png)
+
+c/ Install a [vps](./vps.md)
+d/ Add our [ansible role](https://gitlab.comwork.io/oss/ansible-iac/portainer/ansible-portainer-agent) in the vps playbook
+e/ Change the following ansible variables with the previous key and id:
+
+```yaml
+portainer_agent_id: changeit
+portainer_agent_key: changeit
+```
 
 Multiple other actions:
 * Clean the docker/OCI images
