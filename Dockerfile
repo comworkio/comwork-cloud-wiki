@@ -4,9 +4,13 @@ ARG NGINX_VERSION=1.15
 # Stage build
 FROM node:${NODE_VERSION} AS doc_builder
 
-RUN npx create-docusaurus@latest comwork-cloud-wiki classic --typescript
+RUN npx create-docusaurus@latest comwork-cloud-wiki classic
 
 WORKDIR /comwork-cloud-wiki
+
+COPY .docker/docusaurus/docusaurus.config.js .
+COPY img/comwork_logo.png static/img/comwork_logo.png
+COPY img/favicon.ico static/img/favicon.ico
 
 COPY . docs/
 
