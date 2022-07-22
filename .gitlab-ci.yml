@@ -31,7 +31,6 @@ deploy:
   stage: deploy
   needs:
     - build
-    - scan
   script:
     - chmod +x ./ci/deploy.sh
     - ./ci/deploy.sh
