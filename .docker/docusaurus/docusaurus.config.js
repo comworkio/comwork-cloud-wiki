@@ -51,7 +51,7 @@ const config = {
             label: 'Documentation',
           },
           {
-            href: 'https://gitlab.comwork.io/comwork_public/comwork_cloud',
+            to: 'https://gitlab.comwork.io/comwork_public/comwork_cloud',
             label: 'Gitlab',
             position: 'right',
           },
@@ -69,7 +69,7 @@ const config = {
               },
               {
                 label: 'Cloud console',
-                href: 'https://cloud.comwork.io',
+                to: 'https://cloud.comwork.io',
               },
             ],
           },
