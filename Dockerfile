@@ -19,7 +19,10 @@ COPY .docker/docusaurus/index.js src/pages/index.js
 COPY . docs/
 COPY README.md docs/intro.md
 
-RUN npm i && npm run build
+RUN rm -rf docs/ci && \
+    rm -rf docs/price_calculator && \
+    npm i && \
+    npm run build
 
 # Stage run
 FROM nginx:${NGINX_VERSION} AS doc
