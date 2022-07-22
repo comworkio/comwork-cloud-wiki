@@ -20,7 +20,6 @@ COPY . docs/
 COPY README.md docs/intro.md
 
 RUN rm -rf docs/ci && \
-    rm -rf docs/price_calculator && \
     npm i && \
     npm run build
 
