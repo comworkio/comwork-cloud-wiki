@@ -10,10 +10,6 @@ You've also got a fully access to the compute instance that are hosting this web
 
 ![code](./img/code.png)
 
-## Table of content
-
-[[_TOC_]]
-
 ## Demo
 
 Part1 (docker, docker-compose):

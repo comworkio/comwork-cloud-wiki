@@ -2,10 +2,6 @@
 
 Get your infrastructure to the next level using [portainer](https://www.portainer.io) on our cloud platform !
 
-## Table of content
-
-[[_TOC_]]
-
 ## Demo
 
 Install a simple portainer server:

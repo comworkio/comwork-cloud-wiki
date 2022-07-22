@@ -8,10 +8,6 @@ A simple VPS that contains:
 
 ![vps](./img/vps.png)
 
-## Table of content
-
-[[_TOC_]]
-
 ## Minimal requirements
 
 We advise to start with an instance >= [DEV-S](./sizing_pricing.md)
