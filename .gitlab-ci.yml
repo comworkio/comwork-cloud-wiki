@@ -19,11 +19,10 @@ build:
   stage: build
   tags:
     - imagesbuilder
-  only:
-    - /^main$/
   rules: 
     - if: $CI_COMMIT_MESSAGE =~ /\[Update pricing and push]/
       when: never
+    - if: $CI_COMMIT_REF_NAME =~ /main/ 
   script:
     - chmod +x ./ci/deliver.sh
     - ./ci/deliver.sh
@@ -36,10 +35,9 @@ deploy:
   script:
     - chmod +x ./ci/deploy.sh
     - ./ci/deploy.sh
-  only:
-    - /^main$/
   rules: 
     - if: $CI_COMMIT_MESSAGE =~ /\[Update pricing and push]/
       when: never
+    - if: $CI_COMMIT_REF_NAME =~ /main/ 
   tags:
     - web
