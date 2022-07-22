@@ -1,0 +1,7 @@
+version: '3.3'
+
+services:
+  comwork_cloud_doc:
+    build: .
+    ports:
+      - "3000:80"
