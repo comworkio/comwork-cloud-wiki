@@ -1,5 +1,7 @@
 stages:
   - generate
+  - build
+  - deploy
 
 pricing:
   stage: generate
@@ -7,8 +9,37 @@ pricing:
     - setsid ./price_calculator/push.sh
   only:
     refs:
-      - /^(main).*$/
+      - /^main$/
     changes:
       - price_calculator/*
   tags:
     - cloud_doc
+
+build:
+  stage: build
+  tags:
+    - imagesbuilder
+  only:
+    - /^main$/
+  rules: 
+    - if: $CI_COMMIT_MESSAGE =~ /\[Update pricing and push]/
+      when: never
+  script:
+    - chmod +x ./ci/deliver.sh
+    - ./ci/deliver.sh
+
+deploy:
+  stage: deploy
+  needs:
+    - build
+    - scan
+  script:
+    - chmod +x ./ci/deploy.sh
+    - ./ci/deploy.sh
+  only:
+    - /^main$/
+  rules: 
+    - if: $CI_COMMIT_MESSAGE =~ /\[Update pricing and push]/
+      when: never
+  tags:
+    - web
