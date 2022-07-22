@@ -13,6 +13,7 @@ RUN rm -rf docs/* && rm -rf blog/*
 COPY .docker/docusaurus/docusaurus.config.js .
 COPY img/comwork_logo.png static/img/comwork_logo.png
 COPY img/favicon.ico static/img/favicon.ico
+COPY .docker/docusaurus/custom.css static/css/custom.css
 
 COPY . docs/
 COPY README.md docs/intro.md
