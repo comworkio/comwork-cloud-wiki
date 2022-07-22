@@ -1,9 +1,5 @@
 # Subscription procedure
 
-## Table of contents
-
-[[_TOC_]]
-
 ## Procedure
 
 Firstable, if you want a quote or subscribe, you can:

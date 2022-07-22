@@ -1,9 +1,5 @@
 # Api
 
-## Table of contents
-
-[[_TOC_]]
-
 ## Restful API
 
 There is a Restful API you can directly use here: https://cloud-api.comwork.io

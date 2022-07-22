@@ -8,6 +8,11 @@ The instance are hosted on Scaleway for now (but we intend to propose multiple c
 
 ![cloud_bg](./img/cloud_bg.png)
 
+## Links
+
+* The documentation is available here: https://doc.cloud.comwork.io
+* The markdown sources that are used to generate the documentation are availables here: https://gitlab.comwork.io/comwork_public/comwork_cloud
+
 ## Available resources
 
 * [Web console](./web_console.md)

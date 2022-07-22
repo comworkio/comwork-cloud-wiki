@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  comwork_cloud_doc_prod:
+    restart: always
+    container_name: comwork_cloud_ui_prod
+    image: rg.fr-par.scw.cloud/comworkio/comwork_cloud_doc:${VERSION}
+    networks:
+      - comwork_cloud_doc
+    ports:
+      - "5333:80"
+
+networks:
+  comwork_cloud_doc:
+    driver: bridge

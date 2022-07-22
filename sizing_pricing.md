@@ -6,10 +6,6 @@ So those pricing can be readjusted following the Scaleway's pricing evolutions.
 
 This markdown file is automatically generated from [price_calculator](./price_calculator/README.md)
 
-## Table of contents
-
-[[_TOC_]]
-
 ## Sizing
 
 |Instance|CPU   |RAM    |DISK       |BANDWITH|

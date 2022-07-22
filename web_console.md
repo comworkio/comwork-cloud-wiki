@@ -1,9 +1,5 @@
 # Console
 
-## Table of contents
-
-[[_TOC_]]
-
 ## Public console
 
 The console is here: https://cloud.comwork.io
