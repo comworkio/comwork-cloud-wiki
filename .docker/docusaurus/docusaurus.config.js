@@ -22,18 +22,10 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://gitlab.comwork.io/comwork_public/comwork_cloud',
+          sidebarPath: require.resolve('./sidebars.js')
         },
         blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://gitlab.comwork.io/comwork_public/comwork_cloud',
+          showReadingTime: true
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -54,7 +46,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'README',
             position: 'left',
             label: 'Documentation',
           },
@@ -69,23 +61,18 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Comwork',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Home',
+                to: 'https://www.comwork.io',
               },
-            ],
-          },
-          {
-            title: 'Console',
-            items: [
               {
-                label: 'Console',
+                label: 'Cloud console',
                 href: 'https://cloud.comwork.io',
               },
             ],
-          }
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Comworkio SASU.`,
       },

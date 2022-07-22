@@ -8,11 +8,14 @@ RUN npx create-docusaurus@latest comwork-cloud-wiki classic
 
 WORKDIR /comwork-cloud-wiki
 
+RUN rm -rf docs/* && rm -rf blog/*
+
 COPY .docker/docusaurus/docusaurus.config.js .
 COPY img/comwork_logo.png static/img/comwork_logo.png
 COPY img/favicon.ico static/img/favicon.ico
 
 COPY . docs/
+COPY README.md docs/intro.md
 
 RUN npm i && npm run build
 
