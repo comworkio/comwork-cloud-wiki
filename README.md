@@ -31,3 +31,4 @@ The instance are hosted on Scaleway for now (but we intend to propose multiple c
 
 * [How to use git](./tutorials/git.md)
 * [Portainer](./tutorials/portainer/README.md)
+* [Connect to your instances with SSH](./tutorials/ssh.md)
