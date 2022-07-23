@@ -65,7 +65,7 @@ Il faut alors régler les conflits sur tous les fichiers indiqués. Pour cela ut
 
 Voici un exemple avec visual studio code:
 
-![conflicts](../img/conflicts.png)
+![conflicts](../img/tutorials/conflicts.png)
 
 * Cliquer sur `Accept Incoming Change` si la version de la branche de référence (`main`) est plus à jour que votre version locale
 
@@ -161,7 +161,7 @@ Il faut alors régler les conflits sur tous les fichiers indiqués. Pour cela ut
 
 Voici un exemple avec visual studio code:
 
-![conflicts](../img/conflicts.png)
+![conflicts](../img/tutorials/conflicts.png)
 
 * Cliquer sur `Accept Incoming Change` si la version de la branche de référence (`main`) est plus à jour que votre version locale
 
@@ -345,7 +345,7 @@ git rebase -i HEAD~46
 
 2. Un éditeur s'ouvre :
 
-![git_rebase_i_1](../img/git_rebase_i_1.png)
+![git_rebase_i_1](../img/tutorials/git_rebase_i_1.png)
 
 => Remplacer le `pick` du premier commit par `r` (pour `reword`) et les suivant par `f` (pour `fixup` qui est un équivalent de `squash` ou `s` mais ne conserve que le premier commentaire).
 
@@ -353,7 +353,7 @@ Sauvegarder
 
 3. Un nouvel éditeur s'ouvre :
 
-![git_rebase_i_2](../img/git_rebase_i_2.png)
+![git_rebase_i_2](../img/tutorials/git_rebase_i_2.png)
 
 Puis ré-écrire le message du commit de résultat avec un message qui résume l'ensemble de la feature un peu mieux.
 
