@@ -15,6 +15,8 @@ The instance are hosted on Scaleway for now (but we intend to propose multiple c
 
 ## Available resources
 
+### Documentations
+
 * [Web console](./web_console.md)
 * [Restful api and terraform provider](./api.md)
 * [VSCode web as a service](./code.md)
@@ -24,3 +26,8 @@ The instance are hosted on Scaleway for now (but we intend to propose multiple c
 * [VPS as a service](./vps.md)
 * [Sizing and pricing](./sizing_pricing.md)
 * [Subscription procedure](./subscription.md)
+
+### Tutorials
+
+* [How to use git](./tutorials/git.md)
+* [Portainer](./tutorials/portainer/README.md)
