@@ -1,5 +1,11 @@
 # Git tutorial
 
+## Disclaimer
+
+This tutorial is a translation of this [training repository](https://gitlab.comwork.io/comwork_public/training/git) (which was originaly written in French).
+
+If you're a French speaker, you'll find there more resources (slides with git flows, etc).
+
 ## Downloading/cloning a repository
 
 ```shell
@@ -24,9 +30,9 @@ git pull --rebase origin <feature or bug ticket number>
 
 ## Commit and push on a branch
 
-Il est important de le faire régulièrement et ne pas attendre d'avoir trop de modifications pour le faire.
+It's important to do it regularly and not waiting for too much changes.
 
-Attention : le commit ne répercute pas les modifications sur le serveur GIT distant, c'est l'opération du push qui le fait.
+Warning: the commit doesn't reflect the modifications on the remote git server. It is the push operation that will do so.
 
 ```shell
 git add . # à la racine du repo
@@ -34,13 +40,16 @@ git commit -m "<numéro de la branche ou ticket> commentaire"
 git push origin <numéro de la branche ou ticket>
 ```
 
-## Mettre de changement de côté
+## Stash
+
+`stash` is usefull to keep a changes in sort of clipboard without making a commit revision in your history.
 
 ```shell
-git stash # mettre de côté les changements
-git stash list # lister les changements de côté
-git stash pop <id du stash optionnel> # remettre les changements
-git stash clear # vider les changement de côté
+git stash
+git stash list # list the existing stash
+git stash pop <stash id> # take out the changes from the stash (generally in order to commit) 
+git stash pop # take out all the changes that had been stashed
+git stash clear # emptying the stash stack
 ```
 
 ## Gestion des conflits lors de la mise à jour d'une branche
@@ -361,9 +370,3 @@ git log
 ```shell
 git push origin <la branche> -f
 ```
-
-## Liens externes
-
-Une autre antisèche git de Christophe Chaudier encore mieux faite pour synthétiser tout ce qu'on a vu ici: 
-
-[![antiseche_git_c_chaudier](images/antiseche_git_c_chaudier.png)](https://froggit.fr/communaute/)
