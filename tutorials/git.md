@@ -40,7 +40,7 @@ git commit -m "<feature or bug ticket number> comment"
 git push origin <feature or bug ticket number>
 ```
 
-## Deleting and renaming a branch
+## Renaming a branch
 
 ```shell
 git checkout your_branch
@@ -100,8 +100,11 @@ git reset --hard origin/<numéro de la branche ou ticket> # reset from the remot
 
 ## Merge de main dans une branche
 
-Afin d'intégrer au fur et à mesure les modifications de `main` dans sa branche pour éviter que la désynchro soit trop importante il faut régulièrement faire le merge des modifications de `main` dans sa branche. A chaque fin de Sprint ce merge est obligatoire. Aussi avant d'effectuer le merge local il faut avoir mis sa branche à jour pour pouvoir faire le push de ce commit de merge immédiatement après.
-La raison est la suivante : si entre temps un autre commit a été effectué sur la branche le commit de merge apparaitra en temps que commit de la branche et toutes les modifs de `main` se retrouveront dans la merge resquest.
+In order to gradually integrate the changes of `main` in our branch in order to avoid that the desynchronization is too heavy, it's necessary to regularly merge `main` in this branch. 
+
+At each end of sprint, this merge is mandatory. Also before performing the local merge you should update your branch to be able to push this merge commit immediately afterwards.
+
+The reason is the following: if in the meantime another commit has been made on the branch, the merge commit will appear as the branch commit and all changes to `main` will end up in the merge resquest.
 
 ```shell
 git checkout main
@@ -204,7 +207,6 @@ Here's the demo scenario:
 # User 1
 mkdir poc-git; cd poc-git; git init; touch README; touch BRANCH; git add README BRANCH; git commit -m 'first commit'; git remote add origin https://gitlab.comwork.io/comwork_public/training/git; git push -u origin main
  
- 
 #################
 # Basic usecase #
 #################
@@ -232,7 +234,7 @@ git pull --rebase origin 0000; git push origin 0000
 #####################################
  
 # User 1
-echo "modif changes" >> BRANCH; git add BRANCH; git commit -m "main changes on branch"; git push origin main
+echo "my changes" >> BRANCH; git add BRANCH; git commit -m "main changes on branch"; git push origin main
  
 # User 2
 git checkout main; git pull --rebase origin main; git checkout 0000; git pull --rebase origin 0000; git merge main
@@ -290,14 +292,14 @@ To https://gitlab.comwork.io/xxxxxxxxx.git
    a778234..aab887a  develop2 -> develop2
 ```
 
-## Supprimer une branche
+## Deleting a branch
 
 ```shell
-git branch -d <feature or bug ticket number> # locally
-git push origin -d <feature or bug ticket number>
+git branch -d <feature or bug ticket number> # local delete
+git push -d afterwards <feature or bug ticket number> # delete the remote branch
 ```
 
-## Ré-initialiser une branche
+## Reseting a branch
 
 ```shell
 git reset --hard origin/<feature or bug ticket number>
@@ -305,49 +307,49 @@ git reset --hard origin/<feature or bug ticket number>
 
 ## Fusionner des commits et nettoyer l'historique
 
-Il peut arriver qu'on ait besoin de fusionner des commits ou de les ré-écrire pour plusieurs raisons. Par exemple :
+Sometimes we might want to merge commits or rewrite the history for various reasons. For example :
 
-* Il manque le numéro de la branche ou du ticket dans le commentaire
-* Il y a beaucoup trop de commits car beaucoup de retours traité dans la merge request et on risque de perdre la lisibilité de l'historique
-* Il faut qu'on soit capable de reporter les modifications sur une autre branche avec `git cherry-pick`
+* The branch or ticket number is missing in the comment (or the comment is not following a mandatory semantic)
+* There is too many commits because a lot of code review's returns were processed in the merge request and we risk losing the readability of the history logs
+* We need to be easily able to defer a change in another branch (`git cherry-pick`) or rollback (`git revert`)
 * Etc
 
-Pour cela il existe un magnifique outil qui s'appelle le "rebase interactif". Cette procédure ne doit être utilisée toutefois que si les conditions suivantes sont ré-unies:
+For this reason, there is an amazing tool which is called the "interactive rebase". However, this procedure must only be used if the following conditions are met:
 
-* Les commits qu'on veux rebase sont consécutifs et il n'y a pas eu de merge d'une autre branche dans la branche concernée ensuite
-* La branche n'est pas encore mergée sur une branche protégée (`main` ou autre)
+* The commits we want to rebase are consecutives (there is no merge commit between them for example)
+* The branch is not merged yet on a protected branch (`main` for example)
 
-Voici un exemple pour fusionner les 46 derniers commits et changer le commentaire du premier commit:
+Here's an example to merge the last 46 commits and change the comment of the first one:
 
-1. Exécuter la commande suivante :
+1. Run the following command:
 
 ```shell
 git rebase -i HEAD~46
 ```
 
-2. Un éditeur s'ouvre :
+2. An editor is opening:
 
 ![git_rebase_i_1](../img/tutorials/git_rebase_i_1.png)
 
-=> Remplacer le `pick` du premier commit par `r` (pour `reword`) et les suivant par `f` (pour `fixup` qui est un équivalent de `squash` ou `s` mais ne conserve que le premier commentaire).
+=> Replace the `pick` of the first commit by `r` (or `reword`) the the following by `f` (or `fixup` which is pretty similar to `squash` or `s` except that it will not propose a merge of all the comments but will automatically take the first one).
 
-Sauvegarder
+Save-it.
 
-3. Un nouvel éditeur s'ouvre :
+1. Another editor is opening:
 
 ![git_rebase_i_2](../img/tutorials/git_rebase_i_2.png)
 
-Puis ré-écrire le message du commit de résultat avec un message qui résume l'ensemble de la feature un peu mieux.
+Then rewrite the result commit message with a message that sums up the whole feature (try to make it better ;) ).
 
-N.B: faire apparaitre le numéro des tickets ou issues (avec un `#` devant lorsque ce sont des issues de gitlab ou github pour que ces derniers rappatrient directement les commentaires des commits dans les issues en question).
+N.B: you should add the number of tickets or issues (with a `#` in front of them when they are issues of gitlab or github so that the latter directly repatriate the comments of the commits in the issues in question).
 
-4. Vérifier que l'historique est correcte :
+1. Check the history log:
 
 ```shell
 git log
 ```
 
-5. Pusher puis vérifier sur gitlab :
+1. Push and check on your git repo provider (Gitlab, Github, Gitea, whatever):
 
 ```shell
 git push origin <la branche> -f
