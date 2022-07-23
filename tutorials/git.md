@@ -58,9 +58,9 @@ Voici un exemple avec visual studio code:
 
 ![conflicts](images/conflicts.png)
 
-* Cliquer sur `Accept Incoming Change` si la version de la branche de référence (`master`) est plus à jour que votre version locale
+* Cliquer sur `Accept Incoming Change` si la version de la branche de référence (`main`) est plus à jour que votre version locale
 
-* Cliquer sur `Accept Current Change` si votre version locale est plus à jour que celle de la branche de référence (`master`)
+* Cliquer sur `Accept Current Change` si votre version locale est plus à jour que celle de la branche de référence (`main`)
 
 * Cliquer sur l'un des deux et re-modifiez manuellement derrière si vous devez avoir les deux codes en même temps.
 
@@ -102,17 +102,17 @@ Pour abandonner un merge :
 git reset --hard HEAD
 ```
 
-## Merge du master dans une branche
+## Merge de main dans une branche
 
-Afin d'intégrer au fur et à mesure les modifications du master dans sa branche pour éviter que la désynchro soit trop importante il faut régulièrement faire le merge des modifications du master dans sa branche. A chaque fin de Sprint ce merge est obligatoire. Aussi avant d'effectuer le merge local il faut avoir mis sa branche à jour pour pouvoir faire le push de ce commit de merge immédiatement après.
-La raison est la suivante : si entre temps un autre commit a été effectué sur la branche le commit de merge apparaitra en temps que commit de la branche et toutes les modifs du master se retrouveront dans la merge resquest.
+Afin d'intégrer au fur et à mesure les modifications de `main` dans sa branche pour éviter que la désynchro soit trop importante il faut régulièrement faire le merge des modifications de `main` dans sa branche. A chaque fin de Sprint ce merge est obligatoire. Aussi avant d'effectuer le merge local il faut avoir mis sa branche à jour pour pouvoir faire le push de ce commit de merge immédiatement après.
+La raison est la suivante : si entre temps un autre commit a été effectué sur la branche le commit de merge apparaitra en temps que commit de la branche et toutes les modifs de `main` se retrouveront dans la merge resquest.
 
 ```shell
-git checkout master
-git pull --rebase origin master
+git checkout main
+git pull --rebase origin main
 git checkout <numéro de la branche ou ticket>
 git pull --rebase origin <numéro de la branche ou ticket>
-git merge master
+git merge main
 git push origin <numéro de la branche ou ticket>
 ```
 
@@ -126,12 +126,11 @@ if [[ ! $1 =~ ^[0-9\\-]+$ ]]; then
     exit 1
 fi
 
-brancheref="master"
+brancheref="main"
 if [[ $2 =~ ^[0-9\\-]+$ ]]; then
     brancheref="$2"
 fi
 
-cd ~/wks/src/Hub
 git checkout "$brancheref"
 git pull --rebase origin "$brancheref"
 git checkout "$1"
@@ -142,7 +141,7 @@ git push origin "$1"
 
 ## Gestion des conflits lors du merge
 
-Les conflits apparaissent à la suite de la commande `git merge master`:
+Les conflits apparaissent à la suite de la commande `git merge main`:
 
 ```shell
 CONFLIT (contenu) : Conflit de fusion dans FILENAME
@@ -155,9 +154,9 @@ Voici un exemple avec visual studio code:
 
 ![conflicts](images/conflicts.png)
 
-* Cliquer sur `Accept Incoming Change` si la version de la branche de référence (`master`) est plus à jour que votre version locale
+* Cliquer sur `Accept Incoming Change` si la version de la branche de référence (`main`) est plus à jour que votre version locale
 
-* Cliquer sur `Accept Current Change` si votre version locale est plus à jour que celle de la branche de référence (`master`)
+* Cliquer sur `Accept Current Change` si votre version locale est plus à jour que celle de la branche de référence (`main`)
 
 * Cliquer sur l'un des deux et re-modifiez manuellement derrière si vous devez avoir les deux codes en même temps.
 
@@ -170,19 +169,19 @@ git add FILENAME
 git merge --continue
 ```
 
-## Merge manuel d'une branche vers le master
+## Merge manuel d'une branche vers main
 
 Tout les développeurs n'ont pas les droits pour faire cette opération. Il faut normalement passer par une merge request sur gitlab.
 
-Avant d'effectuer le merge local il faut avoir mis le master à jour pour pouvoir faire le push de ce commit de merge immédiatement après.
+Avant d'effectuer le merge local il faut avoir mis `main` à jour pour pouvoir faire le push de ce commit de merge immédiatement après.
 
 ```shell
 git checkout <numéro de la branche ou ticket>
 git pull --rebase origin <numéro de la branche ou ticket>
-git checkout master
-git pull --rebase origin master
+git checkout main
+git pull --rebase origin main
 git merge <numéro de la branche ou ticket>
-git push origin master
+git push origin main
 ```
 
 Lorsque le merge s'est bien déroulé, il faut supprimer la branche dans GitLab.
@@ -201,7 +200,7 @@ Voici le scénario de la démo Git :
 ###########################
  
 # User 1
-mkdir poc-git; cd poc-git; git init; touch README; touch BRANCH; git add README BRANCH; git commit -m 'first commit'; git remote add origin https://gitlab.comwork.io/comwork_training/git; git push -u origin master
+mkdir poc-git; cd poc-git; git init; touch README; touch BRANCH; git add README BRANCH; git commit -m 'first commit'; git remote add origin https://gitlab.comwork.io/comwork_public/training/git; git push -u origin main
  
  
 ####################
@@ -209,16 +208,16 @@ mkdir poc-git; cd poc-git; git init; touch README; touch BRANCH; git add README 
 ####################
  
 # User 2
-git clone https://gitlab.comwork.io/comwork_training/git poc-git-2; cd poc-git-2; git checkout -b 0000; echo "modif branch" >> BRANCH; git add BRANCH; git commit -m "modif branch"; git push origin 0000
+git clone https://gitlab.comwork.io/comwork_public/training/git poc-git-2; cd poc-git-2; git checkout -b 0000; echo "modif branch" >> BRANCH; git add BRANCH; git commit -m "modif branch"; git push origin 0000
  
 # User 1
-echo "modif master" >> README; git add README; git commit -m "modif master"; git push origin master; echo "modif bis" >> README; git add README; git commit -m "modif bis"; git push origin master
+echo "modif main" >> README; git add README; git commit -m "modif main"; git push origin main; echo "modif bis" >> README; git add README; git commit -m "modif bis"; git push origin main
  
 # User 3
-git clone https://gitlab.comwork.io/comwork_training/git poc-git-3; cd poc-git-3; git checkout 0000; echo "modif branch bis" >> BRANCH; git add BRANCH; git commit -m "modif branch bis"
+git clone https://gitlab.comwork.io/comwork_public/training/git poc-git-3; cd poc-git-3; git checkout 0000; echo "modif branch bis" >> BRANCH; git add BRANCH; git commit -m "modif branch bis"
  
 # User 2
-git checkout master; git pull --rebase origin master; git checkout 0000; git pull --rebase origin 0000; git merge master
+git checkout main; git pull --rebase origin main; git checkout 0000; git pull --rebase origin 0000; git merge main
 git push origin 0000
  
 # User 3
@@ -226,15 +225,15 @@ git pull --rebase origin 0000; git push origin 0000
  
 ==>> Merge request: OK
  
-#######################################
-# Conlit lors du merge avec le master #
-#######################################
+##################################
+# Conlit lors du merge avec main #
+##################################
  
 # User 1
-echo "modif master" >> BRANCH; git add BRANCH; git commit -m "modif master on branch"; git push origin master
+echo "modif main" >> BRANCH; git add BRANCH; git commit -m "modif main on branch"; git push origin main
  
 # User 2
-git checkout master; git pull --rebase origin master; git checkout 0000; git pull --rebase origin 0000; git merge master
+git checkout main; git pull --rebase origin main; git checkout 0000; git pull --rebase origin 0000; git merge main
 ==>> CONFLIT (contenu) : Conflit de fusion dans BRANCH
 vi BRANCH
 git add BRANCH; git commit
@@ -247,7 +246,7 @@ git push origin 0000
 ####################
  
 # User 3
-git pull --rebase origin NUMERIQUE-0000; echo "modif branch conflit" >> BRANCH; git add BRANCH; git commit -m "modif branch conflit"; git push origin 0000
+git pull --rebase origin 0000; echo "modif branch conflit" >> BRANCH; git add BRANCH; git commit -m "modif branch conflit"; git push origin 0000
  
 # User 2
 echo "modif branch conflit bis" >> BRANCH; git add BRANCH; git commit -m "modif branch conflit bis"; git pull --rebase origin 0000
@@ -264,7 +263,7 @@ git push origin 0000
 ###########################
  
 # User 1
-echo "modif ter" >> README; git add README; git commit -m "modif ter"; git push origin master
+echo "modif ter" >> README; git add README; git commit -m "modif ter"; git push origin main
 ==>> Merge request: Accept Merge Request
 ```
 
@@ -294,9 +293,9 @@ Writing objects: 100% (2/2), 233 bytes | 0 bytes/s, done.
 Total 2 (delta 1), reused 0 (delta 0)
 remote: 
 remote: Create merge request for develop2:
-remote:   http://91.121.80.56:8181/gitlab/isamm/facedeplook-jee/merge_requests/new?merge_request%5Bsource_branch%5D=develop2
+remote:   https://gitlab.comwork.io/xxxxxxxxx?merge_request%5Bsource_branch%5D=develop2
 remote: 
-To http://91.121.80.56:8181/gitlab/isamm/facedeplook-jee.git
+To https://gitlab.comwork.io/xxxxxxxxx.git
    a778234..aab887a  develop2 -> develop2
 ```
 
@@ -325,7 +324,7 @@ Il peut arriver qu'on ait besoin de fusionner des commits ou de les ré-écrire 
 Pour cela il existe un magnifique outil qui s'appelle le "rebase interactif". Cette procédure ne doit être utilisée toutefois que si les conditions suivantes sont ré-unies:
 
 * Les commits qu'on veux rebase sont consécutifs et il n'y a pas eu de merge d'une autre branche dans la branche concernée ensuite
-* La branche n'est pas encore mergée sur une branche protégée (`master` ou autre)
+* La branche n'est pas encore mergée sur une branche protégée (`main` ou autre)
 
 Voici un exemple pour fusionner les 46 derniers commits et changer le commentaire du premier commit:
 
@@ -362,3 +361,9 @@ git log
 ```shell
 git push origin <la branche> -f
 ```
+
+## Liens externes
+
+Une autre antisèche git de Christophe Chaudier encore mieux faite pour synthétiser tout ce qu'on a vu ici: 
+
+[![antiseche_git_c_chaudier](images/antiseche_git_c_chaudier.png)](https://froggit.fr/communaute/)
