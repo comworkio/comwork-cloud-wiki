@@ -40,11 +40,15 @@ git commit -m "<feature or bug ticket number> comment"
 git push origin <feature or bug ticket number>
 ```
 
-## Renaming a branch
+## Deleting and renaming a branch
 
 ```shell
 git checkout your_branch
 git checkout -b your_new_branchname
+git push origin your_new_branchname
+git branch -D your_branch # delete the old branch locally
+git push -d origin your_branch # delete on the remote server
+```
 
 ## Stash
 
@@ -58,7 +62,7 @@ git stash pop # take out all the changes that had been stashed
 git stash clear # emptying the stash stack
 ```
 
-## Resolving conflicts when updating a branch
+## Resolving conflicts during the branch update
 
 Conflicts occurs sometimes when you execute this command: `git pull --rebase origin <feature or bug ticket number>`
 
@@ -75,8 +79,6 @@ Here's an example using VSCode:
 * Click on `Accept Incoming Change` if the version of reference branch (here `main`) is more up to date than your local version
 
 * Click on `Accept Current Change` if your local version is more up to date than the `main`'s one
-
-* Cliquer sur l'un des deux et re-modifiez manuellement derrière si vous devez avoir les deux codes en même temps.
 
 * Click on `Accept Both Changes` and modify manually behind if you must have both codes at the same time.
 
@@ -155,25 +157,25 @@ git merge "$branchref"
 git push origin "$1"
 ```
 
-## Gestion des conflits lors du merge
+## Resolving conflicts during the merge
 
-Les conflits apparaissent à la suite de la commande `git merge main`:
+Conflicts occurs sometimes when you execute this command `git merge main`:
 
 ```shell
 CONFLICT (content): Merge conflict in FILENAME
 ```
 
-Il faut alors régler les conflits sur tous les fichiers indiqués. Pour cela utilisez votre IDE préféré qui a probablement une fonctionnalité de type git > resolved conflicts. Faites bien attention de prendre la bonne version des lignes en conflits et ajouter les fichiers dans le conflit a été résolu.
+It's necessary to resolve all the conflicts on the mentioned files. In order to achieve that, use your favorite IDE which should have a `git > resolved conflicts` kind of feature. Be careful to take the correct version of the conflicting lines and `add` the files in the conflict has been resolved.
 
-Voici un exemple avec visual studio code:
+Here's an example using VSCode:
 
 ![conflicts](../img/tutorials/conflicts.png)
 
-* Cliquer sur `Accept Incoming Change` si la version de la branche de référence (`main`) est plus à jour que votre version locale
+* Click on `Accept Incoming Change` if the version of reference branch (here `main`) is more up to date than your local version
 
-* Cliquer sur `Accept Current Change` si votre version locale est plus à jour que celle de la branche de référence (`main`)
+* Click on `Accept Current Change` if your local version is more up to date than the `main`'s one
 
-* Cliquer sur l'un des deux et re-modifiez manuellement derrière si vous devez avoir les deux codes en même temps.
+* Click on `Accept Both Changes` and modify manually behind if you must have both codes at the same time.
 
 Repassez derrière et refaite des tests pour vérifier qu'il n'y a pas de régression.
 
