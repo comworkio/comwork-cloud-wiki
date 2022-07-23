@@ -65,7 +65,7 @@ Il faut alors régler les conflits sur tous les fichiers indiqués. Pour cela ut
 
 Voici un exemple avec visual studio code:
 
-![conflicts](images/conflicts.png)
+![conflicts](../img/conflicts.png)
 
 * Cliquer sur `Accept Incoming Change` si la version de la branche de référence (`main`) est plus à jour que votre version locale
 
@@ -125,26 +125,26 @@ git merge main
 git push origin <numéro de la branche ou ticket>
 ```
 
-Cela peux s'automatiser via le script suivant :
+This can be automated with the following bash script:
 
 ```shell
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [[ ! $1 =~ ^[0-9\\-]+$ ]]; then
     echo "Missing number of story"
     exit 1
 fi
 
-brancheref="main"
+branchref="main"
 if [[ $2 =~ ^[0-9\\-]+$ ]]; then
-    brancheref="$2"
+    branchref="$2"
 fi
 
-git checkout "$brancheref"
-git pull --rebase origin "$brancheref"
+git checkout "$branchref"
+git pull --rebase origin "$branchref"
 git checkout "$1"
 git pull --rebase origin "$1"
-git merge "$brancheref"
+git merge "$branchref"
 git push origin "$1"
 ```
 
@@ -161,7 +161,7 @@ Il faut alors régler les conflits sur tous les fichiers indiqués. Pour cela ut
 
 Voici un exemple avec visual studio code:
 
-![conflicts](images/conflicts.png)
+![conflicts](../img/conflicts.png)
 
 * Cliquer sur `Accept Incoming Change` si la version de la branche de référence (`main`) est plus à jour que votre version locale
 
@@ -199,31 +199,31 @@ Lorsque le merge s'est bien déroulé, il faut supprimer la branche dans GitLab.
 git push origin --delete <numéro de la branche ou ticket>
 ```
 
-## Démo
+## Demo
 
-Voici le scénario de la démo Git :
+Here's the demo scenario:
 
 ```shell
-###########################
-# Initialisation repo Git #
-###########################
+#################
+# Init git repo #
+#################
  
 # User 1
 mkdir poc-git; cd poc-git; git init; touch README; touch BRANCH; git add README BRANCH; git commit -m 'first commit'; git remote add origin https://gitlab.comwork.io/comwork_public/training/git; git push -u origin main
  
  
-####################
-# Use case de base #
-####################
+#################
+# Basic usecase #
+#################
  
 # User 2
-git clone https://gitlab.comwork.io/comwork_public/training/git poc-git-2; cd poc-git-2; git checkout -b 0000; echo "modif branch" >> BRANCH; git add BRANCH; git commit -m "modif branch"; git push origin 0000
+git clone https://gitlab.comwork.io/comwork_public/training/git poc-git-2; cd poc-git-2; git checkout -b 0000; echo "branch changes" >> BRANCH; git add BRANCH; git commit -m "branch changes"; git push origin 0000
  
 # User 1
-echo "modif main" >> README; git add README; git commit -m "modif main"; git push origin main; echo "modif bis" >> README; git add README; git commit -m "modif bis"; git push origin main
+echo "main changes" >> README; git add README; git commit -m "main changes"; git push origin main; echo "bis changes" >> README; git add README; git commit -m "bis changes"; git push origin main
  
 # User 3
-git clone https://gitlab.comwork.io/comwork_public/training/git poc-git-3; cd poc-git-3; git checkout 0000; echo "modif branch bis" >> BRANCH; git add BRANCH; git commit -m "modif branch bis"
+git clone https://gitlab.comwork.io/comwork_public/training/git poc-git-3; cd poc-git-3; git checkout 0000; echo "branch bis changes" >> BRANCH; git add BRANCH; git commit -m "branch bis changes"
  
 # User 2
 git checkout main; git pull --rebase origin main; git checkout 0000; git pull --rebase origin 0000; git merge main
@@ -234,32 +234,32 @@ git pull --rebase origin 0000; git push origin 0000
  
 ==>> Merge request: OK
  
-##################################
-# Conlit lors du merge avec main #
-##################################
+#####################################
+# Conlit during the merge with main #
+#####################################
  
 # User 1
-echo "modif main" >> BRANCH; git add BRANCH; git commit -m "modif main on branch"; git push origin main
+echo "modif changes" >> BRANCH; git add BRANCH; git commit -m "main changes on branch"; git push origin main
  
 # User 2
 git checkout main; git pull --rebase origin main; git checkout 0000; git pull --rebase origin 0000; git merge main
-==>> CONFLIT (contenu) : Conflit de fusion dans BRANCH
+==>> CONFLIT (content) : Conflict merge into BRANCH
 vi BRANCH
 git add BRANCH; git commit
 git push origin 0000
  
 ==>> Merge request: uniquement les modifs de la branche
  
-####################
-# Conflit sur 0000 #
-####################
+###################
+# Conflit on 0000 #
+###################
  
 # User 3
-git pull --rebase origin 0000; echo "modif branch conflit" >> BRANCH; git add BRANCH; git commit -m "modif branch conflit"; git push origin 0000
+git pull --rebase origin 0000; echo "branch conflict changes" >> BRANCH; git add BRANCH; git commit -m "branch conflict changes"; git push origin 0000
  
 # User 2
-echo "modif branch conflit bis" >> BRANCH; git add BRANCH; git commit -m "modif branch conflit bis"; git pull --rebase origin 0000
-==>> CONFLIT (contenu) : Conflit de fusion dans BRANCH
+echo "branch conflit bis resolution" >> BRANCH; git add BRANCH; git commit -m "branch conflit bis resolution"; git pull --rebase origin 0000
+==>> CONFLIT (content) : Conflict merge into BRANCH
 vi BRANCH
 git add BRANCH; git rebase --continue
 ==>> Application : modif branch conflit bis
@@ -267,12 +267,12 @@ git push origin 0000
  
 ==>> Network GitLab: OK
  
-###########################
-# Dernier merge optionnel #
-###########################
+#######################
+# Last optional merge #
+#######################
  
 # User 1
-echo "modif ter" >> README; git add README; git commit -m "modif ter"; git push origin main
+echo "ter changes" >> README; git add README; git commit -m "ter changes"; git push origin main
 ==>> Merge request: Accept Merge Request
 ```
 
@@ -345,7 +345,7 @@ git rebase -i HEAD~46
 
 2. Un éditeur s'ouvre :
 
-![git_rebase_i_1](images/git_rebase_i_1.png)
+![git_rebase_i_1](../img/git_rebase_i_1.png)
 
 => Remplacer le `pick` du premier commit par `r` (pour `reword`) et les suivant par `f` (pour `fixup` qui est un équivalent de `squash` ou `s` mais ne conserve que le premier commentaire).
 
@@ -353,7 +353,7 @@ Sauvegarder
 
 3. Un nouvel éditeur s'ouvre :
 
-![git_rebase_i_2](images/git_rebase_i_2.png)
+![git_rebase_i_2](../img/git_rebase_i_2.png)
 
 Puis ré-écrire le message du commit de résultat avec un message qui résume l'ensemble de la feature un peu mieux.
 
