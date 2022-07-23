@@ -1,17 +1,6 @@
 # Portainer as a service
 
-Get your infrastructure to the next level using [portainer](https://www.portainer.io) on our cloud platform !
-
-## Demo
-
-Install a simple portainer server:
-
-[![portainer_demo](./img/portainer_demo.png)](https://youtu.be/M29YE3w6NxA)
-
-Install portainer with agents:
-
-[![portainer_agent_demo](./img/portainer_agent_demo.png)](https://youtu.be/iYK2cwHQh1A)
-
+Get your infrastructure to the next level using [portainer](https://www.portainer.io) on our cloud platform!
 ## Usecases
 
 Here is a non exhaustive list of portainer usecases we're enjoying the most:
@@ -34,17 +23,13 @@ Multiple other actions:
 * Kubernetes integration
 * Deploy directly your containers from a catalog or a docker-compose file you just have to upload like a real Heroku/Netlify like PaaS
 
-## First connection
+## Demo and tutorials
 
-Beware: you have to set an admin password to the first connection and there is a portainer timeout, so do not wait to connect to your instance after creating it.
+You can find demo and tutorials [here](./tutorials/portainer/README.md)
 
 ## Minimal requirements
 
 We advise to start with an instance >= [DEV-M](./sizing_pricing.md)
-
-## Add portainer agents on comwork cloud
-
-Check-out [this tutorial](./tutorials/portainer/agent.md)
 
 ## Sizing and pricing
 

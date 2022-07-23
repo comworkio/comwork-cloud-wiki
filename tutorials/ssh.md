@@ -1,6 +1,6 @@
-# Connect to the machine with ssh
+# Connect with ssh
 
-Add this configuration in the `{ env_name }.yml` file:
+In order to connect to the host of your services with SSH, add this configuration in the ansible environment file (`env/{ instance_hash }.yml`):
 
 ```yaml
 ssh_users:

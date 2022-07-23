@@ -19,9 +19,9 @@ Want a meeting or a quote ? [Contact us](./subscription.md)
 
 _One of our most valuable partner, the [GDA Sidi Amor](https://sidiamor.org) which was struggling with multiple low cost shared hosting with lots of down time, TLS certificates, very old versions of PHP or MySQL and no security and backups. They almost lost everything!_
 
-## Demo
+## Demo and tutorial
 
-[![demo_wordpress_matomo](./img/demo_wordpress_matomo.png)](https://youtu.be/klVgXyELu10)
+You can find demo and tutorials [here](./tutorials/wpaas_matomo.md)
 
 ## Minimal requirements
 

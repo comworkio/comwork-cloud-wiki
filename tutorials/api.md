@@ -8,7 +8,7 @@ This API is the one that is used by the web console (and the terraform provider 
 
 You'll find the Swagger documentation if you click on the previous link.
 
-![swagger](./img/swagger.png)
+![swagger](../img/swagger.png)
 
 ## Terraform provider
 

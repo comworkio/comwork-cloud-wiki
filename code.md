@@ -10,16 +10,6 @@ You've also got a fully access to the compute instance that are hosting this web
 
 ![code](./img/code.png)
 
-## Demo
-
-Part1 (docker, docker-compose):
-
-[![code_demo_1](./img/demo_1.png)](https://youtu.be/sHFtiUmpYLI)
-
-Part2 (k3d, kubernetes, helm):
-
-[![code_demo_2](./img/demo_2.png)](https://youtu.be/9NVV1wbv4ZI)
-
 ## The differences with gitpod?
 
 Of course [gitpod](https://www.gitpod.io), [coder](https://coder.com), [google cloud shell](https://cloud.google.com/shell), github codespaces are great and bring lots of value for a very large amount of users. But there's value we can bring comparing to those two :
@@ -42,6 +32,10 @@ Want a meeting or a quote? [Contact us](./subscription.md)
 ![ipad](./img/ipad-code.jpeg)
 
 _Yeah you can use a dummy IPad to work as if you were on a powerfull laptop!_
+
+## Demo and tutorials
+
+You can find demo and tutorials [here](./tutorials/code/README.md)
 
 ## Minimal requirements
 

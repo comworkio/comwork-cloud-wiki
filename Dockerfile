@@ -17,7 +17,6 @@ COPY .docker/docusaurus/custom.css src/css/custom.css
 COPY .docker/docusaurus/index.js src/pages/index.js
 
 COPY . docs/
-COPY README.md docs/intro.md
 
 RUN rm -rf docs/ci && \
     npm i && \

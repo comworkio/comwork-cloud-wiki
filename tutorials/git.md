@@ -1,4 +1,4 @@
-# Git tutorial
+# Git
 
 ## Disclaimer
 
@@ -76,7 +76,7 @@ It's necessary to resolve all the conflicts on the mentioned files. In order to 
 
 Here's an example using VSCode:
 
-![conflicts](../img/tutorials/conflicts.png)
+![conflicts](../img/conflicts.png)
 
 * Click on `Accept Incoming Change` if the version of reference branch (here `main`) is more up to date than your local version
 
@@ -152,7 +152,7 @@ It's necessary to resolve all the conflicts on the mentioned files. In order to 
 
 Here's an example using VSCode:
 
-![conflicts](../img/tutorials/conflicts.png)
+![conflicts](../img/conflicts.png)
 
 * Click on `Accept Incoming Change` if the version of reference branch (here `main`) is more up to date than your local version
 
@@ -331,7 +331,7 @@ git rebase -i HEAD~46
 
 2. An editor is opening:
 
-![git_rebase_i_1](../img/tutorials/git_rebase_i_1.png)
+![git_rebase_i_1](../img/git_rebase_i_1.png)
 
 => Replace the `pick` of the first commit by `r` (or `reword`) the the following by `f` (or `fixup` which is pretty similar to `squash` or `s` except that it will not propose a merge of all the comments but will automatically take the first one).
 
@@ -339,7 +339,7 @@ Save-it.
 
 1. Another editor is opening:
 
-![git_rebase_i_2](../img/tutorials/git_rebase_i_2.png)
+![git_rebase_i_2](../img/git_rebase_i_2.png)
 
 Then rewrite the result commit message with a message that sums up the whole feature (try to make it better ;) ).
 

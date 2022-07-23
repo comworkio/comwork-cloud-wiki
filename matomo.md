@@ -4,9 +4,9 @@ Get your own insite with an opensource GDPR analytics compliant tool : __Matomo_
 
 ![matomo](./img/matomo.png)
 
-## Demo
+## Demo and tutorial
 
-[![demo_wordpress_matomo](./img/demo_wordpress_matomo.png)](https://youtu.be/klVgXyELu10)
+You can find demo and tutorials [here](./tutorials/wpaas_matomo.md)
 
 ## Minimal requirements
 

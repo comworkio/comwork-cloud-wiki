@@ -17,8 +17,6 @@ The instance are hosted on Scaleway for now (but we intend to propose multiple c
 
 ### Documentations
 
-* [Web console](./web_console.md)
-* [Restful api and terraform provider](./api.md)
 * [VSCode web as a service](./code.md)
 * [Portainer as a service](./portainer.md)
 * [Wordpress as a service](./wpaas.md)
@@ -27,8 +25,6 @@ The instance are hosted on Scaleway for now (but we intend to propose multiple c
 * [Sizing and pricing](./sizing_pricing.md)
 * [Subscription procedure](./subscription.md)
 
-### Tutorials
+### Tutorials and demos
 
-* [How to use git](./tutorials/git.md)
-* [Portainer](./tutorials/portainer/README.md)
-* [Connect to your instances with SSH](./tutorials/ssh.md)
+Go see all our available tutorials and demo [here](./tutorials/README.md)
