@@ -40,6 +40,12 @@ git commit -m "<feature or bug ticket number> comment"
 git push origin <feature or bug ticket number>
 ```
 
+## Renaming a branch
+
+```shell
+git checkout your_branch
+git checkout -b your_new_branchname
+
 ## Stash
 
 `stash` is usefull to keep a changes in sort of clipboard without making a commit revision in your history.
@@ -276,17 +282,6 @@ echo "ter changes" >> README; git add README; git commit -m "ter changes"; git p
 ==>> Merge request: Accept Merge Request
 ```
 
-## Basculer une branche sur une autre
-
-Si on se trouve dans le cas ou une US a été basculé vers une autre nouvelle US, il sera utile de créer une nouvelle branche qui continue à "Tracker" l'ancienne pour garder l'historique complet.
-=> Il s'agit de la même opération que renommer une branche.
-
-```shell
-git branch new-branch-name origin/old-branch-name
-git push origin --set-upstream new-branch-name
-git push origin :old-branch-name
-```
-
 ## Commit et push de modification sur une branche
 
 ```shell
@@ -311,8 +306,8 @@ To https://gitlab.comwork.io/xxxxxxxxx.git
 ## Supprimer une branche
 
 ```shell
-git branch -d <feature or bug ticket number> # localement
-git push origin -d <numéro de la branche ou du ticket>
+git branch -d <feature or bug ticket number> # locally
+git push origin -d <feature or bug ticket number>
 ```
 
 ## Ré-initialiser une branche
