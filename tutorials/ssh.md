@@ -1,6 +1,6 @@
 # Connect to the machine with ssh
 
-Add this configuration in the [`{ env_name }.yml` file:
+Add this configuration in the `{ env_name }.yml` file:
 
 ```yaml
 ssh_users:
