@@ -18,3 +18,7 @@
 portainer_agent_id: changeit
 portainer_agent_key: changeit
 ```
+
+We also got a demo video here:
+
+[![portainer_agent_demo](../../img/portainer_agent_demo.png)](https://youtu.be/iYK2cwHQh1A)

@@ -171,11 +171,11 @@ git merge --abort # abort the merge
 git reset --hard origin/<numéro de la branche ou ticket> # reset from the remote branch
 ```
 
-## Merge manuel d'une branche vers main
+## Manual merge from a branch into main
 
-Tout les développeurs n'ont pas les droits pour faire cette opération. Il faut normalement passer par une merge request sur gitlab.
+Not all developers have the permission to do so. It's generally better to use a "merge request" or a "pull request" on your git repository provider (Gitlab, Github, Gitea, whatever).
 
-Avant d'effectuer le merge local il faut avoir mis `main` à jour pour pouvoir faire le push de ce commit de merge immédiatement après.
+In order to perform the merge locally, you have to update `main` first then push the merge commit immediatly afterwards.
 
 ```shell
 git checkout <feature or bug ticket number>
@@ -186,10 +186,10 @@ git merge <feature or bug ticket number>
 git push origin main
 ```
 
-Lorsque le merge s'est bien déroulé, il faut supprimer la branche dans GitLab.
+Then you can delete the remote branch:
 
 ```shell
-git push origin --delete <feature or bug ticket number>
+git push -d origin <feature or bug ticket number>
 ```
 
 ## Demo
