@@ -6,7 +6,9 @@ This tutorial is a translation of this [training repository](https://gitlab.comw
 
 If you're a French speaker, you'll find there more resources (slides with git flows, etc).
 
-## Downloading/cloning a repository
+## Cloning a repository
+
+In order to download a local working copy of a distant git repo:
 
 ```shell
 git clone <repository url>
