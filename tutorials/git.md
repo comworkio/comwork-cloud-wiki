@@ -35,9 +35,9 @@ It's important to do it regularly and not waiting for too much changes.
 Warning: the commit doesn't reflect the modifications on the remote git server. It is the push operation that will do so.
 
 ```shell
-git add . # à la racine du repo
-git commit -m "<numéro de la branche ou ticket> commentaire"
-git push origin <numéro de la branche ou ticket>
+git add . # run it in the root folder repository
+git commit -m "<feature or bug ticket number> comment"
+git push origin <feature or bug ticket number>
 ```
 
 ## Stash
@@ -52,30 +52,31 @@ git stash pop # take out all the changes that had been stashed
 git stash clear # emptying the stash stack
 ```
 
-## Gestion des conflits lors de la mise à jour d'une branche
+## Resolving conflicts when updating a branch
 
-Les conflits apparaissent à la suite de la commande `git pull --rebase origin <numéro de la branche ou ticket>`
+Conflicts occurs sometimes when you execute this command: `git pull --rebase origin <feature or bug ticket number>`
 
 ```shell
-CONFLIT (contenu) : Conflit de fusion dans FILENAME
 CONFLICT (content): Merge conflict in FILENAME
 ```
 
-Il faut alors régler les conflits sur tous les fichiers indiqués. Pour cela utilisez votre IDE préféré qui a probablement une fonctionnalité de type git > resolved conflicts. Faites bien attention de prendre la bonne version des lignes en conflits et ajouter les fichiers dans le conflit a été résolu.
+It's necessary to resolve all the conflicts on the mentioned files. In order to achieve that, use your favorite IDE which should have a `git > resolved conflicts` kind of feature. Be careful to take the correct version of the conflicting lines and `add` the files in the conflict has been resolved.
 
-Voici un exemple avec visual studio code:
+Here's an example using VSCode:
 
 ![conflicts](../img/tutorials/conflicts.png)
 
-* Cliquer sur `Accept Incoming Change` si la version de la branche de référence (`main`) est plus à jour que votre version locale
+* Click on `Accept Incoming Change` if the version of reference branch (here `main`) is more up to date than your local version
 
-* Cliquer sur `Accept Current Change` si votre version locale est plus à jour que celle de la branche de référence (`main`)
+* Click on `Accept Current Change` if your local version is more up to date than the `main`'s one
 
 * Cliquer sur l'un des deux et re-modifiez manuellement derrière si vous devez avoir les deux codes en même temps.
 
-Repassez derrière et refaite des tests pour vérifier qu'il n'y a pas de régression.
+* Click on `Accept Both Changes` and modify manually behind if you must have both codes at the same time.
 
-Si vous resolvez les conflits manuellement, voici ensuite les commandes à effectuer une fois que vous jugez que le fichier en conflit est bien résolu :
+Go back and rerun the tests to check that there is no regression.
+
+If you resolve the conflicts manually, then here are the commands to perform once you judge that the file in conflict is well resolved:
 
 ```shell
 git add FILENAME
@@ -102,7 +103,7 @@ git rebase --interactive HEAD~2
 Si vraiment le rebase ne veut pas passer vous pouvez effectuer un merge :
 
 ```shell
-git pull origin <numéro de la branche ou ticket>
+git pull origin <feature or bug ticket number>
 ```
 
 Pour abandonner un merge :
@@ -119,10 +120,10 @@ La raison est la suivante : si entre temps un autre commit a été effectué sur
 ```shell
 git checkout main
 git pull --rebase origin main
-git checkout <numéro de la branche ou ticket>
-git pull --rebase origin <numéro de la branche ou ticket>
+git checkout <feature or bug ticket number>
+git pull --rebase origin <feature or bug ticket number>
 git merge main
-git push origin <numéro de la branche ou ticket>
+git push origin <feature or bug ticket number>
 ```
 
 This can be automated with the following bash script:
@@ -153,7 +154,6 @@ git push origin "$1"
 Les conflits apparaissent à la suite de la commande `git merge main`:
 
 ```shell
-CONFLIT (contenu) : Conflit de fusion dans FILENAME
 CONFLICT (content): Merge conflict in FILENAME
 ```
 
@@ -185,18 +185,18 @@ Tout les développeurs n'ont pas les droits pour faire cette opération. Il faut
 Avant d'effectuer le merge local il faut avoir mis `main` à jour pour pouvoir faire le push de ce commit de merge immédiatement après.
 
 ```shell
-git checkout <numéro de la branche ou ticket>
-git pull --rebase origin <numéro de la branche ou ticket>
+git checkout <feature or bug ticket number>
+git pull --rebase origin <feature or bug ticket number>
 git checkout main
 git pull --rebase origin main
-git merge <numéro de la branche ou ticket>
+git merge <feature or bug ticket number>
 git push origin main
 ```
 
 Lorsque le merge s'est bien déroulé, il faut supprimer la branche dans GitLab.
 
 ```shell
-git push origin --delete <numéro de la branche ou ticket>
+git push origin --delete <feature or bug ticket number>
 ```
 
 ## Demo
@@ -311,14 +311,14 @@ To https://gitlab.comwork.io/xxxxxxxxx.git
 ## Supprimer une branche
 
 ```shell
-git branch -d <numéro de la branche ou ticket> # localement
+git branch -d <feature or bug ticket number> # localement
 git push origin -d <numéro de la branche ou du ticket>
 ```
 
 ## Ré-initialiser une branche
 
 ```shell
-git reset --hard origin/<numéro de la branche ou ticket>
+git reset --hard origin/<feature or bug ticket number>
 ```
 
 ## Fusionner des commits et nettoyer l'historique
