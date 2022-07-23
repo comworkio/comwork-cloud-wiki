@@ -38,18 +38,54 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [
-      {
-        name: 'description', 
-        content: 'Comwork cloud documentation and tutorials'
-      },
-      {
-        name: 'keywords', 
-        content: 'Comwork, cloud, vscode, git, ansible, portainer, wordpress, gitops, gitlab, code, kubernetes, docker'
-      },
-      {
-        property: 'og:image', 
-        content: 'img/comwork_logo.png'
-      }
+        {
+          name: 'description', 
+          content: 'Comwork cloud documentation and tutorials'
+        },
+        {
+          name: 'keywords', 
+          content: 'Comwork, cloud, vscode, git, ansible, portainer, wordpress, gitops, gitlab, code, kubernetes, docker'
+        },
+        {
+          property: 'og:image', 
+          content: 'img/comwork_logo.png'
+        },
+        {
+          property: 'og:image:width', 
+          content: '300'
+        },
+        {
+          property: 'og:image:height', 
+          content: '300'
+        },
+        {
+          property: 'og:site_name',
+          content: 'Comwork cloud documentation and tutorials'
+        },
+        {
+          property: 'og:description',
+          content: 'Comwork cloud documentation and tutorials'
+        },
+        {
+          property: 'og:url',
+          content: 'https://docs.cloud.comwork.io'
+        },
+        {
+          property: 'twitter:card',
+          content: 'canonical'
+        },
+        {
+          property: 'twitter:description',
+          content: 'Comwork cloud documentation and tutorials'
+        },
+        {
+          property: 'twitter:title',
+          content: 'Comwork cloud documentation and tutorials'
+        },
+        {
+          property: 'og:type',
+          content: 'Comwork cloud documentation and tutorials'
+        },
       ],
       navbar: {
         title: 'Comwork cloud',
