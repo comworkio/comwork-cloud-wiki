@@ -91,33 +91,11 @@ git add FILENAME
 git rebase --continue
 ```
 
-### Cas exceptionnels
-
-Cependant il se peut que vous ayez à résoudre plusieurs fois les mêmes conflits (cas non reproductible mais il semble que cela puisse arriver). Auquel cas vous pouvez abandonner le rebase et effectuer un merge :
-
-Pour abandonner un rebase :
+Aborting:
 
 ```shell
-git rebase --abort
-```
-
-Vous pouvez essayer de squasher vos commits pour simplifier le rebase :
-
-```shell
-git rebase --interactive HEAD~2
-# ==>> dans l'éditeur modifier les "pick" en "s"
-```
-
-Si vraiment le rebase ne veut pas passer vous pouvez effectuer un merge :
-
-```shell
-git pull origin <feature or bug ticket number>
-```
-
-Pour abandonner un merge :
-
-```shell
-git reset --hard HEAD
+git rebase --abort # abort the rebase
+git reset --hard origin/<numéro de la branche ou ticket> # reset from the remote branch
 ```
 
 ## Merge de main dans une branche
@@ -184,6 +162,13 @@ Si vous resolvez les conflits manuellement, voici ensuite les commandes à effec
 ```shell
 git add FILENAME
 git merge --continue
+```
+
+Aborting:
+
+```shell
+git merge --abort # abort the merge
+git reset --hard origin/<numéro de la branche ou ticket> # reset from the remote branch
 ```
 
 ## Merge manuel d'une branche vers main
