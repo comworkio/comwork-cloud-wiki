@@ -27,7 +27,7 @@ The instance are hosted on Scaleway for now (but we intend to propose multiple c
 * [Sizing and pricing](./sizing_pricing.md)
 * [Subscription procedure](./subscription.md)
 
-## Tutorials
+### Tutorials
 
 * [How to use git](./tutorials/git.md)
 * [Portainer](./tutorials/portainer/README.md)
