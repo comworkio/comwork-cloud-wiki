@@ -37,6 +37,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [{
+        name: 'Comwork cloud', 
+        content: 'Comwork cloud documentation and tutorials'
+      }],
       navbar: {
         title: 'Comwork cloud',
         logo: {
