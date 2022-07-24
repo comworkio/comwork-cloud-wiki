@@ -307,7 +307,7 @@ git push -d afterwards <feature or bug ticket number> # delete the remote branch
 git reset --hard origin/<feature or bug ticket number>
 ```
 
-## Fusionner des commits et nettoyer l'historique
+## Squashing commit and cleaning/rewriting history
 
 Sometimes we might want to merge commits or rewrite the history for various reasons. For example :
 
