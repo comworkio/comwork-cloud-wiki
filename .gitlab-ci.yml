@@ -20,7 +20,7 @@ build:
   tags:
     - imagesbuilder
   rules: 
-    - if: $CI_COMMIT_MESSAGE =~ /\[Update pricing and push]/
+    - if: $CI_COMMIT_MESSAGE =~ /(Update pricing and push)/
       when: never
     - if: $CI_COMMIT_REF_NAME =~ /main/ 
   script:
@@ -35,7 +35,7 @@ deploy:
     - chmod +x ./ci/deploy.sh
     - ./ci/deploy.sh
   rules: 
-    - if: $CI_COMMIT_MESSAGE =~ /\[Update pricing and push]/
+    - if: $CI_COMMIT_MESSAGE =~ /(Update pricing and push)/
       when: never
     - if: $CI_COMMIT_REF_NAME =~ /main/ 
   tags:
