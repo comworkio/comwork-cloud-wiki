@@ -95,10 +95,14 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'README',
+            to: 'https://cloud.comwork.io',
+            label: 'Console',
             position: 'left',
-            label: 'Documentation',
+          },
+          {
+            to: 'https://cloud-api.comwork.io',
+            label: 'Api',
+            position: 'left',
           },
           {
             to: 'https://gitlab.comwork.io/comwork_public/comwork_cloud',
