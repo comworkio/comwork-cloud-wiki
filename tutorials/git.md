@@ -97,7 +97,7 @@ Aborting:
 
 ```shell
 git rebase --abort # abort the rebase
-git reset --hard origin/<numéro de la branche ou ticket> # reset from the remote branch
+git reset --hard origin/<feature or bug ticket number> # reset from the remote branch
 ```
 
 ## Merge de main dans une branche
@@ -173,7 +173,7 @@ Aborting:
 
 ```shell
 git merge --abort # abort the merge
-git reset --hard origin/<numéro de la branche ou ticket> # reset from the remote branch
+git reset --hard origin/<feature or bug ticket number> # reset from the remote branch
 ```
 
 ## Manual merge from a branch into main
@@ -245,7 +245,7 @@ vi BRANCH
 git add BRANCH; git commit
 git push origin 0000
  
-==>> Merge request: uniquement les modifs de la branche
+==>> Merge request: only on the branch changes
  
 ###################
 # Conflit on 0000 #
@@ -280,7 +280,7 @@ $ git commit -am "Deleting useless file"
 [develop2 aab887a] Deleting useless file
  1 file changed, 31 deletions(-)
  delete mode 100644 .classpath
-$ git push origin <numéro de la branch ou ticket>
+$ git push origin <feature or bug ticket number>
 Counting objects: 2, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (2/2), done.
@@ -354,5 +354,5 @@ git log
 1. Push and check on your git repo provider (Gitlab, Github, Gitea, whatever):
 
 ```shell
-git push origin <la branche> -f
+git push origin <feature or bug ticket number> -f
 ```
