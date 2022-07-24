@@ -4,11 +4,7 @@ The sizing and pricing model is following the [Scaleway's one](https://www.scale
 
 So those pricing can be readjusted following the Scaleway's pricing evolutions.
 
-This markdown file is automatically generated from [price_calculator](./price_calculator/README.md)
-
-## Table of contents
-
-[[_TOC_]]
+This page is automatically generated from [price_calculator](./price_calculator/README.md)
 
 ## Sizing
 
