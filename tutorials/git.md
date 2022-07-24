@@ -273,7 +273,7 @@ echo "ter changes" >> README; git add README; git commit -m "ter changes"; git p
 ==>> Merge request: Accept Merge Request
 ```
 
-## Commit et push de modification sur une branche
+## Commit and push changes on a branch
 
 ```shell
 $ git commit -am "Deleting useless file"
