@@ -20,10 +20,10 @@ COPY . docs/
 
 RUN rm -rf docs/ci && \
     apk add curl && \
-    curl "https://cloud-api.comwork.io/v1/swagger.json" -o api.json && \
-    npx swagger-markdown -i api.json && \
-    rm -rf api.json && \
-    mv api.md docs/tutorials/api && \
+    curl "https://cloud-api.comwork.io/v1/swagger.json" -o restful_api.json && \
+    npx swagger-markdown -i restful_api.json && \
+    rm -rf restful_api.json && \
+    mv restful_api.md docs/tutorials/api && \
     npm i && \
     npm run build
 
