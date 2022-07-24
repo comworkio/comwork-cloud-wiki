@@ -1,4 +1,4 @@
-# Exposing a container running with K3D
+# Running and exposing a docker container
 
 Here you'll find a demo on how host a container inside your [code](../../code.md) instance with `docker` and `docker-compose` and how to expose it in public with `localtunnel`.
 
