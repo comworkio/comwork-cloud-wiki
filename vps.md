@@ -10,7 +10,7 @@ A simple VPS that contains:
 
 ## Minimal requirements
 
-We advise to start with an instance >= [DEV-S](./sizing_pricing.md)
+We advise to start with an instance >= [DEV1-S](./sizing_pricing.md)
 
 ## Sizing and pricing
 

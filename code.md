@@ -39,7 +39,7 @@ You can find demo and tutorials [here](./tutorials/code/README.md)
 
 ## Minimal requirements
 
-We advise to start with an instance >= [DEV-M](./sizing_pricing.md)
+We advise to start with an instance >= [DEV1-M](./sizing_pricing.md)
 
 ## Sizing and pricing
 
