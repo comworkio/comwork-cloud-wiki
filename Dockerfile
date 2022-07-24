@@ -19,6 +19,11 @@ COPY .docker/docusaurus/index.js src/pages/index.js
 COPY . docs/
 
 RUN rm -rf docs/ci && \
+    apk add curl && \
+    curl "https://cloud-api.comwork.io/v1/swagger.json" -o api.json && \
+    npx swagger-markdown -i api.json && \
+    rm -rf api.json && \
+    mv api.md docs/tutorials/api && \
     npm i && \
     npm run build
 

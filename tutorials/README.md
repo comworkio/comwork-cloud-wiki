@@ -1,7 +1,7 @@
 # Tutorials
 
 * [Web console](./web_console.md)
-* [Restful api and terraform provider](./api.md)
+* [API](./api/README.md)
 * [How to use git](./git.md)
 * [Code](./code/README.md)
 * [Portainer](./portainer/README.md)
