@@ -105,6 +105,11 @@ const config = {
             position: 'left',
           },
           {
+            to: 'https://youtube.com/playlist?list=PLVa_2sL_l0msxUnmaSpLAGlwOxizXWjht',
+            label: 'YouTube',
+            position: 'right',
+          },
+          {
             to: 'https://gitlab.comwork.io/comwork_public/comwork_cloud',
             label: 'Gitlab',
             position: 'right',
