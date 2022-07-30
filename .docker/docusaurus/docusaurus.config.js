@@ -11,6 +11,10 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
+  plugins: [
+    require.resolve('docusaurus-lunr-search')
+  ],
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
