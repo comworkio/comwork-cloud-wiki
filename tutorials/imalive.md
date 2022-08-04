@@ -25,7 +25,7 @@ An example of exposed API instance: https://imalive.comwork.io
 
 ## Getting started
 
-### Run with ansible
+### Running with ansible
 
 Some environment like [vps](../vps.md) are already install the imalive role. However, even when it's not provided, you still can add this [ansible role](https://gitlab.comwork.io/oss/imalive/-/tree/main/ansible-imalive) on your deployment repo and adding the role invokation in your playbook.
 
