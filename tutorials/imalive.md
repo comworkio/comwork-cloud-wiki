@@ -1,6 +1,6 @@
 # Imalive API / metrics exporter
 
-Let your nodes singing like Céline Dion `I'm alive!`.
+Let your nodes sing like Céline Dion `I'm alive!`.
 
 ![celine](../img/celine.jpeg)
 
