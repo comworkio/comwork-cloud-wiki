@@ -8,8 +8,6 @@ Just a dummy healthcheck api for your nodes (support x86 and armhf for raspberry
 
 It provide a http/restful endpoint that you can use as a healthcheck rule to your loadbalancer and also publish a heartbit in stdout (usefull if you collect it in a log/alerting management system such as elasticstack).
 
-BTW we're also providing packages and images for elasticstack (Kibana, Elasticsearch, Filebeat) [here](https://gitlab.comwork.io/oss/elasticstack).
-
 ![kibana](../img/imalive_kibana.png)
 
 ## Git repositories
