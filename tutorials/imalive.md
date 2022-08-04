@@ -25,7 +25,13 @@ The image is available and versioned here: https://hub.docker.com/r/comworkio/im
 
 An example of raspberrypi's cluster exposed with this API in public: https://imalive.comwork.io
 
-## Running with docker-compose
+## Getting started
+
+### Run with ansible
+
+Some environment like [vps](../vps.md) are already install the imalive role. However, even when it's not provided, you still can add this [ansible role](https://gitlab.comwork.io/oss/imalive/-/tree/main/ansible-imalive) on your deployment repo and adding the role invokation in your playbook.
+
+### Running with docker-compose
 
 Get this [docker-compose file](https://gitlab.comwork.io/oss/imalive/-/blob/main/docker-compose.yml).
 
@@ -47,11 +53,11 @@ If you want to test on a raspberrypi or any other ARM device, use this command i
 $ docker-compose -f docker-compose-arm.yml up
 ```
 
-## Running with K3D (Kubernetes / helm)
+### Running with K3D (Kubernetes / helm)
 
 Use our helm chart [here](https://gitlab.comwork.io/oss/imalive/-/tree/main/helm)
 
-### Test with K3D (init the cluster)
+#### Test with K3D (init the cluster)
 
 ```shell
 k3d cluster create localdev --api-port 6550 -p "8089:80@loadbalancer"
@@ -60,7 +66,7 @@ sudo k3d kubeconfig get localdev > ~/.kube/config
 
 Continue to the next chapter
 
-### Install the helmchart
+#### Install the helmchart
 
 ```shell
 cd helm # all the commands below must be under imalive/helm directory
@@ -69,7 +75,7 @@ helm dependency update
 helm -n imalive install . -f values.yaml --generate-name
 ```
 
-### Check the deployment and ingress
+#### Check the deployment and ingress
 
 ```shell
 kubectl -n imalive get deployments
