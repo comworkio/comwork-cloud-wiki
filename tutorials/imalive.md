@@ -1,4 +1,4 @@
-# I'm Alive API / metrics exporter
+# Imalive API / metrics exporter
 
 Let your nodes singing like Céline Dion `I'm alive!`.
 
