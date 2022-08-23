@@ -1,17 +1,10 @@
 # Sizing and pricing
 
-The sizing and pricing model is following the provider's ones and add 70% for our internal APIs and compute costs and support (you can see the details below).
+The sizing and pricing model is following the [Scaleway's one](https://www.scaleway.com/en/pricing/?tags=available,compute-instances-developmentinstances) and add 70% for our internal APIs and compute costs and support (you can see the details below).
 
-So those pricing can be readjusted following the providers's pricing evolutions.
+So those pricing can be readjusted following the Scaleway's pricing evolutions.
 
 This page is automatically generated from [price_calculator](./price_calculator/README.md)
-
-## Providers
-
-The available providers are the following:
-
-* `scw`: [Scaleway](https://www.scaleway.com)
-* `ovh`: [OVH cloud](https://www.ovhcloud.com) (*in progress*)
 
 ## Sizing
 

@@ -4,7 +4,7 @@ Here's the documentation of [comwork cloud console](https://cloud.comwork.io) an
 
 It allows us to provide cloud SaaS services like [code](./code.md) or [wpaas](./wpaas.md) in a "IaC" (infrastructure as code) way: you'll get access to a private [comwork gitlab](https://gitlab.comwork.io) repository that contains ansible roles and playbooks you'll be able to maintain. The modification on this repositories will automatically be applied in your instances.
 
-The instance are hosted on Scaleway for now (but we intend to propose multiple cloud providers in the future).
+The instances are hosted on Scaleway or OVH for now (we intend to propose even more cloud providers in the future).
 
 ![cloud_bg](./img/cloud_bg.png)
 
