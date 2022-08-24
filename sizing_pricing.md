@@ -21,11 +21,10 @@ The available providers are the following:
 |scw     |DEV1-M  |3*x86 64 bits |4 Gb   |40 Gb NVMe |300 Mbps|
 |scw     |DEV1-L  |4*x86 64 bits |8 Gb   |80 Gb NVMe |400 Mbps|
 |scw     |DEV1-XL |4*x86 64 bits |12 Gb  |120 Gb NVMe|500 Mbps|
-|ovh     |b2-7    |2*x86 64 bits |7 Gb   |50 Gb NVMe |250 Mbps|
+|ovh     |d2-2    |1*x86 64 bits |2 Gb   |52 Gb NVMe |100 Mbps|
+|ovh     |d2-4    |2*x86 64 bits |4 Gb   |50 Gb NVMe |250 Mbps|
+|ovh     |d2-8    |4*x86 64 bits |8 Gb   |50 Gb NVMe |500 Mbps|
 |ovh     |b2-15   |4*x86 64 bits |15 Gb  |100 Gb NVMe|250 Mbps|
-|ovh     |b2-30   |8*x86 64 bits |30 Gb  |200 Gb NVMe|500 Mbps|
-|ovh     |b2-60   |16*x86 64 bits|60 Gb  |400 Gb NVMe|1 Gbps  |
-|ovh     |b2-120  |32*x86 64 bits|120 Gb |400 Gb NVMe|10 Gbps |
 
 ## Pricing
 
@@ -53,11 +52,10 @@ The available providers are the following:
 | DEV1-M   | scw      | pl-waw-1 | 0.022 €       | 0.037 €  | 0.045 €        | 33.391 €        |
 | DEV1-L   | scw      | pl-waw-1 | 0.043 €       | 0.073 €  | 0.088 €        | 65.264 €        |
 | DEV1-XL  | scw      | pl-waw-1 | 0.065 €       | 0.111 €  | 0.133 €        | 98.654 €        |
-| b2-7     | ovh      | UK1-nova | 0.0619 €      | 0.105 €  | 0.126 €        | 93.949 €        |
-| b2-15    | ovh      | UK1-nova | 0.1169 €      | 0.140 €  | 0.168 €        | 125.242 €       |
-| b2-30    | ovh      | UK1-nova | 0.2369 €      | 0.403 €  | 0.483 €        | 359.557 €       |
-| b2-60    | ovh      | UK1-nova | 0.4589 €      | 0.780 €  | 0.936 €        | 696.500 €       |
-| b2-120   | ovh      | UK1-nova | 0.9029 €      | 1.535 €  | 1.842 €        | 1 370.386 €     |
+| d2-2     | ovh      | UK1-nova | 0.00901 €     | 0.015 €  | 0.018 €        | 13.675 €        |
+| d2-4     | ovh      | UK1-nova | 0.01804 €     | 0.022 €  | 0.026 €        | 19.327 €        |
+| d2-8     | ovh      | UK1-nova | 0.03248 €     | 0.055 €  | 0.066 €        | 49.297 €        |
+| b2-15    | ovh      | UK1-nova | 0.11690 €     | 0.140 €  | 0.168 €        | 125.242 €       |
 
 
 *Updated the 2022-08-24*
