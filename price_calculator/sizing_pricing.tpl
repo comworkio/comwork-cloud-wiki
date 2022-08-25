@@ -26,6 +26,20 @@ The available providers are the following:
 |ovh     |d2-8    |4*x86 64 bits |8 Gb   |50 Gb NVMe |500 Mbps|
 |ovh     |b2-15   |4*x86 64 bits |15 Gb  |100 Gb NVMe|250 Mbps|
 
+## Datacenters locations
+
+|Provider|Region|Country       |City       |
+|--------|------|--------------|-----------|
+|scw     |fr-par|France        |Paris      |
+|scw     |nl-am |Nederland     |Amesterdam |
+|scw     |pl-waw|Poland        |Warszawa   |
+|ovh     |GRA   |France        |Graveline  |
+|ovh     |SBG   |France        |Strasbourg |
+|ovh     |UK    |United Kingdom|London     |
+|ovh     |DE    |Germany       |Frankfurt  |
+|ovh     |BHS   |Canada        |Beauharnois|
+|ovh     |WAW   |Poland        |Warszawa   |
+
 ## Pricing
 
 ### Instances pricing
