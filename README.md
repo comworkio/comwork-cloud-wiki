@@ -24,7 +24,7 @@ The instances are hosted on Scaleway or OVH for now (we intend to propose even m
 * [VPS as a service](./vps.md)
 * [Sizing and pricing](./sizing_pricing.md)
 * [Subscription procedure](./subscription.md)
-* [Licences](./licence.md)
+* [Licences](./licences.md)
 
 ### Tutorials and demos
 
