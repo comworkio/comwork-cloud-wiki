@@ -24,7 +24,6 @@ RUN rm -rf docs/ci && \
     npx swagger-markdown -i restful_api.json && \
     rm -rf restful_api.json && \
     mv restful_api.md docs/tutorials/api && \
-    sed -i "s/COPYRIGHT_YEAR/$(date +"%Y")" docs/licences.md && \
     npm i && \
     npm i --save docusaurus-lunr-search && \
     npm run build
