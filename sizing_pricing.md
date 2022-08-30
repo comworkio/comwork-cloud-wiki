@@ -88,7 +88,7 @@ The available providers are the following:
 | b2-15    | ovh      | WAW1-nova  | 0.11690 €     | 0.199 €  | 0.238 €        | 177.426 €       |
 
 
-*Updated the 2022-08-26*
+*Updated the 2022-08-30*
 
 ### Details
 
