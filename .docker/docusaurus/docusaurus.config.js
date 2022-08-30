@@ -44,7 +44,7 @@ const config = {
     ({
       matomo: {
         matomoUrl: 'https://matomo.comwork.io/',
-        siteId: '21',
+        siteId: '20',
         phpLoader: 'matomo.php',
         jsLoader: 'matomo.js',
       },
