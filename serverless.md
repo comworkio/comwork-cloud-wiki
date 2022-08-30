@@ -1,6 +1,6 @@
 # Serverless
 
-Disclaimer: for now there's only [OpenFaaS / Faasd](https://www.openfaas.com/blog/introducing-faasd/) available but we intend to propose other FaaS (functions as a service) engines and our own one based on Google Cloud Functions framework.
+Disclaimer: for now there's only [OpenFaaS / Faasd](https://www.openfaas.com/blog/introducing-faasd/) available but we intend to propose other FaaS (functions as a service) engines including our own one based on Google Cloud Functions framework.
 
 Also [portainer](./portainer.md) is also working on a FaaS engine according to [this tweet](https://twitter.com/portainerio/status/1563943478949986304?s=20&t=1Gra6AO0n1RrCoL6OSwY2Q). We'll keep this service up to date so you'll also might be able to benefit from this feature in the future.
 
