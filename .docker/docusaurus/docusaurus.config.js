@@ -13,7 +13,7 @@ const config = {
 
   plugins: [
     require.resolve('docusaurus-lunr-search'),
-    'docusaurus-plugin-matomo'
+    require.resolve('docusaurus-plugin-matomo')
   ],
 
   i18n: {
@@ -44,7 +44,7 @@ const config = {
     ({
       matomo: {
         matomoUrl: 'https://matomo.comwork.io/',
-        siteId: '20',
+        siteId: '21',
         phpLoader: 'matomo.php',
         jsLoader: 'matomo.js',
       },
