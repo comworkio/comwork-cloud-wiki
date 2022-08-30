@@ -12,7 +12,8 @@ const config = {
   favicon: 'img/favicon.ico',
 
   plugins: [
-    require.resolve('docusaurus-lunr-search')
+    require.resolve('docusaurus-lunr-search'),
+    'docusaurus-plugin-matomo'
   ],
 
   i18n: {
@@ -41,6 +42,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      matomo: {
+        matomoUrl: 'https://matomo.comwork.io/',
+        siteId: '20',
+        phpLoader: 'matomo.php',
+        jsLoader: 'matomo.js',
+      },
       metadata: [
         {
           name: 'description', 
