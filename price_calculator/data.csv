@@ -1,7 +1,7 @@
 Instance,Provider,Zone,Variable,Original cost,Per hour,Per hour (TTC),Per month (TTC),,Data,Details,
 DEV1-S,scw,fr-par-1,PRICE_DEV1_S,"0,011 €","0,019 €","0,022 €","16,695 €",,Additional costs,"Network, comwork api cost...","1,7"
-DEV1-M,scw,fr-par-1,PRICE_DEV1_L,"0,022 €","0,037 €","0,045 €","33,391 €",,Max number hours per months,24 hours * 31 days (max),744
-DEV1-L,scw,fr-par-1,PRICE_DEV1_M,"0,043 €","0,073 €","0,088 €","65,264 €",,VAT,20% French VAT,"1,2"
+DEV1-M,scw,fr-par-1,PRICE_DEV1_M,"0,022 €","0,037 €","0,045 €","33,391 €",,Max number hours per months,24 hours * 31 days (max),744
+DEV1-L,scw,fr-par-1,PRICE_DEV1_L,"0,043 €","0,073 €","0,088 €","65,264 €",,VAT,20% French VAT,"1,2"
 DEV1-XL,scw,fr-par-1,PRICE_DEV1_XL,"0,065 €","0,111 €","0,133 €","98,654 €",,Delivery estimated time,Delivery of a fully fonctional instance,6h
 DEV1-S,scw,fr-par-2,PRICE_DEV1_S_FRPAR2,"0,011 €","0,019 €","0,022 €","16,695 €",,,,
 DEV1-M,scw,fr-par-2,PRICE_DEV1_M_FRPAR2,"0,022 €","0,037 €","0,045 €","33,391 €",,,,
