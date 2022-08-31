@@ -8,7 +8,13 @@ Deploy an OpenFaaS (faasd) instance and deploy a function "NodeInfo" which will 
 
 ![faasd_provision](./img/faasd_provision.png)
 
+Then you can deploy ready to use functions from the marketplace:
+
 ![faasd_gui](./img/faasd_gui.png)
+
+You can also deploy your own functions or containers. Here's an example with our usual [imalive metrics exporter](./tutorials/imalive.md):
+
+![faasd_imalive](./img/faasd_imalive.png)
 
 ### Minimal requirements
 
