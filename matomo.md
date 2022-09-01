@@ -1,6 +1,6 @@
 # Matomo as a service
 
-Get your own insite with an opensource GDPR analytics compliant tool : __Matomo__!
+Get your own insights with an opensource GDPR analytics compliant tool : __Matomo__!
 
 ![matomo](./img/matomo.png)
 
