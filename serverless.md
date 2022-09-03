@@ -16,6 +16,10 @@ You can also deploy your own functions or containers. Here's an example with our
 
 ![faasd_imalive](./img/faasd_imalive.png)
 
+## Demo and tutorial
+
+You can find demo and tutorials [here](./tutorials/faasd.md)
+
 ### Minimal requirements
 
 We advise to start with an instance >= [DEV1-M](./sizing_pricing.md)
