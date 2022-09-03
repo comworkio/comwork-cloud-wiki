@@ -6,6 +6,8 @@ This work is in progress...
 
 ## The OpenFaaS CLI (faas-cli)
 
+Let's assume in this tutorial you deployed a Faasd instance with the following public url: `https://pmy-faasd-628ufo.faasd.comwork.info`
+
 ### Install and connect to the server
 
 Install the faas cli if it's not already done:
@@ -17,7 +19,7 @@ curl -sSL https://cli.openfaas.com | sudo sh
 ### Authentication to the faasd server
 
 ```shell
-export OPENFAAS_URL=https://{your_instance}.comwork.(cloud|dev|info)
+export OPENFAAS_URL=https://my-faasd-628ufo.faasd.comwork.info # replace the public url with your own one
 faas-cli login --username cloud --password YOUR_PASSWORD
 ```
 
@@ -72,13 +74,13 @@ def handle(req):
     return "Hello {}!".format(req)
 ```
 
-Change the `hello.yml` to add a full container registry image path in the `image` field:
+Change the `hello.yml` to add a full container registry image path in the `image` field, and the `gateway` field:
 
 ```yaml
 version: 1.0
 provider:
   name: openfaas
-  gateway: http://127.0.0.1:8080
+  gateway: https://my-faasd-628ufo.faasd.comwork.info
 functions:
   hello:
     lang: python3
