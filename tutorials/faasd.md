@@ -17,7 +17,11 @@ _You'll see it's very quick and very pleasant to read on any devices support_
 
 ## Video tutorial
 
-This work is in progress...
+[![demo_faasd](../img/demo_faasd.png)](https://youtu.be/ttwhWnbmfa8)
+
+You can activate the subtitles in English or French to get more details on this demo. 
+
+Enjoy!
 
 ## The OpenFaaS CLI (faas-cli)
 
