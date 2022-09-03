@@ -4,7 +4,7 @@
 
 This work is in progress...
 
-## The CLI faas-cli
+## The OpenFaaS CLI (faas-cli)
 
 ### Install and connect to the server
 
@@ -14,7 +14,7 @@ Install the faas cli if it's not already done:
 curl -sSL https://cli.openfaas.com | sudo sh
 ```
 
-### Authentication with faas-cli
+### Authentication to the faasd server
 
 ```shell
 export OPENFAAS_URL=https://{your_instance}.comwork.(cloud|dev|info)
@@ -28,6 +28,90 @@ faasd_user: cloud
 faasd_password: YOUR_PASSWORD
 ```
 
+### Authentication to docker hub registry
+
+In order to push your functions (which are built on top of containers), you need an OCI container registry such as [docker hub](https://hub.docker.com).
+
+Create a free account and an access token:
+
+![docker_hub_at_1](../img/docker_hub_at_1.png)
+
+![docker_hub_at_2](../img/docker_hub_at_2.png)
+
+Then
+
+```shell
+faas-cli registry-login --username YOUR_DOCKERHUB_USERNAME --password YOUR_DOCKERHUB_ACCESS_TOKEN
+```
+
+### Deploy a function with faas-cli
+
+Here's an exemple of function created from template in Python3:
+
+```shell
+$ faas-cli new hello --lang python3
+$ ls -l hello*
+-rw------- 1 ineumann staff 157 Sep  3 10:05 hello.yml
+
+hello:
+total 4
+-rw-r--r-- 1 ineumann staff   0 Sep  3 10:05 __init__.py
+-rw-r--r-- 1 ineumann staff 123 Sep  3 10:05 handler.py
+-rw-r--r-- 1 ineumann staff   0 Sep  3 10:05 requirements.txt
+```
+
+Change the `hello/handler.py` file:
+
+```python
+def handle(req):
+    """handle a request to the function
+    Args:
+        req (str): request body
+    """
+
+    return "Hello {}!".format(req)
+```
+
+Change the `hello.yml` to add a full container registry image path in the `image` field:
+
+```yaml
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  hello:
+    lang: python3
+    handler: ./hello
+    image: comworkio/faasd-hello:latest
+```
+
+Then build and deploy:
+
+```shell
+$ faas-cli up -f ./hello.yml
+```
+
+If you're not on a x86 computer (like a M1 Apple), you need to do this instead:
+
+```shell
+$ faas-cli publish -f ./hello.yml --platforms linux/amd64
+$ faas-cli deploy -f ./hello.yml
+```
+
+Then you'll be able to invoke your function:
+
+```shell
+$ curl -X POST "https://my-faasd-628ufo.faasd.comwork.info/function/hello" -d "Idriss"
+Hello Idriss!
+```
+
+And see it and invoking it from the GUI:
+
+![faasd_hello_function](../img/faasd_hello_function.png)
+
 ### More about Faasd CLI
 
 We advise you to get the ["Serverless for everyone else" book](https://openfaas.gumroad.com/l/serverless-for-everyone-else) from Alex Ellis (founder of OpenFaaS and Faasd) which explain everything you need to know for using Faasd CLI.
+
+You also should check the OpenFaaS CLI public documentation [here](https://docs.openfaas.com).
