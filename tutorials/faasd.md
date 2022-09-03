@@ -92,7 +92,7 @@ Then build and deploy:
 $ faas-cli up -f ./hello.yml
 ```
 
-If you're not on a x86 computer (like a M1 Apple), you need to do this instead:
+If you're not on a x86/amd64 computer (like an Apple Silicon for example), use thoses commands instead:
 
 ```shell
 $ faas-cli publish -f ./hello.yml --platforms linux/amd64
