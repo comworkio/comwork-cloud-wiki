@@ -17,7 +17,7 @@ curl -sSL https://cli.openfaas.com | sudo sh
 ### Authentication with faas-cli
 
 ```shell
-export OPENFAAS_URL=https://{{ env_hashed_name }}.{{ environment }}.{{ root_dns_zone }}
+export OPENFAAS_URL=https://{your_instance}.comwork.(cloud|dev|info)
 faas-cli login --username cloud --password YOUR_PASSWORD
 ```
 
