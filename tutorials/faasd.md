@@ -1,6 +1,6 @@
 # OpenFaaS / Faasd
 
-## Disclaimers
+## Disclaimer
 
 In this tutorial, we'll give you some insights on how deploy a faasd server with comwork cloud and how deploy a dummy function in the context of using this comwork cloud service. We do not want to replace the amazing job done by the OpenFaaS team. So if you want to really use Faasd in a production context, we strongly advise you to:
 
