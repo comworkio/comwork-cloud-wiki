@@ -7,7 +7,7 @@ In this tutorial, we'll give you some insights on how deploy a faasd server with
 * Get the ["Serverless for everyone else" book](https://openfaas.gumroad.com/l/serverless-for-everyone-else) from Alex Ellis (founder of OpenFaaS and Faasd) which explain everything you need to know for using Faasd CLI. It's not expensive and it's worth it, trust us!
 * Check the OpenFaaS CLI public documentation [here](https://docs.openfaas.com) which is also pretty great
 
-![serverless_book](../img/serverless_book.jpeg)
+![serverless_book](../img/serverless_book.png)
 
 _You'll see it's very quick and very pleasant to read on any devices support_
 
