@@ -1,5 +1,12 @@
 # OpenFaaS / Faasd
 
+## Disclaimers
+
+In this tutorial, we'll give you some insights on how deploy a faasd server with comwork cloud and how deploy a dummy function in the context of using this comwork cloud service. We do not want to replace the amazing job done by the OpenFaaS team. So if you want to really use Faasd in a production context, we strongly advise you to:
+
+* Get the ["Serverless for everyone else" book](https://openfaas.gumroad.com/l/serverless-for-everyone-else) from Alex Ellis (founder of OpenFaaS and Faasd) which explain everything you need to know for using Faasd CLI. It's not expensive and it's worth it, trust us!
+* Check the OpenFaaS CLI public documentation [here](https://docs.openfaas.com) which is also pretty great
+
 ## Video tutorial
 
 This work is in progress...
@@ -111,9 +118,3 @@ Hello Idriss!
 And see it and invoking it from the GUI:
 
 ![faasd_hello_function](../img/faasd_hello_function.png)
-
-### More about Faasd CLI
-
-We advise you to get the ["Serverless for everyone else" book](https://openfaas.gumroad.com/l/serverless-for-everyone-else) from Alex Ellis (founder of OpenFaaS and Faasd) which explain everything you need to know for using Faasd CLI.
-
-You also should check the OpenFaaS CLI public documentation [here](https://docs.openfaas.com).
