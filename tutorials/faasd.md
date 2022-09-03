@@ -40,7 +40,7 @@ Create a free account and an access token:
 
 ![docker_hub_at_2](../img/docker_hub_at_2.png)
 
-Then
+Then:
 
 ```shell
 faas-cli registry-login --username YOUR_DOCKERHUB_USERNAME --password YOUR_DOCKERHUB_ACCESS_TOKEN
