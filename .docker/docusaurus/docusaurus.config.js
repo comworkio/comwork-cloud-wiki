@@ -12,7 +12,12 @@ const config = {
   favicon: 'img/favicon.ico',
 
   plugins: [
-    require.resolve('docusaurus-lunr-search'),
+    [
+      require.resolve('docusaurus-lunr-search'),
+      {
+        indexBaseUrl: true
+      }
+    ],
     require.resolve('docusaurus-plugin-matomo')
   ],
 
