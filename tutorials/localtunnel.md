@@ -47,11 +47,11 @@ Note: you can use multiple tunnels, you just have to add your tunnels subdomains
 gw_proxies:
   # ...
   - domain: localtunnel-1.{your_instance_hash}.lt.comwork.(cloud|dev|info)
-    target: http://localtunnel-1.{your_instance_hash}.lt.comwork.(cloud|dev|info):3200
+    target: localtunnel-1.{your_instance_hash}.lt.comwork.(cloud|dev|info):3200
   - domain: localtunnel-2.{your_instance_hash}.lt.comwork.(cloud|dev|info)
-    target: http://localtunnel-2.{your_instance_hash}.lt.comwork.(cloud|dev|info):3200
+    target: localtunnel-2.{your_instance_hash}.lt.comwork.(cloud|dev|info):3200
   - domain: localtunnel-3.{your_instance_hash}.lt.comwork.(cloud|dev|info)
-    target: http://localtunnel-3.{your_instance_hash}.lt.comwork.(cloud|dev|info):3200
+    target: localtunnel-3.{your_instance_hash}.lt.comwork.(cloud|dev|info):3200
 ```
 
 Then you'll be able to open new tunnels with your client:
