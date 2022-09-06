@@ -6,4 +6,6 @@ Here you'll find a demo on how host a container inside your [code](../../code.md
 
 You can activate the subtitles in English or French to get more details on this demo.
 
+Note: you can use a dedicated instance of localtunnel hosted in comwork cloud. More informations [here](../../localtunnel.md).
+
 Enjoy!

@@ -19,6 +19,7 @@ The instances are hosted on Scaleway or OVH for now (we intend to propose even m
 
 * [VSCode web as a service](./code.md)
 * [Serverless / FaaS](./serverless.md)
+* [Localtunnel server](./localtunnel.md)
 * [Portainer as a service](./portainer.md)
 * [Wordpress as a service](./wpaas.md)
 * [Matomo as a service](./matomo.md)
