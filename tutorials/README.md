@@ -6,6 +6,7 @@
 * [Code](./code/README.md)
 * [Portainer](./portainer/README.md)
 * [OpenFaaS / Faasd](./faasd.md)
+* [Localtunnel server](./localtunnel.md)
 * [Wordpress and matomo](./wpaas_matomo.md)
 * [Connect with SSH](./ssh.md)
 * [Imalive metrics exporter](./imalive.md)

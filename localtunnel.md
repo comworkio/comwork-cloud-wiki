@@ -18,4 +18,16 @@ lt --host https://yourinstance.lt.comwork.(cloud|dev|info) --port {the local por
 
 ![lt_cli](./img/lt_cli.png)
 
-As you can see, it's secured, it works with https and letsencrypt certificates.
+As you can see, it's secured, it works with https and letsencrypt certificates
+
+## Demo and tutorial
+
+You can find demo and tutorials [here](./tutorials/localtunnel.md)
+
+## Minimal requirements
+
+We advise to start with an instance >= [DEV1-S](./sizing_pricing.md)
+
+## Sizing and pricing
+
+Check it out [here](./sizing_pricing.md).
