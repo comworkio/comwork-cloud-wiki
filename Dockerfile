@@ -25,8 +25,8 @@ RUN rm -rf docs/ci && \
     rm -rf restful_api.json && \
     mv restful_api.md docs/tutorials/api && \
     npm i && \
-    npm i --save docusaurus-lunr-search && \
     npm i --save docusaurus-plugin-matomo && \
+    npm i --save docusaurus-lunr-search && \
     npm run build
 
 # Stage run
