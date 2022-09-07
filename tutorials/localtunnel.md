@@ -2,7 +2,7 @@
 
 ## Video tutorial
 
-_work in progress_
+[![demo_lt](../img/demo_lt.png)](https://youtu.be/2BZHMYcPfiY)
 
 ## Use the CLI
 
