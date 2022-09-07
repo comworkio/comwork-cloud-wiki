@@ -4,6 +4,10 @@
 
 [![demo_lt](../img/demo_lt.png)](https://youtu.be/2BZHMYcPfiY)
 
+You can activate the subtitles in English or French to get more details on this demo. 
+
+Enjoy!
+
 ## Use the CLI
 
 ### Allow your private network to the tunnelserver's firewall
