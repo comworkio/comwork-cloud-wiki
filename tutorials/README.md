@@ -8,5 +8,6 @@
 * [OpenFaaS / Faasd](./faasd.md)
 * [Localtunnel server](./localtunnel.md)
 * [Wordpress and matomo](./wpaas_matomo.md)
+* [Databases as a service](./dbaas.md)
 * [Connect with SSH](./ssh.md)
 * [Imalive metrics exporter](./imalive.md)

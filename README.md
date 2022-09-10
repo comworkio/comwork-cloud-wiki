@@ -23,6 +23,7 @@ The instances are hosted on Scaleway or OVH for now (we intend to propose even m
 * [Portainer as a service](./portainer.md)
 * [Wordpress as a service](./wpaas.md)
 * [Matomo as a service](./matomo.md)
+* [Databases as a service](./dbaas.md)
 * [VPS as a service](./vps.md)
 * [Sizing and pricing](./sizing_pricing.md)
 * [Subscription procedure](./subscription.md)
