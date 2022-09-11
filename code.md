@@ -14,7 +14,7 @@ You've also got a fully access to the compute instance that are hosting this web
 
 Of course [gitpod](https://www.gitpod.io), [coder](https://coder.com), [google cloud shell](https://cloud.google.com/shell), github codespaces are great and bring lots of value for a very large amount of users. But there's value we can bring comparing to those two :
 
-* It can be hosted in France 🇫🇷 with French providers (like Scaleway or OVH)
+* It can be hosted in Europe 🇪🇺 (including France 🇫🇷) with French providers (like Scaleway or OVH)
 * All those needed dependancies are already there: docker, docker-compose, k3d, k9s, kubectl, kubeseal, ansible, terraform, terragrunt, gcloud, jq, yq 
 * Keep and store the state of your git repositories, oci registries credentials, ssh keys, gpg keys, etc
 * It's like you own a VPS, it's your own instance with your chosen sizing: you'll not be limited by a number of hours, number of git workspaces, whatsoever 

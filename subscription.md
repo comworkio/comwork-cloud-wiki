@@ -1,7 +1,5 @@
 # Subscription procedure
 
-## Procedure
-
 Firstable, if you want a quote or subscribe, you can:
 * Setup an appointment [here](https://calendly.com/idriss-neumann/intro-comwork-cloud)
 * Send us an email us at `cloud@comwork.io`

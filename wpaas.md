@@ -4,7 +4,7 @@ A secured and dedicated Wordpress instance a service.
 
 Yet another "Wordpress as a Service" (WPaaS) with some benefits :
 
-* It can be hosted in __France__ 🇫🇷 with French providers (like Scaleway or OVH)
+* It can be hosted in __Europe__ 🇪🇺 (including __France__ 🇫🇷) with French providers (like Scaleway or OVH)
 * You choose the sizing of your instance as you'll pick your own VPS
 * Rolling upgrades of Wordpress / PHP / MySQL
 * __Very strong security__: https/TLS encryption, firewalling, DDoS protection and wp-admin double authentication
