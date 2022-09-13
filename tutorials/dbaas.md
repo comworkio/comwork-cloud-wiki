@@ -65,7 +65,7 @@ firewall_allow:
     ip: {put your ip or range here}
 ```
 
-1. Connect with [ssh](./ssh.md), then secure your database:
+2. Connect with [ssh](./ssh.md), then secure your database:
 
 ```shell
 $ sudo mysql_secure_installation
@@ -73,10 +73,9 @@ Set root password? [Y/n] Y
 Remove anonymous users? [Y/n] Y
 Disallow root login remotely? [Y/n] Y
 Reload privilege tables now? [Y/n] Y
-Cleaning up...
 ```
 
-1. Then create a database and a user that will be able to connect to this database from the outside:
+3. Then create a database and a user that will be able to connect to this database from the outside:
 
 ```shell
 $ mysql -u -uroot -p # use the password you just set
