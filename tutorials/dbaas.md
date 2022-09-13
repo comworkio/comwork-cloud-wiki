@@ -76,7 +76,7 @@ Reload privilege tables now? [Y/n] Y
 Cleaning up...
 ```
 
-3. Then create a remote user (root will ne be allowed outside the instance):
+1. Then create a database and a user that will be able to connect to this database from the outside:
 
 ```shell
 $ mysql -u -uroot -p # use the password you just set
