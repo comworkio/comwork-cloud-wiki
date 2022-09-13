@@ -90,5 +90,5 @@ MariaDB [your_db]> FLUSH PRIVILEGES;
 4. Then you'll finally be able to connect with your new user outside:
 
 ```shell
-mysql -h {your_instance_hash}.mariadb.comwork.(cloud|dev|info) -u your_user2 -p your_db2
+mysql -h {your_instance_hash}.mariadb.comwork.(cloud|dev|info) -u your_user -p your_db
 ```
