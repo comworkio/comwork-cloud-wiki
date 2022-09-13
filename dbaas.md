@@ -15,7 +15,7 @@ Of course, managed services from Scaleway or OVH but a lot more expensive. You c
 ## Supported databases
 
 * PostgreSQL
-* _Mariadb to come_
+* MariaDB (MySQL)
 
 ## Demo and tutorial
 
