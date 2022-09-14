@@ -25,6 +25,8 @@ echo "## This script is generated, do not update it manually!" >> "${PRICE_ENV_F
 echo "## See: https://gitlab.comwork.io/comwork_public/comwork_cloud/-/blob/main/price_calculator/README.md" >> prices_env.sh
 echo "" >> "${PRICE_ENV_FILE}"
 
-$AWK_BIN -F ',' 'BEGIN {sep=","} {if($4 != "Variable"){gsub(/ *€/,"", $7); print "export "$4"="$7}}' "${DATA_FILE}.tmp" >> "${PRICE_ENV_FILE}"
+$AWK_BIN -F ',' 'BEGIN {sep=","} {if($4 != "Variable"){gsub(/ *€/,"", $6); print "export "$4"="$6}}' "${DATA_FILE}.tmp" >> "${PRICE_ENV_FILE}"
+
+echo "export TTVA=1.2" >> "${PRICE_ENV_FILE}"
 
 rm -rf "${DATA_FILE}".tmp*
