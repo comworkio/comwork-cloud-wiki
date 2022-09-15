@@ -6,11 +6,9 @@ We offer some low-cost database as a service you can manage as usual in a gitops
 
 ## Disclaimer
 
-We do not handle the backup or point in time recovery for now but it's something that can be easily handle with ansible roles which dump and push backups on object storage.
+There is managed services from Scaleway or OVH which are more suitable for high-availability needs. But it's a lot more expensive. You can start your test on our services than upgrade to the dbaas from those cloud providers once your application is worthy.
 
-We will public some opensource role you can re-use to handle this part with tutorials.
-
-Of course, managed services from Scaleway or OVH but a lot more expensive. You can start your test on our services than upgrade to the dbaas from those cloud providers.
+We do not handle point in time recovery but it's very easy to also handle backups on object storage. You'll find all you need to achieve that with [this tutorial](./tutorials/dbaas.md)
 
 ## Supported databases
 
