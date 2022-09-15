@@ -94,6 +94,8 @@ mysql -h {your_instance_hash}.mariadb.comwork.(cloud|dev|info) -u your_user -p y
 
 ## Backup on buckets
 
+This chapter will show you how to backup your databases using the [`backup-bucket`](https://gitlab.comwork.io/oss/bucket-backup) opensource project we're providing for this purpose.
+
 1. Create your bucket on your favorite cloud provider
 
 Example on scaleway:
