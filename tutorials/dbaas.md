@@ -129,6 +129,7 @@ backup_cmd: "mysqldump -h {your_instance_hash}.mariadb.comwork.(cloud|dev|info) 
 zip_compress_backup_enable: true
 backup_zip_file_folder: /home/backups/tmp
 backup_src_file_to_clean: '*.sql'
+backup_max_retention: 3 # number of retention days you can re-adjust
 ```
 
 If you're on PostgreSQL:
@@ -142,6 +143,7 @@ backup_cmd: "pg_dumpall -U backup > /home/backup/backup.sql"
 zip_compress_backup_enable: true
 backup_zip_file_folder: /home/backups/tmp
 backup_src_file_to_clean: '*.sql'
+backup_max_retention: 3 # number of retention days you can re-adjust
 
 postgresql_roles:
   - username: backup
