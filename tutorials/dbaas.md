@@ -152,7 +152,7 @@ bucket_endpoint: "https://s3.fr-par.scw.cloud" # change-it by your provider
 bucket_access_key: changeit
 bucket_secret_key: changeit
 bucket_name: test-pgsql-backup # change-it by your bucket name
-backup_cmd: "pg_dumpall -U backup > /home/backup/backup.sql"
+backup_cmd: "pg_dumpall -U backup > /home/backups/backup.sql"
 zip_compress_backup_enable: true
 backup_zip_file_folder: /home/backups/tmp
 backup_src_file_to_clean: '*.sql'
