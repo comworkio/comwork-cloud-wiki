@@ -83,6 +83,7 @@ MariaDB [(none)]> CREATE USER 'your_user'@'%' IDENTIFIED BY 'your_password';
 MariaDB [(none)]> CREATE DATABASE your_db;
 MariaDB [(none)]> use your_db;
 MariaDB [your_db]> GRANT ALL PRIVILEGES ON your_db TO 'your_user'@'%';
+MariaDB [your_db]> GRANT ALL PRIVILEGES ON your_db.* TO 'your_user'@'%';
 MariaDB [your_db]> FLUSH PRIVILEGES;
 ```
 
@@ -91,6 +92,14 @@ MariaDB [your_db]> FLUSH PRIVILEGES;
 ```shell
 mysql -h {your_instance_hash}.mariadb.comwork.(cloud|dev|info) -u your_user -p your_db
 ```
+
+Then you can try some SQL commands:
+
+```shell
+mysql> CREATE TABLE my_table (id INTEGER);
+Query OK, 0 rows affected (0.04 sec)
+mysql> INSERT INTO my_table VALUES (1);
+Query OK, 1 row affected (0.04 sec)
 
 ## Backup on buckets
 
