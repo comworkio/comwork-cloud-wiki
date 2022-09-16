@@ -12,5 +12,5 @@ ssh_users:
 Then, `git commit` and `git push` and wait for the end of the pipeline. You'll be able to connect with ssh:
 
 ```shell
-ssh -i .ssh/your_private_key cloud@{your_instance_hash}.(wpaas|code|portainer|vps|lt|faasd).comwork.(cloud|dev|info)
+ssh -i ~/.ssh/your_private_key cloud@{your_instance_hash}.(wpaas|code|portainer|vps|lt|faasd).comwork.(cloud|dev|info)
 ```

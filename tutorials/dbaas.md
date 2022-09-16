@@ -78,7 +78,7 @@ Reload privilege tables now? [Y/n] Y
 
 ```shell
 $ sudo su -
-$ mysql -u -uroot -p # use the password you just set
+$ mysql -uroot -p # use the password you just set
 MariaDB [(none)]> CREATE USER 'your_user'@'%' IDENTIFIED BY 'your_password';
 MariaDB [(none)]> CREATE DATABASE your_db;
 MariaDB [(none)]> use your_db;
