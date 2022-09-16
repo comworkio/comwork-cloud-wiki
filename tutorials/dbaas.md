@@ -1,5 +1,13 @@
 # Database as a service
 
+## Video tutorial
+
+[![demo_lt](../img/demo_dbaas.png)](https://youtu.be/RWWt9sYTcEM)
+
+You can activate the subtitles in English or French to get more details on this demo. 
+
+Enjoy!
+
 ## PostgreSQL installation
 
 After provisioning and the first installation:
