@@ -2,7 +2,7 @@
 
 ## Video tutorial
 
-[![demo_lt](../img/demo_dbaas.png)](https://youtu.be/RWWt9sYTcEM)
+[![demo_dbaas](../img/demo_dbaas.png)](https://youtu.be/RWWt9sYTcEM)
 
 You can activate the subtitles in English or French to get more details on this demo. 
 
