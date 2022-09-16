@@ -38,6 +38,7 @@ postgres=> CREATE DATABASE "your_db" WITH OWNER = your_username ENCODING = 'UTF8
 $ psql -U your_username -W your_db
 password:
 your_db=> CREATE TABLE my_table(my_id INT);
+your_db=> INSERT INTO my_table VALUES (1);
 ```
 
 If you need to connect from the outside:
@@ -100,6 +101,7 @@ mysql> CREATE TABLE my_table (id INTEGER);
 Query OK, 0 rows affected (0.04 sec)
 mysql> INSERT INTO my_table VALUES (1);
 Query OK, 1 row affected (0.04 sec)
+```
 
 ## Backup on buckets
 
