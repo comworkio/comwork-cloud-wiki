@@ -28,4 +28,6 @@ You have to register an otp device with a 2FA application which is able to scan 
 
 Flash the QR code with this app (or the one you prefer) and write the otp code.
 
-Then you'll have to write the 6 digits otp code printed on this application each time you sign-in.
+Then you'll have to write the 6 digits otp code printed on this application each time you sign-in:
+
+![2fa_code](./img/2fa_code.png)
