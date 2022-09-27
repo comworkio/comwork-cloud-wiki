@@ -14,9 +14,9 @@ Then, once you agree with us on contract terms (including the [sizing/pricing pa
 
 ## 2FA / MFA (multiple factor authentication)
 
-We **strongly** advise you to enable the 2FA/MFA. 
+We **strongly** advise you to enable the 2FA/MFA.
 
-### With a 2FA app (i.e Google Authenticator)
+### With a 2FA app (i.e: Google Authenticator)
 
 Go to your settings:
 
