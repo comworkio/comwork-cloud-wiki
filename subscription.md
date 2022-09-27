@@ -18,7 +18,7 @@ We **strongly** advise you to enable the 2FA/MFA.
 
 Go to your settings:
 
-![enable_2fa](./img/enable_2fa.png)
+![enable_2fa_app](./img/enable_2fa_app.png)
 
 Then:
 
@@ -33,3 +33,16 @@ Flash the QR code with this app (or the one you prefer) and write the otp code.
 Then you'll have to write the 6 digits otp code printed on this application each time you sign-in:
 
 ![2fa_code](./img/2fa_code.png)
+
+### With an USB device (ie: Yubico)
+
+Go to your settings:
+
+![enable_2fa_usb_device](./img/enable_2fa_usb_device.png)
+
+Then you'll arrive on this screen:
+
+![2fa_usb_device](./img/2fa_usb_device.png)
+
+Just press your key button and it should be work.
+
