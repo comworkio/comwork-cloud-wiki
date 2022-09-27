@@ -14,7 +14,9 @@ Then, once you agree with us on contract terms (including the [sizing/pricing pa
 
 We **strongly** advise you to enable the 2FA/MFA. 
 
-In order to do that, go to your settings:
+### With a 2FA app (i.e Google Authenticator)
+
+Go to your settings:
 
 ![enable_2fa](./img/enable_2fa.png)
 
@@ -22,9 +24,9 @@ Then:
 
 ![qr_2fa](./img/qr_2fa.png)
 
-You have to register an otp device with a 2FA application which is able to scan QR codes like Google authenticator which is available for Android and IOS/IpadOS:
+You have to register an otp device with a 2FA application which is able to scan QR codes like [Google authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2) which is available for Android and IOS/IpadOS.
 
-![authenticator_playstor](./img/authenticator_playstor.png)
+![authenticator](./img/authenticator.png)
 
 Flash the QR code with this app (or the one you prefer) and write the otp code.
 
