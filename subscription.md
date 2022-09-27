@@ -36,7 +36,9 @@ Then you'll have to write the 6 digits otp code printed on this application each
 
 ![2fa_code](./img/2fa_code.png)
 
-### With an USB device (ie: Yubico)
+### With an USB device (Yubico)
+
+For now we're only working with [Yubico](https://www.yubico.com) devices.
 
 Go to your settings:
 
