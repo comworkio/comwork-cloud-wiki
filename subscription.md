@@ -45,4 +45,3 @@ Then you'll arrive on this screen:
 ![2fa_usb_device](./img/2fa_usb_device.png)
 
 Just press your key button and it should be work.
-
