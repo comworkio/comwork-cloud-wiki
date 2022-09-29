@@ -125,6 +125,11 @@ const config = {
             label: 'Gitlab',
             position: 'right',
           },
+          {
+            to: 'https://comwork-cloud.slack.com',
+            label: 'Slack',
+            position: 'right',
+          },
         ],
       },
       footer: {
