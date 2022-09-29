@@ -29,6 +29,7 @@ The instances are hosted on [Scaleway](https://www.scaleway.com) or [OVHCloud](h
 * [Sizing and pricing](./sizing_pricing.md)
 * [Subscription procedure](./subscription.md)
 * [Licences](./licences.md)
+* [Cloud on premise / selfhosted](./onprem.md)
 
 ### Tutorials and demos
 

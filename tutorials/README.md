@@ -11,3 +11,4 @@
 * [Databases as a service](./dbaas.md)
 * [Connect with SSH](./ssh.md)
 * [Imalive metrics exporter](./imalive.md)
+* [On premise / self-hosted deployment of comwork cloud](./onprem.md)
