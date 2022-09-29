@@ -11,7 +11,7 @@ This page is automatically generated from [price_calculator](./price_calculator/
 The available providers are the following:
 
 * `scw`: [Scaleway](https://www.scaleway.com)
-* `ovh`: [OVH cloud](https://www.ovhcloud.com) (*in progress*)
+* `ovh`: [OVH cloud](https://www.ovhcloud.com)
 
 ## Sizing
 

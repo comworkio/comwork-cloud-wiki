@@ -121,6 +121,8 @@ Example on scaleway:
 
 ![scaleway_bucket](../img/scaleway_bucket.png)
 
+You can ask for getting a bucket handled by comwork cloud following [this procedure](../storage.md)
+
 2. Import this opensource [ansible role](https://gitlab.comwork.io/oss/bucket-backup/-/tree/main/ansible-bucket-backup) in the `roles/` folder of your gitlab IaC project (name-it `bucket-backup` instead of `ansible-bucket-backup`)
 
 3. You can change the backup frequency directly in the [`ansible-bucket-backup/tasks/main.yml`](https://gitlab.comwork.io/oss/bucket-backup/-/blob/main/ansible-bucket-backup/tasks/main.yml):
