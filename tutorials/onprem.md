@@ -60,6 +60,9 @@ services:
       - cloud_api
     env_file: 
       - .env.db
+    # WARN: to enable to keep the postgresql data persistents
+    # volumes:
+    # - data_volume:/var/lib/postgresql/data
 
 networks:
   cloud_api:
