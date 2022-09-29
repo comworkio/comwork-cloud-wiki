@@ -1,4 +1,4 @@
-# Object storage and OCI registries
+# Object storages and OCI registries
 
 Comwork cloud allows us to create bucket object storages (S3-likes) and OCI/Docker registries either on [OVH cloud](https://www.ovhcloud.com) and [Scaleway](https://www.scaleway.com).
 
