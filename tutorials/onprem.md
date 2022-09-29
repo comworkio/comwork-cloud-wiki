@@ -30,7 +30,7 @@ services:
     networks:
       - cloud_ui
     ports:
-      - "5301:80"
+      - "80:80"
 
   comwork_cloud_api:
     restart: always
@@ -51,8 +51,15 @@ services:
     container_name: comwork_cloud_cache
     networks:
       - cloud_api
-    ports:
-      - "5444:6379"
+
+  comwork_cloud_db:
+    image: postgres:13
+    container_name: comwork_cloud_db
+    restart: always
+    networks:
+      - cloud_api
+    env_file: 
+      - .env.db
 
 networks:
   cloud_api:
@@ -61,7 +68,15 @@ networks:
     driver: bridge
 ```
 
-And the .env.webapp file:
+And the `.env.db` file:
+
+```shell
+POSTGRES_USER=cloud
+POSTGRES_PASSWORD=changeit
+POSTGRES_DB=cloud
+```
+
+The `.env.webapp` file:
 
 ```shell
 API_URL=https://cloud-api.yourdomain.com
@@ -74,7 +89,7 @@ MATOMO_URL=
 MATOMO_SITE_ID=`
 ```
 
-And the `.env.api` file:
+The `.env.api` file:
 
 ```shell
 APP_ENV=prod
@@ -102,7 +117,7 @@ TOKEN_EXPIRATION_TIME=7200
 JWT_SECRET_KEY=changeit # base64
 POSTGRES_HOST_AUTH_METHOD=changeit
 POSTGRES_PASSWORD=changeit
-POSTGRES_HOST=changeit
+POSTGRES_HOST=comwork_cloud_db
 POSTGRES_PORT=5432
 POSTGRES_USER=cloud
 POSTGRES_DB=cloud
@@ -133,7 +148,7 @@ PRICE_d2_8=""
 PRICE_b2_15=""
 ```
 
-And the `cloud_environments.yml` file:
+The `cloud_environments.yml` file:
 
 ```yaml
 name: cloud environments configuration
