@@ -21,7 +21,7 @@ sudo ./cwc_cli/install.sh
 ##### Linux arm (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/occ/cwc/cwc/-/releases/v1.1.4/downloads/cwc_1.1.4_linux_arm64.tar.gz" -o "cwc_cli.tar.gz" 
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.1.4/downloads/cwc_1.1.4_linux_arm64.tar.gz" -o "cwc_cli.tar.gz" 
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli 
 sudo ./cwc_cli/install.sh
 ```
@@ -31,7 +31,7 @@ sudo ./cwc_cli/install.sh
 ##### MacOS x86/arm (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/occ/cwc/cwc/-/releases/v1.1.4/downloads/cwc_1.1.4_darwin_all.tar.gz" -o "cwc_cli.tar.gz"
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.1.4/downloads/cwc_1.1.4_darwin_all.tar.gz" -o "cwc_cli.tar.gz"
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli     
 sudo ./cwc_cli/install.sh
 ```
@@ -41,7 +41,7 @@ sudo ./cwc_cli/install.sh
 ##### Windows x86 (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/occ/cwc/cwc/-/releases/v1.1.4/downloads/cwc_1.1.4_windows_amd64.zip" -o "cwc_cli.zip"
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.1.4/downloads/cwc_1.1.4_windows_amd64.zip" -o "cwc_cli.zip"
 unzip cwc_cli.zip 
 cd 
 cwc.exe
@@ -49,7 +49,7 @@ cwc.exe
 ##### Windows arm (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/occ/cwc/cwc/-/releases/v1.1.4/downloads/cwc_1.1.4_windows_arm64.zip" -o "cwc_cli.zip"
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.1.4/downloads/cwc_1.1.4_windows_arm64.zip" -o "cwc_cli.zip"
 unzip cwc_cli.zip 
 cd cwc_cli
 cwc.exe
@@ -58,7 +58,7 @@ cwc.exe
 ### Using homebrew
 
 ```shell
-brew tap cwc/cwc https://gitlab.comwork.io/occ/cwc/homebrew-cwc.git 
+brew tap cwc/cwc https://gitlab.comwork.io/oss/cwc/homebrew-cwc.git 
 brew install cwc
 ```
 
