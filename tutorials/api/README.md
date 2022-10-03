@@ -12,6 +12,12 @@ Or you can either go check directly the swagger documentation [here](https://clo
 
 ![swagger](../../img/swagger.png)
 
+## Cli cwc
+
+We got our own cli `cwc` written in go.
+
+Check-it out [here](./cli.md)
+
 ## Terraform provider
 
 Check-it out [here](./terraform.md)
