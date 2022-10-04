@@ -8,10 +8,9 @@ If you want to update the prices:
 
 Notes: 
 * There's a `Variable` column with the environment variable's names you need to use on the API.
-* In the `Zone` column, the value is the concatenation `{region}-{zone}`
 
-2. Export into CSV and save the CSV in the [`data.csv`](./data.csv) file
-3. Commit and push, a CI/CD pipeline will be triggered and take care of the rest
+1. Export into CSV and save the CSV in the [`data.csv`](./data.csv) file
+2. Commit and push, a CI/CD pipeline will be triggered and take care of the rest
 
 If you want to modify other informations in the [sizing pricing](../sizing_pricing.md) page:
 
