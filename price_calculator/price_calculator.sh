@@ -15,7 +15,7 @@ DOC_FILE="sizing_pricing.md"
 
 dos2unix "${DATA_FILE}" >/dev/null 2>&1 || :
 $SED_BIN "s/\([0-9]\),\([0-9][0-9]*\)/\1.\2/g;s/\"//g" "${DATA_FILE}" > "${DATA_FILE}.tmp"
-$AWK_BIN -F ',' 'BEGIN {sep=","} {print $1""sep""$2""sep""$3""sep""$5""sep""$6""sep""$7""sep""$8}' "${DATA_FILE}.tmp" > "${DATA_FILE}.tmp2"
+$AWK_BIN -F ',' 'BEGIN {sep=","} {print $1""sep""$2""sep""$4""sep""$5""sep""$6""sep""$7}' "${DATA_FILE}.tmp" > "${DATA_FILE}.tmp2"
 $AWK_BIN '{if ($0 ~ "V_ARRAY_PRICING"){system("mdtable '"${DATA_FILE}.tmp2"' 2>/dev/null || :")} else {print $0}}' "${ROOT_DIR}/sizing_pricing.tpl" > "${DOC_FILE}"
 $SED_BIN -i "s/V_DATE/$(date +"%Y-%m-%d")/g" "${DOC_FILE}"
 
@@ -25,7 +25,7 @@ echo "## This script is generated, do not update it manually!" >> "${PRICE_ENV_F
 echo "## See: https://gitlab.comwork.io/comwork_public/comwork_cloud/-/blob/main/price_calculator/README.md" >> prices_env.sh
 echo "" >> "${PRICE_ENV_FILE}"
 
-$AWK_BIN -F ',' 'BEGIN {sep=","} {if($4 != "Variable"){gsub(/ *€/,"", $6); print "export "$4"="$6}}' "${DATA_FILE}.tmp" >> "${PRICE_ENV_FILE}"
+$AWK_BIN -F ',' 'BEGIN {sep=","} {if($3 != "Variable"){gsub(/ *€/,"", $5); print "export "$3"="$5}}' "${DATA_FILE}.tmp" >> "${PRICE_ENV_FILE}"
 
 echo "export TTVA=1.2" >> "${PRICE_ENV_FILE}"
 
