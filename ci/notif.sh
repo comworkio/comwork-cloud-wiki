@@ -5,7 +5,7 @@ source ./ci/compute-env.sh
 slack_notif() {
     token="${1}"
     if [[ $token ]]; then
-        message="${SLACK_USERNAME} has been sucessfuly deployed! version = ${VERSION}"
+        message="${SLACK_USERNAME} has been successfully deployed! version = ${VERSION}"
         endpoint="https://hooks.slack.com/services/${token}"
         payload="{\"text\": \"${message}\", \"username\": \"${SLACK_USERNAME}\", \"channel\": \"${SLACK_CHANNEL}\", \"icon_emoji\": \"${SLACK_EMOJI}\"}"
         curl -X POST "${endpoint}" -H "Accept: application/json" -d "${payload}"
