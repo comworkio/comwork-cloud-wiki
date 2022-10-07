@@ -13,7 +13,7 @@ As it's written in go, it's pretty easy to ship into your IaC pipelines.
 ##### Linux x86 (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.1.4/downloads/cwc_1.1.4_linux_amd64.tar.gz" -o "cwc_cli.tar.gz"
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.2.9/downloads/cwc_1.2.9_linux_amd64.tar.gz" -o "cwc_cli.tar.gz"
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli 
 sudo ./cwc_cli/install.sh
 ```
@@ -21,7 +21,7 @@ sudo ./cwc_cli/install.sh
 ##### Linux arm (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.1.4/downloads/cwc_1.1.4_linux_arm64.tar.gz" -o "cwc_cli.tar.gz" 
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.2.9/downloads/cwc_1.2.9_linux_arm64.tar.gz" -o "cwc_cli.tar.gz" 
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli 
 sudo ./cwc_cli/install.sh
 ```
@@ -31,7 +31,7 @@ sudo ./cwc_cli/install.sh
 ##### MacOS x86/arm (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.1.4/downloads/cwc_1.1.4_darwin_all.tar.gz" -o "cwc_cli.tar.gz"
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.2.9/downloads/cwc_1.2.9_darwin_all.tar.gz" -o "cwc_cli.tar.gz"
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli     
 sudo ./cwc_cli/install.sh
 ```
@@ -41,7 +41,7 @@ sudo ./cwc_cli/install.sh
 ##### Windows x86 (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.1.4/downloads/cwc_1.1.4_windows_amd64.zip" -o "cwc_cli.zip"
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.2.9/downloads/cwc_1.2.9_windows_amd64.zip" -o "cwc_cli.zip"
 unzip cwc_cli.zip 
 cd 
 cwc.exe
@@ -49,7 +49,7 @@ cwc.exe
 ##### Windows arm (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.1.4/downloads/cwc_1.1.4_windows_arm64.zip" -o "cwc_cli.zip"
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.2.9/downloads/cwc_1.2.9_windows_arm64.zip" -o "cwc_cli.zip"
 unzip cwc_cli.zip 
 cd cwc_cli
 cwc.exe
@@ -67,7 +67,7 @@ brew install cwc
 ### Authentification Command
 
 ```shell
-cwc login -u <email> -p <password>
+cwc login -s <secret_key> -s <access_key>
 ```
 
 ### Configure default region Command
@@ -75,6 +75,17 @@ cwc login -u <email> -p <password>
 ```shell
 cwc configure -region <default_region>
 ```
+
+### Configure default endpoint Command
+
+```shell
+cwc configure -endpoint <endpoint>
+```
+### Configure default provider Command
+
+```shell
+cwc configure -provider <provider>
+``
 
 ### Get instances Command
 
@@ -91,13 +102,13 @@ cwc get instance -id <instanceId>
 ### Create instance Command
 
 ```shell
-cwc create instance -name <project_name> -env <environement> -instance_type <size> -project_id <project-id>
+cwc create instance -name <project_name> -env <environement> -instance_type <size> -project_id <project-id> -zone <zone>
 ```
     
 ### Attach instance Command
 
 ```shell
-cwc attach instance -name <playbook-name> -instance_type <size> -project_id <project-id>
+cwc attach instance -name <playbook-name> -instance_type <size> -project_id <project-id> -zone <zone>
 ```
 
 ### Update instance status Command
@@ -123,6 +134,57 @@ cwc get project --all
 ```shell
 cwc get project -id <instanceId>
 ```
+
+### Get buckets Command
+
+```shell
+cwc get bucket --all
+```
+
+### Get bucket by Id Command
+
+```shell
+cwc get bucket -id <bucketId>
+```
+
+### Update bucket credentials
+
+```shell
+cwc update bucket -id <bucketId>
+```
+
+### Delete bucket Command
+
+```shell
+cwc delete instance -id <bucketId>
+```    
+
+
+
+### Get registries Command
+
+```shell
+cwc get registry --all
+```
+
+### Get registry by Id Command
+
+```shell
+cwc get registry -id <registryId>
+```
+
+### Update registry credentials
+
+```shell
+cwc update registry -id <registryId>
+```
+
+### Delete registry Command
+
+```shell
+cwc delete registry -id <registryId>
+```    
+
 
 ### Create project Command
 
