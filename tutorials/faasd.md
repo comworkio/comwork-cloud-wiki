@@ -8,7 +8,7 @@ In this tutorial, we'll give you some insights on how to:
 
 We do not want to replace the amazing job done by the OpenFaaS team. So if you want to really use Faasd in a production context, we strongly advise you to:
 
-* Get the ["Serverless for everyone else" book](https://openfaas.gumroad.com/l/serverless-for-everyone-else) from Alex Ellis (founder of OpenFaaS and Faasd) which explain everything you need to know for using the OpenFaaS CLI. It's not expensive and it's worth it, trust us!
+* Get the ["Serverless for everyone else" book](https://openfaas.gumroad.com/l/serverless-for-everyone-else) from Alex Ellis (founder of OpenFaaS and Faasd) which explain everything you need to know for using the OpenFaaS CLI (`faas-cli`) and setting up a faasd server by yourself. It's not expensive and it's worth it, trust us!
 * Check the OpenFaaS CLI public documentation [here](https://docs.openfaas.com) which is also pretty great
 
 ![serverless_book](../img/serverless_book.png)
