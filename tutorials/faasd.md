@@ -65,6 +65,8 @@ Then:
 faas-cli registry-login --username YOUR_DOCKERHUB_USERNAME --password YOUR_DOCKERHUB_ACCESS_TOKEN
 ```
 
+Note: you can use registries on Scaleway or OVH using [comwork cloud](../storage.md)
+
 ### Deploy a function with faas-cli
 
 Here's an exemple of function created from template in Python3:
