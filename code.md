@@ -15,13 +15,12 @@ You've also got a fully access to the compute instance that are hosting this web
 Of course [gitpod](https://www.gitpod.io), [coder](https://coder.com), [google cloud shell](https://cloud.google.com/shell), github codespaces are great and bring lots of value for a very large amount of users. But there's value we can bring comparing to those two :
 
 * It can be hosted in Europe 🇪🇺 (including France 🇫🇷) with French providers (like Scaleway or OVH)
-* All those needed dependancies are already there: docker, docker-compose, k3d, k9s, kubectl, kubeseal, ansible, terraform, terragrunt, gcloud, jq, yq 
+* All those needed dependancies are already there: docker, docker-compose, k3d, k9s, kubectl, kubeseal, ansible, terraform, terragrunt, gcloud, jq, yq, lt
 * Keep and store the state of your git repositories, oci registries credentials, ssh keys, gpg keys, etc
 * It's like you own a VPS, it's your own instance with your chosen sizing: you'll not be limited by a number of hours, number of git workspaces, whatsoever 
 * You'll be able to install and keep vscode extensions
-* You'll have a dedicated link with our own tunnel server
+* You can have a dedicated [tunnel server](./localtunnel.md) that allows you to forward your http(s) ports with a public TLS secured url on your own TLS zones and keep the same urls (see [this tutorial](./tutorials/localtunnel.md) to learn more about it)
 * Lots of improvements are coming:  
-  * a dedicated tunnel server with TLS and firewall you'll be able to associate your own DNS zone like any cloud provider
   * we'll provide an [API](https://cloud-api.comwork.io), a [web console](https://cloud.comwork.io) and a terraform module in order to give you : 
   * the ability to shutdown and restart your instances when your not using it in order to reduce the cost
   * the persistence of git repositories and docker registries from anywhere even after the destruction/recreation of your instance (based on top of a stored states/events architecture)

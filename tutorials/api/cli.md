@@ -13,7 +13,7 @@ As it's written in go, it's pretty easy to ship into your IaC pipelines.
 ##### Linux x86 (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.2.9/downloads/cwc_1.2.9_linux_amd64.tar.gz" -o "cwc_cli.tar.gz"
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.3.2/downloads/cwc_1.3.2_linux_amd64.tar.gz" -o "cwc_cli.tar.gz"
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli 
 sudo ./cwc_cli/install.sh
 ```
@@ -21,7 +21,7 @@ sudo ./cwc_cli/install.sh
 ##### Linux arm (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.2.9/downloads/cwc_1.2.9_linux_arm64.tar.gz" -o "cwc_cli.tar.gz" 
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.3.2/downloads/cwc_1.3.2_linux_arm64.tar.gz" -o "cwc_cli.tar.gz" 
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli 
 sudo ./cwc_cli/install.sh
 ```
@@ -31,7 +31,7 @@ sudo ./cwc_cli/install.sh
 ##### MacOS x86/arm (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.2.9/downloads/cwc_1.2.9_darwin_all.tar.gz" -o "cwc_cli.tar.gz"
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.3.2/downloads/cwc_1.3.2_darwin_all.tar.gz" -o "cwc_cli.tar.gz"
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli     
 sudo ./cwc_cli/install.sh
 ```
@@ -41,15 +41,16 @@ sudo ./cwc_cli/install.sh
 ##### Windows x86 (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.2.9/downloads/cwc_1.2.9_windows_amd64.zip" -o "cwc_cli.zip"
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.3.2/downloads/cwc_1.3.2_windows_amd64.zip" -o "cwc_cli.zip"
 unzip cwc_cli.zip 
 cd 
 cwc.exe
+```
 
 ##### Windows arm (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.2.9/downloads/cwc_1.2.9_windows_arm64.zip" -o "cwc_cli.zip"
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.3.2/downloads/cwc_1.3.2_windows_arm64.zip" -o "cwc_cli.zip"
 unzip cwc_cli.zip 
 cd cwc_cli
 cwc.exe
@@ -57,17 +58,49 @@ cwc.exe
 
 ### Using homebrew
 
+First installation:
+
 ```shell
+brew tap cwc/cwc https://gitlab.comwork.io/oss/cwc/homebrew-cwc.git 
+brew install cwc
+```
+
+Upgrade:
+
+```shell
+brew remove cwc
+brew untap cwc/cwc
 brew tap cwc/cwc https://gitlab.comwork.io/oss/cwc/homebrew-cwc.git 
 brew install cwc
 ```
 
 ## Usage
 
+### Usage, help version
+
+```shell
+cwc help # or -h or --help for getting help
+cwc version # or -v or --version for getting the current version
+```
+
+### Generating an API access and secret key
+
+Go on your settings using the web console and click on "Credentials":
+
+![apikey_1](../../img/apikey_1.png)
+
+Then click on "Generate API key":
+
+![apikey_2](../../img/apikey_2.png)
+
+Then store the access and secret key somewhere safe because you won't be able to see it anymore:
+
+![apikey_3](../../img/apikey_3.png)
+
 ### Authentification Command
 
 ```shell
-cwc login -s <secret_key> -s <access_key>
+cwc login -a <access_key> -s <secret_key>
 ```
 
 ### Configure default region Command
@@ -105,7 +138,11 @@ cwc configure -provider set <provider>
 #### Get default provider Command
 
 ```shell
+<<<<<<< HEAD
 cwc configure -provider get
+=======
+cwc configure -provider <provider>
+>>>>>>> 61bec7d6856875bf435cc187f1cc38cb0cd17e7a
 ```
 
 ### Get instances Command
@@ -180,8 +217,6 @@ cwc update bucket -id <bucketId>
 cwc delete instance -id <bucketId>
 ```    
 
-
-
 ### Get registries Command
 
 ```shell
@@ -204,8 +239,7 @@ cwc update registry -id <registryId>
 
 ```shell
 cwc delete registry -id <registryId>
-```    
-
+```
 
 ### Create project Command
 
