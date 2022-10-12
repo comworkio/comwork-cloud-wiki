@@ -71,21 +71,42 @@ cwc login -s <secret_key> -s <access_key>
 ```
 
 ### Configure default region Command
+#### Set default region Command
+
 
 ```shell
-cwc configure -region <default_region>
+cwc configure -region set <default_region>
+```
+
+#### Get default region Command
+
+```shell
+cwc configure -region get
 ```
 
 ### Configure default endpoint Command
+#### Set default endpoint Command
 
 ```shell
-cwc configure -endpoint <endpoint>
+cwc configure -endpoint set <endpoint>
+```
+
+#### Get default endpoint Command
+
+```shell
+cwc configure -endpoint get
 ```
 ### Configure default provider Command
+#### Set default provider Command
 
 ```shell
-cwc configure -provider <provider>
-``
+cwc configure -provider set <provider>
+```
+#### Get default provider Command
+
+```shell
+cwc configure -provider get
+```
 
 ### Get instances Command
 
