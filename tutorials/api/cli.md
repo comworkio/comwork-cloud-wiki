@@ -192,8 +192,6 @@ cwc update bucket -id <bucketId>
 cwc delete instance -id <bucketId>
 ```    
 
-
-
 ### Get registries Command
 
 ```shell
@@ -216,8 +214,7 @@ cwc update registry -id <registryId>
 
 ```shell
 cwc delete registry -id <registryId>
-```    
-
+```
 
 ### Create project Command
 
