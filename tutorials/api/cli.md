@@ -130,6 +130,7 @@ cwc configure -endpoint set <endpoint>
 cwc configure -endpoint get
 ```
 ### Configure default provider Command
+
 #### Set default provider Command
 
 ```shell
@@ -138,11 +139,7 @@ cwc configure -provider set <provider>
 #### Get default provider Command
 
 ```shell
-<<<<<<< HEAD
 cwc configure -provider get
-=======
-cwc configure -provider <provider>
->>>>>>> 61bec7d6856875bf435cc187f1cc38cb0cd17e7a
 ```
 
 ### Get instances Command
