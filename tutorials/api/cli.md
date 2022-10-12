@@ -45,6 +45,7 @@ curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.2.9/downloads/cwc_1
 unzip cwc_cli.zip 
 cd 
 cwc.exe
+```
 
 ##### Windows arm (64 bit)
 
@@ -57,17 +58,42 @@ cwc.exe
 
 ### Using homebrew
 
+First installation:
+
 ```shell
+brew tap cwc/cwc https://gitlab.comwork.io/oss/cwc/homebrew-cwc.git 
+brew install cwc
+```
+
+Upgrade:
+
+```shell
+brew remove cwc
+brew untap cwc/cwc
 brew tap cwc/cwc https://gitlab.comwork.io/oss/cwc/homebrew-cwc.git 
 brew install cwc
 ```
 
 ## Usage
 
+### Generating an API access and secret key
+
+Go on your settings using the web console and click on "Credentials":
+
+![apikey_1](../../img/apikey_1.png)
+
+Then click on "Generate API key":
+
+![apikey_2](../../img/apikey_2.png)
+
+Then store the access and secret key somewhere safe because you won't be able to see it anymore:
+
+![apikey_3](../../img/apikey_3.png)
+
 ### Authentification Command
 
 ```shell
-cwc login -s <secret_key> -s <access_key>
+cwc login -a <access_key> -s <secret_key>
 ```
 
 ### Configure default region Command
