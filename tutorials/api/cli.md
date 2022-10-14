@@ -103,6 +103,19 @@ Then store the access and secret key somewhere safe because you won't be able to
 cwc login -a <access_key> -s <secret_key>
 ```
 
+### Configure default endpoint Command
+#### Set default endpoint Command
+
+```shell
+cwc configure -endpoint set <endpoint>
+```
+
+#### Get default endpoint Command
+
+```shell
+cwc configure -endpoint get
+```
+
 ### Configure default region Command
 #### Set default region Command
 
@@ -117,18 +130,6 @@ cwc configure -region set <default_region>
 cwc configure -region get
 ```
 
-### Configure default endpoint Command
-#### Set default endpoint Command
-
-```shell
-cwc configure -endpoint set <endpoint>
-```
-
-#### Get default endpoint Command
-
-```shell
-cwc configure -endpoint get
-```
 ### Configure default provider Command
 
 #### Set default provider Command
