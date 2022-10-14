@@ -11,14 +11,14 @@ const config = {
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
 
-    plugins: [
-        require.resolve('docusaurus-lunr-search'),
-        {
+    plugins:
+        [[require.resolve('docusaurus-lunr-search'), {
+            languages: ['en', 'fr'],
             indexBaseUrl: true
-        },
+        }],
         require.resolve('docusaurus-plugin-matomo')
-    ],
 
+        ],
     i18n: {
         defaultLocale: 'en',
         locales: ['en'],
