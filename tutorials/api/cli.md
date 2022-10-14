@@ -68,10 +68,8 @@ brew install cwc
 Upgrade:
 
 ```shell
-brew remove cwc
-brew untap cwc/cwc
-brew tap cwc/cwc https://gitlab.comwork.io/oss/cwc/homebrew-cwc.git 
-brew install cwc
+brew update
+brew upgrade cwc
 ```
 
 ## Usage
