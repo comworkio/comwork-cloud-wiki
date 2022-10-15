@@ -143,13 +143,13 @@ cwc configure -provider get
 
 ### Projects
 
-#### Create project
+#### Create
 
 ```shell
 cwc create project -name <project_name>
 ```
 
-#### List projects
+#### List
 
 ```shell
 cwc get project --all
@@ -161,7 +161,7 @@ cwc get project --all
 cwc get project -id <projectId>
 ```
 
-#### Delete project
+#### Delete
 
 ```shell
 cwc delete project -id <projectId>
@@ -169,7 +169,7 @@ cwc delete project -id <projectId>
 
 ### Instances
 
-### Create instance
+#### Create
 
 ```shell
 cwc create instance -name <instance_name> -env <environement> -instance_type <size> -project_id <project-id> -zone <zone>
@@ -177,7 +177,7 @@ cwc create instance -name <instance_name> -env <environement> -instance_type <si
 
 Note: always use `nova` zone for ovh
 
-#### List instances
+#### List
 
 ```shell
 cwc get instance --all
@@ -189,19 +189,19 @@ cwc get instance --all
 cwc get instance -id <instanceId>
 ```
     
-#### Attach instance
+#### Attach
 
 ```shell
 cwc attach instance -name <playbook-name> -instance_type <size> -project_id <project-id> -zone <zone>
 ```
 
-#### Update instance status
+#### Update status
 
 ```shell
 cwc update instance -id <instanceId> -status <action>
 ```
 
-#### Delete instance
+#### Delete
 
 ```shell
 cwc delete instance -id <instanceId>
@@ -209,7 +209,7 @@ cwc delete instance -id <instanceId>
 
 ### Buckets / object storage
 
-#### List buckets
+#### List
 
 ```shell
 cwc get bucket --all
@@ -227,7 +227,7 @@ cwc get bucket -id <bucketId>
 cwc update bucket -id <bucketId>
 ```
 
-#### Delete bucket
+#### Delete
 
 ```shell
 cwc delete instance -id <bucketId>
@@ -235,7 +235,7 @@ cwc delete instance -id <bucketId>
 
 ### OCI / Docker registries
 
-#### List registries
+#### List
 
 ```shell
 cwc get registry --all
@@ -253,7 +253,7 @@ cwc get registry -id <registryId>
 cwc update registry -id <registryId>
 ```
 
-#### Delete registry
+#### Delete
 
 ```shell
 cwc delete registry -id <registryId>
@@ -261,7 +261,7 @@ cwc delete registry -id <registryId>
 
 ### Environments
 
-### List environments
+### List
 
 ```shell
 cwc get environment --all
