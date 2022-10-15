@@ -141,121 +141,133 @@ cwc configure -provider set <provider>
 cwc configure -provider get
 ```
 
-### Get instances Command
+### Projects
 
-```shell
-cwc get instance --all
-```
-
-### Get instance by Id Command
-
-```shell
-cwc get instance -id <instanceId>
-```
-
-### Create instance Command
-
-```shell
-cwc create instance -name <project_name> -env <environement> -instance_type <size> -project_id <project-id> -zone <zone>
-```
-    
-### Attach instance Command
-
-```shell
-cwc attach instance -name <playbook-name> -instance_type <size> -project_id <project-id> -zone <zone>
-```
-
-### Update instance status Command
-
-```shell
-cwc update instance -id <instanceId> -status <action>
-```
-
-### Delete instance Command
-
-```shell
-cwc delete instance -id <instanceId>
-```    
-
-### Get projects Command
-
-```shell
-cwc get project --all
-```
-
-### Get project by Id Command
-
-```shell
-cwc get project -id <instanceId>
-```
-
-### Get buckets Command
-
-```shell
-cwc get bucket --all
-```
-
-### Get bucket by Id Command
-
-```shell
-cwc get bucket -id <bucketId>
-```
-
-### Update bucket credentials
-
-```shell
-cwc update bucket -id <bucketId>
-```
-
-### Delete bucket Command
-
-```shell
-cwc delete instance -id <bucketId>
-```    
-
-### Get registries Command
-
-```shell
-cwc get registry --all
-```
-
-### Get registry by Id Command
-
-```shell
-cwc get registry -id <registryId>
-```
-
-### Update registry credentials
-
-```shell
-cwc update registry -id <registryId>
-```
-
-### Delete registry Command
-
-```shell
-cwc delete registry -id <registryId>
-```
-
-### Create project Command
+#### Create project
 
 ```shell
 cwc create project -name <project_name>
 ```
 
-### Delete project Command
+#### List projects
+
+```shell
+cwc get project --all
+```
+
+#### Get by id
+
+```shell
+cwc get project -id <projectId>
+```
+
+#### Delete project
 
 ```shell
 cwc delete project -id <projectId>
 ```
 
-### Get environments Command
+### Instances
+
+### Create instance
+
+```shell
+cwc create instance -name <instance_name> -env <environement> -instance_type <size> -project_id <project-id> -zone <zone>
+```
+
+Note: always use `nova` zone for ovh
+
+#### List instances
+
+```shell
+cwc get instance --all
+```
+
+#### Get by id
+
+```shell
+cwc get instance -id <instanceId>
+```
+    
+#### Attach instance
+
+```shell
+cwc attach instance -name <playbook-name> -instance_type <size> -project_id <project-id> -zone <zone>
+```
+
+#### Update instance status
+
+```shell
+cwc update instance -id <instanceId> -status <action>
+```
+
+#### Delete instance
+
+```shell
+cwc delete instance -id <instanceId>
+```    
+
+### Buckets / object storage
+
+#### List buckets
+
+```shell
+cwc get bucket --all
+```
+
+#### Get by id
+
+```shell
+cwc get bucket -id <bucketId>
+```
+
+#### Update credentials
+
+```shell
+cwc update bucket -id <bucketId>
+```
+
+#### Delete bucket
+
+```shell
+cwc delete instance -id <bucketId>
+```    
+
+### OCI / Docker registries
+
+#### List registries
+
+```shell
+cwc get registry --all
+```
+
+#### Get by id
+
+```shell
+cwc get registry -id <registryId>
+```
+
+#### Update credentials
+
+```shell
+cwc update registry -id <registryId>
+```
+
+#### Delete registry
+
+```shell
+cwc delete registry -id <registryId>
+```
+
+### Environments
+
+### List environments
 
 ```shell
 cwc get environment --all
 ```
 
-### Get environment by Id Command
+### Get by id
 
 ```shell
 cwc get environment -id <environmentId>
