@@ -81,7 +81,9 @@ cwc help # or -h or --help for getting help
 cwc version # or -v or --version for getting the current version
 ```
 
-### Generating an API access and secret key
+### Authentication
+
+#### Generating an API access and secret key
 
 Go on your settings using the web console and click on "Credentials":
 
@@ -95,47 +97,47 @@ Then store the access and secret key somewhere safe because you won't be able to
 
 ![apikey_3](../../img/apikey_3.png)
 
-### Authentification Command
+#### Login command
 
 ```shell
 cwc login -a <access_key> -s <secret_key>
 ```
 
-### Configure default endpoint Command
-#### Set default endpoint Command
+### Default endpoint
+#### Set
 
 ```shell
 cwc configure -endpoint set <endpoint>
 ```
 
-#### Get default endpoint Command
+#### Get
 
 ```shell
 cwc configure -endpoint get
 ```
 
-### Configure default region Command
-#### Set default region Command
+### Default region
+#### Set
 
 
 ```shell
 cwc configure -region set <default_region>
 ```
 
-#### Get default region Command
+#### Get
 
 ```shell
 cwc configure -region get
 ```
 
-### Configure default provider Command
+### Default provider
 
-#### Set default provider Command
+#### Set
 
 ```shell
 cwc configure -provider set <provider>
 ```
-#### Get default provider Command
+#### Get
 
 ```shell
 cwc configure -provider get
