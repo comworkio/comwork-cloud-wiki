@@ -6,7 +6,23 @@ As it's written in go, it's pretty easy to ship into your IaC pipelines.
 
 ## Installation
 
-### Using Curl
+### Homebrew
+
+First installation:
+
+```shell
+brew tap cwc/cwc https://gitlab.comwork.io/oss/cwc/homebrew-cwc.git 
+brew install cwc
+```
+
+Upgrade:
+
+```shell
+brew update
+brew upgrade cwc
+```
+
+### Curl
 
 #### Linux
 
@@ -54,22 +70,6 @@ curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.3.2/downloads/cwc_1
 unzip cwc_cli.zip 
 cd cwc_cli
 cwc.exe
-```
-
-### Using homebrew
-
-First installation:
-
-```shell
-brew tap cwc/cwc https://gitlab.comwork.io/oss/cwc/homebrew-cwc.git 
-brew install cwc
-```
-
-Upgrade:
-
-```shell
-brew update
-brew upgrade cwc
 ```
 
 ## Usage
