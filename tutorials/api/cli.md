@@ -109,6 +109,12 @@ cwc get providers
 cwc get regions
 ```
 
+### List Dns Zones
+```shell
+cwc get dns_zones
+```
+
+
 ### Authentification Command
 
 ```shell
