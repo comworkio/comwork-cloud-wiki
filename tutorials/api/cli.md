@@ -97,6 +97,18 @@ Then store the access and secret key somewhere safe because you won't be able to
 
 ![apikey_3](../../img/apikey_3.png)
 
+
+
+### List available providers
+```shell
+cwc get providers
+```
+
+### List available regions
+```shell
+cwc get regions
+```
+
 ### Authentification Command
 
 ```shell
