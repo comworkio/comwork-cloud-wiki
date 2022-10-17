@@ -5,7 +5,7 @@ ARG NGINX_VERSION=1.15
 FROM node:${NODE_VERSION} AS doc_builder
 
 RUN npx create-docusaurus@latest comwork-cloud-wiki classic
-
+RUN npm install react@16.8.4
 WORKDIR /comwork-cloud-wiki
 
 RUN rm -rf docs/* && rm -rf blog/*
