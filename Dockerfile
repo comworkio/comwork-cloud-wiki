@@ -24,8 +24,8 @@ RUN rm -rf docs/ci && \
     npx swagger-markdown -i restful_api.json && \
     rm -rf restful_api.json && \
     mv restful_api.md docs/tutorials/api && \
-    npm i --save docusaurus-plugin-matomo && \
-    npm i --save docusaurus-lunr-search@2.1.0 && \
+    npm i --save docusaurus-plugin-matomo --legacy-peer-deps && \
+    npm i --save docusaurus-lunr-search@2.1.0 --legacy-peer-deps && \
     npm run swizzle docusaurus-lunr-search SearchBar -- --danger && \
     npm i --legacy-peer-deps && \
     npm run build
