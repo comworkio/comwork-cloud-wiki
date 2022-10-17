@@ -15,7 +15,7 @@ const config = {
         [[require.resolve('docusaurus-lunr-search'), {
             languages: ['en', 'fr'],
             excludeRoutes: [
-                'docs/**/*', // exclude changelogs from indexing
+                'README.md',
             ]
         }],
         require.resolve('docusaurus-plugin-matomo')
