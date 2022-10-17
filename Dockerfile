@@ -24,7 +24,7 @@ RUN rm -rf docs/ci && \
     rm -rf restful_api.json && \
     mv restful_api.md docs/tutorials/api && \
     npm i --save docusaurus-plugin-matomo  && \
-    npm i --save docusaurus-lunr-search@2.1.13 && \
+    npm i --save docusaurus-lunr-search@2.1.15 && \
     npm run swizzle docusaurus-lunr-search SearchBar -- --danger && \
     npm i  && \
     npm run build
