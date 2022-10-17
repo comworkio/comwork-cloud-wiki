@@ -27,7 +27,7 @@ RUN rm -rf docs/ci && \
     npm i --save docusaurus-plugin-matomo && \
     npm i --save docusaurus-lunr-search@2.1.0 && \
     npm run swizzle docusaurus-lunr-search SearchBar -- --danger && \
-    npm i && \
+    npm i --legacy-peer-deps && \
     npm run build
 
 # Stage run
