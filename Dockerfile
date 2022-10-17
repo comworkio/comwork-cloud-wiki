@@ -6,7 +6,7 @@ FROM node:${NODE_VERSION} AS doc_builder
 
 RUN npx create-docusaurus@latest comwork-cloud-wiki classic
 WORKDIR /comwork-cloud-wiki
-RUN npm install react@16.13.1
+RUN npm install react@16.13.1 --legacy-peer-deps
 
 RUN rm -rf docs/* && rm -rf blog/*
 
