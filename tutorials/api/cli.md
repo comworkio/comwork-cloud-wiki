@@ -252,3 +252,7 @@ cwc project create -n <project_name>
 ```shell
 cwc project delete -p <projectId>
 ```
+
+```shell
+cwc project delete --project <projectId>
+```
