@@ -13,10 +13,7 @@ const config = {
 
     plugins:
         [[require.resolve('docusaurus-lunr-search'), {
-            languages: ['en', 'fr'],
-            excludeRoutes: [
-                'README.md',
-            ]
+            languages: ['en', 'fr']
         }],
         require.resolve('docusaurus-plugin-matomo')
 
