@@ -4,9 +4,8 @@ ARG NGINX_VERSION=1.15
 # Stage build
 FROM node:${NODE_VERSION} AS doc_builder
 
-RUN npx create-docusaurus@latest comwork-cloud-wiki classic
+RUN npx create-docusaurus@0.0.0-5335 comwork-cloud-wiki classic
 WORKDIR /comwork-cloud-wiki
-RUN npm install react@16.13.1 --legacy-peer-deps
 
 RUN rm -rf docs/* && rm -rf blog/*
 
@@ -21,13 +20,13 @@ COPY . docs/
 RUN rm -rf docs/ci && \
     apk add curl && \
     curl "https://cloud-api.comwork.io/v1/swagger.json" -o restful_api.json && \
-    npx swagger-markdown -i restful_api.json --legacy-peer-deps && \
+    npx swagger-markdown -i restful_api.json  && \
     rm -rf restful_api.json && \
     mv restful_api.md docs/tutorials/api && \
-    npm i --save docusaurus-plugin-matomo --legacy-peer-deps && \
-    npm i --save docusaurus-lunr-search@2.1.0 --legacy-peer-deps && \
+    npm i --save docusaurus-plugin-matomo  && \
+    npm i --save docusaurus-lunr-search@2.1.0  && \
     npm run swizzle docusaurus-lunr-search SearchBar -- --danger && \
-    npm i --legacy-peer-deps && \
+    npm i  && \
     npm run build
 
 # Stage run
