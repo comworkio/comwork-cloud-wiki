@@ -101,18 +101,25 @@ Then store the access and secret key somewhere safe because you won't be able to
 
 ### List available providers
 ```shell
-cwc get providers
+cwc provider ls
 ```
 
 ### List available regions
 ```shell
-cwc get regions
+cwc region ls
 ```
 
 ### List Dns Zones
 ```shell
-cwc get dns_zones
+cwc dnszones ls
 ```
+
+### Get environments Command
+
+```shell
+cwc environment ls
+```
+
 
 
 ### Authentification Command
@@ -121,162 +128,127 @@ cwc get dns_zones
 cwc login -a <access_key> -s <secret_key>
 ```
 
-### Configure default endpoint Command
-#### Set default endpoint Command
+### Configure default endpoint, default provider and default region
 
 ```shell
-cwc configure -endpoint set <endpoint>
+cwc configure
 ```
 
-#### Get default endpoint Command
-
-```shell
-cwc configure -endpoint get
-```
-
-### Configure default region Command
-#### Set default region Command
-
-
-```shell
-cwc configure -region set <default_region>
-```
-
-#### Get default region Command
-
-```shell
-cwc configure -region get
-```
-
-### Configure default provider Command
-
-#### Set default provider Command
-
-```shell
-cwc configure -provider set <provider>
-```
-#### Get default provider Command
-
-```shell
-cwc configure -provider get
-```
 
 ### Get instances Command
 
 ```shell
-cwc get instance --all
+cwc instance ls
 ```
 
-### Get instance by Id Command
 
-```shell
-cwc get instance -id <instanceId>
-```
 
 ### Create instance Command
 
 ```shell
-cwc create instance -name <project_name> -env <environement> -instance_type <size> -project_id <project-id> -zone <zone>
+cwc instance create -n <instance_name> -e <environement> -t <size> -i <project-id> -z <zone>
+```
+```shell
+cwc instance create -n <instance_name> -e <environement> -t <size> -p <project-name> -z <zone>
 ```
     
 ### Attach instance Command
 
 ```shell
-cwc attach instance -name <playbook-name> -instance_type <size> -project_id <project-id> -zone <zone>
+cwc instance attach -n <playbook-name> -t <size> -i <project-id> -z <zone>
+```
+```shell
+cwc instance attach -n <playbook-name> -t <size> -p <project-name> -z <zone>
 ```
 
 ### Update instance status Command
 
 ```shell
-cwc update instance -id <instanceId> -status <action>
+cwc instance update -i <instanceId> -status <action>
 ```
 
+```shell
+cwc instance update --instance <instanceId> -status <action>
+```
 ### Delete instance Command
 
 ```shell
-cwc delete instance -id <instanceId>
+cwc instance delete -i <instanceId>
 ```    
 
+```shell
+cwc instance delete --instance <instanceId>
+```    
 ### Get projects Command
 
 ```shell
-cwc get project --all
+cwc project ls
 ```
 
-### Get project by Id Command
 
-```shell
-cwc get project -id <instanceId>
-```
 
 ### Get buckets Command
 
 ```shell
-cwc get bucket --all
+cwc bucket ls
 ```
 
-### Get bucket by Id Command
 
-```shell
-cwc get bucket -id <bucketId>
-```
 
 ### Update bucket credentials
 
 ```shell
-cwc update bucket -id <bucketId>
+cwc bucket update -b <bucketId>
 ```
 
+```shell
+cwc bucket update --bucket <bucketId>
+```
 ### Delete bucket Command
 
 ```shell
-cwc delete instance -id <bucketId>
+cwc instance delete -b <bucketId>
 ```    
 
+
+```shell
+cwc instance delete --bucket <bucketId>
+```    
 ### Get registries Command
 
 ```shell
-cwc get registry --all
+cwc registry ls
 ```
 
-### Get registry by Id Command
 
-```shell
-cwc get registry -id <registryId>
-```
 
 ### Update registry credentials
 
 ```shell
-cwc update registry -id <registryId>
+cwc registry update -r <registryId>
 ```
 
+```shell
+cwc registry update --registry <registryId>
+```
 ### Delete registry Command
 
 ```shell
-cwc delete registry -id <registryId>
+cwc registry delete -r <registryId>
+```
+
+```shell
+cwc registry delete --registry <registryId>
 ```
 
 ### Create project Command
 
 ```shell
-cwc create project -name <project_name>
+cwc project create -n <project_name>
 ```
 
 ### Delete project Command
 
 ```shell
-cwc delete project -id <projectId>
-```
-
-### Get environments Command
-
-```shell
-cwc get environment --all
-```
-
-### Get environment by Id Command
-
-```shell
-cwc get environment -id <environmentId>
+cwc project delete -p <projectId>
 ```
