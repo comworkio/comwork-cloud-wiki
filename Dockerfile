@@ -21,7 +21,7 @@ COPY . docs/
 RUN rm -rf docs/ci && \
     apk add curl && \
     curl "https://cloud-api.comwork.io/v1/swagger.json" -o restful_api.json && \
-    npx swagger-markdown -i restful_api.json && \
+    npx swagger-markdown -i restful_api.json --legacy-peer-deps && \
     rm -rf restful_api.json && \
     mv restful_api.md docs/tutorials/api && \
     npm i --save docusaurus-plugin-matomo --legacy-peer-deps && \
