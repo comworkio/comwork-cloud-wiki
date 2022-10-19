@@ -18,8 +18,18 @@ brew install cwc
 Upgrade:
 
 ```shell
+brew upgrade
+brew install cwc
+
+```
+
+To update all your formulas including cwc:
+
+```shell
+brew upgrade
 brew update
-brew upgrade cwc
+
+
 ```
 
 ### Curl
