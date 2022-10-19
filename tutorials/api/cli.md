@@ -103,56 +103,30 @@ Then store the access and secret key somewhere safe because you won't be able to
 cwc login -a <access_key> -s <secret_key>
 ```
 
-### Default endpoint
-#### Set
+### Default configurations
+
+#### Configure
+
+Configuring the default endpoint, default region and provider with:
 
 ```shell
-cwc configure -endpoint set <endpoint>
+cwc configure
 ```
 
-#### Get
+You can tap enter if you want to keep the current value
 
 ```shell
-cwc configure -endpoint get
+$ cwc configure
+Default endpoint [https://cloud-api.comwork.io]: 
+Default provider [ovh]: 
+Default region [UK1]: 
 ```
 
-### Default region
-
-#### List available regions
-
-```shell
-cwc region ls
-```
-
-#### Set
-
-```shell
-cwc configure -region set <default_region>
-```
-
-#### Get
-
-```shell
-cwc configure -region get
-```
-
-### Default provider
-
-#### List availables providers
+You can check available providers and regions with the following commands
 
 ```shell
 cwc provider ls
-```
-
-#### Set
-
-```shell
-cwc configure -provider set <provider>
-```
-#### Get
-
-```shell
-cwc configure -provider get
+cwc region ls # you have to set the provider to get the up to date list of available regions here
 ```
 
 ### Projects
@@ -166,7 +140,7 @@ cwc create project -name <project_name>
 #### List
 
 ```shell
-cwc get project --all
+cwc project ls
 ```
 
 #### Get by id
@@ -179,6 +153,14 @@ cwc get project -id <projectId>
 
 ```shell
 cwc delete project -id <projectId>
+```
+
+### DNS zones
+
+#### List
+
+```shell
+cwc dnszones ls
 ```
 
 ### Instances
