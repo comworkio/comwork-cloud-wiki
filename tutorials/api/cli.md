@@ -247,6 +247,14 @@ cwc instance ls
 cwc instance create -n <instance_name> -e <environement> -t <instance_type> -p <project_name> -z <zone>
 ```
 
+```shell
+cwc instance create -n <instance_name> -e <environement> -t <instance_type> -i <project_id> -z <zone>
+```
+
+```shell
+cwc instance create -n <instance_name> -e <environement> -t <instance_type> -u <project_url> -z <zone>
+```
+
 Notes: 
 * use `nova` zone for ovh and `1` or `2` for scaleway
 * `instance_type` corresponds to the provider instance sizing (i.e: `DEV1-M` for Scaleway)
