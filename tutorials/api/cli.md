@@ -29,7 +29,7 @@ brew upgrade cwc
 ##### Linux x86 (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.5.5/downloads/cwc_1.5.5_linux_amd64.tar.gz" -o "cwc_cli.tar.gz"
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.5.6/downloads/cwc_1.5.6_linux_amd64.tar.gz" -o "cwc_cli.tar.gz"
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli 
 sudo ./cwc_cli/install.sh
 ```
@@ -37,7 +37,7 @@ sudo ./cwc_cli/install.sh
 ##### Linux arm (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.5.5/downloads/cwc_1.5.5_linux_arm64.tar.gz" -o "cwc_cli.tar.gz" 
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.5.6/downloads/cwc_1.5.6_linux_arm64.tar.gz" -o "cwc_cli.tar.gz" 
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli 
 sudo ./cwc_cli/install.sh
 ```
@@ -47,7 +47,7 @@ sudo ./cwc_cli/install.sh
 ##### MacOS x86/arm (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.5.5/downloads/cwc_1.5.5_darwin_all.tar.gz" -o "cwc_cli.tar.gz"
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.5.6/downloads/cwc_1.5.6_darwin_all.tar.gz" -o "cwc_cli.tar.gz"
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli     
 sudo ./cwc_cli/install.sh
 ```
@@ -57,7 +57,7 @@ sudo ./cwc_cli/install.sh
 ##### Windows x86 (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.5.5/downloads/cwc_1.5.5_windows_amd64.zip" -o "cwc_cli.zip"
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.5.6/downloads/cwc_1.5.6_windows_amd64.zip" -o "cwc_cli.zip"
 unzip cwc_cli.zip 
 cd 
 cwc.exe
@@ -66,7 +66,7 @@ cwc.exe
 ##### Windows arm (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.5.5/downloads/cwc_1.5.5_windows_arm64.zip" -o "cwc_cli.zip"
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.5.6/downloads/cwc_1.5.6_windows_arm64.zip" -o "cwc_cli.zip"
 unzip cwc_cli.zip 
 cd cwc_cli
 cwc.exe
@@ -157,44 +157,54 @@ cwc project delete -p <projectId>
 cwc dnszones ls
 ```
 
-### Instances
-
-#### Create
-
-```shell
-cwc instance create -name <instance_name> -env <environement> -instance_type <size> -project_id <project-id> -zone <zone>
-```
-
-Note: always use `nova` zone for ovh
+### Environments
 
 #### List
 
 ```shell
-cwc get instance --all
+cwc environment ls
 ```
 
-#### Get by id
+### Instances
+
+#### List
 
 ```shell
-cwc get instance -id <instanceId>
+cwc instance ls
 ```
+
+#### Create
+
+```shell
+cwc instance create -n <instance_name> -e <environement> -t <instance_type> -p <project_name> -z <zone>
+```
+
+Notes: 
+* use `nova` zone for ovh and `1` or `2` for scaleway
+* `instance_type` corresponds to the provider instance sizing (i.e: `DEV1-M` for Scaleway)
     
 #### Attach
 
 ```shell
-cwc instance attach -name <playbook-name> -instance_type <size> -project_id <project-id> -zone <zone>
+cwc instance attach -n <playbook_name> -t <instance_type> -p <project_name> -z <zone>
 ```
+
+Notes: 
+* use `nova` zone for ovh and `1` or `2` for scaleway
+* `instance_type` corresponds to the provider instance sizing (i.e: `DEV1-M` for Scaleway)
 
 #### Update status
 
 ```shell
-cwc update instance -id <instanceId> -status <action>
+cwc instance -i <instance_id> -s <action>
 ```
+
+* Note status must be `poweroff`, `poweron` or `reboot`
 
 #### Delete
 
 ```shell
-cwc delete instance -id <instanceId>
+cwc delete -i <instance_id>
 ```    
 
 ### Buckets / object storage
@@ -249,16 +259,3 @@ cwc update registry -id <registryId>
 cwc delete registry -id <registryId>
 ```
 
-### Environments
-
-### List
-
-```shell
-cwc get environment --all
-```
-
-### Get by id
-
-```shell
-cwc get environment -id <environmentId>
-```
