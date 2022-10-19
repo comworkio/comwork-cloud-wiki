@@ -6,57 +6,7 @@ As it's written in go, it's pretty easy to ship into your IaC pipelines.
 
 ## Installation
 
-### Using Curl
-
-#### Linux
-
-##### Linux x86 (64 bit)
-
-```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.3.2/downloads/cwc_1.3.2_linux_amd64.tar.gz" -o "cwc_cli.tar.gz"
-mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli 
-sudo ./cwc_cli/install.sh
-```
-
-##### Linux arm (64 bit)
-
-```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.3.2/downloads/cwc_1.3.2_linux_arm64.tar.gz" -o "cwc_cli.tar.gz" 
-mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli 
-sudo ./cwc_cli/install.sh
-```
-
-#### For MacOS
-
-##### MacOS x86/arm (64 bit)
-
-```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.3.2/downloads/cwc_1.3.2_darwin_all.tar.gz" -o "cwc_cli.tar.gz"
-mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli     
-sudo ./cwc_cli/install.sh
-```
-
-#### For Windows
-
-##### Windows x86 (64 bit)
-
-```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.3.2/downloads/cwc_1.3.2_windows_amd64.zip" -o "cwc_cli.zip"
-unzip cwc_cli.zip 
-cd 
-cwc.exe
-```
-
-##### Windows arm (64 bit)
-
-```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.3.2/downloads/cwc_1.3.2_windows_arm64.zip" -o "cwc_cli.zip"
-unzip cwc_cli.zip 
-cd cwc_cli
-cwc.exe
-```
-
-### Using homebrew
+### Homebrew
 
 First installation:
 
@@ -68,10 +18,58 @@ brew install cwc
 Upgrade:
 
 ```shell
-brew remove cwc
-brew untap cwc/cwc
-brew tap cwc/cwc https://gitlab.comwork.io/oss/cwc/homebrew-cwc.git 
-brew install cwc
+brew update
+brew upgrade cwc
+```
+
+### Curl
+
+#### Linux
+
+##### Linux x86 (64 bit)
+
+```shell
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.5.6/downloads/cwc_1.5.6_linux_amd64.tar.gz" -o "cwc_cli.tar.gz"
+mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli 
+sudo ./cwc_cli/install.sh
+```
+
+##### Linux arm (64 bit)
+
+```shell
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.5.6/downloads/cwc_1.5.6_linux_arm64.tar.gz" -o "cwc_cli.tar.gz" 
+mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli 
+sudo ./cwc_cli/install.sh
+```
+
+#### For MacOS
+
+##### MacOS x86/arm (64 bit)
+
+```shell
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.5.6/downloads/cwc_1.5.6_darwin_all.tar.gz" -o "cwc_cli.tar.gz"
+mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli     
+sudo ./cwc_cli/install.sh
+```
+
+#### For Windows
+
+##### Windows x86 (64 bit)
+
+```shell
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.5.6/downloads/cwc_1.5.6_windows_amd64.zip" -o "cwc_cli.zip"
+unzip cwc_cli.zip 
+cd 
+cwc.exe
+```
+
+##### Windows arm (64 bit)
+
+```shell
+curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.5.6/downloads/cwc_1.5.6_windows_arm64.zip" -o "cwc_cli.zip"
+unzip cwc_cli.zip 
+cd cwc_cli
+cwc.exe
 ```
 
 ## Usage
@@ -83,7 +81,9 @@ cwc help # or -h or --help for getting help
 cwc version # or -v or --version for getting the current version
 ```
 
-### Generating an API access and secret key
+### Authentication
+
+#### Generating an API access and secret key
 
 Go on your settings using the web console and click on "Credentials":
 
@@ -97,162 +97,157 @@ Then store the access and secret key somewhere safe because you won't be able to
 
 ![apikey_3](../../img/apikey_3.png)
 
-
-
-### List available providers
-```shell
-cwc provider ls
-```
-
-### List available regions
-```shell
-cwc region ls
-```
-
-### List Dns Zones
-```shell
-cwc dnszones ls
-```
-
-### Get environments Command
-
-```shell
-cwc environment ls
-```
-
-
-
-### Authentification Command
+#### Login
 
 ```shell
 cwc login -a <access_key> -s <secret_key>
 ```
 
-### Configure default endpoint, default provider and default region
+### Default configurations
+
+#### Configure
+
+Configuring the default endpoint, default region and provider with:
 
 ```shell
 cwc configure
 ```
 
-
-### Get instances Command
+You can tap enter if you want to keep the current value
 
 ```shell
-cwc instance ls
+$ cwc configure
+Default endpoint [https://cloud-api.comwork.io]: 
+Default provider [ovh]: 
+Default region [UK1]: 
 ```
 
-
-
-### Create instance Command
+You can check available providers and regions with the following commands
 
 ```shell
-cwc instance create -n <instance_name> -e <environement> -t <size> -i <project-id> -z <zone>
-```
-```shell
-cwc instance create -n <instance_name> -e <environement> -t <size> -p <project-name> -z <zone>
-```
-    
-### Attach instance Command
-
-```shell
-cwc instance attach -n <playbook-name> -t <size> -i <project-id> -z <zone>
-```
-```shell
-cwc instance attach -n <playbook-name> -t <size> -p <project-name> -z <zone>
+cwc provider ls
+cwc region ls # you have to set the provider to get the up to date list of available regions here
 ```
 
-### Update instance status Command
+### Projects
 
-```shell
-cwc instance update -i <instanceId> -status <action>
-```
-
-```shell
-cwc instance update --instance <instanceId> -status <action>
-```
-### Delete instance Command
-
-```shell
-cwc instance delete -i <instanceId>
-```    
-
-```shell
-cwc instance delete --instance <instanceId>
-```    
-### Get projects Command
+#### List
 
 ```shell
 cwc project ls
 ```
 
-
-
-### Get buckets Command
-
-```shell
-cwc bucket ls
-```
-
-
-
-### Update bucket credentials
-
-```shell
-cwc bucket update -b <bucketId>
-```
-
-```shell
-cwc bucket update --bucket <bucketId>
-```
-### Delete bucket Command
-
-```shell
-cwc instance delete -b <bucketId>
-```    
-
-
-```shell
-cwc instance delete --bucket <bucketId>
-```    
-### Get registries Command
-
-```shell
-cwc registry ls
-```
-
-
-
-### Update registry credentials
-
-```shell
-cwc registry update -r <registryId>
-```
-
-```shell
-cwc registry update --registry <registryId>
-```
-### Delete registry Command
-
-```shell
-cwc registry delete -r <registryId>
-```
-
-```shell
-cwc registry delete --registry <registryId>
-```
-
-### Create project Command
+#### Create
 
 ```shell
 cwc project create -n <project_name>
 ```
 
-### Delete project Command
+#### Delete
 
 ```shell
 cwc project delete -p <projectId>
+cwc project delete --project <projectId>
 ```
 
+### DNS zones
+
+#### List
+
 ```shell
-cwc project delete --project <projectId>
+cwc dnszones ls
+```
+
+### Environments
+
+#### List
+
+```shell
+cwc environment ls
+```
+
+### Instances
+
+#### List
+
+```shell
+cwc instance ls
+```
+
+#### Create
+
+```shell
+cwc instance create -n <instance_name> -e <environement> -t <instance_type> -p <project_name> -z <zone>
+```
+
+Notes: 
+* use `nova` zone for ovh and `1` or `2` for scaleway
+* `instance_type` corresponds to the provider instance sizing (i.e: `DEV1-M` for Scaleway)
+    
+#### Attach
+
+```shell
+cwc instance attach -n <playbook_name> -t <instance_type> -p <project_name> -z <zone>
+```
+
+Notes: 
+* use `nova` zone for ovh and `1` or `2` for scaleway
+* `instance_type` corresponds to the provider instance sizing (i.e: `DEV1-M` for Scaleway)
+
+#### Update status
+
+```shell
+cwc instance -i <instance_id> -s <action>
+```
+
+* Note status must be `poweroff`, `poweron` or `reboot`
+
+#### Delete
+
+```shell
+cwc delete -i <instance_id>
+```    
+
+### Buckets / object storage
+
+#### List
+
+```shell
+cwc bucket ls
+```
+
+#### Update credentials
+
+```shell
+cwc bucket update -b <bucket_id>
+cwc bucket update --bucket <bucket_id>
+```
+
+#### Delete
+
+```shell
+cwc bucket delete -b <bucket_id>
+cwc bucket delete --bucket <bucket_id>
+```    
+
+### OCI / Docker registries
+
+#### List
+
+```shell
+cwc registry ls
+```
+
+#### Update credentials
+
+```shell
+cwc registry update -r <registry_id>
+cwc registry update --registry <registry_id>
+```
+
+#### Delete
+
+```shell
+cwc registry delete -r <registry_id>
+cwc registry delete --registry <registry_id>
 ```
