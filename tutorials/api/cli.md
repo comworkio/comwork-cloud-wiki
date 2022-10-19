@@ -131,28 +131,22 @@ cwc region ls # you have to set the provider to get the up to date list of avail
 
 ### Projects
 
-#### Create
-
-```shell
-cwc create project -name <project_name>
-```
-
 #### List
 
 ```shell
 cwc project ls
 ```
 
-#### Get by id
+#### Create
 
 ```shell
-cwc get project -id <projectId>
+cwc project create -n <project_name>
 ```
 
 #### Delete
 
 ```shell
-cwc delete project -id <projectId>
+cwc project delete -p <projectId>
 ```
 
 ### DNS zones
@@ -168,7 +162,7 @@ cwc dnszones ls
 #### Create
 
 ```shell
-cwc create instance -name <instance_name> -env <environement> -instance_type <size> -project_id <project-id> -zone <zone>
+cwc instance create -name <instance_name> -env <environement> -instance_type <size> -project_id <project-id> -zone <zone>
 ```
 
 Note: always use `nova` zone for ovh
@@ -188,7 +182,7 @@ cwc get instance -id <instanceId>
 #### Attach
 
 ```shell
-cwc attach instance -name <playbook-name> -instance_type <size> -project_id <project-id> -zone <zone>
+cwc instance attach -name <playbook-name> -instance_type <size> -project_id <project-id> -zone <zone>
 ```
 
 #### Update status
