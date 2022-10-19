@@ -1,6 +1,6 @@
 # Overleaf as a service
 
-[Overleaf](https://www.overleaf.com) is an opensource online platform for generating document from LaTex input and work in a collaborative way similar to gitlab or github. Very suitable for a research and development team.
+[Overleaf](https://www.overleaf.com) is an opensource online platform for generating document from LaTeX inputs and work in a collaborative way similar to gitlab or github. Very suitable for a research and development team.
 
 ## Finish the installation
 

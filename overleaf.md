@@ -2,7 +2,7 @@
 
 Get your research and development team to the next level using your instances of Overleaf.
 
-[Overleaf](https://www.overleaf.com) is an opensource online platform for generating document from LaTex input and work in a collaborative way similar to gitlab or github. Very suitable for a research and development team.
+[Overleaf](https://www.overleaf.com) is an opensource online platform for generating document from LaTeX inputs and work in a collaborative way similar to gitlab or github (history and preview management, etc). Very suitable for a research and development team.
 
 What's the difference with the overleaf SaaS version:
 * It can be hosted in __Europe__ 🇪🇺 (including __France__ 🇫🇷) with French providers (like Scaleway or OVH)
