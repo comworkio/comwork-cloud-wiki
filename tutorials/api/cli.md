@@ -147,6 +147,7 @@ cwc project create -n <project_name>
 
 ```shell
 cwc project delete -p <projectId>
+cwc project delete --project <projectId>
 ```
 
 ### DNS zones
@@ -212,25 +213,21 @@ cwc delete -i <instance_id>
 #### List
 
 ```shell
-cwc get bucket --all
-```
-
-#### Get by id
-
-```shell
-cwc get bucket -id <bucketId>
+cwc bucket ls
 ```
 
 #### Update credentials
 
 ```shell
-cwc update bucket -id <bucketId>
+cwc bucket update -b <bucket_id>
+cwc bucket update --bucket <bucket_id>
 ```
 
 #### Delete
 
 ```shell
-cwc delete instance -id <bucketId>
+cwc bucket delete -b <bucket_id>
+cwc bucket delete --bucket <bucket_id>
 ```    
 
 ### OCI / Docker registries
@@ -238,24 +235,19 @@ cwc delete instance -id <bucketId>
 #### List
 
 ```shell
-cwc get registry --all
-```
-
-#### Get by id
-
-```shell
-cwc get registry -id <registryId>
+cwc registry ls
 ```
 
 #### Update credentials
 
 ```shell
-cwc update registry -id <registryId>
+cwc registry update -r <registry_id>
+cwc registry update --registry <registry_id>
 ```
 
 #### Delete
 
 ```shell
-cwc delete registry -id <registryId>
+cwc registry delete -r <registry_id>
+cwc registry delete --registry <registry_id>
 ```
-
