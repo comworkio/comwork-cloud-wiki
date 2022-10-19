@@ -6,7 +6,23 @@ As it's written in go, it's pretty easy to ship into your IaC pipelines.
 
 ## Installation
 
-### Using Curl
+### Homebrew
+
+First installation:
+
+```shell
+brew tap cwc/cwc https://gitlab.comwork.io/oss/cwc/homebrew-cwc.git 
+brew install cwc
+```
+
+Upgrade:
+
+```shell
+brew update
+brew upgrade cwc
+```
+
+### Curl
 
 #### Linux
 
@@ -56,24 +72,6 @@ cd cwc_cli
 cwc.exe
 ```
 
-### Using homebrew
-
-First installation:
-
-```shell
-brew tap cwc/cwc https://gitlab.comwork.io/oss/cwc/homebrew-cwc.git 
-brew install cwc
-```
-
-Upgrade:
-
-```shell
-brew remove cwc
-brew untap cwc/cwc
-brew tap cwc/cwc https://gitlab.comwork.io/oss/cwc/homebrew-cwc.git 
-brew install cwc
-```
-
 ## Usage
 
 ### Usage, help version
@@ -83,7 +81,9 @@ cwc help # or -h or --help for getting help
 cwc version # or -v or --version for getting the current version
 ```
 
-### Generating an API access and secret key
+### Authentication
+
+#### Generating an API access and secret key
 
 Go on your settings using the web console and click on "Credentials":
 
@@ -97,162 +97,192 @@ Then store the access and secret key somewhere safe because you won't be able to
 
 ![apikey_3](../../img/apikey_3.png)
 
-
-
-### List available providers
-```shell
-cwc provider ls
-```
-
-### List available regions
-```shell
-cwc region ls
-```
-
-### List Dns Zones
-```shell
-cwc dnszones ls
-```
-
-### Get environments Command
-
-```shell
-cwc environment ls
-```
-
-
-
-### Authentification Command
+#### Login
 
 ```shell
 cwc login -a <access_key> -s <secret_key>
 ```
 
-### Configure default endpoint, default provider and default region
+### Default endpoint
+#### Set
 
 ```shell
-cwc configure
+cwc configure -endpoint set <endpoint>
 ```
 
-
-### Get instances Command
+#### Get
 
 ```shell
-cwc instance ls
+cwc configure -endpoint get
 ```
 
+### Default region
 
-
-### Create instance Command
+#### List available regions
 
 ```shell
-cwc instance create -n <instance_name> -e <environement> -t <size> -i <project-id> -z <zone>
+cwc region ls
 ```
+
+#### Set
+
 ```shell
-cwc instance create -n <instance_name> -e <environement> -t <size> -p <project-name> -z <zone>
+cwc configure -region set <default_region>
+```
+
+#### Get
+
+```shell
+cwc configure -region get
+```
+
+### Default provider
+
+#### List availables providers
+
+```shell
+cwc provider ls
+```
+
+#### Set
+
+```shell
+cwc configure -provider set <provider>
+```
+#### Get
+
+```shell
+cwc configure -provider get
+```
+
+### Projects
+
+#### Create
+
+```shell
+cwc create project -name <project_name>
+```
+
+#### List
+
+```shell
+cwc get project --all
+```
+
+#### Get by id
+
+```shell
+cwc get project -id <projectId>
+```
+
+#### Delete
+
+```shell
+cwc delete project -id <projectId>
+```
+
+### Instances
+
+#### Create
+
+```shell
+cwc create instance -name <instance_name> -env <environement> -instance_type <size> -project_id <project-id> -zone <zone>
+```
+
+Note: always use `nova` zone for ovh
+
+#### List
+
+```shell
+cwc get instance --all
+```
+
+#### Get by id
+
+```shell
+cwc get instance -id <instanceId>
 ```
     
-### Attach instance Command
+#### Attach
 
 ```shell
-cwc instance attach -n <playbook-name> -t <size> -i <project-id> -z <zone>
-```
-```shell
-cwc instance attach -n <playbook-name> -t <size> -p <project-name> -z <zone>
+cwc attach instance -name <playbook-name> -instance_type <size> -project_id <project-id> -zone <zone>
 ```
 
-### Update instance status Command
+#### Update status
 
 ```shell
-cwc instance update -i <instanceId> -status <action>
+cwc update instance -id <instanceId> -status <action>
 ```
 
-```shell
-cwc instance update --instance <instanceId> -status <action>
-```
-### Delete instance Command
+#### Delete
 
 ```shell
-cwc instance delete -i <instanceId>
+cwc delete instance -id <instanceId>
 ```    
 
-```shell
-cwc instance delete --instance <instanceId>
-```    
-### Get projects Command
+### Buckets / object storage
+
+#### List
 
 ```shell
-cwc project ls
+cwc get bucket --all
 ```
 
-
-
-### Get buckets Command
+#### Get by id
 
 ```shell
-cwc bucket ls
+cwc get bucket -id <bucketId>
 ```
 
-
-
-### Update bucket credentials
+#### Update credentials
 
 ```shell
-cwc bucket update -b <bucketId>
+cwc update bucket -id <bucketId>
 ```
 
-```shell
-cwc bucket update --bucket <bucketId>
-```
-### Delete bucket Command
+#### Delete
 
 ```shell
-cwc instance delete -b <bucketId>
+cwc delete instance -id <bucketId>
 ```    
 
+### OCI / Docker registries
+
+#### List
 
 ```shell
-cwc instance delete --bucket <bucketId>
-```    
-### Get registries Command
-
-```shell
-cwc registry ls
+cwc get registry --all
 ```
 
-
-
-### Update registry credentials
+#### Get by id
 
 ```shell
-cwc registry update -r <registryId>
+cwc get registry -id <registryId>
 ```
 
-```shell
-cwc registry update --registry <registryId>
-```
-### Delete registry Command
+#### Update credentials
 
 ```shell
-cwc registry delete -r <registryId>
+cwc update registry -id <registryId>
 ```
 
+#### Delete
+
 ```shell
-cwc registry delete --registry <registryId>
+cwc delete registry -id <registryId>
 ```
 
-### Create project Command
+### Environments
+
+### List
 
 ```shell
-cwc project create -n <project_name>
+cwc get environment --all
 ```
 
-### Delete project Command
+### Get by id
 
 ```shell
-cwc project delete -p <projectId>
-```
-
-```shell
-cwc project delete --project <projectId>
+cwc get environment -id <environmentId>
 ```
