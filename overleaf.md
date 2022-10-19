@@ -25,4 +25,4 @@ We advise to start with an instance >= [DEV1-M](./sizing_pricing.md)
 
 Check it out [here](./sizing_pricing.md).
 
-You can also choose to do it by yourself, it's completely free, enjoy [our repositories](https://gitlab.comwork.io/oss/ansible-iac/portainer) with the docker images and ansible roles in order to install it by yourself.
+You can also choose to do it by yourself, it's completely free, enjoy [our repository](https://gitlab.comwork.io/oss/ansible-iac/overleaf) with the ansible role in order to install it by yourself.
