@@ -183,7 +183,9 @@ cwc instance create -n <instance_name> -e <environement> -t <instance_type> -p <
 Notes: 
 * use `nova` zone for ovh and `1` or `2` for scaleway
 * `instance_type` corresponds to the provider instance sizing (i.e: `DEV1-M` for Scaleway)
-    
+* use `--dns_zone` ou `-d` to choose the dns zone in which the instance will be created (you can list availble instances by running
+`cwc dnszones ls`)
+
 #### Attach
 
 ```shell
