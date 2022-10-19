@@ -228,7 +228,14 @@ cwc environment ls
 
 ### Instances
 
-#### List
+
+#### List instances types of selected provider
+
+```shell
+cwc instance type ls
+```
+
+#### List instances
 
 ```shell
 cwc instance ls
