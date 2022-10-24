@@ -1,6 +1,8 @@
 # Serverless
 
-Disclaimer: for now there's only [OpenFaaS / Faasd](https://www.openfaas.com/blog/introducing-faasd/) available but we intend to propose other FaaS (functions as a service) engines including our own one based on Google Cloud Functions framework.
+Disclaimer: for now there's only [OpenFaaS / Faasd](https://www.openfaas.com/blog/introducing-faasd/) available but we intend to propose other FaaS[^1] engines including our own one based on Google Cloud Functions framework.
+
+[^1]: functions as a service
 
 ## OpenFaas / Faasd
 
