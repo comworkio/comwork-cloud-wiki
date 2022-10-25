@@ -3,7 +3,7 @@
 Here's how to use `cwc` to perfom any actions you could do with the [web console](../web_console.md) and be able to code some automation/IaC scripts (i.e: shells scripts, ansible roles, terraform, etc).
 
 Notes:
-* To checkout how to install and update the cwc cli checkout this [tutorial](./README.md).
+* To checkout how to install and update the cwc cli checkout this [tutorial](./install.md).
 * For the commands accessible for the administrators, checkout this [tutorial](./admin.md)
 
 ## Usage, help version
