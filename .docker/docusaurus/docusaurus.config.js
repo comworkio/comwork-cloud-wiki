@@ -18,7 +18,7 @@ const config = {
         [require.resolve('@docusaurus/plugin-client-redirects'), {
             redirects: [{
                 from: '/docs/tutorials/api/cli',
-                to: '/docs/tutorials/cli/README'
+                to: '/docs/tutorials/cli/'
             }]
         }],
         require.resolve('docusaurus-plugin-matomo')
