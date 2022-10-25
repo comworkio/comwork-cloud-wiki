@@ -246,7 +246,7 @@ cwc admin registry create --name <registry_name> --type <registry_type> --user <
 #### List
 
 ```shell
-cwc registry ls
+cwc admin registry ls
 ```
 
 #### Get Registry by ID
