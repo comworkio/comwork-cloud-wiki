@@ -22,16 +22,13 @@ Upgrade:
 ```shell
 brew upgrade
 brew install cwc
-
 ```
 
 To update all your formulas including cwc:
 
 ```shell
-brew upgrade
 brew update
-
-
+brew upgrade cwc
 ```
 
 ### Curl
@@ -117,6 +114,14 @@ cwc login -a <access_key> -s <secret_key>
 
 ### Default configurations
 
+#### Read the current configurations
+
+```shell
+cwc configure get endpoint
+cwc configure get provider
+cwc configure get region
+```
+
 #### Configure
 
 Configuring the default endpoint, default region and provider with:
@@ -140,6 +145,13 @@ You can check available providers and regions with the following commands
 cwc provider ls
 cwc region ls # you have to set the provider to get the up to date list of available regions here
 ```
+
+For each settings you also can configure with a specific command:
+
+```shell
+cwc configure set endpoint https://cloud-api.comwork.io
+cwc configure set provider ovh
+cwc configure set region UK1
 
 ### Projects
 
