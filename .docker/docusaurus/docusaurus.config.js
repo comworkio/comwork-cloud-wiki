@@ -15,13 +15,13 @@ const config = {
         [[require.resolve('docusaurus-lunr-search'), {
             languages: ['en', 'fr']
         }],
-        require.resolve('docusaurus-plugin-matomo'),
-        require.resolve('@docusaurus/plugin-client-redirects'), {
+        [require.resolve('docusaurus-plugin-matomo')],
+        [require.resolve('@docusaurus/plugin-client-redirects'), {
             redirects: [{
                 from: '/docs/tutorials/api/cli',
                 to: '/docs/tutorials/cli'
             }]
-        }
+        }]
         ],
         
     i18n: {
