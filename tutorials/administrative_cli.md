@@ -213,6 +213,14 @@ cwc admin bucket delete --bucket <bucket_id>
 cwc registry ls
 ```
 
+#### Get Registry by ID
+
+```shell
+cwc admin registry ls -r <registry_id>
+cwc admin registry ls --registry <registry_id>
+
+```
+
 #### Update credentials
 
 ```shell
