@@ -1,11 +1,16 @@
 # Portainer as a service
 
 Get your infrastructure to the next level using [portainer](https://www.portainer.io) on our cloud platform!
+
+Portainer will help you transform your comwork cloud instances as a real and modern CaaS[^1].
+
+[^1]: Container as a service
+
 ## Usecases
 
 Here is a non exhaustive list of portainer usecases we're enjoying the most:
 
-1. You can manage you other environments/instances with a portainer agent and list them like that:
+1. You can manage you other comwork cloud instances with a portainer edge agents and list them like that:
 
 ![portainer_manage_envs](./img/portainer_manage_envs.png)
 
@@ -21,7 +26,9 @@ Multiple other actions:
 * Clean the docker/OCI images
 * Connect to a private docker/OCI registry
 * Kubernetes integration
-* Deploy directly your containers from a catalog or a docker-compose file you just have to upload like a real Heroku/Netlify like PaaS
+* Deploy directly your containers from a catalog or a docker-compose file you just have to upload like a real PaaS[^2]
+
+[^2]: Platform as a service
 
 ## Demo and tutorials
 
