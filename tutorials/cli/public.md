@@ -43,11 +43,13 @@ cwc login -a <access_key> -s <secret_key>
 cwc configure get endpoint
 cwc configure get provider
 cwc configure get region
+cwc configure get format
+
 ```
 
 ### Configure
 
-Configuring the default endpoint, default region and provider with:
+Configuring the default endpoint, default region, default output format and provider with:
 
 ```shell
 cwc configure
@@ -60,6 +62,8 @@ $ cwc configure
 Default endpoint [https://cloud-api.comwork.io]: 
 Default provider [ovh]: 
 Default region [UK1]: 
+Default format [json]: 
+
 ```
 
 You can check available providers and regions with the following commands
@@ -75,6 +79,8 @@ For each settings you also can configure with a specific command:
 cwc configure set endpoint https://cloud-api.comwork.io
 cwc configure set provider ovh
 cwc configure set region UK1
+cwc configure set format json
+
 ```
 
 ## Projects
