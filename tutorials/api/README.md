@@ -16,8 +16,8 @@ Or you can either go check directly the swagger documentation [here](https://clo
 
 We got our own cli `cwc` written in go.
 
-Check-it out [here](./cli.md)
+Check-it out [here](../cli/README.md)
 
 ## Terraform provider
 
-Check-it out [here](./terraform.md)
+_This work is in progress..._
