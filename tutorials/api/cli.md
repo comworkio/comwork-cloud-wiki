@@ -274,7 +274,7 @@ Notes:
 #### Update status
 
 ```shell
-cwc instance -i <instance_id> -s <action>
+cwc instance update -i <instance_id> -s <action>
 ```
 
 * Note status must be `poweroff`, `poweron` or `reboot`
@@ -282,7 +282,7 @@ cwc instance -i <instance_id> -s <action>
 #### Delete
 
 ```shell
-cwc delete -i <instance_id>
+cwc instance delete -i <instance_id>
 ```    
 
 ### Buckets / object storage
