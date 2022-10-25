@@ -161,18 +161,13 @@ cwc project ls
 
 ```shell
 cwc project ls -p <project_id>
-```
-```shell
 cwc project ls --id <project_id>
 ```
-
 
 ##### Search Project By Name
 
 ```shell
 cwc project ls -n <project_name>
-```
-```shell
 cwc project ls --name <project_name>
 ```
 
@@ -181,8 +176,6 @@ cwc project ls --name <project_name>
 
 ```shell
 cwc project ls -u <project_url>
-```
-```shell
 cwc project ls --url <project_url>
 ```
 
@@ -191,20 +184,20 @@ cwc project ls --url <project_url>
 ```shell
 cwc project create -n <project_name>
 ```
+
 Notes: 
 * If you want to create a project in another Gitlab instance you can provide the Gitlab host, the group id, your access token and your git username by adding these options:
 * `-h` or `--host`: Gitlab instance host
 * `-t` or `--token`: your Gitlab access token
 * `-g` or `--git`: Your Git username
 * `-n` or `--namespace`: namespace or group id where the project will be created
+
 #### Delete
 
 ##### Delete Project By ID
 
 ```shell
 cwc project delete -p <project_id>
-```
-```shell
 cwc project delete --id <project_id>
 ```
 
@@ -213,8 +206,6 @@ cwc project delete --id <project_id>
 
 ```shell
 cwc project delete -n <project_name>
-```
-```shell
 cwc project delete --name <project_name>
 ```
 
@@ -223,8 +214,6 @@ cwc project delete --name <project_name>
 
 ```shell
 cwc project delete -u <project_url>
-```
-```shell
 cwc project delete --url <project_url>
 ```
 
@@ -246,7 +235,6 @@ cwc environment ls
 
 ### Instances
 
-
 #### List instances types of selected provider
 
 ```shell
@@ -263,13 +251,7 @@ cwc instance ls
 
 ```shell
 cwc instance create -n <instance_name> -e <environement> -t <instance_type> -p <project_name> -z <zone>
-```
-
-```shell
 cwc instance create -n <instance_name> -e <environement> -t <instance_type> -i <project_id> -z <zone>
-```
-
-```shell
 cwc instance create -n <instance_name> -e <environement> -t <instance_type> -u <project_url> -z <zone>
 ```
 
