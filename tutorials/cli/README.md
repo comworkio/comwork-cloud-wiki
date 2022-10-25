@@ -73,3 +73,8 @@ unzip cwc_cli.zip
 cd cwc_cli
 cwc.exe
 ```
+
+## Usage
+
+* [public commands](./public.md)
+* [admin command](./admin.md)
