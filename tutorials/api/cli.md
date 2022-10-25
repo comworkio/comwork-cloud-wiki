@@ -232,6 +232,13 @@ cwc dnszones ls
 ```shell
 cwc environment ls
 ```
+#### Get by ID
+
+```shell
+cwc environment ls -e <environment_id>
+cwc environment ls --environment <environment_id>
+
+```
 
 ### Instances
 
@@ -245,6 +252,14 @@ cwc instance type ls
 
 ```shell
 cwc instance ls
+```
+
+#### List instance by ID
+
+```shell
+cwc instance ls -i <instance_id>
+cwc instance ls --instance <instance_id>
+
 ```
 
 #### Create
@@ -283,6 +298,8 @@ cwc instance update -i <instance_id> -s <action>
 
 ```shell
 cwc instance delete -i <instance_id>
+cwc instance delete --instance <instance_id>
+
 ```    
 
 ### Buckets / object storage
@@ -291,6 +308,12 @@ cwc instance delete -i <instance_id>
 
 ```shell
 cwc bucket ls
+```
+#### Get by ID
+```shell
+cwc bucket ls -b <bucket_id>
+cwc bucket ls --bucket <bucket_id>
+
 ```
 
 #### Update credentials
@@ -313,6 +336,14 @@ cwc bucket delete --bucket <bucket_id>
 
 ```shell
 cwc registry ls
+```
+
+#### Get by ID
+
+```shell
+cwc registry ls -r <registry_id>
+cwc registry ls --registry <registry_id>
+
 ```
 
 #### Update credentials
