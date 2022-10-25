@@ -20,13 +20,6 @@ brew install cwc
 Upgrade:
 
 ```shell
-brew upgrade
-brew install cwc
-```
-
-To update all your formulas including cwc:
-
-```shell
 brew update
 brew upgrade cwc
 ```
@@ -152,6 +145,7 @@ For each settings you also can configure with a specific command:
 cwc configure set endpoint https://cloud-api.comwork.io
 cwc configure set provider ovh
 cwc configure set region UK1
+```
 
 ### Projects
 
