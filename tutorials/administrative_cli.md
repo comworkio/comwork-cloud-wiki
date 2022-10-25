@@ -6,22 +6,6 @@ NOTE: only users who have admin access can use this adminitrative commands.
 
 ## Usage
 
-### Authentication
-
-#### Generating an API access and secret key
-
-Go on your settings using the web console and click on "Credentials":
-
-![apikey_1](../../img/apikey_1.png)
-
-Then click on "Generate API key":
-
-![apikey_2](../../img/apikey_2.png)
-
-Then store the access and secret key somewhere safe because you won't be able to see it anymore:
-
-![apikey_3](../../img/apikey_3.png)
-
 ### Users
 
 #### List
