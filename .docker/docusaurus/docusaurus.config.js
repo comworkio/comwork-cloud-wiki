@@ -134,7 +134,7 @@ const config = {
                         position: 'right',
                     },
                     {
-                        to: 'https://comwork-cloud.slack.com',
+                        to: 'https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ',
                         label: 'Slack',
                         position: 'right',
                     },

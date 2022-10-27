@@ -6,7 +6,7 @@ In order to access to our images and releases, you'll need to ask first for beei
 
 You can do-it using:
 * The `cloud@comwork.io` email
-* Our [Slack workspace](https://comwork-cloud.slack.com) (channel `#storage`)
+* Our [Slack workspace](https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ) (channel `#storage`)
 
 ## Using ansible
 

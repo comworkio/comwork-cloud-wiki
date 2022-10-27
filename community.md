@@ -16,6 +16,6 @@ You can use all those repositories in order to:
 
 ## Slack workspace
 
-You also can ask for joining our [Slack workspace](https://comwork-cloud.slack.com) for asking help or sharing with the community. Send us an email to `cloud@comwork.io` for getting an invitation.
+You also can ask for joining our [Slack workspace](https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ) for asking help or sharing with the community.
 
 You can there directly talk with the team if you're not quick enough on the tickets but also share your technical insights with the rest of the community and get help by the other members.
