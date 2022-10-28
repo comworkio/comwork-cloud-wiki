@@ -14,8 +14,8 @@ You can use all those repositories in order to:
 * Open tickets for any bug you want to share about cloud.comwork.com or its API, cli, whatever related
 * Ask for new features or evolutions
 
-## Slack workspace
+## Slack and discord
 
-You also can ask for joining our [Slack workspace](https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ) for asking help or sharing with the community.
+You also can ask for joining our [Slack workspace](https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ) or [Discord server](https://discord.gg/CXskxxPauz) for asking help or sharing with the community.
 
 You can there directly talk with the team if you're not quick enough on the tickets but also share your technical insights with the rest of the community and get help by the other members.

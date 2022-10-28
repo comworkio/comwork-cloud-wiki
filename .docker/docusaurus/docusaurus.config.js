@@ -138,6 +138,11 @@ const config = {
                         label: 'Slack',
                         position: 'right',
                     },
+                    {
+                        to: 'https://discord.gg/CXskxxPauz',
+                        label: 'Discover',
+                        position: 'right',
+                    },
                 ],
             },
             footer: {
@@ -157,6 +162,11 @@ const config = {
                             {
                                 label: 'Slack',
                                 to: 'https://join.slack.com/t/uprodit-tech/shared_invite/zt-1h3hh21tf-Rxb4zbSiRz8GFVwXvqLHMA',
+                            },
+                            {
+                                to: 'https://discord.gg/CXskxxPauz',
+                                label: 'Discover',
+                                position: 'right',
                             },
                         ],
                     },
