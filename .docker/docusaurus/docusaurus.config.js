@@ -140,7 +140,7 @@ const config = {
                     },
                     {
                         to: 'https://discord.gg/CXskxxPauz',
-                        label: 'Discover',
+                        label: 'Discord',
                         position: 'right',
                     },
                 ],
@@ -165,7 +165,7 @@ const config = {
                             },
                             {
                                 to: 'https://discord.gg/CXskxxPauz',
-                                label: 'Discover',
+                                label: 'Discord',
                                 position: 'right',
                             },
                         ],
