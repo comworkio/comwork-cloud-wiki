@@ -134,6 +134,11 @@ const config = {
                         position: 'right',
                     },
                     {
+                        to: 'https://mastodon.comwork.io',
+                        label: 'Mastodon',
+                        position: 'right',
+                    },
+                    {
                         to: 'https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ',
                         label: 'Slack',
                         position: 'right',
@@ -158,6 +163,10 @@ const config = {
                             {
                                 label: 'Cloud console',
                                 to: 'https://cloud.comwork.io',
+                            },
+                            {
+                                label: 'Mastodon',
+                                to: 'https://mastodon.comwork.io',
                             },
                             {
                                 label: 'Slack',
