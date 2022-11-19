@@ -1,3 +1,3 @@
 # Mastodon as a service
 
-_This work is in progress..._
+1. Connect with [ssh](./ssh.md)
