@@ -2,7 +2,7 @@
 
 Mastodon is an OpenSource and Federated software which brings you the ability to provide microblogging features which are similar to Twitter or Reddit social networks.
 
-![mastodon](./img/matomo.png)
+![mastodon](./img/mastodon.png)
 
 Mastodon is also part of the Fediverse like PeerTube: so it's make more sens to add new instances instead of joining the existing big instances such as [mastodon.social](https://mastodon.social) or [fosstodon](https://fosstodon.org) which are suffering big increase of charge and needs to scale up without having enough found.
 
