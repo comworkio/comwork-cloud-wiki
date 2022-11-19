@@ -23,6 +23,7 @@ The instances are hosted on [Scaleway](https://www.scaleway.com) or [OVHCloud](h
 * [Portainer as a service](./portainer.md)
 * [Wordpress as a service](./wpaas.md)
 * [Matomo as a service](./matomo.md)
+* [Mastodon as a service](./mastodon.md)
 * [Databases as a service](./dbaas.md)
 * [Gateway as a service](./vps.md)
 * [Object storages and OCI registries](./storage.md)
