@@ -4,7 +4,7 @@ Mastodon is an OpenSource and Federated software which brings you the ability to
 
 ![mastodon](./img/mastodon.png)
 
-Mastodon is also part of the Fediverse like PeerTube: so it's make more sens to add new instances instead of joining the existing big instances such as [mastodon.social](https://mastodon.social) or [fosstodon](https://fosstodon.org) which are suffering big increase of charge and needs to scale up without having enough found.
+Mastodon is also part of the Fediverse like PeerTube. So it makes more sens to add new instances instead of joining the existing big instances such as [mastodon.social](https://mastodon.social) or [fosstodon](https://fosstodon.org). Moreover, some of them are suffering big increase of charge and needs to scale up without having enough found.
 
 We're proving this [free instance](https://mastodon.comwork.io) for you to test and join mastodon but we'll probably have to close the new registrations at some point. But don't worry, this is also the reason we're providing dedicated instances if you want to promote the Fediverse with this comwork cloud offer.
 
