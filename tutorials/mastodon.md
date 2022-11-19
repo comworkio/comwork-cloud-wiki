@@ -2,6 +2,12 @@
 
 ## Getting started
 
+You've just setup your Mastodon instance and you've got this error on the frontpage serve by the `https://{your_instance_hash}.mastodon.comwork.(cloud|dev|info)`, that's pretty normal. 
+
+![mastodon_error](../img/mastodon_error.png)
+
+It's because your instance is not ready yet, you have to follow those steps first:
+
 **1/** Connect with [ssh](./ssh.md)
 
 **2/** Execute the following command on the SSH session:
@@ -41,7 +47,7 @@ Push on the `main` branch of your gitlab repo.
 
 **5/** Your instance is ready on `https://{your_instance_hash}.mastodon.comwork.(cloud|dev|info)`, go register your first user account there:
 
-[!mastodon_register](../img/mastodon_register.png)
+![mastodon_register](../img/mastodon_register.png)
 
 **6/** On the SSH session you've opened earlier, register your user as the admin of instance using our rake task like that:
 
