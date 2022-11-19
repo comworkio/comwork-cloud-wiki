@@ -19,6 +19,12 @@ mastodon_vapid_private_key: changeit
 mastodon_vapid_public_key: changeit
 ```
 
+Also update this settings (replace `"true"` by `"false"`):
+
+```yaml
+pgsql_first_install: "false"
+```
+
 Push on the `main` branch of your gitlab repo.
 
 3. Your instance is ready on `https://{your_instance_hash}.mastodon.comwork.(cloud|dev|info)`, go setup your instance and first account there
