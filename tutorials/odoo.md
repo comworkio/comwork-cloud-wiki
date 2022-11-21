@@ -1,11 +1,11 @@
 # Odoo
 
-Once your instance is up, you can click on the `open` link here:
+## Getting started
 
-![instance_open_link](../img/instance_open_link.png)
+Once you created your odoo instances and it's ready, you'll get on this screen:
 
-It'll ask for a username and password and Database Name:
+![odoo_init](../img/odoo_init.png)
 
-* Database Name: `Add a Database Name`
-* Email: `admin`
-* Password: `admin`
+Notes:
+* Use `admin` as database's name
+* Keep the master password somewhere safe
