@@ -1,6 +1,5 @@
 # Odoo
 
-
 Once your instance is up, you can click on the `open` link here:
 
 ![instance_open_link](../img/instance_open_link.png)
