@@ -166,7 +166,12 @@ Note: status must be `poweroff`, `poweron` or `reboot`
 cwc admin instance delete -i <instance_id>
 cwc admin instance delete --instance <instance_id>
 ```    
+### Refresh state
 
+```shell
+cwc admin instance refresh -i <instance_id>
+cwc admin instance refresh --instance <instance_id>
+```    
 ## Buckets / object storage
 
 ### Add bucket to a user
