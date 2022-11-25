@@ -8,6 +8,8 @@
 * [OpenFaaS / Faasd](./faasd.md)
 * [Localtunnel server](./localtunnel.md)
 * [Wordpress and matomo](./wpaas_matomo.md)
+* [Mastodon](./mastodon.md)
+* [Odoo](./odoo.md)
 * [Databases as a service](./dbaas.md)
 * [Overleaf as a service](./overleaf.md)
 * [Connect with SSH](./ssh.md)

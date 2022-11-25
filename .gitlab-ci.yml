@@ -1,7 +1,17 @@
 stages:
+  - publish
   - generate
   - build
   - deploy
+
+mirror:
+  stage: publish
+  script:
+    - setsid ./ci/mirror.sh
+  only:
+    - /^(main.*)$/
+  tags:
+    - mirror
 
 pricing:
   stage: generate

@@ -134,8 +134,18 @@ const config = {
                         position: 'right',
                     },
                     {
-                        to: 'https://comwork-cloud.slack.com',
+                        to: 'https://mastodon.comwork.io',
+                        label: 'Mastodon',
+                        position: 'right',
+                    },
+                    {
+                        to: 'https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ',
                         label: 'Slack',
+                        position: 'right',
+                    },
+                    {
+                        to: 'https://discord.gg/CXskxxPauz',
+                        label: 'Discord',
                         position: 'right',
                     },
                 ],
@@ -153,6 +163,19 @@ const config = {
                             {
                                 label: 'Cloud console',
                                 to: 'https://cloud.comwork.io',
+                            },
+                            {
+                                label: 'Mastodon',
+                                to: 'https://mastodon.comwork.io',
+                            },
+                            {
+                                label: 'Slack',
+                                to: 'https://join.slack.com/t/uprodit-tech/shared_invite/zt-1h3hh21tf-Rxb4zbSiRz8GFVwXvqLHMA',
+                            },
+                            {
+                                to: 'https://discord.gg/CXskxxPauz',
+                                label: 'Discord',
+                                position: 'right',
                             },
                         ],
                     },
