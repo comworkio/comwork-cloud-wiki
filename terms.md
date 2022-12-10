@@ -2,7 +2,7 @@
 
 ## Where and by whom is hosted this service?
 
-This instance is hosted in France by [COMWORKIO SASU](https://www.comwork.io) (R.C.S Paris 838 757 987) and it's hosted on top of [Scaleway](https://www.scaleway.com).
+This instance is hosted in France by [COMWORKIO SASU](https://www.comwork.io) (R.C.S Paris 838 757 987) on [Scaleway](https://www.scaleway.com).
 
 ## What information do we collect?
 
