@@ -1,5 +1,9 @@
 # Subscription procedure
 
+## Terms of service
+
+You'll find all informations [here](./terms.md)
+
 ## Sign up for the first time
 
 Firstable, if you want a quote or subscribe, you can:
