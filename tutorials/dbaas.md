@@ -144,6 +144,7 @@ By default it's each day at 3.00am.
 4. If you're on mysql/mariadb, here's the configuration for a single database:
 
 ```yaml
+backup_date_format: "+%Y%m%d"
 bucket_endpoint: "https://s3.fr-par.scw.cloud" # change-it by your provider
 bucket_access_key: changeit
 bucket_secret_key: changeit
@@ -159,6 +160,7 @@ backup_max_retention: 3 # number of retention days you can re-adjust
 If you're on PostgreSQL:
 
 ```yaml
+backup_date_format: "+%Y%m%d"
 bucket_endpoint: "https://s3.fr-par.scw.cloud" # change-it by your provider
 bucket_access_key: changeit
 bucket_secret_key: changeit
