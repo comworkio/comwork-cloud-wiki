@@ -150,6 +150,7 @@ bucket_access_key: changeit
 bucket_secret_key: changeit
 bucket_name: test-mysql-backup # change-it by your bucket name
 backup_folder: /home/db-backup
+backup_inside_container: /db-data
 backup_cmd: "mysqldump -h {your_instance_hash}.mariadb.comwork.(cloud|dev|info) -u your_user -p'your_password' --databases your_db > /home/backups/backup.sql"
 zip_compress_backup_enable: true
 backup_zip_file_folder: /home/backups/tmp
@@ -166,6 +167,7 @@ bucket_access_key: changeit
 bucket_secret_key: changeit
 bucket_name: test-pgsql-backup # change-it by your bucket name
 backup_folder: /home/db-backup
+backup_inside_container: /db-data
 backup_cmd: "pg_dumpall -U backup > /home/backups/backup.sql"
 zip_compress_backup_enable: true
 backup_zip_file_folder: /home/backups/tmp
