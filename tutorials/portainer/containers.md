@@ -1,10 +1,20 @@
-# Monitor and manager containers with portainer
+# Monitor and manage containers with portainer
 
 You can manage all the containers that are deployed with docker on your servers:
 
 ![portainer_1](../../img/portainer_1.png)
 
 ![portainer_2](../../img/portainer_2.png)
+
+## Monitor logs of containers
+
+You can watch logs from containers clicking on this icon:
+
+![portainer_logs1](../../img/portainer_logs1.png)
+
+Then you can read the live logs and download them in order to be able to opening them in a more suitable editor to perform some research:
+
+![portainer_logs2](../../img/portainer_logs2.png)
 
 ## Opening a shell inside a container
 
