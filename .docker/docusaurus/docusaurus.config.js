@@ -124,6 +124,11 @@ const config = {
                         position: 'left',
                     },
                     {
+                        to: 'https://status.comwork.io',
+                        label: 'Status',
+                        position: 'left',
+                    },
+                    {
                         to: 'https://youtube.com/playlist?list=PLVa_2sL_l0msxUnmaSpLAGlwOxizXWjht',
                         label: 'YouTube',
                         position: 'right',
@@ -154,10 +159,6 @@ const config = {
                             {
                                 label: 'Home',
                                 to: 'https://www.comwork.io',
-                            },
-                            {
-                                label: 'Cloud console',
-                                to: 'https://cloud.comwork.io',
                             },
                             {
                                 label: 'Terms of services',
