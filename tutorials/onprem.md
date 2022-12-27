@@ -96,6 +96,7 @@ The `.env.api` file:
 
 ```shell
 APP_ENV=prod
+LOG_LEVEL=INFO
 API_URL=https://cloud-api.yourdomain.com
 COMPANY_NAME=Sobflous
 PULUMI_ACCESS_TOKEN=pul-changeit
@@ -140,6 +141,17 @@ OS_USERNAME=user-changeit
 OS_PASSWORD=changeit
 OS_TENANT_NAME=changeit
 DEFAULT_PROVIDER=ovh
+# ovh config
+OVH_ENDPOINT=changeit
+OVH_APPLICATION_KEY=changeit
+OVH_APPLICATION_SECRET=changeit
+OVH_CONSUMER_KEY=changeit
+OVH_SERVICENAME=changeit
+
+# scaleway config
+SCW_PROJECT_ID=changeit
+SCW_SECRET_KEY=changeit
+SCW_ACCESS_KEY=changeit
 
 # Yubico for the 2FA
 YUBICO_CLIENT_ID=changeit
