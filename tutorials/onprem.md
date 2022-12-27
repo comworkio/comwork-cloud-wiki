@@ -113,6 +113,7 @@ DYNAMIC_REPO_GROUPID=changeit # integer id
 GIT_EMAIL=cloud@yourdomain.com
 GIT_PLAYBOOK_REPO_URL=https://gitlab.yourdomain.com/infrastructure/infra-playbook.git
 PLAYBOOK_REPO_PROJECTID=changeit
+GITLAB_PROJECTID_ISSUES=changeit
 GIT_PRIVATE_TOKEN=changeit
 GIT_USERNAME=comwork_cloud
 FLASK_ENV=production
