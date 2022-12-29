@@ -16,10 +16,16 @@ const config = {
             languages: ['en', 'fr']
         }],
         [require.resolve('@docusaurus/plugin-client-redirects'), {
-            redirects: [{
-                from: '/docs/tutorials/api/cli',
-                to: '/docs/tutorials/cli/'
-            }]
+            redirects: [
+                {
+                    from: '/docs/tutorials/api/cli',
+                    to: '/docs/tutorials/cli/'
+                },
+                {
+                    from: '/docs/tutorials/web_console',
+                    to: '/docs/tutorials/console'
+                }
+            ]
         }],
         require.resolve('docusaurus-plugin-matomo')
         ],
