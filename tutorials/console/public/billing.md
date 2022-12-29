@@ -2,6 +2,8 @@
 
 This is how to pay your monthly invoices. The billing system is using [stripe](https://www.stripe.com) for secured payments.
 
+You can pay every 2nd of the month.
+
 Click on "billing" on the user's menu:
 
 ![billing_1](../../../img/billing_1.png)
