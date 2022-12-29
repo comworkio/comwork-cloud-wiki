@@ -1,3 +1,3 @@
 # Admin
 
-* [Manage environments](./admin/environments.md)
+* [Manage environments](./environments.md)

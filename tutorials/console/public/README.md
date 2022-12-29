@@ -1,4 +1,5 @@
 # Public
 
-* [Instances](./public/instances.md)
-* [Support](./public/support.md)
+* [2FA / MFA](./2FA.md)
+* [Support](./support.md)
+* [Instances](./instances.md)
