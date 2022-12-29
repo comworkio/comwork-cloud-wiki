@@ -2,11 +2,11 @@
 
 You can manage the environments which are a set of ansible roles and templates.
 
-![environments](../img/environments.png)
+![environments](../../../img/environments.png)
 
 Keeping environment private will make the environment not accessible for non-admin users.
 
-![create_environment](../img/create_environment.png)
+![create_environment](../../../img/create_environment.png)
 
 Beware of the roles order :
 * `common`, `sudo`, `ssh` must be always there
