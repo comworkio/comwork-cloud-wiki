@@ -14,6 +14,10 @@ The bill are monthly issued, you can find how to download and pay those bills wi
 
 The billing system is using [stripe](https://www.stripe.com) for secured payments.
 
+## What are the licences of each comwork's cloud components?
+
+All the licences are detailed [here](./licences.md).
+
 ## What information do we collect?
 
 * _Basic account information_: If you register on this service, you may be asked to enter a username, an e-mail address and a password. You may also enter additional profile information such as company references and payment credit card in order to be able to receive some bills. All those informations are only accessible by the COMWORKIO staff.
