@@ -5,8 +5,10 @@
 In order to access to our images and releases, you'll need to ask first for beeing able to pull our OCI images.
 
 You can do-it using:
+* The [support system](./console/public/support.md)
 * The `cloud@comwork.io` email
-* Our [Slack workspace](https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ) (channel `#storage`)
+* Our [Slack workspace](https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ) (channel `#onpremise`)
+* Our [Discord server](https://discord.gg/CXskxxPauz) (channel `#onpremise`)
 
 ## Using ansible
 

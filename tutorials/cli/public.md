@@ -1,6 +1,6 @@
 # Public commands
 
-Here's how to use `cwc` to perfom any actions you could do with the [web console](../web_console.md) and be able to code some automation/IaC scripts (i.e: shells scripts, ansible roles, terraform, etc).
+Here's how to use `cwc` to perfom any actions you could do with the [web console](../console/README.md) and be able to code some automation/IaC scripts (i.e: shells scripts, ansible roles, terraform, etc).
 
 Notes:
 * To checkout how to install and update the cwc cli checkout this [tutorial](./install.md).
