@@ -4,6 +4,10 @@
 
 This instance is hosted in France by [COMWORKIO SASU](https://www.comwork.io) (R.C.S Paris 838 757 987) on [Scaleway](https://www.scaleway.com).
 
+## What is the pricing model?
+
+You'll find all the details about the sizing and pricing model [here](./sizing_pricing.md).
+
 ## How the secured payment is working?
 
 The bill are monthly issued, you can find how to download and pay those bills with [this tutorial](./tutorials/console/public/billing.md).
