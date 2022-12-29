@@ -8,7 +8,7 @@ This feature is only available for comwork cloud administrator (you can directly
 
 ![oci_registry](./img/oci_registry.png)
 
-For the SaaS version, you can either ask for a quote by email with `cloud@comwork.io` or in our [Slack workspace](https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ) or [Discord server](https://discord.gg/CXskxxPauz) (channel `#storage`) or in the [support ticket system](tutorials/console/support.md).
+For the SaaS version, you can ask the team to provide buckets or object storage via our [support system](./tutorials/console/public/support.md).
 
 Even if you're not an admin, you'll be able to manage your object storage bucket and OCI registries when there are created and associated with your account.
 
