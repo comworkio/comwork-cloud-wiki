@@ -1,6 +1,6 @@
 # Tutorials
 
-* [Web console](./web_console.md)
+* [Web console](./console/README.md)
 * [API](./api/README.md)
 * [How to use git](./git.md)
 * [Code](./code/README.md)
