@@ -1,4 +1,4 @@
-# On premise
+# On premises
 
 You can ask to be granted to host your own instance on prem (using OVHCloud or Scaleway).
 

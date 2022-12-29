@@ -33,7 +33,7 @@ The instances are hosted on [Scaleway](https://www.scaleway.com) or [OVHCloud](h
 * [Terms of service](./terms.md)
 * [Community and support](./community.md)
 * [Licences](./licences.md)
-* [Cloud on premise / selfhosted](./onprem.md)
+* [Cloud on premises / selfhosted](./onprem.md)
 
 ### Tutorials and demos
 

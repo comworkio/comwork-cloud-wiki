@@ -1,4 +1,4 @@
-# Comwork cloud on premise
+# Comwork cloud on premises
 
 ## Access to our images
 
@@ -270,3 +270,9 @@ environments:
   - environment: elasticstack
     extra_subdomains: ['api', 'imalive']
 ```
+
+## Console tutorials
+
+You might use the console as an administrator if you're getting your own on premises instance.
+
+You'll find all the tutorials you need for administrating the console [here](./console/admin/README.md)

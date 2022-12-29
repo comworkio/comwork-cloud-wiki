@@ -2,7 +2,7 @@
 
 Comwork cloud allows us to create bucket object storages (S3-likes) and OCI/Docker registries either on [OVH cloud](https://www.ovhcloud.com) and [Scaleway](https://www.scaleway.com).
 
-This feature is only available for comwork cloud administrator (you can directly use it if you get your own self-hosted comwork cloud instance on premise).
+This feature is only available for comwork cloud administrator (you can directly use it if you get your own self-hosted comwork cloud instance on premises).
 
 ![create_registry](./img/create_registry.png)
 
