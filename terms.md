@@ -4,6 +4,12 @@
 
 This instance is hosted in France by [COMWORKIO SASU](https://www.comwork.io) (R.C.S Paris 838 757 987) on [Scaleway](https://www.scaleway.com).
 
+## How the secured payment is working?
+
+The bill are monthly issued, you can find how to download and pay those bills with [this tutorial](./tutorials/console/public/billing.md).
+
+The billing system is using [stripe](https://www.stripe.com) for secured payments.
+
 ## What information do we collect?
 
 * _Basic account information_: If you register on this service, you may be asked to enter a username, an e-mail address and a password. You may also enter additional profile information such as company references and payment credit card in order to be able to receive some bills. All those informations are only accessible by the COMWORKIO staff.
