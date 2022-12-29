@@ -1,3 +1,3 @@
-# Admin features
+# Admin
 
 * [Manage environments](./admin/environments.md)

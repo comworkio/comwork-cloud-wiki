@@ -1,3 +1,3 @@
-# Public features
+# Public
 
 * [Instances](./public/instances.md)

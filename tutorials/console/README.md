@@ -1,9 +1,9 @@
 # Web console
 
-## Public features
+## Public
 
 * [Instances](./public/instances.md)
 
-## Admin features
+## Admin
 
 * [Manage environments](./admin/environments.md)

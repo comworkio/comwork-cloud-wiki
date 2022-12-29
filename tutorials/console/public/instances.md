@@ -1,4 +1,4 @@
-# Public console
+# Instances
 
 The console is here: https://cloud.comwork.io
 
