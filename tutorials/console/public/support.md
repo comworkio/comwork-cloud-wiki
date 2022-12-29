@@ -12,6 +12,8 @@ Then you'll be to open a new ticket for your requests:
 
 You have to choose the product that corresponds the most to your request (in this example it's "registry" but it could be "wordpress", whatever) and the severity according to the emmergency of this demand.
 
+Also beware of opening **one ticket per question or issue**.
+
 Once it's opened, check regularly if the team has answered with a question for you (status "await customer"):
 
 ![support_3](../../../img/support_3.png)
