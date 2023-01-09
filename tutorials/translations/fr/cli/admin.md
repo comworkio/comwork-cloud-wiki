@@ -1,15 +1,15 @@
-# Admin commands
+# Commandes administrateurs
 
-The admin commands are used to control and manage your on premises version of comwork cloud.
+Les commandes administateurs sont utilisées pour gérer votre instance de comwork cloud on premises.
 
-Notes:
-* Those commands are only for admin users (if you're using a [self-hosted version](../onprem.md) for example)
-* To checkout how to install and update the `cwc` cli checkout this [tutorial](./install.md)
-* For the commands accessible for all users, checkout this [tutorial](./public.md) (you should read-it first to handle authentication)
+Remarques :
+* Ces commandes ne fonctionnent que pour les utilisateurs qui sont administrateurs (si vous utilisez une [version auto-hébergées](../onprem.md) par exemple)
+* Pour installer ou mettre à jour la ligne de commande `cwc`, [rendez-vous ici](./install.md).
+* Pour les commandes accessibles à tous les utilisateurs, [rendez-vous là](./public.md)
 
-## Users
+## Utilisateurs
 
-### List
+### Lister
 
 ```shell
 cwc admin user ls
@@ -22,58 +22,58 @@ cwc admin user ls -u <user_id>
 cwc admin user ls --user <user_id>
 ```
 
-### Delete
+### Supprimer
 
 ```shell
 cwc admin user delete -u <user_id>
 cwc admin user delete --user <user_id>
 ```
 
-## Projects
+## Projets
 
-### List
+### Lister
 
 ```shell
 cwc admin project ls
 ```
 
-### Search Project
+### Rechercher des projets
 
-#### Search Project By ID
+#### Rechercher par ID
 
 ```shell
 cwc admin project ls -p <project_id>
 cwc admin project ls --id <project_id>
 ```
 
-#### Search Project By Name
+#### Rechercher par nom
 
 ```shell
 cwc admin project ls -n <project_name>
 cwc admin project ls --name <project_name>
 ```
 
-#### Search Project By URL
+#### Rechercher par URL
 
 ```shell
 cwc admin project ls -u <project_url>
 cwc admin project ls --url <project_url>
 ```
 
-### Create
+### Créer
 
 ```shell
 cwc admin project create -n <project_name>
 ```
 
-Notes: 
-* If you want to create a project in another Gitlab instance you can provide the Gitlab host, the group id, your access token and your git username by adding these options:
-  * `-h` or `--host`: Gitlab instance host
-  * `-t` or `--token`: your Gitlab access token
-  * `-g` or `--git`: Your Git username
-  * `-n` or `--namespace`: namespace or group id where the project will be created
+Remarques : 
+* Si vous souhaitez changer d'instance gitlab ou de group ou de compte utilisateur, il faudra utiliser ces options :
+  * `-h` ou `--host`: Instance de gitlab
+  * `-t` ou `--token`: Access token de gitlab
+  * `-g` ou `--git`: Votre nom d'utilisateur git
+  * `-n` ou `--namespace`: le namespace ou group id ou le projet git sera stocké
 
-### Delete
+### Supprimer
 
 #### Delete Project By ID
 
@@ -96,25 +96,24 @@ cwc admin project delete -u <project_url>
 cwc admin project delete --url <project_url>
 ```
 
-## Environments
+## Environnements
 
-### Add environment
+### Créer
 
 ```shell
 cwc admin environment create -n <name> -r <role1>,<role2>  -m <main_role> -p <path> -d <description> -s <subdomain1>,<subdomain2>
 cwc admin environment create --name <name> --roles <role1>,<role2>  -main-role <main_role> --path <path> --description <description> --subdomains <subdomain1>,<subdomain2>
 ```
 
-Note: if you want to mark the environment as private use the `-a` or `--private` flag.
+Remarque : Si vous voulez rendre l'environnement privé (accessible qu'aux administrateurs), utilisez l'option `-a` ou `--private`.
 
-
-### List all environments
+### Lister
 
 ```shell
 cwc admin environment ls
 ```
 
-### Get environment by ID
+### Rechercher par ID
 
 ```shell
 cwc admin environment ls -e <environment_id>
@@ -123,13 +122,13 @@ cwc admin environment ls --environment <environment_id>
 
 ## Instances
 
-### List instances
+### Lister
 
 ```shell
 cwc admin instance ls
 ```
 
-### Get instance by ID
+### Rechercher par ID
 
 ```shell
 cwc admin instance ls -i <instance_id>
@@ -137,7 +136,7 @@ cwc admin instance ls --instance <instance_id>
 
 ```
 
-### Create
+### Créer pour un(e) utilisateur
 
 ```shell
 cwc admin instance create -n <instance_name> -e <environement> -t <instance_type> -p <project_name> -z <zone> -m <user_mail>
@@ -145,13 +144,12 @@ cwc admin instance create -n <instance_name> -e <environement> -t <instance_type
 cwc admin instance create -n <instance_name> -e <environement> -t <instance_type> -u <project_url> -z <zone> -m <user_mail>
 ```
 
-Notes: 
-* use `nova` zone for ovh and `1` or `2` for scaleway
-* `instance_type` corresponds to the provider instance sizing (i.e: `DEV1-M` for Scaleway)
-* use `--dns_zone` ou `-d` to choose the dns zone in which the instance will be created (you can list availble instances by running
-`cwc dnszones ls`)
+Remarques : 
+* utiliser la zone `nova` pour ovh ou `1` ou `2` pour scaleway
+* `instance_type` correspond à la taille de l'instance (ex: `DEV1-M` for Scaleway)
+* utiliser `--dns_zone` ou `-d` pour choisir la zone dns dans laquelle l'instance sera créee (vous pouvez voir les zones disponibles avec `cwc dnszones ls`)
 
-### Update status
+### Mettre à jour le status
 
 ```shell
 cwc admin instance update -i <instance_id> -s <action>
@@ -160,86 +158,86 @@ cwc admin instance update --instance <instance_id> --status <action>
 
 Note: status must be `poweroff`, `poweron` or `reboot`
 
-### Delete
+### Supprimer
 
 ```shell
 cwc admin instance delete -i <instance_id>
 cwc admin instance delete --instance <instance_id>
 ```
 
-### Refresh state
+### Raffraichir le state
 
 ```shell
 cwc admin instance refresh -i <instance_id>
 cwc admin instance refresh --instance <instance_id>
 ```
-  
+
 ## Buckets / object storage
 
-### Add bucket to a user
+### Ajouter pour un(e) utilisateur
 
 ```shell
 cwc admin bucket create -n <bucket_name> -t <bucket_type> -u <user_mail>
 cwc admin bucket create --name <bucket_name> --type <bucket_type> --user <user_mail>
 ```
 
-### List all buckets
+### Lister
 
 ```shell
 cwc admin bucket ls
 ```
 
-### Get bucket by ID
+### Rechercher par ID
 
 ```shell
 cwc admin bucket ls -b <bucket_id>
 cwc admin bucket ls --bucket <bucket_id>
 ```
 
-### Update credentials
+### Mettre à jour les identifiants de connexion
 
 ```shell
 cwc admin bucket update -b <bucket_id>
 cwc admin bucket update --bucket <bucket_id>
 ```
 
-### Delete
+### Supprimer
 
 ```shell
 cwc admin bucket delete -b <bucket_id>
 cwc admin bucket delete --bucket <bucket_id>
 ```    
 
-## OCI / Docker registries
+## Registres OCI / Docker
 
-### Add registry to a user
+### Ajouter pour un(e) utilisateur
 
 ```shell
 cwc admin registry create -n <registry_name> -t <registry_type> -u <user_mail>
 cwc admin registry create --name <registry_name> --type <registry_type> --user <user_mail>
 ```
 
-### List
+### Lister
 
 ```shell
 cwc admin registry ls
 ```
 
-### Get Registry by ID
+### Rechercher par ID
 
 ```shell
 cwc admin registry ls -r <registry_id>
 cwc admin registry ls --registry <registry_id>
 ```
 
-### Update credentials
+### Mettre à jour les identifiants de connexion
 
 ```shell
 cwc admin registry update -r <registry_id>
 cwc admin registry update --registry <registry_id>
 ```
 
-### Delete
+### Supprimer
 
 ```shell
 cwc admin registry delete -r <registry_id>
