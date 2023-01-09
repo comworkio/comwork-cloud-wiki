@@ -1,23 +1,23 @@
 # Api
 
-## API Restful
+## Webservices REST
 
 Il existe une API Restful que vous pouvez directement utiliser ici: https://cloud-api.comwork.io
 
-Cette API est celle qui est utilisée par la [console web](../console/README.md), la cli [`cwc`](../cli/README.md) (et dans le futur, le provider terraform). It's a Python Flask API that is using the [Scaleway](https://www.pulumi.com/registry/packages/scaleway/) or the [OpenStack](https://www.pulumi.com/registry/packages/openstack/) pulumi packages and the tfstate are stored in Scaleway's object storage.
+Cette API est celle qui est utilisée par la [console web](../console/README.md), la ligne de commande [`cwc`](../cli/README.md) (et dans le futur, le provider terraform). Il s'agit d'une API développée en Python Flask qui utilise les paquets Pulumi de [Scaleway](https://www.pulumi.com/registry/packages/scaleway/) et [OpenStack](https://www.pulumi.com/registry/packages/openstack/). L'état (fichiers `.tfstate`) pulumi sont persistés dans l'object storage de Scaleway.
 
-You'll find the endpoints documentation [here](../../../../tutorials/api/restful_api.md).
+Vous trouverez la documentation des webservices [ici](../../../../tutorials/api/restful_api.md).
 
 Or you can either go check directly the swagger documentation [here](https://cloud-api.comwork.io).
 
 ![swagger](../../../../img/swagger.png)
 
-## Cli cwc
+## Ligne de commande `cwc`
 
-We got our own cli `cwc` written in go.
+Nous mettons également à disposition notre propre ligne de commande `cwc` écrite en go.
 
-Check-it out [here](../cli/README.md)
+Pour en savoir plus [cliquez ici](../cli/README.md)
 
 ## Terraform provider
 
-_This work is in progress..._
+_Ce travail est en cours..._

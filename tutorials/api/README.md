@@ -12,7 +12,7 @@ Or you can either go check directly the swagger documentation [here](https://clo
 
 ![swagger](../../img/swagger.png)
 
-## Cli cwc
+## Cli `cwc`
 
 We got our own cli `cwc` written in go.
 
