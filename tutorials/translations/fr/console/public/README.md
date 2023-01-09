@@ -4,3 +4,4 @@ Ici vous trouverez toutes les ressources pour vous aider à utiliser la [console
 
 * [2FA / MFA](./2FA.md)
 * [Billing](./billing.md)
+* [Instances](./instances.md)
