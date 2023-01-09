@@ -76,7 +76,7 @@ Il faut alors régler les conflits sur tous les fichiers indiqués. Pour cela ut
 
 Voici un exemple avec visual studio code:
 
-![conflicts](../img/git/conflicts.png)
+![conflicts](../../../img/conflicts.png)
 
 * Cliquer sur `Accept Incoming Change` si la version de la branche de référence (`main`) est plus à jour que votre version locale
 
@@ -153,7 +153,7 @@ Il faut alors régler les conflits sur tous les fichiers indiqués. Pour cela ut
 
 Voici un exemple avec visual studio code:
 
-![conflicts](../img/git/conflicts.png)
+![conflicts](../../../img/conflicts.png)
 
 * Cliquer sur `Accept Incoming Change` si la version de la branche de référence (`main`) est plus à jour que votre version locale
 
@@ -358,9 +358,3 @@ git log
 ```shell
 git push origin <la branche> -f
 ```
-
-## Liens externes
-
-Une autre antisèche git de Christophe Chaudier encore mieux faite pour synthétiser tout ce qu'on a vu ici: 
-
-[![antiseche_git_c_chaudier](../img/git/antiseche_git_c_chaudier.png)](https://froggit.fr/communaute/)
