@@ -5,10 +5,10 @@
 Pour accéder à nos images, vous devrez d'abord demander à l'équipe de comwork cloud.
 
 Vous pouvez le faire via :
-* The [support system](./console/public/support.md)
-* The `cloud@comwork.io` email
-* Our [Slack workspace](https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ) (channel `#onpremise`)
-* Our [Discord server](https://discord.gg/CXskxxPauz) (channel `#onpremise`)
+* Le [système de support](./console/public/support.md)
+* L'email `cloud@comwork.io`
+* Notre [workspace Slack](https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ) (salon `#onpremise`)
+* Notre [serveur Discord](https://discord.gg/CXskxxPauz) (salon `#onpremise`)
 
 ## En utilisant ansible
 
