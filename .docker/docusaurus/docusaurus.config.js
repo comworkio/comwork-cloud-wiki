@@ -24,6 +24,10 @@ const config = {
                 {
                     from: '/docs/tutorials/web_console',
                     to: '/docs/tutorials/console'
+                },
+                {
+                    from: '/docs/tutorials/fr',
+                    to: '/docs/tutorials/translations/fr'
                 }
             ]
         }],
