@@ -1,4 +1,4 @@
-# Ligne de commande `cwc`
+# Ligne de commande cwc
 
 `cwc` est une ligne de commande écrite en go qui vous aidera à manipuler l'[API de comwork cloud](../api/README.md) en diminuant l'impact des breaking-changes (incompatibilités de version).
 
