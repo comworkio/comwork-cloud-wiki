@@ -9,6 +9,6 @@ Ici vous trouverez toutes les ressources pour vous aider à utiliser la [console
 * [Billing](./public/billing.md)
 * [Instances](./public/instances.md)
 
-## Admin
+## Admininistration
 
-_Traduction en cours_
+* [Gérer les environnements](./admin/environments.md)
