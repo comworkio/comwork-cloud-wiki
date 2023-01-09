@@ -8,7 +8,7 @@ Cette API est celle qui est utilisée par la [console web](../console/README.md)
 
 Vous trouverez la documentation des webservices [ici](../../../../tutorials/api/restful_api.md).
 
-Or you can either go check directly the swagger documentation [here](https://cloud-api.comwork.io).
+Ou bien vous pouvez directement vous rendre sur la documentation Swagger [ici](https://cloud-api.comwork.io).
 
 ![swagger](../../../../img/swagger.png)
 
