@@ -16,4 +16,4 @@
 * [Connect with SSH](./ssh.md)
 * [Imalive metrics exporter](./imalive.md)
 * [On premises / self-hosted deployment of comwork cloud](./onprem.md)
-* [French translations](./translations/fr/README.md)
+* [Traductions en Français](./translations/fr/README.md)

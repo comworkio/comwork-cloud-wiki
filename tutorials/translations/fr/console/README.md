@@ -5,6 +5,9 @@ Ici vous trouverez toutes les ressources pour vous aider à utiliser la [console
 ## Publique
 
 * [2FA / MFA](./public/2FA.md)
+* [Support](./public/support.md)
+* [Billing](./public/billing.md)
+* [Instances](./public/instances.md)
 
 ## Admin
 
