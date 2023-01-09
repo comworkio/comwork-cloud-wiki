@@ -1,5 +1,9 @@
 # Utilisation de git
 
+## A propos
+
+Ce tutoriel est ici de ce [workshop git](https://gitlab.comwork.io/comwork_public/training/git) ou vous trouverez également des slides et une partie pratique.
+
 ## Cloner un repo
 
 ```shell
