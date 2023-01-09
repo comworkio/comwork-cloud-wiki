@@ -2,15 +2,11 @@
 
 The console is here: https://cloud.comwork.io
 
-First you can register and ask to the comwork team to enable your account with a conf meeting you can setup [here](https://calendly.com/idriss-neumann/intro-comwork-cloud).
-
-Then you'll be able to create your gitlab projects:
+First you have to [register](../../../subscription.md) if that's not the case, then you'll be able to create your gitlab projects:
 
 ![project](../../../img/project.png)
 
-Then your instances:
-
-![create_instance](../../../img/create_instance.png)
+Then you'll be able to create instances:
 
 ![created_instance](../../../img/create_instance.png)
 

@@ -2,6 +2,7 @@
 
 * [Web console](./console/README.md)
 * [API](./api/README.md)
+* [CLI `cwc`](./cli/README.md)
 * [How to use git](./git.md)
 * [Code](./code/README.md)
 * [Portainer](./portainer/README.md)
@@ -15,3 +16,4 @@
 * [Connect with SSH](./ssh.md)
 * [Imalive metrics exporter](./imalive.md)
 * [On premises / self-hosted deployment of comwork cloud](./onprem.md)
+* [Traductions en Français](./translations/fr/README.md)

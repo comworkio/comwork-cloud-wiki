@@ -8,7 +8,7 @@ Keeping environment private will make the environment not accessible for non-adm
 
 ![create_environment](../../../img/create_environment.png)
 
-Beware of the roles order :
+Beware of the roles order:
 * `common`, `sudo`, `ssh` must be always there
 * `gitlab-runner` must be the last one
 
@@ -18,7 +18,7 @@ You'll probably have to complete the jinja template `comwork-cloud-api/ansible/e
 
 If you need to let instructions about value to change in this file, you also have a documentation template `comwork-cloud-api/ansible/env/instance_name.md.j2` to complete.
 
-You'll also have to complete the package images inventory `/Users/ineumann/comwork-cloud-api/cloud_environments.yml` to add your environment and images:
+You'll also have to complete the package images inventory `/Users/ineumann/comwork-cloud-api/cloud_environments.yml` to add your environment and images (packer):
 
 ```yaml
 - environment: YOUR_ENVIRONMENT
@@ -47,4 +47,4 @@ cd YOUR_PROJECT
 ```
 
 Then recreate the environment with the fixed role, order, template, whatever and retry again.
-Do not forger to remove your debug compute instance.
+Do not forget to remove your debug compute instance.
