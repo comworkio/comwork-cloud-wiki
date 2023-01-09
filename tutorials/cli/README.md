@@ -1,4 +1,4 @@
-# Cli cwc
+# Cli `cwc`
 
 `cwc` is a CLI written in go that will help you to manipulate the [comwork cloud API](./README.md) avoiding the breaking changes.
 
