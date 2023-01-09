@@ -18,7 +18,7 @@ Vous devrez probablement compléter le template jinja `comwork-cloud-api/ansible
 
 Si vous avez besoin de laisser des instructions sur les valeurs à changer dans ce fichier aux utilisateurs, vous avez également un template de documentation `comwork-cloud-api/ansible/env/instance_name.md.j2` à compléter.
 
-Vous devez aussi compléter l'inventaire des images `/Users/ineumann/comwork-cloud-api/cloud_environments.yml` pour ajouter votre environnement et les images (packer) optimisées pour ce dernier:
+Vous devez aussi compléter l'inventaire des images `/Users/ineumann/comwork-cloud-api/cloud_environments.yml` pour ajouter votre environnement et les images (packer) optimisées pour ce dernier :
 
 ```yaml
 - environment: YOUR_ENVIRONMENT
@@ -35,7 +35,7 @@ Vous pouvez ré-utiliser les mêmes références que pour les environnements `co
 Ensuite, si vous devez debugger les erreurs ansibles pour la première fois:
 * Créer une VM simple (avec l'OS Almalinux ou CentOS dans sa dernière version)
 * Cloner le repo gitlab de votre projet
-* Lancer le playbook manuellement et debugger/corriger les erreurs au fur et à mesure:
+* Lancer le playbook manuellement et debugger/corriger les erreurs au fur et à mesure :
 
 ```shell
 dnf update -y
