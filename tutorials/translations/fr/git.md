@@ -333,21 +333,21 @@ git rebase -i HEAD~46
 
 2. Un éditeur s'ouvre :
 
-![git_rebase_i_1](../img/git/git_rebase_i_1.png)
+![git_rebase_i_1](../../../img/git_rebase_i_1.png)
 
 => Remplacer le `pick` du premier commit par `r` (pour `reword`) et les suivant par `f` (pour `fixup` qui est un équivalent de `squash` ou `s` mais ne conserve que le premier commentaire).
 
 Sauvegarder
 
-3. Un nouvel éditeur s'ouvre :
+1. Un nouvel éditeur s'ouvre :
 
-![git_rebase_i_2](../img/git/git_rebase_i_2.png)
+![git_rebase_i_2](../../../img/git_rebase_i_2.png)
 
 Puis ré-écrire le message du commit de résultat avec un message qui résume l'ensemble de la feature un peu mieux.
 
 N.B: faire apparaitre le numéro des tickets ou issues (avec un `#` devant lorsque ce sont des issues de gitlab/github (ou autres) pour que ces derniers rappatrient directement les commentaires des commits dans les issues en question).
 
-4. Vérifier que l'historique est correcte :
+1. Vérifier que l'historique est correcte :
 
 ```shell
 git log
