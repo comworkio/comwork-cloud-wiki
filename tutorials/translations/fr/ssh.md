@@ -2,7 +2,7 @@
 
 ## Traductions
 
-Ce tutoriel est également disponible dans les langues suivantes:
+Ce tutoriel est également disponible dans les langues suivantes :
 * [English 🇬🇧](../../ssh.md)
 
 ## Comment ajouter votre clef SSH

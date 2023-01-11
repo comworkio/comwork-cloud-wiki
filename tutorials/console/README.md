@@ -2,6 +2,11 @@
 
 Here you'll find all the help resource for using the [web console](https://cloud.comwork.io).
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](../translations/fr/console/README.md)
+
 ## Public
 
 * [2FA / MFA](./public/2FA.md)

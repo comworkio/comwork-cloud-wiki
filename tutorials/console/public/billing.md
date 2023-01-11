@@ -1,5 +1,12 @@
 # Billing
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](../../translations/fr/console/public/billing.md)
+
+## How to pay automatically
+
 This is how to pay your monthly invoices. The billing system is using [stripe](https://www.stripe.com) for secured payments.
 
 You can pay every 2nd of the month.

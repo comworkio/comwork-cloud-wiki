@@ -1,5 +1,10 @@
 # Support
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](../../translations/fr/console/public/support.md)
+
 ## Opening a ticket
 
 Click on "support" on the user's menu:

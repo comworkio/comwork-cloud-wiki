@@ -8,7 +8,7 @@ Remarques :
 
 ## Traductions
 
-Ce tutoriel est également disponible dans les langues suivantes:
+Ce tutoriel est également disponible dans les langues suivantes :
 * [English 🇬🇧](../../../cli/public.md)
 
 ## Obtenir de l'aide

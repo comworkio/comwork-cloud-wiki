@@ -2,6 +2,11 @@
 
 We **strongly** advise you to enable the 2FA/MFA (multiple factors authentication).
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](../../translations/fr/console/public/2FA.md)
+
 ## With a 2FA app (i.e: Google Authenticator)
 
 Go to your settings:

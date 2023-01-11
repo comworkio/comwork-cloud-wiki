@@ -10,7 +10,7 @@ Le code source est disponible en opensource [ici](https://gitlab.comwork.io/oss/
 
 ## Traductions
 
-Ce tutoriel est également disponible dans les langues suivantes:
+Ce tutoriel est également disponible dans les langues suivantes :
 * [English 🇬🇧](../../../cli/README.md)
 
 ## Chapters

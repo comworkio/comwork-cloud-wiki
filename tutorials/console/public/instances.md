@@ -1,5 +1,12 @@
 # Instances
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](../../translations/fr/console/public/instances.md)
+
+## How to create new project and instances
+
 The console is here: https://cloud.comwork.io
 
 First you have to [register](../../../subscription.md) if that's not the case, then you'll be able to create your gitlab projects:
