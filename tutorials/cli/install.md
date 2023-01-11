@@ -1,5 +1,10 @@
 # Installation
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](../translations/fr/cli/install.md)
+
 ## Homebrew
 
 First installation:

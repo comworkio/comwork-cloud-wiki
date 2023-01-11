@@ -6,6 +6,11 @@ Remarques :
 * Pour installer ou mettre à jour la ligne de commande `cwc`, [rendez-vous ici](./install.md).
 * Pour les commandes accessibles aux administrateurs, [rendez-vous là](./admin.md)
 
+## Traductions
+
+Ce tutoriel est également disponible dans les langues suivantes:
+* [English 🇬🇧](../../../cli/public.md)
+
 ## Obtenir de l'aide
 
 ```shell

@@ -7,6 +7,11 @@ Notes:
 * To checkout how to install and update the `cwc` cli checkout this [tutorial](./install.md)
 * For the commands accessible for all users, checkout this [tutorial](./public.md) (you should read-it first to handle authentication)
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](../translations/fr/cli/admin.md)
+
 ## Users
 
 ### List

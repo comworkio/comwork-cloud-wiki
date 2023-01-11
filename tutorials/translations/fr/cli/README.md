@@ -8,6 +8,11 @@ Comme c'est écrit en go, c'est très facile à intégrer dans vos pipelines IaC
 
 Le code source est disponible en opensource [ici](https://gitlab.comwork.io/oss/cwc/cwc)
 
+## Traductions
+
+Ce tutoriel est également disponible dans les langues suivantes:
+* [English 🇬🇧](../../../cli/README.md)
+
 ## Chapters
 
 * [Installation](./install.md)

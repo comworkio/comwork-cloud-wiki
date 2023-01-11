@@ -1,5 +1,10 @@
 # Api
 
+## Traductions
+
+Ce tutoriel est également disponible dans les langues suivantes:
+* [English 🇬🇧](../../../api/README.md)
+
 ## Webservices REST
 
 Il existe une API Restful que vous pouvez directement utiliser ici: https://cloud-api.comwork.io

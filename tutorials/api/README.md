@@ -1,5 +1,10 @@
 # Api
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](../translations/fr/api/README.md)
+
 ## Restful API
 
 There is a Restful API you can directly use here: https://cloud-api.comwork.io

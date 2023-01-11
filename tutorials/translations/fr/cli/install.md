@@ -1,5 +1,10 @@
 # Installation
 
+## Traductions
+
+Ce tutoriel est également disponible dans les langues suivantes:
+* [English 🇬🇧](../../../cli/install.md)
+
 ## Homebrew
 
 Première installation :
