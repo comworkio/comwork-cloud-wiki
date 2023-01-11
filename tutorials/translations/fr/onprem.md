@@ -1,5 +1,10 @@
 # Comwork cloud on premises
 
+## Traductions
+
+Ce tutoriel est également disponible dans les langues suivantes:
+* [English 🇬🇧](../../onprem.md)
+
 ## Accéder à nos images
 
 Pour accéder à nos images, vous devrez d'abord demander à l'équipe de comwork cloud.

@@ -1,5 +1,10 @@
 # Odoo
 
+## Traductions
+
+Ce tutoriel est également disponible dans les langues suivantes:
+* [English 🇬🇧](../../odoo.md)
+
 ## Initialiser votre environnement Odoo
 
 Une fois que vous avez provisionné vos instances odoo, vous pourrez accéder à cet écran en cliquant sur `open` :

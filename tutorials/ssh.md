@@ -1,5 +1,12 @@
 # Connect with ssh
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](./translations/fr/ssh.md)
+
+## How to add your SSH key
+
 In order to connect to the host of your services with SSH, add this configuration in the ansible environment file (`env/{ instance_hash }.yml`):
 
 ```yaml

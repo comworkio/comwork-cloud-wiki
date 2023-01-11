@@ -2,6 +2,11 @@
 
 [Overleaf](https://www.overleaf.com) is an opensource online platform for generating document from LaTeX inputs and work in a collaborative way similar to gitlab or github. Very suitable for a research and development team.
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](./translations/fr/overleaf.md)
+
 ## Finish the installation
 
 Once the creation of your overleaf's instance is finished:

@@ -1,5 +1,10 @@
 # Comwork cloud on premises
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](./translations/fr/onprem.md)
+
 ## Access to our images
 
 In order to access to our images and releases, you'll need to ask first for beeing able to pull our OCI images.

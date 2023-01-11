@@ -2,6 +2,11 @@
 
 [Overleaf](https://www.overleaf.com) est une plateforme opensource pour travailler sur des documents LaTeX avec une approche collaborative assez similaire à celle de gitlab ou github. Très adaptée pour une équipe de recherche et développement.
 
+## Traductions
+
+Ce tutoriel est également disponible dans les langues suivantes:
+* [English 🇬🇧](../../overleaf.md)
+
 ## Terminer l'installation
 
 Une fois que l'instance a été provisionnée :

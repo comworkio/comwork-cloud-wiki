@@ -1,10 +1,13 @@
 # Git
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](./translations/fr/git.md)
+
 ## Disclaimer
 
 This tutorial is a translation of this [training repository](https://gitlab.comwork.io/comwork_public/training/git) (which was originaly written in French).
-
-If you're a French speaker, you'll find there more resources (slides with git flows, etc).
 
 ## Cloning a repository
 

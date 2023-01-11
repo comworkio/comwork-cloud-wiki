@@ -1,5 +1,10 @@
 # Wordpress and matomo
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](./translations/fr/wpaas_matomo.md)
+
 ## Video tutorial
 
 Here you'll find a demo on how deploying [WPaaS](../wpaas.md)[^1] and [matomo](../matomo.md) instances and order to analyze SEO insights:

@@ -1,5 +1,10 @@
 # Odoo
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](./translations/fr/odoo.md)
+
 ## Getting started
 
 Once you created your odoo instances and it's ready, you'll get on this screen:

@@ -1,5 +1,10 @@
 # Wordpress et matomo
 
+## Traductions
+
+Ce tutoriel est également disponible dans les langues suivantes:
+* [English 🇬🇧](../../wpaas_matomo.md)
+
 ## Tutoriel vidéo
 
 Ici vous trouverez une démo de comment déployer des instances [WPaaS](../../../wpaas.md)[^1] et [matomo](../../../matomo.md) dans le but d'analyser des métriques SEO:

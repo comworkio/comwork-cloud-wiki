@@ -1,5 +1,10 @@
 # Utilisation de git
 
+## Traductions
+
+Ce tutoriel est également disponible dans les langues suivantes:
+* [English 🇬🇧](../../git.md)
+
 ## A propos
 
 Ce tutoriel est ici de ce [workshop git](https://gitlab.comwork.io/comwork_public/training/git) ou vous trouverez également des slides et une partie pratique.

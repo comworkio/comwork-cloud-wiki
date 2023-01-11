@@ -1,5 +1,12 @@
 # Connection avec SSH
 
+## Traductions
+
+Ce tutoriel est également disponible dans les langues suivantes:
+* [English 🇬🇧](../../ssh.md)
+
+## Comment ajouter votre clef SSH
+
 Afin de se connecter à votre instance avec SSH, vous pouvez ajouter cette configuration dans le fichier d'environnement ansible (`env/{ instance_hash }.yml` :
 
 ```yaml
