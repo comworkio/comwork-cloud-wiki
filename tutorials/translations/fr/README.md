@@ -7,6 +7,7 @@
 * [Code](./code/README.md)
 * [Wordpress et matomo](./wpaas_matomo.md)
 * [Odoo](./odoo.md)
+* [Databases as a service](./dbaas.md)
 * [Overleaf as a service](./overleaf.md)
 * [Connection avec SSH](./ssh.md)
 * [On premises / Instances auto-hébergées de comwork cloud](./onprem.md)
