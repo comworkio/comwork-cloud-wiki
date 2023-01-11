@@ -4,6 +4,7 @@
 * [API](./api/README.md)
 * [Ligne de commande `cwc`](./cli/README.md)
 * [Utilisation de git](./git.md)
+* [Code](./code/README.md)
 * [Wordpress et matomo](./wpaas_matomo.md)
 * [Odoo](./odoo.md)
 * [Overleaf as a service](./overleaf.md)
