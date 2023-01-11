@@ -48,3 +48,14 @@ We use cookies to understand and save your preferences for future visits.
 ## Do we disclose any information to outside parties?
 
 We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our site, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property, or safety.
+
+## What kind of services are forbidden on Comwork Cloud?
+
+We do not intend to host the following types of services:
+
+* Illegal services regarding the member European Union's member countries's laws
+* Crypto-currency mining on our servers[^1]
+* Pornographic content
+* Hate or harassment speech content
+
+[^1]: it's not forbidden to host websites or API related to a crypto-currency service, it's only the mining process that is forbidden on our servers and storage (because it's also forbidden on the cloud's provider we relied on).
