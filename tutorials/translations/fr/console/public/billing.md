@@ -1,5 +1,12 @@
 # Facturation
 
+## Traductions
+
+Ce tutoriel est également disponible dans les langues suivantes :
+* [English 🇬🇧](../../../../console/public/billing.md)
+
+## Comment payer de façon automatique
+
 Vous trouverez ici comment régler vos factures mensuelles. Le système de facturation utilise [stripe](https://www.stripe.com) pour sécuriser les paiements et l'enregistrement des moyens de paiements.
 
 Vous pouvez payer tous les 2 du mois.

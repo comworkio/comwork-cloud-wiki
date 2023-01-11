@@ -6,3 +6,8 @@ Ici vous trouverez toutes les ressources pour vous aider à utiliser la [console
 * [Support](./support.md)
 * [Billing](./billing.md)
 * [Instances](./instances.md)
+
+## Traductions
+
+Ce tutoriel est également disponible dans les langues suivantes :
+* [English 🇬🇧](../../../../console/public/README.md)

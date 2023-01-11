@@ -2,6 +2,11 @@
 
 Nous recommandons **fortement** d'activer l'authentification double-facteurs (ou multiple-facteurs, a.k.a 2FA ou MFA).
 
+## Traductions
+
+Ce tutoriel est également disponible dans les langues suivantes :
+* [English 🇬🇧](../../../../console/public/2FA.md)
+
 ## Avec une application 2FA (ex: Google Authenticator)
 
 Allez dans vos paramètres:

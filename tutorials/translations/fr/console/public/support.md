@@ -1,5 +1,10 @@
 # Support
 
+## Traductions
+
+Ce tutoriel est également disponible dans les langues suivantes :
+* [English 🇬🇧](../../../../console/public/support.md)
+
 ## Ouvrir un ticket
 
 Cliquez sur "support" sur le menu utilisateur:
