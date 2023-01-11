@@ -9,7 +9,7 @@ Ce tutoriel est également disponible dans les langues suivantes :
 
 Vous trouverez une démo sur comment démarrer un pod sur votre instance de [code](../../../../code.md) avec `k3d` (distribution Kubernetes K3S qui tourne au dessus de docker) et comment l'exposer avec une adresse publique grâce à localtunnel (`lt`).
 
-[![code_demo_2](../../img/demo_2.png)](https://youtu.be/9NVV1wbv4ZI)
+[![code_demo_2](../../../../img/demo_2.png)](https://youtu.be/9NVV1wbv4ZI)
 
 Vous pouvez activer les sous-titres en Anglais ou en Français pour avoir les explications en live.
 
