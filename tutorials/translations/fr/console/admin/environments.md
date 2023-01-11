@@ -1,5 +1,12 @@
 # Gérer les environments
 
+## Traductions
+
+Ce tutoriel est également disponible dans les langues suivantes :
+* [English 🇬🇧](../../../../console/admin/environments.md)
+
+## Comment administrer les environnements
+
 Vous pouvez gérer les environnements qui sont des collections de rôles et templates ansibles.
 
 ![environments](../../../../../img/environments.png)

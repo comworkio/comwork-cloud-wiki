@@ -1,5 +1,12 @@
 # Manage environments
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](../../translations/fr/console/admin/environments.md)
+
+## How to manage environments
+
 You can manage the environments which are a set of ansible roles and templates.
 
 ![environments](../../../img/environments.png)
