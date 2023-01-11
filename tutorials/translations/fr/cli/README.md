@@ -4,9 +4,11 @@
 
 ![cwc](../../../../img/cwc.png)
 
-Comme c'est écrit en go, c'est très facile à intégrer dans vos pipelines IaC ("infrastructure as code").
+Comme c'est écrit en go, c'est très facile à intégrer dans vos pipelines IaC[^1].
 
 Le code source est disponible en opensource [ici](https://gitlab.comwork.io/oss/cwc/cwc)
+
+[^1]: infrastructure as code
 
 ## Traductions
 

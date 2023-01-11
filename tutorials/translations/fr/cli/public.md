@@ -1,10 +1,12 @@
 # Commandes publiques
 
-Vous trouverez ici comment utiliser `cwc` afin d'effectuer en ligne de commande les actions que vous feriez habituellement avec la [console web](../console/README.md). Cela vous facilitera l'automatisation de vos scripts et pipelines IaC (par exemples avec des shells scripts, rôles ansible, terraform, etc).
+Vous trouverez ici comment utiliser `cwc` afin d'effectuer en ligne de commande les actions que vous feriez habituellement avec la [console web](../console/README.md). Cela vous facilitera l'automatisation de vos scripts et pipelines IaC[^1] (par exemples avec des shells scripts, rôles ansible, terraform, etc).
 
 Remarques :
 * Pour installer ou mettre à jour la ligne de commande `cwc`, [rendez-vous ici](./install.md).
 * Pour les commandes accessibles aux administrateurs, [rendez-vous là](./admin.md)
+
+[^1]: infrastructure as code
 
 ## Traductions
 
