@@ -8,6 +8,7 @@
 * [Portainer](./portainer/README.md)
 * [OpenFaaS / Faasd](./faasd.md)
 * [Wordpress et matomo](./wpaas_matomo.md)
+* [Mastodon](./mastodon.md)
 * [Odoo](./odoo.md)
 * [Databases as a service](./dbaas.md)
 * [Overleaf as a service](./overleaf.md)
