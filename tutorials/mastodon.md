@@ -1,5 +1,10 @@
 # Mastodon as a service
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](./translations/fr/mastodon.md)
+
 ## Getting started
 
 You've just setup your Mastodon instance and you've got this error on the frontpage serve by the `https://{your_instance_hash}.mastodon.comwork.(cloud|dev|info)`, that's pretty normal. 
@@ -30,14 +35,14 @@ $ sudo su -
 $ docker-compose -f docker-compose-mastodon.yml run --rm shell bundle exec rake mastodon:webpush:generate_vapid_key
 ```
 
-And add the following variabls with the output (pick only the values left to the `=` signs) in the ansible environment file (`env/{ instance_hash }.yml`):
+And add the following variables with the output (pick only the values right to the `=` signs) in the ansible environment file (`env/{ instance_hash }.yml`):
 
 ```yaml
 mastodon_vapid_private_key: changeit
 mastodon_vapid_public_key: changeit
 ```
 
-**4/** Also update this settings (replace `"true"` by `"false"`):
+**4/** Also update this setting (replace `"true"` by `"false"`):
 
 ```yaml
 pgsql_first_install: "false"
