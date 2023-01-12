@@ -5,6 +5,7 @@
 * [Ligne de commande `cwc`](./cli/README.md)
 * [Utilisation de git](./git.md)
 * [Code](./code/README.md)
+* [OpenFaaS / Faasd](./faasd.md)
 * [Wordpress et matomo](./wpaas_matomo.md)
 * [Odoo](./odoo.md)
 * [Databases as a service](./dbaas.md)

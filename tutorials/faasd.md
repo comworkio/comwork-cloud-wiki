@@ -1,5 +1,10 @@
 # OpenFaaS / Faasd
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](./translations/fr/faasd.md)
+
 ## Disclaimer
 
 In this tutorial, we'll give you some insights on how to:
@@ -29,7 +34,7 @@ Let's assume in this tutorial you deployed a Faasd instance with the following p
 
 ### Install and connect to the server
 
-Install the faas cli if it's not already done:
+Install the faas-cli if it's not already done:
 
 ```shell
 curl -sSL https://cli.openfaas.com | sudo sh
@@ -95,7 +100,7 @@ def handle(req):
     return "Hello {}!".format(req)
 ```
 
-Change the `hello.yml` to add a full container registry image path in the `image` field, and the `gateway` field:
+Change the `hello.yml` to add the image path and the faasd server URL in the `image` and `gateway` fields:
 
 ```yaml
 version: 1.0
@@ -115,7 +120,7 @@ Then build and deploy:
 $ faas-cli up -f ./hello.yml
 ```
 
-If you're not on a x86/amd64 computer (like an Apple Silicon for example), use thoses commands instead:
+If you're not on a x86/amd64 computer (like an Apple Silicon[^1] for example), use thoses commands instead:
 
 ```shell
 $ faas-cli publish -f ./hello.yml --platforms linux/amd64
@@ -132,3 +137,5 @@ Hello Idriss!
 And see it and invoking it from the GUI:
 
 ![faasd_hello_function](../img/faasd_hello_function.png)
+
+[^1]: M1, M2... chips
