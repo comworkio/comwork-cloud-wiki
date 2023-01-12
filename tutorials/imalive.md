@@ -15,7 +15,6 @@ It provide a http/restful endpoint that you can use as a healthcheck rule to you
 * Main repo: https://gitlab.comwork.io/oss/imalive
 * Github mirror: https://github.com/idrissneumann/imalive.git
 * Gitlab mirror: https://gitlab.com/ineumann/imalive.git
-* Bitbucket mirror: [https://idrissneumann@bitbucket.org/idrissneumann/imalive.git](https://idrissneumann@bitbucket.org/idrissneumann/imalive.git)
 
 ## Image on the dockerhub
 
