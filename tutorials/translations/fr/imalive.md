@@ -1,83 +1,83 @@
 # Imalive API / metrics exporter
 
-Let your nodes sing like Céline Dion `I'm alive!`.
+Laissez vos instances chanter comme Céline Dion `I'm alive!` ("Je suis vivante").
 
-![celine](../img/celine.jpeg)
+![celine](../../../img/celine.jpeg)
 
-Just a dummy healthcheck api for your nodes (support x86 and armhf for raspberrypi).
+Il s'agit d'une simple API de healthcheck pour vos instances (supporte les machines x86 et armhf comme les raspberrypi).
 
-It provide a http/restful endpoint that you can use as a healthcheck rule to your loadbalancer and also publish a heartbit in stdout (usefull if you collect it in a log/alerting management system such as elasticstack).
+Ce projet fournit un endpoint HTTP/Restful que vous pourrez utiliser comme règle ou "ligne de vie" dans votre loadbalancer et publie également un "heartbit[^1]" sur la sortie standard `stdout` (utile si vous collectez les logs dans un système de log management tel que Elasticstack).
 
-![kibana](../img/imalive_kibana.png)
+![kibana](../../../img/imalive_kibana.png)
 
-## Translations
+## Traductions
 
-This tutorial is also available in the following languages:
-* [Français 🇫🇷](./translations/fr/imalive.md)
+Ce tutoriel est également disponible dans les langues suivantes :
+* [English 🇬🇧](../../imalive.md)
 
-## Git repositories
+## Dépôt git
 
-* Main repo: https://gitlab.comwork.io/oss/imalive
-* Github mirror: https://github.com/idrissneumann/imalive.git
-* Gitlab mirror: https://gitlab.com/ineumann/imalive.git
+* Dépôt principal: https://gitlab.comwork.io/oss/imalive
+* Mirroir Github: https://github.com/idrissneumann/imalive.git
+* Mirroir Gitlab: https://gitlab.com/ineumann/imalive.git
 
-## Image on the dockerhub
+## Image sur dockerhub
 
-The image is available and versioned here: https://hub.docker.com/r/comworkio/imalive-api
+Les images docker sont versionnées et disponibles ici : https://hub.docker.com/r/comworkio/imalive-api
 
-An example of exposed API instance: https://imalive.comwork.io
+Un exemple d'instance : https://imalive.comwork.io
 
-## Getting started
+## Comment déployer Imalive
 
-### Running with ansible
+### Installation avec ansible
 
-Some environment like [vps](../vps.md) are already install the imalive role. However, even when it's not provided, you still can add this [ansible role](https://gitlab.comwork.io/oss/imalive/-/tree/main/ansible-imalive) on your deployment repo and adding the role invokation in your playbook.
+Certains environnements comme le [vps[^2]](../vps.md) installent déjà imalive en utilisant ce rôle. Toutefois, même quand c'est pas le cas, vous pouvez ajouter ce [rôle ansible](https://gitlab.comwork.io/oss/imalive/-/tree/main/ansible-imalive) dans votre repo de déploiement et l'invocation du rôle dans votre playbook.
 
-### Running with docker-compose
+### Installation avec docker-compose
 
-Get this [docker-compose file](https://gitlab.comwork.io/oss/imalive/-/blob/main/docker-compose.yml).
+Récupérer ce [fichier docker-compose](https://gitlab.comwork.io/oss/imalive/-/blob/main/docker-compose.yml).
 
-Then, create your `.env` file from the `.env.example`:
+Ensuite, créer votre fichier `.env` à partir du fichier `.env.example` :
 
 ```shell
 cp .env.example .env
 ```
 
-Then replace the values (like the `IMALIVE_NODE_NAME` with your node name). Then:
+Ensuite remplacez les valeurs dans ce fichier (comme par exemple la variable `IMALIVE_NODE_NAME` avec le nom de votre instance pour différencier la provenance des logs). Ensuite :
 
 ```shell
 $ docker-compose up
 ```
 
-If you want to test on a raspberrypi or any other ARM device, use this command instead:
+Si vous souhaitez le déployer sur un appareil ARM tel qu'un raspberrypi, lancez cette commande à la place :
 
 ```shell
 $ docker-compose -f docker-compose-arm.yml up
 ```
 
-### Running with K3D (Kubernetes / helm)
+### Installation sur K3D (Kubernetes/Helm)
 
-Use our helm chart [here](https://gitlab.comwork.io/oss/imalive/-/tree/main/helm)
+Vous pouvez utiliser notre [helm chart](https://gitlab.comwork.io/oss/imalive/-/tree/main/helm)
 
-#### Test with K3D (init the cluster)
+#### Tester avec K3D (initialisation du cluster)
 
 ```shell
 k3d cluster create localdev --api-port 6550 -p "8089:80@loadbalancer"
 sudo k3d kubeconfig get localdev > ~/.kube/config 
 ```
 
-Continue to the next chapter
+Continuez avec le chapitre suivant
 
-#### Install the helmchart
+#### Installation du helmchart
 
 ```shell
-cd helm # all the commands below must be under imalive/helm directory
+cd helm # toutes les commandes ci-dessous doivent être lancée depuis le répertoire imalive/helm
 kubectl create ns imalive
 helm dependency update
 helm -n imalive install . -f values.yaml --generate-name
 ```
 
-#### Check the deployment and ingress
+#### Vérifier le déploiement et les ingress
 
 ```shell
 kubectl -n imalive get deployments
@@ -112,9 +112,9 @@ $ curl localhost:8080/v1/metrics
 
 ## Heartbit
 
-You can change the wait time between two heartbit with the `WAIT_TIME` environment variable (in seconds).
+Vous pouvez changer la fréquence entre deux heartbits avec la variable d'environnement `WAIT_TIME` (en secondes).
 
-Here's an example of stdout heartbit:
+Voici un exemple de sortie standard du heartbit :
 
 ```shell
 [2021-11-06T14:45:33.902885][anode] I'm alive! metrics = {'status': 'ok', 'disk_usage': {'total': 102.11687469482422, 'used': 22.521244049072266, 'free': 74.38005828857422}, 'virtual_memory': {'total': '1.9G', 'available': '959.0M'}, 'swap_memory': {'total': '1024.0M', 'used': '493.1M', 'free': '530.9M', 'percent': 48.2}, 'cpu': {'percent': {'all': 3.5, 'percpu': [8.0, 5.0, 6.1, 11.0]}, 'count': {'all': 4, 'with_logical': 4}, 'times': {'all': scputimes(user=10679.53, nice=7.01, system=4727.11, idle=401080.72, iowait=156.27, irq=0.0, softirq=227.12, steal=0.0, guest=0.0, guest_nice=0.0), 'percpu': [scputimes(user=2492.49, nice=1.24, system=1198.2, idle=100375.46, iowait=38.16, irq=0.0, softirq=82.38, steal=0.0, guest=0.0, guest_nice=0.0), scputimes(user=2760.93, nice=1.64, system=1198.27, idle=100176.24, iowait=37.93, irq=0.0, softirq=55.87, steal=0.0, guest=0.0, guest_nice=0.0), scputimes(user=2708.45, nice=2.06, system=1164.18, idle=100266.4, iowait=40.04, irq=0.0, softirq=47.82, steal=0.0, guest=0.0, guest_nice=0.0), scputimes(user=2717.65, nice=2.06, system=1166.46, idle=100262.62, iowait=40.12, irq=0.0, softirq=41.03, steal=0.0, guest=0.0, guest_nice=0.0)]}}}
@@ -122,6 +122,9 @@ Here's an example of stdout heartbit:
 [2021-11-06T14:45:57.924797][anode] I'm alive! metrics = {'status': 'ok', 'disk_usage': {'total': 102.11687469482422, 'used': 22.52124786376953, 'free': 74.38005447387695}, 'virtual_memory': {'total': '1.9G', 'available': '963.0M'}, 'swap_memory': {'total': '1024.0M', 'used': '493.1M', 'free': '530.9M', 'percent': 48.2}, 'cpu': {'percent': {'all': 2.5, 'percpu': [4.0, 3.0, 2.0, 4.0]}, 'count': {'all': 4, 'with_logical': 4}, 'times': {'all': scputimes(user=10681.23, nice=7.01, system=4728.14, idle=401173.13, iowait=156.28, irq=0.0, softirq=227.15, steal=0.0, guest=0.0, guest_nice=0.0), 'percpu': [scputimes(user=2492.87, nice=1.24, system=1198.47, idle=100398.59, iowait=38.17, irq=0.0, softirq=82.39, steal=0.0, guest=0.0, guest_nice=0.0), scputimes(user=2761.37, nice=1.64, system=1198.5, idle=100199.34, iowait=37.93, irq=0.0, softirq=55.88, steal=0.0, guest=0.0, guest_nice=0.0), scputimes(user=2708.91, nice=2.06, system=1164.42, idle=100289.48, iowait=40.04, irq=0.0, softirq=47.83, steal=0.0, guest=0.0, guest_nice=0.0), scputimes(user=2718.07, nice=2.06, system=1166.75, idle=100285.71, iowait=40.12, irq=0.0, softirq=41.04, steal=0.0, guest=0.0, guest_nice=0.0)]}}}
 ```
 
-You can change `anode` by your node name with the `IMALIVE_NODE_NAME` environment variable.
+Vous pouvez changer la valeur `anode` par le nom de votre instance avec la variable d'environnement `IMALIVE_NODE_NAME`.
 
-You also can log only a json output by activating the `HEART_BIT_LOG_JSON` environment variable (with `yes` or `true`).
+Vous pouvez également indiquer de produire le log du heartbit au format 100% json avec la variable d'environnement `HEART_BIT_LOG_JSON` (valeurs acceptées: `yes` ou `true`).
+
+[^1]: battement de coeur (log écrit en boucle pour informer sur l'état de santé de l'instance)
+[^2]: virtual private server (simple serveur virtuel / compute instance)
