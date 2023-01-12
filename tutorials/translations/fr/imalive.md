@@ -31,7 +31,7 @@ Un exemple d'instance : https://imalive.comwork.io
 
 ### Installation avec ansible
 
-Certains environnements comme le [vps[^2]](../vps.md) installent déjà imalive en utilisant ce rôle. Toutefois, même quand c'est pas le cas, vous pouvez ajouter ce [rôle ansible](https://gitlab.comwork.io/oss/imalive/-/tree/main/ansible-imalive) dans votre repo de déploiement et l'invocation du rôle dans votre playbook.
+Certains environnements comme le [vps[^2]](../../../vps.md) installent déjà imalive en utilisant ce rôle. Toutefois, même quand c'est pas le cas, vous pouvez ajouter ce [rôle ansible](https://gitlab.comwork.io/oss/imalive/-/tree/main/ansible-imalive) dans votre repo de déploiement et l'invocation du rôle dans votre playbook.
 
 ### Installation avec docker-compose
 
