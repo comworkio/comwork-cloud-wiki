@@ -1,56 +1,55 @@
-# Localtunnel server
+# Serveur Localtunnel
 
-## Translations
+## Traductions
 
-This tutorial is also available in the following languages:
-* [Français 🇫🇷](./translations/fr/localtunnel.md)
+Ce tutoriel est également disponible dans les langues suivantes :
+* [English 🇬🇧](../../localtunnel.md)
 
-## Video tutorial
+## Tutoriel vidéo
 
-[![demo_lt](../img/demo_lt.png)](https://youtu.be/2BZHMYcPfiY)
+[![demo_lt](../../../img/demo_lt.png)](https://youtu.be/2BZHMYcPfiY)
 
-You can activate the subtitles in English or French to get more details on this demo. 
+Vous pouvez activer les sous-titres en Anglais ou Français.
 
-Enjoy!
+## Utilisation de la ligne de commande
 
-## Use the CLI
+### Autoriser votre réseau privé dans pare-feu de tunnelserver
 
-### Allow your private network to the tunnelserver's firewall
+Vous devez autoriser vos ips publiques sur lesquelles vous souhaitez exposer un port sur internet via un tunnel.
 
-First you have to allow your network public's ip where you need to expose port via tunnel. 
-
-Get your public ip first:
+Récupérer votre ip publique :
 
 ```shell
 curl -L ip.comwork.io
 ```
 
-Then, add the value in the firewall section in the ansible environment file (`env/{ instance_hash }.yml`):
+Ensuite ajouter la valeurs retournée dans cette commande dans le fichier d'environnement ansible (`env/{ instance_hash }.yml`) :
 
 ```yaml
 firewall_allow:
   # ...
-  - ip: YOUR_PUBLIC_IP # to replace by the value returned by the previous curl
+  - ip: YOUR_PUBLIC_IP # à remplacer par la valeur retournée par le curl précédent
     cidr: 24
 ```
 
-### Expose your service with the lt CLI
+### Exposer votre service avec la ligne de commande lt
 
-You can install the cli this way:
+Vous pouvez installer cette ligne de commande comme ceci :
 
 ```shell
 npm install -g localtunnel
 ```
 
-Then, use it this way:
+Et l'utiliser de cette façon :
 
 ```shell
 lt --host https://{your_instance_hash}.lt.comwork.(cloud|dev|info) --port {the port you want to expose} --subdomain localtunnel-1
 ```
 
-### Work with multiple tunnels
+### Travailler avec plusieurs tunnels
 
-You can use multiple tunnels, you just have to add your tunnels subdomains in the ansible environment file (`env/{ instance_hash }.yml`):
+
+Vous pouvez utiliser plusieurs tunnels, vous avez juste à ajouter les sous-domaines de vos tunnels dans votre fichier d'environnement ansible (`env/{ instance_hash }.yml`):
 
 ```yaml
 gw_proxies:
@@ -63,7 +62,7 @@ gw_proxies:
     target: localtunnel-3.{your_instance_hash}.lt.comwork.(cloud|dev|info):3200
 ```
 
-Then you'll be able to open new tunnels with your client:
+Vous pourrez ensuite créer ces tunnels avec la ligne de commande lt :
 
 ```shell
 lt --host https://localtunnel-1.{your_instance_hash}.lt.comwork.(cloud|dev|info) --port 8080 --subdomain localtunnel-1
@@ -71,7 +70,7 @@ lt --host https://localtunnel-2.{your_instance_hash}.lt.comwork.(cloud|dev|info)
 lt --host https://localtunnel-3.{your_instance_hash}.lt.comwork.(cloud|dev|info) --port 8082 --subdomain localtunnel-3
 ```
 
-And share those urls:
+Et partager ces URLs :
 
 ```shell
 https://localtunnel-1.{your_instance_hash}.lt.comwork.(cloud|dev|info)
