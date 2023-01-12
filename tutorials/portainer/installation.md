@@ -1,5 +1,12 @@
 # Portainer installation
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](../translations/fr/portainer/installation.md)
+
+## Video tutorial
+
 Here you'll find a demo on how install [portainer](../../portainer.md) on comwork cloud:
 
 [![portainer_demo](../../img/portainer_demo.png)](https://youtu.be/M29YE3w6NxA)

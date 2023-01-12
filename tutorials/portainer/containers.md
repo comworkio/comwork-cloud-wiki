@@ -1,10 +1,15 @@
 # Monitor and manage containers with portainer
 
-You can manage all the containers that are deployed with docker on your servers:
+You can manage all the containers that are deployed with docker (or kubernetes):
 
 ![portainer_1](../../img/portainer_1.png)
 
 ![portainer_2](../../img/portainer_2.png)
+
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](../translations/fr/portainer/containers.md)
 
 ## Monitor logs of containers
 
