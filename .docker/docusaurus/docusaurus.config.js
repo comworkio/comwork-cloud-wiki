@@ -28,6 +28,14 @@ const config = {
                 {
                     from: '/docs/tutorials/fr',
                     to: '/docs/tutorials/translations/fr'
+                },
+                {
+                    from: '/docs/fr',
+                    to: '/docs/tutorials/translations/fr'
+                },
+                {
+                    from: '/fr',
+                    to: '/docs/tutorials/translations/fr'
                 }
             ]
         }],
