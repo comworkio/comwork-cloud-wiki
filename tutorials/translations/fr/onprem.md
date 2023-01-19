@@ -276,9 +276,11 @@ environments:
     extra_subdomains: ['api', 'imalive']
 ```
 
-## Générer les clefs d'API pour OVH
+## Configurer comwork cloud pour OVH
 
-### Variables constantes
+Dans cette partie nous allons voir comment générer les différentes clefs d'API pour OVH.
+
+### Valeurs constantes
 
 Ces valeurs sont constantes et ne devraient pas changer :
 
@@ -305,7 +307,7 @@ OVH_SERVICENAME="d89XXXXXXXX"
 
 ![ovh_public_cloud_user_2](../../../img/ovh_public_cloud_user_2.png)
 
-Stocker le username / mot de passe dans les variables suivantes :
+Stocker le username et le mot de passe dans les variables suivantes :
 
 ```shell
 OS_USERNAME="user-5hXXXXXXX9"
@@ -314,7 +316,7 @@ OS_PASSWORD="tBXXXXXXXXXXXXXXXXXXXF5"
 
 ### API OpenStack
 
-Vous pouvez vous connecter sur l'IHM d'OpenStack avec ce username/mot de passe que vous venez de générer ici: https://horizon.cloud.ovh.net/
+Vous pouvez vous connecter sur l'IHM d'OpenStack avec les identifiants précédants : https://horizon.cloud.ovh.net/
 
 ![ovh_openstack_gui](../../../img/ovh_openstack_gui.png)
 
@@ -326,14 +328,14 @@ OS_TENANT_NAME="48XXXXXXXX38"
 
 ### API CaCloud
 
-Pour créer un token: https://www.ovh.com/auth/api/createToken
+Pour créer un token, aller sur : https://www.ovh.com/auth/api/createToken
 
 Faire attention aux détails suivants :
 
 * Il faut mettre un caractère `*` en face de chaque verbe HTTP (GET/PUT/POST/DELETE). Cliquer sur `+` s'il manque ces verbe http pour les ajouter un par un
-* Unlimited sur la durée
+* _Unlimited_ pour la durée
 
-Comme sur cette capture:
+Comme sur cette capture :
 
 ![ovh_create_token](../../../img/ovh_create_token.png)
 
@@ -355,7 +357,7 @@ Il faut tout simplement acheter un nom de domaine qui sera dynamiquement géré 
 
 ![ovh_dns_zone](../../../img/ovh_dns_zone)
 
-Après avoir crée la première instance qui va héberger comwork cloud avec une IP publique, il faudra ajouter un champs `A` vers cette ip publique avec un sous-domaine tel que `cwcloud.xxxxx.com`.
+Après avoir crée la première instance qui va héberger comwork cloud avec une IP publique, il faudra ajouter un champs `A` vers cette IP publique avec un sous-domaine tel que `cwcloud.xxxxx.com`.
 
 ## Tutoriel administration
 
