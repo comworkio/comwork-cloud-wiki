@@ -341,7 +341,7 @@ As we can see on the following screenshot:
 
 Once it's done, keep the following values:
 
-![ovh_cacloud_api_token](../../../img/ovh_cacloud_api_token.png)
+![ovh_cacloud_api_token](../img/ovh_cacloud_api_token.png)
 
 And write them into those environment variables:
 
@@ -355,7 +355,7 @@ OVH_CONSUMER_KEY="c4XXXXXXXXXX90a"
 
 We simply have to buy a new domain name which will be dynamically managed by comwork cloud and that its DNZ zones __must not be managed by another service or process__.
 
-![ovh_dns_zone](../img/ovh_dns_zone)
+![ovh_dns_zone](../img/ovh_dns_zone.png)
 
 Once we created the firts instance which will host comwork cloud with a public IP, we'll have to add a DNS `A` record with this public IP, i.e: `cwcloud.xxxxx.com`.
 

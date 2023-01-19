@@ -355,7 +355,7 @@ OVH_CONSUMER_KEY="c4XXXXXXXXXX90a"
 
 Il faut tout simplement acheter un nom de domaine qui sera dynamiquement géré par comwork cloud et dont les zones DNS __ne doivent pas être gérées par un autre service ou processus__.
 
-![ovh_dns_zone](../../../img/ovh_dns_zone)
+![ovh_dns_zone](../../../img/ovh_dns_zone.png)
 
 Après avoir crée la première instance qui va héberger comwork cloud avec une IP publique, il faudra ajouter un champs `A` vers cette IP publique avec un sous-domaine tel que `cwcloud.xxxxx.com`.
 
