@@ -1,6 +1,6 @@
 # Sizing and pricing
 
-The sizing and pricing model is following the provider's ones and add 70% for our internal APIs and compute costs and support (you can see the details below).
+The sizing and pricing model is following the provider's ones and add 60% for our internal APIs and compute costs and support (you can see the details below).
 
 So those pricing can be readjusted following the providers's pricing evolutions.
 
