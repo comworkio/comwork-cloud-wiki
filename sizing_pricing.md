@@ -1,6 +1,6 @@
 # Sizing and pricing
 
-The sizing and pricing model is following the provider's ones and add 60% for our internal APIs and compute costs and support (you can see the details below).
+The sizing and pricing model is following the provider's ones and add 70% for our internal APIs and compute costs and support (you can see the details below).
 
 So those pricing can be readjusted following the providers's pricing evolutions.
 
@@ -11,7 +11,7 @@ This page is automatically generated from [price_calculator](./price_calculator/
 The available providers are the following:
 
 * `scw`: [Scaleway](https://www.scaleway.com)
-* `ovh`: [OVH cloud](https://www.ovhcloud.com) (*in progress*)
+* `ovh`: [OVH cloud](https://www.ovhcloud.com)
 
 ## Sizing
 
@@ -49,20 +49,20 @@ The available providers are the following:
 
 | Instance    | Provider | Original cost | Per hour | Per hour (TTC) | Per month (TTC) |
 | ----------- | -------- | ------------- | -------- | -------------- | --------------- |
-| DEV1-S      | scw      | 0.014 €       | 0.022 €  | 0.027 €        | 19.999 €        |
-| DEV1-M      | scw      | 0.026 €       | 0.042 €  | 0.050 €        | 37.140 €        |
-| DEV1-L      | scw      | 0.050 €       | 0.080 €  | 0.096 €        | 71.424 €        |
-| DEV1-XL     | scw      | 0.073 €       | 0.117 €  | 0.140 €        | 104.279 €       |
-| PLAY2-PICO  | scw      | 0.017 €       | 0.027 €  | 0.033 €        | 24.284 €        |
-| PLAY2-NANO  | scw      | 0.030 €       | 0.048 €  | 0.058 €        | 42.854 €        |
-| PLAY2-MICRO | scw      | 0.057 €       | 0.091 €  | 0.109 €        | 81.423 €        |
-| d2-2        | ovh      | 0.0099 €      | 0.016 €  | 0.019 €        | 14.142 €        |
-| d2-4        | ovh      | 0.0238 €      | 0.038 €  | 0.046 €        | 33.998 €        |
-| d2-8        | ovh      | 0.0428 €      | 0.068 €  | 0.082 €        | 61.139 €        |
-| b2-15       | ovh      | 0.1290 €      | 0.206 €  | 0.248 €        | 184.274 €       |
+| DEV1-S      | scw      | 0.014 €       | 0.024 €  | 0.029 €        | 21.249 €        |
+| DEV1-M      | scw      | 0.026 €       | 0.044 €  | 0.053 €        | 39.462 €        |
+| DEV1-L      | scw      | 0.050 €       | 0.085 €  | 0.102 €        | 75.888 €        |
+| DEV1-XL     | scw      | 0.073 €       | 0.124 €  | 0.149 €        | 110.796 €       |
+| PLAY2-PICO  | scw      | 0.017 €       | 0.029 €  | 0.035 €        | 25.802 €        |
+| PLAY2-NANO  | scw      | 0.030 €       | 0.051 €  | 0.061 €        | 45.533 €        |
+| PLAY2-MICRO | scw      | 0.057 €       | 0.097 €  | 0.116 €        | 86.512 €        |
+| d2-2        | ovh      | 0.0099 €      | 0.017 €  | 0.020 €        | 15.026 €        |
+| d2-4        | ovh      | 0.0238 €      | 0.040 €  | 0.049 €        | 36.123 €        |
+| d2-8        | ovh      | 0.0428 €      | 0.073 €  | 0.087 €        | 64.960 €        |
+| b2-15       | ovh      | 0.1290 €      | 0.219 €  | 0.263 €        | 195.791 €       |
 
 
-*Updated the 2023-01-20*
+*Updated the 2022-12-01*
 
 ### Details
 

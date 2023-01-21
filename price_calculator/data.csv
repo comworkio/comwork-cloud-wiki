@@ -1,12 +1,12 @@
 Instance,Provider,Variable,Original cost,Per hour,Per hour (TTC),Per month (TTC),,Data,Details,
-DEV1-S,scw,PRICE_DEV1_S,"0,014 €","0,022 €","0,027 €","19,999 €",,Additional costs,"Network, comwork api cost...","1,6"
-DEV1-M,scw,PRICE_DEV1_M,"0,026 €","0,042 €","0,050 €","37,140 €",,Max number hours per months,24 hours * 31 days (max),744
-DEV1-L,scw,PRICE_DEV1_L,"0,050 €","0,080 €","0,096 €","71,424 €",,VAT,20% French VAT,"1,2"
-DEV1-XL,scw,PRICE_DEV1_XL,"0,073 €","0,117 €","0,140 €","104,279 €",,,,
-PLAY2-PICO,scw,PRICE_PLAY2_PICO,"0,017 €","0,027 €","0,033 €","24,284 €",,,,
-PLAY2-NANO,scw,PRICE_PLAY2_NANO,"0,030 €","0,048 €","0,058 €","42,854 €",,,,
-PLAY2-MICRO,scw,PRICE_PLAY2_MICRO,"0,057 €","0,091 €","0,109 €","81,423 €",,,,
-d2-2,ovh,PRICE_d2_2,"0,0099 €","0,016 €","0,019 €","14,142 €",,,,
-d2-4,ovh,PRICE_d2_4,"0,0238 €","0,038 €","0,046 €","33,998 €",,,,
-d2-8,ovh,PRICE_d2_8,"0,0428 €","0,068 €","0,082 €","61,139 €",,,,
-b2-15,ovh,PRICE_b2_15,"0,1290 €","0,206 €","0,248 €","184,274 €",,,,
+DEV1-S,scw,PRICE_DEV1_S,"0,014 €","0,024 €","0,029 €","21,249 €",,Additional costs,"Network, comwork api cost...","1,7"
+DEV1-M,scw,PRICE_DEV1_M,"0,026 €","0,044 €","0,053 €","39,462 €",,Max number hours per months,24 hours * 31 days (max),744
+DEV1-L,scw,PRICE_DEV1_L,"0,050 €","0,085 €","0,102 €","75,888 €",,VAT,20% French VAT,"1,2"
+DEV1-XL,scw,PRICE_DEV1_XL,"0,073 €","0,124 €","0,149 €","110,796 €",,,,
+PLAY2-PICO,scw,PRICE_PLAY2_PICO,"0,017 €","0,029 €","0,035 €","25,802 €",,,,
+PLAY2-NANO,scw,PRICE_PLAY2_NANO,"0,030 €","0,051 €","0,061 €","45,533 €",,,,
+PLAY2-MICRO,scw,PRICE_PLAY2_MICRO,"0,057 €","0,097 €","0,116 €","86,512 €",,,,
+d2-2,ovh,PRICE_d2_2,"0,0099 €","0,017 €","0,020 €","15,026 €",,,,
+d2-4,ovh,PRICE_d2_4,"0,0238 €","0,040 €","0,049 €","36,123 €",,,,
+d2-8,ovh,PRICE_d2_8,"0,0428 €","0,073 €","0,087 €","64,960 €",,,,
+b2-15,ovh,PRICE_b2_15,"0,1290 €","0,219 €","0,263 €","195,791 €",,,,
