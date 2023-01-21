@@ -11,7 +11,7 @@ This page is automatically generated from [price_calculator](./price_calculator/
 The available providers are the following:
 
 * `scw`: [Scaleway](https://www.scaleway.com)
-* `ovh`: [OVH cloud](https://www.ovhcloud.com)
+* `ovh`: [OVH cloud](https://www.ovhcloud.com) (*in progress*)
 
 ## Sizing
 
@@ -62,7 +62,7 @@ The available providers are the following:
 | b2-15       | ovh      | 0.1290 €      | 0.219 €  | 0.263 €        | 195.791 €       |
 
 
-*Updated the 2022-12-01*
+*Updated the 2023-01-21*
 
 ### Details
 
