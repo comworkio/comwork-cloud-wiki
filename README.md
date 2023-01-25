@@ -4,7 +4,7 @@ Here's the documentation of [comwork cloud console](https://cloud.comwork.io) an
 
 "CwCloud" (for _Comwork Cloud_) is a platform that allows us to accelerate the infrastructure provisioning and managed service such as [serverless FaaS engine](./serverless.md), [Advanced web IDE](./code.md), [WPaaS[^1]](./wpaas.md) or any other application you want to deploy as a managed service.
 
-It aims to provide those services in a "_IaC_[^2]" or "_GitOps_" way: you'll get access to a private [comwork gitlab](https://gitlab.comwork.io) repository that contains ansible roles and playbooks you'll be able to maintain. The modification on this repositories will automatically be applied in your instances.
+It aims to provide those services in a "_IaC_[^2]" or "_GitOps_" way: you'll get access to gitlab repositories that contains ansible roles, templates and playbooks you'll be able to maintain (same thing with Helm for Kubernetes instances very soon). The modification on this repositories will automatically be applied in your instances.
 
 There is a SaaS version which provide instances that are hosted on [Scaleway](https://www.scaleway.com) or [OVHCloud](https://www.ovhcloud.com). Those two are really beautiful European 🇪🇺 cloud providers and we intend to propose even more cloud providers in the future (CwCloud can work with any cloud provider that provide standard IaaS API's such as OpenStack or Kubernetes in the very near future).
 
