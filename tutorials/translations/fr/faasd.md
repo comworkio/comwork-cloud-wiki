@@ -8,7 +8,7 @@ Ce tutoriel est également disponible dans les langues suivantes :
 ## A propos
 
 Dans ce tutoriel, nous allons vous fournir des indications sur comment :
-* déployer un serveur faasd avec comwork cloud
+* déployer un serveur faasd avec CwCloud
 * comment déployer une fonction simple dans ce context
 
 Nous ne souhaitons pas remplacer le travail exceptionnel effectué par l'équipe d'OpenFaaS. Si vous souhaitez utiliser faasd dans un contexte de production, nous vous recommandons fortement de consulter :
@@ -68,7 +68,7 @@ Ensuite :
 faas-cli registry-login --username YOUR_DOCKERHUB_USERNAME --password YOUR_DOCKERHUB_ACCESS_TOKEN
 ```
 
-Remarque : vous pouvez aussi utiliser les registry de Scaleway ou OVH avec [comwork cloud](../../../storage.md)
+Remarque : vous pouvez aussi utiliser les registry de Scaleway ou OVH avec [CwCloud](../../../storage.md)
 
 ### Déployer une fonction avec faas-cli
 

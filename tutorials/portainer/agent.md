@@ -1,4 +1,4 @@
-# Adding portainer agents on comwork cloud
+# Adding portainer agents on CwCloud
 
 ## Translations
 

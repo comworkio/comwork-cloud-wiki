@@ -1,6 +1,6 @@
 # Commandes administrateurs
 
-Les commandes administateurs sont utilisées pour gérer votre instance de comwork cloud on premises.
+Les commandes administateurs sont utilisées pour gérer votre instance de CwCloud on premises.
 
 Remarques :
 * Ces commandes ne fonctionnent que pour les utilisateurs qui sont administrateurs (si vous utilisez une [version auto-hébergées](../onprem.md) par exemple)

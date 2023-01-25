@@ -14,4 +14,4 @@
 * [Overleaf as a service](./overleaf.md)
 * [Imalive metrics exporter](./imalive.md)
 * [Connection avec SSH](./ssh.md)
-* [On premises / Instances auto-hébergées de comwork cloud](./onprem.md)
+* [On premises / Instances auto-hébergées de CwCloud](./onprem.md)

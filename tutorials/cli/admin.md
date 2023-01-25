@@ -1,6 +1,6 @@
 # Admin commands
 
-The admin commands are used to control and manage your on premises version of comwork cloud.
+The admin commands are used to control and manage your on premises version of CwCloud.
 
 Notes:
 * Those commands are only for admin users (if you're using a [self-hosted version](../onprem.md) for example)

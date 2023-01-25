@@ -7,7 +7,7 @@ Ce tutoriel est également disponible dans les langues suivantes :
 
 ## Tutoriel vidéo
 
-Ici vous trouverez une démo pour voir comment installer [portainer](../../../../portainer.md) sur comwork cloud :
+Ici vous trouverez une démo pour voir comment installer [portainer](../../../../portainer.md) sur CwCloud :
 
 [![portainer_demo](../../../../img/portainer_demo.png)](https://youtu.be/M29YE3w6NxA)
 

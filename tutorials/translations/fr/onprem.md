@@ -1,4 +1,4 @@
-# Comwork cloud on premises
+# CwCloud on premises
 
 ## Traductions
 
@@ -7,7 +7,7 @@ Ce tutoriel est également disponible dans les langues suivantes :
 
 ## Accéder à nos images
 
-Pour accéder à nos images, vous devrez d'abord demander à l'équipe de comwork cloud.
+Pour accéder à nos images, vous devrez d'abord demander à l'équipe de CwCloud.
 
 Vous pouvez le faire via :
 * Le [système de support](./console/public/support.md)
@@ -276,7 +276,7 @@ environments:
     extra_subdomains: ['api', 'imalive']
 ```
 
-## Configurer comwork cloud pour OVH
+## Configurer CwCloud pour OVH
 
 Dans cette partie nous allons voir comment générer les différentes clefs d'API pour OVH.
 
@@ -353,14 +353,14 @@ OVH_CONSUMER_KEY="c4XXXXXXXXXX90a"
 
 ### Créer une zone DNS
 
-Il faut tout simplement acheter un nom de domaine qui sera dynamiquement géré par comwork cloud et dont les zones DNS __ne doivent pas être gérées par un autre service ou processus__.
+Il faut tout simplement acheter un nom de domaine qui sera dynamiquement géré par CwCloud et dont les zones DNS __ne doivent pas être gérées par un autre service ou processus__.
 
 ![ovh_dns_zone](../../../img/ovh_dns_zone.png)
 
-Après avoir crée la première instance qui va héberger comwork cloud avec une IP publique, il faudra ajouter un champs `A` vers cette IP publique avec un sous-domaine tel que `cwcloud.xxxxx.com`.
+Après avoir crée la première instance qui va héberger CwCloud avec une IP publique, il faudra ajouter un champs `A` vers cette IP publique avec un sous-domaine tel que `cwcloud.xxxxx.com`.
 
 ## Tutoriel administration
 
-Vous aurez surement besoin d'utiliser des fonctionnalité administrateurs si vous avez votre propre instance hébergée de comwork cloud.
+Vous aurez surement besoin d'utiliser des fonctionnalité administrateurs si vous avez votre propre instance hébergée de CwCloud.
 
 Vous trouverez toutes les ressources pour administrer via la console [ici](./console/admin/README.md)

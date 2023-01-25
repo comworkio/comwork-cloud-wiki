@@ -81,7 +81,7 @@ const config = {
                 },
                 {
                     name: 'keywords',
-                    content: 'Comwork, cloud, vscode, git, ansible, portainer, wordpress, gitops, gitlab, code, kubernetes, docker'
+                    content: 'Comwork, CwCloud, cloud, vscode, git, ansible, portainer, wordpress, gitops, gitlab, code, kubernetes, docker'
                 },
                 {
                     property: 'og:image',

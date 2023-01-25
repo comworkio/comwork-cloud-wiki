@@ -1,5 +1,7 @@
 # Terms of service
 
+Those are the terms of services for the [SaaS version of CwCloud](https://cloud.comwork.io).
+
 ## Where and by whom is hosted this service?
 
 This instance is hosted in France by [COMWORKIO SASU](https://www.comwork.io) (R.C.S Paris 838 757 987) on [Scaleway](https://www.scaleway.com).
@@ -49,7 +51,7 @@ We use cookies to understand and save your preferences for future visits.
 
 We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our site, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property, or safety.
 
-## What kind of services are forbidden on Comwork Cloud?
+## What kind of services are forbidden on CwCloud?
 
 We do not intend to host the following types of services:
 

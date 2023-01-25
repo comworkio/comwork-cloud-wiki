@@ -2,7 +2,7 @@
 
 Get your infrastructure to the next level using [portainer](https://www.portainer.io) on our cloud platform!
 
-Portainer will help you transform your comwork cloud instances as a real and modern CaaS[^1].
+Portainer will help you transform your CwCloud instances as a real and modern CaaS[^1].
 
 [^1]: Container as a service
 
@@ -10,7 +10,7 @@ Portainer will help you transform your comwork cloud instances as a real and mod
 
 Here is a non exhaustive list of portainer usecases we're enjoying the most:
 
-1. You can manage you other comwork cloud instances with a portainer edge agents and list them like that:
+1. You can manage you other CwCloud instances with a portainer edge agents and list them like that:
 
 ![portainer_manage_envs](./img/portainer_manage_envs.png)
 
