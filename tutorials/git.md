@@ -103,7 +103,7 @@ git rebase --abort # abort the rebase
 git reset --hard origin/<feature or bug ticket number> # reset from the remote branch
 ```
 
-## Merge de main dans une branche
+## Merge main into a feature branch
 
 In order to gradually integrate the changes of `main` in our branch in order to avoid that the desynchronization is too heavy, it's necessary to regularly merge `main` in this branch. 
 
