@@ -206,6 +206,13 @@ cwc admin bucket update -b <bucket_id>
 cwc admin bucket update --bucket <bucket_id>
 ```
 
+### Transfert à un autre utilisateur
+
+```shell
+cwc admin bucket update -b <bucket_id> -t <récepteur_email>
+cwc admin bucket update --bucket <bucket_id> --transfer <récepteur_email>
+```
+
 ### Supprimer
 
 ```shell
@@ -240,6 +247,13 @@ cwc admin registry ls --registry <registry_id>
 ```shell
 cwc admin registry update -r <registry_id>
 cwc admin registry update --registry <registry_id>
+```
+
+### Transfert à un autre utilisateur
+
+```shell
+cwc admin registry update -r <registry_id> -t <récepteur_email>
+cwc admin registry update --registry <registry_id> --transfer <récepteur_email>
 ```
 
 ### Supprimer
