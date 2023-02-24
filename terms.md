@@ -63,7 +63,7 @@ Here's what you can see with uMatrix:
 
 Those assets are hosts on the United States so we prefer let you know that they are able to store your IP adress in a country which is not following the same law as European-Union members even if those company are pretending they're comply with the GDPR[^1].
 
-Also the DNS zone `comwork.ovh` is managed by [Cloudflare](https://www.cloudflare.com) so if you're choosing this one to expose your services, we inform you again that they will be able to get your IP adress.
+Also the DNS zone `comwork.click` is managed by [Cloudflare](https://www.cloudflare.com) so if you're choosing this one to expose your services, we inform you again that they will be able to get your IP adress.
 
 And finally here's the CSP[^2] available for the deployment of instances, registry or object storages:
 * [Scaleway](https://www.scaleway.com)
