@@ -61,9 +61,9 @@ Here's what you can see with uMatrix:
 
 ![umatrix](./img/umatrix.png)
 
-Those assets are hosts on the United States so we prefer let you know that they are able to store your IP adress in a country which is not following the same law as European-Union members even if those company are saying they're complying with the GDPR[^1].
+Those assets are hosts on the United States so we prefer let you know that they are able to store your IP adress in a country which is not following the same law as European-Union members even if those company are pretending they're comply with the GDPR[^1].
 
-Also the DNS zone `comwork.ovh` is managed by [Cloudflare](https://www.cloudflare.com) so if you're choosing this one to expose your services, we inform you that they will be able to get your IP adress also.
+Also the DNS zone `comwork.ovh` is managed by [Cloudflare](https://www.cloudflare.com) so if you're choosing this one to expose your services, we inform you again that they will be able to get your IP adress.
 
 ## What kind of services are forbidden on CwCloud?
 
@@ -79,4 +79,4 @@ We do not intend to host the following types of services:
 This instance is hosted in the EU: Our site, products and services are all directed to people who are at least 16 years old. If you are under the age of 16, per the requirements of the GDPR[^1] do not use this site.
 
 [^1]: [General Data Protection Regulation](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation))
-[^2]: it's not forbidden to host websites or API related to a crypto-currency service, it's only the mining process that is forbidden on our servers and storage (because it's also forbidden on the cloud's provider we relied on).
+[^2]: it's not forbidden to host websites or API related to a crypto-currency service, it's only the mining process that is forbidden on our servers and storage (because it's also forbidden on the cloud's provider we relied on)
