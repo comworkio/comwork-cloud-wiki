@@ -69,7 +69,7 @@ And finally here's the CSP[^2] available for the deployment of instances, regist
 * [Scaleway](https://www.scaleway.com)
 * [OVH](https://www.ovhcloud.com)
 
-You'll be able to choose the CSP and the region each time you'll make a query to create instances, object storages or registries.
+You'll be able to choose the CSP[^2] and the region each time you'll make a query to create instances, object storages or registries.
 
 ## What kind of services are forbidden on CwCloud?
 
