@@ -16,6 +16,8 @@ The bill are monthly issued, you can find how to download and pay those bills wi
 
 The billing system is using [stripe](https://www.stripe.com) for secured payments.
 
+You're not required to use it, you can ask to make classic transfers to the COMWORK SASU company (you can asks-us to provide the IBAN using the [support system](./terms.md)).
+
 ## What are the licences of each comwork's cloud components?
 
 All the licences are detailed [here](./licences.md).
@@ -51,13 +53,30 @@ We use cookies to understand and save your preferences for future visits.
 
 We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our site, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property, or safety.
 
+## 3rd parties
+
+Our front page is using static assets from the outside. Those are coming from [stripe](https://stripe.com) in order to provide graphical component that allows you to record easily payment methods and process payment only if you want and [font-awesome](https://fontawesome.com) for UI icons and fonts.
+
+Here's what you can see with uMatrix:
+
+![umatrix](./img/umatrix.png)
+
+Those assets are hosts on the United States so we prefer let you know that they are able to store your IP adress in a country which is not following the same law as European-Union members even if those company are saying they're complying with the GDPR[^1].
+
+Also the DNS zone `comwork.ovh` is managed by [Cloudflare](https://www.cloudflare.com) so if you're choosing this one to expose your services, we inform you that they will be able to get your IP adress also.
+
 ## What kind of services are forbidden on CwCloud?
 
 We do not intend to host the following types of services:
 
 * Illegal services regarding the member European Union's member countries's laws
-* Crypto-currency mining on our servers[^1]
+* Crypto-currency mining on our servers[^2]
 * Pornographic content
 * Hate or harassment speech content
 
-[^1]: it's not forbidden to host websites or API related to a crypto-currency service, it's only the mining process that is forbidden on our servers and storage (because it's also forbidden on the cloud's provider we relied on).
+## Site usage by children
+
+This instance is hosted in the EU: Our site, products and services are all directed to people who are at least 16 years old. If you are under the age of 16, per the requirements of the GDPR[^1] do not use this site.
+
+[^1]: [General Data Protection Regulation](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation))
+[^2]: it's not forbidden to host websites or API related to a crypto-currency service, it's only the mining process that is forbidden on our servers and storage (because it's also forbidden on the cloud's provider we relied on).
