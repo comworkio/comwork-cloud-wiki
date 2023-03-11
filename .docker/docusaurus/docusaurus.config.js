@@ -36,6 +36,18 @@ const config = {
                 {
                     from: '/fr',
                     to: '/docs/tutorials/translations/fr'
+                },
+                {
+                    from: '/docs/onprem',
+                    to: '/docs/selfhosted'
+                },
+                {
+                    from: '/docs/tutorials/onprem',
+                    to: '/docs/tutorials/selfhosted'
+                },
+                {
+                    from: '/docs/tutorials/translations/fr/onprem',
+                    to: '/docs/tutorials/translations/fr/selfhosted'
                 }
             ]
         }],
