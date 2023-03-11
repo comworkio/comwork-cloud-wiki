@@ -1,9 +1,9 @@
-# CwCloud on premises
+# Auto-hébergement de CwCloud
 
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../onprem.md)
+* [English 🇬🇧](../../selfhosted.md)
 
 ## Accéder à nos images
 
@@ -12,8 +12,8 @@ Pour accéder à nos images, vous devrez d'abord demander à l'équipe de CwClou
 Vous pouvez le faire via :
 * Le [système de support](./console/public/support.md)
 * L'email `cloud@comwork.io`
-* Notre [workspace Slack](https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ) (salon `#onpremise`)
-* Notre [serveur Discord](https://discord.gg/CXskxxPauz) (salon `#onpremise`)
+* Notre [workspace Slack](https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ) (salon `#selfhosted`)
+* Notre [serveur Discord](https://discord.gg/CXskxxPauz) (salon `#selfhosted`)
 
 ## En utilisant ansible
 

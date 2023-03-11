@@ -10,7 +10,7 @@ It aims to provide those services in a "_IaC_[^3]" or "_GitOps_" way: you'll get
 
 There is a SaaS version which provide instances that are hosted on [Scaleway](https://www.scaleway.com) or [OVHCloud](https://www.ovhcloud.com). Those two are really beautiful European 🇪🇺 cloud providers and we intend to propose even more cloud providers in the future (CwCloud can work with any cloud provider that provide standard IaaS API's such as OpenStack or Kubernetes in the very near future).
 
-There is also a way to deploy CwCloud [on premises](./tutorials/onprem.md) with your own prefered cloud provider and account.
+There is also a way to deploy a [self-hosted version of CwCloud](./tutorials/selfhosted.md) with your own prefered cloud provider and account.
 
 [^1]: _Databases as a service_
 [^2]: _wordpress as a service_
@@ -41,14 +41,14 @@ There is also a way to deploy CwCloud [on premises](./tutorials/onprem.md) with 
 * [Terms of service](./terms.md)
 * [Community and support](./community.md)
 * [Licences](./licences.md)
-* [Cloud on premises / selfhosted](./onprem.md)
+* [Self-hosted CwCloud](./selfhosted.md)
 
 ### Tutorials and demos
 
 Go see all our available tutorials and demo [here](./tutorials/README.md)
 
-## On premise version
+## Self-hosted version
 
-You're already hosted on [Scaleway](https://www.scaleway.com) or [OVHCloud](https://www.ovhcloud.com) or any other cloud provider based on Openstack API, you can have your own self-hosted/onprem instance.
+You're already hosted on [Scaleway](https://www.scaleway.com) or [OVHCloud](https://www.ovhcloud.com) or any other cloud provider based on Openstack API, you can have your own self-hosted instance.
 
 You can [contact us](./subscription.md) if this is something you're interested in.

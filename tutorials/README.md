@@ -15,5 +15,5 @@
 * [Overleaf as a service](./overleaf.md)
 * [Connect with SSH](./ssh.md)
 * [Imalive metrics exporter](./imalive.md)
-* [On premises / self-hosted deployment of CwCloud](./onprem.md)
+* [Self-hosted deployment of CwCloud](./selfhosted.md)
 * [Traductions en Français](./translations/fr/README.md)
