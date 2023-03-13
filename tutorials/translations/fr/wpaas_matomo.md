@@ -52,11 +52,11 @@ Si vous êtes sur la version SaaS, vous pouvez demander un accès à l'[object s
 
 Vous trouverez les informations de connexion sur cet écran :
 
-![wpaas-bucket](../../../../img/wpaas-bucket.png)
+![wpaas-bucket](../../../img/wpaas-bucket.png)
 
 2. Rechercher, installer et activer l'extension "All in one migration" :
 
-![wpaas-all-in-one-plugin](../../../../img/wpaas-all-in-one-plugin.png)
+![wpaas-all-in-one-plugin](../../../img/wpaas-all-in-one-plugin.png)
 
 3. Téléverser, installer et activer the extensions suivantes :
 
@@ -65,7 +65,7 @@ Vous trouverez les informations de connexion sur cet écran :
 
 De cette façon :
 
-![wpaas-all-in-one-exts](../../../../img/wpaas-all-in-one-exts.png)
+![wpaas-all-in-one-exts](../../../img/wpaas-all-in-one-exts.png)
 
 Ces deux extensions doivent être achetées [ici](https://servmask.com/).
 
@@ -73,15 +73,15 @@ Si vous êtres dans le cadre d'une prestation de service avec [comwork.io](https
 
 Mettre à jour ces plugins si nécéssaire :
 
-![wpaas-upgrade-ext](../../../../img/wpaas-upgrade-ext.png)
+![wpaas-upgrade-ext](../../../img/wpaas-upgrade-ext.png)
 
 4. Configurer le bucket S3/object storage sur lequel on va envoyer la sauvegarde :
 
-![wpaas-s3-settings](../../../../img/wpaas-s3-settings.png)
+![wpaas-s3-settings](../../../img/wpaas-s3-settings.png)
 
 5. Lancer l'export :
 
-![wpaas-export-s3](../../../../img/wpaas-export-s3.png)
+![wpaas-s3-export](../../../img/wpaas-s3-export.png)
 
 ### Sur la nouvelle instance
 
@@ -93,15 +93,15 @@ Sur la nouvelle instance que vous venez de créer :
 
 3. Lancer l'import :
 
-![wpaas-import-s3](../../../../img/wpaas-import-s3.png)
+![wpaas-s3-import](../../../img/wpaas-s3-import.png)
 
-4. Choisir la sauvegarde la plus récente :
+1. Choisir la sauvegarde la plus récente :
 
-![wpaas-s3-choose-backup](../../../../img/wpaas-s3-choose-backup.png)
+![wpaas-s3-choose-backup](../../../img/wpaas-s3-choose-backup.png)
 
 5. Configurer la sauvegarde quotidienne :
 
-![wpaas-daily-backup](../../../../img/wpaas-daily-backup.png)
+![wpaas-daily-backup](../../../img/wpaas-daily-backup.png)
 
 ### Ré-initialiser une instance wordpress corrompue
 

@@ -83,7 +83,7 @@ Upgrade those plugins if necessary:
 
 5. Run the export:
 
-![wpaas-export-s3](../img/wpaas-export-s3.png)
+![wpaas-s3-export](../img/wpaas-s3-export.png)
 
 ### On the new instance
 
@@ -95,7 +95,7 @@ On the new instance you just created:
 
 3. Run the import:
 
-![wpaas-import-s3](../img/wpaas-import-s3.png)
+![wpaas-s3-import](../img/wpaas-s3-import.png)
 
 4. Choose the most recent backup:
 
