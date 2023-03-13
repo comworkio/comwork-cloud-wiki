@@ -73,3 +73,15 @@ Those two extensions have to be purchased [here](https://servmask.com/).
 
 If you're in a development contract with [comwork.io](https://www.comwork.io), we have the ability to use our own purchased one with our customers.
 
+Upgrade those plugins if necessary:
+
+![wpaas-upgrade-ext](../img/wpaas-upgrade-ext.png)
+
+4. Setup the S3/object storage bucket we'll use for the dump:
+
+![wpaas-s3-settings](../img/wpaas-s3-settings.png)
+
+5. Run the export:
+
+![wpaas-export-s3](../img/wpaas-export-s3.png)
+
