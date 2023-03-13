@@ -4,7 +4,7 @@ A full dev|ops local environment on the cloud.
 
 Yet another "_gitpod like environment_" with the real tools you're using locally everyday. 
 
-It embed our everyday tools and CLI like docker, docker-compose, k3d, k9s, kubectl, kubeseal, terraform, terragrunt, node, python, ansible, lt, gcloud, jq, yq and you'll be able to add more tools in your instance using the apt command directly on the terminal.
+It embed our everyday tools and CLI like docker, docker-compose, k3d, k9s, kubectl, kubeseal, terraform, terragrunt, node, python, ansible, lt, gcloud, jq, yq, etc. You can add more tools in your instance using the apt command directly on the terminal.
 
 You also get a complete access to the compute instance hosting this web IDE, like it's your own one.
 
