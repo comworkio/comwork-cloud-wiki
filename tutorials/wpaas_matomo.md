@@ -48,7 +48,7 @@ rm -rf .htpasswd.tmp
 
 ### On the old instance to move
 
-1. Create a bucket on cwcloud and keep the endpoint, access key, secret key
+1. Create a bucket on cwcloud and keep the endpoint, region, access key and secret key.
 
 If you're in the SaaS version, ask for [object storage access](../storage.md).
 
