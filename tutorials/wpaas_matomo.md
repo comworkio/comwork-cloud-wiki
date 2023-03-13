@@ -43,3 +43,33 @@ htpasswd -c .htpasswd.tmp admin
 cat .htpasswd.tmp | cut -d ":" -f2 # copy the output as passwd
 rm -rf .htpasswd.tmp
 ```
+
+## Migrate an existing Wordpress to cwcloud WPaaS
+
+### On the old instance to move
+
+1. Create a bucket on cwcloud and keep the endpoint, access key, secret key
+
+If you're in the SaaS version, ask for [object storage access](../storage.md).
+
+You'll find the credentials here:
+
+![wpaas-bucket](../img/wpaas-bucket.png)
+
+2. Search, install and activate the "All in one migration" plugin:
+
+![wpaas-all-in-one-plugin](../img/wpaas-all-in-one-plugin.png)
+
+3. Upload, install and activate the following extensions:
+
+* `all-in-one-wp-migration-unlimited-extension.zip`
+* `all-in-one-wp-migration-s3-client-extension.zip`
+
+This way:
+
+![wpaas-all-in-one-exts](../img/wpaas-all-in-one-exts.png)
+
+Those two extensions have to be purchased [here](https://servmask.com/).
+
+If you're in a development contract with [comwork.io](https://www.comwork.io), we have the ability to use our own purchased one with our customers.
+
