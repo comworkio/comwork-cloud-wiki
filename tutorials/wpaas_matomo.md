@@ -104,3 +104,18 @@ On the new instance you just created:
 5. Configure the daily backup:
 
 ![wpaas-daily-backup](../img/wpaas-daily-backup.png)
+
+### Re-init a corrupted wordpress instance
+
+You have to be sure that there is backups on the object storage.
+
+Then, go on the instance with SSH or portainer and remove the containers and volumes:
+
+```shell
+docker rm -f wp_app wp_db
+docker volume rm root_db_data root_wordpress_data
+```
+
+Then, redeploy with the gitlab-ci pipeline which will run the ansible playbook.
+
+Then, restore the most recent backup using the previous procedure.
