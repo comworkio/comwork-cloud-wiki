@@ -85,3 +85,22 @@ Upgrade those plugins if necessary:
 
 ![wpaas-export-s3](../img/wpaas-export-s3.png)
 
+### On the new instance
+
+On the new instance you just created: 
+
+1. Install the same plugins and extensions
+
+2. Configure the same object/storage bucket
+
+3. Run the import:
+
+![wpaas-import-s3](../img/wpaas-import-s3.png)
+
+4. Choose the most recent backup:
+
+![wpaas-s3-choose-backup](../img/wpaas-s3-choose-backup.png)
+
+5. Configure the daily backup:
+
+![wpaas-daily-backup](../img/wpaas-daily-backup.png)
