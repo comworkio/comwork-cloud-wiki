@@ -2,7 +2,7 @@
 
 Here's the documentation of [comwork cloud console](https://cloud.comwork.io) and [API](https://cloud-api.comwork.io).
 
-"_CwCloud_" (for _Comwork Cloud_) is a platform that allows us to accelerate the infrastructure provisioning and managed service such as [serverless FaaS engine](./serverless.md), [Advanced web IDE](./code.md), [DBaaS](./dbaas.md)[^1], [WPaaS](./wpaas.md)[^2] or any other application you want to deploy as a managed service.
+"_CwCloud_" (for _Comwork Cloud_) is a platform that allows us to speed up the provisioning of the infrastructure and managed service such as [serverless FaaS engine](./serverless.md), [Advanced web IDE](./code.md), [DBaaS](./dbaas.md)[^1], [WPaaS](./wpaas.md)[^2], or any other application you want to deploy as a managed service.
 
 ![cloud_bg](./img/cloud_bg.png)
 
