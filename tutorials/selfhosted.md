@@ -406,7 +406,7 @@ You will have a three step process to create the user:
 
 ### Create access and secret keys
 
-Select the created user then click on 'security credentials':
+Select the created user then:
 
 ![aws_access](../img/aws_access.png)
 
@@ -418,7 +418,7 @@ Choose the Command Line Interface option, then write a description (optional). F
 
 ![aws_6](../img/aws_6.png)
 
-Then you can get your access and secret key so that you can write them into these environment variables:
+Then you can get the your access and secret key as well as the default region so that you can write them into those environment variables:
 
 ```shell
 AWS_STRATEGY_ACCESS_KEY_ID="AKIxxxxxxxxxxxxxxxxx"
@@ -437,34 +437,31 @@ Seleck the VPC you want to work with:
 
 ![aws_sebnet1](../img/aws_subnets.png)
 
-You can find the subnet ID for each availability zone (a, b, c,...):
+Select the wanted VPC. You can find the subnet ID for each availability zone (a, b, c,...):
 
 ![aws_subnet2](../img/aws_vpc_hierarchy.png)
 
 You choose the subnet IDs accordingly to each availability zone. You can write the subnet ID in the cloud environments yaml file: 
 
 ```shell
-- region: xx-xxxx-x
-        zones:
-          - name: "x"
-            subnet: subnet-048XXXXXXXXXXXXXX
-            sg: sg-0266XXXXXXXXXXXXX    
+zones:
+  - name: "availability_zone"
+    subnet: subnet-048XXXXXXXXXXXXXX
 ```
 
 ### Get security group ID
 
-In the left sidebar, choose Security Groups: 
+In the left side-bar, choose Security Groups: 
 
 ![aws_sg1](../img/aws_sg1.png)
 
 You choose the subnet IDs accordingly to each region and availability zone(a, b, c). You can write the security group ID in the cloud environments yaml file: 
 
 ```shell
-- region: xx-xxxx-x
-        zones:
-          - name: "x"
-            subnet: subnet-048XXXXXXXXXXXXXX
-            sg: sg-0266XXXXXXXXXXXXX    
+zones:
+  - name: "availability_zone"
+    subnet: sg-026XXXXXXXXXXXXXX
+    sg: sg-0266XXXXXXXXXXXXX
 ```
 
 ![aws_9_sg_list2](../img/aws_9_sg_list2.png)
