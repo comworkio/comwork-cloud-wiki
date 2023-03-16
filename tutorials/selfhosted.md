@@ -359,12 +359,6 @@ We simply have to buy a new domain name which will be dynamically managed by CwC
 
 Once we created the first instance which will host CwCloud with a public IP, we'll have to add a DNS `A` record with this public IP, i.e: `cwcloud.xxxxx.com`.
 
-## Console tutorials
-
-You might use the console as an administrator if you're getting your own on premises instance.
-
-You'll find all the tutorials you need for administrating the console [here](./console/admin/README.md)
-
 ## Configure CwCloud with AWS
 In this section, we'll see how to generate access and secret keys with AWS. Then we will see how to get the subnet ID for each availability zone (a, b, c,...), the security group ID as well as the DNS hosted zone ID.
 
@@ -483,3 +477,9 @@ dns_hosted_zone_id: Z08XXXXXXXXXXXXXXXXB
 ```
 
 ![aws_route53_1](../img/aws_route53_3.png)
+
+## Console tutorials
+
+You might use the console as an administrator if you're getting your own on premises instance.
+
+You'll find all the tutorials you need for administrating the console [here](./console/admin/README.md)

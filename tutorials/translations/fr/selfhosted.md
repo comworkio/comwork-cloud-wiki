@@ -361,12 +361,6 @@ Il faut tout simplement acheter un nom de domaine qui sera dynamiquement géré 
 
 Après avoir crée la première instance qui va héberger CwCloud avec une IP publique, il faudra ajouter un champs `A` vers cette IP publique avec un sous-domaine tel que `cwcloud.xxxxx.com`.
 
-## Tutoriel administration
-
-Vous aurez surement besoin d'utiliser des fonctionnalité administrateurs si vous avez votre propre instance hébergée de CwCloud.
-
-Vous trouverez toutes les ressources pour administrer via la console [ici](./console/admin/README.md)
-
 ## Configurer CwCloud avec AWS
 
 Dans cette section, nous verrons comment générer des clés d'accès et des clés secrètes avec AWS. Ensuite, nous verrons comment obtenir l'ID de sous-réseau pour chaque zone de disponibilité (a, b, c,...), l'ID du groupe de sécurité ainsi que l'ID de la zone DNS hébergée.
@@ -488,3 +482,9 @@ dns_hosted_zone_id: Z08XXXXXXXXXXXXXXXXB
 ```
 
 ![aws_route53_1](../../../img/aws_route53_3.png)
+
+## Tutoriel administration
+
+Vous aurez surement besoin d'utiliser des fonctionnalité administrateurs si vous avez votre propre instance hébergée de CwCloud.
+
+Vous trouverez toutes les ressources pour administrer via la console [ici](./console/admin/README.md)
