@@ -3,17 +3,19 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../selfhosted.md)
+
+- [English 🇬🇧](../../selfhosted.md)
 
 ## Accéder à nos images
 
 Pour accéder à nos images, vous devrez d'abord demander à l'équipe de CwCloud.
 
 Vous pouvez le faire via :
-* Le [système de support](./console/public/support.md)
-* L'email `cloud@comwork.io`
-* Notre [workspace Slack](https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ) (salon `#selfhosted`)
-* Notre [serveur Discord](https://discord.gg/CXskxxPauz) (salon `#selfhosted`)
+
+- Le [système de support](./console/public/support.md)
+- L'email `cloud@comwork.io`
+- Notre [workspace Slack](https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ) (salon `#selfhosted`)
+- Notre [serveur Discord](https://discord.gg/CXskxxPauz) (salon `#selfhosted`)
 
 ## En utilisant ansible
 
@@ -26,13 +28,13 @@ Attention: cet exemple ne va fonctionner que pour OVHCloud.
 Voici un exemple de fichier docker-compose :
 
 ```yaml
-version: '3.3'
+version: "3.3"
 services:
   comwork_cloud_ui:
     restart: always
     container_name: comwork_cloud_ui
     image: rg.fr-par.scw.cloud/comworkio/comwork_cloud_ui:main-79b0cf2e
-    env_file: 
+    env_file:
       - .env.webapp
     networks:
       - cloud_ui
@@ -47,11 +49,11 @@ services:
       - cloud_environments.yml:/app/cloud_environments.yml:ro
     networks:
       - cloud_api
-    env_file: 
+    env_file:
       - .env.api
     ports:
       - "5000:5000"
-  
+
   comwork_cloud_cache:
     image: redis:6.2.6
     restart: always
@@ -65,7 +67,7 @@ services:
     restart: always
     networks:
       - cloud_api
-    env_file: 
+    env_file:
       - .env.db
     # WARN: to enable to keep the postgresql data persistents
     # volumes:
@@ -177,21 +179,21 @@ Le fichier `cloud_environments.yml` :
 name: cloud environments configuration
 description: cloud environments configuration
 
-providers: 
+providers:
   - name: ovh
     strategy: OpenStackStrategy
     regions:
-     - name: UK1 
+     - name: UK1
        zones: ['nova']
-     - name: DE1 
+     - name: DE1
        zones: ['nova']
-     - name: GRA11 
+     - name: GRA11
        zones: ['nova']
-     - name: SBG5 
+     - name: SBG5
        zones: ['nova']
-     - name: WAW1 
+     - name: WAW1
        zones: ['nova']
-     - name: BHS5 
+     - name: BHS5
        zones: ['nova']
     instance_types: ['d2-2', 'd2-4', 'd2-8', 'b2-15']
     bucket_types: ['public-read', 'private']
@@ -245,7 +247,7 @@ providers:
 # If you're using scaleway DNS service, you can add zones here
 dns_zones: []
 
-images: 
+images:
    - UK1-nova: bbc039ad-1b1c-490c-9aef-a13ce802db5f
    - DE1-nova: 05181328-d576-455d-8111-47195374daf0
    - BHS5-nova: 7608ec06-8953-4a05-836e-190508fa6464
@@ -253,7 +255,7 @@ images:
    - GRA11-nova: e9e315cd-9760-4982-81ce-79c04cdb2810
    - SBG5-nova: d357b913-e2a6-4b7e-9dac-0acd0d4acf5b
 
-environments: 
+environments:
   - environment: code
     extra_subdomains: []
   - environment: faasd
@@ -332,8 +334,8 @@ Pour créer un token, aller sur : https://www.ovh.com/auth/api/createToken
 
 Faire attention aux détails suivants :
 
-* Il faut mettre un caractère `*` en face de chaque verbe HTTP (GET/PUT/POST/DELETE). Cliquer sur `+` s'il manque ces verbe http pour les ajouter un par un
-* _Unlimited_ pour la durée
+- Il faut mettre un caractère `*` en face de chaque verbe HTTP (GET/PUT/POST/DELETE). Cliquer sur `+` s'il manque ces verbe http pour les ajouter un par un
+- _Unlimited_ pour la durée
 
 Comme sur cette capture :
 
@@ -353,7 +355,7 @@ OVH_CONSUMER_KEY="c4XXXXXXXXXX90a"
 
 ### Créer une zone DNS
 
-Il faut tout simplement acheter un nom de domaine qui sera dynamiquement géré par CwCloud et dont les zones DNS __ne doivent pas être gérées par un autre service ou processus__.
+Il faut tout simplement acheter un nom de domaine qui sera dynamiquement géré par CwCloud et dont les zones DNS **ne doivent pas être gérées par un autre service ou processus**.
 
 ![ovh_dns_zone](../../../img/ovh_dns_zone.png)
 
@@ -364,3 +366,125 @@ Après avoir crée la première instance qui va héberger CwCloud avec une IP pu
 Vous aurez surement besoin d'utiliser des fonctionnalité administrateurs si vous avez votre propre instance hébergée de CwCloud.
 
 Vous trouverez toutes les ressources pour administrer via la console [ici](./console/admin/README.md)
+
+## Configurer CwCloud avec AWS
+
+Dans cette section, nous verrons comment générer des clés d'accès et des clés secrètes avec AWS. Ensuite, nous verrons comment obtenir l'ID de sous-réseau pour chaque zone de disponibilité (a, b, c,...), l'ID du groupe de sécurité ainsi que l'ID de la zone DNS hébergée.
+
+### Choisir une région
+
+Sur la droite de la page d'accueil de la console, vous pouvez trouver une liste de toutes les régions activées dans votre compte. Choisissez la région la plus proche de votre lieu de travail :
+
+Vous pouvez écrire la valeur de la région dans cette variable d'environnement :
+
+```shell
+AWS_STRATEGY_DEFAULT_REGION="xx-xxxx-x"
+```
+
+![aws_1](../../../img/aws_regions5.png)
+
+### Créer un utilisateur
+
+Nous devons d'abord créer un utilisateur à partir duquel nous générons les clés. Rechercher IAM :
+
+![aws_1](../../../img/aws_1.png)
+
+Cliquez sur Users: 
+
+![aws_2](../../../img/aws_users.png)
+
+![aws_2](../../../img/aws_adduser.png)
+
+Vous devez suivre un processus de trois étapes:
+
+1. Écrivez le nom de l'utilisateur
+
+2. Définissez ses autorisations
+
+![aws_4](../../../img/aws_4.png)
+
+3. Enfin créer l'utilisateur.
+
+![aws_rcreate_user](../../../img/aws_rcreate_user.png)
+
+### Créer les clés d'accés et les clés secrets
+
+Sélectionnez l'utilisateur créé puis cliquez sur "identifiants de sécurité" :
+
+![aws_access](../../../img/aws_access.png)
+
+On descend dans la page de l'utilisateur selectionné :
+
+![aws_5](../../../img/aws_5.png)
+
+Choisissez l'option Interface de ligne de commande (CLI), puis rédigez une description (facultatif). Enfin, créez la clé.
+
+![aws_6](../../../img/aws_6.png)
+
+Ensuite, vous pouvez obtenir votre clé d'accès et votre clé secrète afin de pouvoir les écrire dans ces variables d'environnement :
+
+```shell
+AWS_STRATEGY_ACCESS_KEY_ID="AKIxxxxxxxxxxxxxxxxx"
+AWS_STRATEGY_SECRET_ACCESS_KEY="qvXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+```
+
+![aws_7](../../../img/aws_7.png)
+
+### Obtenir l'ID du sous-réseau
+
+Tapez VPC dans la barre de recherche :
+
+![aws_8](../../../img/aws_8_vpc.png)
+
+Selectionnez le VPC que vous voulez utiliser :
+
+![aws_sebnet1](../../../img/aws_subnets.png)
+
+Vous pouvez trouver l'ID de sous-réseau pour chaque zone de disponibilité (a, b, c...) :
+
+![aws_subnet2](../../../img/aws_vpc_hierarchy.png)
+
+Vous choisissez les ID de sous-réseau en fonction de chaque zone de disponibilité. Vous pouvez écrire l'ID de sous-réseau dans le fichier yaml des environnements cloud :
+
+```shell
+- region: xx-xxxx-x
+        zones:
+          - name: "x"
+            subnet: subnet-048XXXXXXXXXXXXXX
+```
+
+### Obtenir l'ID du groupe de securité
+
+Dans la barre latérale gauche, choisissez Groupes de sécurité :
+
+![aws_sg1](../../../img/aws_sg1.png)
+
+Vous choisissez les ID de sous-réseau en fonction de chaque région et zone de disponibilité (a, b, c...). Vous pouvez écrire l'ID du groupe de sécurité dans le fichier yaml des environnements cloud :
+
+![aws_9_sg_list2](../../../img/aws_9_sg_list2.png)
+
+```shell
+- region: xx-xxxx-x
+        zones:
+          - name: "x"
+            subnet: subnet-048XXXXXXXXXXXXXX
+            sg: sg-0266XXXXXXXXXXXXX    
+```
+
+### Obtenir l'ID de la zone DNS hebergée
+
+Chercher "Route53" :
+
+![aws_route53_1](../../../img/aws_route53_1.png)
+
+Vous devez acheter un domaine afin d'obtenir automatiquement une zone hébergée :
+
+![aws_route53_1](../../../img/aws_route53_2.png)
+
+Vous pouvez écrire l'ID de la zone DNS hébergée du fichier yaml des environnements cloud :
+
+```shell
+dns_hosted_zone_id: Z08XXXXXXXXXXXXXXXXB 
+```
+
+![aws_route53_1](../../../img/aws_route53_3.png)
