@@ -394,13 +394,13 @@ Select Users:
 
 You will have a three step process to create the user:
 
-1- Write user's name.
+1. Write user's name.
 
-2- Set his permissions.
+2. Set his permissions.
 
 ![aws_4](../img/aws_4.png)
 
-3- Then create.
+3. Then create.
 
 ![aws_rcreate_user](../img/aws_rcreate_user.png)
 
@@ -437,7 +437,7 @@ Seleck the VPC you want to work with:
 
 ![aws_sebnet1](../img/aws_subnets.png)
 
-Select the wanted VPC. You can find the subnet ID for each availability zone (a, b, c,...):
+Select the wanted VPC. You can find the subnet ID for each availability zone (a, b, c, etc.)
 
 ![aws_subnet2](../img/aws_vpc_hierarchy.png)
 
@@ -476,10 +476,10 @@ You should buy a Domain so that you can get a Hosted Zone automatically.
 
 ![aws_route53_1](../img/aws_route53_2.png)
 
-You can write the hosted zone ID in the cloud environments yaml file: 
+You can write the hosted zone ID in the cloud environments yaml file:
 
 ```shell
-dns_hosted_zone_id: Z08XXXXXXXXXXXXXXXXB 
+dns_hosted_zone_id: Z08XXXXXXXXXXXXXXXXB
 ```
 
 ![aws_route53_1](../img/aws_route53_3.png)

@@ -368,6 +368,7 @@ Vous aurez surement besoin d'utiliser des fonctionnalité administrateurs si vou
 Vous trouverez toutes les ressources pour administrer via la console [ici](./console/admin/README.md)
 
 ## Configurer CwCloud avec AWS
+
 Dans cette section, nous verrons comment générer des clés d'accès et des clés secrètes avec AWS. Ensuite, nous verrons comment obtenir l'ID de sous-réseau pour chaque zone de disponibilité (a, b, c,...), l'ID du groupe de sécurité ainsi que l'ID de la zone DNS hébergée.
 
 ### Choisir une région
@@ -396,19 +397,19 @@ Cliquez sur Users:
 
 Vous devez suivre un processus de trois étapes:
 
-1- Écrivez le nom de l'utilisateur.
+1. Écrivez le nom de l'utilisateur
 
-2- Définissez ses autorisations.
+2. Définissez ses autorisations
 
 ![aws_4](../../../img/aws_4.png)
 
-3- Enfin créer l'utilisateur.
+3. Enfin créer l'utilisateur.
 
 ![aws_rcreate_user](../../../img/aws_rcreate_user.png)
 
 ### Créer les clés d'accés et les clés secrets
 
-Sélectionnez l'utilisateur créé puis cliquez sur 'identifiants de sécurité':
+Sélectionnez l'utilisateur créé puis cliquez sur "identifiants de sécurité" :
 
 ![aws_access](../../../img/aws_access.png)
 
@@ -431,15 +432,15 @@ AWS_STRATEGY_SECRET_ACCESS_KEY="qvXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 ### Obtenir l'ID du sous-réseau
 
-Tapez VPC dans la barre de recherche:
+Tapez VPC dans la barre de recherche :
 
 ![aws_8](../../../img/aws_8_vpc.png)
 
-Selectionnez le VPC que vous voulez utiliser:
+Selectionnez le VPC que vous voulez utiliser :
 
 ![aws_sebnet1](../../../img/aws_subnets.png)
 
-Vous pouvez trouver l'ID de sous-réseau pour chaque zone de disponibilité (a, b, c,...) :
+Vous pouvez trouver l'ID de sous-réseau pour chaque zone de disponibilité (a, b, c...) :
 
 ![aws_subnet2](../../../img/aws_vpc_hierarchy.png)
 
@@ -458,7 +459,7 @@ Dans la barre latérale gauche, choisissez Groupes de sécurité :
 
 ![aws_sg1](../../../img/aws_sg1.png)
 
-Vous choisissez les ID de sous-réseau en fonction de chaque région et zone de disponibilité (a, b, c,...). Vous pouvez écrire l'ID du groupe de sécurité dans le fichier yaml des environnements cloud :
+Vous choisissez les ID de sous-réseau en fonction de chaque région et zone de disponibilité (a, b, c...). Vous pouvez écrire l'ID du groupe de sécurité dans le fichier yaml des environnements cloud :
 
 ![aws_9_sg_list2](../../../img/aws_9_sg_list2.png)
 
@@ -470,20 +471,20 @@ Vous choisissez les ID de sous-réseau en fonction de chaque région et zone de 
             sg: sg-0266XXXXXXXXXXXXX    
 ```
 
-### Obtenir l'ID de la zone DNS hebergée.
+### Obtenir l'ID de la zone DNS hebergée
 
-Cherchez Route53:
+Chercher "Route53" :
 
 ![aws_route53_1](../../../img/aws_route53_1.png)
 
-Vous devez acheter un domaine afin d'obtenir automatiquement une zone hébergée.
+Vous devez acheter un domaine afin d'obtenir automatiquement une zone hébergée :
 
 ![aws_route53_1](../../../img/aws_route53_2.png)
 
-Vous pouvez écrire l'ID de la zone DNS hébergée du fichier yaml des environnements cloud:
+Vous pouvez écrire l'ID de la zone DNS hébergée du fichier yaml des environnements cloud :
 
 ```shell
 dns_hosted_zone_id: Z08XXXXXXXXXXXXXXXXB 
 ```
 
- ![aws_route53_1](../../../img/aws_route53_3.png)
+![aws_route53_1](../../../img/aws_route53_3.png)
