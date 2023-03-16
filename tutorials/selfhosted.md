@@ -381,6 +381,7 @@ AWS_STRATEGY_DEFAULT_REGION="xx-xxxx-x"
 ![aws_1](../img/aws_regions5.png)
 
 ### Create a user
+
 We first have to create a user from which we generate access and secret keys. Search for IAM:
 
 ![aws_1](../img/aws_1.png)
@@ -390,7 +391,6 @@ Select Users:
 ![aws_2](../img/aws_users.png)
 
 ![aws_2](../img/aws_adduser.png)
-
 
 You will have a three step process to create the user:
 
@@ -432,7 +432,6 @@ AWS_STRATEGY_SECRET_ACCESS_KEY="qvXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 Search for VPC:
 
 ![aws_8](../img/aws_8_vpc.png)
-
 
 ![aws_sebnet1](../img/aws_subnets.png)
 
