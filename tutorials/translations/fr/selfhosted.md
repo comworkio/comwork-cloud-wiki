@@ -480,10 +480,10 @@ Vous devez acheter un domaine afin d'obtenir automatiquement une zone hébergée
 
 ![aws_route53_1](../../../img/aws_route53_2.png)
 
-Vous pouvez écrire l'ID de la zone DNS hébergée dans le fichier yaml des environnements cloud:
+Vous pouvez écrire l'ID de la zone DNS hébergée du fichier yaml des environnements cloud:
 
 ```shell
 dns_hosted_zone_id: Z08XXXXXXXXXXXXXXXXB 
 ```
 
-![aws_route53_1](../../../img/aws_route53_3.png)
+ ![aws_route53_1](../../../img/aws_route53_3.png)
