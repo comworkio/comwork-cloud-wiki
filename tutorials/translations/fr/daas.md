@@ -19,4 +19,4 @@ _DaaS_ for _Deployment as a service_ est un compromis entre l'_IaaS_ et le _PaaS
 
 Vous trouverez de nombreux exemples qui illustrent cette définition dans cette playliste de démos :
 
-[![demo_playlist](../img/demo_1.png)](https://youtube.com/playlist?list=PLVa_2sL_l0msxUnmaSpLAGlwOxizXWjht)
+[![demo_playlist](../../../img/demo_1.png)](https://youtube.com/playlist?list=PLVa_2sL_l0msxUnmaSpLAGlwOxizXWjht)
