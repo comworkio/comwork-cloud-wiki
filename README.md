@@ -13,8 +13,8 @@ There is a SaaS version which provide instances that are hosted on [Scaleway](ht
 There is also a way to deploy a [self-hosted version of CwCloud](./tutorials/selfhosted.md) with your own prefered cloud provider and account. The self-hosted version is also compatible with [AWS](https://aws.amazon.com).
 
 [^1]: _Databases as a service_
-[^2]: _wordpress as a service_
-[^3]: _infrastructure as code_
+[^2]: _Wordpress as a service_
+[^3]: _Infrastructure as code_
 
 ## Links
 
