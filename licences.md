@@ -6,3 +6,4 @@
   * The UK flag is from [commons.wikimedia.org](https://commons.wikimedia.org/wiki/File:United-kingdom_flag_icon_round.svg) from the author [Freepick](https://www.freepik.com) and under the [cc by](https://creativecommons.org/licenses/by/4.0/deed.en) licence
   * The Canada's flag is from [commons.wikimedia.org](https://commons.wikimedia.org/wiki/File:Flag_of_Canada_(leaf).svg) from the author Benoit Rochon
   * The EU flag is from [fr.wikipedia.org](https://fr.wikipedia.org/wiki/Fichier:Europe_flag_circle.png) from the author [Tommaso.sansone91](https://commons.wikimedia.org/wiki/User:Tommaso.sansone91) and under the [cc by-sa](https://creativecommons.org/licenses/by-sa/4.0/deed.en) licence.
+* The US flag is from [commons.wikimedia.org](https://commons.wikimedia.org/wiki/File:United-states_flag_icon_round.svg) under the [cc 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) licence
