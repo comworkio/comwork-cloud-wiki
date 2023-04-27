@@ -16,6 +16,13 @@ ssh_users:
       - {your public key}
 ```
 
+For those who are using PuTTy on Windows, the public key must be exported in the OpenSSH format like that:
+
+```shell
+ssh-keygen -i -f public_putty.pub > id_rsa.pub
+cat id_rsa.pub
+```
+
 Then, `git commit` and `git push` and wait for the end of the pipeline. You'll be able to connect with ssh:
 
 ```shell
