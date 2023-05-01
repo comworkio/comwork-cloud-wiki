@@ -264,3 +264,12 @@ cwc registry update --registry <registry_id> --transfer <receiver_email>
 cwc admin registry delete -r <registry_id>
 cwc admin registry delete --registry <registry_id>
 ```
+
+## Emails
+
+### Send email
+
+```shell
+cwc admin email -f from@provider.com -t to@provider.com -s subject -c content -m false
+cwc admin email --from from@provider.com --to to@provider.com --subject subject --content content --templated false
+```
