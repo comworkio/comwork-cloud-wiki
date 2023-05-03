@@ -24,7 +24,6 @@ The available providers are the following:
 |scw     |PLAY2-PICO  |1*x86 64 bits |2 Gb   |Block      |100 Mbps|
 |scw     |PLAY2-NANO  |2*x86 64 bits |4 Gb   |Block      |200 Mbps|
 |scw     |PLAY2-MICRO |4*x86 64 bits |8 Gb   |Block      |400 Mbps|
-|ovh     |d2-2        |1*x86 64 bits |2 Gb   |25 Gb NVMe |100 Mbps|
 |ovh     |d2-4        |2*x86 64 bits |4 Gb   |50 Gb NVMe |250 Mbps|
 |ovh     |d2-8        |4*x86 64 bits |8 Gb   |50 Gb NVMe |500 Mbps|
 |ovh     |b2-15       |4*x86 64 bits |15 Gb  |100 Gb NVMe|250 Mbps|
@@ -61,7 +60,7 @@ The available providers are the following:
 | b2-15       | ovh      | 0.1290 €      | 0.219 €  | 0.263 €        | 195.791 €       |
 
 
-*Updated the 2023-04-23*
+*Updated the 2023-05-03*
 
 ### Details
 
