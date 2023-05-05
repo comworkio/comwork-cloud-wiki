@@ -12,7 +12,7 @@ You'll find all the details about the sizing and pricing model [here](./sizing_p
 
 ## How the secured payment is working?
 
-The bill are monthly issued, you can find how to download and pay those bills with [this tutorial](./tutorials/console/public/billing.md).
+The bill are monthly issued and must be paid within a time frame of 48h, you can find how to download and pay those bills with [this tutorial](./tutorials/console/public/billing.md).
 
 The billing system is using [stripe](https://www.stripe.com) for secured payments.
 
