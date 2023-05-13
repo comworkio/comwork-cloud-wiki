@@ -6,6 +6,12 @@ Those are the terms of services for the [SaaS version of CwCloud](https://cloud.
 
 This instance is hosted in France by [COMWORKIO SASU](https://www.comwork.io) (R.C.S Paris 838 757 987) on [Scaleway](https://www.scaleway.com).
 
+## For which customers is this service provided?
+
+This instance is available for everyone who are able to buy online in euros. For the EU citizens, the French VAT is applied (20%).
+
+For the Tunisian-based customers who only can use TND currency online, there's also a Tunisian-based instance with a Tunisian company behind with the same services available [here](https://cwcloud.tn) and with these [terms of service](https://doc.cwcloud.tn/docs/terms).
+
 ## What is the pricing model?
 
 You'll find all the details about the sizing and pricing model [here](./sizing_pricing.md).
