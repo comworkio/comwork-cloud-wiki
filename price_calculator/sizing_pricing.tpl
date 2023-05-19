@@ -56,16 +56,18 @@ V_ARRAY_PRICING
 |------|-------|-------|
 |Additional costs|Network, comwork api cost...|1,7    |
 |Max number hours per months|24 hours * 31 days (max)|744    |
-|VAT   |20% French VAT|1,2    |
+|VAT   |20% French VAT[^1]|1,2    |
 
 ## Additional services
 
 Here's non-mandatory services we can provide:
 
-* Email services: our email API that ensuire 40 000 mails / month for 15 euros / months[^1]. This API is based on [sendgrid.com](https://www.sendgrid.com), we can give you an http endpoint or a SMTP connection.
-
-[^1]: for the customers based in EU, a French VAT of 20% will be applied.
+* Email services: our email API that ensuire 40 000 mails / month for 15 euros / months[^2]. This API is based on [sendgrid.com](https://www.sendgrid.com), we can give you an http endpoint or a SMTP connection.
+* Backups on object storage: for now it's free if you have at least one instance with a database (one bucket per database)
 
 ## Contact / subscription
 
 Follow [this procedure](./subscription.md)
+
+[^1]: for the customers based in EU, if it's not the case, you can reduce the estimmation by 20%. 
+[^2]: for the customers based in EU, a French VAT of 20% will be applied.
