@@ -58,6 +58,14 @@ V_ARRAY_PRICING
 |Max number hours per months|24 hours * 31 days (max)|744    |
 |VAT   |20% French VAT|1,2    |
 
+## Additional services
+
+Here's non-mandatory services we can provide:
+
+* Email services: our email API that ensuire 40 000 mails / month for 15 euros[^1] / months. This API is based on [sendgrid.com](https://www.sendgrid.com), we can give you an http endpoint or a SMTP connection.
+
+[^1]: for the UE countries, a French VAT of 20% will be applied.
+
 ## Contact / subscription
 
 Follow [this procedure](./subscription.md)
