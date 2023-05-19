@@ -74,9 +74,9 @@ The available providers are the following:
 
 Here's non-mandatory services we can provide:
 
-* Email services: our email API that ensuire 40 000 mails / month for 15 euros[^1] / months. This API is based on [sendgrid.com](https://www.sendgrid.com), we can give you an http endpoint or a SMTP connection.
+* Email services: our email API that ensuire 40 000 mails / month for 15 euros / months[^1]. This API is based on [sendgrid.com](https://www.sendgrid.com), we can give you an http endpoint or a SMTP connection.
 
-[^1]: for the UE countries, a French VAT of 20% will be applied.
+[^1]: for the customers based in EU, a French VAT of 20% will be applied.
 
 ## Contact / subscription
 
