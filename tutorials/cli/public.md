@@ -40,6 +40,8 @@ Then store the access and secret key somewhere safe because you won't be able to
 cwc login -a <access_key> -s <secret_key>
 ```
 
+In order to get the access and secret key, you can checkout [this tutorial](../api/api_credentials.md).
+
 ## Default configurations
 
 ### Read the current configurations
