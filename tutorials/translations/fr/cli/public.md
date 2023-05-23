@@ -22,25 +22,13 @@ cwc version # or -v or --version for getting the current version
 
 ## Authentification
 
-### Générer un couple de clef clef d'API
-
-Aller sur le menu utilisateur et cliquez sur "Sécurité" (ou "Credentials" dans la version Anglaise) :
-
-![apikey_1](../../../../img/apikey_1.png)
-
-Ensuite sur "Generate API key" :
-
-![apikey_2](../../../../img/apikey_2.png)
-
-Enfin n'oubliez pas de conserver l'access key et secret key en lieu sûr car vous ne serez pas en mesure de les retrouver :
-
-![apikey_3](../../../../img/apikey_3.png)
-
 ### Login
 
 ```shell
 cwc login -a <access_key> -s <secret_key>
 ```
+
+Pour créer un couple `access_key` et `secret_key`, voir [ce tutoriel](../api/api_credentials.md).
 
 ## Configuration par défaut
 

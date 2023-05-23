@@ -20,27 +20,13 @@ cwc version # or -v or --version for getting the current version
 
 ## Authentication
 
-### Generating an API access and secret key
-
-Go on your settings using the web console and click on "Credentials":
-
-![apikey_1](../../img/apikey_1.png)
-
-Then click on "Generate API key":
-
-![apikey_2](../../img/apikey_2.png)
-
-Then store the access and secret key somewhere safe because you won't be able to see it anymore:
-
-![apikey_3](../../img/apikey_3.png)
-
 ### Login
 
 ```shell
 cwc login -a <access_key> -s <secret_key>
 ```
 
-In order to get the access and secret key, you can checkout [this tutorial](../api/api_credentials.md).
+In order to create the `access_key` and the `secret_key`, you can checkout [this tutorial](../api/api_credentials.md).
 
 ## Default configurations
 
