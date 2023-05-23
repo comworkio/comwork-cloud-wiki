@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../translations/fr/wpaas_matomo.md)
+* [Français 🇫🇷](./translations/fr/wpaas_matomo.md)
 
 ## Video tutorial
 
