@@ -60,7 +60,7 @@ The available providers are the following:
 | b2-15       | ovh      | 0.1290 €      | 0.219 €  | 0.263 €        | 195.791 €       |
 
 
-*Updated the 2023-05-19*
+*Updated the 2023-05-23*
 
 ### Details
 
@@ -74,7 +74,7 @@ The available providers are the following:
 
 Here's non-mandatory services we can provide:
 
-* Email services: our email API that ensuire 40 000 mails / month for 15 euros / months[^2]. This API is based on [sendgrid.com](https://www.sendgrid.com), we can give you an http endpoint or a SMTP connection.
+* Email services: our email API that ensuire 10 000 mails / month for 5 euros / months[^2]. This API is based on [sendgrid.com](https://www.sendgrid.com), we can give you an http endpoint or a SMTP connection.
 * Backups on object storage: for now it's free if you have at least one instance with a database (one bucket per database)
 
 ## Contact / subscription
