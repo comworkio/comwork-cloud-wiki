@@ -11,7 +11,7 @@ Il existe une API Restful que vous pouvez directement utiliser ici: https://clou
 
 Cette API est celle qui est utilisée par la [console web](../console/README.md), la ligne de commande [`cwc`](../cli/README.md) (et dans le futur, le provider terraform). Il s'agit d'une API développée en Python Flask qui utilise les paquets Pulumi de [Scaleway](https://www.pulumi.com/registry/packages/scaleway/) et [OpenStack](https://www.pulumi.com/registry/packages/openstack/). L'état (fichiers `.tfstate`) pulumi sont persistés dans l'object storage de Scaleway.
 
-Vous trouverez la documentation des webservices [ici](../../../../tutorials/api/restful_api.md).
+Vous trouverez la documentation des webservices [ici](../../../../tutorials/api/restful_api.md) et comment vous authentifier à cette API [ici](./api_credentials.md).
 
 Ou bien vous pouvez directement vous rendre sur la documentation Swagger [ici](https://cloud-api.comwork.io).
 
