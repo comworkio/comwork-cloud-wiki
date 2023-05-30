@@ -1,8 +1,17 @@
 # Comwork AI
 
+## Translations
+
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](./translations/fr/cwai.md)
+
 ## Purpose
 
-This feature aims to expose AI models such as LLM to be exposed as an API based on this [open source project](https://gitlab.comwork.io/oss/cwai/cwai-api).
+This feature aims to expose AI[^1] models such as NLP[^2] or LLM[^3] to be exposed as an API based on this [open source project](https://gitlab.comwork.io/oss/cwai/cwai-api).
+
+[^1]: _Artificial intelligence_
+[^2]: _Natural language processing_
+[^3]: _Large language model_
 
 ## Enabling this API
 
@@ -70,9 +79,9 @@ The answer would be:
 }
 ```
 
-Notes: 
+Notes:
 * you have to replace the `XXXXXX` value with your own token generated with [this procedure](./api/api_credentials.md).
-* you can replace `https://cloud-api.comwork.io` by the API's instance URL you're using. For the Tunisian customers for example, it would be `https://api.cwcloud.tn`.
+* you can replace `https://cloud-api.comwork.io` by the API's instance URL you're using, with the `CWAI_API_URL` environment variable. For the Tunisian customers for example, it would be `https://api.cwcloud.tn`.
 
 ## Driver interface
 
@@ -91,4 +100,4 @@ class ModelDriver(ABC):
 
 Then add your model in the `ENABLED_MODELS` environment variable.
 
-In the future we'll propose a web GUI to upload your own drivers on the web console. In the meantime you can ask comwork via the [support system](./console/public/support.md).
+In the future we'll propose a web GUI to upload your own drivers as a serverless function on the web console. In the meantime you can ask comwork via the [support system](./console/public/support.md).
