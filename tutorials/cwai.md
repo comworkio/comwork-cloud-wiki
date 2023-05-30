@@ -83,6 +83,53 @@ Notes:
 * you have to replace the `XXXXXX` value with your own token generated with [this procedure](./api/api_credentials.md).
 * you can replace `https://cloud-api.comwork.io` by the API's instance URL you're using, with the `CWAI_API_URL` environment variable. For the Tunisian customers for example, it would be `https://api.cwcloud.tn`.
 
+## Use the CLI
+
+You can use the [`cwc` CLI](./cli/README.md) which provide a subcommand `ai`:
+
+```shell
+$ cwc ai
+This command lets you call the CWAI endpoints
+
+Usage:
+  cwc ai
+  cwc ai [command]
+
+Available Commands:
+  models      Get the available models
+  prompt      Send a prompt
+
+Flags:
+  -h, --help   help for ai
+
+Use "cwc ai [command] --help" for more information about a command.
+```
+
+### List the available models
+
+```shell
+$ cwc ai models
+Models
+[gpt2 nlptownsentiment nltksentiment textblobsentiment mock]
+```
+
+### Send a prompt to an available model
+
+```shell
+$ cwc ai prompt
+Error: required flag(s) "message", "model" not set
+Usage:
+  cwc ai prompt [flags]
+
+Flags:
+  -h, --help             help for prompt
+  -m, --message string   The message input
+  -t, --model string     The chosen model
+$ cwc ai prompt --model nltksentiment --message "This is bad"
+Status	Response	Score
+ok	[The predicted sentiment is: negative, score: -0.5423]	-0.5423
+```
+
 ## Driver interface
 
 If you fork the cwai API, you can implement you're own driver that will load and generate answer from models implementing [this abstract](https://gitlab.comwork.io/oss/cwai/cwai-api/-/blob/main/src/drivers/model_driver.py):

@@ -5,7 +5,6 @@
 Ce tutoriel est également disponible dans les langues suivantes :
 * [English 🇬🇧](../../cwai.md)
 
-
 ## Objectif
 
 Cette fonctionalité a pour but d'exposer des modèle d'IA[^1] comme des NLP[^2] ou LLM[^3] afin d'être exposé sous forme d'API basé sur ce [projet open source](https://gitlab.comwork.io/oss/cwai/cwai-api).
@@ -83,6 +82,53 @@ La réponse devrait ressembler à :
 Notes :
 * vous devez remplacer la valeur `XXXXXX` avec votre propre token généré via [cette procédure](./api/api_credentials.md).
 * vous pouvez remplacer l'URL `https://cloud-api.comwork.io` avec celle que vous utilisez dans la variable d'environnement `CWAI_API_URL`. Pour la version tunisienne par exemple, la valeur serait `https://api.cwcloud.tn`.
+
+## Utiliser la CLI
+
+Vous pouvez utiliser la [CLI `cwc`](./cli/README.md) qui propose une commande `ai` :
+
+```shell
+$ cwc ai
+This command lets you call the CWAI endpoints
+
+Usage:
+  cwc ai
+  cwc ai [command]
+
+Available Commands:
+  models      Get the available models
+  prompt      Send a prompt
+
+Flags:
+  -h, --help   help for ai
+
+Use "cwc ai [command] --help" for more information about a command.
+```
+
+### Lister les modèles disponibles
+
+```shell
+$ cwc ai models
+Models
+[gpt2 nlptownsentiment nltksentiment textblobsentiment mock]
+```
+
+### Envoyer un prompt à un des modèles
+
+```shell
+$ cwc ai prompt
+Error: required flag(s) "message", "model" not set
+Usage:
+  cwc ai prompt [flags]
+
+Flags:
+  -h, --help             help for prompt
+  -m, --message string   The message input
+  -t, --model string     The chosen model
+$ cwc ai prompt --model nltksentiment --message "This is bad"
+Status	Response	Score
+ok	[The predicted sentiment is: negative, score: -0.5423]	-0.5423
+```
 
 ## Interface de driver
 
