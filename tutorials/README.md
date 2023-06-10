@@ -17,4 +17,6 @@
 * [Imalive metrics exporter](./imalive.md)
 * [Comwork AI](./cwai.md)
 * [Self-hosted deployment of CwCloud](./selfhosted.md)
+* [email API](./emailapi.md)
+* [cwai API](./cwai.md)
 * [Traductions en Français](./translations/fr/README.md)

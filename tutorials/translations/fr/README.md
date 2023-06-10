@@ -15,3 +15,6 @@
 * [Imalive metrics exporter](./imalive.md)
 * [Connection avec SSH](./ssh.md)
 * [Instances auto-hébergées de CwCloud](./selfhosted.md)
+* [API email](./emailapi.md)
+* [API cwai](./cwai.md)
+
