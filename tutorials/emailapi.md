@@ -5,6 +5,20 @@
 This tutorial is also available in the following languages:
 * [Français 🇫🇷](./translations/fr/emailapi.md)
 
+## Enabling this API
+
+In the SaaS version, you can ask to be granted using the [support system](./console/public/support.md).
+
+If you're admin of the instance, you can grant users like this:
+
+![emailapi_enable](../img/emailapi_enable.png)
+
+## UI form
+
+Once you're enabled, you can try to send emails using this web UI:
+
+![emailapi_form](../img/emailapi_form.png)
+
 ## CMS plugins
 
 ### Wordpress

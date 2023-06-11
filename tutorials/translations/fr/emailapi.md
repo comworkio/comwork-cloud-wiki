@@ -5,6 +5,20 @@
 Ce tutoriel est également disponible dans les langues suivantes :
 * [English 🇬🇧](../../emailapi.md)
 
+## Activer cette API
+
+Dans la version SaaS, vous pouvez demander d'accéder à cette API en utilisant le [système de support](./console/public/support.md).
+
+Si vous êtes administrateur de cette instance, vous pouvez autoriser les utilisateurs comme ceci :
+
+![emailapi_enable](../../../img/emailapi_enable.png)
+
+## Formulaire
+
+Une fois que vous êtes activé, vous pouvez utiliser l'API au travers de cette interface :
+
+![emailapi_form](../../../img/emailapi_form.png)
+
 ## Plugins pour CMS
 
 ### Plugin pour wordpress
