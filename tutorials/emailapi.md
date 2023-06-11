@@ -19,6 +19,33 @@ Once you're enabled, you can try to send emails using this web UI:
 
 ![emailapi_form](../img/emailapi_form.png)
 
+## Use the API
+
+You can use this endpoint in your applications in order to send emails:
+
+![emailapi_endpoint](../img/emailapi_endpoint.png)
+
+Here's how to use this endpoint using `curl`:
+
+```shell
+curl -X 'POST' \
+  'https://cloud-api.comwork.io/v1/email' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'X-Auth-Token: XXXXXX' \
+  -d '{
+    "from": "cloud@provider.com",
+    "to": "recipient@provider.com",
+    "bcc": "bcc@provider.com",
+    "subject": "Subject",
+    "content": "Content"
+  }'
+```
+
+Notes :
+* If you're on the Tunisian version, replace `cloud-api.comwork.io` by `api.cwcloud.tn`
+* You have to replace the value `XXXXXX` with your own token generated with [this procedure](./api/api_credentials.md)
+
 ## CMS plugins
 
 ### Wordpress
