@@ -63,3 +63,25 @@ Generate API credentials. You can see [this tutorial](./api/api_credentials.md)
 And copy paste the secret key here:
 
 ![wpaas_email_ext2](../img/wpaas_email_ext2.png)
+
+### Prestashop
+
+You can use this [plugin](https://gitlab.comwork.io/oss/cwc/cwcloud-prestashop-email):
+
+**1/** Download the right zip extension file (either the `-io` if you're using cloud.comwork.io instance of `-tn` if you're using the cwcloud.tn instance)
+
+![emailapi_ps_plugins](../img/emailapi_ps_plugins.png)
+
+The upload it, you'll be able to see and configure it here:
+
+![emailapi_ps_configure_1](../img/emailapi_ps_configure_1.png)
+
+**2/** Configure the plugin:
+
+Generate API credentials. You can see [this tutorial](./api/api_credentials.md)
+
+And copy paste the secret key here:
+
+![emailapi_ps_configure_2](../img/emailapi_ps_configure_2.png)
+
+You'll have also to choose a default bcc and from email address.
