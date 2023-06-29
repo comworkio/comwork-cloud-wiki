@@ -46,6 +46,33 @@ Notes :
 * Si vous êtes sur la version Tunisienne, remplacer `cloud-api.comwork.io` par `api.cwcloud.tn`
 * Vous devez remplacer la valeur `XXXXXX` avec votre propre token généré via [cette procédure](./api/api_credentials.md)
 
+# Pièces jointes
+
+Il est possible de passer une pièce jointe aux emails avec le bloc optionnel `attachment`:
+
+```shell
+curl -X 'POST' \
+  'https://cloud-api.comwork.io/v1/email' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'X-Auth-Token: XXXXXX' \
+  -d '{
+    "from": "cloud@provider.com",
+    "to": "recipient@provider.com",
+    "bcc": "bcc@provider.com",
+    "subject": "Subject",
+    "content": "Content",
+    "attachment": {
+      "mime_type": "application/pdf",
+      "file_name": "invoice.pdf",
+      "b64": "base64content"
+    }
+  }'
+```
+
+Notes :
+* Vous devrez encoder en base64 le contenu du fichier à envoyer en pièce jointe avant de le mettre dans le champs `b64`. Sous Linux ou mac, vous pouvez utiliser la commande `base64 -i invoice.pdf` et récupérer la sortie.
+
 ## Plugins pour CMS
 
 ### Plugin pour wordpress
