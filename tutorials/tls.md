@@ -1,4 +1,4 @@
-# Handling TLS/SSL certificate
+# Handling TLS/SSL certificates
 
 ## Translations
 
