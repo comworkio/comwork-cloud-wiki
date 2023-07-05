@@ -14,6 +14,7 @@
 * [Databases as a service](./dbaas.md)
 * [Overleaf as a service](./overleaf.md)
 * [Connect with SSH](./ssh.md)
+* [Troubleshooting with TLS/SSL certificates](./tls.md)
 * [Imalive metrics exporter](./imalive.md)
 * [Comwork AI](./cwai.md)
 * [Self-hosted deployment of CwCloud](./selfhosted.md)

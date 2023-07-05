@@ -14,6 +14,7 @@
 * [Overleaf as a service](./overleaf.md)
 * [Imalive metrics exporter](./imalive.md)
 * [Connection avec SSH](./ssh.md)
+* [Gestion des problèmes avec les certificats TLS/SSL](./tls.md)
 * [Instances auto-hébergées de CwCloud](./selfhosted.md)
 * [API email](./emailapi.md)
 * [API cwai](./cwai.md)
