@@ -359,7 +359,14 @@ We simply have to buy a new domain name which will be dynamically managed by CwC
 
 Once we created the first instance which will host CwCloud with a public IP, we'll have to add a DNS `A` record with this public IP, i.e: `cwcloud.xxxxx.com`.
 
+### Golden images with packer and ansible
+
+You'll have to create image that are container git and ansible to accelerate the deployments.
+
+In order to achieve this, follow this repository: https://gitlab.comwork.io/oss/cwc/golden-images-ovh
+
 ## Configure CwCloud with AWS
+
 In this section, we'll see how to generate access and secret keys with AWS. Then we will see how to get the subnet ID for each availability zone (a, b, c,...), the security group ID as well as the DNS hosted zone ID.
 
 ### Choose a region
@@ -375,6 +382,7 @@ AWS_STRATEGY_DEFAULT_REGION="xx-xxxx-x"
 ![aws_1](../img/aws_regions5.png)
 
 ### Create a user
+
 We first have to create a user from which we generate access and secret keys. Search for IAM:
 
 ![aws_1](../img/aws_1.png)

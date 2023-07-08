@@ -361,6 +361,12 @@ Il faut tout simplement acheter un nom de domaine qui sera dynamiquement géré 
 
 Après avoir crée la première instance qui va héberger CwCloud avec une IP publique, il faudra ajouter un champs `A` vers cette IP publique avec un sous-domaine tel que `cwcloud.xxxxx.com`.
 
+### Golden images avec packer et ansible
+
+Vous devrez créer une image qui contient git et ansible pour accélérer les déploiements.
+
+Pour cela, suivez les indications de ce repository : https://gitlab.comwork.io/oss/cwc/golden-images-ovh
+
 ## Configurer CwCloud avec AWS
 
 Dans cette section, nous verrons comment générer des clés d'accès et des clés secrètes avec AWS. Ensuite, nous verrons comment obtenir l'ID de sous-réseau pour chaque zone de disponibilité (a, b, c,...), l'ID du groupe de sécurité ainsi que l'ID de la zone DNS hébergée.
