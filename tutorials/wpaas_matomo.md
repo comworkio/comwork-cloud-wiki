@@ -109,7 +109,7 @@ On the new instance you just created:
 
 You have to be sure that there is backups on the object storage.
 
-Then, go on the instance with SSH or portainer and remove the containers and volumes:
+Then, go on the instance [with SSH](./ssh.md) or portainer and remove the containers and volumes:
 
 ```shell
 docker rm -f wp_app wp_db

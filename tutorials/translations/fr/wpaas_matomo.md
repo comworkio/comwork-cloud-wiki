@@ -107,7 +107,7 @@ Sur la nouvelle instance que vous venez de créer :
 
 Il faut d'abord être sûr qu'il existe des sauvegardes sur l'object storage.
 
-Puis supprimer tout les conteneurs et volumes :
+Puis supprimer tout les conteneurs et volumes [en SSH](./ssh.md) ou via portainer :
 
 ```shell
 docker rm -f wp_app wp_db

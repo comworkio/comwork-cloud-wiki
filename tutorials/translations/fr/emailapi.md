@@ -83,7 +83,7 @@ Vous pouvez télécharger ce [plugin](https://gitlab.comwork.io/oss/cwc/cwcloud-
 
 ![wpaas_email_ext1](../../../img/wpaas_email_ext1.png)
 
-**2/** Congigurer l'extension :
+**2/** Configurer l'extension :
 
 Générer des clefs d'API. Vous pouvez aller voir [ce tutoriel](./api/api_credentials.md)
 
@@ -103,7 +103,7 @@ Ensuite l'uploader, vous pourrez alors la voir et la configurer ici :
 
 ![emailapi_ps_configure_1](../../../img/emailapi_ps_configure_1.png)
 
-**2/** Congigurer l'extension :
+**2/** Configurer l'extension :
 
 Générer des clefs d'API. Vous pouvez aller voir [ce tutoriel](./api/api_credentials.md)
 
