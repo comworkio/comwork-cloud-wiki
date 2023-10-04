@@ -1,8 +1,24 @@
 # Serverless
 
-Disclaimer: for now there's only [OpenFaaS / Faasd](https://www.openfaas.com/blog/introducing-faasd/) available but we intend to propose other FaaS[^1] engines including our own one based on Google Cloud Functions framework.
+We're developing our own FaaS[^1] platform which is agnostic and API-centric. We're also proposing to deploy other FaaS platform such as [OpenFaaS / Faasd](https://www.openfaas.com/blog/introducing-faasd/).
 
 [^1]: functions as a service
+
+## Comwork cloud FaaS
+
+Our FaaS engine is supporting the following languages:
+* Python
+* Go
+* Javascript
+* Bash
+
+You can ask for this feature which is still in beta using the [support system](./tutorials/console/public/support.md).
+
+Here's a quick demo:
+
+[![demo_faas](../img/demo_faas.png)](https://youtu.be/WgD2QlLeYtg)
+
+Note: beware of protecting your function's arguments with a validation regexp, especially for Bash ;-)
 
 ## OpenFaas / Faasd
 
@@ -18,14 +34,14 @@ You can also deploy your own functions or containers. Here's an example with our
 
 ![faasd_imalive](./img/faasd_imalive.png)
 
-## Demo and tutorial
+### Demo and tutorial
 
 You can find demo and tutorials [here](./tutorials/faasd.md)
 
-### Minimal requirements
+#### Minimal requirements
 
 We advise to start with an instance >= [DEV1-M](./sizing_pricing.md)
 
-### Sizing and pricing
+#### Sizing and pricing
 
 Check it out [here](./sizing_pricing.md).
