@@ -16,7 +16,7 @@ You can ask for this feature which is still in beta using the [support system](.
 
 Here's a quick demo:
 
-[![demo_faas](../img/demo_faas.png)](https://youtu.be/WgD2QlLeYtg)
+[![demo_faas](./img/demo_faas.png)](https://youtu.be/WgD2QlLeYtg)
 
 Note: beware of protecting your function's arguments with a validation regexp, especially for Bash ;-)
 
