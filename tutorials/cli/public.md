@@ -282,3 +282,113 @@ cwc registry update --registry <registry_id>
 cwc registry delete -r <registry_id>
 cwc registry delete --registry <registry_id>
 ```
+
+## Faas languages & trigger kinds
+
+## List languages
+
+```shell
+cwc faas languages ls 
+```
+
+## List trigger kinds
+
+```shell
+cwc faas trigger-kinds ls
+```
+
+## Faas function
+
+### List
+
+```shell
+cwc faas function ls
+```
+
+### Get by ID
+
+```shell
+cwc faas function ls -f <function_id>
+cwc faas function ls --function <function_id>
+```
+
+## Create
+
+```shell
+cwc faas function create -n <function_name> -l <language_name>
+cwc faas function create --name <function_name> --language <language_name>
+```
+
+By default the function created is private if you add `-p` or `--public` flag the function becomes public.
+
+### Update
+
+```shell
+cwc faas function update -f <function_id>
+cwc faas function update --function <function_id>
+```
+
+### Delete
+
+```shell
+cwc faas function delete -f <function_id>
+cwc faas function delete --function <function_id>
+```
+
+## Faas invocation
+
+### List
+
+```shell
+cwc faas invocation ls
+```
+
+### Create
+
+```shell
+cwc faas invocation create -f <function_id>
+cwc faas invocation create --function <function_id>
+```
+
+### Get by ID
+
+```shell
+cwc invocation ls -i <invocation_id>
+cwc invocation ls --invocation <invocation_id>
+```
+
+### Delete
+
+```shell
+cwc invocation delete -i <invocation_id>
+cwc invocation delete --invocation <invocation_id>
+```
+
+## Faas Trigger
+
+### List
+
+```shell
+cwc faas trigger ls
+```
+
+### Create
+
+```shell
+cwc faas trigger create -f <function_id>
+cwc faas trigger create --function <function_id>
+```
+
+### Get by ID
+
+```shell
+cwc trigger ls -t  <trigger_id>
+cwc trigger ls --trigger  <trigger_id>
+```
+
+### Delete
+
+```shell
+cwc trigger delete -t  <trigger_id>
+cwc trigger delete --trigger  <trigger_id>
+```
