@@ -353,15 +353,15 @@ cwc faas invocation create --function <function_id>
 ### Get by ID
 
 ```shell
-cwc invocation ls -i <invocation_id>
-cwc invocation ls --invocation <invocation_id>
+cwc faas invocation ls -i <invocation_id>
+cwc faas invocation ls --invocation <invocation_id>
 ```
 
 ### Delete
 
 ```shell
-cwc invocation delete -i <invocation_id>
-cwc invocation delete --invocation <invocation_id>
+cwc faas invocation delete -i <invocation_id>
+cwc faas invocation delete --invocation <invocation_id>
 ```
 
 ## Faas Trigger
@@ -382,13 +382,13 @@ cwc faas trigger create --function <function_id>
 ### Get by ID
 
 ```shell
-cwc trigger ls -t  <trigger_id>
-cwc trigger ls --trigger  <trigger_id>
+cwc faas trigger ls -t  <trigger_id>
+cwc faas trigger ls --trigger  <trigger_id>
 ```
 
 ### Delete
 
 ```shell
-cwc trigger delete -t  <trigger_id>
-cwc trigger delete --trigger  <trigger_id>
+cwc faas trigger delete -t  <trigger_id>
+cwc faas trigger delete --trigger  <trigger_id>
 ```

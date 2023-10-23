@@ -273,3 +273,48 @@ cwc admin registry delete --registry <registry_id>
 cwc admin email -f from@provider.com -t to@provider.com -s subject -c content -m false
 cwc admin email --from from@provider.com --to to@provider.com --subject subject --content content --templated false
 ```
+
+## Faas function
+
+### List
+
+```shell
+cwc admin faas function ls
+```
+
+### Get owner by function ID
+
+```shell
+cwc admin faas function ls -f <function_id>
+cwc admin faas function ls --function <function_id>
+```
+
+## Faas invocation
+
+### List
+
+```shell
+cwc admin faas invocation ls
+```
+
+### Get invoker by invocation ID
+
+```shell
+cwc admin faas invocation ls -i <invocation_id>
+cwc admin faas invocation ls --invocation <invocation_id>
+```
+
+## Faas Trigger
+
+### List
+
+```shell
+cwc admin faas trigger ls
+```
+
+### Get owner by trigger ID
+
+```shell
+cwc admin faas trigger ls -t  <trigger_id>
+cwc admin faas trigger ls --trigger  <trigger_id>
+```
