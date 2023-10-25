@@ -290,11 +290,19 @@ cwc registry delete --registry <registry_id>
 ```shell
 cwc faas languages ls 
 ```
+```shell
+cwc faas languages ls -p # this flag will make the output pretty
+cwc faas language ls --pretty
+```
 
 ## List trigger kinds
 
 ```shell
 cwc faas trigger-kinds ls
+```
+```shell
+cwc faas trigger-kinds ls -p # this flag will make the output pretty
+cwc faas trigger-kinds ls --pretty
 ```
 
 ## Faas function
@@ -304,12 +312,20 @@ cwc faas trigger-kinds ls
 ```shell
 cwc faas function ls
 ```
+```shell
+cwc faas function ls -p # this flag will make the output pretty
+cwc faas function ls --pretty
+```
 
 ### Get by ID
 
 ```shell
 cwc faas function ls -f <function_id>
 cwc faas function ls --function <function_id>
+```
+```shell
+cwc faas function ls -f <function_id> -p # this flag will make the output pretty
+cwc faas function ls --function <function_id> --pretty
 ```
 
 ## Create
@@ -318,7 +334,6 @@ cwc faas function ls --function <function_id>
 cwc faas function create -n <function_name> -l <language_name>
 cwc faas function create --name <function_name> --language <language_name>
 ```
-
 By default the function created is private if you add `-p` or `--public` flag the function becomes public.
 
 ### Update
@@ -342,12 +357,9 @@ cwc faas function delete --function <function_id>
 ```shell
 cwc faas invocation ls
 ```
-
-### Create
-
 ```shell
-cwc faas invocation create -f <function_id>
-cwc faas invocation create --function <function_id>
+cwc faas invocation ls -p # this flag will make the output pretty
+cwc faas invocation ls --pretty 
 ```
 
 ### Get by ID
@@ -355,6 +367,16 @@ cwc faas invocation create --function <function_id>
 ```shell
 cwc faas invocation ls -i <invocation_id>
 cwc faas invocation ls --invocation <invocation_id>
+```
+```shell
+cwc faas invocation ls -i <invocation_id> -p
+cwc faas invocation ls -i <invocation_id> --pretty
+```
+### Create
+
+```shell
+cwc faas invocation create -f <function_id>
+cwc faas invocation create --function <function_id>
 ```
 
 ### Delete
@@ -371,12 +393,9 @@ cwc faas invocation delete --invocation <invocation_id>
 ```shell
 cwc faas trigger ls
 ```
-
-### Create
-
 ```shell
-cwc faas trigger create -f <function_id>
-cwc faas trigger create --function <function_id>
+cwc faas trigger ls -p # this flag will make the output pretty
+cwc faas trigger ls --pretty
 ```
 
 ### Get by ID
@@ -384,6 +403,17 @@ cwc faas trigger create --function <function_id>
 ```shell
 cwc faas trigger ls -t  <trigger_id>
 cwc faas trigger ls --trigger  <trigger_id>
+```
+```shell
+cwc faas trigger ls -t  <trigger_id> -p # this flag will make the output pretty
+cwc faas trigger ls --trigger  <trigger_id> --pretty
+```
+
+### Create
+
+```shell
+cwc faas trigger create -f <function_id>
+cwc faas trigger create --function <function_id>
 ```
 
 ### Delete
