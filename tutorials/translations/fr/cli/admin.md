@@ -271,3 +271,71 @@ cwc admin registry delete --registry <registry_id>
 cwc admin email -f from@provider.com -t to@provider.com -s subject -c content -m false
 cwc admin email --from from@provider.com --to to@provider.com --subject subject --content content --templated false
 ```
+## Fonction Faas
+
+### Liste
+
+```shell
+cwc admin faas function ls
+```
+```shell
+cwc admin faas function ls -p # ce flag rendra la sortie jolie
+cwc admin faas function ls --pretty
+```
+
+### Obtenir le propriétaire par identifiant de fonction
+
+```shell
+cwc admin faas function ls -f <function_id>
+cwc admin faas function ls --function <function_id>
+```
+```shell
+cwc admin faas function ls -f <function_id> -p # ce flag rendra la sortie jolie
+cwc admin faas function ls --function <function_id> --pretty
+```
+
+## Invocation des faas
+
+### Liste
+
+```shell
+cwc admin faas invocation ls
+```
+```shell
+cwc admin faas invocation ls -p # ce flag rendra la sortie jolie
+cwc admin faas invocation ls --pretty 
+```
+
+### Obtenir l'invocateur par identifiant de l'invocation
+
+```shell
+cwc admin faas invocation ls -i <invocation_id>
+cwc admin faas invocation ls --invocation <invocation_id>
+```
+```shell
+cwc admin faas invocation ls -i <invocation_id> -p
+cwc admin faas invocation ls -i <invocation_id> --pretty
+```
+
+## Déclencheur Faas
+
+### Liste
+
+```shell
+cwc admin faas trigger ls
+```
+```shell
+cwc admin faas trigger ls -p # ce flag rendra la sortie jolie
+cwc admin faas trigger ls --pretty
+```
+
+### Obtenir le propriétaire par identifiant de déclenchement
+
+```shell
+cwc admin faas trigger ls -t  <trigger_id>
+cwc admin faas trigger ls --trigger  <trigger_id>
+```
+```shell
+cwc admin faas trigger ls -t  <trigger_id> -p # ce flag rendra la sortie jolie
+cwc admin faas trigger ls --trigger  <trigger_id> --pretty
+```

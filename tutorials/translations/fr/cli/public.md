@@ -289,3 +289,142 @@ cwc registry update --registry <registry_id>
 cwc registry delete -r <registry_id>
 cwc registry delete --registry <registry_id>
 ```
+## Langages faas et types de déclencheurs
+
+## Liste des langues
+
+```shell
+cwc faas languages ls 
+```
+```shell
+cwc faas languages ls -p 
+cwc faas language ls --pretty
+```
+
+## Liste des types de déclencheurs
+
+```shell
+cwc faas trigger-kinds ls
+```
+```shell
+cwc faas trigger-kinds ls -p # Ce flag rendra la sortie jolie
+cwc faas trigger-kinds ls --pretty
+```
+
+## Fonctions de Faas
+
+### Liste
+
+```shell
+cwc faas function ls
+```
+```shell
+cwc faas function ls -p # Ce flag rendra la sortie jolie
+cwc faas function ls --pretty
+```
+
+### Recherche par Id
+
+```shell
+cwc faas function ls -f <function_id>
+cwc faas function ls --function <function_id>
+```
+```shell
+cwc faas function ls -f <function_id> -p # Ce flag rendra la sortie jolie
+cwc faas function ls --function <function_id> --pretty
+```
+
+## Créer
+
+```shell
+cwc faas function create -n <function_name> -l <language_name>
+cwc faas function create --name <function_name> --language <language_name>
+```
+Par défaut, la fonction créée est privée. Si vous ajoutez le flag `-p` ou `--public`, la fonction devient publique.
+
+### Mise à jour
+
+```shell
+cwc faas function update -f <function_id>
+cwc faas function update --function <function_id>
+```
+
+### 
+
+```shell
+cwc faas function delete -f <function_id>
+cwc faas function delete --function <function_id>
+```
+
+## Faas invocation
+
+### Liste
+
+```shell
+cwc faas invocation ls
+```
+```shell
+cwc faas invocation ls -p # Ce flag rendra la sortie jolie
+cwc faas invocation ls --pretty 
+```
+
+### Recherche par Id
+
+```shell
+cwc faas invocation ls -i <invocation_id>
+cwc faas invocation ls --invocation <invocation_id>
+```
+```shell
+cwc faas invocation ls -i <invocation_id> -p
+cwc faas invocation ls -i <invocation_id> --pretty
+```
+### Créer
+
+```shell
+cwc faas invocation create -f <function_id>
+cwc faas invocation create --function <function_id>
+```
+
+### Supprimer
+
+```shell
+cwc faas invocation delete -i <invocation_id>
+cwc faas invocation delete --invocation <invocation_id>
+```
+
+## Faas Trigger
+
+### Liste
+
+```shell
+cwc faas trigger ls
+```
+```shell
+cwc faas trigger ls -p # Ce flag rendra la sortie jolie
+cwc faas trigger ls --pretty
+```
+
+### Recherche par Id
+
+```shell
+cwc faas trigger ls -t  <trigger_id>
+cwc faas trigger ls --trigger  <trigger_id>
+```
+```shell
+cwc faas trigger ls -t  <trigger_id> -p # Ce flag rendra la sortie jolie
+cwc faas trigger ls --trigger  <trigger_id> --pretty
+```
+
+### Créer
+
+```shell
+cwc faas trigger create -f <function_id>
+cwc faas trigger create --function <function_id>
+```
+
+### Supprimer
+
+```shell
+cwc faas trigger delete -t  <trigger_id>
+cwc faas trigger delete --trigger  <trigger_id>
+```
