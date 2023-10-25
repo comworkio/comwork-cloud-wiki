@@ -305,7 +305,7 @@ cwc registry ls --registry <registry_id>
 ```
 ```shell
 cwc registry ls -r <registry_id> -p # this flag will make the output pretty
-cwc registry ls --registry <registry_id>
+cwc registry ls --registry <registry_id> --pretty
 ```
 
 ### Update credentials

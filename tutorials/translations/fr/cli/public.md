@@ -85,6 +85,10 @@ cwc configure set format json
 ```shell
 cwc project ls
 ```
+```shell
+cwc project ls -p # this flag will make the output
+cwc project ls --pretty 
+```
 
 ### Rechercher
 
@@ -93,6 +97,10 @@ cwc project ls
 ```shell
 cwc project ls -p <project_id>
 cwc project ls --id <project_id>
+```
+```shell
+cwc project ls -P <project_id> -p # Ce flag rendra la sortie jolie
+cwc project ls --id <project_id> --pretty 
 ```
 
 #### Rechercher par nom
@@ -164,12 +172,20 @@ cwc dnszones ls
 ```shell
 cwc environment ls
 ```
+```shell
+cwc environment ls -p # Ce flag rendra la sortie joliepretty
+cwc environment ls --pretty
+```
 
 ### Rechercher par ID
 
 ```shell
 cwc environment ls -e <environment_id>
 cwc environment ls --environment <environment_id>
+```
+```shell
+cwc environment ls -e <environment_id> -p # Ce flag rendra la sortie joliepretty
+cwc environment ls --environment <environment_id> --pretty
 ```
 
 ## Instances
@@ -185,12 +201,20 @@ cwc instance type ls
 ```shell
 cwc instance ls
 ```
+```shell
+cwc instance ls -p # Ce flag rendra la sortie joliepretty
+cwc instance ls --pretty
+```
 
 ### Rechercher par ID
 
 ```shell
 cwc instance ls -i <instance_id>
 cwc instance ls --instance <instance_id>
+```
+```shell
+cwc instance ls -i <instance_id> -p # Ce flag rendra la sortie joliepretty
+cwc instance ls --instance <instance_id> --pretty
 ```
 
 ### Créer
@@ -239,12 +263,20 @@ cwc instance delete --instance <instance_id>
 ```shell
 cwc bucket ls
 ```
+```shell
+cwc bucket ls -p # Ce flag rendra la sortie joliepretty
+cwc bucket ls --pretty
+```
 
 ### Rechercher par ID
 
 ```shell
 cwc bucket ls -b <bucket_id>
 cwc bucket ls --bucket <bucket_id>
+```
+```shell
+cwc bucket ls -b <bucket_id> -p # Ce flag rendra la sortie joliepretty
+cwc bucket ls --bucket <bucket_id> --pretty
 ```
 
 ### Mettre à jour les identifiants de connexion
@@ -268,6 +300,9 @@ cwc bucket delete --bucket <bucket_id>
 ```shell
 cwc registry ls
 ```
+```shell
+cwc registry ls -p # Ce flag rendra la sortie joliepretty
+```
 
 ### Rechercher par ID
 
@@ -281,6 +316,10 @@ cwc registry ls --registry <registry_id>
 ```shell
 cwc registry update -r <registry_id>
 cwc registry update --registry <registry_id>
+```
+```shell
+cwc registry ls -r <registry_id> -p # Ce flag rendra la sortie joliepretty
+cwc registry ls --registry <registry_id> --pretty
 ```
 
 ### Supprimer

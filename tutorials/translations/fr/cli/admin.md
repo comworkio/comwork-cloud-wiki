@@ -41,6 +41,10 @@ cwc admin user delete --user <user_id>
 ```shell
 cwc admin project ls
 ```
+```shell
+cwc admin project ls -p # Ce flag rendra la sortie jolie
+cwc admin project ls --pretty
+```
 
 ### Rechercher des projets
 
@@ -49,6 +53,10 @@ cwc admin project ls
 ```shell
 cwc admin project ls -p <project_id>
 cwc admin project ls --id <project_id>
+```
+```shell
+cwc admin project ls -p <project_id> -P # Ce flag rendra la sortie jolie
+cwc admin project ls --id <project_id> --pretty
 ```
 
 #### Rechercher par nom
@@ -117,12 +125,20 @@ Remarque : Si vous voulez rendre l'environnement privé (accessible qu'aux admin
 ```shell
 cwc admin environment ls
 ```
+```shell
+cwc admin environment ls -p # Ce flag rendra la sortie jolie
+cwc admin environment ls --pretty
+```
 
 ### Rechercher par ID
 
 ```shell
 cwc admin environment ls -e <environment_id>
 cwc admin environment ls --environment <environment_id>
+```
+```shell
+cwc admin environment ls -e <environment_id> -p # Ce flag rendra la sortie jolie
+cwc admin environment ls --environment <environment_id> --pretty
 ```
 
 ## Instances
@@ -132,13 +148,20 @@ cwc admin environment ls --environment <environment_id>
 ```shell
 cwc admin instance ls
 ```
+```shell
+cwc admin instance ls -p # Ce flag rendra la sortie jolie
+cwc admin instance ls --pretty
+```
 
 ### Rechercher par ID
 
 ```shell
 cwc admin instance ls -i <instance_id>
 cwc admin instance ls --instance <instance_id>
-
+```
+```shell
+cwc admin instance ls -i <instance_id> -p # Ce flag rendra la sortie jolie
+cwc admin instance ls --instance <instance_id> --pretty
 ```
 
 ### Créer pour un(e) utilisateur
@@ -191,12 +214,20 @@ cwc admin bucket create --name <bucket_name> --type <bucket_type> --user <user_m
 ```shell
 cwc admin bucket ls
 ```
+```shell
+cwc admin bucket ls -p # Ce flag rendra la sortie jolie
+cwc admin bucket ls --pretty
+```
 
 ### Rechercher par ID
 
 ```shell
 cwc admin bucket ls -b <bucket_id>
 cwc admin bucket ls --bucket <bucket_id>
+```
+```shell
+cwc admin bucket ls -b <bucket_id> -p # Ce flag rendra la sortie jolie
+cwc admin bucket ls --bucket <bucket_id> --pretty
 ```
 
 ### Mettre à jour les identifiants de connexion
@@ -234,12 +265,19 @@ cwc admin registry create --name <registry_name> --type <registry_type> --user <
 ```shell
 cwc admin registry ls
 ```
+```shell
+cwc admin registry ls -p # Ce flag rendra la sortie jolie
+```
 
 ### Rechercher par ID
 
 ```shell
 cwc admin registry ls -r <registry_id>
 cwc admin registry ls --registry <registry_id>
+```
+```shell
+cwc admin registry ls -r <registry_id> -p # Ce flag rendra la sortie jolie
+cwc admin registry ls --registry <registry_id> --pretty
 ```
 
 ### Mettre à jour les identifiants de connexion
