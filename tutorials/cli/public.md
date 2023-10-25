@@ -82,14 +82,22 @@ cwc configure set format json
 ```shell
 cwc project ls
 ```
+```shell
+cwc project ls -p # this flag will make the output
+cwc project ls --pretty 
+```
 
 ### Search Project
 
 #### Search Project By ID
 
 ```shell
-cwc project ls -p <project_id>
+cwc project ls -P <project_id>
 cwc project ls --id <project_id>
+```
+```shell
+cwc project ls -P <project_id> -p # this flag will make the output 
+cwc project ls --id <project_id> --pretty 
 ```
 
 #### Search Project By Name
@@ -157,12 +165,20 @@ cwc dnszones ls
 ```shell
 cwc environment ls
 ```
+```shell
+cwc environment ls -p # this flag will make the output pretty
+cwc environment ls --pretty
+```
 
 ### Get by ID
 
 ```shell
 cwc environment ls -e <environment_id>
 cwc environment ls --environment <environment_id>
+```
+```shell
+cwc environment ls -e <environment_id> -p # this flag will make the output pretty
+cwc environment ls --environment <environment_id> --pretty
 ```
 
 ## Instances
@@ -178,12 +194,20 @@ cwc instance type ls
 ```shell
 cwc instance ls
 ```
+```shell
+cwc instance ls -p # this flag will make the output pretty
+cwc instance ls --pretty
+```
 
 ### List instance by ID
 
 ```shell
 cwc instance ls -i <instance_id>
 cwc instance ls --instance <instance_id>
+```
+```shell
+cwc instance ls -i <instance_id> -p # this flag will make the output pretty
+cwc instance ls --instance <instance_id> --pretty
 ```
 
 ### Create
@@ -232,12 +256,20 @@ cwc instance delete --instance <instance_id>
 ```shell
 cwc bucket ls
 ```
+```shell
+cwc bucket ls -p # this flag will make the output pretty
+cwc bucket ls --pretty
+```
 
 ### Get by ID
 
 ```shell
 cwc bucket ls -b <bucket_id>
 cwc bucket ls --bucket <bucket_id>
+```
+```shell
+cwc bucket ls -b <bucket_id> -p # this flag will make the output pretty
+cwc bucket ls --bucket <bucket_id> --pretty
 ```
 
 ### Update credentials
@@ -261,11 +293,18 @@ cwc bucket delete --bucket <bucket_id>
 ```shell
 cwc registry ls
 ```
+```shell
+cwc registry ls -p # this flag will make the output pretty
+```
 
 ### Get by ID
 
 ```shell
 cwc registry ls -r <registry_id>
+cwc registry ls --registry <registry_id>
+```
+```shell
+cwc registry ls -r <registry_id> -p # this flag will make the output pretty
 cwc registry ls --registry <registry_id>
 ```
 

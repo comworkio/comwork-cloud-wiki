@@ -41,6 +41,10 @@ cwc admin user delete --user <user_id>
 ```shell
 cwc admin project ls
 ```
+```shell
+cwc admin project ls -p # this flag will make the output pretty
+cwc admin project ls --pretty
+```
 
 ### Search Project
 
@@ -49,6 +53,10 @@ cwc admin project ls
 ```shell
 cwc admin project ls -p <project_id>
 cwc admin project ls --id <project_id>
+```
+```shell
+cwc admin project ls -p <project_id> -P # this flag will make the output pretty
+cwc admin project ls --id <project_id> --pretty
 ```
 
 #### Search Project By Name
@@ -118,12 +126,20 @@ Note: if you want to mark the environment as private use the `-a` or `--private`
 ```shell
 cwc admin environment ls
 ```
+```shell
+cwc admin environment ls -p # this flag will make the output pretty
+cwc admin environment ls --pretty
+```
 
 ### Get environment by ID
 
 ```shell
 cwc admin environment ls -e <environment_id>
 cwc admin environment ls --environment <environment_id>
+```
+```shell
+cwc admin environment ls -e <environment_id> -p # this flag will make the output pretty
+cwc admin environment ls --environment <environment_id> --pretty
 ```
 
 ## Instances
@@ -133,13 +149,20 @@ cwc admin environment ls --environment <environment_id>
 ```shell
 cwc admin instance ls
 ```
+```shell
+cwc admin instance ls -p # this flag will make the output pretty
+cwc admin instance ls --pretty
+```
 
 ### Get instance by ID
 
 ```shell
 cwc admin instance ls -i <instance_id>
 cwc admin instance ls --instance <instance_id>
-
+```
+```shell
+cwc admin instance ls -i <instance_id> -p # this flag will make the output pretty
+cwc admin instance ls --instance <instance_id> --pretty
 ```
 
 ### Create
@@ -193,12 +216,20 @@ cwc admin bucket create --name <bucket_name> --type <bucket_type> --user <user_m
 ```shell
 cwc admin bucket ls
 ```
+```shell
+cwc admin bucket ls -p # this flag will make the output pretty
+cwc admin bucket ls --pretty
+```
 
 ### Get bucket by ID
 
 ```shell
 cwc admin bucket ls -b <bucket_id>
 cwc admin bucket ls --bucket <bucket_id>
+```
+```shell
+cwc admin bucket ls -b <bucket_id> -p # this flag will make the output pretty
+cwc admin bucket ls --bucket <bucket_id> --pretty
 ```
 
 ### Update credentials
@@ -236,6 +267,9 @@ cwc admin registry create --name <registry_name> --type <registry_type> --user <
 ```shell
 cwc admin registry ls
 ```
+```shell
+cwc admin registry ls -p # this flag will make the output pretty
+```
 
 ### Get Registry by ID
 
@@ -243,7 +277,10 @@ cwc admin registry ls
 cwc admin registry ls -r <registry_id>
 cwc admin registry ls --registry <registry_id>
 ```
-
+```shell
+cwc admin registry ls -r <registry_id> -p # this flag will make the output pretty
+cwc admin registry ls --registry <registry_id> --pretty
+```
 ### Update credentials
 
 ```shell
