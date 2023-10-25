@@ -19,12 +19,20 @@ This tutorial is also available in the following languages:
 ```shell
 cwc admin user ls
 ```
+```shell
+cwc admin user ls -p # this flag will make the output pretty
+cwc admin user ls --pretty
+```
 
 ### Get user by ID
 
 ```shell
 cwc admin user ls -u <user_id>
 cwc admin user ls --user <user_id>
+```
+```shell
+cwc admin user ls -u <user_id> -p # this flag will make the output pretty
+cwc admin user ls --user <user_id> --pretty
 ```
 
 ### Delete
