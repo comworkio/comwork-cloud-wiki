@@ -281,12 +281,20 @@ cwc admin email --from from@provider.com --to to@provider.com --subject subject 
 ```shell
 cwc admin faas function ls
 ```
+```shell
+cwc admin faas function ls -p # this flag will make the output pretty
+cwc admin faas function ls --pretty
+```
 
 ### Get owner by function ID
 
 ```shell
 cwc admin faas function ls -f <function_id>
 cwc admin faas function ls --function <function_id>
+```
+```shell
+cwc admin faas function ls -f <function_id> -p # this flag will make the output pretty
+cwc admin faas function ls --function <function_id> --pretty
 ```
 
 ## Faas invocation
@@ -296,12 +304,20 @@ cwc admin faas function ls --function <function_id>
 ```shell
 cwc admin faas invocation ls
 ```
+```shell
+cwc admin faas invocation ls -p # this flag will make the output pretty
+cwc admin faas invocation ls --pretty 
+```
 
 ### Get invoker by invocation ID
 
 ```shell
 cwc admin faas invocation ls -i <invocation_id>
 cwc admin faas invocation ls --invocation <invocation_id>
+```
+```shell
+cwc admin faas invocation ls -i <invocation_id> -p
+cwc admin faas invocation ls -i <invocation_id> --pretty
 ```
 
 ## Faas Trigger
@@ -311,10 +327,18 @@ cwc admin faas invocation ls --invocation <invocation_id>
 ```shell
 cwc admin faas trigger ls
 ```
+```shell
+cwc admin faas trigger ls -p # this flag will make the output pretty
+cwc admin faas trigger ls --pretty
+```
 
 ### Get owner by trigger ID
 
 ```shell
 cwc admin faas trigger ls -t  <trigger_id>
 cwc admin faas trigger ls --trigger  <trigger_id>
+```
+```shell
+cwc admin faas trigger ls -t  <trigger_id> -p # this flag will make the output pretty
+cwc admin faas trigger ls --trigger  <trigger_id> --pretty
 ```
