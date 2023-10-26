@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../translations/fr/portainer/installation.md)
+* [Français 🇫🇷](../../translations/fr/tutorials/portainer/installation.md)
 
 ## Video tutorial
 

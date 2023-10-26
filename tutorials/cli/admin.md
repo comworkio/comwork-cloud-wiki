@@ -10,7 +10,7 @@ Notes:
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../translations/fr/cli/admin.md)
+* [Français 🇫🇷](../../translations/fr/tutorials/cli/admin.md)
 
 ## Users
 

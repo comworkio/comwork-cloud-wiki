@@ -5,7 +5,7 @@ Here you'll find all the help resource for using the [web console](https://cloud
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../translations/fr/console/README.md)
+* [Français 🇫🇷](../../translations/fr/tutorials/console/README.md)
 
 ## Public
 

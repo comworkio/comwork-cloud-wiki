@@ -9,7 +9,7 @@ You can manage all the containers that are deployed with docker (or kubernetes):
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../translations/fr/portainer/containers.md)
+* [Français 🇫🇷](../../translations/fr/tutorials/portainer/containers.md)
 
 ## Monitor logs of containers
 

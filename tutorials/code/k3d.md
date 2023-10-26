@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../translations/fr/code/k3d.md)
+* [Français 🇫🇷](../../translations/fr/tutorials/code/k3d.md)
 
 ## Demo
 

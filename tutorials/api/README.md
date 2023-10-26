@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../translations/fr/api/README.md)
+* [Français 🇫🇷](../../translations/fr/tutorials/api/README.md)
 
 ## Restful API
 

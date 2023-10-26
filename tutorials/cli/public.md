@@ -9,7 +9,7 @@ Notes:
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../translations/fr/cli/public.md)
+* [Français 🇫🇷](../../translations/fr/tutorials/cli/public.md)
 
 ## Usage, help version
 

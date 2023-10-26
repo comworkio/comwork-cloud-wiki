@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../translations/fr/cli/install.md)
+* [Français 🇫🇷](../../translations/fr/tutorials/cli/install.md)
 
 ## Homebrew
 

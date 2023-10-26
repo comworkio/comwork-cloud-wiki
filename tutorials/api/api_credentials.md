@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../translations/fr/api/api_credentials.md)
+* [Français 🇫🇷](../../translations/fr/tutorials/api/api_credentials.md)
 
 ## Getting started
 

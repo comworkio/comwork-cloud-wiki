@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../translations/fr/portainer/agent.md)
+* [Français 🇫🇷](../../translations/fr/tutorials/portainer/agent.md)
 
 ## How to add new agents
 
