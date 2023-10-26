@@ -26,18 +26,6 @@ const config = {
                     to: '/docs/tutorials/console'
                 },
                 {
-                    from: '/docs/tutorials/fr',
-                    to: '/docs/tutorials/translations/fr'
-                },
-                {
-                    from: '/docs/fr',
-                    to: '/docs/tutorials/translations/fr'
-                },
-                {
-                    from: '/fr',
-                    to: '/docs/tutorials/translations/fr'
-                },
-                {
                     from: '/docs/onprem',
                     to: '/docs/selfhosted'
                 },
@@ -47,11 +35,23 @@ const config = {
                 },
                 {
                     from: '/docs/tutorials/translations/fr/onprem',
-                    to: '/docs/tutorials/translations/fr/selfhosted'
+                    to: '/docs/translations/fr/tutorials/selfhosted'
                 },
                 {
                     from: '/docs/tutorials/translations/fr',
                     to: '/docs/translations/fr/tutorials'
+                },
+                {
+                    from: '/docs/tutorials/fr',
+                    to: '/docs/translations/fr/tutorials'
+                },
+                {
+                    from: '/docs/fr',
+                    to: '/docs/translations/fr'
+                },
+                {
+                    from: '/fr',
+                    to: '/docs/translations/fr'
                 }
             ]
         }],
