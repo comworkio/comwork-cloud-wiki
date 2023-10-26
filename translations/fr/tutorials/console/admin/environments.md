@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../../console/admin/environments.md)
+* [English 🇬🇧](../../../../../tutorials/console/admin/environments.md)
 
 ## Comment administrer les environnements
 

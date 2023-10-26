@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../api/api_credentials.md)
+* [English 🇬🇧](../../../../tutorials/api/api_credentials.md)
 
 ## Procédure
 

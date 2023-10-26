@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../../console/public/instances.md)
+* [English 🇬🇧](../../../../../tutorials/console/public/instances.md)
 
 ## Comment créer des instances et services
 

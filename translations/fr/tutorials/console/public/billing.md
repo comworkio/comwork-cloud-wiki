@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../../console/public/billing.md)
+* [English 🇬🇧](../../../../../tutorials/console/public/billing.md)
 
 ## Comment payer de façon automatique
 

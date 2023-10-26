@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../code/docker.md)
+* [English 🇬🇧](../../../../tutorials/code/docker.md)
 
 ## Démo
 

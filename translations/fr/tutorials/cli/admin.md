@@ -10,7 +10,7 @@ Remarques :
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../cli/admin.md)
+* [English 🇬🇧](../../../../tutorials/cli/admin.md)
 
 ## Utilisateurs
 

@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../code/k3d.md)
+* [English 🇬🇧](../../../../tutorials/code/k3d.md)
 
 ## Démo
 

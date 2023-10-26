@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../cli/install.md)
+* [English 🇬🇧](../../../../tutorials/cli/install.md)
 
 ## Homebrew
 

@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../../console/public/support.md)
+* [English 🇬🇧](../../../../../tutorials/console/public/support.md)
 
 ## Ouvrir un ticket
 
