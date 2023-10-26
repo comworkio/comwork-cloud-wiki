@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../localtunnel.md)
+* [English 🇬🇧](../../../tutorials/localtunnel.md)
 
 ## Tutoriel vidéo
 

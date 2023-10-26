@@ -13,7 +13,7 @@ Ce projet fournit un endpoint HTTP/Restful que vous pourrez utiliser comme règl
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../imalive.md)
+* [English 🇬🇧](../../../tutorials/imalive.md)
 
 ## Dépôt git
 

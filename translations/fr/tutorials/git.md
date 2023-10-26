@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../git.md)
+* [English 🇬🇧](../../../tutorials/git.md)
 
 ## A propos
 

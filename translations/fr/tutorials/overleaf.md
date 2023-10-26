@@ -5,7 +5,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../overleaf.md)
+* [English 🇬🇧](../../../tutorials/overleaf.md)
 
 ## Terminer l'installation
 

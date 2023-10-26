@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../faasd.md)
+* [English 🇬🇧](../../../tutorials/faasd.md)
 
 ## A propos
 

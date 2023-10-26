@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../cwai.md)
+* [English 🇬🇧](../../../tutorials/cwai.md)
 
 ## Objectif
 

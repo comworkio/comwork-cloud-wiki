@@ -4,7 +4,7 @@
 
 Ce tutoriel est également disponible dans les langues suivantes :
 
-- [English 🇬🇧](../../selfhosted.md)
+- [English 🇬🇧](../../../tutorials/selfhosted.md)
 
 ## Accéder à nos images
 

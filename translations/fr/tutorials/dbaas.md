@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../dbaas.md)
+* [English 🇬🇧](../../../tutorials/dbaas.md)
 
 ## Tutoriel vidéo
 

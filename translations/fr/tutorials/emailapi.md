@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../emailapi.md)
+* [English 🇬🇧](../../../tutorials/emailapi.md)
 
 ## Activer cette API
 

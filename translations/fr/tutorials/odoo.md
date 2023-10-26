@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../odoo.md)
+* [English 🇬🇧](../../../tutorials/odoo.md)
 
 ## Initialiser votre environnement Odoo
 

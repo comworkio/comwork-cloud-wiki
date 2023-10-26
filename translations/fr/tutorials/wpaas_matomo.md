@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../wpaas_matomo.md)
+* [English 🇬🇧](../../../tutorials/wpaas_matomo.md)
 
 ## Tutoriel vidéo
 
