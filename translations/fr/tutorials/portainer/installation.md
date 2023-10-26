@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../portainer/installation.md)
+* [English 🇬🇧](../../../../tutorials/portainer/installation.md)
 
 ## Tutoriel vidéo
 

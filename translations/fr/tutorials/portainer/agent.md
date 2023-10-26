@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../portainer/agent.md)
+* [English 🇬🇧](../../../../tutorials/portainer/agent.md)
 
 ## Comment ajouter des agents
 

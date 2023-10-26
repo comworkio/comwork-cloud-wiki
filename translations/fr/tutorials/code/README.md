@@ -8,4 +8,4 @@ Ici vous trouverez tous les tutoriels utile pour utiliser notre service [code](.
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../code/README.md)
+* [English 🇬🇧](../../../../tutorials/code/README.md)

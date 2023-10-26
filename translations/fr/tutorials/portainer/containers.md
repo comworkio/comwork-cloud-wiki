@@ -9,7 +9,7 @@ Vous pouvez monitorer et gérer l'ensemble de vos conteneurs déployés via dock
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../portainer/containers.md)
+* [English 🇬🇧](../../../../tutorials/portainer/containers.md)
 
 ## Monitorer les logs des conteneurs
 

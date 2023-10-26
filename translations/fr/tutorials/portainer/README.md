@@ -9,4 +9,4 @@ Vous trouverez ici toutes les resources nécéssaires pour utiliser notre servic
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../portainer/README.md)
+* [English 🇬🇧](../../../../tutorials/portainer/README.md)

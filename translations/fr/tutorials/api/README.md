@@ -3,7 +3,7 @@
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../api/README.md)
+* [English 🇬🇧](../../../../tutorials/api/README.md)
 
 ## Webservices REST
 
