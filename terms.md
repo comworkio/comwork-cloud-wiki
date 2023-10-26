@@ -99,6 +99,6 @@ The [SaaS version of cwcloud](https://cloud.comwork.io) is hosted in the EU: Our
 
 * COMWORKER (M.F: 1605574/E), a Tunisian subsidiary providing [cwcloud.tn](https://www.cwcloud.tn)
 
-[^1]: [General Data Protection Regulation](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation))
+[^1]: [General Data Protection Regulation](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)
 [^2]: Cloud service provider
 [^3]: it's not forbidden to host websites or API related to a crypto-currency service, it's only the mining process that is forbidden on our servers and storage (because it's also forbidden on the cloud's provider we relied on)
