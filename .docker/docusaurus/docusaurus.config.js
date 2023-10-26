@@ -48,6 +48,10 @@ const config = {
                 {
                     from: '/docs/tutorials/translations/fr/onprem',
                     to: '/docs/tutorials/translations/fr/selfhosted'
+                },
+                {
+                    from: '/docs/tutorials/translations/fr',
+                    to: '/docs/translations/fr/tutorials'
                 }
             ]
         }],
