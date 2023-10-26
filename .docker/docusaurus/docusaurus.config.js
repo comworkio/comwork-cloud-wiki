@@ -38,8 +38,8 @@ const config = {
                     to: '/docs/translations/fr/tutorials/selfhosted'
                 },
                 {
-                    from: '/docs/tutorials/translations/fr',
-                    to: '/docs/translations/fr/tutorials'
+                    from: '/docs/tutorials/translations/fr/console/public/billing',
+                    to: '/docs/translations/fr/tutorials/console/public/billing'
                 },
                 {
                     from: '/docs/tutorials/fr',
