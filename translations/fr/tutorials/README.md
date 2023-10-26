@@ -1,4 +1,4 @@
-# Tutoriels en Français
+# Tutoriels
 
 * [Console web](./console/README.md)
 * [API](./api/README.md)

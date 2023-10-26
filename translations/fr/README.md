@@ -1,3 +1,3 @@
-# Traductions française
+# Français
 
 * [Tutoriels](./tutorials/README.md)
