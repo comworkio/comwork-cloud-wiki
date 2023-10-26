@@ -18,4 +18,3 @@
 * [Instances auto-hébergées de CwCloud](./selfhosted.md)
 * [API email](./emailapi.md)
 * [API cwai](./cwai.md)
-
