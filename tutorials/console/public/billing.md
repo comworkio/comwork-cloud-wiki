@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../../translations/fr/console/public/billing.md)
+* [Français 🇫🇷](../../../translations/fr/tutorials/console/public/billing.md)
 
 ## How to pay automatically
 
