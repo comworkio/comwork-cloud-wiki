@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](./translations/fr/mastodon.md)
+* [Français 🇫🇷](../translations/fr/tutorials/mastodon.md)
 
 ## Getting started
 

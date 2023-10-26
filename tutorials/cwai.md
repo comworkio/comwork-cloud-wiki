@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](./translations/fr/cwai.md)
+* [Français 🇫🇷](../translations/fr/tutorials/cwai.md)
 
 ## Purpose
 

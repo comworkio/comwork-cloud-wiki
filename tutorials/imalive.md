@@ -13,7 +13,7 @@ It provide a http/restful endpoint that you can use as a healthcheck rule to you
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](./translations/fr/imalive.md)
+* [Français 🇫🇷](../translations/fr/tutorials/imalive.md)
 
 ## Git repositories
 

@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](./translations/fr/ssh.md)
+* [Français 🇫🇷](../translations/fr/tutorials/ssh.md)
 
 ## How to add your SSH key
 

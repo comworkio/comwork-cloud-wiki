@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](./translations/fr/selfhosted.md)
+* [Français 🇫🇷](../translations/fr/tutorials/selfhosted.md)
 
 ## Access to our images
 

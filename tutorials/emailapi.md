@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](./translations/fr/emailapi.md)
+* [Français 🇫🇷](../translations/fr/tutorials/emailapi.md)
 
 ## Enabling this API
 

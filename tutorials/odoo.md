@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](./translations/fr/odoo.md)
+* [Français 🇫🇷](../translations/fr/tutorials/odoo.md)
 
 ## Getting started
 
