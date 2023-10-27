@@ -20,4 +20,4 @@
 * [Self-hosted deployment of CwCloud](./selfhosted.md)
 * [email API](./emailapi.md)
 * [cwai API](./cwai.md)
-* [Traductions en Français](./translations/fr/README.md)
+* [Traductions en Français](../translations/fr/tutorials/README.md)

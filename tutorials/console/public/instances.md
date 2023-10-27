@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../../translations/fr/console/public/instances.md)
+* [Français 🇫🇷](../../../translations/fr/tutorials/console/public/instances.md)
 
 ## How to create new project and instances
 

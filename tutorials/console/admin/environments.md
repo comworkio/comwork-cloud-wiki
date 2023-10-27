@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../../translations/fr/console/admin/environments.md)
+* [Français 🇫🇷](../../../translations/fr/tutorials/console/admin/environments.md)
 
 ## How to manage environments
 

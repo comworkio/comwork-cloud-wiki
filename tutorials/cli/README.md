@@ -13,7 +13,7 @@ The source code is available in opensource [here](https://gitlab.comwork.io/oss/
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../translations/fr/cli/README.md)
+* [Français 🇫🇷](../../translations/fr/tutorials/cli/README.md)
 
 ## Chapters
 

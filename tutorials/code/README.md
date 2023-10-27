@@ -8,4 +8,4 @@ Here you'll find all the tutorials usefull to know for our [code](../../code.md)
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../translations/fr/code/README.md)
+* [Français 🇫🇷](../../translations/fr/tutorials/code/README.md)

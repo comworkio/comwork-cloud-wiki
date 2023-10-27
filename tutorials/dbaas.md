@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](./translations/fr/dbaas.md)
+* [Français 🇫🇷](../translations/fr/tutorials/dbaas.md)
 
 ## Video tutorial
 

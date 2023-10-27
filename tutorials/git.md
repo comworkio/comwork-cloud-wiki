@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](./translations/fr/git.md)
+* [Français 🇫🇷](../translations/fr/tutorials/git.md)
 
 ## Disclaimer
 

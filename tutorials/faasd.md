@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](./translations/fr/faasd.md)
+* [Français 🇫🇷](../translations/fr/tutorials/faasd.md)
 
 ## Disclaimer
 

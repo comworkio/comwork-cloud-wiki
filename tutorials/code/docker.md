@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../translations/fr/code/docker.md)
+* [Français 🇫🇷](../../translations/fr/tutorials/code/docker.md)
 
 ## Demo
 

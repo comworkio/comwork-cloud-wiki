@@ -90,6 +90,15 @@ We do not intend to host the following types of services:
 
 The [SaaS version of cwcloud](https://cloud.comwork.io) is hosted in the EU: Our site, products and services are all directed to people who are at least 16 years old. If you are under the age of 16, per the requirements of the GDPR[^1] do not use this site.
 
-[^1]: [General Data Protection Regulation](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation))
+## What are the hosting termination conditions
+
+* If the invoices are not paid during a period of 10 days, the services like instances will be shut down and definitively removed after 5 more days.
+* All invoices owed to the [COMWORKIO SASU](https://www.comwork.io) (R.C.S Paris 838 757 987) company and its partners (you can see the list below) are considered to justify the interruption of the hosting services.
+
+### List of the partners
+
+* COMWORKER (M.F: 1605574/E), a Tunisian subsidiary providing [cwcloud.tn](https://www.cwcloud.tn)
+
+[^1]: [General Data Protection Regulation](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)
 [^2]: Cloud service provider
 [^3]: it's not forbidden to host websites or API related to a crypto-currency service, it's only the mining process that is forbidden on our servers and storage (because it's also forbidden on the cloud's provider we relied on)

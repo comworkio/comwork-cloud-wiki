@@ -3,7 +3,7 @@
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../../translations/fr/console/public/support.md)
+* [Français 🇫🇷](../../../translations/fr/tutorials/console/public/support.md)
 
 ## Opening a ticket
 
