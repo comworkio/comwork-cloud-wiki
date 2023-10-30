@@ -416,6 +416,37 @@ cwc faas function create --name <function_name> --language <language_name>
 cwc faas function update -f <function_id>
 cwc faas function update --function <function_id>
 ```
+Vous pouvez mettre à jour la fonction en passant par le mode interactif en ajoutant le flag `-i` ou `--interactive` ou vous pouvez passer vos données directement avec ces flags optionnels :
+```shell
+-l  ## Language of the function
+## or
+--language
+```
+```shell
+-r ## Regexp of the function
+## or
+--regexp
+```
+```shell
+-u ## Callback URL of the function
+## or 
+--callback-url
+```
+```shell
+-a ## Callback Authorization Header of the function
+## or
+--callback-authorization-header
+```
+```shell
+-g ## Arguments of the function
+## or
+--args
+```
+```shell
+-c ## Code of the function
+## or
+--code
+```
 
 ### 
 
