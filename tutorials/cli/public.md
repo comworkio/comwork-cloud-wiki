@@ -401,7 +401,7 @@ cwc faas function create --name <function_name> --language <language_name>
 ## or
 --code
 ```
-* Instead of entering the optional flags behind each other you can enter your data with the interactive mode by adding `-i` or `--interactive`.
+* Instead of entering the optional flags behind each other you can enter your data with the interactive mode by adding `-i` or `--interactive` flag.
 
 ### Update
 
@@ -475,7 +475,13 @@ cwc faas invocation ls -i <invocation_id> --pretty
 cwc faas invocation create -f <function_id>
 cwc faas invocation create --function <function_id>
 ```
-
+* There is other optional flag for direct creation:  
+```shell
+-a ## Arguments values of the function
+## or
+--args
+```
+* Instead of entering the optional flag you can enter your data with the interactive mode by adding `-i` or `--interactive` flag.
 ### Delete
 
 ```shell
@@ -512,7 +518,29 @@ cwc faas trigger ls --trigger  <trigger_id> --pretty
 cwc faas trigger create -f <function_id>
 cwc faas trigger create --function <function_id>
 ```
+* There are other optional flags for direct creation:
 
+```shell
+-n ## Trigger name
+## or
+--name
+```
+```shell
+-k ## Trigger kind
+## or
+--kind
+```
+```shell
+-c ## Trigger cron expression
+## or
+--cron_expr
+```
+```shell
+-a ## Function arguments values
+## or
+--args
+```
+* Instead of entering the optional flag you can enter your data with the interactive mode by adding `-i` or `--interactive` flag.
 ### Delete
 
 ```shell

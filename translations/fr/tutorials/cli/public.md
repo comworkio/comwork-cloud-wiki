@@ -483,7 +483,13 @@ cwc faas invocation ls -i <invocation_id> --pretty
 cwc faas invocation create -f <function_id>
 cwc faas invocation create --function <function_id>
 ```
-
+* Il existe un autre indicateur facultatif pour la création directe:  
+```shell
+-a ## Arguments values of the function
+## or
+--args
+```
+* Au lieu d'entrer le drapeau optionnel, vous pouvez entrer vos données en mode interactif en ajoutant le drapeau `-i` ou `--interactive`.
 ### Supprimer
 
 ```shell
@@ -520,7 +526,28 @@ cwc faas trigger ls --trigger  <trigger_id> --pretty
 cwc faas trigger create -f <function_id>
 cwc faas trigger create --function <function_id>
 ```
-
+* Il existe un autre indicateur facultatif pour la création directe:  
+```shell
+-n ## Trigger name
+## or
+--name
+```
+```shell
+-k ## Trigger kind
+## or
+--kind
+```
+```shell
+-c ## Trigger cron expression
+## or
+--cron_expr
+```
+```shell
+-a ## Function arguments values
+## or
+--args
+```
+* Au lieu d'entrer le drapeau optionnel, vous pouvez entrer vos données en mode interactif en ajoutant le drapeau `-i` ou `--interactive`.
 ### Supprimer
 
 ```shell
