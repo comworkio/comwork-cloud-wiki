@@ -381,7 +381,7 @@ cwc faas function create --name <function_name> --language <language_name>
 ```
 * Par défaut, la fonction créée est privée. Si vous ajoutez le flag `-p` ou `--public`, la fonction devient publique.
 
-* Il y a d'autres flags optionnels pour la création directe sans passer par l'expérience de remplissage interactive :
+* Il y a d'autres flags optionnels pour la création directe:
 
 ```shell
 -r ## Regexp of the function
@@ -408,6 +408,7 @@ cwc faas function create --name <function_name> --language <language_name>
 ## or
 --code
 ```
+* Au lieu d'entrer les flags optionnels l'un derrière l'autre, vous pouvez entrer vos données avec le mode interactif en ajoutant `-i` ou `--interactive`.
 
 ### Mise à jour
 
