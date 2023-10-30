@@ -373,7 +373,34 @@ cwc faas function ls --function <function_id> --pretty
 cwc faas function create -n <function_name> -l <language_name>
 cwc faas function create --name <function_name> --language <language_name>
 ```
-By default the function created is private if you add `-p` or `--public` flag the function becomes public.
+* By default the function created is private if you add `-p` or `--public` flag the function becomes public.
+* There are other optional flags for direct creation without passing by the interactive filling experience:  
+
+```shell
+-r ## Regexp of the function
+## or
+--regexp
+```
+```shell
+-u ## Callback URL of the function
+## or 
+--callback-url
+```
+```shell
+-a ## Callback Authorization Header of the function
+## or
+--callback-authorization-header
+```
+```shell
+-g ## Arguments of the function
+## or
+--args
+```
+```shell
+-c ## Code of the function
+## or
+--code
+```
 
 ### Update
 
