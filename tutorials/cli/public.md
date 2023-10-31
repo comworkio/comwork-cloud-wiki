@@ -489,6 +489,12 @@ cwc faas invocation delete -i <invocation_id>
 cwc faas invocation delete --invocation <invocation_id>
 ```
 
+### Truncate
+
+```shell
+cwc faas invocation truncate
+```
+
 ## Faas Trigger
 
 ### List
@@ -546,4 +552,10 @@ cwc faas trigger create --function <function_id>
 ```shell
 cwc faas trigger delete -t  <trigger_id>
 cwc faas trigger delete --trigger  <trigger_id>
+```
+
+### Truncate
+
+```shell
+cwc faas trigger truncate
 ```

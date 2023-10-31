@@ -490,11 +490,18 @@ cwc faas invocation create --function <function_id>
 --args
 ```
 * Au lieu d'entrer le drapeau optionnel, vous pouvez entrer vos données en mode interactif en ajoutant le drapeau `-i` ou `--interactive`.
+
 ### Supprimer
 
 ```shell
 cwc faas invocation delete -i <invocation_id>
 cwc faas invocation delete --invocation <invocation_id>
+```
+
+### Tronquer
+
+```shell
+cwc faas invocation truncate
 ```
 
 ## Faas Trigger
@@ -553,4 +560,10 @@ cwc faas trigger create --function <function_id>
 ```shell
 cwc faas trigger delete -t  <trigger_id>
 cwc faas trigger delete --trigger  <trigger_id>
+```
+
+### Tronquer
+
+```shell
+cwc faas trigger truncate
 ```
