@@ -93,7 +93,7 @@ Ensuite copier/coller la clef secrète ici :
 
 ### Prestashop
 
-You can use this [plugin](https://gitlab.comwork.io/oss/cwc/cwcloud-prestashop-email):
+Vous pouvez utiliser ce [plugin](https://gitlab.comwork.io/oss/cwc/cwcloud-prestashop-email):
 
 **1/** Télécharger la bonne extension (soit la `-io` si vous utilisez l'instance [cloud.comwork.io](https://cloud.comwork.io), soit la `-tn` si vous utilisez l'instance [cwcloud.tn](https://www.cwcloud.tn))
 
