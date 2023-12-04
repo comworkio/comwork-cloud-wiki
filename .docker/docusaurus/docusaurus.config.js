@@ -173,11 +173,6 @@ const config = {
                         position: 'right',
                     },
                     {
-                        to: 'https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ',
-                        label: 'Slack',
-                        position: 'right',
-                    },
-                    {
                         to: 'https://discord.gg/CXskxxPauz',
                         label: 'Discord',
                         position: 'right',
@@ -197,10 +192,6 @@ const config = {
                             {
                                 label: 'Terms of services',
                                 to: 'https://doc.comwork.cloud/docs/terms',
-                            },
-                            {
-                                label: 'Slack',
-                                to: 'https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ',
                             },
                             {
                                 to: 'https://discord.gg/CXskxxPauz',

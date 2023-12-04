@@ -8,7 +8,6 @@ Yet another "Wordpress as a Service" (WPaaS) with some benefits :
 * You choose the sizing of your instance as you'll pick your own VPS
 * Rolling upgrades of Wordpress / PHP / MySQL
 * __Very strong security__: https/TLS encryption, firewalling, DDoS protection and wp-admin double authentication
-* An expert _engineering team_ which is available on Slack
 * SEO insights with your __Matomo__ instance (see [here](./matomo.md))
 
 Especially, this WPaaS is the right for you if you want to deploy and manage your reverse proxy and certificate like a real ops who work with ansible in a gitops way ;-p
