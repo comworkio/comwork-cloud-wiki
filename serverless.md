@@ -36,17 +36,9 @@ There's no pricing at this time, it's free and in beta. In the future, invocatio
 
 ## OpenFaas / Faasd
 
-Deploy an OpenFaaS (faasd) instance and deploy a function "NodeInfo" which will print the instance sizing.
-
-![faasd_provision](./img/faasd_provision.png)
-
-Then you can deploy ready to use functions from the marketplace:
+You can deploy a a lightweight OpenFaaS (Faasd) instance in order to deploy serverless functions and containers.
 
 ![faasd_gui](./img/faasd_gui.png)
-
-You can also deploy your own functions or containers. Here's an example with our usual [imalive metrics exporter](./tutorials/imalive.md):
-
-![faasd_imalive](./img/faasd_imalive.png)
 
 ### Demo and tutorial
 
