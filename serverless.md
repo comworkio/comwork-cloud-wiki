@@ -14,11 +14,25 @@ Our FaaS engine is supporting the following languages:
 
 You can ask for this feature which is still in beta using the [support system](./tutorials/console/public/support.md).
 
-Here's a quick demo:
+### Demos
+
+#### Supported programing languages
+
+Here's a quick demo with the programing languages supported:
 
 [![demo_faas](./img/demo_faas.png)](https://youtu.be/WgD2QlLeYtg)
 
 Note: beware of protecting your function's arguments with a validation regexp, especially for Bash ;-)
+
+#### Lowcode with blockly
+
+It's also possible to use Blockly as a graphical programing (a.k.a "_lowcode_") interface:
+
+[![demo_blockly](./img/demo_blockly.png)](https://youtu.be/ikBNQmlXJY8)
+
+### Pricing
+
+There's no pricing at this time, it's free and in beta. In the future, invocation execution time (in hours) will be billed.
 
 ## OpenFaas / Faasd
 
@@ -38,10 +52,10 @@ You can also deploy your own functions or containers. Here's an example with our
 
 You can find demo and tutorials [here](./tutorials/faasd.md)
 
-#### Minimal requirements
+### Minimal requirements
 
 We advise to start with an instance >= [DEV1-M](./sizing_pricing.md)
 
-#### Sizing and pricing
+### Sizing and pricing
 
 Check it out [here](./sizing_pricing.md).
