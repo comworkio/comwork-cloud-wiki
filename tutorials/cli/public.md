@@ -322,7 +322,7 @@ cwc registry delete -r <registry_id>
 cwc registry delete --registry <registry_id>
 ```
 
-## Faas languages & trigger kinds
+## Faas languages
 
 ## List languages
 
@@ -332,16 +332,6 @@ cwc faas languages ls
 ```shell
 cwc faas languages ls -p # this flag will make the output pretty
 cwc faas language ls --pretty
-```
-
-## List trigger kinds
-
-```shell
-cwc faas trigger-kinds ls
-```
-```shell
-cwc faas trigger-kinds ls -p # this flag will make the output pretty
-cwc faas trigger-kinds ls --pretty
 ```
 
 ## Faas function
@@ -496,6 +486,16 @@ cwc faas invocation truncate
 ```
 
 ## Faas Trigger
+
+## List trigger kinds
+
+```shell
+cwc faas trigger kinds
+```
+```shell
+cwc faas trigger kinds -p # this flag will make the output pretty
+cwc faas trigger kinds --pretty
+```
 
 ### List
 
