@@ -471,6 +471,11 @@ cwc faas invocation create --function <function_id>
 ## or
 --args
 ```
+```shell
+-s ## Activating the synchronous mode
+## or
+--synchronous
+```
 * Instead of entering the optional flag you can enter your data with the interactive mode by adding `-i` or `--interactive` flag.
 ### Delete
 
