@@ -328,7 +328,7 @@ cwc registry ls --registry <registry_id> --pretty
 cwc registry delete -r <registry_id>
 cwc registry delete --registry <registry_id>
 ```
-## Langages faas et types de déclencheurs
+## Langages faas
 
 ## Liste des langues
 
@@ -339,17 +339,6 @@ cwc faas languages ls
 cwc faas languages ls -p 
 cwc faas language ls --pretty
 ```
-
-## Liste des types de déclencheurs
-
-```shell
-cwc faas trigger-kinds ls
-```
-```shell
-cwc faas trigger-kinds ls -p # Ce flag rendra la sortie jolie
-cwc faas trigger-kinds ls --pretty
-```
-
 ## Fonctions de Faas
 
 ### Liste
@@ -489,6 +478,11 @@ cwc faas invocation create --function <function_id>
 ## or
 --args
 ```
+```shell
+-s ## Activer le mode synchrone
+## or
+--synchronous
+```
 * Au lieu d'entrer le drapeau optionnel, vous pouvez entrer vos données en mode interactif en ajoutant le drapeau `-i` ou `--interactive`.
 
 ### Supprimer
@@ -526,7 +520,15 @@ cwc faas trigger ls --trigger  <trigger_id>
 cwc faas trigger ls -t  <trigger_id> -p # Ce flag rendra la sortie jolie
 cwc faas trigger ls --trigger  <trigger_id> --pretty
 ```
+## Liste des types de déclencheurs
 
+```shell
+cwc faas trigger kinds
+```
+```shell
+cwc faas trigger kinds -p # Ce flag rendra la sortie jolie
+cwc faas trigger kinds --pretty
+```
 ### Créer
 
 ```shell
