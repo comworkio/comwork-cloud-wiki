@@ -14,7 +14,6 @@ Vous pouvez le faire via :
 
 - Le [système de support](./console/public/support.md)
 - L'email `cloud@comwork.io`
-- Notre [workspace Slack](https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ) (salon `#selfhosted`)
 - Notre [serveur Discord](https://discord.gg/CXskxxPauz) (salon `#selfhosted`)
 
 ## En utilisant ansible

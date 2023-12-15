@@ -1,10 +1,10 @@
-ARG NODE_VERSION=16.14.2-alpine
+ARG NODE_VERSION=18.18.0-alpine
 ARG NGINX_VERSION=1.15
 
 # Stage build
 FROM node:${NODE_VERSION} AS doc_builder
 
-RUN npx create-docusaurus@latest comwork-cloud-wiki classic
+RUN npx create-docusaurus@2.4.3 comwork-cloud-wiki classic
 WORKDIR /comwork-cloud-wiki
 
 RUN rm -rf docs/* && rm -rf blog/*
@@ -19,8 +19,8 @@ COPY . docs/
 
 RUN rm -rf docs/ci && \
     apk add curl && \
-    npm i --save docusaurus-plugin-matomo  && \
-    npm i --save @docusaurus/plugin-client-redirects && \
+    npm i --save docusaurus-plugin-matomo && \
+    npm i --save @docusaurus/plugin-client-redirects@2.4.3 && \
     npm i --save docusaurus-lunr-search@2.1.15 && \
     npm run swizzle docusaurus-lunr-search SearchBar -- --danger && \
     npm i  && \

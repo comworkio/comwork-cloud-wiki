@@ -38,5 +38,4 @@ Nous vous recommandons **fortement** de toujours ouvrir des tickets pour un suiv
 Une fois ouvert, vous pouvez également nous contacter en fournissant la référence du ticket via ces moyens:
 
 * L'email `cloud@comwork.io`
-* Notre [workspace Slack](https://join.slack.com/t/comwork-cloud/shared_invite/zt-1h04v2jp0-cF9p53MzfzxuChVobWKQEQ) (salon `#support`)
 * Notre [serveur Discord](https://discord.gg/CXskxxPauz) (salon `#support`)
