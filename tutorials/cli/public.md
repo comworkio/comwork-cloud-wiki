@@ -82,14 +82,22 @@ cwc configure set format json
 ```shell
 cwc project ls
 ```
+```shell
+cwc project ls -p # this flag will make the output
+cwc project ls --pretty 
+```
 
 ### Search Project
 
 #### Search Project By ID
 
 ```shell
-cwc project ls -p <project_id>
+cwc project ls -P <project_id>
 cwc project ls --id <project_id>
+```
+```shell
+cwc project ls -P <project_id> -p # this flag will make the output 
+cwc project ls --id <project_id> --pretty 
 ```
 
 #### Search Project By Name
@@ -156,6 +164,7 @@ cwc dnszones ls
 
 ```shell
 cwc environment ls
+cwc environment ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get by ID
@@ -163,6 +172,7 @@ cwc environment ls
 ```shell
 cwc environment ls -e <environment_id>
 cwc environment ls --environment <environment_id>
+cwc environment ls -e <environment_id> -p # or --pretty in order to make the output pretty
 ```
 
 ## Instances
@@ -177,6 +187,7 @@ cwc instance type ls
 
 ```shell
 cwc instance ls
+cwc instance ls -p # or --pretty in order to make the output pretty
 ```
 
 ### List instance by ID
@@ -184,6 +195,7 @@ cwc instance ls
 ```shell
 cwc instance ls -i <instance_id>
 cwc instance ls --instance <instance_id>
+cwc instance ls -i <instance_id> -p # or --pretty in order to make the output pretty
 ```
 
 ### Create
@@ -231,6 +243,7 @@ cwc instance delete --instance <instance_id>
 
 ```shell
 cwc bucket ls
+cwc bucket ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get by ID
@@ -238,6 +251,7 @@ cwc bucket ls
 ```shell
 cwc bucket ls -b <bucket_id>
 cwc bucket ls --bucket <bucket_id>
+cwc bucket ls -b <bucket_id> -p # or --pretty in order to make the output pretty
 ```
 
 ### Update credentials
@@ -260,6 +274,7 @@ cwc bucket delete --bucket <bucket_id>
 
 ```shell
 cwc registry ls
+cwc registry ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get by ID
@@ -267,6 +282,7 @@ cwc registry ls
 ```shell
 cwc registry ls -r <registry_id>
 cwc registry ls --registry <registry_id>
+cwc registry ls -r <registry_id> -p # or --pretty in order to make the output pretty
 ```
 
 ### Update credentials
@@ -281,4 +297,226 @@ cwc registry update --registry <registry_id>
 ```shell
 cwc registry delete -r <registry_id>
 cwc registry delete --registry <registry_id>
+```
+
+## Faas languages
+
+## List languages
+
+```shell
+cwc faas languages ls 
+cwc faas languages ls -p # or --pretty in order to make the output pretty
+```
+
+## Faas function
+
+### List
+
+```shell
+cwc faas function ls
+cwc faas function ls -p # or --pretty in order to make the output pretty
+```
+
+### Get by ID
+
+```shell
+cwc faas function ls -f <function_id>
+cwc faas function ls --function <function_id>
+cwc faas function ls -f <function_id> -p # or --pretty in order to make the output pretty
+```
+
+## Create
+
+```shell
+cwc faas function create -n <function_name> -l <language_name>
+cwc faas function create --name <function_name> --language <language_name>
+```
+* By default the function created is private if you add `-p` or `--public` flag the function becomes public.
+* There are other optional flags for direct creation:  
+
+```shell
+-r ## Regexp of the function
+## or
+--regexp
+```
+```shell
+-u ## Callback URL of the function
+## or 
+--callback-url
+```
+```shell
+-a ## Callback Authorization Header of the function
+## or
+--callback-authorization-header
+```
+```shell
+-g ## Arguments of the function
+## or
+--args
+```
+```shell
+-c ## Code of the function
+## or
+--code
+```
+* Instead of entering the optional flags behind each other you can enter your data with the interactive mode by adding `-i` or `--interactive` flag.
+
+### Update
+
+```shell
+cwc faas function update -f <function_id>
+cwc faas function update --function <function_id>
+```
+You can update the function by going through the interactive mode by adding `-i` or `--interactive` flag or you can pass your data directly with these optional flags:
+```shell
+-l  ## Language of the function
+## or
+--language
+```
+```shell
+-r ## Regexp of the function
+## or
+--regexp
+```
+```shell
+-u ## Callback URL of the function
+## or 
+--callback-url
+```
+```shell
+-a ## Callback Authorization Header of the function
+## or
+--callback-authorization-header
+```
+```shell
+-g ## Arguments of the function
+## or
+--args
+```
+```shell
+-c ## Code of the function
+## or
+--code
+```
+### Delete
+
+```shell
+cwc faas function delete -f <function_id>
+cwc faas function delete --function <function_id>
+```
+
+## Faas invocation
+
+### List
+
+```shell
+cwc faas invocation ls
+cwc faas invocation ls -p # or --pretty in order to make the output pretty
+```
+
+### Get by ID
+
+```shell
+cwc faas invocation ls -i <invocation_id>
+cwc faas invocation ls --invocation <invocation_id>
+```
+```shell
+cwc faas invocation ls -i <invocation_id> -p
+cwc faas invocation ls -i <invocation_id> --pretty
+```
+### Create
+
+```shell
+cwc faas invocation create -f <function_id>
+cwc faas invocation create --function <function_id>
+```
+* There is other optional flag for direct creation:  
+```shell
+-a ## Arguments values of the function
+## or
+--args
+```
+```shell
+-s ## Activating the synchronous mode
+## or
+--synchronous
+```
+* Instead of entering the optional flag you can enter your data with the interactive mode by adding `-i` or `--interactive` flag.
+### Delete
+
+```shell
+cwc faas invocation delete -i <invocation_id>
+cwc faas invocation delete --invocation <invocation_id>
+```
+
+### Truncate
+
+```shell
+cwc faas invocation truncate
+```
+
+## Faas Trigger
+
+## List trigger kinds
+
+```shell
+cwc faas trigger kinds
+cwc faas trigger kinds -p # or --pretty in order to make the output pretty
+```
+
+### List
+
+```shell
+cwc faas trigger ls
+cwc faas trigger ls -p # or --pretty in order to make the output pretty
+```
+
+### Get by ID
+
+```shell
+cwc faas trigger ls -t  <trigger_id>
+cwc faas trigger ls --trigger  <trigger_id>
+cwc faas trigger ls -t  <trigger_id> -p # or --pretty in order to make the output pretty
+```
+
+### Create
+
+```shell
+cwc faas trigger create -f <function_id>
+cwc faas trigger create --function <function_id>
+```
+* There are other optional flags for direct creation:
+
+```shell
+-n ## Trigger name
+## or
+--name
+```
+```shell
+-k ## Trigger kind
+## or
+--kind
+```
+```shell
+-c ## Trigger cron expression
+## or
+--cron_expr
+```
+```shell
+-a ## Function arguments values
+## or
+--args
+```
+* Instead of entering the optional flag you can enter your data with the interactive mode by adding `-i` or `--interactive` flag.
+### Delete
+
+```shell
+cwc faas trigger delete -t  <trigger_id>
+cwc faas trigger delete --trigger  <trigger_id>
+```
+
+### Truncate
+
+```shell
+cwc faas trigger truncate
 ```

@@ -18,6 +18,7 @@ This tutorial is also available in the following languages:
 
 ```shell
 cwc admin user ls
+cwc admin user ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get user by ID
@@ -25,6 +26,7 @@ cwc admin user ls
 ```shell
 cwc admin user ls -u <user_id>
 cwc admin user ls --user <user_id>
+cwc admin user ls -u <user_id> -p # or --pretty in order to make the output pretty
 ```
 
 ### Delete
@@ -40,6 +42,7 @@ cwc admin user delete --user <user_id>
 
 ```shell
 cwc admin project ls
+cwc admin project ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Search Project
@@ -49,6 +52,7 @@ cwc admin project ls
 ```shell
 cwc admin project ls -p <project_id>
 cwc admin project ls --id <project_id>
+cwc admin project ls -p <project_id> -P # or --pretty in order to make the output pretty
 ```
 
 #### Search Project By Name
@@ -117,6 +121,7 @@ Note: if you want to mark the environment as private use the `-a` or `--private`
 
 ```shell
 cwc admin environment ls
+cwc admin environment ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get environment by ID
@@ -124,6 +129,7 @@ cwc admin environment ls
 ```shell
 cwc admin environment ls -e <environment_id>
 cwc admin environment ls --environment <environment_id>
+cwc admin environment ls -e <environment_id> -p # or --pretty in order to make the output pretty
 ```
 
 ## Instances
@@ -132,6 +138,7 @@ cwc admin environment ls --environment <environment_id>
 
 ```shell
 cwc admin instance ls
+cwc admin instance ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get instance by ID
@@ -139,7 +146,7 @@ cwc admin instance ls
 ```shell
 cwc admin instance ls -i <instance_id>
 cwc admin instance ls --instance <instance_id>
-
+cwc admin instance ls -i <instance_id> -p # or --pretty in order to make the output pretty
 ```
 
 ### Create
@@ -192,6 +199,7 @@ cwc admin bucket create --name <bucket_name> --type <bucket_type> --user <user_m
 
 ```shell
 cwc admin bucket ls
+cwc admin bucket ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get bucket by ID
@@ -199,6 +207,7 @@ cwc admin bucket ls
 ```shell
 cwc admin bucket ls -b <bucket_id>
 cwc admin bucket ls --bucket <bucket_id>
+cwc admin bucket ls -b <bucket_id> -p # or --pretty in order to make the output pretty
 ```
 
 ### Update credentials
@@ -235,6 +244,7 @@ cwc admin registry create --name <registry_name> --type <registry_type> --user <
 
 ```shell
 cwc admin registry ls
+cwc admin registry ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get Registry by ID
@@ -242,8 +252,8 @@ cwc admin registry ls
 ```shell
 cwc admin registry ls -r <registry_id>
 cwc admin registry ls --registry <registry_id>
+cwc admin registry ls -r <registry_id> -p # or --pretty in order to make the output pretty
 ```
-
 ### Update credentials
 
 ```shell
@@ -272,4 +282,57 @@ cwc admin registry delete --registry <registry_id>
 ```shell
 cwc admin email -f from@provider.com -t to@provider.com -s subject -c content -m false
 cwc admin email --from from@provider.com --to to@provider.com --subject subject --content content --templated false
+```
+
+## Faas function
+
+### List
+
+```shell
+cwc admin faas function ls
+cwc admin faas function ls -p # or --pretty in order to make the output pretty
+```
+
+### Get owner by function ID
+
+```shell
+cwc admin faas function ls -f <function_id>
+cwc admin faas function ls --function <function_id>
+cwc admin faas function ls -f <function_id> -p # or --pretty in order to make the output pretty
+```
+
+## Faas invocation
+
+### List
+
+```shell
+cwc admin faas invocation ls
+cwc admin faas invocation ls -p # or --pretty in order to make the output pretty
+```
+
+### Get invoker by invocation ID
+
+```shell
+cwc admin faas invocation ls -i <invocation_id>
+cwc admin faas invocation ls --invocation <invocation_id>
+cwc admin faas invocation ls -i <invocation_id> -p # or --pretty in order to make the output pretty
+```
+
+## Faas Trigger
+
+### List
+
+```shell
+cwc admin faas trigger ls
+```
+```shell
+cwc admin faas trigger ls -p # or --pretty in order to make the output pretty
+```
+
+### Get owner by trigger ID
+
+```shell
+cwc admin faas trigger ls -t  <trigger_id>
+cwc admin faas trigger ls --trigger <trigger_id>
+cwc admin faas trigger ls -t  <trigger_id> -p # or --pretty in order to make the output pretty
 ```
