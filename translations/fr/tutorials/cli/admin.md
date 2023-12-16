@@ -284,14 +284,14 @@ cwc admin email --from from@provider.com --to to@provider.com --subject subject 
 ```
 ## Fonction Faas
 
-### Liste
+### Lister
 
 ```shell
 cwc admin faas function ls
 cwc admin faas function ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
-### Obtenir le propriétaire par identifiant de fonction
+### Obtenir le propriétaire
 
 ```shell
 cwc admin faas function ls -f <function_id>
@@ -301,34 +301,31 @@ cwc admin faas function ls -f <function_id> -p # ou --pretty pour avoir la sorti
 
 ## Invocation des faas
 
-### Liste
+### Lister
 
 ```shell
 cwc admin faas invocation ls
 cwc admin faas invocation ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
-### Obtenir l'invocateur par identifiant de l'invocation
+### Obtenir l'invocateur
 
 ```shell
 cwc admin faas invocation ls -i <invocation_id>
 cwc admin faas invocation ls --invocation <invocation_id>
-```
-```shell
-cwc admin faas invocation ls -i <invocation_id> -p
-cwc admin faas invocation ls -i <invocation_id> --pretty
+cwc admin faas invocation ls -i <invocation_id> -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ## Déclencheur Faas
 
-### Liste
+### Lister
 
 ```shell
 cwc admin faas trigger ls
 cwc admin faas trigger ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
-### Obtenir le propriétaire par identifiant de déclenchement
+### Obtenir le propriétaire
 
 ```shell
 cwc admin faas trigger ls -t  <trigger_id>

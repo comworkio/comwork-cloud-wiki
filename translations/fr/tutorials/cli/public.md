@@ -314,7 +314,7 @@ cwc faas language ls --pretty
 ```
 ## Fonctions de Faas
 
-### Liste
+### Lister
 
 ```shell
 cwc faas function ls
@@ -413,7 +413,7 @@ cwc faas function delete --function <function_id>
 
 ## Faas invocation
 
-### Liste
+### Lister
 
 ```shell
 cwc faas invocation ls
@@ -464,7 +464,7 @@ cwc faas invocation truncate
 
 ## Faas Trigger
 
-### Liste
+### Lister
 
 ```shell
 cwc faas trigger ls
@@ -513,6 +513,7 @@ cwc faas trigger create --function <function_id>
 --args
 ```
 * Au lieu d'entrer le drapeau optionnel, vous pouvez entrer vos données en mode interactif en ajoutant le drapeau `-i` ou `--interactive`.
+
 ### Supprimer
 
 ```shell
