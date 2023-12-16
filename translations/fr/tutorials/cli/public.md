@@ -97,10 +97,7 @@ cwc project ls --pretty
 ```shell
 cwc project ls -p <project_id>
 cwc project ls --id <project_id>
-```
-```shell
-cwc project ls -P <project_id> -p # Ce flag rendra la sortie jolie
-cwc project ls --id <project_id> --pretty 
+cwc project ls -P <project_id> -p # ou --pretty pour avoir la sortie jolie
 ```
 
 #### Rechercher par nom
@@ -109,7 +106,6 @@ cwc project ls --id <project_id> --pretty
 cwc project ls -n <project_name>
 cwc project ls --name <project_name>
 ```
-
 
 #### Rechercher par URL
 
@@ -171,10 +167,7 @@ cwc dnszones ls
 
 ```shell
 cwc environment ls
-```
-```shell
-cwc environment ls -p # Ce flag rendra la sortie joliepretty
-cwc environment ls --pretty
+cwc environment ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Rechercher par ID
@@ -182,10 +175,7 @@ cwc environment ls --pretty
 ```shell
 cwc environment ls -e <environment_id>
 cwc environment ls --environment <environment_id>
-```
-```shell
-cwc environment ls -e <environment_id> -p # Ce flag rendra la sortie joliepretty
-cwc environment ls --environment <environment_id> --pretty
+cwc environment ls -e <environment_id> -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ## Instances
@@ -200,10 +190,7 @@ cwc instance type ls
 
 ```shell
 cwc instance ls
-```
-```shell
-cwc instance ls -p # Ce flag rendra la sortie joliepretty
-cwc instance ls --pretty
+cwc instance ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Rechercher par ID
@@ -211,10 +198,7 @@ cwc instance ls --pretty
 ```shell
 cwc instance ls -i <instance_id>
 cwc instance ls --instance <instance_id>
-```
-```shell
-cwc instance ls -i <instance_id> -p # Ce flag rendra la sortie joliepretty
-cwc instance ls --instance <instance_id> --pretty
+cwc instance ls -i <instance_id> -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Créer
@@ -262,10 +246,7 @@ cwc instance delete --instance <instance_id>
 
 ```shell
 cwc bucket ls
-```
-```shell
-cwc bucket ls -p # Ce flag rendra la sortie joliepretty
-cwc bucket ls --pretty
+cwc bucket ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Rechercher par ID
@@ -273,10 +254,7 @@ cwc bucket ls --pretty
 ```shell
 cwc bucket ls -b <bucket_id>
 cwc bucket ls --bucket <bucket_id>
-```
-```shell
-cwc bucket ls -b <bucket_id> -p # Ce flag rendra la sortie joliepretty
-cwc bucket ls --bucket <bucket_id> --pretty
+cwc bucket ls -b <bucket_id> -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Mettre à jour les identifiants de connexion
@@ -299,9 +277,7 @@ cwc bucket delete --bucket <bucket_id>
 
 ```shell
 cwc registry ls
-```
-```shell
-cwc registry ls -p # Ce flag rendra la sortie joliepretty
+cwc registry ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Rechercher par ID
@@ -316,10 +292,7 @@ cwc registry ls --registry <registry_id>
 ```shell
 cwc registry update -r <registry_id>
 cwc registry update --registry <registry_id>
-```
-```shell
-cwc registry ls -r <registry_id> -p # Ce flag rendra la sortie joliepretty
-cwc registry ls --registry <registry_id> --pretty
+cwc registry ls -r <registry_id> -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Supprimer
@@ -345,10 +318,7 @@ cwc faas language ls --pretty
 
 ```shell
 cwc faas function ls
-```
-```shell
-cwc faas function ls -p # Ce flag rendra la sortie jolie
-cwc faas function ls --pretty
+cwc faas function ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Recherche par Id
@@ -356,10 +326,7 @@ cwc faas function ls --pretty
 ```shell
 cwc faas function ls -f <function_id>
 cwc faas function ls --function <function_id>
-```
-```shell
-cwc faas function ls -f <function_id> -p # Ce flag rendra la sortie jolie
-cwc faas function ls --function <function_id> --pretty
+cwc faas function ls -f <function_id> -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ## Créer
@@ -450,10 +417,7 @@ cwc faas function delete --function <function_id>
 
 ```shell
 cwc faas invocation ls
-```
-```shell
-cwc faas invocation ls -p # Ce flag rendra la sortie jolie
-cwc faas invocation ls --pretty 
+cwc faas invocation ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Recherche par Id
@@ -504,10 +468,7 @@ cwc faas invocation truncate
 
 ```shell
 cwc faas trigger ls
-```
-```shell
-cwc faas trigger ls -p # Ce flag rendra la sortie jolie
-cwc faas trigger ls --pretty
+cwc faas trigger ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Recherche par Id
@@ -515,20 +476,15 @@ cwc faas trigger ls --pretty
 ```shell
 cwc faas trigger ls -t  <trigger_id>
 cwc faas trigger ls --trigger  <trigger_id>
-```
-```shell
-cwc faas trigger ls -t  <trigger_id> -p # Ce flag rendra la sortie jolie
-cwc faas trigger ls --trigger  <trigger_id> --pretty
+cwc faas trigger ls -t  <trigger_id> -p # ou --pretty pour avoir la sortie jolie
 ```
 ## Liste des types de déclencheurs
 
 ```shell
 cwc faas trigger kinds
+cwc faas trigger kinds -p # ou --pretty pour avoir la sortie jolie
 ```
-```shell
-cwc faas trigger kinds -p # Ce flag rendra la sortie jolie
-cwc faas trigger kinds --pretty
-```
+
 ### Créer
 
 ```shell
