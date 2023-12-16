@@ -164,10 +164,7 @@ cwc dnszones ls
 
 ```shell
 cwc environment ls
-```
-```shell
-cwc environment ls -p # this flag will make the output pretty
-cwc environment ls --pretty
+cwc environment ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get by ID
@@ -175,10 +172,7 @@ cwc environment ls --pretty
 ```shell
 cwc environment ls -e <environment_id>
 cwc environment ls --environment <environment_id>
-```
-```shell
-cwc environment ls -e <environment_id> -p # this flag will make the output pretty
-cwc environment ls --environment <environment_id> --pretty
+cwc environment ls -e <environment_id> -p # or --pretty in order to make the output pretty
 ```
 
 ## Instances
@@ -193,10 +187,7 @@ cwc instance type ls
 
 ```shell
 cwc instance ls
-```
-```shell
-cwc instance ls -p # this flag will make the output pretty
-cwc instance ls --pretty
+cwc instance ls -p # or --pretty in order to make the output pretty
 ```
 
 ### List instance by ID
@@ -204,10 +195,7 @@ cwc instance ls --pretty
 ```shell
 cwc instance ls -i <instance_id>
 cwc instance ls --instance <instance_id>
-```
-```shell
-cwc instance ls -i <instance_id> -p # this flag will make the output pretty
-cwc instance ls --instance <instance_id> --pretty
+cwc instance ls -i <instance_id> -p # or --pretty in order to make the output pretty
 ```
 
 ### Create
@@ -255,10 +243,7 @@ cwc instance delete --instance <instance_id>
 
 ```shell
 cwc bucket ls
-```
-```shell
-cwc bucket ls -p # this flag will make the output pretty
-cwc bucket ls --pretty
+cwc bucket ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get by ID
@@ -266,10 +251,7 @@ cwc bucket ls --pretty
 ```shell
 cwc bucket ls -b <bucket_id>
 cwc bucket ls --bucket <bucket_id>
-```
-```shell
-cwc bucket ls -b <bucket_id> -p # this flag will make the output pretty
-cwc bucket ls --bucket <bucket_id> --pretty
+cwc bucket ls -b <bucket_id> -p # or --pretty in order to make the output pretty
 ```
 
 ### Update credentials
@@ -292,9 +274,7 @@ cwc bucket delete --bucket <bucket_id>
 
 ```shell
 cwc registry ls
-```
-```shell
-cwc registry ls -p # this flag will make the output pretty
+cwc registry ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get by ID
@@ -302,10 +282,7 @@ cwc registry ls -p # this flag will make the output pretty
 ```shell
 cwc registry ls -r <registry_id>
 cwc registry ls --registry <registry_id>
-```
-```shell
-cwc registry ls -r <registry_id> -p # this flag will make the output pretty
-cwc registry ls --registry <registry_id> --pretty
+cwc registry ls -r <registry_id> -p # or --pretty in order to make the output pretty
 ```
 
 ### Update credentials
@@ -328,10 +305,7 @@ cwc registry delete --registry <registry_id>
 
 ```shell
 cwc faas languages ls 
-```
-```shell
-cwc faas languages ls -p # this flag will make the output pretty
-cwc faas language ls --pretty
+cwc faas languages ls -p # or --pretty in order to make the output pretty
 ```
 
 ## Faas function
@@ -340,10 +314,7 @@ cwc faas language ls --pretty
 
 ```shell
 cwc faas function ls
-```
-```shell
-cwc faas function ls -p # this flag will make the output pretty
-cwc faas function ls --pretty
+cwc faas function ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get by ID
@@ -351,10 +322,7 @@ cwc faas function ls --pretty
 ```shell
 cwc faas function ls -f <function_id>
 cwc faas function ls --function <function_id>
-```
-```shell
-cwc faas function ls -f <function_id> -p # this flag will make the output pretty
-cwc faas function ls --function <function_id> --pretty
+cwc faas function ls -f <function_id> -p # or --pretty in order to make the output pretty
 ```
 
 ## Create
@@ -443,10 +411,7 @@ cwc faas function delete --function <function_id>
 
 ```shell
 cwc faas invocation ls
-```
-```shell
-cwc faas invocation ls -p # this flag will make the output pretty
-cwc faas invocation ls --pretty 
+cwc faas invocation ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get by ID
@@ -496,20 +461,14 @@ cwc faas invocation truncate
 
 ```shell
 cwc faas trigger kinds
-```
-```shell
-cwc faas trigger kinds -p # this flag will make the output pretty
-cwc faas trigger kinds --pretty
+cwc faas trigger kinds -p # or --pretty in order to make the output pretty
 ```
 
 ### List
 
 ```shell
 cwc faas trigger ls
-```
-```shell
-cwc faas trigger ls -p # this flag will make the output pretty
-cwc faas trigger ls --pretty
+cwc faas trigger ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get by ID
@@ -517,10 +476,7 @@ cwc faas trigger ls --pretty
 ```shell
 cwc faas trigger ls -t  <trigger_id>
 cwc faas trigger ls --trigger  <trigger_id>
-```
-```shell
-cwc faas trigger ls -t  <trigger_id> -p # this flag will make the output pretty
-cwc faas trigger ls --trigger  <trigger_id> --pretty
+cwc faas trigger ls -t  <trigger_id> -p # or --pretty in order to make the output pretty
 ```
 
 ### Create
