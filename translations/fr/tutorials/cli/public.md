@@ -301,27 +301,28 @@ cwc registry ls -r <registry_id> -p # ou --pretty pour avoir la sortie jolie
 cwc registry delete -r <registry_id>
 cwc registry delete --registry <registry_id>
 ```
-## Langages faas
 
-## Liste des langues
+## FaaS / serverless
+
+### Langages
+
+#### Lister
 
 ```shell
 cwc faas languages ls 
+cwc faas languages ls -p # ou --pretty pour avoir la sortie jolie
 ```
-```shell
-cwc faas languages ls -p 
-cwc faas language ls --pretty
-```
-## Fonctions de Faas
 
-### Lister
+### Fonctions serverless
+
+#### Lister
 
 ```shell
 cwc faas function ls
 cwc faas function ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
-### Recherche par Id
+#### Rechercher par Id
 
 ```shell
 cwc faas function ls -f <function_id>
@@ -329,15 +330,16 @@ cwc faas function ls --function <function_id>
 cwc faas function ls -f <function_id> -p # ou --pretty pour avoir la sortie jolie
 ```
 
-## Créer
+#### Créer
 
 ```shell
 cwc faas function create -n <function_name> -l <language_name>
 cwc faas function create --name <function_name> --language <language_name>
 ```
+
 * Par défaut, la fonction créée est privée. Si vous ajoutez le flag `-p` ou `--public`, la fonction devient publique.
 
-* Il y a d'autres flags optionnels pour la création directe:
+* Il y a d'autres options facultatives pour la création immédiate :
 
 ```shell
 -r ## Regexp of the function
@@ -364,44 +366,25 @@ cwc faas function create --name <function_name> --language <language_name>
 ## or
 --code
 ```
+
 * Au lieu d'entrer les flags optionnels l'un derrière l'autre, vous pouvez entrer vos données avec le mode interactif en ajoutant `-i` ou `--interactive`.
 
-### Mise à jour
+#### Mettre à jour
 
 ```shell
 cwc faas function update -f <function_id>
 cwc faas function update --function <function_id>
 ```
-Vous pouvez mettre à jour la fonction en passant par le mode interactif en ajoutant le flag `-i` ou `--interactive` ou vous pouvez passer vos données directement avec ces flags optionnels :
+
+Vous pouvez mettre à jour la fonction en passant par le mode interactif en ajoutant le flag `-i` ou `--interactive` ou vous pouvez passer vos données directement avec ces arguments optionnels :
+
 ```shell
--l  ## Language of the function
-## or
---language
-```
-```shell
--r ## Regexp of the function
-## or
---regexp
-```
-```shell
--u ## Callback URL of the function
-## or 
---callback-url
-```
-```shell
--a ## Callback Authorization Header of the function
-## or
---callback-authorization-header
-```
-```shell
--g ## Arguments of the function
-## or
---args
-```
-```shell
--c ## Code of the function
-## or
---code
+-l  ## ou --language pour le langage de programmation de la fonction
+-r ## ou --regexp expression régulière pour sécuriser les arguments
+-u # ou --callback-url url de callback
+-a ## ou --callback-authorization-header header d'authentification pour la callback
+-g ## ou --args pour donner la valeur des arguments (option répétable pour chaque arguments)
+-c ## ou --code code de la fonction
 ```
 
 ### 
@@ -411,117 +394,102 @@ cwc faas function delete -f <function_id>
 cwc faas function delete --function <function_id>
 ```
 
-## Faas invocation
+### Invocations
 
-### Lister
+#### Lister
 
 ```shell
 cwc faas invocation ls
 cwc faas invocation ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
-### Recherche par Id
+#### Rechercher par Id
 
 ```shell
 cwc faas invocation ls -i <invocation_id>
 cwc faas invocation ls --invocation <invocation_id>
+cwc faas invocation ls -i <invocation_id> -p # ou --pretty pour avoir la sortie jolie
 ```
-```shell
-cwc faas invocation ls -i <invocation_id> -p
-cwc faas invocation ls -i <invocation_id> --pretty
-```
-### Créer
+
+#### Créer
 
 ```shell
 cwc faas invocation create -f <function_id>
 cwc faas invocation create --function <function_id>
 ```
-* Il existe un autre indicateur facultatif pour la création directe:  
+
+* Il existe une autre option facultative pour la création immédiate :
+
 ```shell
--a ## Arguments values of the function
-## or
---args
+-a ## ou --args pour donner la valeur des arguments (option répétable pour chaque arguments)
+-s ## ou --synchronous pour activer le mode synchrone
 ```
-```shell
--s ## Activer le mode synchrone
-## or
---synchronous
-```
+
 * Au lieu d'entrer le drapeau optionnel, vous pouvez entrer vos données en mode interactif en ajoutant le drapeau `-i` ou `--interactive`.
 
-### Supprimer
+#### Supprimer
 
 ```shell
 cwc faas invocation delete -i <invocation_id>
 cwc faas invocation delete --invocation <invocation_id>
 ```
 
-### Tronquer
+#### Vider toutes les invocations
 
 ```shell
 cwc faas invocation truncate
 ```
 
-## Faas Trigger
+### Déclencheurs (triggers)
 
-### Lister
+#### Lister
 
 ```shell
 cwc faas trigger ls
 cwc faas trigger ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
-### Recherche par Id
+#### Rechercher par Id
 
 ```shell
 cwc faas trigger ls -t  <trigger_id>
 cwc faas trigger ls --trigger  <trigger_id>
 cwc faas trigger ls -t  <trigger_id> -p # ou --pretty pour avoir la sortie jolie
 ```
-## Liste des types de déclencheurs
+
+#### Lister les types
 
 ```shell
 cwc faas trigger kinds
 cwc faas trigger kinds -p # ou --pretty pour avoir la sortie jolie
 ```
 
-### Créer
+#### Créer
 
 ```shell
 cwc faas trigger create -f <function_id>
 cwc faas trigger create --function <function_id>
 ```
-* Il existe un autre indicateur facultatif pour la création directe:  
+
+* Il existe un autre option facultative pour la création immédiate :  
+
 ```shell
--n ## Trigger name
-## or
---name
+-n ## ou --name pour le nom du trigger
+-k ## ou --kind pour le type du trigger
+-c ## ou --cron_expr pour l'expression cron
+-a ## ou --args pour donner la valeur des arguments (option répétable pour chaque arguments)
 ```
-```shell
--k ## Trigger kind
-## or
---kind
-```
-```shell
--c ## Trigger cron expression
-## or
---cron_expr
-```
-```shell
--a ## Function arguments values
-## or
---args
-```
+
 * Au lieu d'entrer le drapeau optionnel, vous pouvez entrer vos données en mode interactif en ajoutant le drapeau `-i` ou `--interactive`.
 
-### Supprimer
+#### Supprimer
 
 ```shell
 cwc faas trigger delete -t  <trigger_id>
 cwc faas trigger delete --trigger  <trigger_id>
 ```
 
-### Tronquer
+#### Vider tous les triggers
 
 ```shell
 cwc faas trigger truncate
