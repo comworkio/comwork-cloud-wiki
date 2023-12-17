@@ -339,32 +339,15 @@ cwc faas function create --name <function_name> --language <language_name>
 
 * Par défaut, la fonction créée est privée. Si vous ajoutez le flag `-p` ou `--public`, la fonction devient publique.
 
-* Il y a d'autres options facultatives pour la création immédiate :
+* Il existe d'autres options facultatives pour la création immédiate :
 
 ```shell
--r ## Regexp of the function
-## or
---regexp
-```
-```shell
--u ## Callback URL of the function
-## or 
---callback-url
-```
-```shell
--a ## Callback Authorization Header of the function
-## or
---callback-authorization-header
-```
-```shell
--g ## Arguments of the function
-## or
---args
-```
-```shell
--c ## Code of the function
-## or
---code
+-l  ## ou --language pour le langage de programmation de la fonction
+-r ## ou --regexp expression régulière pour sécuriser les arguments
+-u # ou --callback-url url de callback
+-a ## ou --callback-authorization-header header d'authentification pour la callback
+-g ## ou --args pour donner la valeur des arguments (option répétable pour chaque arguments)
+-c ## ou --code code de la fonction
 ```
 
 * Au lieu d'entrer les flags optionnels l'un derrière l'autre, vous pouvez entrer vos données avec le mode interactif en ajoutant `-i` ou `--interactive`.
@@ -376,7 +359,7 @@ cwc faas function update -f <function_id>
 cwc faas function update --function <function_id>
 ```
 
-Vous pouvez mettre à jour la fonction en passant par le mode interactif en ajoutant le flag `-i` ou `--interactive` ou vous pouvez passer vos données directement avec ces arguments optionnels :
+Vous pouvez mettre à jour la fonction en passant par le mode interactif en ajoutant l'option `-i` ou `--interactive` avec laquelle vous pourrez passer vos données directement avec ces options facultatives :
 
 ```shell
 -l  ## ou --language pour le langage de programmation de la fonction
@@ -387,7 +370,7 @@ Vous pouvez mettre à jour la fonction en passant par le mode interactif en ajou
 -c ## ou --code code de la fonction
 ```
 
-### 
+#### Supprimer
 
 ```shell
 cwc faas function delete -f <function_id>
@@ -425,7 +408,7 @@ cwc faas invocation create --function <function_id>
 -s ## ou --synchronous pour activer le mode synchrone
 ```
 
-* Au lieu d'entrer le drapeau optionnel, vous pouvez entrer vos données en mode interactif en ajoutant le drapeau `-i` ou `--interactive`.
+* Au lieu d'utiliser les options ci-dessus, vous pouvez aussi entrer vos données en mode interactif en ajoutant avec l'option `-i` ou `--interactive`.
 
 #### Supprimer
 
@@ -480,7 +463,7 @@ cwc faas trigger create --function <function_id>
 -a ## ou --args pour donner la valeur des arguments (option répétable pour chaque arguments)
 ```
 
-* Au lieu d'entrer le drapeau optionnel, vous pouvez entrer vos données en mode interactif en ajoutant le drapeau `-i` ou `--interactive`.
+* Au lieu d'utiliser les options ci-dessus, vous pouvez entrer vos données en mode interactif en utilisant l'option `-i` ou `--interactive` à la place.
 
 #### Supprimer
 
