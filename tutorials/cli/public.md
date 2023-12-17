@@ -327,7 +327,7 @@ cwc faas function ls --function <function_id>
 cwc faas function ls -f <function_id> -p # or --pretty in order to make the output pretty
 ```
 
-### Create
+#### Create
 
 ```shell
 cwc faas function create -n <function_name> -l <language_name>
@@ -413,7 +413,7 @@ cwc faas invocation delete -i <invocation_id>
 cwc faas invocation delete --invocation <invocation_id>
 ```
 
-### Truncate
+#### Truncate
 
 ```shell
 cwc faas invocation truncate
