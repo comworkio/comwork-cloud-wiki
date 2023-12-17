@@ -302,7 +302,7 @@ cwc registry delete -r <registry_id>
 cwc registry delete --registry <registry_id>
 ```
 
-## FaaS / serverless
+## FaaS / Serverless
 
 ### Langages
 
@@ -342,12 +342,12 @@ cwc faas function create --name <function_name> --language <language_name>
 * Il existe d'autres options facultatives pour la création immédiate :
 
 ```shell
--l  ## ou --language pour le langage de programmation de la fonction
--r ## ou --regexp expression régulière pour sécuriser les arguments
--u # ou --callback-url url de callback
--a ## ou --callback-authorization-header header d'authentification pour la callback
--g ## ou --args pour donner la valeur des arguments (option répétable pour chaque arguments)
--c ## ou --code code de la fonction
+-l # ou --language : pour le langage de programmation de la fonction
+-r # ou --regexp : expression régulière pour sécuriser les arguments
+-u # ou --callback-url : url de callback
+-a # ou --callback-authorization-header : header d'authentification pour la callback
+-g # ou --args : pour donner la valeur des arguments (option répétable pour chaque arguments)
+-c # ou --code : code de la fonction
 ```
 
 * Au lieu d'entrer les flags optionnels l'un derrière l'autre, vous pouvez entrer vos données avec le mode interactif en ajoutant `-i` ou `--interactive`.
@@ -362,12 +362,12 @@ cwc faas function update --function <function_id>
 Vous pouvez mettre à jour la fonction en passant par le mode interactif en ajoutant l'option `-i` ou `--interactive` avec laquelle vous pourrez passer vos données directement avec ces options facultatives :
 
 ```shell
--l  ## ou --language pour le langage de programmation de la fonction
--r ## ou --regexp expression régulière pour sécuriser les arguments
--u # ou --callback-url url de callback
--a ## ou --callback-authorization-header header d'authentification pour la callback
--g ## ou --args pour donner la valeur des arguments (option répétable pour chaque arguments)
--c ## ou --code code de la fonction
+-l # ou --language : pour le langage de programmation de la fonction
+-r # ou --regexp : expression régulière pour sécuriser les arguments
+-u # ou --callback-url : url de callback
+-a # ou --callback-authorization-header : header d'authentification pour la callback
+-g # ou --args : pour donner la valeur des arguments (option répétable pour chaque arguments)
+-c # ou --code : code de la fonction
 ```
 
 #### Supprimer
@@ -404,8 +404,8 @@ cwc faas invocation create --function <function_id>
 * Il existe une autre option facultative pour la création immédiate :
 
 ```shell
--a ## ou --args pour donner la valeur des arguments (option répétable pour chaque arguments)
--s ## ou --synchronous pour activer le mode synchrone
+-a # ou --args : pour donner la valeur des arguments (option répétable pour chaque arguments)
+-s # ou --synchronous : pour activer le mode synchrone
 ```
 
 * Au lieu d'utiliser les options ci-dessus, vous pouvez aussi entrer vos données en mode interactif en ajoutant avec l'option `-i` ou `--interactive`.
@@ -457,10 +457,10 @@ cwc faas trigger create --function <function_id>
 * Il existe un autre option facultative pour la création immédiate :  
 
 ```shell
--n ## ou --name pour le nom du trigger
--k ## ou --kind pour le type du trigger
--c ## ou --cron_expr pour l'expression cron
--a ## ou --args pour donner la valeur des arguments (option répétable pour chaque arguments)
+-n # ou --name : pour le nom du trigger
+-k # ou --kind : pour le type du trigger
+-c # ou --cron_expr : pour l'expression cron
+-a # ou --args pour : donner la valeur des arguments (option répétable pour chaque arguments)
 ```
 
 * Au lieu d'utiliser les options ci-dessus, vous pouvez entrer vos données en mode interactif en utilisant l'option `-i` ou `--interactive` à la place.
