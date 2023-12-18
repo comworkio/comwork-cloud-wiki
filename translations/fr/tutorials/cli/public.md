@@ -296,6 +296,10 @@ cwc registry delete --registry <registry_id>
 
 ## FaaS / Serverless
 
+### Démo
+
+[![demo_cli_faas](../../../../img/demo_cli_faas.png)](https://youtu.be/qZORLI73hok)
+
 ### Langages
 
 #### Lister
