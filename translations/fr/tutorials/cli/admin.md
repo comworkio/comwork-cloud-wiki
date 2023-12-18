@@ -18,7 +18,6 @@ Ce tutoriel est également disponible dans les langues suivantes :
 
 ```shell
 cwc admin user ls
-cwc admin user ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Get user by ID
@@ -26,7 +25,6 @@ cwc admin user ls -p # ou --pretty pour avoir la sortie jolie
 ```shell
 cwc admin user ls -u <user_id>
 cwc admin user ls --user <user_id>
-cwc admin user ls -u <user_id> -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Supprimer
@@ -42,7 +40,6 @@ cwc admin user delete --user <user_id>
 
 ```shell
 cwc admin project ls
-cwc admin project ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Rechercher des projets
@@ -52,7 +49,6 @@ cwc admin project ls -p # ou --pretty pour avoir la sortie jolie
 ```shell
 cwc admin project ls -p <project_id>
 cwc admin project ls --id <project_id>
-cwc admin project ls -p <project_id> -P # ou --pretty pour avoir la sortie jolie
 ```
 
 #### Rechercher par nom
@@ -120,7 +116,6 @@ Remarque : Si vous voulez rendre l'environnement privé (accessible qu'aux admin
 
 ```shell
 cwc admin environment ls
-cwc admin environment ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Rechercher par ID
@@ -128,7 +123,7 @@ cwc admin environment ls -p # ou --pretty pour avoir la sortie jolie
 ```shell
 cwc admin environment ls -e <environment_id>
 cwc admin environment ls --environment <environment_id>
-cwc admin environment ls -e <environment_id> -p # ou --pretty pour avoir la sortie jolie
+cwc admin environment ls -e <environment_id> -p
 ```
 
 ## Instances
@@ -137,7 +132,6 @@ cwc admin environment ls -e <environment_id> -p # ou --pretty pour avoir la sort
 
 ```shell
 cwc admin instance ls
-cwc admin instance ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Rechercher par ID
@@ -145,7 +139,7 @@ cwc admin instance ls -p # ou --pretty pour avoir la sortie jolie
 ```shell
 cwc admin instance ls -i <instance_id>
 cwc admin instance ls --instance <instance_id>
-cwc admin instance ls -i <instance_id> -p # ou --pretty pour avoir la sortie jolie
+cwc admin instance ls -i <instance_id> -p
 ```
 
 ### Créer pour un(e) utilisateur
@@ -197,7 +191,6 @@ cwc admin bucket create --name <bucket_name> --type <bucket_type> --user <user_m
 
 ```shell
 cwc admin bucket ls
-cwc admin bucket ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Rechercher par ID
@@ -205,7 +198,6 @@ cwc admin bucket ls -p # ou --pretty pour avoir la sortie jolie
 ```shell
 cwc admin bucket ls -b <bucket_id>
 cwc admin bucket ls --bucket <bucket_id>
-cwc admin bucket ls -b <bucket_id> -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Mettre à jour les identifiants de connexion
@@ -242,7 +234,6 @@ cwc admin registry create --name <registry_name> --type <registry_type> --user <
 
 ```shell
 cwc admin registry ls
-cwc admin registry ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Rechercher par ID
@@ -250,7 +241,6 @@ cwc admin registry ls -p # ou --pretty pour avoir la sortie jolie
 ```shell
 cwc admin registry ls -r <registry_id>
 cwc admin registry ls --registry <registry_id>
-cwc admin registry ls -r <registry_id> -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Mettre à jour les identifiants de connexion
@@ -288,7 +278,6 @@ cwc admin email --from from@provider.com --to to@provider.com --subject subject 
 
 ```shell
 cwc admin faas function ls
-cwc admin faas function ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Obtenir le propriétaire
@@ -296,7 +285,6 @@ cwc admin faas function ls -p # ou --pretty pour avoir la sortie jolie
 ```shell
 cwc admin faas function ls -f <function_id>
 cwc admin faas function ls --function <function_id>
-cwc admin faas function ls -f <function_id> -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ## Invocation des faas
@@ -305,7 +293,6 @@ cwc admin faas function ls -f <function_id> -p # ou --pretty pour avoir la sorti
 
 ```shell
 cwc admin faas invocation ls
-cwc admin faas invocation ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Obtenir l'invocateur
@@ -313,7 +300,6 @@ cwc admin faas invocation ls -p # ou --pretty pour avoir la sortie jolie
 ```shell
 cwc admin faas invocation ls -i <invocation_id>
 cwc admin faas invocation ls --invocation <invocation_id>
-cwc admin faas invocation ls -i <invocation_id> -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ## Déclencheur Faas
@@ -322,7 +308,6 @@ cwc admin faas invocation ls -i <invocation_id> -p # ou --pretty pour avoir la s
 
 ```shell
 cwc admin faas trigger ls
-cwc admin faas trigger ls -p # ou --pretty pour avoir la sortie jolie
 ```
 
 ### Obtenir le propriétaire
@@ -330,5 +315,4 @@ cwc admin faas trigger ls -p # ou --pretty pour avoir la sortie jolie
 ```shell
 cwc admin faas trigger ls -t  <trigger_id>
 cwc admin faas trigger ls --trigger  <trigger_id>
-cwc admin faas trigger ls -t  <trigger_id> -p # ou --pretty pour avoir la sortie jolie
 ```

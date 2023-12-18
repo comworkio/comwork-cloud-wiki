@@ -75,16 +75,20 @@ cwc configure set region UK1
 cwc configure set format json
 ```
 
+#### Output's formats
+
+The know output's format are the following:
+
+* `plain`: columns separated with spaces, usable in a shell script
+* `json`: JSON format, usable in more high level programing languages
+* `pretty`: more understandable output for human but not very usable in a program or shell scripts. This format can be punctually asked by adding `-p` or `--pretty` directly in your commands.
+
 ## Projects
 
 ### List
 
 ```shell
 cwc project ls
-```
-```shell
-cwc project ls -p # this flag will make the output
-cwc project ls --pretty 
 ```
 
 ### Search Project
@@ -94,10 +98,6 @@ cwc project ls --pretty
 ```shell
 cwc project ls -P <project_id>
 cwc project ls --id <project_id>
-```
-```shell
-cwc project ls -P <project_id> -p # this flag will make the output 
-cwc project ls --id <project_id> --pretty 
 ```
 
 #### Search Project By Name
@@ -164,15 +164,13 @@ cwc dnszones ls
 
 ```shell
 cwc environment ls
-cwc environment ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get by ID
 
 ```shell
 cwc environment ls -e <environment_id>
-cwc environment ls --environment <environment_id>
-cwc environment ls -e <environment_id> -p # or --pretty in order to make the output pretty
+cwc environment ls --environment <environment_id>pretty
 ```
 
 ## Instances
@@ -187,7 +185,6 @@ cwc instance type ls
 
 ```shell
 cwc instance ls
-cwc instance ls -p # or --pretty in order to make the output pretty
 ```
 
 ### List instance by ID
@@ -195,7 +192,6 @@ cwc instance ls -p # or --pretty in order to make the output pretty
 ```shell
 cwc instance ls -i <instance_id>
 cwc instance ls --instance <instance_id>
-cwc instance ls -i <instance_id> -p # or --pretty in order to make the output pretty
 ```
 
 ### Create
@@ -243,7 +239,6 @@ cwc instance delete --instance <instance_id>
 
 ```shell
 cwc bucket ls
-cwc bucket ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get by ID
@@ -251,7 +246,6 @@ cwc bucket ls -p # or --pretty in order to make the output pretty
 ```shell
 cwc bucket ls -b <bucket_id>
 cwc bucket ls --bucket <bucket_id>
-cwc bucket ls -b <bucket_id> -p # or --pretty in order to make the output pretty
 ```
 
 ### Update credentials
@@ -274,7 +268,6 @@ cwc bucket delete --bucket <bucket_id>
 
 ```shell
 cwc registry ls
-cwc registry ls -p # or --pretty in order to make the output pretty
 ```
 
 ### Get by ID
@@ -282,7 +275,6 @@ cwc registry ls -p # or --pretty in order to make the output pretty
 ```shell
 cwc registry ls -r <registry_id>
 cwc registry ls --registry <registry_id>
-cwc registry ls -r <registry_id> -p # or --pretty in order to make the output pretty
 ```
 
 ### Update credentials
@@ -306,8 +298,7 @@ cwc registry delete --registry <registry_id>
 #### List
 
 ```shell
-cwc faas languages ls 
-cwc faas languages ls -p # or --pretty in order to make the output pretty
+cwc faas languages ls
 ```
 
 ### Serverless functions
@@ -316,7 +307,6 @@ cwc faas languages ls -p # or --pretty in order to make the output pretty
 
 ```shell
 cwc faas function ls
-cwc faas function ls -p # or --pretty in order to make the output pretty
 ```
 
 #### Get by ID
@@ -324,7 +314,6 @@ cwc faas function ls -p # or --pretty in order to make the output pretty
 ```shell
 cwc faas function ls -f <function_id>
 cwc faas function ls --function <function_id>
-cwc faas function ls -f <function_id> -p # or --pretty in order to make the output pretty
 ```
 
 #### Create
@@ -379,7 +368,6 @@ cwc faas function delete --function <function_id>
 
 ```shell
 cwc faas invocation ls
-cwc faas invocation ls -p # or --pretty in order to make the output pretty
 ```
 
 #### Get by ID
@@ -387,7 +375,6 @@ cwc faas invocation ls -p # or --pretty in order to make the output pretty
 ```shell
 cwc faas invocation ls -i <invocation_id>
 cwc faas invocation ls --invocation <invocation_id>
-cwc faas invocation ls -i <invocation_id> -p # or --pretty in order to make the output pretty
 ```
 
 #### Create
@@ -425,14 +412,12 @@ cwc faas invocation truncate
 
 ```shell
 cwc faas trigger kinds
-cwc faas trigger kinds -p # or --pretty in order to make the output pretty
 ```
 
 #### List
 
 ```shell
 cwc faas trigger ls
-cwc faas trigger ls -p # or --pretty in order to make the output pretty
 ```
 
 #### Get by ID
@@ -440,7 +425,6 @@ cwc faas trigger ls -p # or --pretty in order to make the output pretty
 ```shell
 cwc faas trigger ls -t  <trigger_id>
 cwc faas trigger ls --trigger  <trigger_id>
-cwc faas trigger ls -t  <trigger_id> -p # or --pretty in order to make the output pretty
 ```
 
 #### Create
