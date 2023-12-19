@@ -25,7 +25,7 @@ firewall_allow:
     ip: {put your ip or range here}
 ```
 
-2. Se connecter avec [ssh](./ssh.md), et sécuriser le serveur de base de données :
+2. Se connecter avec [ssh](../ssh.md), et sécuriser le serveur de base de données :
 
 ```shell
 $ sudo mysql_secure_installation
@@ -61,4 +61,31 @@ mysql> CREATE TABLE my_table (id INTEGER);
 Query OK, 0 rows affected (0.04 sec)
 mysql> INSERT INTO my_table VALUES (1);
 Query OK, 1 row affected (0.04 sec)
+```
+
+## Problèmes
+
+### Too many connections
+
+Cette erreur indique qu'il y a trop de connexions ouvertes sur MySQL/MariaDB.
+
+Pour vérifier le nombre de connexions ouvertes, aller [en ssh](../ssh.md) sur l'instance et exécutez la commande suivante:
+
+```shell
+$ netstat -tanpu |grep -i mysql|wc -l
+101
+```
+
+Généralement il aller regarder dans le code des applications qui utilisent MySQL :
+* Si elle utilisent un pool de connexions persistentes pour éviter d'en ouvrir systématiquement à chaque requêtes
+* Si des requêtes prennent trop de temps, provoquant ainsi la multiplication d'ouverture de connexions
+
+Exemple pour PHP PDO : https://www.php.net/manual/fr/pdo.connections.php
+
+```php
+<?php
+$dbh = new PDO('mysql:host=localhost;dbname=test', $user, $pass, array(
+    PDO::ATTR_PERSISTENT => true
+));
+?>
 ```

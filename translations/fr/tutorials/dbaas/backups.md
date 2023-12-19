@@ -1,5 +1,3 @@
-
-
 # Sauvegardes sur object storage
 
 ## Traductions

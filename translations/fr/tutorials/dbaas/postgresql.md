@@ -32,7 +32,7 @@ firewall_allow:
     ip: {put your ip or range here}
 ```
 
-3. Se connecter avec [ssh](./ssh.md), ensuite initialiser la base de données et l'utilisateur :
+3. Se connecter avec [ssh](../ssh.md), ensuite initialiser la base de données et l'utilisateur :
 
 ```shell
 $ sudo su -
