@@ -15,7 +15,7 @@ Par exemple sur scaleway :
 
 ![scaleway_bucket](../../../img/scaleway_bucket.png)
 
-Vous pouvez demander à l'équipe de CwCloud l'accès à des buckets en suivant [cette procédure](../../../storage.md)
+Vous pouvez demander à l'équipe de CwCloud l'accès à des buckets en suivant [cette procédure](../../../../storage.md)
 
 2. Importez ce [role ansible](https://gitlab.comwork.io/oss/bucket-backup/-/tree/main/ansible-bucket-backup) dans le dossier `roles/` de votre projet gitlab IaC[^1] (nommez-le `bucket-backup` au lieu de `ansible-bucket-backup`)
 

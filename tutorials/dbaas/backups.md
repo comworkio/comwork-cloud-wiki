@@ -15,7 +15,7 @@ Example on scaleway:
 
 ![scaleway_bucket](../img/scaleway_bucket.png)
 
-You can ask for getting a bucket handled by CwCloud following [this procedure](../storage.md)
+You can ask for getting a bucket handled by CwCloud following [this procedure](../../storage.md)
 
 2. Import this opensource [ansible role](https://gitlab.comwork.io/oss/bucket-backup/-/tree/main/ansible-bucket-backup) in the `roles/` folder of your gitlab IaC[^1] project (name-it `bucket-backup` instead of `ansible-bucket-backup`)
 
