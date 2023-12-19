@@ -18,7 +18,7 @@ Either on OVHCloud and Scaleway, you'll get object storages buckets with an S3 c
 
 ![bucket](./img/bucket.png)
 
-We also provide this [`backup-bucket`](https://gitlab.comwork.io/oss/bucket-backup) opensource project that will allow you to use those two implementations as storage backup for your databases (works with all databases, we gave a demo for PostgreSQL and MariaDB/MySQL in [this tutorial](./tutorials/dbaas.md)).
+We also provide this [`backup-bucket`](https://gitlab.comwork.io/oss/bucket-backup) opensource project that will allow you to use those two implementations as storage backup for your databases (works with all databases, we gave a demo for PostgreSQL and MariaDB/MySQL in [this tutorial](./tutorials/dbaas/README.md)).
 
 ## OCI Registry
 

@@ -10,7 +10,7 @@
 * [Wordpress et matomo](./wpaas_matomo.md)
 * [Mastodon](./mastodon.md)
 * [Odoo](./odoo.md)
-* [Databases as a service](./dbaas.md)
+* [Databases as a service](./dbaas/README.md)
 * [Overleaf as a service](./overleaf.md)
 * [Imalive metrics exporter](./imalive.md)
 * [Connection avec SSH](./ssh.md)
