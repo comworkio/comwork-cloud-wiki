@@ -43,3 +43,38 @@ ExecStart=/usr/bin/gitlab-runner run --working-directory /root --config /root/.g
 systemctl daemon-reload
 systemctl restart gitlab-runner
 ```
+
+## Le dossier build semble corrompu
+
+Vous avez l'erreur suivante ?
+
+```shell
+Running with gitlab-runner 16.6.1 (f5da3c5a)
+  on imagesbuilder Vh7VZrH-, system ID: xxxxx
+Preparing the "shell" executor
+00:00
+Using Shell (bash) executor...
+Preparing environment
+00:00
+Running on imagesbuilder...
+Getting source from Git repository
+00:00
+Fetching changes with git depth set to 20...
+Reinitialized existing Git repository in /root/builds/Vh7VZrH-/0/myorga/myproject/.git/
+error: RPC failed; HTTP 500 curl 22 The requested URL returned error: 500
+fatal: error reading section header 'acknowledgments'
+Cleaning up project directory and file based variables
+00:00
+ERROR: Job failed: exit status 1
+```
+
+**1/** Vérifier que votre gitlab runner est à jour (suivre la procédure au dessus)
+
+**2/** Aller [en ssh](./ssh.md) sur le runner et supprimer le dossier build comme ceci :
+
+```shell
+sudo su -
+rm -rf /root/builds/Vh7VZrH-
+```
+
+**3/** Relancez-vos pipelines.
