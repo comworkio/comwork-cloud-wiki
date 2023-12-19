@@ -13,7 +13,7 @@ This tutorial will show you how to backup your databases using the [`backup-buck
 
 Example on scaleway:
 
-![scaleway_bucket](../img/scaleway_bucket.png)
+![scaleway_bucket](../../img/scaleway_bucket.png)
 
 You can ask for getting a bucket handled by CwCloud following [this procedure](../../storage.md)
 
@@ -129,7 +129,7 @@ mysql:
 
 Push-it and that's it.
 
-You also run the backup manually this way (on your instance with [ssh](./ssh.md)):
+You also run the backup manually this way (on your instance with [ssh](../ssh.md)):
 
 ```shell
 $ sudo su -
@@ -138,6 +138,6 @@ $ /root/bucket-save.sh
 
 You'll see the result in your bucket:
 
-![scaleway_backup_result](../img/scaleway_backup_result.png)
+![scaleway_backup_result](../../img/scaleway_backup_result.png)
 
 [^1]: infrastructure as code

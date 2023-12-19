@@ -13,7 +13,7 @@ Ce tutoriel vous montrera comment sauvegarder vos bases de données sur de l'obj
 
 Par exemple sur scaleway :
 
-![scaleway_bucket](../../../img/scaleway_bucket.png)
+![scaleway_bucket](../../../../img/scaleway_bucket.png)
 
 Vous pouvez demander à l'équipe de CwCloud l'accès à des buckets en suivant [cette procédure](../../../../storage.md)
 
@@ -129,7 +129,7 @@ mysql:
 
 Pushez et puis c'est finit.
 
-Vous pouvez aussi exécuter la sauvegarde comme ceci (en vous connectant avec [ssh](./ssh.md)):
+Vous pouvez aussi exécuter la sauvegarde comme ceci (en vous connectant avec [ssh](../ssh.md)):
 
 ```shell
 $ sudo su -
@@ -138,6 +138,6 @@ $ /root/bucket-save.sh
 
 Vous verrez le résultat sur votre bucket :
 
-![scaleway_backup_result](../../../img/scaleway_backup_result.png)
+![scaleway_backup_result](../../../../img/scaleway_backup_result.png)
 
 [^1]: infrastructure as code
