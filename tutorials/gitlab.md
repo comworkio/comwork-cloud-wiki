@@ -77,4 +77,4 @@ sudo su -
 rm -rf /root/builds/Vh7VZrH-
 ```
 
-**3/** The restart your pipelines.
+**3/** Then restart your pipelines.
