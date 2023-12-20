@@ -14,6 +14,7 @@ This tutorial is also available in the following languages:
 ```shell
 sudo su -
 cp /root/.gitlab-runner/config.toml /root/.gitlab-runner/config.toml.bak # Save the config.toml
+curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh" | sudo bash
 yum upgrade gitlab-runner
 mv /root/.gitlab-runner/config.toml.bak /root/.gitlab-runner/config.toml # Restore-it
 ```
