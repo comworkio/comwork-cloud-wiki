@@ -105,4 +105,3 @@ La [version SaaS de cwcloud](https://cloud.comwork.io) est hébergée en Union E
 
 [^1]: [Règlement Général sur la Protection des Données](https://fr.wikipedia.org/wiki/R%C3%A8glement_g%C3%A9n%C3%A9ral_sur_la_protection_des_donn%C3%A9es)
 [^2]: il n'est pas interdit d'héberger des sites webs ou API reliées à un service de crypto-monnaie, il est simplement interdit de miner de la crypto sur nos serveurs et stockages (car c'est interdit par les hébergeurs sur lesquels nous reposons)
-
