@@ -11,7 +11,7 @@ Cette page est également disponible dans les langues suivantes :
 
 Cette instance est hébergée en France par [COMWORKIO SASU](https://www.comwork.io) (R.C.S Paris 838 757 987) sur le cloud provider [Scaleway](https://www.scaleway.com).
 
-## Pour quel(le)s client(e)s est fournis ce service?
+## Pour quel(le)s client(e)s est fournis ce service ?
 
 Cette instance est disponible pour tous le monde ayant la capacité de payer en ligne en euros. Pour les citoyens de l'unition européenne, la TVA française de 20% est appliquée.
 
@@ -29,7 +29,7 @@ Le système de paiement utilise [stripe](https://www.stripe.com) pour les paieme
 
 Vous n'êtes pas obligé de l'utiliser, vous pouvez faire des virements à la société COMWORKIO SASU (vous pouvez nous demander un RIB ou IBAN via le [système de support](./tutorials/console/public/support.md)).
 
-## Quelles sont les licences des composants de cwcloud ?
+## Quelles sont les licences des composants ?
 
 Toutes les licences sont détaillées [ici](../../licences.md).
 
@@ -39,7 +39,7 @@ Toutes les licences sont détaillées [ici](../../licences.md).
 
 * _Adresses IPs et autres metadonnées_: Quand vous vous authentifiez, nous enregistrons votre adresse IP et d'autres informations de navigation comme le navigateur que vous utilisez, etc. Ces logs de sessions sont stockées à des fins de debogages pour une durée de 12 mois. Nous retenons aussi les adresses IPs associées à chaque requêtes dans les logs de nos serveurs.
 
-## Pour quelles raisons nous conservons ces données ?
+## Pour quelles raisons conservons-nous ces données ?
 
 Les informations que nous collectons sont utilisées de la façon suivante :
 
@@ -53,7 +53,7 @@ Nous faisons l'effort de :
 * Concerver les logs des serveurs qui contiennent les adresses IPs de chaque requête pour une durée maximale de 90 jours.
 * Les adresses IPs enregistrées par les utilisateurs pour une durée de 12 mois.
 
-## Utilisons nous des cookies ?
+## Utilisons-nous des cookies ?
 
 Oui. Les cookies sont de petits fichiers qu'un site envoie sur votre navigateur si vous l'autorisez. Ces cookies permettent de reconnaître votre profil d'utilisateur notamment le type de navigateur ou d'appareil que vous utilisez ou de conserver en local des choix de paramètres que vous feriez comme la langue ou le thème graphique (sombre ou clair).
 
@@ -63,7 +63,7 @@ Ces cookies nous permettent de comprendre et sauvegarder vos préférences pour 
 
 Nous ne vendons, n’échangeons ni ne transférons à des tiers vos informations personnelles identifiables. Cela n'inclut pas les tiers de confiance qui nous aident à exploiter notre site, à mener nos activités ou à vous servir, à condition que ces parties acceptent de garder ces informations confidentielles. Nous pouvons également divulguer vos informations lorsque nous pensons que cette divulgation est appropriée pour nous conformer à la loi, appliquer les politiques de notre site ou protéger nos droits, notre propriété ou notre sécurité ou ceux d'autrui.
 
-## Quelles sont les tiers (3rd parts) utilisés par CwCloud ?
+## Quelles sont les tiers (3rd parts) utilisés ?
 
 Notre console web utilise des fichiers statiques en provenance de services tiers. Elles viennent de [stripe](https://stripe.com) dans le but de fournir des composants graphiques qui permettent de retenir facilement vos moyens de paiements de façon sécurisés, et également de [font-awesome](https://fontawesome.com) pour des icônes et polices.
 
@@ -81,7 +81,7 @@ Et pour finir voici les hébergeurs disponibles pour le déploiement de vos inst
 
 Vous serez en mesure de choisir l'hébergeur et la région à chaque fois que vous serez amener à créer une ressource cloud parmi celles citées juste au dessus.
 
-## Quels sont les types de services interdits sur CwCloud ?
+## Quels sont les types de services interdits ?
 
 Ces types de services sont interdits :
 
@@ -90,7 +90,7 @@ Ces types de services sont interdits :
 * Contenu pornographique
 * Discours de haine et harcèlement
 
-## Quel est l'âge minimum requis pour l'utilisation de CwCloud ?
+## Quel est l'âge minimum requis ?
 
 La [version SaaS de cwcloud](https://cloud.comwork.io) est hébergée en Union Européenne: nos services sont donc adressés aux personnes agées de 16 ans ou plus. Si vous avez moins de 16 ans, conformément au RGPD[^1], vous ne devez pas utiliser ce site.
 
