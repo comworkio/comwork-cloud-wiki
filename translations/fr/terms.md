@@ -46,9 +46,9 @@ Les informations que nous collectons sont utilisées de la façon suivante :
 * L'adresse email et les informations de votre profiles sont utilisées pour générer et vous envoyer automatiquement les factures mais aussi vous faire des annonces ou des mails de confirmations pour générer un nouveau mot de passe
 * Les moyens de paiements, qui ne sont pas obligatoires, pour vous faciliter les paiements en ligne
 
-## Quelle est notre politique de rétention des données ?
+## Quelle est notre politique de rétention ?
 
-Nous faisons l'effort de :
+Nous faisont en sorte de :
 
 * Concerver les logs des serveurs qui contiennent les adresses IPs de chaque requête pour une durée maximale de 90 jours.
 * Les adresses IPs enregistrées par les utilisateurs pour une durée de 12 mois.
