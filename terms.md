@@ -2,6 +2,11 @@
 
 Those are the terms of services for the [SaaS version of CwCloud](https://cloud.comwork.io).
 
+## Translations
+
+This page is also available in the following languages:
+* [Français 🇫🇷](./translations/fr/terms.md)
+
 ## Where and by whom is hosted this service?
 
 This instance is hosted in France by [COMWORKIO SASU](https://www.comwork.io) (R.C.S Paris 838 757 987) on [Scaleway](https://www.scaleway.com).
@@ -22,7 +27,7 @@ The bill are monthly issued and must be paid within a time frame of 48h, you can
 
 The billing system is using [stripe](https://www.stripe.com) for secured payments.
 
-You're not required to use it, you can ask to make classic transfers to the COMWORK SASU company (you can asks-us to provide the IBAN using the [support system](./terms.md)).
+You're not required to use it, you can ask to make classic transfers to the COMWORKIO SASU company (you can asks-us to provide the IBAN using the [support system](./tutorials/console/public/support.md)).
 
 ## What are the licences of each comwork's cloud components?
 
@@ -30,8 +35,7 @@ All the licences are detailed [here](./licences.md).
 
 ## What information do we collect?
 
-* _Basic account information_: If you register on this service, you may be asked to enter a username, an e-mail address and a password. You may also enter additional profile information such as company references and payment credit card in order to be able to receive some bills. All those informations are only accessible by the COMWORKIO staff.
-
+* _Basic account information_: If you register on this service, you may be asked to enter an e-mail address and a password. You may also enter additional profile information such as company references and payment credit card in order to be able to receive some bills. All those informations are only accessible by the COMWORKIO staff.
 
 * _IPs and other metadata_: When you log in, we record the IP address you log in from, as well as the name of your browser application. All the logged in sessions are available for your review and revocation in the settings. The latest IP address used is stored for up to 12 months. We also may retain server logs which include the IP address of every request to our service.
 

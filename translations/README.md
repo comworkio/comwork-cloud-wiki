@@ -1,5 +1,5 @@
 # Translations
 
-Here you'll find the tutorials translations:
+Here you'll find the pages translations:
 
 * [In French](./fr/README.md)
