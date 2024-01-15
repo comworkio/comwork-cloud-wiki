@@ -465,3 +465,18 @@ cwc faas trigger delete --trigger  <trigger_id>
 ```shell
 cwc faas trigger truncate
 ```
+
+## Email
+
+### Envoyer un email
+
+Vous pouvez envoyer un email avec la commande suivante :
+
+```shell
+cwc email -t <recepient_email> -s <subject> -c <content>
+```
+
+Notes :
+* Il existe d'autres options que vous pouvez ajouter :
+  * `-f` pour ajouter une adresse email personnalisée de l'expéditeur
+  * `-b` pour ajouter une adresse email bcc
