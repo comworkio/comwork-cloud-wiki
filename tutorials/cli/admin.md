@@ -316,3 +316,18 @@ cwc admin faas trigger ls
 cwc admin faas trigger ls -t  <trigger_id>
 cwc admin faas trigger ls --trigger <trigger_id>
 ```
+
+## Email
+
+### Send an email
+You can send an email with the following command:
+
+```shell
+cwc email -t <recepient_email> -s <subject> -c <content>
+```
+
+Notes:  
+* There are other optional flags you can add:
+  * `-f` to add customized expeditor email address .
+  * `-b` to add a bcc email address.
+  - `-t` to use the comwork cloud template.
