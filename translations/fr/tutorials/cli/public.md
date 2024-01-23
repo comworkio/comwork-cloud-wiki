@@ -42,6 +42,12 @@ cwc configure get format
 
 ```
 
+```shell
+cwc configure ls
+```
+
+Cette commande listera les fichiers de configuration disponibles dans le dossier `.cwc` de votre machine.
+
 ### Configurer
 
 Pour configurer l'url de l'API (default endpoint), la région, le format de sortie ou l'hébergeur (provider) :
@@ -60,6 +66,8 @@ Default region [UK1]:
 Default format [json]: 
 ```
 
+**Note** : Après avoir configuré votre client, un fichier de configuration sera créé automatiquement dans le dossier `.cwc` du répertoire `home`.
+
 Vous pouvez lister les providers ou régions disponibles avec ces commandes :
 
 ```shell
@@ -75,6 +83,14 @@ cwc configure set provider ovh
 cwc configure set region UK1
 cwc configure set format json
 ```
+
+Vous pouvez également créer un fichier de configuration à utiliser avec la configuration que vous avez faite :
+
+```shell
+cwc configure set config -c <nom_du_fichier_de_configuration>
+```
+
+Ceci va prendre le fichier de configuration que vous avez choisi et mettre en place la configuration.
 
 #### Format des sorties
 
