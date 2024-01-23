@@ -40,6 +40,12 @@ cwc configure get format
 
 ```
 
+```shell
+cwc configure ls
+```
+
+This command will list the available config files available on your `.cwc` folder in your machine.
+
 ### Configure
 
 Configuring the default endpoint, default region, default output format and provider with:
@@ -59,6 +65,8 @@ Default format [json]:
 
 ```
 
+**Note**: After configuring your cli a config file will be created automatically in the `.cwc` folder in the home directory.
+
 You can check available providers and regions with the following commands:
 
 ```shell
@@ -74,6 +82,14 @@ cwc configure set provider ovh
 cwc configure set region UK1
 cwc configure set format json
 ```
+
+And you can also create a config file to use with the configuration you made:
+
+```shell
+cwc configure set config -c <config_file_name>
+```
+
+This will take the config file you choose and set up the configuration.
 
 #### Output's formats
 
