@@ -200,18 +200,18 @@ cwc admin bucket ls -b <bucket_id>
 cwc admin bucket ls --bucket <bucket_id>
 ```
 
-### Mettre à jour les identifiants de connexion
+### Renouveler les identifiants de connexion
 
 ```shell
-cwc admin bucket update -b <bucket_id>
-cwc admin bucket update --bucket <bucket_id>
+cwc admin renew update -b <bucket_id>
+cwc admin renew update --bucket <bucket_id>
 ```
 
 ### Transfert à un autre utilisateur
 
 ```shell
-cwc admin bucket update -b <bucket_id> -t <récepteur_email>
-cwc admin bucket update --bucket <bucket_id> --transfer <récepteur_email>
+cwc admin bucket transfer -b <bucket_id> -e <récepteur_email>
+cwc admin bucket transfer --bucket <bucket_id> --email <récepteur_email>
 ```
 
 ### Supprimer

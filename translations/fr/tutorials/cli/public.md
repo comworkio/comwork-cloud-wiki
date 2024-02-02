@@ -267,11 +267,11 @@ cwc bucket ls -b <bucket_id>
 cwc bucket ls --bucket <bucket_id>
 ```
 
-### Mettre à jour les identifiants de connexion
+### Renouveler les identifiants de connexion
 
 ```shell
-cwc bucket update -b <bucket_id>
-cwc bucket update --bucket <bucket_id>
+cwc bucket renew -b <bucket_id>
+cwc bucket renew --bucket <bucket_id>
 ```
 
 ### Supprimer
@@ -296,11 +296,11 @@ cwc registry ls -r <registry_id>
 cwc registry ls --registry <registry_id>
 ```
 
-### Mettre à jour les identifiants de connexion
+### Renouveler les identifiants de connexion
 
 ```shell
-cwc registry update -r <registry_id>
-cwc registry update --registry <registry_id>
+cwc registry renouveler -r <registry_id>
+cwc registry renouveler --registry <registry_id>
 ```
 
 ### Supprimer
