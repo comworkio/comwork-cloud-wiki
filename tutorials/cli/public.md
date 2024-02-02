@@ -264,11 +264,11 @@ cwc bucket ls -b <bucket_id>
 cwc bucket ls --bucket <bucket_id>
 ```
 
-### Update credentials
+### Renew credentials
 
 ```shell
-cwc bucket update -b <bucket_id>
-cwc bucket update --bucket <bucket_id>
+cwc bucket renew -b <bucket_id>
+cwc bucket renew --bucket <bucket_id>
 ```
 
 ### Delete
@@ -293,11 +293,11 @@ cwc registry ls -r <registry_id>
 cwc registry ls --registry <registry_id>
 ```
 
-### Update credentials
+### Renew credentials
 
 ```shell
-cwc registry update -r <registry_id>
-cwc registry update --registry <registry_id>
+cwc registry renew -r <registry_id>
+cwc registry renew --registry <registry_id>
 ```
 
 ### Delete

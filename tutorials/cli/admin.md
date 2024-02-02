@@ -200,18 +200,18 @@ cwc admin bucket ls -b <bucket_id>
 cwc admin bucket ls --bucket <bucket_id>
 ```
 
-### Update credentials
+### Renew credentials
 
 ```shell
-cwc admin bucket update -b <bucket_id>
-cwc admin bucket update --bucket <bucket_id>
+cwc admin bucket renew  -b <bucket_id>
+cwc admin bucket renew --bucket <bucket_id>
 ```
 
 ### Transfer to another user
 
 ```shell
-cwc bucket update -b <bucket_id> -t <receiver_email>
-cwc bucket update --bucket <bucket_id> --transfer <receiver_email>
+cwc bucket transfer -b <bucket_id> -e <receiver_email>
+cwc bucket transfer --bucket <bucket_id> --email <receiver_email>
 ```
 
 ### Delete
@@ -242,18 +242,18 @@ cwc admin registry ls
 cwc admin registry ls -r <registry_id>
 cwc admin registry ls --registry <registry_id>
 ```
-### Update credentials
+### renew credentials
 
 ```shell
-cwc admin registry update -r <registry_id>
-cwc admin registry update --registry <registry_id>
+cwc admin registry renew -r <registry_id>
+cwc admin registry renew --registry <registry_id>
 ```
 
 ### Transfer to another user
 
 ```shell
-cwc registry update -r <registry_id> -t <receiver_email>
-cwc registry update --registry <registry_id> --transfer <receiver_email>
+cwc registry transfer -r <registry_id> -e <receiver_email>
+cwc registry transfer --registry <registry_id> --email <receiver_email>
 ```
 
 ### Delete
