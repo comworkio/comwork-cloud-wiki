@@ -87,10 +87,16 @@ cwc configure set format json
 Vous pouvez également créer un fichier de configuration à utiliser avec la configuration que vous avez faite :
 
 ```shell
-cwc configure set config -c <nom_du_fichier_de_configuration>
+cwc configure switch <nom_du_fichier_de_configuration>
 ```
 
-Ceci va prendre le fichier de configuration que vous avez choisi et mettre en place la configuration.
+Ceci prendra le fichier de configuration existant dans le dossier `cwc` que vous avez choisi et mettra en place la configuration.
+
+Si vous voulez importer un fichier de configuration existant dans un autre répertoire, vous pouvez utiliser la commande suivante :
+
+```shell
+cwc configure import <chemin_du_fichier_de_configuration>
+```
 
 #### Format des sorties
 
