@@ -86,10 +86,16 @@ cwc configure set format json
 And you can also create a config file to use with the configuration you made:
 
 ```shell
-cwc configure set config -c <config_file_name>
+cwc configure switch <config_file_name>
 ```
 
-This will take the config file you choose and set up the configuration.
+This will take the config file existing in the `.cwc` folder you choose and set up the configuration.
+
+If you want to import a config file existing in a different directory you can use the following command:
+
+```shell
+cwc configure import <config_file_path>
+```
 
 #### Output's formats
 
