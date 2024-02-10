@@ -11,7 +11,7 @@ You can follow [this tutoriel](./tutorials/console/public/support.md) to see how
 Here's our git repositories:
 
 * Main repo: https://gitlab.comwork.io/comwork_public/comwork_cloud
-* Github mirror: https://github.com/idrissneumann/comwork-cloud-wiki.git
+* Github mirror: https://github.com/comworkio/comwork-cloud-wiki.git
 * Gitlab mirror: https://gitlab.com/ineumann/comwork-cloud-wiki.git
 
 You can use all those repositories in order to:

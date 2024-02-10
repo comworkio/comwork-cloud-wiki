@@ -18,7 +18,7 @@ Ce tutoriel est également disponible dans les langues suivantes :
 ## Dépôt git
 
 * Dépôt principal: https://gitlab.comwork.io/oss/imalive
-* Mirroir Github: https://github.com/idrissneumann/imalive.git
+* Mirroir Github: https://github.com/comworkio/imalive.git
 * Mirroir Gitlab: https://gitlab.com/ineumann/imalive.git
 
 ## Image sur dockerhub

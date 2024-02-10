@@ -18,7 +18,7 @@ This tutorial is also available in the following languages:
 ## Git repositories
 
 * Main repo: https://gitlab.comwork.io/oss/imalive
-* Github mirror: https://github.com/idrissneumann/imalive.git
+* Github mirror: https://github.com/comworkio/imalive.git
 * Gitlab mirror: https://gitlab.com/ineumann/imalive.git
 
 ## Image on the dockerhub
