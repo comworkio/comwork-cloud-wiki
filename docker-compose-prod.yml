@@ -4,7 +4,7 @@ services:
   comwork_cloud_doc_prod:
     restart: always
     container_name: comwork_cloud_doc_prod
-    image: rg.fr-par.scw.cloud/comworkio/comwork_cloud_doc:${VERSION}
+    image: rg.fr-par.scw.cloud/cwcloud-ce-u7u1q0/cwcloud-doc:${VERSION}
     networks:
       - comwork_cloud_doc
     ports:

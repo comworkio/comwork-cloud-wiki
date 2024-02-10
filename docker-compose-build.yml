@@ -2,5 +2,5 @@ version: '3.3'
 
 services:
   comwork_cloud_doc:
-    image: comwork_cloud_doc:latest
+    image: cwcloud-doc:latest
     build: .
