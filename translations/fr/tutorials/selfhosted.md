@@ -6,16 +6,6 @@ Ce tutoriel est également disponible dans les langues suivantes :
 
 - [English 🇬🇧](../../../tutorials/selfhosted.md)
 
-## Accéder à nos images
-
-Pour accéder à nos images, vous devrez d'abord demander à l'équipe de CwCloud.
-
-Vous pouvez le faire via :
-
-- Le [système de support](./console/public/support.md)
-- L'email `cloud@comwork.io`
-- Notre [serveur Discord](https://discord.gg/CXskxxPauz) (salon `#selfhosted`)
-
 ## En utilisant ansible
 
 Ici vous trouverez un role ansible vous permettant d'installer : https://gitlab.comwork.io/oss/ansible-iac/cloud
