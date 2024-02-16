@@ -60,7 +60,7 @@ The available providers are the following:
 | b2-15       | ovh      | 0.1290 €      | 0.219 €  | 0.263 €        | 195.791 €       |
 
 
-*Updated the 2023-05-23*
+*Updated the 2024-02-16*
 
 ### Details
 
@@ -74,9 +74,10 @@ The available providers are the following:
 
 Here's non-mandatory services we can provide:
 
-* Email services: our email API that ensuire 10 000 mails / month for 5 euros / months[^2]. This API is based on [sendgrid.com](https://www.sendgrid.com), we can give you an http endpoint or a SMTP connection. More informations [here](./tutorials/emailapi.md).
-* CWAI api: our experimental AI api with multiple small LLM and NLP models for 1 euros / months[^3]. You can use it for sentimental analysis, more informations [here](./tutorials/cwai.md).
-* Backups on object storage: for now it's free if you have at least one instance with a database (one bucket per database)
+* Email services: our email API that ensuire 10 000 mails / month for 5 euros / months[^2]. This API is based on [sendgrid.com](https://www.sendgrid.com), we can give you an http endpoint or a SMTP connection.
+* Backups on object storage: for now there's a free plan[^1] if you have at least one instance with a database (one bucket per database).
+
+[^1]: The free plan is 1gb per backup and only 48h of retention. If you need more you can open ticket and we'll come back at you with a cost estimate (we'll basically charge you the same amount we're billed by the cloud provider).
 
 ## Contact / subscription
 
@@ -84,4 +85,3 @@ Follow [this procedure](./subscription.md)
 
 [^1]: for the customers based in EU, if it's not the case, you can reduce the estimmation by 20%. 
 [^2]: for the customers based in EU, a French VAT of 20% will be applied.
-[^3]: for the customers based in EU, a French VAT of 20% will be applied.
