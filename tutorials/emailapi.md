@@ -117,7 +117,7 @@ function cwcloud_email_send($phpmailer) {
     $bcc_addr = $phpmailer->AddBCC ? $phpmailer->AddBCC : null;
 
     # This one
-    error_log(sprintf("from = %s, to = %s, bcc = %s", $from_addr, $to_addr, $bcc_addr))
+    error_log(sprintf("CWCLOUDEMAIL from = %s, to = %s, bcc = %s", $from_addr, $to_addr, $bcc_addr));
 
     // ...
 }
@@ -128,7 +128,7 @@ function cwcloud_email_send($phpmailer) {
 Then, exit and monitor the container logs and replay the sending mail scenario that doesn't work. It'll indicate if there's some mandatory information's missing or if you're even invoking the wordpress `phpmailer`.
 
 ```shell
-docker logs -f wp_app
+docker logs wp_app -f 2>&1 | grep CWCLOUDEMAIL
 ```
 
 ### Prestashop
