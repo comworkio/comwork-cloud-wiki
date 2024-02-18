@@ -77,6 +77,8 @@ Notes :
 
 ### Plugin pour wordpress
 
+#### Installation et configuration
+
 Vous pouvez télécharger ce [plugin](https://gitlab.comwork.io/oss/cwc/cwcloud-wordpress-email):
 
 **1/** Télécharger la bonne extension (soit la `-io` si vous utilisez l'instance [cloud.comwork.io](https://cloud.comwork.io), soit la `-tn` si vous utilisez l'instance [cwcloud.tn](https://www.cwcloud.tn))
@@ -90,6 +92,44 @@ Générer des clefs d'API. Vous pouvez aller voir [ce tutoriel](./api/api_creden
 Ensuite copier/coller la clef secrète ici :
 
 ![wpaas_email_ext2](../../../img/wpaas_email_ext2.png)
+
+#### Debogage
+
+Se connecter au conteneur wordpress, installer `vim` et ouvrir le fichier `cwcloud-email-plugin.php`
+
+```shell
+$ docker exec -it wp_app /bin/bash
+root@4d9443458fed$ apt update -y
+root@4d9443458fed$ apt install -y vim
+root@4d9443458fed$ vim wp-content/plugins/cwcloud-email-plugin-tn/cwcloud-email-plugin.php
+```
+
+Ajouter la ligne suivante :
+
+```php
+// ...
+
+function cwcloud_email_send($phpmailer) {
+    $api_endpoint = 'https://api.cwcloud.tn/v1/email';
+
+    $from_addr = $phpmailer->From;
+    $to_addr = $phpmailer->AddAddress ? $phpmailer->AddAddress : $from_addr;
+    $bcc_addr = $phpmailer->AddBCC ? $phpmailer->AddBCC : null;
+
+    # Cette ligne
+    error_log(sprintf("from = %s, to = %s, bcc = %s", $from_addr, $to_addr, $bcc_addr))
+
+    // ...
+}
+
+// ...
+```
+
+Puis sortir et monitorer les logs du conteneur en re-jouant le scénario d'envoi de mail qui ne fonctionne pas. Cela vous indiquera s'il manque des infos obligatoire voire même si le `phpmailer` de wordpress a été invoqué.
+
+```shell
+docker logs -f wp_app
+```
 
 ### Prestashop
 

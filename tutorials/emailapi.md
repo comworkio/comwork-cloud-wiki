@@ -77,6 +77,8 @@ Notes:
 
 ### Wordpress
 
+#### Installation and configuration
+
 You can use this [plugin](https://gitlab.comwork.io/oss/cwc/cwcloud-wordpress-email):
 
 **1/** Download the right zip extension file (either the `-io` if you're using cloud.comwork.io instance of `-tn` if you're using the cwcloud.tn instance)
@@ -90,6 +92,44 @@ Generate API credentials. You can see [this tutorial](./api/api_credentials.md)
 And copy paste the secret key here:
 
 ![wpaas_email_ext2](../img/wpaas_email_ext2.png)
+
+#### Debugging
+
+Open a bash session on the wordpress container, install `vim` and open the `cwcloud-email-plugin.php` file:
+
+```shell
+$ docker exec -it wp_app /bin/bash
+root@4d9443458fed$ apt update -y
+root@4d9443458fed$ apt install -y vim
+root@4d9443458fed$ vim wp-content/plugins/cwcloud-email-plugin-tn/cwcloud-email-plugin.php
+```
+
+Add the following line:
+
+```php
+// ...
+
+function cwcloud_email_send($phpmailer) {
+    $api_endpoint = 'https://api.cwcloud.tn/v1/email';
+
+    $from_addr = $phpmailer->From;
+    $to_addr = $phpmailer->AddAddress ? $phpmailer->AddAddress : $from_addr;
+    $bcc_addr = $phpmailer->AddBCC ? $phpmailer->AddBCC : null;
+
+    # This one
+    error_log(sprintf("from = %s, to = %s, bcc = %s", $from_addr, $to_addr, $bcc_addr))
+
+    // ...
+}
+
+// ...
+```
+
+Then, exit and monitor the container logs and replay the sending mail scenario that doesn't work. It'll indicate if there's some mandatory information's missing or if you're even invoking the wordpress `phpmailer`.
+
+```shell
+docker logs -f wp_app
+```
 
 ### Prestashop
 
