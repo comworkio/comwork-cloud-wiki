@@ -113,7 +113,16 @@ function cwcloud_email_send($phpmailer) {
     $api_endpoint = 'https://api.cwcloud.tn/v1/email';
 
     $from_addr = $phpmailer->From;
-    $to_addr = $phpmailer->AddAddress ? $phpmailer->AddAddress : $from_addr;
+    $to_addr = $phpmailer->AddAddress;
+
+    if (!$to_addr && !empty($tmp_to_addr = $phpmailer->getToAddresses()) && !empty($tmp_to_addr[0]) && $tmp_to_addr[0][0]) {
+        $to_addr = $tmp_to_addr[0][0];
+    }
+
+    if (!$to_addr) {
+        $to_addr = $from_addr;
+    }
+
     $bcc_addr = $phpmailer->AddBCC ? $phpmailer->AddBCC : null;
 
     # This one
