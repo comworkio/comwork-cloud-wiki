@@ -2,21 +2,22 @@
 
 Here's the documentation of [comwork cloud console](https://cloud.comwork.io) and [API](https://cloud-api.comwork.io).
 
-"_CwCloud_" (for _Comwork Cloud_) is a DaaS[^1] platform that allows us to speed up the provisioning of the infrastructure and managed service such as [serverless FaaS engine](./serverless.md), [Advanced web IDE](./code.md), [DBaaS](./dbaas.md)[^2], [WPaaS](./wpaas.md)[^3], or any other application you want to deploy as a managed service.
+"_CwCloud_" (for _Comwork Cloud_) is a DaaS[^1] and FaaS[^2] platform that allows us to speed up the provisioning of the infrastructure and managed service such as [serverless FaaS engine](./serverless.md), [Advanced web IDE](./code.md), [DBaaS](./dbaas.md)[^3], [WPaaS](./wpaas.md)[^4], or any other application you want to deploy as a managed service.
 
 ![cloud_bg](./img/cloud_bg.png)
 
-It aims to provide those services in a "_IaC_[^4]" or "_GitOps_" way: you'll get access to gitlab repositories that contains ansible roles, templates and playbooks you'll be able to maintain (same thing with Helm charts for Kubernetes instances very soon). The modification on this repositories will automatically be applied in your instances.
+It aims to provide those services in a "_IaC_[^5]" or "_GitOps_" way: you'll get access to gitlab repositories that contains ansible roles, templates and playbooks you'll be able to maintain (same thing with Helm charts for Kubernetes instances very soon). The modification on this repositories will automatically be applied in your instances.
 
-There is a SaaS version which provide instances that are hosted on [Scaleway](https://www.scaleway.com) or [OVHCloud](https://www.ovhcloud.com). Those two are really beautiful European 🇪🇺 cloud providers and we intend to propose even more cloud providers in the future (CwCloud can work with any cloud provider that provide standard IaaS[^5] API's such as OpenStack or Kubernetes in the very near future).
+There is a SaaS version which provide instances that are hosted on [Scaleway](https://www.scaleway.com) or [OVHCloud](https://www.ovhcloud.com). Those two are really beautiful European 🇪🇺 cloud providers and we intend to propose even more cloud providers in the future (CwCloud can work with any cloud provider that provide standard IaaS[^6] API's such as OpenStack or Kubernetes).
 
-There is also a way to deploy a [self-hosted version of CwCloud](./tutorials/selfhosted.md) with your own prefered cloud provider and account. The self-hosted version is also compatible with [AWS](https://aws.amazon.com) and [cloudflare](https://www.cloudflare.com) (for the DNS records).
+There is also a way to deploy a [self-hosted version of CwCloud](./tutorials/selfhosted.md) with your own prefered cloud provider and account. The self-hosted version is also compatible with [AWS](https://aws.amazon.com), [GCP](https://cloud.google.com) and [cloudflare](https://www.cloudflare.com) (for the DNS records).
 
 [^1]: _Deployment as a service_, check-out [this tutorial](./tutorials/daas.md) to know more about this concept
-[^2]: _Databases as a service_
-[^3]: _Wordpress as a service_
-[^4]: _Infrastructure as code_
-[^5]: _Infrastructure as a service_
+[^2]: _Function as a service_
+[^3]: _Databases as a service_
+[^4]: _Wordpress as a service_
+[^5]: _Infrastructure as code_
+[^6]: _Infrastructure as a service_
 
 ## Links
 
