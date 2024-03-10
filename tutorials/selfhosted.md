@@ -487,7 +487,7 @@ Cwcloud-api is providing a `/metrics` http endpoint that can be scrapped by Prom
 
 ![prometheus](../img/prometheus.png)
 
-And can also send the metrics and some traces through OTLP/Grpc (configured with the `OTEL_COLLECTOR_ENDPOINT` environment variable). 
+And you can also send the metrics and some traces through OTLP/Grpc (configured with the `OTEL_COLLECTOR_ENDPOINT` environment variable). 
 
 Here's example of traces with Jaegger:
 
