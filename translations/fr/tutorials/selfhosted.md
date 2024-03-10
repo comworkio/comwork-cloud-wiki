@@ -487,10 +487,10 @@ Vous trouverez toutes les ressources pour administrer via la console [ici](./con
 
 Cwcloud-api expose un webservice `/metrics` qui peux être scrappé par Prometheus:
 
-![prometheus](../img/prometheus.png)
+![prometheus](../../../img/prometheus.png)
 
 Vous pouvez également envoyer les métriques et traces à partir d'un endpoint OTLP/Grpc (configuré avec la variable d'environnement `OTEL_COLLECTOR_ENDPOINT`). 
 
 Voici un exemple de traces avec Jaegger:
 
-![jaegger](../img/jaegger.png)
+![jaegger](../../../mg/jaegger.png)
