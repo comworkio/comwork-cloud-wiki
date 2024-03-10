@@ -493,4 +493,4 @@ Vous pouvez également envoyer les métriques et traces à partir d'un endpoint 
 
 Voici un exemple de traces avec Jaegger:
 
-![jaegger](../../../mg/jaegger.png)
+![jaegger](../../../img/jaegger.png)
