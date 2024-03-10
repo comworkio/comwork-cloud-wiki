@@ -480,3 +480,15 @@ dns_hosted_zone_id: Z08XXXXXXXXXXXXXXXXB
 You might use the console as an administrator if you're getting your own on premises instance.
 
 You'll find all the tutorials you need for administrating the console [here](./console/admin/README.md)
+
+## Observability
+
+Cwcloud-api is providing a `/metrics` http endpoint that can be scrapped by Prometheus:
+
+![prometheus](../img/prometheus.png)
+
+And can also send the metrics and some traces through OTLP/Grpc (configured with the `OTEL_COLLECTOR_ENDPOINT` environment variable). 
+
+Here's example of traces with Jaegger:
+
+![jaegger](../img/jaegger.png)

@@ -482,3 +482,15 @@ dns_hosted_zone_id: Z08XXXXXXXXXXXXXXXXB
 Vous aurez surement besoin d'utiliser des fonctionnalité administrateurs si vous avez votre propre instance hébergée de CwCloud.
 
 Vous trouverez toutes les ressources pour administrer via la console [ici](./console/admin/README.md)
+
+## Observabilité
+
+Cwcloud-api expose un webservice `/metrics` qui peux être scrappé par Prometheus:
+
+![prometheus](../img/prometheus.png)
+
+Vous pouvez également envoyer les métriques et traces à partir d'un endpoint OTLP/Grpc (configuré avec la variable d'environnement `OTEL_COLLECTOR_ENDPOINT`). 
+
+Voici un exemple de traces avec Jaegger:
+
+![jaegger](../img/jaegger.png)
