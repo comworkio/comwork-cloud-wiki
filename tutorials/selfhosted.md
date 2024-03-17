@@ -501,6 +501,40 @@ Wait a little bit (it might took 24h), the DNS servers should appears up to date
 
 ![updated_dns_server_ovh](../img/updated_dns_server_ovh.png)
 
+4. Go create an API token for your selfhosted cwcloud instance:
+
+![cloudflare_api_token_1](../img/cloudflare_api_token_1.png)
+
+Then:
+
+![cloudflare_api_token_2](../img/cloudflare_api_token_2.png)
+
+Then choose the right template:
+
+![cloudflare_api_token_3](../img/cloudflare_api_token_3.png)
+
+Then choose the DNS zone:
+
+![cloudflare_api_token_4](../img/cloudflare_api_token_4.png)
+
+Then you can copy/paste the generated token:
+
+![cloudflare_api_token_5](../img/cloudflare_api_token_5.png)
+
+You'll have to set the `CLOUDFLARE_API_TOKEN` environment variable with this token.
+
+5. Configure the `CLOUDFLARE_ZONE_ID` environment variable with the following value:
+
+![cloudflare_zone_id](../img/cloudflare_zone_id.png)
+
+6. You can add the DNS zone in the `cloud_environments.yml` file:
+
+```yaml
+dns_zones:
+  - name: pulumi-university.com
+    driver: CloudflareDriver
+```
+
 ## Observability
 
 Cwcloud-api is providing a `/metrics` http endpoint that can be scrapped by Prometheus:
