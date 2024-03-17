@@ -497,6 +497,10 @@ You'll find all the tutorials you need for administrating the console [here](./c
 
 Replace here the servers `dns12.ovh.net` and `ns12.ovh.net` by the cloudflare's you copied before.
 
+Wait a little bit (it might took 24h), the DNS servers should appears up to date like this:
+
+![updated_dns_server_ovh](../img/updated_dns_server_ovh.png)
+
 ## Observability
 
 Cwcloud-api is providing a `/metrics` http endpoint that can be scrapped by Prometheus:

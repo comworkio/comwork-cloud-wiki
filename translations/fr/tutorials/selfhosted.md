@@ -499,6 +499,10 @@ Vous trouverez toutes les ressources pour administrer via la console [ici](./con
 
 Remplacer ici les serveurs `dns12.ovh.net` et `ns12.ovh.net` par ceux de cloudflare que vous avez copié juste avant.
 
+Attendre un peu (jusqu'à 24h), les serveurs DNS devraient apparaitre à jour comme ceci:
+
+![updated_dns_server_ovh](../../../img/updated_dns_server_ovh.png)
+
 ## Observabilité
 
 Cwcloud-api expose un webservice `/metrics` qui peux être scrappé par Prometheus:
