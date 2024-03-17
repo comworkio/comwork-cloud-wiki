@@ -481,6 +481,22 @@ You might use the console as an administrator if you're getting your own on prem
 
 You'll find all the tutorials you need for administrating the console [here](./console/admin/README.md)
 
+## Configure DNS zone with cloudflare
+
+1. Add a new site on cloudflare console:
+
+![cloudflare_add_website](../img/cloudflare_add_website.png)
+
+2. Register your domain name with the Free Plan, then copy the DNS servers:
+
+![cloudflare_copy_dns](../img/cloudflare_copy_dns.png)
+
+3. Update the DNS server of your domain name, example with OVH:
+
+![update_dns_ovh](../img/update_dns_ovh.png)
+
+Replace here the servers `dns12.ovh.net` and `ns12.ovh.net` by the cloudflare's you copied before.
+
 ## Observability
 
 Cwcloud-api is providing a `/metrics` http endpoint that can be scrapped by Prometheus:
@@ -492,3 +508,5 @@ And you can also send the metrics and some traces through OTLP/Grpc (configured 
 Here's example of traces with Jaegger:
 
 ![jaegger](../img/jaegger.png)
+
+

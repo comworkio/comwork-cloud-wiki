@@ -483,6 +483,22 @@ Vous aurez surement besoin d'utiliser des fonctionnalité administrateurs si vou
 
 Vous trouverez toutes les ressources pour administrer via la console [ici](./console/admin/README.md)
 
+## Configurer une zone DNS avec cloudflare
+
+1. Ajouter un nouveau site avec cloudflare:
+
+![cloudflare_add_website](../../../img/cloudflare_add_website.png)
+
+1. Enregistrer votre nom de domaine avec le Free Plan, puis copier les DNS:
+
+![cloudflare_copy_dns](../../../img/cloudflare_copy_dns.png)
+
+3. Mettre à jour les serveur DNS, exemple avec OVH:
+
+![update_dns_ovh](../../../img/update_dns_ovh.png)
+
+Remplacer ici les serveurs `dns12.ovh.net` et `ns12.ovh.net` par ceux de cloudflare que vous avez copié juste avant.
+
 ## Observabilité
 
 Cwcloud-api expose un webservice `/metrics` qui peux être scrappé par Prometheus:
