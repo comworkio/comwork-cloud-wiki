@@ -503,6 +503,40 @@ Attendre un peu (jusqu'à 24h), les serveurs DNS devraient apparaitre à jour co
 
 ![updated_dns_server_ovh](../../../img/updated_dns_server_ovh.png)
 
+4. Créer un token d'API pour votre instance cwcloud :
+
+![cloudflare_api_token_1](../../../img/cloudflare_api_token_1.png)
+
+ensuite:
+
+![cloudflare_api_token_2](../../../img/cloudflare_api_token_2.png)
+
+Ensuite choisir le bon template :
+
+![cloudflare_api_token_3](../../../img/cloudflare_api_token_3.png)
+
+Ensuite choisir la zone DNS :
+
+![cloudflare_api_token_4](../../../img/cloudflare_api_token_4.png)
+
+Copier/coller le token généré :
+
+![cloudflare_api_token_5](../../../img/cloudflare_api_token_5.png)
+
+Vous devez setter la variable d'environnement `CLOUDFLARE_API_TOKEN` avec ce token.
+
+1. Configurer la variable d'environnement `CLOUDFLARE_ZONE_ID` avec la valeur suivante :
+
+![cloudflare_zone_id](../../../img/cloudflare_zone_id.png)
+
+6. Vous pouvez ensuite ajouter votre nouvelle zone DNS dans le fichier `cloud_environments.yml` :
+
+```yaml
+dns_zones:
+  - name: pulumi-university.com
+    driver: CloudflareDriver
+```
+
 ## Observabilité
 
 Cwcloud-api expose un webservice `/metrics` qui peux être scrappé par Prometheus:
