@@ -4,6 +4,11 @@ We're developing our own FaaS[^1] platform which is agnostic and API-centric. We
 
 [^1]: functions as a service
 
+## Translations
+
+This page is also available in the following languages:
+* [Français 🇫🇷](./translations/fr/serverless.md)
+
 ## Comwork cloud FaaS
 
 Our FaaS engine is supporting the following languages:
