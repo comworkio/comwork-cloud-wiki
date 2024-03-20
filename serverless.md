@@ -30,6 +30,10 @@ It's also possible to use Blockly as a graphical programing (a.k.a "_lowcode_") 
 
 [![demo_blockly](./img/demo_blockly.png)](https://youtu.be/ikBNQmlXJY8)
 
+#### Tutorials
+
+- [How to create a Serverless function](./tutorials/faas/how_to_create_a_function.md)
+
 ### Pricing
 
 There's no pricing at this time, it's free and in beta. In the future, invocation execution time (in hours) will be billed.
