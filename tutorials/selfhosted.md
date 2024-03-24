@@ -478,14 +478,23 @@ dns_hosted_zone_id: Z08XXXXXXXXXXXXXXXXB
 
 ### Generate service account
 
-1. Create a service account `cwcloud`
-2. Grant it the access `owner`:
+Create a service account `cwcloud`
+
+Then, grant it the access `owner`:
 
 ![gcp_sa_access_1](../img/gcp_sa_access_1.png)
 
 ![gcp_sa_access_2](../img/gcp_sa_access_2.png)
 
 ### Generate credentials
+
+Go to _IAM > Service Account > Manage key_
+
+![gcp_sa_manage_keys](../img/gcp_sa_manage_keys.png)
+
+Then, create a new key (choose the JSON format):
+
+![gcp_sa_add_key](../img/gcp_sa_add_key.png)
 
 ## Configure DNS zone with cloudflare
 
