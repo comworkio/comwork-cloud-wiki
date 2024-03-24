@@ -522,6 +522,30 @@ You can use this command in order to generate the base64 value:
 base64 -i projectid.json
 ```
 
+### Network configuration
+
+Create a `default` network:
+
+![gcp_vpc_network](../img/gcp_vpc_network.png)
+
+Here's the terraform code to do it:
+
+```hcl
+variable "project_id" {
+  type        = string
+  description = "The GCP project ID"
+  default     = null
+}
+
+resource "google_compute_network" "vpc_network" {
+  project                 = var.project_id
+  name                    = "default"
+  auto_create_subnetworks = true
+}
+```
+
+Then you can store the value `default` in the `GCP_NETWORK` environment variable.
+
 ## Configure DNS zone with cloudflare
 
 1. Add a new site on cloudflare console:

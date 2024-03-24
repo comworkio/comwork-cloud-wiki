@@ -525,6 +525,30 @@ Ensuite, créer une nouvelle clef (choisir le format `JSON`):
 
 ![gcp_sa_add_key](../../../img/gcp_sa_add_key.png)
 
+### Configuration du réseau
+
+Créer un réseau `default` comme ceci :
+
+![gcp_vpc_network](../../../img/gcp_vpc_network.png)
+
+Voici le code terraform pour y parvenir :
+
+```hcl
+variable "project_id" {
+  type        = string
+  description = "The GCP project ID"
+  default     = null
+}
+
+resource "google_compute_network" "vpc_network" {
+  project                 = var.project_id
+  name                    = "default"
+  auto_create_subnetworks = true
+}
+```
+
+Vous pouvez ensuite stocker la valeur `default` dans la variable d'environnement `GCP_NETWORK`.
+
 ## Configurer une zone DNS avec cloudflare
 
 1. Ajouter un nouveau site avec cloudflare:
