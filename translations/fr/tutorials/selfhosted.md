@@ -483,11 +483,37 @@ dns_hosted_zone_id: Z08XXXXXXXXXXXXXXXXB
 
 Créer un service account `cwcloud`
 
-Ensuite, lui ajouter le role `owner` comme ceci:
+Ensuite, lui ajouter le role `owner` comme ceci :
 
 ![gcp_sa_access_1](../../../img/gcp_sa_access_1.png)
 
 ![gcp_sa_access_2](../../../img/gcp_sa_access_2.png)
+
+Le fichier téléchargé devrait ressembler à quelque chose comme ceci :
+
+```json
+{
+  "type": "service_account",
+  "project_id": "projectid",
+  "private_key_id": "22fXXXXXXXXXXXXXXXXXXX",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvYYYYYYYYYYYYYYYYYY4G4A=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cwcloud@projectid.iam.gserviceaccount.com",
+  "client_id": "ZZZZZZZZZZZZZZZZ",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cwcloud%40projectid.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+```
+
+Ensuite enregistrer la valeur en base64 de ce fichier dans la variable d'environnement `GCP_APPLICATION_CREDENTIALS`.
+
+Vous pouvez utiliser cette commande pour générer la valeur en base64 :
+
+```shell
+base64 -i projectid.json
+```
 
 ### Générer la clef d'authentification
 

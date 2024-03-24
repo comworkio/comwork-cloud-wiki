@@ -492,9 +492,35 @@ Go to _IAM > Service Account > Manage key_
 
 ![gcp_sa_manage_keys](../img/gcp_sa_manage_keys.png)
 
-Then, create a new key (choose the JSON format):
+Then, create a new key (choose the `JSON` format):
 
 ![gcp_sa_add_key](../img/gcp_sa_add_key.png)
+
+The downloaded file should looks like something like that:
+
+```json
+{
+  "type": "service_account",
+  "project_id": "projectid",
+  "private_key_id": "22fXXXXXXXXXXXXXXXXXXX",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvYYYYYYYYYYYYYYYYYY4G4A=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cwcloud@projectid.iam.gserviceaccount.com",
+  "client_id": "ZZZZZZZZZZZZZZZZ",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cwcloud%40projectid.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+```
+
+Then store the base64 value of this file in the `GCP_APPLICATION_CREDENTIALS` environment variable.
+
+You can use this command in order to generate the base64 value:
+
+```shell
+base64 -i projectid.json
+```
 
 ## Configure DNS zone with cloudflare
 
