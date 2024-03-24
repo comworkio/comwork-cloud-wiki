@@ -477,11 +477,18 @@ dns_hosted_zone_id: Z08XXXXXXXXXXXXXXXXB
 
 ![aws_route53_1](../../../img/aws_route53_3.png)
 
-## Tutoriel administration
+## Configurer CwCloud avec GCP
 
-Vous aurez surement besoin d'utiliser des fonctionnalité administrateurs si vous avez votre propre instance hébergée de CwCloud.
+### Générer le service account et ses permissions
 
-Vous trouverez toutes les ressources pour administrer via la console [ici](./console/admin/README.md)
+1. Créer un service account `cwcloud`
+2. Lui ajouter le role `owner` comme ceci:
+
+![gcp_sa_access_1](../../../img/gcp_sa_access_1.png)
+
+![gcp_sa_access_2](../../../img/gcp_sa_access_2.png)
+
+### Générer la clef d'authentification
 
 ## Configurer une zone DNS avec cloudflare
 
@@ -548,3 +555,9 @@ Vous pouvez également envoyer les métriques et traces à partir d'un endpoint 
 Voici un exemple de traces avec Jaegger:
 
 ![jaegger](../../../img/jaegger.png)
+
+## Tutoriel administration
+
+Vous aurez surement besoin d'utiliser des fonctionnalité administrateurs si vous avez votre propre instance hébergée de CwCloud.
+
+Vous trouverez toutes les ressources pour administrer via la console [ici](./console/admin/README.md)

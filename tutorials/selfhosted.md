@@ -382,7 +382,6 @@ Select Users:
 
 ![aws_2](../img/aws_adduser.png)
 
-
 You will have a three step process to create the user:
 
 1. Write user's name.
@@ -475,11 +474,18 @@ dns_hosted_zone_id: Z08XXXXXXXXXXXXXXXXB
 
 ![aws_route53_1](../img/aws_route53_3.png)
 
-## Console tutorials
+## Configure CwCloud with GCP
 
-You might use the console as an administrator if you're getting your own on premises instance.
+### Generate service account
 
-You'll find all the tutorials you need for administrating the console [here](./console/admin/README.md)
+1. Create a service account `cwcloud`
+2. Grant it the access `owner`:
+
+![gcp_sa_access_1](../img/gcp_sa_access_1.png)
+
+![gcp_sa_access_2](../img/gcp_sa_access_2.png)
+
+### Generate credentials
 
 ## Configure DNS zone with cloudflare
 
@@ -546,5 +552,11 @@ And you can also send the metrics and some traces through OTLP/Grpc (configured 
 Here's example of traces with Jaegger:
 
 ![jaegger](../img/jaegger.png)
+
+## Console tutorials
+
+You might use the console as an administrator if you're getting your own on premises instance.
+
+You'll find all the tutorials you need for administrating the console [here](./console/admin/README.md)
 
 
