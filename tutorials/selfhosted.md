@@ -476,6 +476,12 @@ dns_hosted_zone_id: Z08XXXXXXXXXXXXXXXXB
 
 ## Configure CwCloud with GCP
 
+### Get the project ID
+
+Copy/paste the following value in the `GCP_PROJECT_ID` environment variable:
+
+![gcp_project_id](../img/gcp_project_id.png)
+
 ### Generate service account
 
 Create a service account `cwcloud`
