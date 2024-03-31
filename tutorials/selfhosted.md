@@ -492,6 +492,10 @@ Then, grant it the access `owner`:
 
 ![gcp_sa_access_2](../img/gcp_sa_access_2.png)
 
+The service account has also to appear in the principals account:
+
+![gcp_iam_sa_principal](../img/gcp_iam_sa_principal.png)
+
 ### Generate credentials
 
 Go to _IAM > Service Account > Manage key_

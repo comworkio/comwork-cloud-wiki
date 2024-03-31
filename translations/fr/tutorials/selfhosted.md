@@ -495,6 +495,20 @@ Ensuite, lui ajouter le role `owner` comme ceci :
 
 ![gcp_sa_access_2](../../../img/gcp_sa_access_2.png)
 
+Le service account doit aussi apparaitre dans les comptes principaux :
+
+![gcp_iam_sa_principal](../../../img/gcp_iam_sa_principal.png)
+
+### Générer la clef d'authentification
+
+Aller dans _IAM > Service Account > Manage key_
+
+![gcp_sa_manage_keys](../../../img/gcp_sa_manage_keys.png)
+
+Ensuite, créer une nouvelle clef (choisir le format `JSON`) :
+
+![gcp_sa_add_key](../../../img/gcp_sa_add_key.png)
+
 Le fichier téléchargé devrait ressembler à quelque chose comme ceci :
 
 ```json
@@ -520,16 +534,6 @@ Vous pouvez utiliser cette commande pour générer la valeur en base64 :
 ```shell
 base64 -i projectid.json
 ```
-
-### Générer la clef d'authentification
-
-Aller dans _IAM > Service Account > Manage key_
-
-![gcp_sa_manage_keys](../../../img/gcp_sa_manage_keys.png)
-
-Ensuite, créer une nouvelle clef (choisir le format `JSON`):
-
-![gcp_sa_add_key](../../../img/gcp_sa_add_key.png)
 
 ### Configuration du réseau
 
