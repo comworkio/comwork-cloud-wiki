@@ -594,17 +594,18 @@ Then you can copy/paste the generated token:
 
 You'll have to set the `CLOUDFLARE_API_TOKEN` environment variable with this token.
 
-5. Configure the `CLOUDFLARE_ZONE_ID` environment variable with the following value:
-
-![cloudflare_zone_id](../img/cloudflare_zone_id.png)
-
-6. You can add the DNS zone in the `cloud_environments.yml` file:
+1. You can add the DNS zone in the `cloud_environments.yml` file:
 
 ```yaml
 dns_zones:
   - name: pulumi-university.com
     driver: CloudflareDriver
+    zone_id: XXXXXXX
 ```
+
+In order to get the `zone_id`, you can go on cloudflare and copy/past the following value:
+
+![cloudflare_zone_id](../img/cloudflare_zone_id.png)
 
 ## Observability
 

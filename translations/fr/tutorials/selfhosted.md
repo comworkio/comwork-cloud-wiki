@@ -597,17 +597,18 @@ Copier/coller le token généré :
 
 Vous devez setter la variable d'environnement `CLOUDFLARE_API_TOKEN` avec ce token.
 
-1. Configurer la variable d'environnement `CLOUDFLARE_ZONE_ID` avec la valeur suivante :
-
-![cloudflare_zone_id](../../../img/cloudflare_zone_id.png)
-
-6. Vous pouvez ensuite ajouter votre nouvelle zone DNS dans le fichier `cloud_environments.yml` :
+5. Vous pouvez ensuite ajouter votre nouvelle zone DNS dans le fichier `cloud_environments.yml` :
 
 ```yaml
 dns_zones:
   - name: pulumi-university.com
     driver: CloudflareDriver
+    zone_id: XXXXXXX
 ```
+
+Pour récupérer la `zone_id`, copier la valeur suivante depuis cloudflare :
+
+![cloudflare_zone_id](../../../img/cloudflare_zone_id.png)
 
 ## Observabilité
 
