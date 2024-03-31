@@ -556,6 +556,75 @@ resource "google_compute_network" "vpc_network" {
 
 Then you can store the value `default` in the `GCP_NETWORK` environment variable.
 
+### Firewalls configuration
+
+Here's the terraform code to do it:
+
+```hcl
+variable "project_id" {
+  type        = string
+  description = "The GCP project ID"
+  default     = null
+}
+
+variable "network" {
+  type        = string
+  description = "The GCP vpc/network name"
+  default     = null
+}
+
+resource "google_compute_firewall" "allow_ssh" {
+  name    = "allow-ssh"
+  network = var.network
+  project = var.project_id
+
+  allow {
+    protocol = "tcp"
+    ports    = ["22"]
+  }
+
+  source_ranges = ["0.0.0.0/0"]
+  target_tags   = ["allow-ssh"]
+}
+
+resource "google_compute_firewall" "allow_http" {
+  name    = "allow-http"
+  network = var.network
+  project = var.project_id
+
+  allow {
+    protocol = "tcp"
+    ports    = ["80"]
+  }
+
+  source_ranges = ["0.0.0.0/0"]
+  target_tags   = ["allow-http"]
+}
+
+resource "google_compute_firewall" "allow_https" {
+  name    = "allow-https"
+  network = var.network
+  project = var.project_id
+
+  allow {
+    protocol = "tcp"
+    ports    = ["443"]
+  }
+
+  source_ranges = ["0.0.0.0/0"]
+  target_tags   = ["allow-https"]
+}
+```
+
+Then you can add the tags in the `cloud_environments.yml` file:
+
+```yaml
+firewall_tags:
+  - allow-http
+  - allow-https
+  - allow-ssh
+```
+
 ## Configure DNS zone with cloudflare
 
 1. Add a new site on cloudflare console:

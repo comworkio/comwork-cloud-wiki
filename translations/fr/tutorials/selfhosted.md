@@ -559,6 +559,75 @@ resource "google_compute_network" "vpc_network" {
 
 Vous pouvez ensuite stocker la valeur `default` dans la variable d'environnement `GCP_NETWORK`.
 
+### Configuration des firewalls
+
+Voici le code terraform :
+
+```hcl
+variable "project_id" {
+  type        = string
+  description = "The GCP project ID"
+  default     = null
+}
+
+variable "network" {
+  type        = string
+  description = "The GCP vpc/network name"
+  default     = null
+}
+
+resource "google_compute_firewall" "allow_ssh" {
+  name    = "allow-ssh"
+  network = var.network
+  project = var.project_id
+
+  allow {
+    protocol = "tcp"
+    ports    = ["22"]
+  }
+
+  source_ranges = ["0.0.0.0/0"]
+  target_tags   = ["allow-ssh"]
+}
+
+resource "google_compute_firewall" "allow_http" {
+  name    = "allow-http"
+  network = var.network
+  project = var.project_id
+
+  allow {
+    protocol = "tcp"
+    ports    = ["80"]
+  }
+
+  source_ranges = ["0.0.0.0/0"]
+  target_tags   = ["allow-http"]
+}
+
+resource "google_compute_firewall" "allow_https" {
+  name    = "allow-https"
+  network = var.network
+  project = var.project_id
+
+  allow {
+    protocol = "tcp"
+    ports    = ["443"]
+  }
+
+  source_ranges = ["0.0.0.0/0"]
+  target_tags   = ["allow-https"]
+}
+```
+
+Ensuite vous pouvez ajouter les tags dans le fichier `cloud_environments.yml` :
+
+```yaml
+firewall_tags:
+  - allow-http
+  - allow-https
+  - allow-ssh
+```
+
 ## Configurer une zone DNS avec cloudflare
 
 1. Ajouter un nouveau site avec cloudflare:
