@@ -686,7 +686,7 @@ Cwcloud-api is providing a `/metrics` http endpoint that can be scrapped by Prom
 
 ![prometheus](../img/prometheus.png)
 
-And you can also send the metrics and some traces through OTLP/Grpc (configured with the `OTEL_COLLECTOR_ENDPOINT` environment variable). 
+And you can also send the metrics, logs and some traces through OTLP/Grpc (configured with the `OTEL_COLLECTOR_ENDPOINT` environment variable).
 
 Here's example of traces with Jaegger:
 
@@ -697,5 +697,3 @@ Here's example of traces with Jaegger:
 You might use the console as an administrator if you're getting your own on premises instance.
 
 You'll find all the tutorials you need for administrating the console [here](./console/admin/README.md)
-
-
