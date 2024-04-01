@@ -8,6 +8,14 @@ Here's the documentation of [comwork cloud console](https://cloud.comwork.io) an
 
 It aims to provide those services in a "_IaC_[^5]" or "_GitOps_" way: you'll get access to gitlab repositories that contains ansible roles, templates and playbooks you'll be able to maintain (same thing with Helm charts for Kubernetes instances very soon). The modification on this repositories will automatically be applied in your instances.
 
+Here's a schema explaining how the DaaS is working using virtual machines:
+
+![cwcloud_daas_vm](./img/cwcloud_daas_vm.png)
+
+And how it's working with K8S:
+
+![cwcloud_daas_k8s](./img/cwcloud_daas_k8s.png)
+
 There is a SaaS version which provide instances that are hosted on [Scaleway](https://www.scaleway.com) or [OVHCloud](https://www.ovhcloud.com). Those two are really beautiful European 🇪🇺 cloud providers and we intend to propose even more cloud providers in the future (CwCloud can work with any cloud provider that provide standard IaaS[^6] API's such as OpenStack or Kubernetes).
 
 There is also a way to deploy a [self-hosted version of CwCloud](./tutorials/selfhosted.md) with your own prefered cloud provider and account. The self-hosted version is also compatible with [AWS](https://aws.amazon.com), [GCP](https://cloud.google.com) and [cloudflare](https://www.cloudflare.com) (for the DNS records).
