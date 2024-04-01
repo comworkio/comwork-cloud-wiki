@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-01T13:30:26.168Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="ZoZwoVnFqmTGeE_YLUZH" version="24.2.1" type="device">
+<mxfile host="app.diagrams.net" modified="2024-04-01T13:37:57.549Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="Eo1Z7QCAXgekyBOf4xVL" version="24.2.1" type="device">
   <diagram name="Page-1" id="8OBKk41p--By60RAJChD">
     <mxGraphModel dx="2818" dy="1359" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -76,7 +76,7 @@
         <mxCell id="VmBzKAPH3LvwEZfFCWB9-84" value="git pull&lt;br&gt;helm template | kubectl apply" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="860" y="940" width="200" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="oKcMAaPuIGs6lxj5BwL7-1" value="FluxCD" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="oKcMAaPuIGs6lxj5BwL7-1" value="FluxCD" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
           <mxGeometry x="1165" y="440" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="oKcMAaPuIGs6lxj5BwL7-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oKcMAaPuIGs6lxj5BwL7-1" target="VmBzKAPH3LvwEZfFCWB9-72">
@@ -88,13 +88,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="oKcMAaPuIGs6lxj5BwL7-3" value="kube&lt;br&gt;config&lt;br&gt;cluster2" style="shape=card;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="oKcMAaPuIGs6lxj5BwL7-3" value="kube&lt;br&gt;config&lt;br&gt;cluster2" style="shape=card;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" vertex="1" parent="1">
           <mxGeometry x="660" y="350" width="80" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="oKcMAaPuIGs6lxj5BwL7-4" value="kube&lt;br&gt;config&lt;br&gt;cluster1" style="shape=card;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="oKcMAaPuIGs6lxj5BwL7-4" value="kube&lt;br&gt;config&lt;br&gt;cluster1" style="shape=card;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" vertex="1" parent="1">
           <mxGeometry x="660" y="250" width="80" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="oKcMAaPuIGs6lxj5BwL7-5" value="kube&lt;br&gt;config&lt;br&gt;cluster3" style="shape=card;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="oKcMAaPuIGs6lxj5BwL7-5" value="kube&lt;br&gt;config&lt;br&gt;cluster3" style="shape=card;whiteSpace=wrap;html=1;fillColor=#6d8764;fontColor=#ffffff;strokeColor=#3A5431;" vertex="1" parent="1">
           <mxGeometry x="660" y="450" width="80" height="100" as="geometry" />
         </mxCell>
       </root>

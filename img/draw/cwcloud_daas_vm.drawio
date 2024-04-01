@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-01T13:24:00.173Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="l4bFCg1HsSwqezylEgiu" version="24.2.1" type="device">
+<mxfile host="app.diagrams.net" modified="2024-04-01T13:38:57.832Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="gzGsWIYGK-x0A9YtJcxZ" version="24.2.1" type="device">
   <diagram name="Page-1" id="8OBKk41p--By60RAJChD">
-    <mxGraphModel dx="4082" dy="2148" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2818" dy="1359" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -190,7 +190,7 @@
         <mxCell id="VmBzKAPH3LvwEZfFCWB9-78" value="Start with cloud init program" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1290" y="365" width="170" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="VmBzKAPH3LvwEZfFCWB9-79" value="cloud init" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="VmBzKAPH3LvwEZfFCWB9-79" value="cloud init" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" vertex="1" parent="1">
           <mxGeometry x="1480" y="570" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="VmBzKAPH3LvwEZfFCWB9-81" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.018;entryY=0.556;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VmBzKAPH3LvwEZfFCWB9-40" target="VmBzKAPH3LvwEZfFCWB9-71">
@@ -214,7 +214,7 @@
         <mxCell id="VmBzKAPH3LvwEZfFCWB9-84" value="git pull&lt;br&gt;gitlab runner register" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1140" y="1210" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="VmBzKAPH3LvwEZfFCWB9-86" value="ansible-playbook" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="VmBzKAPH3LvwEZfFCWB9-86" value="ansible-playbook" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" vertex="1" parent="1">
           <mxGeometry x="1620" y="570" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="VmBzKAPH3LvwEZfFCWB9-87" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.038;exitY=0.588;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="VmBzKAPH3LvwEZfFCWB9-79" target="VmBzKAPH3LvwEZfFCWB9-86">
