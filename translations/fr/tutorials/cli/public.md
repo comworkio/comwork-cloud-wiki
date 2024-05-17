@@ -113,6 +113,8 @@ Les formats de sorties interprétés sont:
 cwc project ls
 ```
 
+**Note** : Vous pouvez ajouter le flag `-t` (ou `--type`) pour filtrer les projets par type (vm ou k8s).
+
 ### Rechercher
 
 #### Rechercher par ID

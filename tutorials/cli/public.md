@@ -113,6 +113,8 @@ The know output's format are the following:
 cwc project ls
 ```
 
+**Note**: You can add `-t` (or `--type`) flag to get filter the projects by type (either vm or k8s)
+
 ### Search Project
 
 #### Search Project By ID
