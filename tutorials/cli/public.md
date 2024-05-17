@@ -148,6 +148,7 @@ Notes:
   * `-t` or `--token`: your Gitlab access token
   * `-g` or `--git`: Your Git username
   * `-n` or `--namespace`: namespace or group id where the project will be created
+  * `-p` or `--type`: Project type (vm or k8s)
 
 ### Delete
 

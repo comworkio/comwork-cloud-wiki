@@ -77,6 +77,7 @@ Remarques :
   * `-t` ou `--token`: Access token de gitlab
   * `-g` ou `--git`: Votre nom d'utilisateur git
   * `-n` ou `--namespace`: le namespace ou group id ou le projet git sera stocké
+  * `-p` ou `--type`: le type de projet
 
 ### Supprimer
 
