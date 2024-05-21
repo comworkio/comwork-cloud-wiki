@@ -486,6 +486,25 @@ cwc faas trigger delete --trigger  <trigger_id>
 cwc faas trigger truncate
 ```
 
+## Kubernetes
+
+### Deployments
+
+#### List deployments
+
+```shell
+cwc kubernetes deployment ls
+```
+
+#### List deployment by ID
+
+```shell
+cwc kubernetes deployment ls -d <deployment_id>
+## or
+cwc kubernetes deployment ls --id <deployment_id>
+```
+
+
 ## Email
 
 ### Send an email
