@@ -509,6 +509,14 @@ cwc kubernetes deployment ls -d <id_de_deploiement>
 cwc kubernetes deployment ls --id <id_de_deploiement>
 ``` 
 
+#### Supprimer déploiement par ID
+
+```shell
+cwc kubernetes deployment delete -d <id_de_deploiement>
+## ou
+cwc kubernetes deployment delete --id <id_de_deploiement>
+``` 
+
 ## Email
 
 ### Envoyer un email
