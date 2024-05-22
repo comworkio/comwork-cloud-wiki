@@ -318,6 +318,13 @@ cwc admin faas trigger ls -t  <trigger_id>
 cwc admin faas trigger ls --trigger  <trigger_id>
 ```
 
+## Kubernetes
+### Environnement
+#### Liste de tous les environnements
+```shell
+cwc admin kubernetes environment ls
+```
+
 ## Email
 
 ### Envoyer un email
