@@ -509,6 +509,14 @@ cwc kubernetes deployment ls -d <id_de_deploiement>
 cwc kubernetes deployment ls --id <id_de_deploiement>
 ``` 
 
+#### Créer un déploiement
+
+```shell
+cwc kubernetes deployment create -n <nom_de_deploiement> -d <description_de_deploiement> -c <id_de_cluster> -i <id_de_projet> -e <id_de_environnement>
+## ou
+cwc kubernetes deployment create --name <nom_de_deploiement> --description <description_de_deploiement> --cluster <id_de_cluster> --project <id_de_projet> --environment <id_de_environnement>
+```
+
 #### Supprimer déploiement par ID
 
 ```shell

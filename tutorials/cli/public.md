@@ -504,6 +504,14 @@ cwc kubernetes deployment ls -d <deployment_id>
 cwc kubernetes deployment ls --id <deployment_id>
 ```
 
+#### Create deployment
+
+```shell
+cwc kubernetes deployment create -n <deployment_name> -d <deployment_description> -c <cluster_id> -i <project_id> -e <environment_id>
+## or
+cwc kubernetes deployment create --name <deployment_name> --description <deployment_description> --cluster <cluster_id> --project <project_id> --environment <environment_id>
+```
+
 #### Delete deployment by ID
 
 ```shell
