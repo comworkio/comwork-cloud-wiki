@@ -325,6 +325,12 @@ cwc admin faas trigger ls --trigger <trigger_id>
 cwc admin kubernetes environment ls
 ```
 
+### Cluster
+#### List all clusters
+```shell
+cwc admin kubernetes cluster ls
+```
+
 ## Email
 
 ### Send an email
