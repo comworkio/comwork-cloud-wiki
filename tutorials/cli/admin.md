@@ -331,6 +331,13 @@ cwc admin kubernetes environment ls
 cwc admin kubernetes cluster ls
 ```
 
+#### Delete cluster by Id
+```shell
+cwc admin kubernetes cluster delete -c <cluster_id>
+## or
+cwc admin kubernetes cluster delete --cluster <cluster_id>
+```
+
 ## Email
 
 ### Send an email
