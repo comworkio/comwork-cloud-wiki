@@ -113,6 +113,8 @@ Les formats de sorties interprétés sont:
 cwc project ls
 ```
 
+**Note** : Vous pouvez ajouter le flag `-t` (ou `--type`) pour filtrer les projets par type (vm ou k8s).
+
 ### Rechercher
 
 #### Rechercher par ID
@@ -149,6 +151,7 @@ Remarques :
   * `-t` ou `--token`: Access token de gitlab
   * `-g` ou `--git`: Votre nom d'utilisateur git
   * `-n` ou `--namespace`: le namespace ou group id ou le projet git sera stocké
+  * `-p` ou `--type`: le type de projet (vm ou k8s)
 
 ### Supprimer
 
@@ -487,6 +490,40 @@ cwc faas trigger delete --trigger  <trigger_id>
 ```shell
 cwc faas trigger truncate
 ```
+
+## Kubernetes
+
+### Déploiements
+
+#### Liste des déploiements
+
+```shell
+cwc kubernetes deployment ls
+```
+
+#### Lister les déploiements par ID
+
+```shell
+cwc kubernetes deployment ls -d <id_de_deploiement>
+## ou
+cwc kubernetes deployment ls --id <id_de_deploiement>
+``` 
+
+#### Créer un déploiement
+
+```shell
+cwc kubernetes deployment create -n <nom_de_deploiement> -d <description_de_deploiement> -c <id_de_cluster> -i <id_de_projet> -e <id_de_environnement>
+## ou
+cwc kubernetes deployment create --name <nom_de_deploiement> --description <description_de_deploiement> --cluster <id_de_cluster> --project <id_de_projet> --environment <id_de_environnement>
+```
+
+#### Supprimer déploiement par ID
+
+```shell
+cwc kubernetes deployment delete -d <id_de_deploiement>
+## ou
+cwc kubernetes deployment delete --id <id_de_deploiement>
+``` 
 
 ## Email
 

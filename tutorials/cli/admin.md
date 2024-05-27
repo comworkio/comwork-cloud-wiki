@@ -77,6 +77,7 @@ Notes:
   * `-t` or `--token`: your Gitlab access token
   * `-g` or `--git`: Your Git username
   * `-n` or `--namespace`: namespace or group id where the project will be created
+  * `-p` or `--type`: Project type (vm or k8s)
 
 ### Delete
 
@@ -315,6 +316,26 @@ cwc admin faas trigger ls
 ```shell
 cwc admin faas trigger ls -t  <trigger_id>
 cwc admin faas trigger ls --trigger <trigger_id>
+```
+
+## Kubernetes
+### Environment
+#### List all environments
+```shell
+cwc admin kubernetes environment ls
+```
+
+### Cluster
+#### List all clusters
+```shell
+cwc admin kubernetes cluster ls
+```
+
+#### Delete cluster by Id
+```shell
+cwc admin kubernetes cluster delete -c <cluster_id>
+## or
+cwc admin kubernetes cluster delete --cluster <cluster_id>
 ```
 
 ## Email

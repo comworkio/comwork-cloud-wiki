@@ -113,6 +113,8 @@ The know output's format are the following:
 cwc project ls
 ```
 
+**Note**: You can add `-t` (or `--type`) flag to get filter the projects by type (either vm or k8s)
+
 ### Search Project
 
 #### Search Project By ID
@@ -148,6 +150,7 @@ Notes:
   * `-t` or `--token`: your Gitlab access token
   * `-g` or `--git`: Your Git username
   * `-n` or `--namespace`: namespace or group id where the project will be created
+  * `-p` or `--type`: Project type (vm or k8s)
 
 ### Delete
 
@@ -481,6 +484,40 @@ cwc faas trigger delete --trigger  <trigger_id>
 
 ```shell
 cwc faas trigger truncate
+```
+
+## Kubernetes
+
+### Deployments
+
+#### List deployments
+
+```shell
+cwc kubernetes deployment ls
+```
+
+#### List deployment by ID
+
+```shell
+cwc kubernetes deployment ls -d <deployment_id>
+## or
+cwc kubernetes deployment ls --id <deployment_id>
+```
+
+#### Create deployment
+
+```shell
+cwc kubernetes deployment create -n <deployment_name> -d <deployment_description> -c <cluster_id> -i <project_id> -e <environment_id>
+## or
+cwc kubernetes deployment create --name <deployment_name> --description <deployment_description> --cluster <cluster_id> --project <project_id> --environment <environment_id>
+```
+
+#### Delete deployment by ID
+
+```shell
+cwc kubernetes deployment delete -d <deployment_id>
+## or
+cwc kubernetes deployment delete --id <deployment_id>
 ```
 
 ## Email

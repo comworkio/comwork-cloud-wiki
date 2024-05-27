@@ -77,6 +77,7 @@ Remarques :
   * `-t` ou `--token`: Access token de gitlab
   * `-g` ou `--git`: Votre nom d'utilisateur git
   * `-n` ou `--namespace`: le namespace ou group id ou le projet git sera stocké
+  * `-p` ou `--type`: le type de projet
 
 ### Supprimer
 
@@ -315,6 +316,26 @@ cwc admin faas trigger ls
 ```shell
 cwc admin faas trigger ls -t  <trigger_id>
 cwc admin faas trigger ls --trigger  <trigger_id>
+```
+
+## Kubernetes
+### Environnement
+#### Liste de tous les environnements
+```shell
+cwc admin kubernetes environment ls
+```
+
+### Cluster
+#### Liste de tous les clusters
+```shell
+cwc admin kubernetes cluster ls
+```
+
+#### Supprimer cluster par Id
+```shell
+cwc admin kubernetes cluster delete -c <id_de_cluster>
+## or
+cwc admin kubernetes cluster delete --cluster <id_de_cluster>
 ```
 
 ## Email
