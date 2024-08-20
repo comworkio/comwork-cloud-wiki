@@ -114,3 +114,43 @@ Then, run the upgrade again:
 ```shell
 $ leapp upgrade
 ```
+
+Then you'll have a report like that:
+
+```shell
+============================================================
+                      REPORT OVERVIEW
+============================================================
+
+HIGH and MEDIUM severity reports:
+    1. Leapp detected loaded kernel drivers which are no longer maintained in RHEL 9.
+    2. Packages not signed by Red Hat found on the system
+
+Reports summary:
+    Errors:                      0
+    Inhibitors:                  0
+    HIGH severity reports:       2
+    MEDIUM severity reports:     0
+    LOW severity reports:        3
+    INFO severity reports:       2
+
+Before continuing consult the full report:
+    A report has been generated at /var/log/leapp/leapp-report.json
+    A report has been generated at /var/log/leapp/leapp-report.txt
+
+============================================================
+                   END OF REPORT OVERVIEW
+============================================================
+```
+
+Open a web/kvm console of your virtual machine in order to access to the grup menu and restart:
+
+```shell
+$ reboot
+```
+
+Then, __quickly__ select the `ELevate-Upgrade-Initramfs` entry:
+
+![grub_upgrade_almalinux](../../../img/grub_upgrade_almalinux.png)
+
+Then let the upgrade continue on the kvm/web console...

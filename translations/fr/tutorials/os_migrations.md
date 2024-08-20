@@ -114,3 +114,43 @@ Puis, relancer la mise à jour :
 ```shell
 $ leapp upgrade
 ```
+
+Ensuite vous aurez un résultat comme ceci :
+
+```shell
+============================================================
+                      REPORT OVERVIEW
+============================================================
+
+HIGH and MEDIUM severity reports:
+    1. Leapp detected loaded kernel drivers which are no longer maintained in RHEL 9.
+    2. Packages not signed by Red Hat found on the system
+
+Reports summary:
+    Errors:                      0
+    Inhibitors:                  0
+    HIGH severity reports:       2
+    MEDIUM severity reports:     0
+    LOW severity reports:        3
+    INFO severity reports:       2
+
+Before continuing consult the full report:
+    A report has been generated at /var/log/leapp/leapp-report.json
+    A report has been generated at /var/log/leapp/leapp-report.txt
+
+============================================================
+                   END OF REPORT OVERVIEW
+============================================================
+```
+
+Ouvrez une console web/kvm de votre machine virtuelle pour avoir accès graphiquement au grub au rédémarrage puis lancer cette commande :
+
+```shell
+$ reboot
+```
+
+Puis __rapidement__ sélectionner l'entrée `ELevate-Upgrade-Initramfs` dans les choix de boot:
+
+![grub_upgrade_almalinux](../../../img/grub_upgrade_almalinux.png)
+
+Laissez ensuite l'upgrade se poursuivre sur la console web/kvm.
