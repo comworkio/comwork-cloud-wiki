@@ -166,6 +166,15 @@ $ dnf update -y
 $ dnf upgrade -y
 ```
 
+Lancez ensuite ces commandes pour corriger le pipeline ansible :
+
+```shell
+$ pip install hvac
+$ dnf install snapd -y
+```
+
+[^1]: une fois que toutes les instances sont à jour, vous devriez mettre à jour le role `common` pour automatiser cela.
+
 Et enfin dans la configuration ansible, mettez à jour les variables suivantes comme ceci et relancer un pipeline :
 
 ```shell
