@@ -182,3 +182,5 @@ centos_version: 9
 docker_legacy_repo_install: false
 docker_repo_install: true
 ```
+
+Vous devrez aussi potentiellement remplacer la commande `docker-compose` par `docker compose` dans certains roles ansible.
