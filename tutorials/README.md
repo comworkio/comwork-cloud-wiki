@@ -21,4 +21,5 @@
 * [Self-hosted deployment of CwCloud](./selfhosted.md)
 * [email API](./emailapi.md)
 * [cwai API](./cwai.md)
+* [OS migrations](./os_migrations.md)
 * [Traductions en Français](../translations/fr/tutorials/README.md)
