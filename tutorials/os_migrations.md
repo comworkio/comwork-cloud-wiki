@@ -48,6 +48,8 @@ $ dnf upgrade -y
 
 ## AlmaLinux 8 to AlmaLinux 9
 
+_Between 1 hour and 2 hour._
+
 Every step has to be run with the `root` user.
 
 ```shell
@@ -153,4 +155,21 @@ Then, __quickly__ select the `ELevate-Upgrade-Initramfs` entry:
 
 ![grub_upgrade_almalinux](../../../img/grub_upgrade_almalinux.png)
 
-Then let the upgrade continue on the kvm/web console...
+Then let the upgrade continue on the kvm/web console, the reboot will be automatic.
+
+Once it's finished, open a new SSH connection and check:
+
+```shell
+$ cat /etc/redhat-release
+AlmaLinux release 9.3 (Shamrock Pampas Cat)
+$ dnf update -y
+$ dnf upgrade -y
+```
+
+And to finish, in the ansible configuration, update the following variables and relaunch a pipeline:
+
+```shell
+centos_version: 9
+docker_legacy_repo_install: false
+docker_repo_install: true
+```
