@@ -153,7 +153,7 @@ $ reboot
 
 Then, __quickly__ select the `ELevate-Upgrade-Initramfs` entry:
 
-![grub_upgrade_almalinux](../../../img/grub_upgrade_almalinux.png)
+![grub_upgrade_almalinux](../img/grub_upgrade_almalinux.png)
 
 Then let the upgrade continue on the kvm/web console, the reboot will be automatic.
 
