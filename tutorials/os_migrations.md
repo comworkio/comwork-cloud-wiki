@@ -48,7 +48,7 @@ $ dnf upgrade -y
 
 ## AlmaLinux 8 to AlmaLinux 9
 
-_Between 1 hour and 2 hour._
+_Between 1 hour and 3 hour._
 
 Every step has to be run with the `root` user.
 
@@ -183,4 +183,8 @@ docker_legacy_repo_install: false
 docker_repo_install: true
 ```
 
-You might have to update your ansible role to replace the `docker-compose` command by `docker compose`.
+You might have to update your ansible role to replace the `docker-compose` command by `docker compose` and remove all containers in order to recreate them:
+
+```shell
+$ docker ps -a|awk '{system ("docker rm -f "$1)}'
+```

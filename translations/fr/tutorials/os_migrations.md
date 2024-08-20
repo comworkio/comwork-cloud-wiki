@@ -48,7 +48,7 @@ $ dnf upgrade -y
 
 ## AlmaLinux 8 vers AlmaLinux 9
 
-_Comptez entre 1h et 2h._
+_Comptez entre 1h et 3h._
 
 Chaque étape dois être jouée avec le user `root`.
 
@@ -171,6 +171,7 @@ Lancez ensuite ces commandes pour corriger le pipeline ansible :
 ```shell
 $ pip install hvac
 $ dnf install snapd -y
+$ 
 ```
 
 [^1]: une fois que toutes les instances sont à jour, vous devriez mettre à jour le role `common` pour automatiser cela.
@@ -183,4 +184,8 @@ docker_legacy_repo_install: false
 docker_repo_install: true
 ```
 
-Vous devrez aussi potentiellement remplacer la commande `docker-compose` par `docker compose` dans certains roles ansible.
+Vous devrez aussi potentiellement remplacer la commande `docker-compose` par `docker compose` dans certains roles ansible et également supprimer tous les conteneurs pour les recréer:
+
+```shell
+$ docker ps -a|awk '{system ("docker rm -f "$1)}'
+```
