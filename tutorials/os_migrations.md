@@ -63,3 +63,26 @@ $ leapp preupgrade
 $ cat /var/log/leapp/leapp-report.txt # check the report
 ```
 
+If you find `high (inhibitor)` issues like that:
+
+```
+Risk Factor: high (inhibitor)
+Title: Upgrade requires links in root directory to be relative
+Summary: After rebooting, parts of the upgrade process can fail if symbolic links in / point to absolute paths.
+Please change these links to relative ones.
+Remediation: [command] sh -c ln -snf var/lib/snapd/snap /snap
+Key: XXXXX
+```
+
+You have to fix it, like that:
+
+```shell
+cd /
+ln -snf var/lib/snapd/snap /snap
+```
+
+Run the upgrade :
+
+```shell
+$ leapp upgrade
+```

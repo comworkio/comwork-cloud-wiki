@@ -56,9 +56,33 @@ $ rpm --import https://repo.almalinux.org/elevate/RPM-GPG-KEY-ELevate
 $ dnf install -y leapp-upgrade leapp-data-almalinux
 ```
 
-Vérifiez si l'upgrade va bien se passer :
+Vérifiez si la mise à jour va bien se passer :
 
 ```shell
 $ leapp preupgrade
 $ cat /var/log/leapp/leapp-report.txt # vérifier ce rapport
+```
+
+Si vous trouvez un problème marqué comme `high (inhibitor)`, par exemple :
+
+```
+Risk Factor: high (inhibitor)
+Title: Upgrade requires links in root directory to be relative
+Summary: After rebooting, parts of the upgrade process can fail if symbolic links in / point to absolute paths.
+Please change these links to relative ones.
+Remediation: [command] sh -c ln -snf var/lib/snapd/snap /snap
+Key: XXXXX
+```
+
+Vous devez le corriger, en reprenant l'exemple, voici la correction :
+
+```shell
+cd /
+ln -snf var/lib/snapd/snap /snap
+```
+
+Puis, lancer la mise à jour :
+
+```shell
+$ leapp upgrade
 ```
