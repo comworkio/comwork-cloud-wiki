@@ -86,3 +86,31 @@ Run the upgrade :
 ```shell
 $ leapp upgrade
 ```
+
+If you have an issue such as not enough space on your disk, like that:
+
+```
+2024-08-20 09:38:32.570 ERROR    PID: 43069 leapp.workflow.Download.dnf_package_download: Cannot calculate, check, test, or perform the upgrade transaction.
+
+============================================================
+                           ERRORS
+============================================================
+
+2024-08-20 09:38:33.171673 [ERROR] Actor: dnf_package_download
+Message: There is not enough space on some file systems to perform the upgrade transaction.
+Summary:
+    Hint: Increase the free space on listed filesystems. Presented values are required minimum calculated by RPM and it is suggested to provide reasonably more free space (e.g. when 200 MB is missing on /usr, add 1200MB or more).
+    Disk requirements: At least 1120MB more space needed on the / filesystem.
+```
+
+You have to clean a little bit. Most of the time, cleaning docker unused volumes or layers is sufficient:
+
+```shell
+docker system prune -a
+```
+
+Then, run the upgrade again:
+
+```shell
+$ leapp upgrade
+```
