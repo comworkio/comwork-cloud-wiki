@@ -83,6 +83,63 @@ cd /
 ln -snf var/lib/snapd/snap /snap
 ```
 
+If you find `high (inhibitor)` issues like that:
+
+```
+Risk Factor: high (inhibitor)
+Title: custom network-scripts detected
+Summary: RHEL 9 does not support the legacy network-scripts package that was deprecated in RHEL 8. Custom network-scripts have been detected.
+Remediation: [hint] Migrate the custom network-scripts to NetworkManager dispatcher scripts manually before the upgrade. Follow instructions in the official documentation.
+Key: XXXXX
+```
+You have to fix it, like that:   
+
+```bash
+mkdir /opt/network-scripts/
+mv /sbin/if*-local /opt/network-scripts/
+```
+
+Create the /etc/NetworkManager/dispatcher.d/20-if-local file with the following content:   
+```bash
+#!/bin/bash
+
+test -n "$DEVICE_IFACE" || exit 0
+
+run() {
+    test -x "$1" || exit 0
+    "$1" "$DEVICE_IFACE"
+}                
+
+case "$2" in 
+    "up")   
+        run /opt/network-scripts/ifup-local
+        ;;      
+    "pre-up")
+        run /opt/network-scripts/ifup-pre-local
+        ;;      
+    "down") 
+        run /opt/network-scripts/ifdown-local
+        ;;      
+    "pre-down")
+        run /opt/network-scripts/ifdown-pre-local
+        ;;      
+esac
+```
+Set the permissions on the /etc/NetworkManager/dispatcher.d/20-if-local script:   
+```bash
+chown root:root /etc/NetworkManager/dispatcher.d/20-if-local
+chmod +x /etc/NetworkManager/dispatcher.d/20-if-local
+restorecon /etc/NetworkManager/dispatcher.d/20-if-local
+```
+If you require pre-up or pre-down events, create a symbolic link in the corresponding dispatcher directory:   
+```bash
+ln -s ../20-if-local /etc/NetworkManager/dispatcher.d/pre-up.d/
+ln -s ../20-if-local /etc/NetworkManager/dispatcher.d/pre-down.d/
+```
+All these instructions are in the official documentation of Redhat:    
+```
+https://access.redhat.com/solutions/6900331
+```
 Run the upgrade :
 
 ```shell
