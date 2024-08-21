@@ -65,110 +65,9 @@ $ leapp preupgrade
 $ cat /var/log/leapp/leapp-report.txt # check the report
 ```
 
-If you find `high (inhibitor)` issues like that:
+If you find `high (inhibitor)` issues you'll have to fix it. You'll find a list of the common error [here](#leapp-common-errors)
 
-```
-Risk Factor: high (inhibitor)
-Title: Upgrade requires links in root directory to be relative
-Summary: After rebooting, parts of the upgrade process can fail if symbolic links in / point to absolute paths.
-Please change these links to relative ones.
-Remediation: [command] sh -c ln -snf var/lib/snapd/snap /snap
-Key: XXXXX
-```
-
-You have to fix it, like that:
-
-```shell
-cd /
-ln -snf var/lib/snapd/snap /snap
-```
-
-If you find `high (inhibitor)` issues like that:
-
-```
-Risk Factor: high (inhibitor)
-Title: custom network-scripts detected
-Summary: RHEL 9 does not support the legacy network-scripts package that was deprecated in RHEL 8. Custom network-scripts have been detected.
-Remediation: [hint] Migrate the custom network-scripts to NetworkManager dispatcher scripts manually before the upgrade. Follow instructions in the official documentation.
-Key: XXXXX
-```
-You have to fix it, like that:   
-
-```bash
-mkdir /opt/network-scripts/
-mv /sbin/if*-local /opt/network-scripts/
-```
-
-Create the /etc/NetworkManager/dispatcher.d/20-if-local file with the following content:   
-```bash
-#!/bin/bash
-
-test -n "$DEVICE_IFACE" || exit 0
-
-run() {
-    test -x "$1" || exit 0
-    "$1" "$DEVICE_IFACE"
-}                
-
-case "$2" in 
-    "up")   
-        run /opt/network-scripts/ifup-local
-        ;;      
-    "pre-up")
-        run /opt/network-scripts/ifup-pre-local
-        ;;      
-    "down") 
-        run /opt/network-scripts/ifdown-local
-        ;;      
-    "pre-down")
-        run /opt/network-scripts/ifdown-pre-local
-        ;;      
-esac
-```
-Set the permissions on the /etc/NetworkManager/dispatcher.d/20-if-local script:   
-```bash
-chown root:root /etc/NetworkManager/dispatcher.d/20-if-local
-chmod +x /etc/NetworkManager/dispatcher.d/20-if-local
-restorecon /etc/NetworkManager/dispatcher.d/20-if-local
-```
-If you require pre-up or pre-down events, create a symbolic link in the corresponding dispatcher directory:   
-```bash
-ln -s ../20-if-local /etc/NetworkManager/dispatcher.d/pre-up.d/
-ln -s ../20-if-local /etc/NetworkManager/dispatcher.d/pre-down.d/
-```
-All these instructions are in the official documentation of Redhat:    
-```
-https://access.redhat.com/solutions/6900331
-```
-Run the upgrade :
-
-```shell
-$ leapp upgrade
-```
-
-If you have an issue such as not enough space on your disk, like that:
-
-```
-2024-08-20 09:38:32.570 ERROR    PID: 43069 leapp.workflow.Download.dnf_package_download: Cannot calculate, check, test, or perform the upgrade transaction.
-
-============================================================
-                           ERRORS
-============================================================
-
-2024-08-20 09:38:33.171673 [ERROR] Actor: dnf_package_download
-Message: There is not enough space on some file systems to perform the upgrade transaction.
-Summary:
-    Hint: Increase the free space on listed filesystems. Presented values are required minimum calculated by RPM and it is suggested to provide reasonably more free space (e.g. when 200 MB is missing on /usr, add 1200MB or more).
-    Disk requirements: At least 1120MB more space needed on the / filesystem.
-```
-
-You have to clean a little bit. Most of the time, cleaning docker unused volumes or layers is sufficient:
-
-```shell
-docker system prune -a
-```
-
-Then, run the upgrade again:
+Once it's fixed, run the upgrade again:
 
 ```shell
 $ leapp upgrade
@@ -244,4 +143,116 @@ You might have to update your ansible role to replace the `docker-compose` comma
 
 ```shell
 $ docker ps -a|awk '{system ("docker rm -f "$1)}'
+```
+
+## Leapp common errors
+
+Here you'll find a list of the common errors you can encounter during the `leapp preupgrade` or `leapp upgrade` commands.
+
+### Symbolic links which point to absolute paths
+
+Example of message you'll get:
+
+```
+Risk Factor: high (inhibitor)
+Title: Upgrade requires links in root directory to be relative
+Summary: After rebooting, parts of the upgrade process can fail if symbolic links in / point to absolute paths.
+Please change these links to relative ones.
+Remediation: [command] sh -c ln -snf var/lib/snapd/snap /snap
+Key: XXXXX
+```
+
+You have to fix it, like that:
+
+```shell
+cd /
+ln -snf var/lib/snapd/snap /snap
+```
+
+### Custom network-scripts detected
+
+Example of message you'll get:
+
+```
+Risk Factor: high (inhibitor)
+Title: custom network-scripts detected
+Summary: RHEL 9 does not support the legacy network-scripts package that was deprecated in RHEL 8. Custom network-scripts have been detected.
+Remediation: [hint] Migrate the custom network-scripts to NetworkManager dispatcher scripts manually before the upgrade. Follow instructions in the official documentation.
+Key: XXXXX
+```
+
+You have to fix it, like that:   
+
+```shell
+$ mkdir /opt/network-scripts/
+$ mv /sbin/if*-local /opt/network-scripts/
+```
+
+Create the `/etc/NetworkManager/dispatcher.d/20-if-local` file with the following content: 
+
+```bash
+#!/bin/bash
+
+test -n "$DEVICE_IFACE" || exit 0
+
+run() {
+    test -x "$1" || exit 0
+    "$1" "$DEVICE_IFACE"
+}                
+
+case "$2" in 
+    "up")   
+        run /opt/network-scripts/ifup-local
+        ;;      
+    "pre-up")
+        run /opt/network-scripts/ifup-pre-local
+        ;;      
+    "down") 
+        run /opt/network-scripts/ifdown-local
+        ;;      
+    "pre-down")
+        run /opt/network-scripts/ifdown-pre-local
+        ;;      
+esac
+```
+
+Set the permissions on the /etc/NetworkManager/dispatcher.d/20-if-local script: 
+
+```shell
+$ chown root:root /etc/NetworkManager/dispatcher.d/20-if-local
+$ chmod +x /etc/NetworkManager/dispatcher.d/20-if-local
+$ restorecon /etc/NetworkManager/dispatcher.d/20-if-local
+```
+
+If you require pre-up or pre-down events, create a symbolic link in the corresponding dispatcher directory:   
+
+```shell
+ln -s ../20-if-local /etc/NetworkManager/dispatcher.d/pre-up.d/
+ln -s ../20-if-local /etc/NetworkManager/dispatcher.d/pre-down.d/
+```
+
+All these instructions are in [the official documentation of Redhat](https://access.redhat.com/solutions/6900331).
+
+### Not enough disk space
+
+Example of message you'll get:
+
+```
+2024-08-20 09:38:32.570 ERROR    PID: 43069 leapp.workflow.Download.dnf_package_download: Cannot calculate, check, test, or perform the upgrade transaction.
+
+============================================================
+                           ERRORS
+============================================================
+
+2024-08-20 09:38:33.171673 [ERROR] Actor: dnf_package_download
+Message: There is not enough space on some file systems to perform the upgrade transaction.
+Summary:
+    Hint: Increase the free space on listed filesystems. Presented values are required minimum calculated by RPM and it is suggested to provide reasonably more free space (e.g. when 200 MB is missing on /usr, add 1200MB or more).
+    Disk requirements: At least 1120MB more space needed on the / filesystem.
+```
+
+You have to clean a little bit. Most of the time, cleaning docker unused volumes or layers is sufficient:
+
+```shell
+docker system prune -a
 ```
