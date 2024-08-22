@@ -79,7 +79,7 @@ $ leapp preupgrade
 $ cat /var/log/leapp/leapp-report.txt # vérifier ce rapport
 ```
 
-Si vous trouvez un problème marqué comme `high (inhibitor)`, il faut les corriger.
+Si vous trouvez un problème marqué comme `high (inhibitor)`, il faut les corriger. Vous trouverez la liste des erreurs couramment rencontrées [ici](#les-erreurs-leapp).
 
 Une fois corrigés, vous pouvez relancer la commande suivante :
 

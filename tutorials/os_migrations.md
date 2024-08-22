@@ -79,7 +79,7 @@ $ leapp preupgrade
 $ cat /var/log/leapp/leapp-report.txt # check the report
 ```
 
-If you find `high (inhibitor)` issues you'll have to fix it. You'll find a list of the common error [here](#leapp-common-errors)
+If you find `high (inhibitor)` issues you'll have to fix it. You'll find a list of the common error [here](#leapp-common-errors).
 
 Once it's fixed, run the upgrade again:
 
