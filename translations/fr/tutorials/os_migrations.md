@@ -20,7 +20,21 @@ Chaque étape dois être jouée avec le user `root`.
 
 ```shell
 $ curl -O https://raw.githubusercontent.com/AlmaLinux/almalinux-deploy/master/almalinux-deploy.sh
-$ sudo bash almalinux-deploy.sh
+$ bash almalinux-deploy.sh
+```
+
+Si vous avez cette erreur :
+
+```shell
+$ bash almalinux-deploy.sh
+Check root privileges                                                 OK
+Use '-d or --downgrade' option to allow downgrade from CentOS Stream  ERROR
+```
+
+Lancez ceci à la place :
+
+```shell
+$ bash almalinux-deploy.sh -d
 ```
 
 Une fois terminé, vous devriez avoir ce message :
