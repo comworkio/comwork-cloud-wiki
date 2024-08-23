@@ -353,3 +353,29 @@ Notes:
   * `-f` to add customized expeditor email address
   * `-b` to add a bcc email address
   * `-t` to use the comwork cloud template
+
+## Dns Records
+
+## List all the available DNS Records
+
+You can list all the available DNS records according to the pre-configured provider:
+
+```shell
+cwc admin dnsRecord ls
+```
+
+## Create a DNS record
+
+```shell
+cwc admin dnsRecord create -n <record_name> -z <zone> -t <type> -l <ttl> -d <data>
+## or
+cwc admin dnsRecord create --name <record_name> --zone <zone> --type <type> -ttl <ttl> -d <data>
+```
+
+## Delete a DNS record
+
+```shell
+cwc admin dnsRecord delete -r <record_id> -n <record_name> -z <zone>
+## or
+cwc admin dnsRecord delete --record <record_id> --name <record_name> --zone <zone>
+```

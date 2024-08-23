@@ -353,3 +353,29 @@ Notes :
   * `-f` pour ajouter une adresse email personnalisée de l'expéditeur
   * `-b` pour ajouter une adresse email bcc
   * `-t` pour activer l'utilisation de template de comwork cloud
+
+## Enregistrements DNS
+
+## Liste de tous les enregistrements DNS disponibles
+
+Vous pouvez lister tous les enregistrements DNS disponibles en fonction du fournisseur préconfiguré :
+
+```shell
+cwc admin dnsRecord ls
+```
+
+## Créer un enregistrement DNS
+
+```shell
+cwc admin dnsRecord create -n <nom_de_enregistrement> -z <zone> -t <type> -l <ttl> -d <data>
+## ou
+cwc admin dnsRecord create --name <nom_de_enregistrement> --zone <zone> --type <type> -ttl <ttl> -d <data>
+```
+
+## Supprimer un enregistrement DNS
+
+```shell
+cwc admin dnsRecord delete -r <id_de_enregistrement> -n <nom_de_enregistrement> -z <zone>
+## ou
+cwc admin dnsRecord delete --record <id_de_enregistrement> --name <nom_de_enregistrement> --zone <zone>
+```
