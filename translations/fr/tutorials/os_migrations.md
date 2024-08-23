@@ -136,7 +136,7 @@ $ dnf update -y
 $ dnf upgrade -y
 ```
 
-Lancez ensuite ces commandes pour corriger le pipeline ansible :
+Lancez ensuite ces commandes pour corriger le pipeline ansible[^1] :
 
 ```shell
 $ pip install hvac
