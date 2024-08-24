@@ -9,7 +9,7 @@ Ce tutoriel est également disponible dans les langues suivantes :
 
 _DaaS_ for _Deployment as a service_ est un compromis entre l'_IaaS[^1]_ et le _PaaS[^2]_. Vous avez à la fois la possibilité :
 * de provisionner des services managés prêts à l'emploi depuis une console web moderne (_PaaS_)
-* de mettre à jour vos templates et scripts de déploiements[^3] (_IaaS_ opérée avec de l'_IaC[^4]_ de façon "gitops")
+* de mettre à jour vos templates et scripts de déploiements[^3] (_IaaS_ opérée avec de l'_IaC[^4]_ de façon "_gitops_")
 * d'orchestrer ces déploiements à partir d'une API ou CLI incluant d'autres composants communs du cloud tels que les registries OCI, les objects storages... (_IaaS_)
 
 Si on devais résumer ce qui différencie un peu l'IaaS, du PaaS et du serverless et enfin le DaaS, voici ce que l'on dirait :

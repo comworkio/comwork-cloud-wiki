@@ -9,7 +9,7 @@ This tutorial is also available in the following languages:
 
 _DaaS_ for _Deployment as a service_ is a compromise between the _IaaS[^1]_ and the _PaaS[^2]_. You have the ability:
 * to provision ready-to-use managed services from a modern web-console (_PaaS_)
-* to update your deployments scripts and template[^3] (_IaaS_ operated with _IaC[^4]_ in a gitops way)
+* to update your deployments scripts and template[^3] (_IaaS_ operated with _IaC[^4]_ in a _gitops_ way)
 * to orchestrate those deployments through an API and CLI alongside other common cloud components such as OCI registries, object storages... (_IaaS_)
 
 If we had to summarize what are the main difference between IaaS, PaaS, serverless and finally DaaS, here's what we'd say:
