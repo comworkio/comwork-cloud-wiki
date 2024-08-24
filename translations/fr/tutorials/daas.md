@@ -20,7 +20,7 @@ Si on devais résumer ce qui différencie un peu l'IaaS, du PaaS et du serverles
 [^1]: _Infrastructure as a service_
 [^2]: _Platform as a service_
 [^3]: roles et playbooks ansible pour les VM, helm charts pour Kubernetes
-[^4]: _Container as a service_
+[^4]: _Containers as a service_
 [^5]: _Functions as a service_
 [^6]: _Databases as a service_
 
