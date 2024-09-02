@@ -12,6 +12,7 @@
 * [Mastodon](./mastodon.md)
 * [Odoo](./odoo.md)
 * [Databases as a service](./dbaas/README.md)
+* [Quickwit as a service](./quickwit.md)
 * [Overleaf as a service](./overleaf.md)
 * [Connect with SSH](./ssh.md)
 * [Gitlab](./gitlab.md)
