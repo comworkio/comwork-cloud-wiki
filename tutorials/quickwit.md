@@ -81,15 +81,14 @@ Let's suppose you have this bucket created:
 
 With this endpoint on Scaleway: `https://qw-indexes-wmb0pz.s3.fr-par.scw.cloud`
 
-The endpoint will have to be translated like this in the configuration: `s3://qw-indexes-wmb0pz?endpoint=s3.fr-par.scw.cloud`
-
 Fill this variables in the `env/{env_name}.yml` file:
 
 ```yaml
 quickwit_bucket_access_key_id: access_key_id_value
 quickwit_bucket_secret_key: secret_key_id_value
 quickwit_bucket_region: fr-par
-quickwit_bucket_endpoint: s3://qw-indexes-wmb0pz?endpoint=s3.fr-par.scw.cloud
+quickwit_bucket_name: qw-indexes-wmb0pz
+quickwit_bucket_endpoint: s3.fr-par.scw.cloud
 ```
 
 Replace `access_key_id_value` and `secret_key_id_value` with credentials you'll have generated in your _IAM_ (_Identity Access Management_).
