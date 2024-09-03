@@ -88,7 +88,7 @@ quickwit_bucket_access_key_id: access_key_id_value
 quickwit_bucket_secret_key: secret_key_id_value
 quickwit_bucket_region: fr-par
 quickwit_bucket_name: qw-indexes-wmb0pz
-quickwit_bucket_endpoint: s3.fr-par.scw.cloud
+quickwit_bucket_endpoint: https://s3.fr-par.scw.cloud
 ```
 
 Remplacer `access_key_id_value` et `secret_key_id_value` avec les identifiants que vous aurez généré dans votre _IAM_ (_Identity Access Management_).
