@@ -132,3 +132,5 @@ Then you'll be able to explore the data:
 Then you'll be able to run some queries:
 
 ![grafana_ds_qw_explorer](../img/grafana_ds_qw_explorer.png)
+
+As you can see, there's already some logs and traces sent by the [imalive](./imalive.md) container via OpenTelemetry.

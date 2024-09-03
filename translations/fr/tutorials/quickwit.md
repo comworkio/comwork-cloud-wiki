@@ -132,3 +132,5 @@ Ensuite vous pourrez explorer les données :
 Et enfin vous pourrez lancer des requêtes :
 
 ![grafana_ds_qw_explorer](../../../img/grafana_ds_qw_explorer.png)
+
+Comme vous pourrez le constater, il y a déjà quelques données du conteneur [imalive](./imalive.md) qui envoient des logs et traces via OpenTelemetry.
