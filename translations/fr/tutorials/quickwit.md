@@ -87,7 +87,7 @@ Remplissez ces variables dans le fichier `env/{env_name}.yml` :
 
 ```yaml
 quickwit_bucket_access_key_id: access_key_id_value
-secret_access_key: secret_key_id_value
+quickwit_bucket_secret_key: secret_key_id_value
 quickwit_bucket_region: fr-par
 quickwit_bucket_endpoint: s3://qw-indexes-wmb0pz?endpoint=s3.fr-par.scw.cloud
 ```
