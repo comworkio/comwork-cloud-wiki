@@ -88,8 +88,8 @@ Remplissez ces variables dans le fichier `env/{env_name}.yml` :
 ```yaml
 quickwit_bucket_access_key_id: access_key_id_value
 secret_access_key: secret_key_id_value
-region: fr-par
-endpoint: s3://qw-indexes-wmb0pz?endpoint=s3.fr-par.scw.cloud
+quickwit_bucket_region: fr-par
+quickwit_bucket_endpoint: s3://qw-indexes-wmb0pz?endpoint=s3.fr-par.scw.cloud
 ```
 
 Remplacer `access_key_id_value` et `secret_key_id_value` avec les identifiants que vous aurez généré dans votre _IAM_ (_Identity Access Management_).
