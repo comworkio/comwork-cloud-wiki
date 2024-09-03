@@ -95,7 +95,7 @@ Replace `access_key_id_value` and `secret_key_id_value` with credentials you'll 
 
 Go back on Quickwit and check if the changes are applied in the node configuration:
 
-![quickwit_storage_settings](../../../img/quickwit_storage_settings.png)
+![quickwit_storage_settings](../img/quickwit_storage_settings.png)
 
 ## Grafana datasource for logs
 
