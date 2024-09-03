@@ -93,6 +93,10 @@ quickwit_bucket_endpoint: https://s3.fr-par.scw.cloud
 
 Remplacer `access_key_id_value` et `secret_key_id_value` avec les identifiants que vous aurez généré dans votre _IAM_ (_Identity Access Management_).
 
+Retournez sur Quickwit et vérifiez que les changements sont bien appliqués dans la configuration :
+
+![quickwit_storage_settings](../../../img/quickwit_storage_settings.png)
+
 ## Grafana datasource pour les logs
 
 Retourner sur : `https://grafana.{your_instance_hash}.quickwit.comwork.(cloud|dev|info)`
