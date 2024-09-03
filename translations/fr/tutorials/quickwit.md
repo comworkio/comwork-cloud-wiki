@@ -32,6 +32,25 @@ Les identifiants par défaut sont les suivants :
 
 Ensuite il vous sera demandé de les changer donc n'oubliez pas de retenir ce que vous allez choisir en lieu sûr !
 
+## Problème de résolution DNS avec Grafana
+
+Si vous recontrez des problèmes de connexions avec Grafana:
+* Connectez-vous [avec ssh](./ssh.md)
+* Vérifiez si vous avez des erreurs DNS dans le conteneur :
+
+```shell
+$ docker logs grafana -f
+Error: ✗ failed to download plugin archive: Get "https://github.com/quickwit-oss/quickwit-datasource/releases/download/v0.4.5/quickwit-quickwit-datasource-0.4.5.zip": dial tcp: lookup github.com on 127.0.0.11:53: read udp 127.0.0.1:43845->127.0.0.11:53: i/o timeout
+```
+
+* Dans ce cas, il faut ajouter le flag suivant désactivé, dans le fichier `env/{env_name}.yml` :
+
+```yaml
+docker_disable_iptables: false
+```
+
+* Pushez, attendez que Grafana soit opérationnel et faites un retour arrière sur cette modification
+
 ## Changer de mot de passe
 
 Vous pouvez changer votre mot de passe dans le fichier `env/{env_name}.yml` :
@@ -51,6 +70,29 @@ htpasswd -c .htpasswd.tmp quickwit
 cat .htpasswd.tmp | cut -d ":" -f2 # copier la sortie de passwd
 rm -rf .htpasswd.tmp
 ```
+
+## Changer le stockage avec de l'object storage
+
+Pour demander de l'object storage, consultez [cette page](../../../storage.md) pour avoir plus d'informations.
+
+Supposons que vous ayez le bucket suivant :
+
+![cwcloud_quickwit_bucket](../../../img/cwcloud_quickwit_bucket.png)
+
+Avec cet endpoint sur Scaleway : `https://qw-indexes-wmb0pz.s3.fr-par.scw.cloud`
+
+L'endpoint devra être traduit de la façon suivante : `s3://qw-indexes-wmb0pz?endpoint=s3.fr-par.scw.cloud`
+
+Remplissez ces variables dans le fichier `env/{env_name}.yml` :
+
+```yaml
+quickwit_bucket_access_key_id: access_key_id_value
+secret_access_key: secret_key_id_value
+region: fr-par
+endpoint: s3://qw-indexes-wmb0pz?endpoint=s3.fr-par.scw.cloud
+```
+
+Remplacer `access_key_id_value` et `secret_key_id_value` avec les identifiants que vous aurez généré dans votre _IAM_ (_Identity Access Management_).
 
 ## Grafana datasource pour les logs
 
@@ -72,6 +114,7 @@ Ensuite remplir le formulaire :
 
 ![grafana_qw_ds_form](../../../img/grafana_qw_ds_form.png)
 
+* Name: `otel-logs-v0_7`
 * URL: `http://quickwit:7280/api/v1`
 * Index ID: `otel-logs-v0_7`
 

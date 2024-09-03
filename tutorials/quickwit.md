@@ -32,6 +32,25 @@ The default grafana credentials are:
 
 Then, you'll be asked to change-it, don't forget to remember-it somewhere safe!
 
+## DNS issue with Grafana
+
+If you have some issue to connect with grafana:
+* Connect [with ssh](./ssh.md)
+* Check if you have DNS issues in the logs of the grafana container:
+
+```shell
+$ docker logs grafana -f
+Error: ✗ failed to download plugin archive: Get "https://github.com/quickwit-oss/quickwit-datasource/releases/download/v0.4.5/quickwit-quickwit-datasource-0.4.5.zip": dial tcp: lookup github.com on 127.0.0.11:53: read udp 127.0.0.1:43845->127.0.0.11:53: i/o timeout
+```
+
+* In this case, enable docker iptables by disabling this flag in the `env/{env_name}.yml` file:
+
+```yaml
+docker_disable_iptables: false
+```
+
+* Then push and wait until Grafana's back. Then revert your previous change
+
 ## Update your password
 
 You can change your password in the `env/{env_name}.yml` file:
@@ -51,6 +70,29 @@ htpasswd -c .htpasswd.tmp quickwit
 cat .htpasswd.tmp | cut -d ":" -f2 # copy the output as passwd
 rm -rf .htpasswd.tmp
 ```
+
+## Change storage to object storage
+
+Ask for storage, see [this page](../storage.md) to get more informations.
+
+Let's suppose you have this bucket created:
+
+![cwcloud_quickwit_bucket](../img/cwcloud_quickwit_bucket.png)
+
+With this endpoint on Scaleway: `https://qw-indexes-wmb0pz.s3.fr-par.scw.cloud`
+
+The endpoint will have to be translated like this in the configuration: `s3://qw-indexes-wmb0pz?endpoint=s3.fr-par.scw.cloud`
+
+Fill this variables in the `env/{env_name}.yml` file:
+
+```yaml
+quickwit_bucket_access_key_id: access_key_id_value
+secret_access_key: secret_key_id_value
+region: fr-par
+endpoint: s3://qw-indexes-wmb0pz?endpoint=s3.fr-par.scw.cloud
+```
+
+Replace `access_key_id_value` and `secret_key_id_value` with credentials you'll have generated in your _IAM_ (_Identity Access Management_).
 
 ## Grafana datasource for logs
 
@@ -72,6 +114,7 @@ Then fill the form:
 
 ![grafana_qw_ds_form](../img/grafana_qw_ds_form.png)
 
+* Name: `otel-logs-v0_7`
 * URL: `http://quickwit:7280/api/v1`
 * Index ID: `otel-logs-v0_7`
 
