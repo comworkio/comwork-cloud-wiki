@@ -173,3 +173,118 @@ Vous pourrez ainsi voir le datalink lorsque vous explorerez vous logs comme ceci
 Et si vous cliquez dessus vous pourrez voir les traces associées au log :
 
 ![grafana_correlate_logs_traces](../../../img/grafana_correlate_logs_traces.png)
+
+## Ingestion des logs et traces
+
+En plus de l'API de quickwit, il y a deux endpoints publics OTLP grpc et http de la forme suivante :
+
+* otlp/grpc: `https://otlp-grpc.{your_instance_hash}.quickwit.comwork.(cloud|dev|info)`
+* otlp/http: `https://otlp-grpc.{your_instance_hash}.quickwit.comwork.(cloud|dev|info)`
+
+Ils sont authentifiés avec les mêmes identifiants que pour accéder à quickwit (définies dans le fichier `qw.keys`).
+
+Vous pouvez donc directement brancher vos applications en otlp ou bien continuer d'envoyer des logs en http à l'API `/ingest` de quickwit.
+
+Si vous utilisez docker et que vous souhaitez indexer la sortie standard `stdout` ou la sortie d'erreur `stderr` de vos conteneurs ou bien si vous souhaitez tout simplement indexer des fichiers de logs sur disque, nous vous recommandons d'utiliser [vector](https://vector.dev).
+
+Voici un exemple de configuration (fichier `/etc/vector/vector.yaml`) qui va à la fois ingérer les logs des sorties `stdout`/`stderr` de conteneurs docker ainsi que des fichiers de logs produits par une instance gitlab :
+
+```yaml
+sources:
+  log_docker:
+    type: docker_logs
+
+  log_files:
+    type: file
+    include:
+      - "/var/opt/gitlab/gitlab-ci/builds/*/*/*.log"
+
+transforms:
+  remap_app_logs:
+    inputs:
+      - "log_files"
+      - "log_docker"
+
+    type: "remap"
+    source: |
+      .timestamp_nanos, _ = to_unix_timestamp(.timestamp, unit: "nanoseconds")
+
+      .message = string!(.message)
+      .body, _ = parse_json(.message)
+      if is_null(.payload) {
+        .body = {"message": .message}
+      }
+
+      .resource_attributes.host.hostname, _ = get_hostname()
+
+      if is_string(.container_name) {
+        .service_name = .container_name
+        .resource_attributes.service.name = .container_name
+        .body.container_name = .container_name
+      } else {
+        .service_name = .resource_attributes.host.hostname
+        .resource_attributes.service.name = .resource_attributes.host.hostname
+      }
+
+      if is_string(.container_id) {
+        .body.container_id = del(.container_id)
+      }
+
+      if ! is_null(.container_created_at) {
+        .body.container_created_at = del(.container_created_at)
+      }
+
+      if is_string(.stream) {
+        .body.stream = del(.stream)
+      }
+
+      if is_string(.file) {
+        .body.file = del(.file)
+      }
+
+      if is_string(.host) {
+        .body.host = del(.host)
+      }
+
+      if is_string(.image) {
+        .body.image = del(.image)
+      }
+
+      if ! is_null(.label) {
+        .body.label = del(.label)
+      }
+
+      if is_string(.source_type) {
+        .resource_attributes.source_type = .source_type
+      } else if is_string(.container_name) {
+        .resource_attributes.source_type = "docker"
+      }
+
+      if contains(.message, "error", case_sensitive: false) || contains(.message, "errno", case_sensitive: false) {
+        .severity_text = "ERROR"
+      } else if contains(.message, "warn", case_sensitive: false) {
+        .severity_text = "WARN"
+      } else if contains(.message, "debug", case_sensitive: false) {
+        .severity_text = "DEBUG"
+      } else {
+        .severity_text = "INFO"
+      }
+
+      del(.message)
+      del(.timestamp)
+      del(.source_type)
+      del(.container_name)
+
+sinks:
+  quickwit_logs:
+    type: "http"
+    method: "post"
+    inputs: ["remap_app_logs"]
+    encoding:
+      codec: "json"
+    framing:
+      method: "newline_delimited"
+    uri: "https://quickwit:XXXXXXX@quickwit.comwork.io:443/api/v1/otel-logs-v0_7/ingest"
+```
+
+Remplacer `XXXXXXX` par le mot de passe définit dans `qw.keys`.

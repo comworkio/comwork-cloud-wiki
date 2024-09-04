@@ -171,3 +171,118 @@ Then you'll be able to find a datalink when you're exploring the logs :
 And when you click on it, you'll be able to watch the associated traces with your logs:
 
 ![grafana_correlate_logs_traces](../img/grafana_correlate_logs_traces.png)
+
+## Logs and traces ingestion
+
+In addition to the quickwit's API and two OTLP endpoint for grpc and http protocols:
+
+* otlp/grpc: `https://otlp-grpc.{your_instance_hash}.quickwit.comwork.(cloud|dev|info)`
+* otlp/http: `https://otlp-grpc.{your_instance_hash}.quickwit.comwork.(cloud|dev|info)`
+
+Those endpoints are authenticated with the same credentials (defined in the `qw.keys` file).
+
+You can directly plug your applications with otlp or continue to send logs via the quickwit `/ingest` endpoint.
+
+If you're using docker and you want to index the `stdout` and `stderr` of your containers, or if you want to index a classic log file produced by an application on the filesystem, we recommand you to use [vector](https://vector.dev).
+
+Here's an example of configuration (file `/etc/vector/vector.yaml`) who's ingesting the `stdout` and `stderr` of docker containers and log files produced by a gitlab instance :
+
+```yaml
+sources:
+  log_docker:
+    type: docker_logs
+
+  log_files:
+    type: file
+    include:
+      - "/var/opt/gitlab/gitlab-ci/builds/*/*/*.log"
+
+transforms:
+  remap_app_logs:
+    inputs:
+      - "log_files"
+      - "log_docker"
+
+    type: "remap"
+    source: |
+      .timestamp_nanos, _ = to_unix_timestamp(.timestamp, unit: "nanoseconds")
+
+      .message = string!(.message)
+      .body, _ = parse_json(.message)
+      if is_null(.payload) {
+        .body = {"message": .message}
+      }
+
+      .resource_attributes.host.hostname, _ = get_hostname()
+
+      if is_string(.container_name) {
+        .service_name = .container_name
+        .resource_attributes.service.name = .container_name
+        .body.container_name = .container_name
+      } else {
+        .service_name = .resource_attributes.host.hostname
+        .resource_attributes.service.name = .resource_attributes.host.hostname
+      }
+
+      if is_string(.container_id) {
+        .body.container_id = del(.container_id)
+      }
+
+      if ! is_null(.container_created_at) {
+        .body.container_created_at = del(.container_created_at)
+      }
+
+      if is_string(.stream) {
+        .body.stream = del(.stream)
+      }
+
+      if is_string(.file) {
+        .body.file = del(.file)
+      }
+
+      if is_string(.host) {
+        .body.host = del(.host)
+      }
+
+      if is_string(.image) {
+        .body.image = del(.image)
+      }
+
+      if ! is_null(.label) {
+        .body.label = del(.label)
+      }
+
+      if is_string(.source_type) {
+        .resource_attributes.source_type = .source_type
+      } else if is_string(.container_name) {
+        .resource_attributes.source_type = "docker"
+      }
+
+      if contains(.message, "error", case_sensitive: false) || contains(.message, "errno", case_sensitive: false) {
+        .severity_text = "ERROR"
+      } else if contains(.message, "warn", case_sensitive: false) {
+        .severity_text = "WARN"
+      } else if contains(.message, "debug", case_sensitive: false) {
+        .severity_text = "DEBUG"
+      } else {
+        .severity_text = "INFO"
+      }
+
+      del(.message)
+      del(.timestamp)
+      del(.source_type)
+      del(.container_name)
+
+sinks:
+  quickwit_logs:
+    type: "http"
+    method: "post"
+    inputs: ["remap_app_logs"]
+    encoding:
+      codec: "json"
+    framing:
+      method: "newline_delimited"
+    uri: "https://quickwit:XXXXXXX@quickwit.comwork.io:443/api/v1/otel-logs-v0_7/ingest"
+```
+
+Replace `XXXXXXX` by the password defined in `qw.keys`.
