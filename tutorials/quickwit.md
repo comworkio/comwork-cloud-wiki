@@ -134,3 +134,40 @@ Then you'll be able to run some queries:
 ![grafana_ds_qw_explorer](../img/grafana_ds_qw_explorer.png)
 
 As you can see, there's already some logs and traces sent by the [imalive](./imalive.md) container via OpenTelemetry.
+
+## Grafana datasources for traces
+
+Create a _quickwit_ datasource the same way:
+
+* Name: `otel-traces-v0_7`
+* URL: `http://quickwit:7280/api/v1`
+* Index ID: `otel-traces-v0_7`
+
+Create a _jaeger_ datasource:
+
+![grafana_search_ds_jaeger](../img/grafana_search_ds_jaeger.png)
+
+* Name: `jaeger`
+* URL: `http://jaeger:16686`
+
+![grafana_jaeger_ds_form](../img/grafana_jaeger_ds_form.png)
+
+Then click on _save and tests_, and then _explore_. You'll be able to watch the traces from [imalive](./imalive.md) or quickwit itself:
+
+![grafana_jaeger_span](../img/grafana_jaeger_span.png)
+
+## Correlate logs and traces
+
+Edit the datasources `otel-logs-v0_7` and `otel-traces-v0_7` in order to add a datalink with the `jaeger` datasource:
+
+![grafana_correlate_traces_otel_logs](../img/grafana_correlate_traces_otel_logs.png)
+
+![grafana_correlate_traces_otel_traces](../img/grafana_correlate_traces_otel_traces.png)
+
+Then you'll be able to find a datalink when you're exploring the logs :
+
+![grafana_explore_datalink](../img/grafana_explore_datalink.png)
+
+And when you click on it, you'll be able to watch the associated traces with your logs:
+
+![grafana_correlate_logs_traces](../img/grafana_correlate_logs_traces.png)
