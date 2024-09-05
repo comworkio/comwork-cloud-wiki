@@ -208,9 +208,26 @@ transforms:
       .timestamp_nanos, _ = to_unix_timestamp(.timestamp, unit: "nanoseconds")
 
       .message = string!(.message)
-      .body, _ = parse_json(.message)
-      if is_null(.payload) {
+
+      if contains(.message, "error", case_sensitive: false) || contains(.message, "errno", case_sensitive: false) {
+        .message = replace(.message, r'^ERROR:[^:]*:', "")
+        .severity_text = "ERROR"
+      } else if contains(.message, "warn", case_sensitive: false) {
+        .message = replace(.message, r'^WARNING:[^:]*:', "")
+        .severity_text = "WARN"
+      } else if contains(.message, "debug", case_sensitive: false) {
+        .message = replace(.message, r'^DEBUG:[^:]*:', "")
+        .severity_text = "DEBUG"
+      } else {
+        .message = replace(.message, r'^INFO:[^:]*:', "")
+        .severity_text = "INFO"
+      }
+
+      .body, err = parse_json(.message)
+      if err != null || is_null(.body) {
         .body = {"message": .message}
+      } else {
+        .body.message = .message
       }
 
       .resource_attributes.host.hostname, _ = get_hostname()
@@ -256,16 +273,6 @@ transforms:
         .resource_attributes.source_type = .source_type
       } else if is_string(.container_name) {
         .resource_attributes.source_type = "docker"
-      }
-
-      if contains(.message, "error", case_sensitive: false) || contains(.message, "errno", case_sensitive: false) {
-        .severity_text = "ERROR"
-      } else if contains(.message, "warn", case_sensitive: false) {
-        .severity_text = "WARN"
-      } else if contains(.message, "debug", case_sensitive: false) {
-        .severity_text = "DEBUG"
-      } else {
-        .severity_text = "INFO"
       }
 
       del(.message)
