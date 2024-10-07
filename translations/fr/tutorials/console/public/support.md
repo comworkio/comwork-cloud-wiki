@@ -5,6 +5,12 @@
 Ce tutoriel est également disponible dans les langues suivantes :
 * [English 🇬🇧](../../../../../tutorials/console/public/support.md)
 
+## Pour les clients en SaaS
+
+Choisir la bonne plateforme :
+* [cwcloud.tn](https://cwcloud.tn) pour les clients basés en Tunisie facturés en TND
+* [cloud.comwork.io](https://cloud.comwork.io) pour les clients basés en union européenne facturés en euros (ou hors-UE mais qui peuvent payer en euros)
+
 ## Ouvrir un ticket
 
 Cliquez sur "support" sur le menu utilisateur:
