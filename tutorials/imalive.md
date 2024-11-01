@@ -31,7 +31,7 @@ An example of exposed API instance: https://imalive.comwork.io
 
 ### Running with ansible
 
-Some environment like [vps](../vps.md) are already install the imalive role. However, even when it's not provided, you still can add this [ansible role](https://gitlab.comwork.io/oss/imalive/-/tree/main/ansible-imalive) on your deployment repo and adding the role invokation in your playbook.
+Some environment like [vps[^1]](../vps.md) are already install the imalive role. However, even when it's not provided, you still can add this [ansible role](https://gitlab.comwork.io/oss/imalive/-/tree/main/ansible-imalive) on your deployment repo and adding the role invokation in your playbook.
 
 ### Running with docker-compose
 
@@ -125,3 +125,79 @@ Here's an example of stdout heartbit:
 You can change `anode` by your node name with the `IMALIVE_NODE_NAME` environment variable.
 
 You also can log only a json output by activating the `HEART_BIT_LOG_JSON` environment variable (with `yes` or `true`).
+
+## OpenTelemetry
+
+You can also configure an OTLP[^2]/grpc endpoint using the `OTEL_COLLECTOR_ENDPOINT` environment variable.
+
+Here's an example of Prometheus configuration for scrapping the opentelemetry collector metrics:
+
+```yaml
+global:
+  scrape_interval: 10s
+
+scrape_configs:
+  - job_name: 'opentelemetry'
+    static_configs:
+      - targets: ['otel-collector:8889']
+```
+
+And the opentelemetry collector configuration as well for receiving the logs, traces and metrics from imalive:
+
+```yaml
+receivers:
+  otlp:
+    protocols:
+      grpc:
+      http:
+
+exporters:
+  logging:
+  prometheus:
+    endpoint: "0.0.0.0:8889"
+    const_labels:
+      otel: otel
+  otlp:
+    endpoint: "jaeger:4317"
+    tls:
+      insecure: true
+
+processors:
+  batch:
+
+service:
+  pipelines:
+    metrics:
+      receivers: [otlp]
+      exporters: [prometheus]
+    traces:
+      receivers: [otlp]
+      exporters: [otlp]
+    logs:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [logging]
+```
+
+## Monitor features
+
+Imalive is also able to check some http endpoint and log and export metrics (status and duration).
+
+In order to use that, just override the `/app/imalive.yml` with the following content:
+
+```yaml
+---
+monitors:
+  - type: http
+    name: imalive
+    url: http://localhost:8081
+    method: GET # optional (GET by default, only POST and GET are supported)
+    expected_http_code: 200 # optional (200 by default)
+    expected_contain: "\"status\":\"ok\"" # optional (no check on the body response if not present)
+    timeout: 30 # optional (30 seconds if not present)
+    username: changeit # optional (no basic auth if not present)
+    password: changerit # optional (no basic auth if not present)
+```
+
+[^1]: virtual private server
+[^2]: OpenTelemetry protocol

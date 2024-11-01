@@ -126,5 +126,79 @@ Vous pouvez changer la valeur `anode` par le nom de votre instance avec la varia
 
 Vous pouvez également indiquer de produire le log du heartbit au format 100% json avec la variable d'environnement `HEART_BIT_LOG_JSON` (valeurs acceptées: `yes` ou `true`).
 
+## OpenTelemetry
+
+Vous pouvez également configurer un endpoint OTLP[^3]/grpc en utilisant la variable d'environnement `OTEL_COLLECTOR_ENDPOINT`.
+
+Voici un exemple de configuration de Prometheus pour scrapper le collecteur opentelemetry (otel-collector) :
+
+```yaml
+global:
+  scrape_interval: 10s
+
+scrape_configs:
+  - job_name: 'opentelemetry'
+    static_configs:
+      - targets: ['otel-collector:8889']
+```
+
+Et la configuration du collecteur pour recevoir les métriques, logs et traces de imalive :
+
+```yaml
+receivers:
+  otlp:
+    protocols:
+      grpc:
+      http:
+
+exporters:
+  logging:
+  prometheus:
+    endpoint: "0.0.0.0:8889"
+    const_labels:
+      otel: otel
+  otlp:
+    endpoint: "jaeger:4317"
+    tls:
+      insecure: true
+
+processors:
+  batch:
+
+service:
+  pipelines:
+    metrics:
+      receivers: [otlp]
+      exporters: [prometheus]
+    traces:
+      receivers: [otlp]
+      exporters: [otlp]
+    logs:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [logging]
+```
+
+## Moniteur
+
+Imalive est également capable de vérifier si des URLs http sont en bonne santé et exporte le résultat sous forme de métriques et de logs (le statut et la durée des requêtes).
+
+Pour cela, il suffit de remplacer le fichier `/app/imalive.yml` avec le contenu si dessous :
+
+```yaml
+---
+monitors:
+  - type: http
+    name: imalive
+    url: http://localhost:8081
+    method: GET # optionnel (GET par défaut, pour l'instant seul POST et GET sont supportés)
+    expected_http_code: 200 # optionnel (200 par défaut)
+    expected_contain: "\"status\":\"ok\"" # optionnel (pas de check sur le body si pas présent)
+    timeout: 30 # optionnel (30 secondes par défaut)
+    username: changeit # optionnel (pas d'authentification par défaut)
+    password: changerit # optionnel (pas d'authentification par défaut)
+```
+
 [^1]: battement de coeur (log écrit en boucle pour informer sur l'état de santé de l'instance)
 [^2]: virtual private server (simple serveur virtuel / compute instance)
+[^3]: OpenTelemetry protocol
