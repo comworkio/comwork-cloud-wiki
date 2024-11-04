@@ -197,6 +197,9 @@ monitors:
     timeout: 30 # optionnel (30 secondes par défaut)
     username: changeit # optionnel (pas d'authentification par défaut)
     password: changerit # optionnel (pas d'authentification par défaut)
+    headers: # optionnel (pas de header si vide)
+      - name: Accept
+        value: application/json
 ```
 
 [^1]: battement de coeur (log écrit en boucle pour informer sur l'état de santé de l'instance)
