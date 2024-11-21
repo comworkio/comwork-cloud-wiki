@@ -2,18 +2,18 @@
 
 Let your nodes sing like Céline Dion `I'm alive!`.
 
-![celine](../img/celine.jpeg)
+![celine](../../img/celine.jpeg)
 
 Just a dummy healthcheck api for your nodes (support x86 and armhf for raspberrypi).
 
 It provide a http/restful endpoint that you can use as a healthcheck rule to your loadbalancer and also publish a heartbit in stdout (usefull if you collect it in a log/alerting management system such as elasticstack).
 
-![kibana](../img/imalive_kibana.png)
+![kibana](../../img/imalive_kibana.png)
 
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../translations/fr/tutorials/imalive.md)
+* [Français 🇫🇷](../../translations/fr/tutorials/observability/imalive.md)
 
 ## Git repositories
 
@@ -31,7 +31,7 @@ An example of exposed API instance: https://imalive.comwork.io
 
 ### Running with ansible
 
-Some environment like [vps[^1]](../vps.md) are already install the imalive role. However, even when it's not provided, you still can add this [ansible role](https://gitlab.comwork.io/oss/imalive/-/tree/main/ansible-imalive) on your deployment repo and adding the role invokation in your playbook.
+Some environment like [vps[^1]](../../vps.md) are already install the imalive role. However, even when it's not provided, you still can add this [ansible role](https://gitlab.comwork.io/oss/imalive/-/tree/main/ansible-imalive) on your deployment repo and adding the role invokation in your playbook.
 
 ### Running with docker-compose
 

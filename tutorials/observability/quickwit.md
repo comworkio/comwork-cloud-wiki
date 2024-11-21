@@ -7,24 +7,24 @@ For now it handles logs and traces with an efficiant search engine written in Ru
 ## Translations
 
 This tutorial is also available in the following languages:
-* [Français 🇫🇷](../translations/fr/tutorials/quickwit.md)
+* [Français 🇫🇷](../../translations/fr/tutorials/observability/quickwit.md)
 
 ## Installation and tests
 
 Choose the Quickwit environment:
 
-![quickwit_environment](../img/quickwit_environment.png)
+![quickwit_environment](../../img/quickwit_environment.png)
 
 Once the installation is finished, test the access to Quickwit's GUI with this URL: `https://{your_instance_hash}.quickwit.comwork.(cloud|dev|info)`. The default credentials are:
 
 * Username: `quickwit`
 * Password: `changeit`
 
-![quickwit_gui](../img/quickwit_gui.png)
+![quickwit_gui](../../img/quickwit_gui.png)
 
 Then test with the same credentials, the Grafana's access with this URL: `https://grafana.{your_instance_hash}.quickwit.comwork.(cloud|dev|info)`
 
-![grafana_first_login](../img/grafana_first_login.png)
+![grafana_first_login](../../img/grafana_first_login.png)
 
 The default grafana credentials are:
 * Username: `admin`
@@ -35,7 +35,7 @@ Then, you'll be asked to change-it, don't forget to remember-it somewhere safe!
 ## DNS issue with Grafana
 
 If you have some issue to connect with grafana:
-* Connect [with ssh](./ssh.md)
+* Connect [with ssh](../ssh.md)
 * Check if you have DNS issues in the logs of the grafana container:
 
 ```shell
@@ -73,11 +73,11 @@ rm -rf .htpasswd.tmp
 
 ## Change storage to object storage
 
-Ask for storage, see [this page](../storage.md) to get more informations.
+Ask for storage, see [this page](../../storage.md) to get more informations.
 
 Let's suppose you have this bucket created:
 
-![cwcloud_quickwit_bucket](../img/cwcloud_quickwit_bucket.png)
+![cwcloud_quickwit_bucket](../../img/cwcloud_quickwit_bucket.png)
 
 With this endpoint on Scaleway: `https://qw-indexes-wmb0pz.s3.fr-par.scw.cloud`
 
@@ -95,7 +95,7 @@ Replace `access_key_id_value` and `secret_key_id_value` with credentials you'll 
 
 Go back on Quickwit and check if the changes are applied in the node configuration:
 
-![quickwit_storage_settings](../img/quickwit_storage_settings.png)
+![quickwit_storage_settings](../../img/quickwit_storage_settings.png)
 
 ## Grafana datasource for logs
 
@@ -103,19 +103,19 @@ Go back to Grafana: `https://grafana.{your_instance_hash}.quickwit.comwork.(clou
 
 Add a new connection:
 
-![grafana_add_new_connection](../img/grafana_add_new_connection.png)
+![grafana_add_new_connection](../../img/grafana_add_new_connection.png)
 
 Then search "quickwit" and click on the right plugin:
 
-![grafana_search_ds_quickwit](../img/grafana_search_ds_quickwit.png)
+![grafana_search_ds_quickwit](../../img/grafana_search_ds_quickwit.png)
 
 Then click on "Add new datasource":
 
-![grafana_add_new_ds_quickwit](../img/grafana_add_new_ds_quickwit.png)
+![grafana_add_new_ds_quickwit](../../img/grafana_add_new_ds_quickwit.png)
 
 Then fill the form:
 
-![grafana_qw_ds_form](../img/grafana_qw_ds_form.png)
+![grafana_qw_ds_form](../../img/grafana_qw_ds_form.png)
 
 * Name: `otel-logs-v0_7`
 * URL: `http://quickwit:7280/api/v1`
@@ -123,15 +123,15 @@ Then fill the form:
 
 Then click on "Save and tests":
 
-![grafana_ds_qw_save_and_tests](../img/grafana_ds_qw_save_and_tests.png)
+![grafana_ds_qw_save_and_tests](../../img/grafana_ds_qw_save_and_tests.png)
 
 Then you'll be able to explore the data:
 
-![grafana_explore_ds_qw](../img/grafana_explore_ds_qw.png)
+![grafana_explore_ds_qw](../../img/grafana_explore_ds_qw.png)
 
 Then you'll be able to run some queries:
 
-![grafana_ds_qw_explorer](../img/grafana_ds_qw_explorer.png)
+![grafana_ds_qw_explorer](../../img/grafana_ds_qw_explorer.png)
 
 As you can see, there's already some logs and traces sent by the [imalive](./imalive.md) container via OpenTelemetry.
 
@@ -145,16 +145,16 @@ Create a _quickwit_ datasource the same way:
 
 Create a _jaeger_ datasource:
 
-![grafana_search_ds_jaeger](../img/grafana_search_ds_jaeger.png)
+![grafana_search_ds_jaeger](../../img/grafana_search_ds_jaeger.png)
 
 * Name: `jaeger`
 * URL: `http://jaeger:16686`
 
-![grafana_jaeger_ds_form](../img/grafana_jaeger_ds_form.png)
+![grafana_jaeger_ds_form](../../img/grafana_jaeger_ds_form.png)
 
 Then click on _save and tests_, and then _explore_. You'll be able to watch the traces from [imalive](./imalive.md) or quickwit itself:
 
-![grafana_jaeger_span](../img/grafana_jaeger_span.png)
+![grafana_jaeger_span](../../img/grafana_jaeger_span.png)
 
 ## Correlate logs and traces
 
@@ -166,11 +166,11 @@ Edit the datasources `otel-logs-v0_7` and `otel-traces-v0_7` in order to add a d
 
 Then you'll be able to find a datalink when you're exploring the logs :
 
-![grafana_explore_datalink](../img/grafana_explore_datalink.png)
+![grafana_explore_datalink](../../img/grafana_explore_datalink.png)
 
 And when you click on it, you'll be able to watch the associated traces with your logs:
 
-![grafana_correlate_logs_traces](../img/grafana_correlate_logs_traces.png)
+![grafana_correlate_logs_traces](../../img/grafana_correlate_logs_traces.png)
 
 ## Logs and traces ingestion
 

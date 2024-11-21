@@ -2,18 +2,18 @@
 
 Laissez vos instances chanter comme Céline Dion `I'm alive!` ("Je suis vivante").
 
-![celine](../../../img/celine.jpeg)
+![celine](../../../../img/celine.jpeg)
 
 Il s'agit d'une simple API de healthcheck pour vos instances (supporte les machines x86 et armhf comme les raspberrypi).
 
 Ce projet fournit un endpoint HTTP/Restful que vous pourrez utiliser comme règle ou "ligne de vie" dans votre loadbalancer et publie également un "heartbit[^1]" sur la sortie standard `stdout` (utile si vous collectez les logs dans un système de log management tel que Elasticstack).
 
-![kibana](../../../img/imalive_kibana.png)
+![kibana](../../../../img/imalive_kibana.png)
 
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../tutorials/imalive.md)
+* [English 🇬🇧](../../../../tutorials/imalive.md)
 
 ## Dépôt git
 
