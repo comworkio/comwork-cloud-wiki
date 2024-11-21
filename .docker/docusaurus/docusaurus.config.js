@@ -38,6 +38,22 @@ const config = {
                     to: '/docs/translations/fr/tutorials/selfhosted'
                 },
                 {
+                    from: '/docs/tutorials/quickwit',
+                    to: '/docs/tutorials/observability/quickwit'
+                },
+                {
+                    from: '/docs/tutorials/translations/fr/quickwit',
+                    to: '/docs/translations/fr/tutorials/observability/quickwit'
+                },
+                {
+                    from: '/docs/tutorials/imalive',
+                    to: '/docs/tutorials/observability/imalive'
+                },
+                {
+                    from: '/docs/tutorials/translations/fr/imalive',
+                    to: '/docs/translations/fr/tutorials/observability/imalive'
+                },
+                {
                     from: '/docs/tutorials/translations/fr/console/public/billing',
                     to: '/docs/translations/fr/tutorials/console/public/billing'
                 },
