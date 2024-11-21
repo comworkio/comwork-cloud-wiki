@@ -160,9 +160,9 @@ Then click on _save and tests_, and then _explore_. You'll be able to watch the 
 
 Edit the datasources `otel-logs-v0_7` and `otel-traces-v0_7` in order to add a datalink with the `jaeger` datasource:
 
-![grafana_correlate_traces_otel_logs](../img/grafana_correlate_traces_otel_logs.png)
+![grafana_correlate_traces_otel_logs](../../img/grafana_correlate_traces_otel_logs.png)
 
-![grafana_correlate_traces_otel_traces](../img/grafana_correlate_traces_otel_traces.png)
+![grafana_correlate_traces_otel_traces](../../img/grafana_correlate_traces_otel_traces.png)
 
 Then you'll be able to find a datalink when you're exploring the logs :
 
