@@ -19,7 +19,7 @@ Then configure your payment methods like this:
 
 ![billing_2](../../../img/billing_2.png)
 
-Note: you can enable the "payment auto" **after manually paid for the first time**. You'll have to check if your bank is allowing you to do it without confirmation. If that's not the case, you'll have to pay manually like the first time.
+Note: you can enable the "payment auto" __after manually paid for the first time__. You'll have to check if your bank is allowing you to do it without confirmation. If that's not the case, you'll have to pay manually like the first time.
 
 For processing to the manual payment:
 

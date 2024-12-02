@@ -66,7 +66,7 @@ Default region [UK1]:
 Default format [json]: 
 ```
 
-**Note** : Après avoir configuré votre client, un fichier de configuration sera créé automatiquement dans le dossier `.cwc` du répertoire `home`.
+__Note :__ Après avoir configuré votre client, un fichier de configuration sera créé automatiquement dans le dossier `.cwc` du répertoire `home`.
 
 Vous pouvez lister les providers ou régions disponibles avec ces commandes :
 
@@ -113,7 +113,7 @@ Les formats de sorties interprétés sont:
 cwc project ls
 ```
 
-**Note** : Vous pouvez ajouter le flag `-t` (ou `--type`) pour filtrer les projets par type (vm ou k8s).
+__Note :__ Vous pouvez ajouter le flag `-t` (ou `--type`) pour filtrer les projets par type (vm ou k8s).
 
 ### Rechercher
 

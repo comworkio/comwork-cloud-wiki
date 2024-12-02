@@ -1,6 +1,6 @@
 # 2FA / MFA
 
-Nous recommandons **fortement** d'activer l'authentification double-facteurs (ou multiple-facteurs, a.k.a 2FA ou MFA).
+Nous recommandons __fortement__ d'activer l'authentification double-facteurs (ou multiple-facteurs, a.k.a 2FA ou MFA).
 
 ## Traductions
 

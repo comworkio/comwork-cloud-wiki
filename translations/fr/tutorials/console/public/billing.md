@@ -19,7 +19,7 @@ Ensuite ajoutez une méthode de paiement (carte de crédit) comme ceci:
 
 ![billing_2](../../../../../img/billing_2.png)
 
-Note: vous pouvez activer le paiement automatique **après avoir fait le premier paiement manuellement** (pour autoriser votre banque avec 3DSecure). Vous aurez juste à vérifier si votre banque vous permet de le faire sans confirmation. Si ce n'est pas le cas il faudra régler manuellement comme la première fois.
+Note: vous pouvez activer le paiement automatique __après avoir fait le premier paiement manuellement__ (pour autoriser votre banque avec 3DSecure). Vous aurez juste à vérifier si votre banque vous permet de le faire sans confirmation. Si ce n'est pas le cas il faudra régler manuellement comme la première fois.
 
 Pour procéder au paiement manuel:
 

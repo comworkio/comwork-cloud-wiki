@@ -1,6 +1,6 @@
 # How to create a serverless function
 
-A serverless function, is a piece of code that is executed in response to an event, such as a user action or a database update. It's **"serverless"** because the infrastructure it runs on is managed by a cloud provider, abstracting away the need for server management from the developer.
+A serverless function, is a piece of code that is executed in response to an event, such as a user action or a database update. It's __"serverless"__ because the infrastructure it runs on is managed by a cloud provider, abstracting away the need for server management from the developer.
 
 ## Demo
 

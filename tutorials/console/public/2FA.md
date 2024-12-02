@@ -1,6 +1,6 @@
 # 2FA / MFA
 
-We **strongly** advise you to enable the 2FA/MFA (multiple factors authentication).
+We __strongly__ advise you to enable the 2FA/MFA (multiple factors authentication).
 
 ## Translations
 

@@ -65,7 +65,7 @@ Default format [json]:
 
 ```
 
-**Note**: After configuring your cli a config file will be created automatically in the `.cwc` folder in the home directory.
+__Note:__ After configuring your cli a config file will be created automatically in the `.cwc` folder in the home directory.
 
 You can check available providers and regions with the following commands:
 
@@ -113,7 +113,7 @@ The know output's format are the following:
 cwc project ls
 ```
 
-**Note**: You can add `-t` (or `--type`) flag to get filter the projects by type (either vm or k8s)
+__Note:__ You can add `-t` (or `--type`) flag to get filter the projects by type (either vm or k8s)
 
 ### Search Project
 

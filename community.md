@@ -2,7 +2,7 @@
 
 ## Support and emergencies
 
-We **strongly** advise you to always open tickets in the first time, because it's this way we'll get noticed of your issues in real time.
+We __strongly__ advise you to always open tickets in the first time, because it's this way we'll get noticed of your issues in real time.
 
 You can follow [this tutoriel](./tutorials/console/public/support.md) to see how to open a ticket.
 

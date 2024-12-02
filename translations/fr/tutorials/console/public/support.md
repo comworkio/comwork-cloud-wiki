@@ -23,7 +23,7 @@ Ensuite vous aurez la possibilité d'ouvrir un nouveau ticket pour votre demande
 
 Vous devez choisir un produit qui correspond le plus à votre requête (dans cet exemple c'est "registry" mais cela pourrait être "wordpress" ou n'importe quoi d'autre). Vous devez choisir la "sévérité" en fonction de l'urgence de votre demande.
 
-Faites attention à n'ouvrir **qu'un seul ticket par question ou incident**.
+Faites attention à n'ouvrir __qu'un seul ticket par question ou incident__.
 
 Une fois que c'est ouvert, vous pouvez vérifier régulièrement si l'équipe vous a répondu avec une demande de complément d'information (status "attente client" ou "await customer" dans la version anglaise).
 
@@ -39,7 +39,7 @@ Et finalement quand c'est résolu, vous pourrez retrouver les demandes passées 
 
 ## Autres moyens de contact
 
-Nous vous recommandons **fortement** de toujours ouvrir des tickets pour un suivi plus efficace.
+Nous vous recommandons __fortement__ de toujours ouvrir des tickets pour un suivi plus efficace.
 
 Une fois ouvert, vous pouvez également nous contacter en fournissant la référence du ticket via ces moyens:
 
