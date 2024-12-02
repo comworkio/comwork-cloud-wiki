@@ -37,7 +37,7 @@ Il est également possible d'utiliser Blockly comme interface de programmation g
 
 #### Tutoriels
 
-- [Comment créer une fonction Serverless](./tutorials/faas/how_to_create_a_function.md)
+Vous pouvez retrouver nos tutoriels sur le FaaS [ici](./tutorials/faas/README.md).
 
 ### Tarification
 

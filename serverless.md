@@ -37,7 +37,7 @@ It's also possible to use Blockly as a graphical programing (a.k.a "_lowcode_") 
 
 #### Tutorials
 
-- [How to create a Serverless function](./tutorials/faas/how_to_create_a_function.md)
+You can find tutorials [here](./tutorials/faas/README.md).
 
 ### Pricing
 
