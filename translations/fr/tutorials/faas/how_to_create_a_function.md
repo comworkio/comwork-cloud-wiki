@@ -1,12 +1,12 @@
 # Comment créer une fonction serverless
 
-Une fonction serverless, est un morceau de code qui est exécuté en réponse à un événement, comme une action de l'utilisateur ou une mise à jour de la base de données. Elle est **"serverless "** parce que l'infrastructure sur laquelle elle s'exécute est gérée par un fournisseur de cloud, abstrayant le développeur de la nécessité de gérer le serveur.
+Une fonction serverless, est un morceau de code qui est exécuté en réponse à un événement, comme une action de l'utilisateur ou une mise à jour de la base de données. Elle est __"serverless"__ parce que l'infrastructure sur laquelle elle s'exécute est gérée par un fournisseur de cloud, abstrayant le développeur de la nécessité de gérer le serveur.
 
 ## Démo
 
-Voici notre dernière démo montrant comment créer une fonction serverless imbriquée avec des variables d'environnement (nous en parlerons dans les sections suivantes).
+Voici notre dernière démo montrant comment créer une fonction serverless imbriquée avec des variables d'environnement (nous en parlerons dans les sections suivantes):
 
-[ ![demo_faas](../../../../img/demo_faas.png)](https://www.youtube.com/watch?v=J6t95NXQGnM)
+[![demo_faas](../../../../img/demo_faas.png)](https://www.youtube.com/watch?v=J6t95NXQGnM)
 
 ## Étape 1 : Choisissez votre langage de programmation et nommez votre fonction
 

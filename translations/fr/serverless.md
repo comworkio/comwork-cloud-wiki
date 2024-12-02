@@ -25,7 +25,7 @@ Vous pouvez demander cette fonctionnalité qui est encore en beta en utilisant l
 
 Voici une démonstration rapide des langages de programmation pris en charge :
 
-[ ![demo_faas](../../img/demo_faas.png)](https://youtu.be/WgD2QlLeYtg)
+[![demo_faas](../../img/demo_faas.png)](https://youtu.be/WgD2QlLeYtg)
 
 Note : attention à protéger les arguments de votre fonction avec une regexp de validation, surtout pour Bash ;-)
 
@@ -33,7 +33,7 @@ Note : attention à protéger les arguments de votre fonction avec une regexp de
 
 Il est également possible d'utiliser Blockly comme interface de programmation graphique (a.k.a "_lowcode_") :
 
-[ ![demo_blockly](../../img/demo_blockly.png)](https://youtu.be/ikBNQmlXJY8)
+[![demo_blockly](../../img/demo_blockly.png)](https://youtu.be/ikBNQmlXJY8)
 
 #### Tutoriels
 
