@@ -534,3 +534,65 @@ Notes:
 * There are other optional flags you can add:
   * `-f` to add customized expeditor email address
   * `-b` to add a bcc email address
+
+## Monitors
+
+### List
+
+```shell
+cwc monitor ls
+```
+
+### Get by ID
+
+```shell
+cwc monitor ls -m <monitor_id>
+cwc monitor ls --monitor <monitor_id>
+```
+
+Note: You can add `-p` or `--pretty` flag to get a more readable output
+
+### Create
+
+```shell
+cwc monitor create -n <monitor_name> -u <monitor_url>
+```
+
+Optional flags:
+* `-y` or `--type`: Type of the monitor (http, tcp, icmp) - defaults to "http"
+* `-f` or `--family`: Family of the monitor
+* `-m` or `--method`: HTTP method (GET, POST, PUT) - defaults to "GET"
+* `-e` or `--expected_http_code`: Expected HTTP response code (200, 201, 401...) - defaults to "20*"
+* `-b` or `--body`: Request body - defaults to "hello"
+* `-c` or `--expected_contain`: Expected content in the response
+* `-t` or `--timeout`: Request timeout in seconds - defaults to 30
+* `-s` or `--username`: Basic auth username
+* `-p` or `--password`: Basic auth password
+* `-H` or `--headers`: Custom headers in format "key1:value1,key2:value2"
+
+### Update
+
+```shell
+cwc monitor update -i <monitor_id>
+```
+
+Optional flags:
+* `-y` or `--type`: Type of the monitor (http, tcp, icmp)
+* `-n` or `--name`: Name of the monitor
+* `-f` or `--family`: Family of the monitor
+* `-u` or `--url`: URL to monitor
+* `-m` or `--method`: HTTP method (GET, POST, PUT)
+* `-e` or `--expected_http_code`: Expected HTTP response code
+* `-b` or `--body`: Request body
+* `-c` or `--expected_contain`: Expected content in the response
+* `-t` or `--timeout`: Request timeout in seconds
+* `-s` or `--username`: Basic auth username
+* `-p` or `--password`: Basic auth password
+* `-H` or `--headers`: Custom headers in format "key1:value1,key2:value2"
+
+### Delete
+
+```shell
+cwc monitor delete -m <monitor_id>
+cwc monitor delete --monitor <monitor_id>
+```
