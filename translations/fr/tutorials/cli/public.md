@@ -539,3 +539,64 @@ Notes :
 * Il existe d'autres options que vous pouvez ajouter :
   * `-f` pour ajouter une adresse email personnalisée de l'expéditeur
   * `-b` pour ajouter une adresse email bcc
+
+## Monitors
+
+### Lister
+
+```shell
+cwc monitor ls
+```
+
+### Obtenir par ID
+
+```shell
+cwc monitor ls -m <monitor_id>
+cwc monitor ls --monitor <monitor_id>
+```
+
+Note : Vous pouvez ajouter le flag `-p` ou `--pretty` pour obtenir une sortie plus lisible
+
+### Créer
+
+```shell
+cwc monitor create -n <monitor_name> -u <monitor_url>
+```
+
+Flags optionnels :
+* `-y` ou `--type` : Type du monitor (http, tcp, icmp) - par défaut "http"
+* `-f` ou `--family` : Famille du monitor
+* `-m` ou `--method` : Méthode HTTP (GET, POST, PUT) - par défaut "GET"
+* `-e` ou `--expected_http_code` : Code de réponse HTTP attendu (200, 201, 401...) - par défaut "20*"
+* `-b` ou `--body` : Corps de la requête - par défaut "hello"
+* `-c` ou `--expected_contain` : Contenu attendu dans la réponse
+* `-t` ou `--timeout` : Délai d'expiration en secondes - par défaut 30
+* `-s` ou `--username` : Nom d'utilisateur pour l'authentification basique
+* `-p` ou `--password` : Mot de passe pour l'authentification basique
+* `-H` ou `--headers` : En-têtes personnalisés au format "clé1:valeur1,clé2:valeur2"
+
+### Mettre à jour
+
+```shell
+cwc monitor update -i <monitor_id>
+```
+
+* `-y` ou `--type` : Type du monitor (http, tcp, icmp)
+* `-n` ou `--name` : Nom du monitor
+* `-f` ou `--family` : Famille du monitor
+* `-u` ou `--url` : URL à surveiller
+* `-m` ou `--method` : Méthode HTTP (GET, POST, PUT)
+* `-e` ou `--expected_http_code` : Code de réponse HTTP attendu
+* `-b` ou `--body` : Corps de la requête
+* `-c` ou `--expected_contain` : Contenu attendu dans la réponse
+* `-t` ou `--timeout` : Délai d'expiration en secondes
+* `-s` ou `--username` : Nom d'utilisateur pour l'authentification basique
+* `-p` ou `--password` : Mot de passe pour l'authentification basique
+* `-H` ou `--headers` : En-têtes personnalisés au format "clé1:valeur1,clé2:valeur2"
+
+### Supprimer
+
+```shell
+cwc monitor delete -m <monitor_id>
+cwc monitor delete --monitor <monitor_id>
+```

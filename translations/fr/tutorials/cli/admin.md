@@ -379,3 +379,75 @@ cwc admin dnsRecord delete -r <id_de_enregistrement> -n <nom_de_enregistrement> 
 ## ou
 cwc admin dnsRecord delete --record <id_de_enregistrement> --name <nom_de_enregistrement> --zone <zone>
 ```
+
+## Moniteurs
+
+### Liste
+
+```shell
+cwc admin monitor ls
+```
+
+### Obtenir un moniteur par ID
+
+```shell
+cwc admin monitor ls -m <monitor_id>
+cwc admin monitor ls --id <monitor_id>
+```
+
+Notes :
+* Utilisez le flag `-p` ou `--pretty` pour formater la sortie de manière plus lisible
+
+### Création
+
+```shell
+cwc admin monitor create -n <nom> -u <url> [options]
+```
+
+Flags requis :
+* `-n` ou `--name` : Nom du moniteur
+* `-u` ou `--url` : URL à surveiller
+* `-i` ou `--user_id` : ID de l'utilisateur
+
+Flags optionnels :
+* `-y` ou `--type` : Type de moniteur (http, tcp, icmp) - par défaut : "http"
+* `-f` ou `--family` : Famille du moniteur
+* `-m` ou `--method` : Méthode HTTP (GET, POST, PUT) - par défaut : "GET"
+* `-e` ou `--expected_http_code` : Code de réponse HTTP attendu - par défaut : "20*"
+* `-b` ou `--body` : Corps de la requête - par défaut : "hello"
+* `-c` ou `--expected_contain` : Contenu attendu dans la réponse
+* `-t` ou `--timeout` : Délai d'expiration de la requête en secondes - par défaut : 30
+* `-s` ou `--username` : Nom d'utilisateur pour l'authentification basique
+* `-p` ou `--password` : Mot de passe pour l'authentification basique
+* `-H` ou `--headers` : En-têtes de la requête au format "cle1:valeur1,cle2:valeur2"
+
+### Mise à jour
+
+```shell
+cwc admin monitor update -m <monitor_id> [options]
+```
+
+Flags requis :
+* `-m` ou `--id` : ID du moniteur à mettre à jour
+
+Flags optionnels :
+* `-y` ou `--type` : Type de moniteur (http, tcp, icmp) - par défaut : "http"
+* `-n` ou `--name` : Nom du moniteur
+* `-f` ou `--family` : Famille du moniteur
+* `-u` ou `--url` : URL à surveiller
+* `-M` ou `--method` : Méthode HTTP (GET, POST, PUT) - par défaut : "GET"
+* `-e` ou `--expected_http_code` : Code de réponse HTTP attendu - par défaut : "20*"
+* `-b` ou `--body` : Corps de la requête
+* `-c` ou `--expected_contain` : Contenu attendu dans la réponse
+* `-t` ou `--timeout` : Délai d'expiration de la requête en secondes - par défaut : 30
+* `-s` ou `--username` : Nom d'utilisateur pour l'authentification basique
+* `-p` ou `--password` : Mot de passe pour l'authentification basique
+* `-H` ou `--headers` : En-têtes de la requête au format "cle1:valeur1,cle2:valeur2"
+* `-I` ou `--user_id` : ID de l'utilisateur
+
+### Suppression
+
+```shell
+cwc admin monitor delete -m <monitor_id>
+cwc admin monitor delete --monitor <monitor_id>
+```

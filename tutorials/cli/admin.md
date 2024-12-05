@@ -379,3 +379,75 @@ cwc admin dnsRecord delete -r <record_id> -n <record_name> -z <zone>
 ## or
 cwc admin dnsRecord delete --record <record_id> --name <record_name> --zone <zone>
 ```
+
+## Monitors
+
+### List
+
+```shell
+cwc admin monitor ls
+```
+
+### Get monitor by ID
+
+```shell
+cwc admin monitor ls -m <monitor_id>
+cwc admin monitor ls --id <monitor_id>
+```
+
+Notes:
+* Use `-p` or `--pretty` flag to format the output in a more readable way
+
+### Create
+
+```shell
+cwc admin monitor create -n <name> -u <url> [options]
+```
+
+Required flags:
+* `-n` or `--name`: Name of the monitor
+* `-u` or `--url`: URL to monitor
+
+Optional flags:
+* `-y` or `--type`: Type of monitor (http, tcp, icmp) - default: "http"
+* `-f` or `--family`: Family of the monitor
+* `-m` or `--method`: HTTP method (GET, POST, PUT) - default: "GET"
+* `-e` or `--expected_http_code`: Expected HTTP response code - default: "20*"
+* `-b` or `--body`: Request body - default: "hello"
+* `-c` or `--expected_contain`: Expected content in response
+* `-t` or `--timeout`: Request timeout in seconds - default: 30
+* `-s` or `--username`: Basic auth username
+* `-p` or `--password`: Basic auth password
+* `-H` or `--headers`: Request headers in format "key1:value1,key2:value2"
+* `-i` or `--user_id`: User ID - default: 43
+
+### Update
+
+```shell
+cwc admin monitor update -m <monitor_id> [options]
+```
+
+Required flags:
+* `-m` or `--id`: Monitor ID to update
+
+Optional flags:
+* `-y` or `--type`: Type of monitor (http, tcp, icmp) - default: "http"
+* `-n` or `--name`: Name of the monitor
+* `-f` or `--family`: Family of the monitor
+* `-u` or `--url`: URL to monitor
+* `-M` or `--method`: HTTP method (GET, POST, PUT) - default: "GET"
+* `-e` or `--expected_http_code`: Expected HTTP response code - default: "20*"
+* `-b` or `--body`: Request body
+* `-c` or `--expected_contain`: Expected content in response
+* `-t` or `--timeout`: Request timeout in seconds - default: 30
+* `-s` or `--username`: Basic auth username
+* `-p` or `--password`: Basic auth password
+* `-H` or `--headers`: Request headers in format "key1:value1,key2:value2"
+* `-I` or `--user_id`: User ID
+
+### Delete
+
+```shell
+cwc admin monitor delete -m <monitor_id>
+cwc admin monitor delete --monitor <monitor_id>
+```
