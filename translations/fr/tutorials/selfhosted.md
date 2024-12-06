@@ -6,6 +6,10 @@ Ce tutoriel est également disponible dans les langues suivantes :
 
 - [English 🇬🇧](../../../tutorials/selfhosted.md)
 
+## En utilisant Kubernetes
+
+Un helmchart est disponible ici: 
+
 ## En utilisant ansible
 
 Ici vous trouverez un role ansible vous permettant d'installer : https://gitlab.comwork.io/oss/ansible-iac/cloud

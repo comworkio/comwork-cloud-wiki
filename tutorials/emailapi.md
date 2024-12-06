@@ -79,7 +79,7 @@ Notes:
 
 #### Installation and configuration
 
-You can use this [plugin](https://gitlab.comwork.io/oss/cwc/cwcloud-wordpress-email):
+You can use this [plugin](https://gitlab.comwork.io/oss/cwcloud/cwcloud-wordpress-email):
 
 **1/** Download the right zip extension file (either the `-io` if you're using cloud.comwork.io instance of `-tn` if you're using the cwcloud.tn instance)
 

@@ -12,7 +12,7 @@ Un moniteur est un _healthcheck_ (contrôle de santé d'une application) qui est
 Notre système de moniteur permet de :
 * présenter le résultat du contrôle dans notre interface graphique
 * exporter les résultats dans une gauge Prometheus/OpenMetrics disponible via le webservice `/v1/metrics` de l'API de CWCloud
-* envoyer la métrique via opentelemetry vers un endpoint OTLP/grpc (configuré avec la variable d'environnement `OTEL_COLLECTOR_ENDPOINT`, pour plus de détail sur cette configuration lire [cette documentation](../selfhosted.md) for that).
+* envoyer la métrique via opentelemetry vers un endpoint OTLP/grpc (configuré avec la variable d'environnement `OTEL_COLLECTOR_ENDPOINT`, pour plus de détail sur cette configuration lire [cette documentation](../selfhosted.md#observabilité) for that).
 
 ## Demo
 
