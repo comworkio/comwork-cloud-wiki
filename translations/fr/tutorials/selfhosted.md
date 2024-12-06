@@ -8,11 +8,19 @@ Ce tutoriel est également disponible dans les langues suivantes :
 
 ## En utilisant Kubernetes
 
-Un helmchart est disponible ici: 
+Un helmchart est disponible ici : https://gitlab.comwork.io/oss/cwcloud/cwcloud-helm
+
+Vous pouvez aussi utiliser directement la [CLI](./cli/README.md) comme ceci :
+
+```shell
+$ cwc bootstrap
+```
+
+Note: la CLI installera sur le cluster avec lequel vous êtes connectés via le fichier `~/.kube/config`.
 
 ## En utilisant ansible
 
-Ici vous trouverez un role ansible vous permettant d'installer : https://gitlab.comwork.io/oss/ansible-iac/cloud
+Ici vous trouverez un role ansible vous permettant d'installer : https://gitlab.comwork.io/oss/cwcloud/cwcloud-ansible
 
 ## En utilisant docker-compose
 

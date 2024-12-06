@@ -5,9 +5,21 @@
 This tutorial is also available in the following languages:
 * [Français 🇫🇷](../translations/fr/tutorials/selfhosted.md)
 
+## Using Kubernetes
+
+Here, you'll find a helmchart to install it on Kubernetes: https://gitlab.comwork.io/oss/cwcloud/cwcloud-helm
+
+You can also directly use the [CLI](./cli/README.md) like this:
+
+```shell
+$ cwc bootstrap
+```
+
+Note: the CLI will install on the cluster you're already connected via the `~/.kube/config` file.
+
 ## Using ansible
 
-Here, you'll find an opensource ansible role to do it: https://gitlab.comwork.io/oss/ansible-iac/cloud
+Here, you'll find an opensource ansible role to do it: https://gitlab.comwork.io/oss/cwcloud/cwcloud-ansible
 
 ## Using docker-compose
 
