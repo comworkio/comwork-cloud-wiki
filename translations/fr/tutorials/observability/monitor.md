@@ -31,3 +31,4 @@ Notes :
 * Le moniteur échoue lorsque vous saisissez le champ `response body contain` et que la réponse ne contient pas la valeur saisie
 * Vous pouvez configurer une authentification basic auth et des headers
 * Pour les méthodes `POST` et `PUT` vous pouvez aussi configurer le body de la requête
+* Vous pouvez utiliser la CLI pour créer les moniteurs, voir [cette documentation](../cli/public.md#moniteurs)

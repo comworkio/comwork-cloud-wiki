@@ -540,7 +540,7 @@ Notes :
   * `-f` pour ajouter une adresse email personnalisée de l'expéditeur
   * `-b` pour ajouter une adresse email bcc
 
-## Monitors
+## Moniteurs
 
 ### Lister
 

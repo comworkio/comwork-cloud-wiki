@@ -31,3 +31,4 @@ Notes:
 * The `response body contain` will make the monitor fail if the response body doesn't contain the value
 * You can setup a basic authentication and custom headers
 * For the `POST` and `PUT` methods you can configure the request's body
+* You can also use the cli to create monitors, see [this documentation](../cli/public.md#monitors)
