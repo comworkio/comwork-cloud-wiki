@@ -8,4 +8,4 @@ Also our licences are explained [here](./licences.md)
 
 ## Demo and tutorials
 
-You can find demo and tutorials [here](./tutorials/selfhosted.md)
+You can find demo and tutorials [here](./tutorials/selfhosted/README.md)

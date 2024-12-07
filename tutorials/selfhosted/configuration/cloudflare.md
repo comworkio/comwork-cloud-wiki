@@ -59,15 +59,3 @@ dns_zones:
 In order to get the `zone_id`, you can go on cloudflare and copy/past the following value:
 
 ![cloudflare_zone_id](../../../img/cloudflare_zone_id.png)
-
-## Observability
-
-Cwcloud-api is providing a `/metrics` http endpoint that can be scrapped by Prometheus:
-
-![prometheus](../../../img/prometheus.png)
-
-And you can also send the metrics, logs and some traces through OTLP/Grpc (configured with the `OTEL_COLLECTOR_ENDPOINT` environment variable).
-
-Here's example of traces with Jaegger:
-
-![jaegger](../../../img/jaegger.png)

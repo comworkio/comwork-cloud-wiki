@@ -8,7 +8,7 @@ Here's the documentation of [comwork cloud console](https://cloud.comwork.io) an
 
 There is a SaaS version which provide instances that are hosted on [Scaleway](https://www.scaleway.com) or [OVHCloud](https://www.ovhcloud.com). Those two are really beautiful European 🇪🇺 cloud providers and we intend to propose even more cloud providers in the future (CwCloud can work with any cloud provider that provide standard IaaS[^5] API's such as OpenStack or Kubernetes).
 
-There is also a way to deploy a [self-hosted version of CwCloud](./tutorials/selfhosted.md) with your own prefered cloud provider and account. The self-hosted version is also compatible with [AWS](https://aws.amazon.com), [GCP](https://cloud.google.com), [Azure](https://azure.microsoft.com) and [cloudflare](https://www.cloudflare.com) (for the DNS records).
+There is also a way to deploy a [self-hosted version of CwCloud](./tutorials/selfhosted/README.md) with your own prefered cloud provider and account. The self-hosted version is also compatible with [AWS](https://aws.amazon.com), [GCP](https://cloud.google.com), [Azure](https://azure.microsoft.com) and [cloudflare](https://www.cloudflare.com) (for the DNS records).
 
 [^1]: _Deployment as a service_, check-out [this tutorial](./tutorials/daas.md) to know more about this concept
 [^2]: _Function as a service_

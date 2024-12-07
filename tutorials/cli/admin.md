@@ -3,7 +3,7 @@
 The admin commands are used to control and manage your self-hosted version of CwCloud.
 
 Notes:
-* Those commands are only for admin users (if you're using a [self-hosted version](../selfhosted.md) for example)
+* Those commands are only for admin users (if you're using a [self-hosted version](../selfhosted/README.md) for example)
 * To checkout how to install and update the `cwc` cli checkout this [tutorial](./install.md)
 * For the commands accessible for all users, checkout this [tutorial](./public.md) (you should read-it first to handle authentication)
 

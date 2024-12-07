@@ -6,3 +6,7 @@ Here, you'll find a list of tutorial that will help you to configure the various
 * [AWS](./aws.md)
 * [GCP](./gcp.md)
 * [Cloudflare](./cloudflare.md)
+
+And other configurations:
+
+* [Observability configuration](./observability.md)
