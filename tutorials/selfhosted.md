@@ -17,6 +17,13 @@ $ cwc bootstrap
 
 Note: the CLI will install on the cluster you're already connected via the `~/.kube/config` file.
 
+Then, in order to access to the services:
+
+```shell
+kubectl -n cwcloud port-forward svc/comwork-cloud-api 8000:8000 & disown
+kubectl -n cwcloud port-forward svc/comwork-cloud-api 3000:3000
+```
+
 ## Using ansible
 
 Here, you'll find an opensource ansible role to do it: https://gitlab.comwork.io/oss/cwcloud/cwcloud-ansible
