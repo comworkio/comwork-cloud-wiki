@@ -33,11 +33,11 @@ Note: the CLI will install on the cluster you're already connected via the `~/.k
 Then, in order to access to the services (to run in separate shell sessions):
 
 ```shell
-kubectl -n cwcloud port-forward svc/comwork-cloud-api 8000:8000
+kubectl -n cwcloud port-forward svc/cwcloud-api 8000:8000
 ```
 
 ```shell
-kubectl -n cwcloud port-forward svc/comwork-cloud-ui 3000:3000
+kubectl -n cwcloud port-forward svc/cwcloud-ui 3000:3000
 ```
 
 You'll be able to open access to the GUI through a web browser using this URL: http://localhost:3000
