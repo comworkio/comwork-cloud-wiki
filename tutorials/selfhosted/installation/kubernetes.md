@@ -28,6 +28,7 @@ Quelques options supplémentaires sont disponibles :
 ```shell
 cwc bootstrap --keepdir # if you want to keep the downloaded helm directory
 cwc bootstrap --values my-values.yaml # if you need to override the default helm values
+cwc bootstrap --namespace cwc # if you want to change the namespace
 ```
 
 If you want to uninstall:
@@ -36,14 +37,10 @@ If you want to uninstall:
 cwc bootstrap uninstall
 ```
 
-Then, in order to access to the services (to run in separate shell sessions):
+Then, in order to access to the services:
 
 ```shell
-kubectl -n cwcloud port-forward svc/cwcloud-api 8000:8000
-```
-
-```shell
-kubectl -n cwcloud port-forward svc/cwcloud-ui 3000:3000
+cwc bootstrap pfw
 ```
 
 You'll be able to open access to the GUI through a web browser using this URL: http://localhost:3000

@@ -27,6 +27,7 @@ Quelques options supplémentaires sont disponibles :
 ```shell
 cwc bootstrap --keepdir # si vous souhaitez garder le dossier helm téléchargé sans l'écraser
 cwc bootstrap --values my-values.yaml # si vous souhaitez surcharger les valeurs passés au helmchart
+cwc boostrap --namespace cwc # si vous souhaitez installer sur un autre namespace
 ```
 
 Pour désinstaller :
@@ -35,14 +36,10 @@ Pour désinstaller :
 cwc bootstrap uninstall
 ```
 
-Et pour accéder aux services (à lancer dans des terminaux séparés) :
+Et pour accéder aux services :
 
 ```shell
-kubectl -n cwcloud port-forward svc/cwcloud-api 8000:8000
-```
-
-```shell
-kubectl -n cwcloud port-forward svc/cwcloud-ui 3000:3000
+cwc bootstrap pfw
 ```
 
 Vous pourrez ensuite vous connecter via un navigateur sur http://localhost:3000
