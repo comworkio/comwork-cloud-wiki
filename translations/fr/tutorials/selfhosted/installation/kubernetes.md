@@ -19,3 +19,12 @@ Vous pouvez aussi utiliser directement la [CLI](../../cli/README.md) comme ceci 
 ```shell
 $ cwc bootstrap
 ```
+
+Note: la CLI installera sur le cluster avec lequel vous êtes connectés via le fichier `~/.kube/config`.
+
+Et pour accéder aux services :
+
+```shell
+kubectl -n cwcloud port-forward svc/comwork-cloud-api 8000:8000
+kubectl -n cwcloud port-forward svc/comwork-cloud-ui 3000:3000
+```
