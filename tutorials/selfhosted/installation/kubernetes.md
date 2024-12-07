@@ -51,3 +51,5 @@ You'll be able to open access to the GUI through a web browser using this URL: h
 The default account is:
 * User: `sre-devops@comwork.io`
 * Password: `cloud456`
+
+You can checkout [this blogpost](https://www.comwork.io/blog/cwcloud-kubernetes-install) which provides more details on how to use it on localhost with Kind.

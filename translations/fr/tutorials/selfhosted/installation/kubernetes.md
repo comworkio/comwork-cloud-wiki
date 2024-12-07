@@ -50,3 +50,5 @@ Vous pourrez ensuite vous connecter via un navigateur sur http://localhost:3000
 L'utilisateur par défaut est le suivant :
 * User: `sre-devops@comwork.io`
 * Password: `cloud456`
+
+Vous pouvez consulter [ce blogpost](https://www.comwork.io/blog/cwcloud-kubernetes-install) qui fournit plus de détails sur comment l'utiliser avec Kind.
