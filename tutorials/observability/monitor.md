@@ -12,7 +12,7 @@ A monitor is an external healthcheck which is performed on your application. For
 Our monitor system is able to:
 * present the last check in our graphical interface
 * export the result as a Prometheus/OpenMetrics gauge in the `/v1/metrics` endpoint of CWCloud's API
-* push the metrics to an opentelemetry OTLP/grpc endpoint (configured with the `OTEL_COLLECTOR_ENDPOINT` environment variables, see the [selfhosted documentation](../selfhosted.md#observability) for that).
+* push the metrics to an opentelemetry OTLP/grpc endpoint (configured with the `OTEL_COLLECTOR_ENDPOINT` environment variables, see the [selfhosted documentation](../selfhosted/configuration/observability.md) for that).
 
 ## Demo
 
