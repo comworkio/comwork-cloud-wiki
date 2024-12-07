@@ -16,7 +16,7 @@
 * [Connection avec SSH](./ssh.md)
 * [Gitlab](./gitlab.md)
 * [Gestion des problèmes avec les certificats TLS/SSL](./tls.md)
-* [Instances auto-hébergées de CwCloud](./selfhosted.md)
+* [Instances auto-hébergées de CwCloud](./selfhosted/README.md)
 * [API email](./emailapi.md)
 * [API cwai](./cwai.md)
 * [Migrations des OS](./os_migrations.md)

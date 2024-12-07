@@ -18,7 +18,7 @@
 * [Troubleshooting with TLS/SSL certificates](./tls.md)
 * [Observability](./observability/README.md)
 * [Comwork AI](./cwai.md)
-* [Self-hosted deployment of CwCloud](./selfhosted.md)
+* [Self-hosted deployment of CwCloud](./selfhosted/README.md)
 * [email API](./emailapi.md)
 * [cwai API](./cwai.md)
 * [OS migrations](./os_migrations.md)
