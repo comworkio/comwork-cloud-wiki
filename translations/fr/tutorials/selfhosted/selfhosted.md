@@ -701,11 +701,3 @@ dns_zones:
 Pour récupérer la `zone_id`, copier la valeur suivante depuis cloudflare :
 
 ![cloudflare_zone_id](../../../img/cloudflare_zone_id.png)
-
-
-
-## Tutoriel administration
-
-Vous aurez surement besoin d'utiliser des fonctionnalité administrateurs si vous avez votre propre instance hébergée de CwCloud.
-
-Vous trouverez toutes les ressources pour administrer via la console [ici](./console/admin/README.md)

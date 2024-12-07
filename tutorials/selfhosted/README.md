@@ -5,8 +5,6 @@ Here you'll find all the tutorials in order to self-host CWCloud or installing i
 * [Installation tutorials](./installation/README.md)
 * [Configuration tutorials](./configuration/README.md)
 
-## Console tutorials
-
 You might use the console as an administrator if you're getting your own on premises instance.
 
 You'll find all the tutorials you need for administrating the console [here](../console/admin/README.md)
