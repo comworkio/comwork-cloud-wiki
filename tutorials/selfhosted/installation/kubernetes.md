@@ -16,6 +16,7 @@ Here, you'll find a helmchart to install it on Kubernetes: https://gitlab.comwor
 You can also directly use the [CLI](../../cli/README.md) like this:
 
 ```shell
+kubectl delete ns cwcloud # if you want to reinstall
 cwc bootstrap
 ```
 
