@@ -13,7 +13,7 @@ Here, you'll find a helmchart to install it on Kubernetes: https://gitlab.comwor
 
 ### Using the CLI
 
-You can also directly use the [CLI](./cli/README.md) like this:
+You can also directly use the [CLI](../../cli/README.md) like this:
 
 ```shell
 $ cwc bootstrap
