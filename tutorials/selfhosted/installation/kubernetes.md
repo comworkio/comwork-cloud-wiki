@@ -13,22 +13,28 @@ Here, you'll find a helmchart to install it on Kubernetes: https://gitlab.comwor
 
 ### Using the CLI
 
-You can also directly use the [CLI](../../cli/README.md) like this:
-
-If you need to reinstall:
-
-```shell
-rm -rf cwcloud
-kubectl delete ns cwcloud
-```
-
-Then:
+You can also directly use the [CLI](../../cli/README.md) (if you need to install it first, go read [this tutorial](../../cli/install.md)) like this:
 
 ```shell
 cwc bootstrap
 ```
 
 Note: the CLI will install on the cluster you're already connected via the `~/.kube/config` file.
+
+There's some optional flags available:
+
+Quelques options supplémentaires sont disponibles :
+
+```shell
+cwc bootstrap --keepdir # if you want to keep the downloaded helm directory
+cwc bootstrap --values my-values.yaml # if you need to override the default helm values
+```
+
+If you want to uninstall:
+
+```shell
+cwc bootstrap uninstall
+```
 
 Then, in order to access to the services (to run in separate shell sessions):
 

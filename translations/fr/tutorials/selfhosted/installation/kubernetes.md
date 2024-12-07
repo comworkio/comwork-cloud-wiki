@@ -14,22 +14,26 @@ Un helmchart est disponible ici : https://gitlab.comwork.io/oss/cwcloud/cwcloud-
 
 ### Avec la CLI
 
-Vous pouvez aussi utiliser directement la [CLI](../../cli/README.md) comme ceci :
-
-Si vous souhaitez ré-installer :
-
-```shell
-rm -rf cwcloud
-kubectl delete ns cwcloud
-```
-
-Puis :
+Vous pouvez aussi utiliser directement la [CLI](../../cli/README.md) (pour l'installer c'est [par ici](../../cli/install.md)) comme ceci :
 
 ```shell
 cwc bootstrap
 ```
 
 Note: la CLI installera sur le cluster avec lequel vous êtes connectés via le fichier `~/.kube/config`.
+
+Quelques options supplémentaires sont disponibles :
+
+```shell
+cwc bootstrap --keepdir # si vous souhaitez garder le dossier helm téléchargé sans l'écraser
+cwc bootstrap --values my-values.yaml # si vous souhaitez surcharger les valeurs passés au helmchart
+```
+
+Pour désinstaller :
+
+```shell
+cwc bootstrap uninstall
+```
 
 Et pour accéder aux services (à lancer dans des terminaux séparés) :
 
