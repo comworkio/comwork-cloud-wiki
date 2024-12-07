@@ -1,6 +1,6 @@
 # Configuring OVH
 
-In this section, we'll see how to generate the different API keys with OVH.
+In this tutorial, we'll see how to generate the different API keys with OVH.
 
 ## Translations
 
