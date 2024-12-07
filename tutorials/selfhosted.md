@@ -21,7 +21,7 @@ Then, in order to access to the services:
 
 ```shell
 kubectl -n cwcloud port-forward svc/comwork-cloud-api 8000:8000
-kubectl -n cwcloud port-forward svc/comwork-cloud-api 3000:3000
+kubectl -n cwcloud port-forward svc/comwork-cloud-ui 3000:3000
 ```
 
 ## Using ansible
