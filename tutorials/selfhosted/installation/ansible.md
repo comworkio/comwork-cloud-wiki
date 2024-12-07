@@ -8,3 +8,7 @@ This tutorial is also available in the following languages:
 ## Installation
 
 Here, you'll find an opensource ansible role to do it: https://gitlab.comwork.io/oss/cwcloud/cwcloud-ansible
+
+The default account is:
+* User: `sre-devops@comwork.io`
+* Password: `cloud456`

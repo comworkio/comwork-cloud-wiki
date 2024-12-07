@@ -25,6 +25,11 @@ Note: la CLI installera sur le cluster avec lequel vous êtes connectés via le 
 Et pour accéder aux services :
 
 ```shell
-kubectl -n cwcloud port-forward svc/comwork-cloud-api 8000:8000
-kubectl -n cwcloud port-forward svc/comwork-cloud-ui 3000:3000
+kubectl -n cwcloud port-forward svc/comwork-cloud-api 8000:8000 & kubectl -n cwcloud port-forward svc/comwork-cloud-ui 3000:3000 & disown
 ```
+
+Vous pourrez ensuite vous connecter via un navigateur sur http://localhost:3000
+
+L'utilisateur par défaut est le suivant :
+* User: `sre-devops@comwork.io`
+* Password: `cloud456`
