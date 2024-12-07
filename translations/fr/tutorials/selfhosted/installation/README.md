@@ -1,4 +1,4 @@
-## Installation
+# Installation
 
 * [Avec kubernetes](./kubernetes.md)
 * [Avec ansible](./ansible.md)

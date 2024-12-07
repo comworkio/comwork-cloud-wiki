@@ -1,4 +1,4 @@
-## Installation
+# Installation
 
 * [Using kubernetes](./kubernetes.md)
 * [Using ansible](./ansible.md)
