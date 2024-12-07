@@ -1,19 +1,19 @@
-# Auto-hébergement de CwCloud
+
+## Configurer GCP
 
 ## Traductions
 
 Ce tutoriel est également disponible dans les langues suivantes :
 
-* [English 🇬🇧](../../../tutorials/selfhosted.md)
+* [English 🇬🇧](../../../../../tutorials/selfhosted/configuration/gcp.md)
 
-
-## Configurer CwCloud avec GCP
+## Configuration
 
 ### Obtenir l'ID du projet
 
 Copier/coller la valeur suivante dans la variable d'environnement `GCP_PROJECT_ID` :
 
-![gcp_project_id](../../../img/gcp_project_id.png)
+![gcp_project_id](../../../../../img/gcp_project_id.png)
 
 ### Générer le service account et ses permissions
 
@@ -21,23 +21,23 @@ Créer un service account `cwcloud`
 
 Ensuite, lui ajouter le role `owner` comme ceci :
 
-![gcp_sa_access_1](../../../img/gcp_sa_access_1.png)
+![gcp_sa_access_1](../../../../../img/gcp_sa_access_1.png)
 
-![gcp_sa_access_2](../../../img/gcp_sa_access_2.png)
+![gcp_sa_access_2](../../../../../img/gcp_sa_access_2.png)
 
 Le service account doit aussi apparaitre dans les comptes principaux :
 
-![gcp_iam_sa_principal](../../../img/gcp_iam_sa_principal.png)
+![gcp_iam_sa_principal](../../../../../img/gcp_iam_sa_principal.png)
 
 ### Générer la clef d'authentification
 
 Aller dans _IAM > Service Account > Manage key_
 
-![gcp_sa_manage_keys](../../../img/gcp_sa_manage_keys.png)
+![gcp_sa_manage_keys](../../../../../img/gcp_sa_manage_keys.png)
 
 Ensuite, créer une nouvelle clef (choisir le format `JSON`) :
 
-![gcp_sa_add_key](../../../img/gcp_sa_add_key.png)
+![gcp_sa_add_key](../../../../../img/gcp_sa_add_key.png)
 
 Le fichier téléchargé devrait ressembler à quelque chose comme ceci :
 
@@ -69,7 +69,7 @@ base64 -i projectid.json
 
 Créer un réseau `default` comme ceci :
 
-![gcp_vpc_network](../../../img/gcp_vpc_network.png)
+![gcp_vpc_network](../../../../../img/gcp_vpc_network.png)
 
 Voici le code terraform pour y parvenir :
 
@@ -157,58 +157,3 @@ firewall_tags:
   - allow-https
   - allow-ssh
 ```
-
-## Configurer une zone DNS avec cloudflare
-
-1. Ajouter un nouveau site avec cloudflare:
-
-![cloudflare_add_website](../../../img/cloudflare_add_website.png)
-
-1. Enregistrer votre nom de domaine avec le Free Plan, puis copier les DNS:
-
-![cloudflare_copy_dns](../../../img/cloudflare_copy_dns.png)
-
-3. Mettre à jour les serveur DNS, exemple avec OVH:
-
-![update_dns_ovh](../../../img/update_dns_ovh.png)
-
-Remplacer ici les serveurs `dns12.ovh.net` et `ns12.ovh.net` par ceux de cloudflare que vous avez copié juste avant.
-
-Attendre un peu (jusqu'à 24h), les serveurs DNS devraient apparaitre à jour comme ceci:
-
-![updated_dns_server_ovh](../../../img/updated_dns_server_ovh.png)
-
-4. Créer un token d'API pour votre instance cwcloud :
-
-![cloudflare_api_token_1](../../../img/cloudflare_api_token_1.png)
-
-ensuite:
-
-![cloudflare_api_token_2](../../../img/cloudflare_api_token_2.png)
-
-Ensuite choisir le bon template :
-
-![cloudflare_api_token_3](../../../img/cloudflare_api_token_3.png)
-
-Ensuite choisir la zone DNS :
-
-![cloudflare_api_token_4](../../../img/cloudflare_api_token_4.png)
-
-Copier/coller le token généré :
-
-![cloudflare_api_token_5](../../../img/cloudflare_api_token_5.png)
-
-Vous devez setter la variable d'environnement `CLOUDFLARE_API_TOKEN` avec ce token.
-
-5. Vous pouvez ensuite ajouter votre nouvelle zone DNS dans le fichier `cloud_environments.yml` :
-
-```yaml
-dns_zones:
-  - name: pulumi-university.com
-    driver: CloudflareDriver
-    zone_id: XXXXXXX
-```
-
-Pour récupérer la `zone_id`, copier la valeur suivante depuis cloudflare :
-
-![cloudflare_zone_id](../../../img/cloudflare_zone_id.png)
