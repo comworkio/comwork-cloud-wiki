@@ -29,23 +29,23 @@ brew upgrade cwc
 
 ```shell
 version="1.13.3"
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v${version}/downloads/cwc_${version}_linux_amd64.tar.gz" -o "cwc_cli.tar.gz"
+curl -L "https://gitlab.comwork.io/oss/cwcloud/cwc/-/releases/v${version}/downloads/cwc_${version}_linux_amd64.tar.gz" -o "cwc_cli.tar.gz"
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli 
 sudo ./cwc_cli/install.sh
 ```
 
-Attention à vérifier que la version est disponible dans les [releases](https://gitlab.comwork.io/oss/cwc/cwc/-/releases) car nous ne gardons que les 5 dernières.
+Attention à vérifier que la version est disponible dans les [releases](https://gitlab.comwork.io/oss/cwcloud/cwc/-/releases) car nous ne gardons que les 5 dernières.
 
 #### Linux arm (64 bit)
 
 ```shell
 version="1.13.3"
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v${version}/downloads/cwc_${version}_linux_arm64.tar.gz" -o "cwc_cli.tar.gz" 
+curl -L "https://gitlab.comwork.io/oss/cwcloud/cwc/-/releases/v${version}/downloads/cwc_${version}_linux_arm64.tar.gz" -o "cwc_cli.tar.gz" 
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli 
 sudo ./cwc_cli/install.sh
 ```
 
-Attention à vérifier que la version est disponible dans les [releases](https://gitlab.comwork.io/oss/cwc/cwc/-/releases) car nous ne gardons que les 5 dernières.
+Attention à vérifier que la version est disponible dans les [releases](https://gitlab.comwork.io/oss/cwcloud/cwc/-/releases) car nous ne gardons que les 5 dernières.
 
 ### For MacOS
 
@@ -53,12 +53,12 @@ Attention à vérifier que la version est disponible dans les [releases](https:/
 
 ```shell
 version="1.13.3"
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v${version}/downloads/cwc_${version}_darwin_all.tar.gz" -o "cwc_cli.tar.gz"
+curl -L "https://gitlab.comwork.io/oss/cwcloud/cwc/-/releases/v${version}/downloads/cwc_${version}_darwin_all.tar.gz" -o "cwc_cli.tar.gz"
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli     
 sudo ./cwc_cli/install.sh
 ```
 
-Attention à vérifier que la version est disponible dans les [releases](https://gitlab.comwork.io/oss/cwc/cwc/-/releases) car nous ne gardons que les 5 dernières.
+Attention à vérifier que la version est disponible dans les [releases](https://gitlab.comwork.io/oss/cwcloud/cwc/-/releases) car nous ne gardons que les 5 dernières.
 
 ### For Windows
 
@@ -71,7 +71,7 @@ cd
 cwc.exe
 ```
 
-Attention à vérifier que la version est disponible dans les [releases](https://gitlab.comwork.io/oss/cwc/cwc/-/releases) car nous ne gardons que les 5 dernières.
+Attention à vérifier que la version est disponible dans les [releases](https://gitlab.comwork.io/oss/cwcloud/cwc/-/releases) car nous ne gardons que les 5 dernières.
 
 #### Windows arm (64 bit)
 
