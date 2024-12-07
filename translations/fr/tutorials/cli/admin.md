@@ -3,7 +3,7 @@
 Les commandes administateurs sont utilisées pour gérer votre instance de CwCloud auto-hébergée.
 
 Remarques :
-* Ces commandes ne fonctionnent que pour les utilisateurs qui sont administrateurs (si vous utilisez une [version auto-hébergées](../selfhosted.md) par exemple)
+* Ces commandes ne fonctionnent que pour les utilisateurs qui sont administrateurs (si vous utilisez une [version auto-hébergées](../selfhosted/README.md) par exemple)
 * Pour installer ou mettre à jour la ligne de commande `cwc`, [rendez-vous ici](./install.md).
 * Pour les commandes accessibles à tous les utilisateurs, [rendez-vous là](./public.md)
 
