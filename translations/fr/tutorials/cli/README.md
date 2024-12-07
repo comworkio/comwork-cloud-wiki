@@ -1,6 +1,6 @@
 # Ligne de commande cwc
 
-`cwc` est une ligne de commande écrite en go qui vous aidera à manipuler l'[API de CwCloud](../api/README.md) en diminuant l'impact des breaking-changes (incompatibilités de version).
+`cwc` est une ligne de commande écrite en go qui vous aidera à manipuler l'[API de CWCloud](../api/README.md) en diminuant l'impact des breaking-changes (incompatibilités de version).
 
 ![cwc](../../../../img/cwc.png)
 

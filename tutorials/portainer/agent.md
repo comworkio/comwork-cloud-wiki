@@ -1,4 +1,4 @@
-# Adding portainer agents on CwCloud
+# Adding portainer agents on CWCloud
 
 ## Translations
 

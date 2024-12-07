@@ -13,6 +13,6 @@ Here you'll find a demo on how host a pod inside your [code](../../code.md) inst
 
 You can activate the subtitles in English or French to get more details on this demo. 
 
-Note: you can use a dedicated instance of localtunnel hosted in CwCloud. More informations [here](../../localtunnel.md).
+Note: you can use a dedicated instance of localtunnel hosted in CWCloud. More informations [here](../../localtunnel.md).
 
 Enjoy!

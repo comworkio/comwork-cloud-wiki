@@ -13,4 +13,4 @@ Vous trouverez une démo sur comment démarrer un pod sur votre instance de [cod
 
 Vous pouvez activer les sous-titres en Anglais ou en Français pour avoir les explications en live.
 
-Remarque : vous pouvez utiliser une instance dédiée de localtunnel dans CwCloud. Pour plus d'informations, [rendez-vous ici](../../../../localtunnel.md).
+Remarque : vous pouvez utiliser une instance dédiée de localtunnel dans CWCloud. Pour plus d'informations, [rendez-vous ici](../../../../localtunnel.md).

@@ -83,11 +83,11 @@ OVH_CONSUMER_KEY="c4XXXXXXXXXX90a"
 
 ### Créer une zone DNS
 
-Il faut tout simplement acheter un nom de domaine qui sera dynamiquement géré par CwCloud et dont les zones DNS __ne doivent pas être gérées par un autre service ou processus__.
+Il faut tout simplement acheter un nom de domaine qui sera dynamiquement géré par CWCloud et dont les zones DNS __ne doivent pas être gérées par un autre service ou processus__.
 
 ![ovh_dns_zone](../../../../../img/ovh_dns_zone.png)
 
-Après avoir crée la première instance qui va héberger CwCloud avec une IP publique, il faudra ajouter un champs `A` vers cette IP publique avec un sous-domaine tel que `cwcloud.xxxxx.com`.
+Après avoir crée la première instance qui va héberger CWCloud avec une IP publique, il faudra ajouter un champs `A` vers cette IP publique avec un sous-domaine tel que `cwcloud.xxxxx.com`.
 
 ### Golden images avec packer et ansible
 

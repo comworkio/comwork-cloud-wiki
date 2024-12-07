@@ -82,11 +82,11 @@ OVH_CONSUMER_KEY="c4XXXXXXXXXX90a"
 
 ### Create a DNS zone
 
-We simply have to buy a new domain name which will be dynamically managed by CwCloud and that its DNZ zones __must not be managed by another service or process__.
+We simply have to buy a new domain name which will be dynamically managed by CWCloud and that its DNZ zones __must not be managed by another service or process__.
 
 ![ovh_dns_zone](../../../img/ovh_dns_zone.png)
 
-Once we created the first instance which will host CwCloud with a public IP, we'll have to add a DNS `A` record with this public IP, i.e: `cwcloud.xxxxx.com`.
+Once we created the first instance which will host CWCloud with a public IP, we'll have to add a DNS `A` record with this public IP, i.e: `cwcloud.xxxxx.com`.
 
 ### Golden images with packer and ansible
 

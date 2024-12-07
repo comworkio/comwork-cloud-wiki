@@ -1,6 +1,6 @@
 # Commandes administrateurs
 
-Les commandes administateurs sont utilisées pour gérer votre instance de CwCloud auto-hébergée.
+Les commandes administateurs sont utilisées pour gérer votre instance de CWCloud auto-hébergée.
 
 Remarques :
 * Ces commandes ne fonctionnent que pour les utilisateurs qui sont administrateurs (si vous utilisez une [version auto-hébergées](../selfhosted/README.md) par exemple)

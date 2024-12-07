@@ -17,4 +17,4 @@ If you want to modify other informations in the [sizing pricing](../sizing_prici
 1. update the [`sizing_pricing.tpl`](./sizing_pricing.tpl)
 2. Commit and push, a CI/CD pipeline will be triggered and take care of the rest
 
-Beware, this will also generating the [`prices_env.sh`](../prices_env.sh) which is used by the CwCloud API (you'll have to trigger a pipeline there to redeploy)
+Beware, this will also generating the [`prices_env.sh`](../prices_env.sh) which is used by the CWCloud API (you'll have to trigger a pipeline there to redeploy)

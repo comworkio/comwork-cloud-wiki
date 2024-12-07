@@ -1,6 +1,6 @@
 # Conditions générales d'utilisation
 
-Ces conditions générales d'utilisations concernent la [version SaaS de CwCloud](https://cloud.comwork.io).
+Ces conditions générales d'utilisations concernent la [version SaaS de CWCloud](https://cloud.comwork.io).
 
 ## Traductions
 

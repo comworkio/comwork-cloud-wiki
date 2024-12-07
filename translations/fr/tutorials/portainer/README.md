@@ -4,7 +4,7 @@ Vous trouverez ici toutes les resources nécéssaires pour utiliser notre servic
 
 * [Installation de portainer](./installation.md)
 * [Monitorer et gérer vos conteneurs docker](./containers.md)
-* [Déployer des agents portainer avec CwCloud](./agent.md)
+* [Déployer des agents portainer avec CWCloud](./agent.md)
 
 ## Traductions
 

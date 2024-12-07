@@ -1,6 +1,6 @@
 # Terms of service
 
-Those are the terms of services for the [SaaS version of CwCloud](https://cloud.comwork.io).
+Those are the terms of services for the [SaaS version of CWCloud](https://cloud.comwork.io).
 
 ## Translations
 
@@ -63,7 +63,7 @@ We use cookies to understand and save your preferences for future visits.
 
 We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our site, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property, or safety.
 
-## What are the 3rd parties used by CwCloud?
+## What are the 3rd parties used by CWCloud?
 
 Our front page is using static assets from the outside. Those are coming from [stripe](https://stripe.com) in order to provide graphical component that allows you to record easily payment methods and process payment only if you want and [font-awesome](https://fontawesome.com) for UI icons and fonts.
 
@@ -81,7 +81,7 @@ And finally here's the CSP[^2] available for the deployment of instances, regist
 
 You'll be able to choose the CSP[^2] and the region each time you'll make a query to create instances, object storages or registries.
 
-## What kind of services are forbidden on CwCloud?
+## What kind of services are forbidden on CWCloud?
 
 We do not intend to host the following types of services:
 
@@ -90,7 +90,7 @@ We do not intend to host the following types of services:
 * Pornographic content
 * Hate or harassment speech content
 
-## What is the minimal age required for using CwCloud?
+## What is the minimal age required for using CWCloud?
 
 The [SaaS version of cwcloud](https://cloud.comwork.io) is hosted in the EU: Our site, products and services are all directed to people who are at least 16 years old. If you are under the age of 16, per the requirements of the GDPR[^1] do not use this site.
 

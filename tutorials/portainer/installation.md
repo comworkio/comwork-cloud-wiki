@@ -7,7 +7,7 @@ This tutorial is also available in the following languages:
 
 ## Video tutorial
 
-Here you'll find a demo on how install [portainer](../../portainer.md) on CwCloud:
+Here you'll find a demo on how install [portainer](../../portainer.md) on CWCloud:
 
 [![portainer_demo](../../img/portainer_demo.png)](https://youtu.be/M29YE3w6NxA)
 

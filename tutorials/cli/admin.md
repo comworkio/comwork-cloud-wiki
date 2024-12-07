@@ -1,6 +1,6 @@
 # Admin commands
 
-The admin commands are used to control and manage your self-hosted version of CwCloud.
+The admin commands are used to control and manage your self-hosted version of CWCloud.
 
 Notes:
 * Those commands are only for admin users (if you're using a [self-hosted version](../selfhosted/README.md) for example)
