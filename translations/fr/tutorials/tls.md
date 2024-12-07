@@ -12,7 +12,7 @@ Par défault, les certificats TLS/SSL sont générés en utilisant [letsencrypt]
 Il y a une tâche cron configurée qui est supposée renouveler automatiquement les certificats après expiration :
 
 ```shell
-$ cat /etc/cron.d/ansible_letsrenew 
+cat /etc/cron.d/ansible_letsrenew 
 #Ansible: letsencrypt cron
 0 0 * */1 * root bash /root/letsrenew.sh
 ```

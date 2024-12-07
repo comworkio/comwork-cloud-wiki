@@ -127,13 +127,13 @@ Cela peux s'automatiser via le script suivant :
 ```shell
 #!/bin/bash
 
-if [[ ! $1 =~ ^[0-9\\-]+$ ]]; then
+if [[ ! $1 =~ ^[0-9\\-]+]]; then
     echo "Missing number of story"
     exit 1
 fi
 
 brancheref="main"
-if [[ $2 =~ ^[0-9\\-]+$ ]]; then
+if [[ $2 =~ ^[0-9\\-]+]]; then
     brancheref="$2"
 fi
 
@@ -283,11 +283,11 @@ echo "modif ter" >> README; git add README; git commit -m "modif ter"; git push 
 ## Commit et push de modification sur une branche
 
 ```shell
-$ git commit -am "Deleting useless file"
+git commit -am "Deleting useless file"
 [develop2 aab887a] Deleting useless file
  1 file changed, 31 deletions(-)
  delete mode 100644 .classpath
-$ git push origin <numéro de la branch ou ticket>
+git push origin <numéro de la branch ou ticket>
 Counting objects: 2, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (2/2), done.

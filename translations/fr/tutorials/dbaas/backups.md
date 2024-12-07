@@ -132,8 +132,8 @@ Pushez et puis c'est finit.
 Vous pouvez aussi exécuter la sauvegarde comme ceci (en vous connectant avec [ssh](../ssh.md)):
 
 ```shell
-$ sudo su -
-$ /root/bucket-save.sh
+sudo su -
+/root/bucket-save.sh
 ```
 
 Vous verrez le résultat sur votre bucket :

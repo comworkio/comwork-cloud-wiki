@@ -35,9 +35,9 @@ firewall_allow:
 3. Connect with [ssh](../ssh.md), then initialize your database and user:
 
 ```shell
-$ sudo su -
-$ su - postgres
-$ psql
+sudo su -
+su - postgres
+psql
 postgres=> CREATE ROLE your_username LOGIN PASSWORD 'your_password' SUPERUSER; # if you want to be a superuser
 postgres=> CREATE ROLE your_username LOGIN PASSWORD 'your_password' NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE NOREPLICATION; # if you want to only be granted on one db
 postgres=> CREATE DATABASE "your_db" WITH OWNER = your_username ENCODING = 'UTF8';
@@ -46,7 +46,7 @@ postgres=> CREATE DATABASE "your_db" WITH OWNER = your_username ENCODING = 'UTF8
 4. Then you'll be able to connect with this user like that:
 
 ```shell
-$ psql -U your_username -W your_db
+psql -U your_username -W your_db
 password:
 your_db=> CREATE TABLE my_table(my_id INT);
 your_db=> INSERT INTO my_table VALUES (1);

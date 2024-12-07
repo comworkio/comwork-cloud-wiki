@@ -98,10 +98,10 @@ Ensuite copier/coller la clef secrète ici :
 Se connecter au conteneur wordpress, installer `vim` et ouvrir le fichier `cwcloud-email-plugin.php`
 
 ```shell
-$ docker exec -it wp_app /bin/bash
-root@4d9443458fed$ apt update -y
-root@4d9443458fed$ apt install -y vim
-root@4d9443458fed$ vim wp-content/plugins/cwcloud-email-plugin-tn/cwcloud-email-plugin.php
+docker exec -it wp_app /bin/bash
+root@4d9443458fedapt update -y
+root@4d9443458fedapt install -y vim
+root@4d9443458fedvim wp-content/plugins/cwcloud-email-plugin-tn/cwcloud-email-plugin.php
 ```
 
 Ajouter la ligne suivante :

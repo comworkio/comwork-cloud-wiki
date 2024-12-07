@@ -28,7 +28,7 @@ firewall_allow:
 2. Se connecter avec [ssh](../ssh.md), et sécuriser le serveur de base de données :
 
 ```shell
-$ sudo mysql_secure_installation
+sudo mysql_secure_installation
 Set root password? [Y/n] Y
 Remove anonymous users? [Y/n] Y
 Disallow root login remotely? [Y/n] Y
@@ -38,8 +38,8 @@ Reload privilege tables now? [Y/n] Y
 3. Ensuite créer une base de données et son utilisateur que l'on pourra ré-utiliser pour se connecter depuis l'extérieur :
 
 ```shell
-$ sudo su -
-$ mysql -uroot -p # use the password you just set
+sudo su -
+mysql -uroot -p # use the password you just set
 MariaDB [(none)]> CREATE USER 'your_user'@'%' IDENTIFIED BY 'your_password';
 MariaDB [(none)]> CREATE DATABASE your_db;
 MariaDB [(none)]> use your_db;
@@ -72,7 +72,7 @@ Cette erreur indique qu'il y a trop de connexions ouvertes sur MySQL/MariaDB.
 Pour vérifier le nombre de connexions ouvertes, aller [en ssh](../ssh.md) sur l'instance et exécutez la commande suivante:
 
 ```shell
-$ netstat -tanpu |grep -i mysql|wc -l
+netstat -tanpu |grep -i mysql|wc -l
 101
 ```
 

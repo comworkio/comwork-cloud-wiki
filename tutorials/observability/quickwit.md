@@ -39,7 +39,7 @@ If you have some issue to connect with grafana:
 * Check if you have DNS issues in the logs of the grafana container:
 
 ```shell
-$ docker logs grafana -f
+docker logs grafana -f
 Error: ✗ failed to download plugin archive: Get "https://github.com/quickwit-oss/quickwit-datasource/releases/download/v0.4.5/quickwit-quickwit-datasource-0.4.5.zip": dial tcp: lookup github.com on 127.0.0.11:53: read udp 127.0.0.1:43845->127.0.0.11:53: i/o timeout
 ```
 

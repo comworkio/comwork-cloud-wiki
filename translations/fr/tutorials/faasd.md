@@ -75,8 +75,8 @@ Remarque : vous pouvez aussi utiliser les registry de Scaleway ou OVH avec [CWCl
 Voici un exemple de fonction créer à partir d'un template Python3 :
 
 ```shell
-$ faas-cli new hello --lang python3
-$ ls -l hello*
+faas-cli new hello --lang python3
+ls -l hello*
 -rw------- 1 ineumann staff 157 Sep  3 10:05 hello.yml
 
 hello:
@@ -115,20 +115,20 @@ functions:
 Ensuite builder et déployer :
 
 ```shell
-$ faas-cli up -f ./hello.yml
+faas-cli up -f ./hello.yml
 ```
 
 Si vous n'êtes pas sur une machine x86/amd64 (par exemple un mac ayant un processeur Apple Silicon[^1]), vous pouvez utiliser ces commandes à la place :
 
 ```shell
-$ faas-cli publish -f ./hello.yml --platforms linux/amd64
-$ faas-cli deploy -f ./hello.yml
+faas-cli publish -f ./hello.yml --platforms linux/amd64
+faas-cli deploy -f ./hello.yml
 ```
 
 Vous pourrez ensuite invoquer votre fonction :
 
 ```shell
-$ curl -X POST "https://my-faasd-628ufo.faasd.comwork.info/function/hello" -d "Idriss"
+curl -X POST "https://my-faasd-628ufo.faasd.comwork.info/function/hello" -d "Idriss"
 Hello Idriss!
 ```
 

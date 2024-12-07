@@ -16,7 +16,7 @@ Here, you'll find a helmchart to install it on Kubernetes: https://gitlab.comwor
 You can also directly use the [CLI](../../cli/README.md) like this:
 
 ```shell
-$ cwc bootstrap
+cwc bootstrap
 ```
 
 Note: the CLI will install on the cluster you're already connected via the `~/.kube/config` file.

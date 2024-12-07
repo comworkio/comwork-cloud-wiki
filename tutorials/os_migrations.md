@@ -8,8 +8,8 @@ This tutorial is also available in the following languages:
 ## Check the OS release
 
 ```shell
-$ cat /etc/os-release
-$ cat /etc/redhat-release
+cat /etc/os-release
+cat /etc/redhat-release
 ```
 
 ## CentOS 8 Stream to Almalinux 8
@@ -19,14 +19,14 @@ _Between 30 min and 1 hour._
 Every step has to be run with the `root` user.
 
 ```shell
-$ curl -O https://raw.githubusercontent.com/AlmaLinux/almalinux-deploy/master/almalinux-deploy.sh
-$ bash almalinux-deploy.sh
+curl -O https://raw.githubusercontent.com/AlmaLinux/almalinux-deploy/master/almalinux-deploy.sh
+bash almalinux-deploy.sh
 ```
 
 If you have this error:
 
 ```shell
-$ bash almalinux-deploy.sh
+bash almalinux-deploy.sh
 Check root privileges                                                 OK
 Use '-d or --downgrade' option to allow downgrade from CentOS Stream  ERROR
 ```
@@ -34,7 +34,7 @@ Use '-d or --downgrade' option to allow downgrade from CentOS Stream  ERROR
 Run this instead:
 
 ```shell
-$ bash almalinux-deploy.sh -d
+bash almalinux-deploy.sh -d
 ```
 
 Once it's finished you should have this message:
@@ -48,16 +48,16 @@ Migration to AlmaLinux is completed
 Then reboot:
 
 ```shell
-$ reboot
+reboot
 ```
 
 Then check the result:
 
 ```shell
-$ cat /etc/redhat-release
+cat /etc/redhat-release
 AlmaLinux release 8.10 (Cerulean Leopard)
-$ dnf update -y
-$ dnf upgrade -y
+dnf update -y
+dnf upgrade -y
 ```
 
 ## AlmaLinux 8 to AlmaLinux 9
@@ -67,16 +67,16 @@ _Between 1 hour and 3 hour._
 Every step has to be run with the `root` user.
 
 ```shell
-$ curl https://repo.almalinux.org/elevate/testing/elevate-testing.repo -o /etc/yum.repos.d/elevate-testing.repo
-$ rpm --import https://repo.almalinux.org/elevate/RPM-GPG-KEY-ELevate
-$ dnf install -y leapp-upgrade leapp-data-almalinux
+curl https://repo.almalinux.org/elevate/testing/elevate-testing.repo -o /etc/yum.repos.d/elevate-testing.repo
+rpm --import https://repo.almalinux.org/elevate/RPM-GPG-KEY-ELevate
+dnf install -y leapp-upgrade leapp-data-almalinux
 ```
 
 Run a `preupgrade` which will check if everything will be ok:
 
 ```shell
-$ leapp preupgrade
-$ cat /var/log/leapp/leapp-report.txt # check the report
+leapp preupgrade
+cat /var/log/leapp/leapp-report.txt # check the report
 ```
 
 If you find `high (inhibitor)` issues you'll have to fix it. You'll find a list of the common error [here](#leapp-common-errors).
@@ -84,7 +84,7 @@ If you find `high (inhibitor)` issues you'll have to fix it. You'll find a list 
 Once it's fixed, run the upgrade again:
 
 ```shell
-$ leapp upgrade
+leapp upgrade
 ```
 
 Then you'll have a report like that:
@@ -118,7 +118,7 @@ Before continuing consult the full report:
 Open a web/kvm console of your virtual machine in order to access to the grup menu and restart:
 
 ```shell
-$ reboot
+reboot
 ```
 
 Then, __quickly__ select the `ELevate-Upgrade-Initramfs` entry:
@@ -130,17 +130,17 @@ Then let the upgrade continue on the kvm/web console, the reboot will be automat
 Once it's finished, open a new SSH connection and check:
 
 ```shell
-$ cat /etc/redhat-release
+cat /etc/redhat-release
 AlmaLinux release 9.3 (Shamrock Pampas Cat)
-$ dnf update -y
-$ dnf upgrade -y
+dnf update -y
+dnf upgrade -y
 ```
 
 Run those commands to fix the ansible pipeline[^1]:
 
 ```shell
-$ pip install hvac
-$ dnf install snapd -y
+pip install hvac
+dnf install snapd -y
 ```
 
 [^1]: once everything is upgraded, you should update the `common` ansible role to automatize this.
@@ -156,7 +156,7 @@ docker_repo_install: true
 You might have to update your ansible role to replace the `docker-compose` command by `docker compose` and remove all containers in order to recreate them:
 
 ```shell
-$ docker ps -a|awk '{system ("docker rm -f "$1)}'
+docker ps -a|awk '{system ("docker rm -f "$1)}'
 ```
 
 ## Leapp common errors
@@ -198,8 +198,8 @@ Key: XXXXX
 You have to fix it, like that:   
 
 ```shell
-$ mkdir /opt/network-scripts/
-$ mv /sbin/if*-local /opt/network-scripts/
+mkdir /opt/network-scripts/
+mv /sbin/if*-local /opt/network-scripts/
 ```
 
 Create the `/etc/NetworkManager/dispatcher.d/20-if-local` file with the following content: 
@@ -233,9 +233,9 @@ esac
 Set the permissions on the /etc/NetworkManager/dispatcher.d/20-if-local script: 
 
 ```shell
-$ chown root:root /etc/NetworkManager/dispatcher.d/20-if-local
-$ chmod +x /etc/NetworkManager/dispatcher.d/20-if-local
-$ restorecon /etc/NetworkManager/dispatcher.d/20-if-local
+chown root:root /etc/NetworkManager/dispatcher.d/20-if-local
+chmod +x /etc/NetworkManager/dispatcher.d/20-if-local
+restorecon /etc/NetworkManager/dispatcher.d/20-if-local
 ```
 
 If you require pre-up or pre-down events, create a symbolic link in the corresponding dispatcher directory:   

@@ -132,8 +132,8 @@ Push-it and that's it.
 You also run the backup manually this way (on your instance with [ssh](../ssh.md)):
 
 ```shell
-$ sudo su -
-$ /root/bucket-save.sh
+sudo su -
+/root/bucket-save.sh
 ```
 
 You'll see the result in your bucket:

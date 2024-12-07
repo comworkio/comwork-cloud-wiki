@@ -18,8 +18,8 @@ C'est tout à fait normal, l'instance n'est pas encore prête et il va falloir s
 **2/** Exécuter les commandes suivantes dans la session SSH :
 
 ```shell
-$ sudo su -
-$ docker-compose -f docker-compose-mastodon.yml run --rm shell bundle exec rake secret
+sudo su -
+docker-compose -f docker-compose-mastodon.yml run --rm shell bundle exec rake secret
 ```
 
 Changer la valeur de la variable suivante avec celle obtenue via la commande précédente dans votre fichier d'environnement ansible (`env/{ instance_hash }.yml`) :
@@ -31,8 +31,8 @@ mastodon_secret_key: changeit
 **3/** Executez la commande suivante dans la session SSH :
 
 ```shell
-$ sudo su -
-$ docker-compose -f docker-compose-mastodon.yml run --rm shell bundle exec rake mastodon:webpush:generate_vapid_key
+sudo su -
+docker-compose -f docker-compose-mastodon.yml run --rm shell bundle exec rake mastodon:webpush:generate_vapid_key
 ```
 
 Changer la valeur des variables suivante avec celles obtenues via la commande précédente (prendre les valeurs à droite du signe `=`) dans votre fichier d'environnement ansible (`env/{ instance_hash }.yml`) :
@@ -57,8 +57,8 @@ Pusher sur la branche `main` de votre repo gitlab.
 **6/** Sur la même session SSH ouverte précédemment, lancer cette commande rake pour donner les droit d'administrateur à l'utilisateur que vous venez juste d'enregistrer :
 
 ```shell
-$ sudo su -
-$ docker-compose -f docker-compose-mastodon.yml run -e USERNAME=YOUR_USERNAME --rm shell bundle exec rake comwork:set_admin
+sudo su -
+docker-compose -f docker-compose-mastodon.yml run -e USERNAME=YOUR_USERNAME --rm shell bundle exec rake comwork:set_admin
 ```
 
 Remplacer `YOUR_USERNAME` par celui que vous avez choisi.

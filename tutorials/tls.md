@@ -12,7 +12,7 @@ By default, the TLS/SSL cerficate are generated using [letsencrypt](https://lets
 There's a crontab set which is supposed automatically renew your certificate:
 
 ```shell
-$ cat /etc/cron.d/ansible_letsrenew 
+cat /etc/cron.d/ansible_letsrenew 
 #Ansible: letsencrypt cron
 0 0 * */1 * root bash /root/letsrenew.sh
 ```

@@ -27,7 +27,7 @@ firewall_allow:
 2. Connect with [ssh](../ssh.md), then secure your database:
 
 ```shell
-$ sudo mysql_secure_installation
+sudo mysql_secure_installation
 Set root password? [Y/n] Y
 Remove anonymous users? [Y/n] Y
 Disallow root login remotely? [Y/n] Y
@@ -37,8 +37,8 @@ Reload privilege tables now? [Y/n] Y
 3. Then create a database and a user that will be able to connect to this database from the outside:
 
 ```shell
-$ sudo su -
-$ mysql -uroot -p # use the password you just set
+sudo su -
+mysql -uroot -p # use the password you just set
 MariaDB [(none)]> CREATE USER 'your_user'@'%' IDENTIFIED BY 'your_password';
 MariaDB [(none)]> CREATE DATABASE your_db;
 MariaDB [(none)]> use your_db;
@@ -71,7 +71,7 @@ This errors indicates that there is too many opened connection to the MySQL/Mari
 In order to get the number of opened connections, connect [with ssh](../ssh.md) on the instance and run the following command:
 
 ```shell
-$ netstat -tanpu |grep -i mysql|wc -l
+netstat -tanpu |grep -i mysql|wc -l
 101
 ```
 

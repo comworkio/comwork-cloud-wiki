@@ -15,7 +15,7 @@ Une fois que l'instance a été provisionnée :
 * Lancez cette commande :
 
 ```shell
-$ docker exec sharelatex grunt user:create-admin --email=youremail@yourdomain.com
+docker exec sharelatex grunt user:create-admin --email=youremail@yourdomain.com
 ```
 
 Vous obtiendrez cette sortie :

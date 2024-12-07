@@ -77,8 +77,8 @@ Note: you can use registries on Scaleway or OVH using [CWCloud](../storage.md)
 Here's an exemple of function created from template in Python3:
 
 ```shell
-$ faas-cli new hello --lang python3
-$ ls -l hello*
+faas-cli new hello --lang python3
+ls -l hello*
 -rw------- 1 ineumann staff 157 Sep  3 10:05 hello.yml
 
 hello:
@@ -117,20 +117,20 @@ functions:
 Then build and deploy:
 
 ```shell
-$ faas-cli up -f ./hello.yml
+faas-cli up -f ./hello.yml
 ```
 
 If you're not on a x86/amd64 computer (like an Apple Silicon[^1] for example), use thoses commands instead:
 
 ```shell
-$ faas-cli publish -f ./hello.yml --platforms linux/amd64
-$ faas-cli deploy -f ./hello.yml
+faas-cli publish -f ./hello.yml --platforms linux/amd64
+faas-cli deploy -f ./hello.yml
 ```
 
 Then you'll be able to invoke your function:
 
 ```shell
-$ curl -X POST "https://my-faasd-628ufo.faasd.comwork.info/function/hello" -d "Idriss"
+curl -X POST "https://my-faasd-628ufo.faasd.comwork.info/function/hello" -d "Idriss"
 Hello Idriss!
 ```
 

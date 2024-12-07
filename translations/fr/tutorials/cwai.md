@@ -36,7 +36,7 @@ Bien entendu, l'intérêt principal reste de pouvoir interagir avec ces modèles
 Voici comment lister tous les modèles disponibles :
 
 ```shell
-$ curl -X 'GET' 'https://cloud-api.comwork.io/v1/ai/models' -H 'accept: application/json' -H 'X-Auth-Token: XXXXXX'
+curl -X 'GET' 'https://cloud-api.comwork.io/v1/ai/models' -H 'accept: application/json' -H 'X-Auth-Token: XXXXXX'
 ```
 
 Résultat :
@@ -88,7 +88,7 @@ Notes :
 Vous pouvez utiliser la [CLI `cwc`](./cli/README.md) qui propose une commande `ai` :
 
 ```shell
-$ cwc ai
+cwc ai
 This command lets you call the CWAI endpoints
 
 Usage:
@@ -108,7 +108,7 @@ Use "cwc ai [command] --help" for more information about a command.
 ### Lister les modèles disponibles
 
 ```shell
-$ cwc ai models
+cwc ai models
 Models
 [gpt2 nlptownsentiment nltksentiment textblobsentiment mock]
 ```
@@ -116,7 +116,7 @@ Models
 ### Envoyer un prompt à un des modèles
 
 ```shell
-$ cwc ai prompt
+cwc ai prompt
 Error: required flag(s) "message", "model" not set
 Usage:
   cwc ai prompt [flags]
@@ -125,7 +125,7 @@ Flags:
   -h, --help             help for prompt
   -m, --message string   The message input
   -t, --model string     The chosen model
-$ cwc ai prompt --model nltksentiment --message "This is bad"
+cwc ai prompt --model nltksentiment --message "This is bad"
 Status	Response	Score
 ok	[The predicted sentiment is: negative, score: -0.5423]	-0.5423
 ```

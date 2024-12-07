@@ -15,7 +15,7 @@ Once the creation of your overleaf's instance is finished:
 * Run this command:
 
 ```shell
-$ docker exec sharelatex grunt user:create-admin --email=youremail@yourdomain.com
+docker exec sharelatex grunt user:create-admin --email=youremail@yourdomain.com
 ```
 
 You'll have this output:

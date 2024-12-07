@@ -59,7 +59,7 @@ cwc configure
 Tapez sur ENTER si vous voulez conserver la valeur actuelle pour chacun des paramètres :
 
 ```shell
-$ cwc configure
+cwc configure
 Default endpoint [https://cloud-api.comwork.io]: 
 Default provider [ovh]: 
 Default region [UK1]: 
