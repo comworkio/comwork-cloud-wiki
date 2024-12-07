@@ -16,8 +16,16 @@ Un helmchart est disponible ici : https://gitlab.comwork.io/oss/cwcloud/cwcloud-
 
 Vous pouvez aussi utiliser directement la [CLI](../../cli/README.md) comme ceci :
 
+Si vous souhaitez ré-installer :
+
 ```shell
-kubectl delete ns cwcloud # si vous souhaitez ré-installer
+rm -rf cwcloud
+kubectl delete ns cwcloud
+```
+
+Puis :
+
+```shell
 cwc bootstrap
 ```
 
