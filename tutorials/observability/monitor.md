@@ -32,3 +32,8 @@ Notes:
 * You can setup a basic authentication and custom headers
 * For the `POST` and `PUT` methods you can configure the request's body
 * You can also use the cli to create monitors, see [this documentation](../cli/public.md#monitors)
+
+## Indexing Prometheus metrics into Quickwit
+
+* In order to install Quickwit via CWCloud, go read [this tutorial](./quickwit.md)
+* In order to configure Vector and Quickwit to scrap and index the Prometheus metrics, see [this blogpost](https://www.comwork.io/blog/quickwit-metrics)

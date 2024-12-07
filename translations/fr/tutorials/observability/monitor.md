@@ -32,3 +32,8 @@ Notes :
 * Vous pouvez configurer une authentification basic auth et des headers
 * Pour les méthodes `POST` et `PUT` vous pouvez aussi configurer le body de la requête
 * Vous pouvez utiliser la CLI pour créer les moniteurs, voir [cette documentation](../cli/public.md#moniteurs)
+
+## Récupération des métriques Prometheus dans Quickwit
+
+* Pour installer Quickwit via CWCloud, lire [ce tutoriel](./quickwit.md)
+* Pour configurer Vector et Quickwit pour récupérer et indexer les métriques Prometheus, lire [ce blogpost](https://www.comwork.io/blog/quickwit-metrics)
