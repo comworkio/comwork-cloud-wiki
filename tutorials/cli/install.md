@@ -65,7 +65,7 @@ Beware of checking if the version is available in the [releases](https://gitlab.
 #### Windows x86 (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.13.3/downloads/cwc_1.13.3_windows_amd64.zip" -o "cwc_cli.zip"
+curl -L "https://gitlab.comwork.io/oss/cwcloud/cwc/-/releases/v1.13.2/downloads/cwc_1.13.3_windows_amd64.zip" -o "cwc_cli.zip"
 unzip cwc_cli.zip 
 cd 
 cwc.exe
@@ -76,7 +76,7 @@ Beware of checking if the version is available in the [releases](https://gitlab.
 #### Windows arm (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwc/cwc/-/releases/v1.13.3/downloads/cwc_1.13.3_windows_arm64.zip" -o "cwc_cli.zip"
+curl -L "https://gitlab.comwork.io/oss/cwcloud/cwc/-/releases/v1.13.2/downloads/cwc_1.13.3_windows_arm64.zip" -o "cwc_cli.zip"
 unzip cwc_cli.zip 
 cd cwc_cli
 cwc.exe
