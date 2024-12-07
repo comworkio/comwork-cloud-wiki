@@ -34,6 +34,9 @@ Then, in order to access to the services (to run in separate shell sessions):
 
 ```shell
 kubectl -n cwcloud port-forward svc/comwork-cloud-api 8000:8000
+```
+
+```shell
 kubectl -n cwcloud port-forward svc/comwork-cloud-ui 3000:3000
 ```
 
