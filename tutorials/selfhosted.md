@@ -20,7 +20,7 @@ Note: the CLI will install on the cluster you're already connected via the `~/.k
 Then, in order to access to the services:
 
 ```shell
-kubectl -n cwcloud port-forward svc/comwork-cloud-api 8000:8000 & disown
+kubectl -n cwcloud port-forward svc/comwork-cloud-api 8000:8000
 kubectl -n cwcloud port-forward svc/comwork-cloud-api 3000:3000
 ```
 
