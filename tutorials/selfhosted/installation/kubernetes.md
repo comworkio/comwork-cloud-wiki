@@ -11,6 +11,12 @@ This tutorial is also available in the following languages:
 
 Here, you'll find a helmchart to install it on Kubernetes: https://gitlab.comwork.io/oss/cwcloud/cwcloud-helm
 
+* The field `db.password` is optional, it's creating a `${releaseName}-cwcloud-chart-db-env-secret` with the `POSTGRES_PASSWORD` key. If you want to use something like`vault or sealedsecret, you have to create a secret with this name and containing this key.
+* If you prefer to use an external database, you can set the flag `db.enabled` to `false`.
+* In order to enable ingress for the api you have to set the flag `api.ingress.enabled` to `true`.
+* In order to enable ingress for the ui you have to set the flag `ui.ingress.enabled` to `true`.
+* If you want to enable opentelemetry with the API, you have to set the flag `otel.enabled` to `true` and replace the endpoint with `otel.endpoint`.
+
 ### Using the CLI
 
 You can also directly use the [CLI](../../cli/README.md) (if you need to install it first, go read [this tutorial](../../cli/install.md)) like this:
