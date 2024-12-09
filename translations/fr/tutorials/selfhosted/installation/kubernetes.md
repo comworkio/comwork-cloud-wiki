@@ -34,6 +34,7 @@ Quelques options supplémentaires sont disponibles :
 cwc bootstrap --keepdir # si vous souhaitez garder le dossier helm téléchargé sans l'écraser
 cwc bootstrap --values my-values.yaml # si vous souhaitez surcharger les valeurs passés au helmchart
 cwc boostrap --namespace cwc # si vous souhaitez installer sur un autre namespace
+cwc bootstrap --recreate-ns # si vous voulez écraser le namespace et le recréer
 ```
 
 Pour désinstaller :

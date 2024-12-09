@@ -35,6 +35,7 @@ Quelques options supplémentaires sont disponibles :
 cwc bootstrap --keepdir # if you want to keep the downloaded helm directory
 cwc bootstrap --values my-values.yaml # if you need to override the default helm values
 cwc bootstrap --namespace cwc # if you want to change the namespace
+cwc bootstrap --recreate-ns # if you want to delete and recreate the namespace
 ```
 
 If you want to uninstall:
