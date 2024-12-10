@@ -27,7 +27,9 @@ cwc bootstrap
 
 Note: the CLI will install on the cluster you're already connected via the `~/.kube/config` file.
 
-There are several optional flags available:
+There's some optional flags available:
+
+Quelques options supplémentaires sont disponibles :
 
 ```shell
 cwc bootstrap --keepdir # if you want to keep the downloaded helm directory
@@ -36,25 +38,6 @@ cwc bootstrap --namespace cwc # if you want to change the namespace
 cwc bootstrap --recreate-ns # if you want to delete and recreate the namespace
 ```
 
-If you want to use a different repository for installation, you can use the `configure` subcommand:
-
-```shell
-cwc bootstrap configure --repo-url=https://custom-repo.git # Use a custom repository URL
-cwc bootstrap configure --repo-url=https://custom-repo.git --branch=dev-branch # Specify a different branch
-cwc bootstrap configure --repo-url=https://custom-repo.git --username=myuser --password=mypassword # Use authentication for private repositories
-```
-
-You can also combine these flags with other bootstrap options:
-
-```shell
-# Full example with multiple configurations
-cwc bootstrap configure --repo-url=https://custom-repo.git \
-                        --branch=dev \
-                        --username=myuser \
-                        --password=mypassword \
-                        --namespace=my-custom-namespace \
-                        --release=my-custom-release
-```
 If you want to uninstall:
 
 ```shell

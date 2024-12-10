@@ -37,26 +37,6 @@ cwc boostrap --namespace cwc # si vous souhaitez installer sur un autre namespac
 cwc bootstrap --recreate-ns # si vous voulez écraser le namespace et le recréer
 ```
 
-Si vous souhaitez utiliser un dépôt différent pour l'installation, vous pouvez utiliser la sous-commande `configure` :
-
-```shell
-cwc bootstrap configure --repo-url=https://mon-depot-personnalise.git # Utiliser une URL de dépôt personnalisée
-cwc bootstrap configure --repo-url=https://mon-depot-personnalise.git --branch=branche-dev # Spécifier une branche différente
-cwc bootstrap configure --repo-url=https://mon-depot-personnalise.git --username=mon-utilisateur --password=mon-mot-de-passe # Utiliser l'authentification pour les dépôts privés
-```
-
-Vous pouvez également combiner ces options avec d'autres options de bootstrap :
-
-```shell
-# Exemple complet avec plusieurs configurations
-cwc bootstrap configure --repo-url=https://mon-depot-personnalise.git \
-                        --branch=dev \
-                        --username=mon-utilisateur \
-                        --password=mon-mot-de-passe \
-                        --namespace=mon-namespace-personnalise \
-                        --release=ma-release-personnalisee
-```
-
 Pour désinstaller :
 
 ```shell
