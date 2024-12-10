@@ -31,6 +31,7 @@ Note: la CLI installera sur le cluster avec lequel vous êtes connectés via le 
 Quelques options supplémentaires sont disponibles :
 
 ```shell
+cwc bootstrap --openshift # si vous installez sur openshift
 cwc bootstrap --keepdir # si vous souhaitez garder le dossier helm téléchargé sans l'écraser
 cwc bootstrap --values my-values.yaml # si vous souhaitez surcharger les valeurs passés au helmchart
 cwc boostrap --namespace cwc # si vous souhaitez installer sur un autre namespace

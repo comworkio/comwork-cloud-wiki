@@ -32,6 +32,7 @@ There's some optional flags available:
 Quelques options supplémentaires sont disponibles :
 
 ```shell
+cwc boostrap --openshift # if you're installing on openshift
 cwc bootstrap --keepdir # if you want to keep the downloaded helm directory
 cwc bootstrap --values my-values.yaml # if you need to override the default helm values
 cwc bootstrap --namespace cwc # if you want to change the namespace
