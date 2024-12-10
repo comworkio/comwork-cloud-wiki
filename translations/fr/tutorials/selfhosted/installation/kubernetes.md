@@ -35,6 +35,7 @@ cwc bootstrap --keepdir # si vous souhaitez garder le dossier helm téléchargé
 cwc bootstrap --values my-values.yaml # si vous souhaitez surcharger les valeurs passés au helmchart
 cwc boostrap --namespace cwc # si vous souhaitez installer sur un autre namespace
 cwc bootstrap --recreate-ns # si vous voulez écraser le namespace et le recréer
+cwc bootstrap --recreate-ns --openshift # si vous souhaitez utiliser oc à la place de kubectl
 ```
 
 Pour désinstaller :
@@ -47,6 +48,7 @@ Et pour accéder aux services :
 
 ```shell
 cwc bootstrap pfw
+cwc bootstrap pfw --openshift # si vous souhaitez utiliser oc à la place de kubectl
 ```
 
 Vous pourrez ensuite vous connecter via un navigateur sur http://localhost:3000

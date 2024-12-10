@@ -36,6 +36,7 @@ cwc bootstrap --keepdir # if you want to keep the downloaded helm directory
 cwc bootstrap --values my-values.yaml # if you need to override the default helm values
 cwc bootstrap --namespace cwc # if you want to change the namespace
 cwc bootstrap --recreate-ns # if you want to delete and recreate the namespace
+cwc bootstrap --recreate-ns --openshift # if you want to use oc instead of kubectl
 ```
 
 If you want to uninstall:
@@ -48,6 +49,7 @@ Then, in order to access to the services:
 
 ```shell
 cwc bootstrap pfw
+cwc bootstrap pfw --openshift # if you want to use oc instead of kubectl
 ```
 
 You'll be able to open access to the GUI through a web browser using this URL: http://localhost:3000
