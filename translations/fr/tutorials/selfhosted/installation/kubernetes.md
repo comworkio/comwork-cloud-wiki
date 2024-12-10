@@ -42,6 +42,8 @@ Pour désinstaller :
 
 ```shell
 cwc bootstrap uninstall
+cwc bootstrap uninstall --force # force la suppression de toutes les resources sur le namespace (pods, deployments, etc)
+cwc bootstrap uninstall --force --openshift # si vous souhaitez utiliser oc à la place de kubectl
 ```
 
 Et pour accéder aux services :
