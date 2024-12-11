@@ -7,7 +7,9 @@ FROM node:${NODE_VERSION} AS doc_builder
 RUN npx create-docusaurus@2.4.3 comwork-cloud-wiki classic
 WORKDIR /comwork-cloud-wiki
 
-RUN rm -rf docs/* && rm -rf blog/*
+RUN rm -rf docs/* && \
+    rm -rf blog/* && \
+    npm i -g pnpm
 
 COPY .docker/docusaurus/docusaurus.config.js .
 COPY img/comwork_logo.png static/img/comwork_logo.png
@@ -19,12 +21,12 @@ COPY . docs/
 
 RUN rm -rf docs/ci && \
     apk add curl && \
-    npm i --save docusaurus-plugin-matomo && \
-    npm i --save @docusaurus/plugin-client-redirects@2.4.3 && \
-    npm i --save docusaurus-lunr-search@2.1.15 && \
-    npm run swizzle docusaurus-lunr-search SearchBar -- --danger && \
-    npm i  && \
-    npm run build
+    pnpm i --save docusaurus-plugin-matomo && \
+    pnpm i --save @docusaurus/plugin-client-redirects@2.4.3 && \
+    pnpm i --save docusaurus-lunr-search@2.1.15 && \
+    pnpm run swizzle docusaurus-lunr-search SearchBar -- --danger && \
+    pnpm i  && \
+    pnpm run build
 
 # Stage run
 FROM nginx:${NGINX_VERSION} AS doc
