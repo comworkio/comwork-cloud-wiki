@@ -28,7 +28,7 @@ brew upgrade cwc
 #### Linux x86 (64 bit)
 
 ```shell
-version="1.13.12"
+version="1.13.13"
 curl -L "https://gitlab.comwork.io/oss/cwcloud/cwc/-/releases/v${version}/downloads/cwc_${version}_linux_amd64.tar.gz" -o "cwc_cli.tar.gz"
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli 
 sudo ./cwc_cli/install.sh
@@ -39,7 +39,7 @@ Beware of checking if the version is available in the [releases](https://gitlab.
 #### Linux arm (64 bit)
 
 ```shell
-version="1.13.12"
+version="1.13.13"
 curl -L "https://gitlab.comwork.io/oss/cwcloud/cwc/-/releases/v${version}/downloads/cwc_${version}_linux_arm64.tar.gz" -o "cwc_cli.tar.gz" 
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli 
 sudo ./cwc_cli/install.sh
@@ -52,7 +52,7 @@ Beware of checking if the version is available in the [releases](https://gitlab.
 #### MacOS x86/arm (64 bit)
 
 ```shell
-version="1.13.12"
+version="1.13.13"
 curl -L "https://gitlab.comwork.io/oss/cwcloud/cwc/-/releases/v${version}/downloads/cwc_${version}_darwin_all.tar.gz" -o "cwc_cli.tar.gz"
 mkdir cwc_cli && tar -xf cwc_cli.tar.gz -C cwc_cli     
 sudo ./cwc_cli/install.sh
@@ -65,7 +65,7 @@ Beware of checking if the version is available in the [releases](https://gitlab.
 #### Windows x86 (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwcloud/cwc/-/releases/v1.13.12/downloads/cwc_1.13.12_windows_amd64.zip" -o "cwc_cli.zip"
+curl -L "https://gitlab.comwork.io/oss/cwcloud/cwc/-/releases/v1.13.13/downloads/cwc_1.13.13_windows_amd64.zip" -o "cwc_cli.zip"
 unzip cwc_cli.zip 
 cd 
 cwc.exe
@@ -76,7 +76,7 @@ Beware of checking if the version is available in the [releases](https://gitlab.
 #### Windows arm (64 bit)
 
 ```shell
-curl -L "https://gitlab.comwork.io/oss/cwcloud/cwc/-/releases/v1.13.12/downloads/cwc_1.13.12_windows_arm64.zip" -o "cwc_cli.zip"
+curl -L "https://gitlab.comwork.io/oss/cwcloud/cwc/-/releases/v1.13.13/downloads/cwc_1.13.13_windows_arm64.zip" -o "cwc_cli.zip"
 unzip cwc_cli.zip 
 cd cwc_cli
 cwc.exe
