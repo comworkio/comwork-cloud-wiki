@@ -1,7 +1,3 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-
-/** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'Comwork cloud',
     tagline: 'The cloud that bring you the gitops power again',
@@ -11,33 +7,45 @@ const config = {
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
 
-    plugins:
-        [[require.resolve('docusaurus-lunr-search'), {
-            languages: ['en', 'fr']
-        }],
-        [require.resolve('@docusaurus/plugin-client-redirects'), {
-            redirects: [
-                {
-                    from: '/docs/tutorials/api/cli',
-                    to: '/docs/tutorials/cli/'
-                },
-                {
-                    from: '/docs/tutorials/web_console',
-                    to: '/docs/tutorials/console'
-                },
-                {
-                    from: '/docs/onprem',
-                    to: '/docs/selfhosted'
-                },
-                {
-                    from: '/docs/tutorials/onprem',
-                    to: '/docs/tutorials/selfhosted'
-                },
-                {
-                    from: '/docs/tutorials/translations/fr/onprem',
-                    to: '/docs/translations/fr/tutorials/selfhosted'
-                },
-                {
+    plugins: [
+        [
+            '@easyops-cn/docusaurus-search-local',
+            {
+                hashed: true,
+                language: ["en", "fr"],
+                docsRouteBasePath: "/docs",
+                indexDocs: true,
+                indexPages: false,
+                highlightSearchTermsOnTargetPage: true,
+                removeDefaultStopWordFilter: true,
+                removeDefaultStemmer: true,
+            },
+        ],
+        [
+            '@docusaurus/plugin-client-redirects',
+            {
+                redirects: [
+                    {
+                        from: '/docs/tutorials/api/cli',
+                        to: '/docs/tutorials/cli/'
+                    },
+                    {
+                        from: '/docs/tutorials/web_console',
+                        to: '/docs/tutorials/console'
+                    },
+                    {
+                        from: '/docs/onprem',
+                        to: '/docs/selfhosted'
+                    },
+                    {
+                        from: '/docs/tutorials/onprem',
+                        to: '/docs/tutorials/selfhosted'
+                    },
+                    {
+                        from: '/docs/tutorials/translations/fr/onprem',
+                        to: '/docs/translations/fr/tutorials/selfhosted'
+                    },
+                    {
                     from: '/docs/tutorials/quickwit',
                     to: '/docs/tutorials/observability/quickwit'
                 },
@@ -54,25 +62,26 @@ const config = {
                     to: '/docs/translations/fr/tutorials/observability/imalive'
                 },
                 {
-                    from: '/docs/tutorials/translations/fr/console/public/billing',
-                    to: '/docs/translations/fr/tutorials/console/public/billing'
-                },
-                {
-                    from: '/docs/tutorials/fr',
-                    to: '/docs/translations/fr/tutorials'
-                },
-                {
-                    from: '/docs/fr',
-                    to: '/docs/translations/fr'
-                },
-                {
-                    from: '/fr',
-                    to: '/docs/translations/fr'
-                }
-            ]
-        }],
-        require.resolve('docusaurus-plugin-matomo')
+                        from: '/docs/tutorials/translations/fr/console/public/billing',
+                        to: '/docs/translations/fr/tutorials/console/public/billing'
+                    },
+                    {
+                        from: '/docs/tutorials/fr',
+                        to: '/docs/translations/fr/tutorials'
+                    },
+                    {
+                        from: '/docs/fr',
+                        to: '/docs/translations/fr'
+                    },
+                    {
+                        from: '/fr',
+                        to: '/docs/translations/fr'
+                    }
+                ]
+            }
         ],
+        'docusaurus-plugin-matomo'
+    ],
         
     i18n: {
         defaultLocale: 'en',
@@ -220,8 +229,8 @@ const config = {
                 copyright: `Copyright © ${new Date().getFullYear()} Comworkio SASU.`,
             },
             prism: {
-                theme: lightCodeTheme,
-                darkTheme: darkCodeTheme,
+                theme: require('prism-react-renderer').themes.github,
+                darkTheme: require('prism-react-renderer').themes.dracula,
             },
         }),
 };
