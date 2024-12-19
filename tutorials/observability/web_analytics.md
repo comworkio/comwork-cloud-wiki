@@ -1,31 +1,31 @@
 # Analytics
 
-## Traductions
+## Translations
 
-Ce tutoriel est également disponible dans les langues suivantes :
-* [English 🇬🇧](../../../../tutorials/observability/web-analytics.md)
+This tutorial is also available in the following languages:
+* [Français 🇫🇷](../../translations/fr/tutorials/observability/web_analytics.md)
 
-## Objectifs
+## Purpose
 
-Vous avez l'habitude de collecter vos données de site web via Google Analytics ou Matomo ?
+You're used to track some Analytics from your various website using something like Google Analytics or Matomo?
 
-Dans ce tutoriel nous verrons comment nous pouvons utiliser CWCloud à la place de ce type d'outil, associé à une stack d'observabilité telle que [Grafana et Quickwit](./quickwit.md).
+In this tutorial, we'll see how to use CWCloud in order to easily track your website analytics using CWCloud and an observability system like [Grafana and Quickwit](./quickwit.md).
 
-Vous pouvez toujours choisir de déployer Matomo avec CWCloud, dans ce cas vous pourrez allez voir [ce tutoriel](../wpaas_matomo.md).
+You can still choose to use Matomo deployed on CWCloud instead, you can see [this tutorial](../wpaas_matomo.md) in this case.
 
 ## Installer le tracker dans votre site
 
 Les deux méthodes qui vont suivre doivent être implémentées côté frontend client.
 
-### Via l'API dans un script
+### Using a RESTful endpoint in a script
 
-Dans un script qui s'exécute côté client, vous pouvez invoquer le endpoint suivant :
+In a script executed on the client browser, you can invoke this endpoint:
 
 ```
 GET https://cloud-api.comwork.io/v1/tracker/json/{mywebsite}
 ```
 
-Le résultat va ressembler à ceci :
+The result should looks like:
 
 ```json
 {
@@ -60,9 +60,9 @@ Le résultat va ressembler à ceci :
 }
 ```
 
-### Via une image
+### Using an image
 
-Il est possible de renvoyer une image afin de directement mettre ceci dans votre code HTML :
+It's possible to return an image in order to directly put this in your HTML code:
 
 ```html
 <img src="https://cloud-api.comwork.io/v1/tracker/json/{mywebsite}" style="display: none;"></img>

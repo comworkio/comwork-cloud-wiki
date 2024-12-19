@@ -1,31 +1,31 @@
 # Analytics
 
-## Translations
+## Traductions
 
-This tutorial is also available in the following languages:
-* [Français 🇫🇷](../../translations/fr/tutorials/observability/web-analytics.md)
+Ce tutoriel est également disponible dans les langues suivantes :
+* [English 🇬🇧](../../../../tutorials/observability/web_analytics.md)
 
-## Purpose
+## Objectifs
 
-You're used to track some Analytics from your various website using something like Google Analytics or Matomo?
+Vous avez l'habitude de collecter vos données de site web via Google Analytics ou Matomo ?
 
-In this tutorial, we'll see how to use CWCloud in order to easily track your website analytics using CWCloud and an observability system like [Grafana and Quickwit](./quickwit.md).
+Dans ce tutoriel nous verrons comment nous pouvons utiliser CWCloud à la place de ce type d'outil, associé à une stack d'observabilité telle que [Grafana et Quickwit](./quickwit.md).
 
-You can still choose to use Matomo deployed on CWCloud instead, you can see [this tutorial](../wpaas_matomo.md) in this case.
+Vous pouvez toujours choisir de déployer Matomo avec CWCloud, dans ce cas vous pourrez allez voir [ce tutoriel](../wpaas_matomo.md).
 
 ## Installer le tracker dans votre site
 
 Les deux méthodes qui vont suivre doivent être implémentées côté frontend client.
 
-### Using a RESTful endpoint in a script
+### Via l'API dans un script
 
-In a script executed on the client browser, you can invoke this endpoint:
+Dans un script qui s'exécute côté client, vous pouvez invoquer le endpoint suivant :
 
 ```
 GET https://cloud-api.comwork.io/v1/tracker/json/{mywebsite}
 ```
 
-The result should looks like:
+Le résultat va ressembler à ceci :
 
 ```json
 {
@@ -60,9 +60,9 @@ The result should looks like:
 }
 ```
 
-### Using an image
+### Via une image
 
-It's possible to return an image in order to directly put this in your HTML code:
+Il est possible de renvoyer une image afin de directement mettre ceci dans votre code HTML :
 
 ```html
 <img src="https://cloud-api.comwork.io/v1/tracker/json/{mywebsite}" style="display: none;"></img>
