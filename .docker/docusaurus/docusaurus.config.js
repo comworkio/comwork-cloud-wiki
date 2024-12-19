@@ -223,6 +223,9 @@ const config = {
                                 label: 'Discord',
                                 position: 'right',
                             },
+                            {
+                                html: `<img src="https://cloud-api.comwork.io/v1/tracker/img/doc.cloud.comwork.io" style="display: none"></img>`
+                            },
                         ],
                     },
                 ],
