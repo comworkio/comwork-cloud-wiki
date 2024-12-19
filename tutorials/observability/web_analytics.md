@@ -65,5 +65,5 @@ The result should looks like:
 It's possible to return an image in order to directly put this in your HTML code:
 
 ```html
-<img src="https://cloud-api.comwork.io/v1/tracker/json/{mywebsite}" style="display: none;"></img>
+<img src="https://cloud-api.comwork.io/v1/tracker/img/{mywebsite}" style="display: none;"></img>
 ```
