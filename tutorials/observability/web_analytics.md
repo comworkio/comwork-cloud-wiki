@@ -13,9 +13,9 @@ In this tutorial, we'll see how to use CWCloud in order to easily track your web
 
 You can still choose to use Matomo deployed on CWCloud instead, you can see [this tutorial](../wpaas_matomo.md) in this case.
 
-## Installer le tracker dans votre site
+## Install the tracker in your website
 
-Les deux méthodes qui vont suivre doivent être implémentées côté frontend client.
+The two following methods needs to be implemented on the client-side.
 
 ### Using a RESTful endpoint in a script
 
@@ -75,3 +75,7 @@ It's possible to return an image in order to directly put this in your HTML code
 ```html
 <img src="https://cloud-api.comwork.io/v1/tracker/img/{mywebsite}" style="display: none;"></img>
 ```
+
+## Index data with Quickwit
+
+In [this blogpost](https://www.comwork.io/blog/quickwit-web-analytics), you'll see in details how to index the data on Quickwit with Vector and set up dashboards with Grafana.

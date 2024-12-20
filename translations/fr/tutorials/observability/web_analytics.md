@@ -75,3 +75,7 @@ Il est possible de renvoyer une image afin de directement mettre ceci dans votre
 ```html
 <img src="https://cloud-api.comwork.io/v1/tracker/img/{mywebsite}" style="display: none;"></img>
 ```
+
+## Indexer les données avec Quickwit
+
+Dans [ce blogpost](https://www.comwork.io/blog/quickwit-web-analytics), vous pourrez voir en détail comment indexer ces données dans Quickwit avec Vector et les utiliser dans des dashboards Grafana.
