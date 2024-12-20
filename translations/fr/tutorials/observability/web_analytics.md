@@ -33,7 +33,14 @@ Le résultat va ressembler à ceci :
   "type": "tracker",
   "time": "2024-12-19T20:06:02.556973",
   "host": "41.226.15.169",
-  "user_agent": "curl/8.1.2",
+  "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1.1 Mobile/15E148 Safari/604.1",
+  "os": "ios",
+  "device": "mobile",
+  "browser": "safari",
+  "details": {
+    "brand": "apple",
+    "type": "iphone"
+  },
   "referrer": "None",
   "website": "mywebsite",
   "infos": {
