@@ -51,6 +51,7 @@ The result should looks like:
     "country": "Tunisia",
     "region_code": "11",
     "country_iso": "TN",
+    "lookup": "TNU",
     "timezone": "Africa/Tunis",
     "utc_offset": "TN",
     "currency": "TND",
