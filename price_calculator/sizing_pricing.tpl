@@ -1,6 +1,6 @@
 # Sizing and pricing
 
-This section is only relevant for customers who want to use the SaaS version of CWCloud which is also [open source](./licences.md) and can be [self-hosted](./self-hosted.md).
+This section is only relevant for customers who want to use the SaaS version of CWCloud which is also [open source](./licences.md) and can be [self-hosted](./selfhosted.md).
 
 The sizing and pricing model is following the provider's ones and add 70% for our internal APIs and compute costs and support (you can see the details below).
 
