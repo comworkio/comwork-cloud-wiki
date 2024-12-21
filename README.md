@@ -1,4 +1,4 @@
-# Comwork Cloud
+# CWCloud
 
 Here's the documentation of [comwork cloud console](https://cloud.comwork.io) and [API](https://cloud-api.comwork.io).
 

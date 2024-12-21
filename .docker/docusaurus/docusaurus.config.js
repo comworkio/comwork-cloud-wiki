@@ -1,5 +1,5 @@
 const config = {
-    title: 'Comwork cloud',
+    title: 'CWCloud',
     tagline: 'The cloud that bring you the gitops power again',
     url: 'https://doc.cloud.comwork.io',
     baseUrl: '/',
@@ -119,7 +119,7 @@ const config = {
             metadata: [
                 {
                     name: 'description',
-                    content: 'Comwork cloud documentation and tutorials'
+                    content: 'CWCloud documentation and tutorials'
                 },
                 {
                     name: 'keywords',
@@ -139,11 +139,11 @@ const config = {
                 },
                 {
                     property: 'og:site_name',
-                    content: 'Comwork cloud documentation and tutorials'
+                    content: 'CWCloud documentation and tutorials'
                 },
                 {
                     property: 'og:description',
-                    content: 'Comwork cloud documentation and tutorials'
+                    content: 'CWCloud documentation and tutorials'
                 },
                 {
                     property: 'og:url',
@@ -155,19 +155,19 @@ const config = {
                 },
                 {
                     property: 'twitter:description',
-                    content: 'Comwork cloud documentation and tutorials'
+                    content: 'CWCloud documentation and tutorials'
                 },
                 {
                     property: 'twitter:title',
-                    content: 'Comwork cloud documentation and tutorials'
+                    content: 'CWCloud documentation and tutorials'
                 },
                 {
                     property: 'og:type',
-                    content: 'Comwork cloud documentation and tutorials'
+                    content: 'CWCloud documentation and tutorials'
                 },
             ],
             navbar: {
-                title: 'Comwork cloud',
+                title: 'CWCloud',
                 logo: {
                     alt: 'Comwork logo',
                     src: 'img/comwork_logo.png',
