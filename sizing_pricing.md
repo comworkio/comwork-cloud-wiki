@@ -1,5 +1,7 @@
 # Sizing and pricing
 
+This section is only relevant for customers who want to use the SaaS version of CWCloud which is also [open source](./licences.md) and can be [self-hosted](./self-hosted.md).
+
 The sizing and pricing model is following the provider's ones and add 70% for our internal APIs and compute costs and support (you can see the details below).
 
 So those pricing can be readjusted following the providers's pricing evolutions.
@@ -60,7 +62,7 @@ The available providers are the following:
 | b2-15       | ovh      | 0.1290 €      | 0.219 €  | 0.263 €        | 195.791 €       |
 
 
-*Updated the 2024-12-07*
+*Updated the 2024-12-21*
 
 ### Details
 
