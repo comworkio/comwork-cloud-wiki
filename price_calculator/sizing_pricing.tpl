@@ -6,8 +6,6 @@ The sizing and pricing model is following the provider's ones and add 70% for ou
 
 So those pricing can be readjusted following the providers's pricing evolutions.
 
-This page is automatically generated from [price_calculator](./price_calculator/README.md)
-
 ## Providers
 
 The available providers are the following:
