@@ -2,6 +2,8 @@
 
 Those are the terms of services for the [SaaS version of CWCloud](https://cloud.comwork.io).
 
+Bear in mind that CWCloud is also an [open source software](./licences.md) which can be [self-hosted](./selfhosted.md).
+
 ## Translations
 
 This page is also available in the following languages:

@@ -2,6 +2,8 @@
 
 Ces conditions générales d'utilisations concernent la [version SaaS de CWCloud](https://cloud.comwork.io).
 
+Gardez à l'esprit que CWCloud est aussi un [projet open source](./licences.md) que vous pouvez [auto-héberger](../../selfhosted.md).
+
 ## Traductions
 
 Cette page est également disponible dans les langues suivantes :
