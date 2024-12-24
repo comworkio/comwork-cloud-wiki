@@ -183,6 +183,8 @@ service:
 
 Imalive is also able to check some http endpoint and log and export metrics (status and duration).
 
+This feature is similar to the [CWCloud's monitors](./monitor.md) but can be used somewhere which is not hosting CWCloud for various reasons, such as performing those healthcheck in private networks...
+
 In order to use that, just override the `/app/imalive.yml` with the following content:
 
 ```yaml
@@ -191,12 +193,15 @@ monitors:
   - type: http
     name: imalive
     url: http://localhost:8081
-    method: GET # optional (GET by default, only POST and GET are supported)
-    expected_http_code: 200 # optional (200 by default)
+    method: POST # optional (GET by default, only POST, PUT and GET are supported)
+    body: '{"foo": "bar"}' # optional (body is ignored if method is GET)
+    check_tls: false # optional (true by default)
+    expected_http_code: "20*" # optional (20* by default), wildcard means "begin with"
     expected_contain: "\"status\":\"ok\"" # optional (no check on the body response if not present)
     timeout: 30 # optional (30 seconds if not present)
     username: changeit # optional (no basic auth if not present)
-    password: changerit # optional (no basic auth if not present)
+    password: changeit # optional (no basic auth if not present)
+    level: INFO # optional, log level if monitor is healthy (DEBUG by default)
     headers: # optional (no headers if empty)
       - name: Accept
         value: application/json

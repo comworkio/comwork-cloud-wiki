@@ -183,6 +183,8 @@ service:
 
 Imalive est également capable de vérifier si des URLs http sont en bonne santé et exporte le résultat sous forme de métriques et de logs (le statut et la durée des requêtes).
 
+Cette fonctionalité est similaire aux [monitors](./monitor.md) de CWCloud mais peut servir si vous voulez faire ces contrôles depuis une instance qui n'héberge pas CWCloud pour différentes raisons comme par exemple depuis un réseau privé, etc.
+
 Pour cela, il suffit de remplacer le fichier `/app/imalive.yml` avec le contenu si dessous :
 
 ```yaml
@@ -191,8 +193,10 @@ monitors:
   - type: http
     name: imalive
     url: http://localhost:8081
-    method: GET # optionnel (GET par défaut, pour l'instant seul POST et GET sont supportés)
-    expected_http_code: 200 # optionnel (200 par défaut)
+    method: POST # optionnel (GET par défaut, pour l'instant seul POST et GET sont supportés)
+    body: '{"foo": "bar"}' # optionel (ignoré si la méthode est GET)
+    check_tls: false # optionel (true par défaut)
+    expected_http_code: "20*" # optionnel (20* par défaut), le wildcard signifie "commence par"
     expected_contain: "\"status\":\"ok\"" # optionnel (pas de check sur le body si pas présent)
     timeout: 30 # optionnel (30 secondes par défaut)
     username: changeit # optionnel (pas d'authentification par défaut)
