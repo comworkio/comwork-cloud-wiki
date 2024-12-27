@@ -164,4 +164,3 @@ In the future we'll propose a web GUI to upload your own adapters as a serverles
 
 [^1]: The adapters and the abstract are located in the package `src/adapters/ai`
 [^2]: The list is defined in the `src/utils/ai/default_values.py` file
-
