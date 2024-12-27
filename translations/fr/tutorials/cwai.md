@@ -7,7 +7,7 @@ Ce tutoriel est également disponible dans les langues suivantes :
 
 ## Objectif
 
-Cette fonctionalité a pour but d'exposer des modèle d'IA[^1] comme des NLP[^2] ou LLM[^3] afin d'être exposé sous forme d'API basé sur ce [projet open source](https://gitlab.comwork.io/oss/cwai/cwai-api).
+Cette fonctionalité a pour but d'exposer des modèle d'IA[^1] comme des NLP[^2] ou LLM[^3] afin d'être exposé sous forme d'API.
 
 [^1]: Intelligence artificielle
 [^2]: _Natural language processing_ (traduit en _TAL_ pour _traitement automatique des langues_)
@@ -132,10 +132,12 @@ ok	[The predicted sentiment is: negative, score: -0.5423]	-0.5423
 
 ## Interface de driver
 
-Si vous forkez le projet de l'API cwai, vous pourrez implémenter vos propres drivers pour vos propres modèles et générer vos réponses en implémentant [cette abstract](https://gitlab.comwork.io/oss/cwai/cwai-api/-/blob/main/src/drivers/model_driver.py) :
+Cette section concerne les contributeurs qui souhaitent ajouter des nouveaux modèles.
+
+Vous pourrez implémenter vos propres drivers pour vos propres modèles et générer vos réponses en implémentant cette abstract[^1] :
 
 ```python
-class ModelDriver(ABC):
+class ModelAdapter(ABC):
     @abstractmethod
     def load_model(self):
         pass
@@ -145,6 +147,20 @@ class ModelDriver(ABC):
         pass
 ```
 
-Ensuite ajoute vos modèles en utilisant la variable d'environnement `ENABLED_MODELS`.
+Ensuite il faut enrichir cette liste[^2] :
 
-Dans le future, nous envisageons de proposer une interface graphique pour facilement déployer vos propres drivers comme des fonctions serverless. En attendant vous pouvez demander l'ajout de drivers via le [système de support](./console/public/support.md).
+```python
+_default_models = [
+    'gpt2',
+    'nlptownsentiment',
+    'nltksentiment',
+    'textblobsentiment',
+    'robertaemotion',
+    'log'
+]
+```
+
+Dans le futur, nous envisageons de proposer une interface graphique pour facilement déployer vos propres adapters comme des fonctions serverless. En attendant vous pouvez demander l'ajout de drivers via le [système de support](./console/public/support.md).
+
+[^1]: Les adapters et l'abstract sont dans le dossier `src/adapters/ai`
+[^2]: La liste est définie dans le fichier `src/utils/ai/default_values.py`

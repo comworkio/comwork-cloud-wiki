@@ -7,7 +7,7 @@ This tutorial is also available in the following languages:
 
 ## Purpose
 
-This feature aims to expose AI[^1] models such as NLP[^2] or LLM[^3] to be exposed as an API based on this [open source project](https://gitlab.comwork.io/oss/cwai/cwai-api).
+This feature aims to expose AI[^1] models such as NLP[^2] or LLM[^3] to be exposed as an API.
 
 [^1]: _Artificial intelligence_
 [^2]: _Natural language processing_
@@ -132,10 +132,12 @@ ok	[The predicted sentiment is: negative, score: -0.5423]	-0.5423
 
 ## Driver interface
 
-If you fork the cwai API, you can implement you're own driver that will load and generate answer from models implementing [this abstract](https://gitlab.comwork.io/oss/cwai/cwai-api/-/blob/main/src/drivers/model_driver.py):
+This section is for contributors who wants to add new models.
+
+You can implement you're own adapter that will load and generate answer from models implementing this abstract[^1]:
 
 ```python
-class ModelDriver(ABC):
+class ModelAdapter(ABC):
     @abstractmethod
     def load_model(self):
         pass
@@ -145,6 +147,21 @@ class ModelDriver(ABC):
         pass
 ```
 
-Then add your model in the `ENABLED_MODELS` environment variable.
+The you have to update this list[^2] with your new adapter:
 
-In the future we'll propose a web GUI to upload your own drivers as a serverless function on the web console. In the meantime you can ask comwork via the [support system](./console/public/support.md).
+```python
+_default_models = [
+    'gpt2',
+    'nlptownsentiment',
+    'nltksentiment',
+    'textblobsentiment',
+    'robertaemotion',
+    'log'
+]
+```
+
+In the future we'll propose a web GUI to upload your own adapters as a serverless function on the web console. In the meantime you can ask comwork via the [support system](./console/public/support.md).
+
+[^1]: The adapters and the abstract are located in the package `src/adapters/ai`
+[^2]: The list is defined in the `src/utils/ai/default_values.py` file
+
