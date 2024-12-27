@@ -410,7 +410,7 @@ Flags requis :
 * `-i` ou `--user_id` : ID de l'utilisateur
 
 Flags optionnels :
-* `-y` ou `--type` : Type de moniteur (http, tcp, icmp) - par défaut : "http"
+* `-y` ou `--type` : Type de moniteur (http ou tcp) - par défaut : "http"
 * `-f` ou `--family` : Famille du moniteur
 * `-m` ou `--method` : Méthode HTTP (GET, POST, PUT) - par défaut : "GET"
 * `-e` ou `--expected_http_code` : Code de réponse HTTP attendu - par défaut : "20*"
@@ -420,6 +420,8 @@ Flags optionnels :
 * `-s` ou `--username` : Nom d'utilisateur pour l'authentification basique
 * `-p` ou `--password` : Mot de passe pour l'authentification basique
 * `-H` ou `--headers` : En-têtes de la requête au format "cle1:valeur1,cle2:valeur2"
+* `-l` ou `--level` : Niveau de log du moniteur (info, debug) - par défaut "info"
+* `-k` ou `--check_tls` : Activer/Désactiver la vérification du certificat TLS - Activé par défaut
 
 ### Mise à jour
 
@@ -431,7 +433,7 @@ Flags requis :
 * `-m` ou `--id` : ID du moniteur à mettre à jour
 
 Flags optionnels :
-* `-y` ou `--type` : Type de moniteur (http, tcp, icmp) - par défaut : "http"
+* `-y` ou `--type` : Type de moniteur (http ou tcp) - par défaut : "http"
 * `-n` ou `--name` : Nom du moniteur
 * `-f` ou `--family` : Famille du moniteur
 * `-u` ou `--url` : URL à surveiller
@@ -444,6 +446,8 @@ Flags optionnels :
 * `-p` ou `--password` : Mot de passe pour l'authentification basique
 * `-H` ou `--headers` : En-têtes de la requête au format "cle1:valeur1,cle2:valeur2"
 * `-I` ou `--user_id` : ID de l'utilisateur
+* `-l` ou `--level` : Niveau de log du moniteur (info, debug) - par défaut "info"
+* `-k` ou `--check_tls` : Activer/Désactiver la vérification du certificat TLS - Activé par défaut
 
 ### Suppression
 
