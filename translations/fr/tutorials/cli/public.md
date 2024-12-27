@@ -564,7 +564,7 @@ cwc monitor create -n <monitor_name> -u <monitor_url>
 ```
 
 Flags optionnels :
-* `-y` ou `--type` : Type du monitor (http, tcp, icmp) - par défaut "http"
+* `-y` ou `--type` : Type du monitor (http ou tcp) - par défaut "http"
 * `-f` ou `--family` : Famille du monitor
 * `-m` ou `--method` : Méthode HTTP (GET, POST, PUT) - par défaut "GET"
 * `-e` ou `--expected_http_code` : Code de réponse HTTP attendu (200, 201, 401...) - par défaut "20*"
@@ -574,6 +574,8 @@ Flags optionnels :
 * `-s` ou `--username` : Nom d'utilisateur pour l'authentification basique
 * `-p` ou `--password` : Mot de passe pour l'authentification basique
 * `-H` ou `--headers` : En-têtes personnalisés au format "clé1:valeur1,clé2:valeur2"
+* `-l` ou `--level` : Niveau de log du moniteur (info, debug) - par défaut "info"
+* `-k` ou `--check_tls` : Activer/Désactiver la vérification du certificat TLS - Activé par défaut
 
 ### Mettre à jour
 
@@ -581,7 +583,7 @@ Flags optionnels :
 cwc monitor update -i <monitor_id>
 ```
 
-* `-y` ou `--type` : Type du monitor (http, tcp, icmp)
+* `-y` ou `--type` : Type du monitor (http ou tcp)
 * `-n` ou `--name` : Nom du monitor
 * `-f` ou `--family` : Famille du monitor
 * `-u` ou `--url` : URL à surveiller
@@ -593,6 +595,8 @@ cwc monitor update -i <monitor_id>
 * `-s` ou `--username` : Nom d'utilisateur pour l'authentification basique
 * `-p` ou `--password` : Mot de passe pour l'authentification basique
 * `-H` ou `--headers` : En-têtes personnalisés au format "clé1:valeur1,clé2:valeur2"
+* `-l` ou `--level` : Niveau de log du moniteur (info, debug) - par défaut "info"
+* `-k` ou `--check_tls` : Activer/Désactiver la vérification du certificat TLS - Activé par défaut
 
 ### Supprimer
 

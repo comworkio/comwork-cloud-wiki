@@ -409,7 +409,7 @@ Required flags:
 * `-u` or `--url`: URL to monitor
 
 Optional flags:
-* `-y` or `--type`: Type of monitor (http, tcp, icmp) - default: "http"
+* `-y` or `--type`: Type of monitor (http or tcp) - default: "http"
 * `-f` or `--family`: Family of the monitor
 * `-m` or `--method`: HTTP method (GET, POST, PUT) - default: "GET"
 * `-e` or `--expected_http_code`: Expected HTTP response code - default: "20*"
@@ -419,6 +419,8 @@ Optional flags:
 * `-s` or `--username`: Basic auth username
 * `-p` or `--password`: Basic auth password
 * `-H` or `--headers`: Request headers in format "key1:value1,key2:value2"
+* `-l` or `--level`: Log level of the monitor (info, debug) - defaults to "info"
+* `-k` or `--check_tls`: Activate/Deactivate TLS certificate check - Activated by default
 * `-i` or `--user_id`: User ID - default: 43
 
 ### Update
@@ -431,7 +433,7 @@ Required flags:
 * `-m` or `--id`: Monitor ID to update
 
 Optional flags:
-* `-y` or `--type`: Type of monitor (http, tcp, icmp) - default: "http"
+* `-y` or `--type`: Type of monitor (http or tcp) - default: "http"
 * `-n` or `--name`: Name of the monitor
 * `-f` or `--family`: Family of the monitor
 * `-u` or `--url`: URL to monitor
@@ -443,6 +445,8 @@ Optional flags:
 * `-s` or `--username`: Basic auth username
 * `-p` or `--password`: Basic auth password
 * `-H` or `--headers`: Request headers in format "key1:value1,key2:value2"
+* `-l` or `--level`: Log level of the monitor (info, debug) - defaults to "info"
+* `-k` or `--check_tls`: Activate/Deactivate TLS certificate check - Activated by default
 * `-I` or `--user_id`: User ID
 
 ### Delete

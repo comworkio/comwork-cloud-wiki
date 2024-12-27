@@ -559,7 +559,7 @@ cwc monitor create -n <monitor_name> -u <monitor_url>
 ```
 
 Optional flags:
-* `-y` or `--type`: Type of the monitor (http, tcp, icmp) - defaults to "http"
+* `-y` or `--type`: Type of the monitor (http, tcp) - defaults to "http"
 * `-f` or `--family`: Family of the monitor
 * `-m` or `--method`: HTTP method (GET, POST, PUT) - defaults to "GET"
 * `-e` or `--expected_http_code`: Expected HTTP response code (200, 201, 401...) - defaults to "20*"
@@ -569,6 +569,8 @@ Optional flags:
 * `-s` or `--username`: Basic auth username
 * `-p` or `--password`: Basic auth password
 * `-H` or `--headers`: Custom headers in format "key1:value1,key2:value2"
+* `-l` or `--level`: Log level of the monitor (info, debug) - defaults to "info"
+* `-k` or `--check_tls`: Activate/Deactivate TLS certificate check - Activated by default
 
 ### Update
 
@@ -577,7 +579,7 @@ cwc monitor update -i <monitor_id>
 ```
 
 Optional flags:
-* `-y` or `--type`: Type of the monitor (http, tcp, icmp)
+* `-y` or `--type`: Type of the monitor (http or tcp)
 * `-n` or `--name`: Name of the monitor
 * `-f` or `--family`: Family of the monitor
 * `-u` or `--url`: URL to monitor
@@ -589,6 +591,8 @@ Optional flags:
 * `-s` or `--username`: Basic auth username
 * `-p` or `--password`: Basic auth password
 * `-H` or `--headers`: Custom headers in format "key1:value1,key2:value2"
+* `-l` or `--level`: Log level of the monitor (info, debug) - defaults to "info"
+* `-k` or `--check_tls`: Activate/Deactivate TLS certificate check - Activated by default
 
 ### Delete
 
