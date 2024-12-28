@@ -160,7 +160,5 @@ _default_models = [
 ]
 ```
 
-Dans le futur, nous envisageons de proposer une interface graphique pour facilement déployer vos propres adapters comme des fonctions serverless. En attendant vous pouvez demander l'ajout de drivers via le [système de support](./console/public/support.md).
-
 [^1]: Les adapters et l'abstract sont dans le dossier `src/adapters/ai`
 [^2]: La liste est définie dans le fichier `src/utils/ai/default_values.py`
