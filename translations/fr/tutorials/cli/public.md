@@ -576,6 +576,7 @@ Flags optionnels :
 * `-H` ou `--headers` : En-têtes personnalisés au format "clé1:valeur1,clé2:valeur2"
 * `-l` ou `--level` : Niveau de log du moniteur (info, debug) - par défaut "info"
 * `-k` ou `--check_tls` : Activer/Désactiver la vérification du certificat TLS - Activé par défaut
+* `-C` ou `--callbacks` : Callbacks au format "type:http,endpoint:https://exemple.com,token:123;type:mqtt,endpoint:mqtt://broker.com,topic:test"
 
 ### Mettre à jour
 
@@ -597,6 +598,7 @@ cwc monitor update -i <monitor_id>
 * `-H` ou `--headers` : En-têtes personnalisés au format "clé1:valeur1,clé2:valeur2"
 * `-l` ou `--level` : Niveau de log du moniteur (info, debug) - par défaut "info"
 * `-k` ou `--check_tls` : Activer/Désactiver la vérification du certificat TLS - Activé par défaut
+* `-C` ou `--callbacks` : Callbacks au format "type:http,endpoint:https://exemple.com,token:123;type:mqtt,endpoint:mqtt://broker.com,topic:test"
 
 ### Supprimer
 
