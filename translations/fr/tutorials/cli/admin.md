@@ -422,6 +422,7 @@ Flags optionnels :
 * `-H` ou `--headers` : En-têtes de la requête au format "cle1:valeur1,cle2:valeur2"
 * `-l` ou `--level` : Niveau de log du moniteur (info, debug) - par défaut "info"
 * `-k` ou `--check_tls` : Activer/Désactiver la vérification du certificat TLS - Activé par défaut
+* `-C` ou `--callbacks` : Callbacks au format "type:http,endpoint:https://exemple.com,token:123;type:mqtt,endpoint:mqtt://broker.com,topic:test"
 
 ### Mise à jour
 
@@ -448,6 +449,7 @@ Flags optionnels :
 * `-I` ou `--user_id` : ID de l'utilisateur
 * `-l` ou `--level` : Niveau de log du moniteur (info, debug) - par défaut "info"
 * `-k` ou `--check_tls` : Activer/Désactiver la vérification du certificat TLS - Activé par défaut
+* `-C` ou `--callbacks` : Callbacks au format "type:http,endpoint:https://exemple.com,token:123;type:mqtt,endpoint:mqtt://broker.com,topic:test"
 
 ### Suppression
 

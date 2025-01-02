@@ -421,6 +421,7 @@ Optional flags:
 * `-H` or `--headers`: Request headers in format "key1:value1,key2:value2"
 * `-l` or `--level`: Log level of the monitor (info, debug) - defaults to "info"
 * `-k` or `--check_tls`: Activate/Deactivate TLS certificate check - Activated by default
+* `-C` or `--callbacks`: Callbacks in format "type:http,endpoint:https://example.com,token:123;type:mqtt,endpoint:mqtt://broker.com,topic:test"
 * `-i` or `--user_id`: User ID - default: 43
 
 ### Update
@@ -447,6 +448,7 @@ Optional flags:
 * `-H` or `--headers`: Request headers in format "key1:value1,key2:value2"
 * `-l` or `--level`: Log level of the monitor (info, debug) - defaults to "info"
 * `-k` or `--check_tls`: Activate/Deactivate TLS certificate check - Activated by default
+* `-C` or `--callbacks`: Callbacks in format "type:http,endpoint:https://example.com,token:123;type:mqtt,endpoint:mqtt://broker.com,topic:test"
 * `-I` or `--user_id`: User ID
 
 ### Delete
