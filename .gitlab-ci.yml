@@ -50,4 +50,4 @@ deploy:
       when: never
     - if: $CI_COMMIT_REF_NAME =~ /main/ 
   tags:
-    - web
+    - cwcloud-wiki
