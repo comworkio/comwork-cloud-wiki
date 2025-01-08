@@ -33,14 +33,41 @@ build:
     - if: $CI_COMMIT_MESSAGE =~ /(Update pricing and push)/
       when: never
     - if: $CI_COMMIT_REF_NAME =~ /main/ 
+    - if: $CI_MERGE_REQUEST_ID
+  script:
+    - chmod +x ./ci/build.sh
+    - ./ci/build.sh
+  allow_failure: false
+  artifacts:
+    when: on_failure
+    expire_in: 1 week
+    paths:
+      - build.log
+  after_script:
+    - |
+      if [ $CI_JOB_STATUS = "failed" ]; then
+        echo "Build failed. Check the Docker build logs for documentation errors."
+        docker-compose -f docker-compose-build.yml logs > build.log
+      fi
+
+deliver:
+  stage: deploy
+  needs:
+    - build
   script:
     - chmod +x ./ci/deliver.sh
     - ./ci/deliver.sh
+  rules: 
+    - if: $CI_COMMIT_MESSAGE =~ /(Update pricing and push)/
+      when: never
+    - if: $CI_COMMIT_REF_NAME =~ /main/
+  tags:
+    - imagesbuilder
 
 deploy:
   stage: deploy
   needs:
-    - build
+    - deliver
   script:
     - chmod +x ./ci/deploy.sh
     - ./ci/deploy.sh
