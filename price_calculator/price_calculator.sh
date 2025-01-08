@@ -20,7 +20,7 @@ $AWK_BIN '{if ($0 ~ "V_ARRAY_PRICING"){system("mdtable '"${DATA_FILE}.tmp2"' 2>/
 $SED_BIN -i "s/V_DATE/$(date +"%Y-%m-%d")/g" "${DOC_FILE}"
 
 echo "" >> "${PRICE_ENV_FILE}"
-echo "## This script is generated, do not update it manually!" >> "${PRICE_ENV_FILE}"
+echo "## This env file is generated, do not update it manually!" >> "${PRICE_ENV_FILE}"
 echo "## See: https://gitlab.comwork.io/comwork_public/comwork_cloud/-/blob/main/price_calculator/README.md" >> prices_env.sh
 echo "" >> "${PRICE_ENV_FILE}"
 
