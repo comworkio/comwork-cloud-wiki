@@ -60,7 +60,7 @@ The available providers are the following:
 | b2-15       | ovh      | 0.1290 €      | 0.219 €  | 0.263 €        | 195.791 €       |
 
 
-*Updated the 2024-12-21*
+*Updated the 2025-01-08*
 
 ### Details
 
