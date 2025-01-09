@@ -9,8 +9,8 @@ This tutorial is also available in the following languages:
 
 Choose the right platform:
 
-* [cwcloud.tn](https://cwcloud.tn) for the Tunisian-based customers billed in TND
-* [cloud.comwork.io](https://cloud.comwork.io) for European-based customers billed in euros
+* [cwcloud.tn](https://www.cwcloud.tn) for the Tunisian-based customers billed in TND
+* [www.cwcloud.tech](https://www.cwcloud.tech) for European-based customers billed in euros
 
 ## Opening a ticket
 

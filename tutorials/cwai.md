@@ -36,7 +36,7 @@ Of course, the main purpose is to be able to interact with those model using ver
 Here's how to get all the available models:
 
 ```shell
-curl -X 'GET' 'https://cloud-api.comwork.io/v1/ai/models' -H 'accept: application/json' -H 'X-Auth-Token: XXXXXX'
+curl -X 'GET' 'https://api.cwcloud.tech/v1/ai/models' -H 'accept: application/json' -H 'X-Auth-Token: XXXXXX'
 ```
 
 Result:
@@ -56,7 +56,7 @@ Then prompting with one of the available models:
 
 ```shell
 curl -X 'POST' \
-  'https://cloud-api.comwork.io/v1/ai/prompt' \
+  'https://api.cwcloud.tech/v1/ai/prompt' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -H 'X-Auth-Token: XXXXXX' \
@@ -81,7 +81,7 @@ The answer would be:
 
 Notes:
 * you have to replace the `XXXXXX` value with your own token generated with [this procedure](./api/api_credentials.md).
-* you can replace `https://cloud-api.comwork.io` by the API's instance URL you're using, with the `CWAI_API_URL` environment variable. For the Tunisian customers for example, it would be `https://api.cwcloud.tn`.
+* you can replace `https://api.cwcloud.tech` by the API's instance URL you're using, with the `CWAI_API_URL` environment variable. For the Tunisian customers for example, it would be `https://api.cwcloud.tn`.
 
 ## Use the CLI
 

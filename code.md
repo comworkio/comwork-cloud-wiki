@@ -21,7 +21,7 @@ Of course [gitpod](https://www.gitpod.io), [coder](https://coder.com), [google c
 * You'll be able to install and keep vscode extensions
 * You can have a dedicated [tunnel server](./localtunnel.md) that allows you to forward your http(s) ports with a public TLS secured url on your own TLS zones and keep the same urls (see [this tutorial](./tutorials/localtunnel.md) to learn more about it)
 * Lots of improvements are coming:  
-  * we'll provide an [API](https://cloud-api.comwork.io), a [web console](https://cloud.comwork.io) and a terraform module in order to give you : 
+  * we'll provide an [API](https://api.cwcloud.tech), a [web console](https://www.cwcloud.tech) and a terraform module in order to give you : 
   * the ability to shutdown and restart your instances when your not using it in order to reduce the cost
   * the persistence of git repositories and docker registries from anywhere even after the destruction/recreation of your instance (based on top of a stored states/events architecture)
   * the rolling upgrades

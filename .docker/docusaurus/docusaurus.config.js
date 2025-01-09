@@ -1,7 +1,7 @@
 const config = {
     title: 'CWCloud',
     tagline: 'The cloud that bring you the gitops power again',
-    url: 'https://doc.cloud.comwork.io',
+    url: 'https://doc.cwcloud.tech',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -147,7 +147,7 @@ const config = {
                 },
                 {
                     property: 'og:url',
-                    content: 'https://docs.cloud.comwork.io'
+                    content: 'https://docs.cwcloud.tech'
                 },
                 {
                     property: 'twitter:card',
@@ -174,12 +174,12 @@ const config = {
                 },
                 items: [
                     {
-                        to: 'https://cloud.comwork.io',
+                        to: 'https://www.cwcloud.tech',
                         label: 'Console',
                         position: 'left',
                     },
                     {
-                        to: 'https://cloud-api.comwork.io',
+                        to: 'https://api.cwcloud.tech',
                         label: 'Api',
                         position: 'left',
                     },
@@ -225,7 +225,7 @@ const config = {
                                 position: 'right',
                             },
                             {
-                                html: `<img src="https://cloud-api.comwork.io/v1/tracker/img/doc.cloud.comwork.io" style="display: none"></img>`
+                                html: `<img src="https://api.cwcloud.tech/v1/tracker/img/doc.www.cwcloud.tech" style="display: none"></img>`
                             },
                         ],
                     },

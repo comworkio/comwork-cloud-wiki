@@ -36,7 +36,7 @@ Bien entendu, l'intérêt principal reste de pouvoir interagir avec ces modèles
 Voici comment lister tous les modèles disponibles :
 
 ```shell
-curl -X 'GET' 'https://cloud-api.comwork.io/v1/ai/models' -H 'accept: application/json' -H 'X-Auth-Token: XXXXXX'
+curl -X 'GET' 'https://api.cwcloud.tech/v1/ai/models' -H 'accept: application/json' -H 'X-Auth-Token: XXXXXX'
 ```
 
 Résultat :
@@ -56,7 +56,7 @@ Vous pouvez ensuite envoyer des _prompts_ sur les modèles disponibles comme cec
 
 ```shell
 curl -X 'POST' \
-  'https://cloud-api.comwork.io/v1/ai/prompt' \
+  'https://api.cwcloud.tech/v1/ai/prompt' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -H 'X-Auth-Token: XXXXXX' \
@@ -81,7 +81,7 @@ La réponse devrait ressembler à :
 
 Notes :
 * vous devez remplacer la valeur `XXXXXX` avec votre propre token généré via [cette procédure](./api/api_credentials.md).
-* vous pouvez remplacer l'URL `https://cloud-api.comwork.io` avec celle que vous utilisez dans la variable d'environnement `CWAI_API_URL`. Pour la version tunisienne par exemple, la valeur serait `https://api.cwcloud.tn`.
+* vous pouvez remplacer l'URL `https://api.cwcloud.tech` avec celle que vous utilisez dans la variable d'environnement `CWAI_API_URL`. Pour la version tunisienne par exemple, la valeur serait `https://api.cwcloud.tn`.
 
 ## Utiliser la CLI
 

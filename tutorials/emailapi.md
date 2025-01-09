@@ -29,7 +29,7 @@ Here's how to use this endpoint using `curl`:
 
 ```shell
 curl -X 'POST' \
-  'https://cloud-api.comwork.io/v1/email' \
+  'https://api.cwcloud.tech/v1/email' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -H 'X-Auth-Token: XXXXXX' \
@@ -52,7 +52,7 @@ It's possible to join a file in the email content with the optional bloc `attach
 
 ```shell
 curl -X 'POST' \
-  'https://cloud-api.comwork.io/v1/email' \
+  'https://api.cwcloud.tech/v1/email' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -H 'X-Auth-Token: XXXXXX' \
@@ -81,7 +81,7 @@ Notes:
 
 You can use this [plugin](https://gitlab.comwork.io/oss/cwcloud/cwcloud-wordpress-email):
 
-**1/** Download the right zip extension file (either the `-io` if you're using cloud.comwork.io instance of `-tn` if you're using the cwcloud.tn instance)
+**1/** Download the right zip extension file (either the `-io` if you're using www.cwcloud.tech instance of `-tn` if you're using the cwcloud.tn instance)
 
 ![wpaas_email_ext1](../img/wpaas_email_ext1.png)
 
@@ -144,7 +144,7 @@ docker logs wp_app -f 2>&1 | grep CWCLOUDEMAIL
 
 You can use this [plugin](https://gitlab.comwork.io/oss/cwc/cwcloud-prestashop-email):
 
-**1/** Download the right zip extension file (either the `-io` if you're using cloud.comwork.io instance of `-tn` if you're using the cwcloud.tn instance)
+**1/** Download the right zip extension file (either the `-io` if you're using www.cwcloud.tech instance of `-tn` if you're using the cwcloud.tn instance)
 
 ![emailapi_ps_plugins](../img/emailapi_ps_plugins.png)
 

@@ -7,7 +7,7 @@ This tutorial is also available in the following languages:
 
 ## How to create new project and instances
 
-The console is here: https://cloud.comwork.io
+The console is here: https://www.cwcloud.tech
 
 First you have to [register](../../../subscription.md) if that's not the case, then you'll be able to create your gitlab projects:
 

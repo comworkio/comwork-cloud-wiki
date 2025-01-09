@@ -22,7 +22,7 @@ Les deux méthodes qui vont suivre doivent être implémentées côté frontend 
 Dans un script qui s'exécute côté client, vous pouvez invoquer le endpoint suivant :
 
 ```
-GET https://cloud-api.comwork.io/v1/tracker/json/{mywebsite}
+GET https://api.cwcloud.tech/v1/tracker/json/{mywebsite}
 ```
 
 Le résultat va ressembler à ceci :
@@ -73,7 +73,7 @@ Le résultat va ressembler à ceci :
 Il est possible de renvoyer une image afin de directement mettre ceci dans votre code HTML :
 
 ```html
-<img src="https://cloud-api.comwork.io/v1/tracker/img/{mywebsite}" style="display: none;"></img>
+<img src="https://api.cwcloud.tech/v1/tracker/img/{mywebsite}" style="display: none;"></img>
 ```
 
 ## Indexer les données avec Quickwit

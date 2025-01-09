@@ -60,7 +60,7 @@ Tapez sur ENTER si vous voulez conserver la valeur actuelle pour chacun des para
 
 ```shell
 cwc configure
-Default endpoint [https://cloud-api.comwork.io]: 
+Default endpoint [https://api.cwcloud.tech]: 
 Default provider [ovh]: 
 Default region [UK1]: 
 Default format [json]: 
@@ -78,7 +78,7 @@ cwc region ls # vous devez avoir setté le paramètre "provider" au préalable
 Vous pouvez enfin configurer les paramètres individuellement comme ceci :
 
 ```shell
-cwc configure set endpoint https://cloud-api.comwork.io
+cwc configure set endpoint https://api.cwcloud.tech
 cwc configure set provider ovh
 cwc configure set region UK1
 cwc configure set format json

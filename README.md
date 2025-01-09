@@ -1,6 +1,6 @@
 # CWCloud
 
-Here's the documentation of [comwork cloud console](https://cloud.comwork.io) and [API](https://cloud-api.comwork.io).
+Here's the documentation of [comwork cloud console](https://www.cwcloud.tech) and [API](https://api.cwcloud.tech).
 
 "_CWCloud_" (for _Comwork Cloud_) is a DaaS[^1] and FaaS[^2] platform that allows us to speed up the provisioning of the infrastructure and managed service such as [serverless FaaS engine](./serverless.md), [Advanced web IDE](./code.md), [DBaaS](./dbaas.md)[^3], [WPaaS](./wpaas.md)[^4], or any other application you want to deploy as a managed service.
 
@@ -18,7 +18,7 @@ There is also a way to deploy a [self-hosted version of CWCloud](./tutorials/sel
 
 ## Links
 
-* The documentation is available here: https://doc.cloud.comwork.io
+* The documentation is available here: https://doc.cwcloud.tech
 * The markdown sources that are used to generate the documentation are availables here: https://gitlab.comwork.io/comwork_public/comwork_cloud
 
 ## Available resources

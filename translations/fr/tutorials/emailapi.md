@@ -29,7 +29,7 @@ Voici ce que cela donne avec `curl` :
 
 ```shell
 curl -X 'POST' \
-  'https://cloud-api.comwork.io/v1/email' \
+  'https://api.cwcloud.tech/v1/email' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -H 'X-Auth-Token: XXXXXX' \
@@ -52,7 +52,7 @@ Il est possible de passer une pièce jointe aux emails avec le bloc optionnel `a
 
 ```shell
 curl -X 'POST' \
-  'https://cloud-api.comwork.io/v1/email' \
+  'https://api.cwcloud.tech/v1/email' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -H 'X-Auth-Token: XXXXXX' \
@@ -81,7 +81,7 @@ Notes :
 
 Vous pouvez télécharger ce [plugin](https://gitlab.comwork.io/oss/cwcloud/cwcloud-wordpress-email):
 
-**1/** Télécharger la bonne extension (soit la `-io` si vous utilisez l'instance [cloud.comwork.io](https://cloud.comwork.io), soit la `-tn` si vous utilisez l'instance [cwcloud.tn](https://www.cwcloud.tn))
+**1/** Télécharger la bonne extension (soit la `-io` si vous utilisez l'instance [www.cwcloud.tech](https://www.cwcloud.tech), soit la `-tn` si vous utilisez l'instance [cwcloud.tn](https://www.cwcloud.tn))
 
 ![wpaas_email_ext1](../../../img/wpaas_email_ext1.png)
 
@@ -141,7 +141,7 @@ docker logs wp_app -f 2>&1 | grep CWCLOUDEMAIL
 
 Vous pouvez utiliser ce [plugin](https://gitlab.comwork.io/oss/cwc/cwcloud-prestashop-email):
 
-**1/** Télécharger la bonne extension (soit la `-io` si vous utilisez l'instance [cloud.comwork.io](https://cloud.comwork.io), soit la `-tn` si vous utilisez l'instance [cwcloud.tn](https://www.cwcloud.tn))
+**1/** Télécharger la bonne extension (soit la `-io` si vous utilisez l'instance [www.cwcloud.tech](https://www.cwcloud.tech), soit la `-tn` si vous utilisez l'instance [cwcloud.tn](https://www.cwcloud.tn))
 
 ![emailapi_ps_plugins](../../../img/emailapi_ps_plugins.png)
 

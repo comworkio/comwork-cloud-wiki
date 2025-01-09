@@ -1,6 +1,6 @@
 # Terms of service
 
-Those are the terms of services for the [SaaS version of CWCloud](https://cloud.comwork.io).
+Those are the terms of services for the [SaaS version of CWCloud](https://www.cwcloud.tech).
 
 Bear in mind that CWCloud is also an [open source software](./licences.md) which can be [self-hosted](./selfhosted.md).
 
@@ -17,7 +17,7 @@ This instance is hosted in France by [COMWORKIO SASU](https://www.comwork.io) (R
 
 This instance is available for everyone who are able to buy online in euros. For the EU citizens, the French VAT is applied (20%).
 
-For the Tunisian-based customers who only can use TND currency online, there's also a Tunisian-based instance with a Tunisian company behind with the same services available [here](https://cwcloud.tn) and with these [terms of service](https://doc.cwcloud.tn/docs/terms).
+For the Tunisian-based customers who only can use TND currency online, there's also a Tunisian-based instance with a Tunisian company behind with the same services available [here](https://www.cwcloud.tn) and with these [terms of service](https://doc.cwcloud.tn/docs/terms).
 
 ## What is the pricing model?
 
@@ -94,7 +94,7 @@ We do not intend to host the following types of services:
 
 ## What is the minimal age required for using CWCloud?
 
-The [SaaS version of cwcloud](https://cloud.comwork.io) is hosted in the EU: Our site, products and services are all directed to people who are at least 16 years old. If you are under the age of 16, per the requirements of the GDPR[^1] do not use this site.
+The [SaaS version of cwcloud](https://www.cwcloud.tech) is hosted in the EU: Our site, products and services are all directed to people who are at least 16 years old. If you are under the age of 16, per the requirements of the GDPR[^1] do not use this site.
 
 ## What are the hosting termination conditions
 

@@ -1,6 +1,6 @@
 # Web console
 
-Here you'll find all the help resource for using the [web console](https://cloud.comwork.io).
+Here you'll find all the help resource for using the [web console](https://www.cwcloud.tech).
 
 ## Translations
 

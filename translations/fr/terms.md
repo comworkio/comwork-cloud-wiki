@@ -1,6 +1,6 @@
 # Conditions générales d'utilisation
 
-Ces conditions générales d'utilisations concernent la [version SaaS de CWCloud](https://cloud.comwork.io).
+Ces conditions générales d'utilisations concernent la [version SaaS de CWCloud](https://www.cwcloud.tech).
 
 Gardez à l'esprit que CWCloud est aussi un [projet open source](./licences.md) que vous pouvez [auto-héberger](../../selfhosted.md).
 
@@ -17,7 +17,7 @@ Cette instance est hébergée en France par [COMWORKIO SASU](https://www.comwork
 
 Cette instance est disponible pour tous le monde ayant la capacité de payer en ligne en euros. Pour les citoyens de l'unition européenne, la TVA française de 20% est appliquée.
 
-Pour les clients basées en Tunisie qui ne peuvent payer qu'en dinars tunisiens (TND) en ligne, il existe un service équivalent qui propose la même chose ici: [cwcloud.tn](https://cwcloud.tn) avec ces [conditions générales d'utilisation](https://doc.cwcloud.tn/docs/terms)
+Pour les clients basées en Tunisie qui ne peuvent payer qu'en dinars tunisiens (TND) en ligne, il existe un service équivalent qui propose la même chose ici: [cwcloud.tn](https://www.cwcloud.tn) avec ces [conditions générales d'utilisation](https://doc.cwcloud.tn/docs/terms)
 
 ## Quels sont les prix et modèles d'instances disponibles ?
 
@@ -94,7 +94,7 @@ Ces types de services sont interdits :
 
 ## Quel est l'âge minimum requis ?
 
-La [version SaaS de cwcloud](https://cloud.comwork.io) est hébergée en Union Européenne: nos services sont donc adressés aux personnes agées de 16 ans ou plus. Si vous avez moins de 16 ans, conformément au RGPD[^1], vous ne devez pas utiliser ce site.
+La [version SaaS de cwcloud](https://www.cwcloud.tech) est hébergée en Union Européenne: nos services sont donc adressés aux personnes agées de 16 ans ou plus. Si vous avez moins de 16 ans, conformément au RGPD[^1], vous ne devez pas utiliser ce site.
 
 ## Quelles sont les conditions d'arrêt d'hébergement
 

@@ -1,6 +1,6 @@
 # Console web
 
-Ici vous trouverez toutes les ressources pour vous aider à utiliser la [console web](https://cloud.comwork.io).
+Ici vous trouverez toutes les ressources pour vous aider à utiliser la [console web](https://www.cwcloud.tech).
 
 ## Traductions
 

@@ -78,7 +78,7 @@ The `.env.webapp` file:
 API_URL=https://cloud-api.yourdomain.com
 API_VERSION=v1
 VERSION=main-79b0cf2e
-DOC_URL=https://doc.cloud.comwork.io
+DOC_URL=https://doc.cwcloud.tech
 DISABLE_PAYMENT_FEATURE=True
 # EXTERNAL_LOGO_URL=https://yourdomain.com/logo.png
 MATOMO_URL=

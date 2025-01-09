@@ -7,7 +7,7 @@ Ce tutoriel est également disponible dans les langues suivantes :
 
 ## Comment créer des instances et services
 
-La console est ici: https://cloud.comwork.io
+La console est ici: https://www.cwcloud.tech
 
 Tout d'abord vous devez vous [inscrire](../../../../../subscription.md) si ce n'est pas le cas,  ensuite vous serez en mesure de créer des projets gitlab:
 

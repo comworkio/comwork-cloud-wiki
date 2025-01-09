@@ -1,6 +1,6 @@
 # Admin
 
-Here you'll find all the help resource for using the [web console](https://cloud.comwork.io) as an administrator (in case your using your self-hosted version).
+Here you'll find all the help resource for using the [web console](https://www.cwcloud.tech) as an administrator (in case your using your self-hosted version).
 
 * [Manage environments](./environments.md)
 

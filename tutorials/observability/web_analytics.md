@@ -22,7 +22,7 @@ The two following methods needs to be implemented on the client-side.
 In a script executed on the client browser, you can invoke this endpoint:
 
 ```
-GET https://cloud-api.comwork.io/v1/tracker/json/{mywebsite}
+GET https://api.cwcloud.tech/v1/tracker/json/{mywebsite}
 ```
 
 The result should looks like:
@@ -73,7 +73,7 @@ The result should looks like:
 It's possible to return an image in order to directly put this in your HTML code:
 
 ```html
-<img src="https://cloud-api.comwork.io/v1/tracker/img/{mywebsite}" style="display: none;"></img>
+<img src="https://api.cwcloud.tech/v1/tracker/img/{mywebsite}" style="display: none;"></img>
 ```
 
 ## Index data with Quickwit
