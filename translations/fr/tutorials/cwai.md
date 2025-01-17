@@ -130,20 +130,6 @@ Status	Response	Score
 ok	[The predicted sentiment is: negative, score: -0.5423]	-0.5423
 ```
 
-### Charger un modèle en asynchrone
-
-```shell
-cwc ai load [model]
-Error: accepts 1 arg(s), received 0
-Usage:
-  cwc ai load [model] [flags]
-
-Flags:
-  -h, --help   help for load
-
-exit status 1
-```
-
 ## Interface de driver
 
 Cette section concerne les contributeurs qui souhaitent ajouter des nouveaux modèles.
