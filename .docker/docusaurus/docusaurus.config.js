@@ -127,7 +127,7 @@ const config = {
                 },
                 {
                     property: 'og:image',
-                    content: 'img/comwork-logo.png'
+                    content: 'img/cwcloud-logo.png'
                 },
                 {
                     property: 'og:image:width',
@@ -170,7 +170,7 @@ const config = {
                 title: 'CWCloud',
                 logo: {
                     alt: 'Comwork logo',
-                    src: 'img/comwork-logo.png',
+                    src: 'img/cwcloud-logo.png',
                 },
                 items: [
                     {

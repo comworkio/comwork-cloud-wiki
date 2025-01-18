@@ -14,7 +14,7 @@ RUN pnpm install
 
 COPY .docker/docusaurus/docusaurus.config.js .
 COPY .docker/docusaurus/sidebars.js .
-COPY img/comwork-logo.png static/img/comwork-logo.png
+COPY img/cwcloud-logo.png static/img/cwcloud-logo.png
 COPY img/favicon.ico static/img/favicon.ico
 COPY .docker/docusaurus/custom.css src/css/custom.css
 COPY .docker/docusaurus/index.js src/pages/index.js
