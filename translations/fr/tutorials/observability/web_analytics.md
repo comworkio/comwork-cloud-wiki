@@ -78,4 +78,4 @@ Il est possible de renvoyer une image afin de directement mettre ceci dans votre
 
 ## Indexer les données avec Quickwit
 
-Dans [ce blogpost](https://www.comwork.io/blog/quickwit-web-analytics), vous pourrez voir en détail comment indexer ces données dans Quickwit avec Vector et les utiliser dans des dashboards Grafana.
+Dans [ce blogpost](https://www.cwcloud.tech/blog/quickwit-web-analytics), vous pourrez voir en détail comment indexer ces données dans Quickwit avec Vector et les utiliser dans des dashboards Grafana.

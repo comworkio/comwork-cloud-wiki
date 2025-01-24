@@ -36,4 +36,4 @@ Notes:
 ## Indexing Prometheus metrics into Quickwit
 
 * In order to install Quickwit via CWCloud, go read [this tutorial](./quickwit.md)
-* In order to configure Vector and Quickwit to scrap and index the Prometheus metrics, see [this blogpost](https://www.comwork.io/blog/quickwit-metrics)
+* In order to configure Vector and Quickwit to scrap and index the Prometheus metrics, see [this blogpost](https://www.cwcloud.tech/blog/quickwit-metrics)

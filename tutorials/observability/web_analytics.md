@@ -78,4 +78,4 @@ It's possible to return an image in order to directly put this in your HTML code
 
 ## Index data with Quickwit
 
-In [this blogpost](https://www.comwork.io/blog/quickwit-web-analytics), you'll see in details how to index the data on Quickwit with Vector and set up dashboards with Grafana.
+In [this blogpost](https://www.cwcloud.tech/blog/quickwit-web-analytics), you'll see in details how to index the data on Quickwit with Vector and set up dashboards with Grafana.

@@ -36,4 +36,4 @@ Notes :
 ## Récupération des métriques Prometheus dans Quickwit
 
 * Pour installer Quickwit via CWCloud, lire [ce tutoriel](./quickwit.md)
-* Pour configurer Vector et Quickwit pour récupérer et indexer les métriques Prometheus, lire [ce blogpost](https://www.comwork.io/blog/quickwit-metrics)
+* Pour configurer Vector et Quickwit pour récupérer et indexer les métriques Prometheus, lire [ce blogpost](https://www.cwcloud.tech/blog/quickwit-metrics)

@@ -61,4 +61,4 @@ The default account is:
 * User: `sre-devops@comwork.io`
 * Password: `cloud456`
 
-You can checkout [this blogpost](https://www.comwork.io/blog/cwcloud-kubernetes-install) which provides more details on how to use it on localhost with Kind.
+You can checkout [this blogpost](https://www.cwcloud.tech/blog/cwcloud-kubernetes-install) which provides more details on how to use it on localhost with Kind.
